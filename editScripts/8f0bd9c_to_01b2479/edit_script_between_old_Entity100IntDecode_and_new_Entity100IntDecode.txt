@@ -1,0 +1,144 @@
+===
+insert-tree
+---
+PackageDeclaration [0,47]
+    Name: decode [8,46]
+        Name: benchmark [8,39]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,26]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [49,82]
+    Name: JSON [56,81]
+        Name: fastjson [56,76]
+            Name: alibaba [56,67]
+                Name: com [56,59]
+to
+CompilationUnit [0,26]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [83,136]
+    Name: BenchmarkCase [90,135]
+        Name: benchmark [90,121]
+            Name: test [90,111]
+                Name: json [90,106]
+                    Name: alibaba [90,101]
+                        Name: com [90,93]
+to
+CompilationUnit [0,26]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [137,196]
+    Name: Entity100Int [144,195]
+        Name: entity [144,182]
+            Name: benchmark [144,175]
+                Name: test [144,165]
+                    Name: json [144,160]
+                        Name: alibaba [144,155]
+                            Name: com [144,147]
+to
+CompilationUnit [0,26]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [197,238]
+    Name: Codec [204,237]
+        Name: codec [204,231]
+            Name: test [204,225]
+                Name: json [204,220]
+                    Name: alibaba [204,215]
+                        Name: com [204,207]
+to
+CompilationUnit [0,26]
+at 4
+===
+insert-node
+---
+Modifier: public [240,246]
+to
+ClassOrInterfaceDeclaration [0,26]
+at 0
+===
+insert-tree
+---
+FieldDeclaration [301,321]
+    Modifier: private [301,308]
+    VariableDeclarator [316,320]
+        ClassOrInterfaceType [309,315]
+            SimpleName: String [309,315]
+        SimpleName: text [316,320]
+to
+ClassOrInterfaceDeclaration [0,26]
+at 2
+===
+insert-tree
+---
+ConstructorDeclaration [327,461]
+    Modifier: public [327,333]
+    SimpleName: Entity100IntDecode [334,352]
+    BlockStmt [354,461]
+        ExplicitConstructorInvocationStmt [364,395]
+            StringLiteralExpr: StringArray1000Decode [370,393]
+        ExpressionStmt [405,455]
+            AssignExpr [405,454]
+                FieldAccessExpr [405,414]
+                    ThisExpr [405,409]
+                    SimpleName: text [410,414]
+                MethodCallExpr [417,454]
+                    NameExpr [417,421]
+                        SimpleName: JSON [417,421]
+                    SimpleName: toJSONString [422,434]
+                    ObjectCreationExpr [435,453]
+                        ClassOrInterfaceType [439,451]
+                            SimpleName: Entity100Int [439,451]
+to
+ClassOrInterfaceDeclaration [0,26]
+at 3
+===
+insert-tree
+---
+MethodDeclaration [467,592]
+    MarkerAnnotationExpr [467,476]
+        Name: Override [468,476]
+    Modifier: public [481,487]
+    SimpleName: execute [493,500]
+    Parameter [501,512]
+        ClassOrInterfaceType [501,506]
+            SimpleName: Codec [501,506]
+        SimpleName: codec [507,512]
+    ClassOrInterfaceType [521,530]
+        SimpleName: Exception [521,530]
+    VoidType [488,492]
+    BlockStmt [531,592]
+        ExpressionStmt [541,586]
+            MethodCallExpr [541,585]
+                NameExpr [541,546]
+                    SimpleName: codec [541,546]
+                SimpleName: decodeObject [547,559]
+                NameExpr [560,564]
+                    SimpleName: text [560,564]
+                ClassExpr [566,584]
+                    ClassOrInterfaceType [566,578]
+                        SimpleName: Entity100Int [566,578]
+to
+ClassOrInterfaceDeclaration [0,26]
+at 4
+===
+insert-tree
+---
+ClassOrInterfaceType [280,293]
+    SimpleName: BenchmarkCase [280,293]
+to
+ClassOrInterfaceDeclaration [0,26]
+at 5

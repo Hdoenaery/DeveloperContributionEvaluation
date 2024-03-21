@@ -1,0 +1,393 @@
+===
+insert-tree
+---
+PackageDeclaration [0,49]
+    Name: deserializer [8,48]
+        Name: parser [8,35]
+            Name: fastjson [8,28]
+                Name: alibaba [8,19]
+                    Name: com [8,11]
+to
+CompilationUnit [0,25]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [51,83]
+    Name: Method [58,82]
+        Name: reflect [58,75]
+            Name: lang [58,67]
+                Name: java [58,62]
+to
+CompilationUnit [0,25]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [84,114]
+    Name: Type [91,113]
+        Name: reflect [91,108]
+            Name: lang [91,100]
+                Name: java [91,95]
+to
+CompilationUnit [0,25]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [116,158]
+    Name: JSONException [123,157]
+        Name: fastjson [123,143]
+            Name: alibaba [123,134]
+                Name: com [123,126]
+to
+CompilationUnit [0,25]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [159,215]
+    Name: DefaultExtJSONParser [166,214]
+        Name: parser [166,193]
+            Name: fastjson [166,186]
+                Name: alibaba [166,177]
+                    Name: com [166,169]
+to
+CompilationUnit [0,25]
+at 4
+===
+insert-tree
+---
+ImportDeclaration [216,259]
+    Name: FieldInfo [223,258]
+        Name: util [223,248]
+            Name: fastjson [223,243]
+                Name: alibaba [223,234]
+                    Name: com [223,226]
+to
+CompilationUnit [0,25]
+at 5
+===
+insert-node
+---
+Modifier: public [261,267]
+to
+ClassOrInterfaceDeclaration [0,25]
+at 0
+===
+insert-node
+---
+Modifier: abstract [268,276]
+to
+ClassOrInterfaceDeclaration [0,25]
+at 1
+===
+insert-tree
+---
+FieldDeclaration [305,341]
+    Modifier: protected [305,314]
+    Modifier: final [315,320]
+    VariableDeclarator [331,340]
+        ClassOrInterfaceType [321,330]
+            SimpleName: FieldInfo [321,330]
+        SimpleName: fieldInfo [331,340]
+to
+ClassOrInterfaceDeclaration [0,25]
+at 3
+===
+insert-tree
+---
+FieldDeclaration [344,375]
+    Modifier: protected [344,353]
+    Modifier: final [354,359]
+    VariableDeclarator [369,374]
+        ClassOrInterfaceType [360,368]
+            SimpleName: Class [360,365]
+            WildcardType [366,367]
+        SimpleName: clazz [369,374]
+to
+ClassOrInterfaceDeclaration [0,25]
+at 4
+===
+insert-tree
+---
+ConstructorDeclaration [378,496]
+    Modifier: public [378,384]
+    SimpleName: FieldDeserializer [385,402]
+    Parameter [403,417]
+        ClassOrInterfaceType [403,411]
+            SimpleName: Class [403,408]
+            WildcardType [409,410]
+        SimpleName: clazz [412,417]
+    Parameter [419,438]
+        ClassOrInterfaceType [419,428]
+            SimpleName: FieldInfo [419,428]
+        SimpleName: fieldInfo [429,438]
+    BlockStmt [440,496]
+        ExpressionStmt [444,463]
+            AssignExpr [444,462]
+                FieldAccessExpr [444,454]
+                    ThisExpr [444,448]
+                    SimpleName: clazz [449,454]
+                NameExpr [457,462]
+                    SimpleName: clazz [457,462]
+        ExpressionStmt [466,493]
+            AssignExpr [466,492]
+                FieldAccessExpr [466,480]
+                    ThisExpr [466,470]
+                    SimpleName: fieldInfo [471,480]
+                NameExpr [483,492]
+                    SimpleName: fieldInfo [483,492]
+to
+ClassOrInterfaceDeclaration [0,25]
+at 5
+===
+insert-tree
+---
+MethodDeclaration [499,561]
+    Modifier: public [499,505]
+    SimpleName: getMethod [513,522]
+    ClassOrInterfaceType [506,512]
+        SimpleName: Method [506,512]
+    BlockStmt [525,561]
+        ReturnStmt [529,558]
+            MethodCallExpr [536,557]
+                NameExpr [536,545]
+                    SimpleName: fieldInfo [536,545]
+                SimpleName: getMethod [546,555]
+to
+ClassOrInterfaceDeclaration [0,25]
+at 6
+===
+insert-tree
+---
+MethodDeclaration [564,636]
+    Modifier: public [564,570]
+    SimpleName: getFieldClass [580,593]
+    ClassOrInterfaceType [571,579]
+        SimpleName: Class [571,576]
+        WildcardType [577,578]
+    BlockStmt [596,636]
+        ReturnStmt [600,633]
+            MethodCallExpr [607,632]
+                NameExpr [607,616]
+                    SimpleName: fieldInfo [607,616]
+                SimpleName: getFieldClass [617,630]
+to
+ClassOrInterfaceDeclaration [0,25]
+at 7
+===
+insert-tree
+---
+MethodDeclaration [639,705]
+    Modifier: public [639,645]
+    SimpleName: getFieldType [651,663]
+    ClassOrInterfaceType [646,650]
+        SimpleName: Type [646,650]
+    BlockStmt [666,705]
+        ReturnStmt [670,702]
+            MethodCallExpr [677,701]
+                NameExpr [677,686]
+                    SimpleName: fieldInfo [677,686]
+                SimpleName: getFieldType [687,699]
+to
+ClassOrInterfaceDeclaration [0,25]
+at 8
+===
+insert-tree
+---
+MethodDeclaration [708,784]
+    Modifier: public [708,714]
+    Modifier: abstract [715,723]
+    SimpleName: parseField [729,739]
+    Parameter [740,767]
+        ClassOrInterfaceType [740,760]
+            SimpleName: DefaultExtJSONParser [740,760]
+        SimpleName: parser [761,767]
+    Parameter [769,782]
+        ClassOrInterfaceType [769,775]
+            SimpleName: Object [769,775]
+        SimpleName: object [776,782]
+    VoidType [724,728]
+to
+ClassOrInterfaceDeclaration [0,25]
+at 9
+===
+insert-tree
+---
+MethodDeclaration [787,827]
+    Modifier: public [787,793]
+    Modifier: abstract [794,802]
+    SimpleName: getFastMatchToken [807,824]
+    PrimitiveType: int [803,806]
+to
+ClassOrInterfaceDeclaration [0,25]
+at 10
+===
+insert-tree
+---
+MethodDeclaration [830,929]
+    Modifier: public [830,836]
+    SimpleName: setValue [842,850]
+    Parameter [851,864]
+        ClassOrInterfaceType [851,857]
+            SimpleName: Object [851,857]
+        SimpleName: object [858,864]
+    Parameter [866,879]
+        PrimitiveType: boolean [866,873]
+        SimpleName: value [874,879]
+    VoidType [837,841]
+    BlockStmt [881,929]
+        ExpressionStmt [885,926]
+            MethodCallExpr [885,925]
+                SimpleName: setValue [885,893]
+                NameExpr [894,900]
+                    SimpleName: object [894,900]
+                MethodCallExpr [902,924]
+                    NameExpr [902,909]
+                        SimpleName: Boolean [902,909]
+                    SimpleName: valueOf [910,917]
+                    NameExpr [918,923]
+                        SimpleName: value [918,923]
+to
+ClassOrInterfaceDeclaration [0,25]
+at 11
+===
+insert-tree
+---
+MethodDeclaration [932,1027]
+    Modifier: public [932,938]
+    SimpleName: setValue [944,952]
+    Parameter [953,966]
+        ClassOrInterfaceType [953,959]
+            SimpleName: Object [953,959]
+        SimpleName: object [960,966]
+    Parameter [968,977]
+        PrimitiveType: int [968,971]
+        SimpleName: value [972,977]
+    VoidType [939,943]
+    BlockStmt [979,1027]
+        ExpressionStmt [983,1024]
+            MethodCallExpr [983,1023]
+                SimpleName: setValue [983,991]
+                NameExpr [992,998]
+                    SimpleName: object [992,998]
+                MethodCallExpr [1000,1022]
+                    NameExpr [1000,1007]
+                        SimpleName: Integer [1000,1007]
+                    SimpleName: valueOf [1008,1015]
+                    NameExpr [1016,1021]
+                        SimpleName: value [1016,1021]
+to
+ClassOrInterfaceDeclaration [0,25]
+at 12
+===
+insert-tree
+---
+MethodDeclaration [1030,1123]
+    Modifier: public [1030,1036]
+    SimpleName: setValue [1042,1050]
+    Parameter [1051,1064]
+        ClassOrInterfaceType [1051,1057]
+            SimpleName: Object [1051,1057]
+        SimpleName: object [1058,1064]
+    Parameter [1066,1076]
+        PrimitiveType: long [1066,1070]
+        SimpleName: value [1071,1076]
+    VoidType [1037,1041]
+    BlockStmt [1078,1123]
+        ExpressionStmt [1082,1120]
+            MethodCallExpr [1082,1119]
+                SimpleName: setValue [1082,1090]
+                NameExpr [1091,1097]
+                    SimpleName: object [1091,1097]
+                MethodCallExpr [1099,1118]
+                    NameExpr [1099,1103]
+                        SimpleName: Long [1099,1103]
+                    SimpleName: valueOf [1104,1111]
+                    NameExpr [1112,1117]
+                        SimpleName: value [1112,1117]
+to
+ClassOrInterfaceDeclaration [0,25]
+at 13
+===
+insert-tree
+---
+MethodDeclaration [1126,1216]
+    Modifier: public [1126,1132]
+    SimpleName: setValue [1138,1146]
+    Parameter [1147,1160]
+        ClassOrInterfaceType [1147,1153]
+            SimpleName: Object [1147,1153]
+        SimpleName: object [1154,1160]
+    Parameter [1162,1174]
+        ClassOrInterfaceType [1162,1168]
+            SimpleName: String [1162,1168]
+        SimpleName: value [1169,1174]
+    VoidType [1133,1137]
+    BlockStmt [1176,1216]
+        ExpressionStmt [1180,1213]
+            MethodCallExpr [1180,1212]
+                SimpleName: setValue [1180,1188]
+                NameExpr [1189,1195]
+                    SimpleName: object [1189,1195]
+                CastExpr [1197,1211]
+                    ClassOrInterfaceType [1198,1204]
+                        SimpleName: Object [1198,1204]
+                    NameExpr [1206,1211]
+                        SimpleName: value [1206,1211]
+to
+ClassOrInterfaceDeclaration [0,25]
+at 14
+===
+insert-tree
+---
+MethodDeclaration [1219,1454]
+    Modifier: public [1219,1225]
+    SimpleName: setValue [1231,1239]
+    Parameter [1240,1253]
+        ClassOrInterfaceType [1240,1246]
+            SimpleName: Object [1240,1246]
+        SimpleName: object [1247,1253]
+    Parameter [1255,1267]
+        ClassOrInterfaceType [1255,1261]
+            SimpleName: Object [1255,1261]
+        SimpleName: value [1262,1267]
+    VoidType [1226,1230]
+    BlockStmt [1269,1454]
+        TryStmt [1273,1451]
+            BlockStmt [1277,1330]
+                ExpressionStmt [1282,1326]
+                    MethodCallExpr [1282,1325]
+                        MethodCallExpr [1282,1303]
+                            NameExpr [1282,1291]
+                                SimpleName: fieldInfo [1282,1291]
+                            SimpleName: getMethod [1292,1301]
+                        SimpleName: invoke [1304,1310]
+                        NameExpr [1311,1317]
+                            SimpleName: object [1311,1317]
+                        NameExpr [1319,1324]
+                            SimpleName: value [1319,1324]
+            CatchClause [1331,1451]
+                Parameter [1338,1349]
+                    ClassOrInterfaceType [1338,1347]
+                        SimpleName: Exception [1338,1347]
+                    SimpleName: e [1348,1349]
+                BlockStmt [1351,1451]
+                    ThrowStmt [1356,1447]
+                        ObjectCreationExpr [1362,1446]
+                            ClassOrInterfaceType [1366,1379]
+                                SimpleName: JSONException [1366,1379]
+                            BinaryExpr [1380,1442]
+                                StringLiteralExpr: set property error,  [1380,1402]
+                                MethodCallExpr [1410,1442]
+                                    MethodCallExpr [1410,1431]
+                                        NameExpr [1410,1419]
+                                            SimpleName: fieldInfo [1410,1419]
+                                        SimpleName: getMethod [1420,1429]
+                                    SimpleName: toString [1432,1440]
+                            NameExpr [1444,1445]
+                                SimpleName: e [1444,1445]
+to
+ClassOrInterfaceDeclaration [0,25]
+at 15

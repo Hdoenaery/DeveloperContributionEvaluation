@@ -1,0 +1,229 @@
+===
+insert-tree
+---
+PackageDeclaration [0,34]
+    Name: bvt [8,33]
+        Name: test [8,29]
+            Name: json [8,24]
+                Name: alibaba [8,19]
+                    Name: com [8,11]
+to
+CompilationUnit [0,22]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [36,70]
+    Name: SimpleDateFormat [43,69]
+        Name: text [43,52]
+            Name: java [43,47]
+to
+CompilationUnit [0,22]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [71,93]
+    Name: Date [78,92]
+        Name: util [78,87]
+            Name: java [78,82]
+to
+CompilationUnit [0,22]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [95,125]
+    Name: Assert [102,124]
+        Name: framework [102,117]
+            Name: junit [102,107]
+to
+CompilationUnit [0,22]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [126,158]
+    Name: TestCase [133,157]
+        Name: framework [133,148]
+            Name: junit [133,138]
+to
+CompilationUnit [0,22]
+at 4
+===
+insert-tree
+---
+ImportDeclaration [160,193]
+    Name: JSON [167,192]
+        Name: fastjson [167,187]
+            Name: alibaba [167,178]
+                Name: com [167,170]
+to
+CompilationUnit [0,22]
+at 5
+===
+insert-tree
+---
+ImportDeclaration [194,249]
+    Name: SerializeConfig [201,248]
+        Name: serializer [201,232]
+            Name: fastjson [201,221]
+                Name: alibaba [201,212]
+                    Name: com [201,204]
+to
+CompilationUnit [0,22]
+at 6
+===
+insert-tree
+---
+ImportDeclaration [250,316]
+    Name: SimpleDateFormatSerializer [257,315]
+        Name: serializer [257,288]
+            Name: fastjson [257,277]
+                Name: alibaba [257,268]
+                    Name: com [257,260]
+to
+CompilationUnit [0,22]
+at 7
+===
+insert-node
+---
+Modifier: public [318,324]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [366,765]
+    Modifier: public [366,372]
+    SimpleName: test_0 [378,384]
+    ClassOrInterfaceType [394,403]
+        SimpleName: Exception [394,403]
+    VoidType [373,377]
+    BlockStmt [404,765]
+        ExpressionStmt [408,456]
+            VariableDeclarationExpr [408,455]
+                VariableDeclarator [424,455]
+                    ClassOrInterfaceType [408,423]
+                        SimpleName: SerializeConfig [408,423]
+                    SimpleName: mapping [424,431]
+                    ObjectCreationExpr [434,455]
+                        ClassOrInterfaceType [438,453]
+                            SimpleName: SerializeConfig [438,453]
+        ExpressionStmt [459,529]
+            MethodCallExpr [459,528]
+                NameExpr [459,466]
+                    SimpleName: mapping [459,466]
+                SimpleName: put [467,470]
+                ClassExpr [471,481]
+                    ClassOrInterfaceType [471,475]
+                        SimpleName: Date [471,475]
+                ObjectCreationExpr [483,527]
+                    ClassOrInterfaceType [487,513]
+                        SimpleName: SimpleDateFormatSerializer [487,513]
+                    StringLiteralExpr: yyyy-MM-dd [514,526]
+        ExpressionStmt [533,562]
+            VariableDeclarationExpr [533,561]
+                VariableDeclarator [540,561]
+                    ClassOrInterfaceType [533,539]
+                        SimpleName: Entity [533,539]
+                    SimpleName: object [540,546]
+                    ObjectCreationExpr [549,561]
+                        ClassOrInterfaceType [553,559]
+                            SimpleName: Entity [553,559]
+        ExpressionStmt [565,593]
+            MethodCallExpr [565,592]
+                NameExpr [565,571]
+                    SimpleName: object [565,571]
+                SimpleName: setValue [572,580]
+                ObjectCreationExpr [581,591]
+                    ClassOrInterfaceType [585,589]
+                        SimpleName: Date [585,589]
+        ExpressionStmt [596,645]
+            VariableDeclarationExpr [596,644]
+                VariableDeclarator [603,644]
+                    ClassOrInterfaceType [596,602]
+                        SimpleName: String [596,602]
+                    SimpleName: text [603,607]
+                    MethodCallExpr [610,644]
+                        NameExpr [610,614]
+                            SimpleName: JSON [610,614]
+                        SimpleName: toJSONString [615,627]
+                        NameExpr [628,634]
+                            SimpleName: object [628,634]
+                        NameExpr [636,643]
+                            SimpleName: mapping [636,643]
+        ExpressionStmt [648,762]
+            MethodCallExpr [648,761]
+                NameExpr [648,654]
+                    SimpleName: Assert [648,654]
+                SimpleName: assertEquals [655,667]
+                BinaryExpr [668,754]
+                    BinaryExpr [668,746]
+                        StringLiteralExpr: {"value":" [668,683]
+                        MethodCallExpr [686,746]
+                            ObjectCreationExpr [686,720]
+                                ClassOrInterfaceType [690,706]
+                                    SimpleName: SimpleDateFormat [690,706]
+                                StringLiteralExpr: yyyy-MM-dd [707,719]
+                            SimpleName: format [721,727]
+                            MethodCallExpr [728,745]
+                                NameExpr [728,734]
+                                    SimpleName: object [728,734]
+                                SimpleName: getValue [735,743]
+                    StringLiteralExpr: "} [749,754]
+                NameExpr [756,760]
+                    SimpleName: text [756,760]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 2
+===
+insert-tree
+---
+ClassOrInterfaceDeclaration [768,936]
+    Modifier: public [768,774]
+    Modifier: static [775,781]
+    SimpleName: Entity [788,794]
+    FieldDeclaration [799,818]
+        Modifier: private [799,806]
+        VariableDeclarator [812,817]
+            ClassOrInterfaceType [807,811]
+                SimpleName: Date [807,811]
+            SimpleName: value [812,817]
+    MethodDeclaration [822,867]
+        Modifier: public [822,828]
+        SimpleName: getValue [834,842]
+        ClassOrInterfaceType [829,833]
+            SimpleName: Date [829,833]
+        BlockStmt [845,867]
+            ReturnStmt [850,863]
+                NameExpr [857,862]
+                    SimpleName: value [857,862]
+    MethodDeclaration [871,932]
+        Modifier: public [871,877]
+        SimpleName: setValue [883,891]
+        Parameter [892,902]
+            ClassOrInterfaceType [892,896]
+                SimpleName: Date [892,896]
+            SimpleName: value [897,902]
+        VoidType [878,882]
+        BlockStmt [904,932]
+            ExpressionStmt [909,928]
+                AssignExpr [909,927]
+                    FieldAccessExpr [909,919]
+                        ThisExpr [909,913]
+                        SimpleName: value [914,919]
+                    NameExpr [922,927]
+                        SimpleName: value [922,927]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 3
+===
+insert-tree
+---
+ClassOrInterfaceType [354,362]
+    SimpleName: TestCase [354,362]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 4

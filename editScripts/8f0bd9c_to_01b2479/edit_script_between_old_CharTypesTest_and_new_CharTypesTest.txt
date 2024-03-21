@@ -1,0 +1,162 @@
+===
+insert-tree
+---
+PackageDeclaration [0,34]
+    Name: bvt [8,33]
+        Name: test [8,29]
+            Name: json [8,24]
+                Name: alibaba [8,19]
+                    Name: com [8,11]
+to
+CompilationUnit [0,21]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [36,66]
+    Name: Assert [43,65]
+        Name: framework [43,58]
+            Name: junit [43,48]
+to
+CompilationUnit [0,21]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [67,99]
+    Name: TestCase [74,98]
+        Name: framework [74,89]
+            Name: junit [74,79]
+to
+CompilationUnit [0,21]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [101,146]
+    Name: CharTypes [108,145]
+        Name: parser [108,135]
+            Name: fastjson [108,128]
+                Name: alibaba [108,119]
+                    Name: com [108,111]
+to
+CompilationUnit [0,21]
+at 3
+===
+insert-node
+---
+Modifier: public [148,154]
+to
+ClassOrInterfaceDeclaration [0,21]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [199,848]
+    Modifier: public [199,205]
+    SimpleName: test_0 [211,217]
+    ClassOrInterfaceType [227,236]
+        SimpleName: Exception [227,236]
+    VoidType [206,210]
+    BlockStmt [237,848]
+        ExpressionStmt [247,305]
+            MethodCallExpr [247,304]
+                NameExpr [247,253]
+                    SimpleName: Assert [247,253]
+                SimpleName: assertTrue [254,264]
+                MethodCallExpr [265,303]
+                    NameExpr [265,274]
+                        SimpleName: CharTypes [265,274]
+                    SimpleName: isSpecial_doubleQuotes [275,297]
+                    CharLiteralExpr: \n [298,302]
+        ExpressionStmt [314,372]
+            MethodCallExpr [314,371]
+                NameExpr [314,320]
+                    SimpleName: Assert [314,320]
+                SimpleName: assertTrue [321,331]
+                MethodCallExpr [332,370]
+                    NameExpr [332,341]
+                        SimpleName: CharTypes [332,341]
+                    SimpleName: isSpecial_doubleQuotes [342,364]
+                    CharLiteralExpr: \r [365,369]
+        ExpressionStmt [381,439]
+            MethodCallExpr [381,438]
+                NameExpr [381,387]
+                    SimpleName: Assert [381,387]
+                SimpleName: assertTrue [388,398]
+                MethodCallExpr [399,437]
+                    NameExpr [399,408]
+                        SimpleName: CharTypes [399,408]
+                    SimpleName: isSpecial_doubleQuotes [409,431]
+                    CharLiteralExpr: \b [432,436]
+        ExpressionStmt [448,506]
+            MethodCallExpr [448,505]
+                NameExpr [448,454]
+                    SimpleName: Assert [448,454]
+                SimpleName: assertTrue [455,465]
+                MethodCallExpr [466,504]
+                    NameExpr [466,475]
+                        SimpleName: CharTypes [466,475]
+                    SimpleName: isSpecial_doubleQuotes [476,498]
+                    CharLiteralExpr: \f [499,503]
+        ExpressionStmt [515,573]
+            MethodCallExpr [515,572]
+                NameExpr [515,521]
+                    SimpleName: Assert [515,521]
+                SimpleName: assertTrue [522,532]
+                MethodCallExpr [533,571]
+                    NameExpr [533,542]
+                        SimpleName: CharTypes [533,542]
+                    SimpleName: isSpecial_doubleQuotes [543,565]
+                    CharLiteralExpr: \" [566,570]
+        ExpressionStmt [582,640]
+            MethodCallExpr [582,639]
+                NameExpr [582,588]
+                    SimpleName: Assert [582,588]
+                SimpleName: assertFalse [589,600]
+                MethodCallExpr [601,638]
+                    NameExpr [601,610]
+                        SimpleName: CharTypes [601,610]
+                    SimpleName: isSpecial_doubleQuotes [611,633]
+                    CharLiteralExpr: 0 [634,637]
+        ExpressionStmt [649,708]
+            MethodCallExpr [649,707]
+                NameExpr [649,655]
+                    SimpleName: Assert [649,655]
+                SimpleName: assertFalse [656,667]
+                MethodCallExpr [668,706]
+                    NameExpr [668,677]
+                        SimpleName: CharTypes [668,677]
+                    SimpleName: isSpecial_doubleQuotes [678,700]
+                    CharLiteralExpr: \0 [701,705]
+        ExpressionStmt [717,775]
+            MethodCallExpr [717,774]
+                NameExpr [717,723]
+                    SimpleName: Assert [717,723]
+                SimpleName: assertFalse [724,735]
+                MethodCallExpr [736,773]
+                    NameExpr [736,745]
+                        SimpleName: CharTypes [736,745]
+                    SimpleName: isSpecial_doubleQuotes [746,768]
+                    CharLiteralExpr: 中 [769,772]
+        ExpressionStmt [784,842]
+            MethodCallExpr [784,841]
+                NameExpr [784,790]
+                    SimpleName: Assert [784,790]
+                SimpleName: assertFalse [791,802]
+                MethodCallExpr [803,840]
+                    NameExpr [803,812]
+                        SimpleName: CharTypes [803,812]
+                    SimpleName: isSpecial_doubleQuotes [813,835]
+                    CharLiteralExpr: 中 [836,839]
+to
+ClassOrInterfaceDeclaration [0,21]
+at 2
+===
+insert-tree
+---
+ClassOrInterfaceType [183,191]
+    SimpleName: TestCase [183,191]
+to
+ClassOrInterfaceDeclaration [0,21]
+at 3

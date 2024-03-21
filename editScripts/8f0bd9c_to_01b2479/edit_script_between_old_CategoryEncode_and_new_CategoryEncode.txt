@@ -1,0 +1,197 @@
+===
+insert-tree
+---
+PackageDeclaration [0,47]
+    Name: encode [8,46]
+        Name: benchmark [8,39]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,22]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [49,102]
+    Name: BenchmarkCase [56,101]
+        Name: benchmark [56,87]
+            Name: test [56,77]
+                Name: json [56,72]
+                    Name: alibaba [56,67]
+                        Name: com [56,59]
+to
+CompilationUnit [0,22]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [103,144]
+    Name: Codec [110,143]
+        Name: codec [110,137]
+            Name: test [110,131]
+                Name: json [110,126]
+                    Name: alibaba [110,121]
+                        Name: com [110,113]
+to
+CompilationUnit [0,22]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [145,196]
+    Name: Category [152,195]
+        Name: case2 [152,186]
+            Name: entity [152,180]
+                Name: test [152,173]
+                    Name: json [152,168]
+                        Name: alibaba [152,163]
+                            Name: com [152,155]
+to
+CompilationUnit [0,22]
+at 3
+===
+insert-node
+---
+Modifier: public [198,204]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 0
+===
+insert-tree
+---
+FieldDeclaration [255,277]
+    Modifier: private [255,262]
+    VariableDeclarator [270,276]
+        ClassOrInterfaceType [263,269]
+            SimpleName: Object [263,269]
+        SimpleName: object [270,276]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 2
+===
+insert-tree
+---
+ConstructorDeclaration [283,695]
+    Modifier: public [283,289]
+    SimpleName: CategoryEncode [290,304]
+    BlockStmt [306,695]
+        ExplicitConstructorInvocationStmt [316,340]
+            StringLiteralExpr: CategoryEncode [322,338]
+        ExpressionStmt [350,385]
+            VariableDeclarationExpr [350,384]
+                VariableDeclarator [359,384]
+                    ClassOrInterfaceType [350,358]
+                        SimpleName: Category [350,358]
+                    SimpleName: category [359,367]
+                    ObjectCreationExpr [370,384]
+                        ClassOrInterfaceType [374,382]
+                            SimpleName: Category [374,382]
+        ExpressionStmt [394,412]
+            MethodCallExpr [394,411]
+                NameExpr [394,402]
+                    SimpleName: category [394,402]
+                SimpleName: setId [403,408]
+                IntegerLiteralExpr: 1 [409,410]
+        ExpressionStmt [421,446]
+            MethodCallExpr [421,445]
+                NameExpr [421,429]
+                    SimpleName: category [421,429]
+                SimpleName: setName [430,437]
+                StringLiteralExpr: root [438,444]
+        BlockStmt [455,661]
+            ExpressionStmt [469,501]
+                VariableDeclarationExpr [469,500]
+                    VariableDeclarator [478,500]
+                        ClassOrInterfaceType [469,477]
+                            SimpleName: Category [469,477]
+                        SimpleName: child [478,483]
+                        ObjectCreationExpr [486,500]
+                            ClassOrInterfaceType [490,498]
+                                SimpleName: Category [490,498]
+            ExpressionStmt [514,529]
+                MethodCallExpr [514,528]
+                    NameExpr [514,519]
+                        SimpleName: child [514,519]
+                    SimpleName: setId [520,525]
+                    IntegerLiteralExpr: 2 [526,527]
+            ExpressionStmt [542,565]
+                MethodCallExpr [542,564]
+                    NameExpr [542,547]
+                        SimpleName: child [542,547]
+                    SimpleName: setName [548,555]
+                    StringLiteralExpr: child [556,563]
+            ExpressionStmt [578,612]
+                MethodCallExpr [578,611]
+                    MethodCallExpr [578,600]
+                        NameExpr [578,586]
+                            SimpleName: category [578,586]
+                        SimpleName: getChildren [587,598]
+                    SimpleName: add [601,604]
+                    NameExpr [605,610]
+                        SimpleName: child [605,610]
+            ExpressionStmt [625,651]
+                MethodCallExpr [625,650]
+                    NameExpr [625,630]
+                        SimpleName: child [625,630]
+                    SimpleName: setParent [631,640]
+                    NameExpr [641,649]
+                        SimpleName: category [641,649]
+        ExpressionStmt [671,689]
+            AssignExpr [671,688]
+                NameExpr [671,677]
+                    SimpleName: object [671,677]
+                NameExpr [680,688]
+                    SimpleName: category [680,688]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 3
+===
+insert-tree
+---
+MethodDeclaration [701,855]
+    MarkerAnnotationExpr [701,710]
+        Name: Override [702,710]
+    Modifier: public [715,721]
+    SimpleName: execute [727,734]
+    Parameter [735,746]
+        ClassOrInterfaceType [735,740]
+            SimpleName: Codec [735,740]
+        SimpleName: codec [741,746]
+    ClassOrInterfaceType [755,764]
+        SimpleName: Exception [755,764]
+    VoidType [722,726]
+    BlockStmt [765,855]
+        ForStmt [775,849]
+            VariableDeclarationExpr [780,789]
+                VariableDeclarator [784,789]
+                    PrimitiveType: int [780,783]
+                    SimpleName: i [784,785]
+                    IntegerLiteralExpr: 0 [788,789]
+            BinaryExpr [791,797]
+                NameExpr [791,792]
+                    SimpleName: i [791,792]
+                IntegerLiteralExpr: 10 [795,797]
+            UnaryExpr [799,802]
+                NameExpr [801,802]
+                    SimpleName: i [801,802]
+            BlockStmt [804,849]
+                ExpressionStmt [818,839]
+                    MethodCallExpr [818,838]
+                        NameExpr [818,823]
+                            SimpleName: codec [818,823]
+                        SimpleName: encode [824,830]
+                        NameExpr [831,837]
+                            SimpleName: object [831,837]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 4
+===
+insert-tree
+---
+ClassOrInterfaceType [234,247]
+    SimpleName: BenchmarkCase [234,247]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 5

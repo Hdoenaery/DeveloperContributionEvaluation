@@ -1,0 +1,158 @@
+===
+insert-tree
+---
+PackageDeclaration [0,34]
+    Name: bvt [8,33]
+        Name: test [8,29]
+            Name: json [8,24]
+                Name: alibaba [8,19]
+                    Name: com [8,11]
+to
+CompilationUnit [0,19]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [36,66]
+    Name: Assert [43,65]
+        Name: framework [43,58]
+            Name: junit [43,48]
+to
+CompilationUnit [0,19]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [67,99]
+    Name: TestCase [74,98]
+        Name: framework [74,89]
+            Name: junit [74,79]
+to
+CompilationUnit [0,19]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [101,134]
+    Name: JSON [108,133]
+        Name: fastjson [108,128]
+            Name: alibaba [108,119]
+                Name: com [108,111]
+to
+CompilationUnit [0,19]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [135,174]
+    Name: JSONObject [142,173]
+        Name: fastjson [142,162]
+            Name: alibaba [142,153]
+                Name: com [142,145]
+to
+CompilationUnit [0,19]
+at 4
+===
+insert-tree
+---
+ImportDeclaration [175,232]
+    Name: SerializerFeature [182,231]
+        Name: serializer [182,213]
+            Name: fastjson [182,202]
+                Name: alibaba [182,193]
+                    Name: com [182,185]
+to
+CompilationUnit [0,19]
+at 5
+===
+insert-node
+---
+Modifier: public [234,240]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [283,774]
+    Modifier: public [283,289]
+    SimpleName: test_0 [295,301]
+    ClassOrInterfaceType [311,320]
+        SimpleName: Exception [311,320]
+    VoidType [290,294]
+    BlockStmt [321,774]
+        ExpressionStmt [331,366]
+            VariableDeclarationExpr [331,365]
+                VariableDeclarator [342,365]
+                    ClassOrInterfaceType [331,341]
+                        SimpleName: JSONObject [331,341]
+                    SimpleName: json [342,346]
+                    ObjectCreationExpr [349,365]
+                        ClassOrInterfaceType [353,363]
+                            SimpleName: JSONObject [353,363]
+        ExpressionStmt [375,407]
+            MethodCallExpr [375,406]
+                NameExpr [375,379]
+                    SimpleName: json [375,379]
+                SimpleName: put [380,383]
+                StringLiteralExpr: hello	 [384,393]
+                StringLiteralExpr: World	! [395,405]
+        ExpressionStmt [416,491]
+            MethodCallExpr [416,490]
+                NameExpr [416,422]
+                    SimpleName: Assert [416,422]
+                SimpleName: assertEquals [423,435]
+                StringLiteralExpr: {"hello	":"World	!"} [436,464]
+                MethodCallExpr [466,489]
+                    NameExpr [466,470]
+                        SimpleName: JSON [466,470]
+                    SimpleName: toJSONString [471,483]
+                    NameExpr [484,488]
+                        SimpleName: json [484,488]
+        ExpressionStmt [500,614]
+            MethodCallExpr [500,613]
+                NameExpr [500,506]
+                    SimpleName: Assert [500,506]
+                SimpleName: assertEquals [507,519]
+                StringLiteralExpr: {"hello\t":"World\t!"} [520,550]
+                MethodCallExpr [552,612]
+                    NameExpr [552,556]
+                        SimpleName: JSON [552,556]
+                    SimpleName: toJSONString [557,569]
+                    NameExpr [570,574]
+                        SimpleName: json [570,574]
+                    FieldAccessExpr [576,611]
+                        NameExpr [576,593]
+                            SimpleName: SerializerFeature [576,593]
+                        SimpleName: WriteTabAsSpecial [594,611]
+        ExpressionStmt [623,768]
+            MethodCallExpr [623,767]
+                NameExpr [623,629]
+                    SimpleName: Assert [623,629]
+                SimpleName: assertEquals [630,642]
+                StringLiteralExpr: {'hello\t':'World\t!'} [643,669]
+                MethodCallExpr [671,766]
+                    NameExpr [671,675]
+                        SimpleName: JSON [671,675]
+                    SimpleName: toJSONString [676,688]
+                    NameExpr [689,693]
+                        SimpleName: json [689,693]
+                    FieldAccessExpr [695,730]
+                        NameExpr [695,712]
+                            SimpleName: SerializerFeature [695,712]
+                        SimpleName: WriteTabAsSpecial [713,730]
+                    FieldAccessExpr [732,765]
+                        NameExpr [732,749]
+                            SimpleName: SerializerFeature [732,749]
+                        SimpleName: UseSingleQuotes [750,765]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 2
+===
+insert-tree
+---
+ClassOrInterfaceType [267,275]
+    SimpleName: TestCase [267,275]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 3

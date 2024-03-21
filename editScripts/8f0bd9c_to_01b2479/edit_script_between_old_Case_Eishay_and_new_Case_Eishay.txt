@@ -1,0 +1,200 @@
+===
+insert-tree
+---
+PackageDeclaration [0,38]
+    Name: asm [8,37]
+        Name: bvt [8,33]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,19]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [40,72]
+    Name: TestCase [47,71]
+        Name: framework [47,62]
+            Name: junit [47,52]
+to
+CompilationUnit [0,19]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [74,107]
+    Name: JSON [81,106]
+        Name: fastjson [81,101]
+            Name: alibaba [81,92]
+                Name: com [81,84]
+to
+CompilationUnit [0,19]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [108,165]
+    Name: SerializerFeature [115,164]
+        Name: serializer [115,146]
+            Name: fastjson [115,135]
+                Name: alibaba [115,126]
+                    Name: com [115,118]
+to
+CompilationUnit [0,19]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [166,230]
+    Name: EishayDecodeBytes [173,229]
+        Name: decode [173,211]
+            Name: benchmark [173,204]
+                Name: test [173,194]
+                    Name: json [173,189]
+                        Name: alibaba [173,184]
+                            Name: com [173,176]
+to
+CompilationUnit [0,19]
+at 4
+===
+insert-tree
+---
+ImportDeclaration [232,263]
+    Name: MediaContent [239,262]
+        Name: media [239,249]
+            Name: data [239,243]
+to
+CompilationUnit [0,19]
+at 5
+===
+insert-node
+---
+Modifier: public [265,271]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 0
+===
+insert-tree
+---
+FieldDeclaration [314,340]
+    Modifier: private [314,321]
+    Modifier: final [322,327]
+    VariableDeclarator [335,339]
+        ClassOrInterfaceType [328,334]
+            SimpleName: String [328,334]
+        SimpleName: text [335,339]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 2
+===
+insert-tree
+---
+ConstructorDeclaration [346,448]
+    Modifier: public [346,352]
+    SimpleName: Case_Eishay [353,364]
+    BlockStmt [366,448]
+        ExplicitConstructorInvocationStmt [376,384]
+        ExpressionStmt [393,442]
+            AssignExpr [393,441]
+                FieldAccessExpr [393,402]
+                    ThisExpr [393,397]
+                    SimpleName: text [398,402]
+                MethodCallExpr [405,441]
+                    FieldAccessExpr [405,431]
+                        NameExpr [405,422]
+                            SimpleName: EishayDecodeBytes [405,422]
+                        SimpleName: instance [423,431]
+                    SimpleName: getText [432,439]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 3
+===
+insert-tree
+---
+MethodDeclaration [454,879]
+    Modifier: public [454,460]
+    SimpleName: test_0 [466,472]
+    ClassOrInterfaceType [482,491]
+        SimpleName: Exception [482,491]
+    VoidType [461,465]
+    BlockStmt [492,879]
+        ExpressionStmt [569,594]
+            MethodCallExpr [569,593]
+                FieldAccessExpr [569,579]
+                    NameExpr [569,575]
+                        SimpleName: System [569,575]
+                    SimpleName: out [576,579]
+                SimpleName: println [580,587]
+                NameExpr [588,592]
+                    SimpleName: text [588,592]
+        ExpressionStmt [603,668]
+            VariableDeclarationExpr [603,667]
+                VariableDeclarator [616,667]
+                    ClassOrInterfaceType [603,615]
+                        SimpleName: MediaContent [603,615]
+                    SimpleName: object [616,622]
+                    MethodCallExpr [625,667]
+                        NameExpr [625,629]
+                            SimpleName: JSON [625,629]
+                        SimpleName: parseObject [630,641]
+                        NameExpr [642,646]
+                            SimpleName: text [642,646]
+                        ClassExpr [648,666]
+                            ClassOrInterfaceType [648,660]
+                                SimpleName: MediaContent [648,660]
+        ExpressionStmt [677,760]
+            VariableDeclarationExpr [677,759]
+                VariableDeclarator [684,759]
+                    ClassOrInterfaceType [677,683]
+                        SimpleName: String [677,683]
+                    SimpleName: text2 [684,689]
+                    MethodCallExpr [692,759]
+                        NameExpr [692,696]
+                            SimpleName: JSON [692,696]
+                        SimpleName: toJSONString [697,709]
+                        NameExpr [710,716]
+                            SimpleName: object [710,716]
+                        FieldAccessExpr [718,758]
+                            NameExpr [718,735]
+                                SimpleName: SerializerFeature [718,735]
+                            SimpleName: WriteEnumUsingToString [736,758]
+        ExpressionStmt [769,795]
+            MethodCallExpr [769,794]
+                FieldAccessExpr [769,779]
+                    NameExpr [769,775]
+                        SimpleName: System [769,775]
+                    SimpleName: out [776,779]
+                SimpleName: println [780,787]
+                NameExpr [788,793]
+                    SimpleName: text2 [788,793]
+        ExpressionStmt [804,873]
+            MethodCallExpr [804,872]
+                FieldAccessExpr [804,814]
+                    NameExpr [804,810]
+                        SimpleName: System [804,810]
+                    SimpleName: out [811,814]
+                SimpleName: println [815,822]
+                MethodCallExpr [823,871]
+                    NameExpr [823,827]
+                        SimpleName: JSON [823,827]
+                    SimpleName: toJSONString [828,840]
+                    MethodCallExpr [841,864]
+                        NameExpr [841,845]
+                            SimpleName: JSON [841,845]
+                        SimpleName: parseObject [846,857]
+                        NameExpr [858,863]
+                            SimpleName: text2 [858,863]
+                    BooleanLiteralExpr: true [866,870]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 4
+===
+insert-tree
+---
+ClassOrInterfaceType [298,306]
+    SimpleName: TestCase [298,306]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 5

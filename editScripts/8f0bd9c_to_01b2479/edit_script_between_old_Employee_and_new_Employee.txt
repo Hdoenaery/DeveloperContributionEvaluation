@@ -1,0 +1,438 @@
+===
+insert-tree
+---
+PackageDeclaration [0,37]
+    Name: entity [8,36]
+        Name: test [8,29]
+            Name: json [8,24]
+                Name: alibaba [8,19]
+                    Name: com [8,11]
+to
+CompilationUnit [0,16]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [39,67]
+    Name: BigDecimal [46,66]
+        Name: math [46,55]
+            Name: java [46,50]
+to
+CompilationUnit [0,16]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [68,90]
+    Name: Date [75,89]
+        Name: util [75,84]
+            Name: java [75,79]
+to
+CompilationUnit [0,16]
+at 2
+===
+insert-node
+---
+Modifier: public [92,98]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 0
+===
+insert-tree
+---
+FieldDeclaration [121,143]
+    Modifier: private [121,128]
+    VariableDeclarator [140,142]
+        ClassOrInterfaceType [129,133]
+            SimpleName: Long [129,133]
+        SimpleName: id [140,142]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 2
+===
+insert-tree
+---
+FieldDeclaration [148,174]
+    Modifier: private [148,155]
+    VariableDeclarator [167,173]
+        ClassOrInterfaceType [156,162]
+            SimpleName: String [156,162]
+        SimpleName: number [167,173]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 3
+===
+insert-tree
+---
+FieldDeclaration [179,203]
+    Modifier: private [179,186]
+    VariableDeclarator [198,202]
+        ClassOrInterfaceType [187,193]
+            SimpleName: String [187,193]
+        SimpleName: name [198,202]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 4
+===
+insert-tree
+---
+FieldDeclaration [208,239]
+    Modifier: private [208,215]
+    VariableDeclarator [227,238]
+        ClassOrInterfaceType [216,222]
+            SimpleName: String [216,222]
+        SimpleName: description [227,238]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 5
+===
+insert-tree
+---
+FieldDeclaration [244,267]
+    Modifier: private [244,251]
+    VariableDeclarator [263,266]
+        ClassOrInterfaceType [252,259]
+            SimpleName: Integer [252,259]
+        SimpleName: age [263,266]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 6
+===
+insert-tree
+---
+FieldDeclaration [272,298]
+    Modifier: private [272,279]
+    VariableDeclarator [291,297]
+        ClassOrInterfaceType [280,290]
+            SimpleName: BigDecimal [280,290]
+        SimpleName: salary [291,297]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 7
+===
+insert-tree
+---
+FieldDeclaration [303,332]
+    Modifier: private [303,310]
+    VariableDeclarator [322,331]
+        ClassOrInterfaceType [311,315]
+            SimpleName: Date [311,315]
+        SimpleName: birthdate [322,331]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 8
+===
+insert-tree
+---
+FieldDeclaration [337,363]
+    Modifier: private [337,344]
+    VariableDeclarator [356,362]
+        PrimitiveType: boolean [345,352]
+        SimpleName: badboy [356,362]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 9
+===
+insert-tree
+---
+ConstructorDeclaration [369,394]
+    Modifier: public [369,375]
+    SimpleName: Employee [376,384]
+    BlockStmt [386,394]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 10
+===
+insert-tree
+---
+MethodDeclaration [400,456]
+    Modifier: public [400,406]
+    SimpleName: isBadboy [415,423]
+    PrimitiveType: boolean [407,414]
+    BlockStmt [426,456]
+        ReturnStmt [436,450]
+            NameExpr [443,449]
+                SimpleName: badboy [443,449]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 11
+===
+insert-tree
+---
+MethodDeclaration [462,537]
+    Modifier: public [462,468]
+    SimpleName: setBadboy [474,483]
+    Parameter [484,498]
+        PrimitiveType: boolean [484,491]
+        SimpleName: badboy [492,498]
+    VoidType [469,473]
+    BlockStmt [500,537]
+        ExpressionStmt [510,531]
+            AssignExpr [510,530]
+                FieldAccessExpr [510,521]
+                    ThisExpr [510,514]
+                    SimpleName: badboy [515,521]
+                NameExpr [524,530]
+                    SimpleName: badboy [524,530]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 12
+===
+insert-tree
+---
+MethodDeclaration [543,594]
+    Modifier: public [543,549]
+    SimpleName: getAge [558,564]
+    ClassOrInterfaceType [550,557]
+        SimpleName: Integer [550,557]
+    BlockStmt [567,594]
+        ReturnStmt [577,588]
+            NameExpr [584,587]
+                SimpleName: age [584,587]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 13
+===
+insert-tree
+---
+MethodDeclaration [600,663]
+    Modifier: public [600,606]
+    SimpleName: setAge [612,618]
+    Parameter [619,630]
+        ClassOrInterfaceType [619,626]
+            SimpleName: Integer [619,626]
+        SimpleName: age [627,630]
+    VoidType [607,611]
+    BlockStmt [632,663]
+        ExpressionStmt [642,657]
+            AssignExpr [642,656]
+                FieldAccessExpr [642,650]
+                    ThisExpr [642,646]
+                    SimpleName: age [647,650]
+                NameExpr [653,656]
+                    SimpleName: age [653,656]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 14
+===
+insert-tree
+---
+MethodDeclaration [669,715]
+    Modifier: public [669,675]
+    SimpleName: getId [681,686]
+    ClassOrInterfaceType [676,680]
+        SimpleName: Long [676,680]
+    BlockStmt [689,715]
+        ReturnStmt [699,709]
+            NameExpr [706,708]
+                SimpleName: id [706,708]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 15
+===
+insert-tree
+---
+MethodDeclaration [721,777]
+    Modifier: public [721,727]
+    SimpleName: setId [733,738]
+    Parameter [739,746]
+        ClassOrInterfaceType [739,743]
+            SimpleName: Long [739,743]
+        SimpleName: id [744,746]
+    VoidType [728,732]
+    BlockStmt [748,777]
+        ExpressionStmt [758,771]
+            AssignExpr [758,770]
+                FieldAccessExpr [758,765]
+                    ThisExpr [758,762]
+                    SimpleName: id [763,765]
+                NameExpr [768,770]
+                    SimpleName: id [768,770]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 16
+===
+insert-tree
+---
+MethodDeclaration [783,839]
+    Modifier: public [783,789]
+    SimpleName: getNumber [797,806]
+    ClassOrInterfaceType [790,796]
+        SimpleName: String [790,796]
+    BlockStmt [809,839]
+        ReturnStmt [819,833]
+            NameExpr [826,832]
+                SimpleName: number [826,832]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 17
+===
+insert-tree
+---
+MethodDeclaration [845,919]
+    Modifier: public [845,851]
+    SimpleName: setNumber [857,866]
+    Parameter [867,880]
+        ClassOrInterfaceType [867,873]
+            SimpleName: String [867,873]
+        SimpleName: number [874,880]
+    VoidType [852,856]
+    BlockStmt [882,919]
+        ExpressionStmt [892,913]
+            AssignExpr [892,912]
+                FieldAccessExpr [892,903]
+                    ThisExpr [892,896]
+                    SimpleName: number [897,903]
+                NameExpr [906,912]
+                    SimpleName: number [906,912]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 18
+===
+insert-tree
+---
+MethodDeclaration [925,977]
+    Modifier: public [925,931]
+    SimpleName: getName [939,946]
+    ClassOrInterfaceType [932,938]
+        SimpleName: String [932,938]
+    BlockStmt [949,977]
+        ReturnStmt [959,971]
+            NameExpr [966,970]
+                SimpleName: name [966,970]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 19
+===
+insert-tree
+---
+MethodDeclaration [983,1049]
+    Modifier: public [983,989]
+    SimpleName: setName [995,1002]
+    Parameter [1003,1014]
+        ClassOrInterfaceType [1003,1009]
+            SimpleName: String [1003,1009]
+        SimpleName: name [1010,1014]
+    VoidType [990,994]
+    BlockStmt [1016,1049]
+        ExpressionStmt [1026,1043]
+            AssignExpr [1026,1042]
+                FieldAccessExpr [1026,1035]
+                    ThisExpr [1026,1030]
+                    SimpleName: name [1031,1035]
+                NameExpr [1038,1042]
+                    SimpleName: name [1038,1042]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 20
+===
+insert-tree
+---
+MethodDeclaration [1055,1121]
+    Modifier: public [1055,1061]
+    SimpleName: getDescription [1069,1083]
+    ClassOrInterfaceType [1062,1068]
+        SimpleName: String [1062,1068]
+    BlockStmt [1086,1121]
+        ReturnStmt [1096,1115]
+            NameExpr [1103,1114]
+                SimpleName: description [1103,1114]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 21
+===
+insert-tree
+---
+MethodDeclaration [1127,1221]
+    Modifier: public [1127,1133]
+    SimpleName: setDescription [1139,1153]
+    Parameter [1154,1172]
+        ClassOrInterfaceType [1154,1160]
+            SimpleName: String [1154,1160]
+        SimpleName: description [1161,1172]
+    VoidType [1134,1138]
+    BlockStmt [1174,1221]
+        ExpressionStmt [1184,1215]
+            AssignExpr [1184,1214]
+                FieldAccessExpr [1184,1200]
+                    ThisExpr [1184,1188]
+                    SimpleName: description [1189,1200]
+                NameExpr [1203,1214]
+                    SimpleName: description [1203,1214]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 22
+===
+insert-tree
+---
+MethodDeclaration [1227,1287]
+    Modifier: public [1227,1233]
+    SimpleName: getSalary [1245,1254]
+    ClassOrInterfaceType [1234,1244]
+        SimpleName: BigDecimal [1234,1244]
+    BlockStmt [1257,1287]
+        ReturnStmt [1267,1281]
+            NameExpr [1274,1280]
+                SimpleName: salary [1274,1280]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 23
+===
+insert-tree
+---
+MethodDeclaration [1293,1371]
+    Modifier: public [1293,1299]
+    SimpleName: setSalary [1305,1314]
+    Parameter [1315,1332]
+        ClassOrInterfaceType [1315,1325]
+            SimpleName: BigDecimal [1315,1325]
+        SimpleName: salary [1326,1332]
+    VoidType [1300,1304]
+    BlockStmt [1334,1371]
+        ExpressionStmt [1344,1365]
+            AssignExpr [1344,1364]
+                FieldAccessExpr [1344,1355]
+                    ThisExpr [1344,1348]
+                    SimpleName: salary [1349,1355]
+                NameExpr [1358,1364]
+                    SimpleName: salary [1358,1364]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 24
+===
+insert-tree
+---
+MethodDeclaration [1377,1437]
+    Modifier: public [1377,1383]
+    SimpleName: getBirthdate [1389,1401]
+    ClassOrInterfaceType [1384,1388]
+        SimpleName: Date [1384,1388]
+    BlockStmt [1404,1437]
+        ReturnStmt [1414,1431]
+            NameExpr [1421,1430]
+                SimpleName: birthdate [1421,1430]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 25
+===
+insert-tree
+---
+MethodDeclaration [1443,1527]
+    Modifier: public [1443,1449]
+    SimpleName: setBirthdate [1455,1467]
+    Parameter [1468,1482]
+        ClassOrInterfaceType [1468,1472]
+            SimpleName: Date [1468,1472]
+        SimpleName: birthdate [1473,1482]
+    VoidType [1450,1454]
+    BlockStmt [1484,1527]
+        ExpressionStmt [1494,1521]
+            AssignExpr [1494,1520]
+                FieldAccessExpr [1494,1508]
+                    ThisExpr [1494,1498]
+                    SimpleName: birthdate [1499,1508]
+                NameExpr [1511,1520]
+                    SimpleName: birthdate [1511,1520]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 26

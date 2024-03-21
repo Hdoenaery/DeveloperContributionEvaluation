@@ -1,0 +1,406 @@
+===
+insert-tree
+---
+PackageDeclaration [0,48]
+    Name: case1 [8,47]
+        Name: performance [8,41]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,38]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [50,77]
+    Name: InputStream [57,76]
+        Name: io [57,64]
+            Name: java [57,61]
+to
+CompilationUnit [0,38]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [78,108]
+    Name: NumberFormat [85,107]
+        Name: text [85,94]
+            Name: java [85,89]
+to
+CompilationUnit [0,38]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [109,136]
+    Name: ArrayList [116,135]
+        Name: util [116,125]
+            Name: java [116,120]
+to
+CompilationUnit [0,38]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [137,159]
+    Name: List [144,158]
+        Name: util [144,153]
+            Name: java [144,148]
+to
+CompilationUnit [0,38]
+at 4
+===
+insert-tree
+---
+ImportDeclaration [161,193]
+    Name: TestCase [168,192]
+        Name: framework [168,183]
+            Name: junit [168,173]
+to
+CompilationUnit [0,38]
+at 5
+===
+insert-tree
+---
+ImportDeclaration [195,232]
+    Name: IOUtils [202,231]
+        Name: io [202,223]
+            Name: commons [202,220]
+                Name: apache [202,212]
+                    Name: org [202,205]
+to
+CompilationUnit [0,38]
+at 6
+===
+insert-tree
+---
+ImportDeclaration [234,275]
+    Name: Codec [241,274]
+        Name: codec [241,268]
+            Name: test [241,262]
+                Name: json [241,257]
+                    Name: alibaba [241,252]
+                        Name: com [241,244]
+to
+CompilationUnit [0,38]
+at 7
+===
+insert-tree
+---
+ImportDeclaration [276,325]
+    Name: FastjsonCodec [283,324]
+        Name: codec [283,310]
+            Name: test [283,304]
+                Name: json [283,299]
+                    Name: alibaba [283,294]
+                        Name: com [283,286]
+to
+CompilationUnit [0,38]
+at 8
+===
+insert-tree
+---
+ImportDeclaration [326,374]
+    Name: JacksonCodec [333,373]
+        Name: codec [333,360]
+            Name: test [333,354]
+                Name: json [333,349]
+                    Name: alibaba [333,344]
+                        Name: com [333,336]
+to
+CompilationUnit [0,38]
+at 9
+===
+insert-tree
+---
+ImportDeclaration [375,439]
+    Name: LongObject_100_Entity [382,438]
+        Name: case1 [382,416]
+            Name: entity [382,410]
+                Name: test [382,403]
+                    Name: json [382,398]
+                        Name: alibaba [382,393]
+                            Name: com [382,385]
+to
+CompilationUnit [0,38]
+at 10
+===
+insert-node
+---
+Modifier: public [441,447]
+to
+ClassOrInterfaceDeclaration [0,38]
+at 0
+===
+insert-tree
+---
+FieldDeclaration [509,532]
+    Modifier: private [509,516]
+    VariableDeclarator [527,531]
+        ClassOrInterfaceType [517,523]
+            SimpleName: String [517,523]
+        SimpleName: text [527,531]
+to
+ClassOrInterfaceDeclaration [0,38]
+at 2
+===
+insert-tree
+---
+FieldDeclaration [537,574]
+    Modifier: private [537,544]
+    Modifier: final [545,550]
+    VariableDeclarator [555,573]
+        PrimitiveType: int [551,554]
+        SimpleName: COUNT [555,560]
+        BinaryExpr [563,573]
+            IntegerLiteralExpr: 1000 [563,567]
+            IntegerLiteralExpr: 100 [570,573]
+to
+ClassOrInterfaceDeclaration [0,38]
+at 3
+===
+insert-tree
+---
+MethodDeclaration [580,844]
+    Modifier: protected [580,589]
+    SimpleName: setUp [595,600]
+    ClassOrInterfaceType [610,619]
+        SimpleName: Exception [610,619]
+    VoidType [590,594]
+    BlockStmt [620,844]
+        ExpressionStmt [630,678]
+            VariableDeclarationExpr [630,677]
+                VariableDeclarator [637,677]
+                    ClassOrInterfaceType [630,636]
+                        SimpleName: String [630,636]
+                    SimpleName: resource [637,645]
+                    StringLiteralExpr: json/object_f_int_1000.json [648,677]
+        ExpressionStmt [687,781]
+            VariableDeclarationExpr [687,780]
+                VariableDeclarator [699,780]
+                    ClassOrInterfaceType [687,698]
+                        SimpleName: InputStream [687,698]
+                    SimpleName: is [699,701]
+                    MethodCallExpr [704,780]
+                        MethodCallExpr [704,750]
+                            MethodCallExpr [704,726]
+                                NameExpr [704,710]
+                                    SimpleName: Thread [704,710]
+                                SimpleName: currentThread [711,724]
+                            SimpleName: getContextClassLoader [727,748]
+                        SimpleName: getResourceAsStream [751,770]
+                        NameExpr [771,779]
+                            SimpleName: resource [771,779]
+        ExpressionStmt [790,818]
+            AssignExpr [790,817]
+                NameExpr [790,794]
+                    SimpleName: text [790,794]
+                MethodCallExpr [797,817]
+                    NameExpr [797,804]
+                        SimpleName: IOUtils [797,804]
+                    SimpleName: toString [805,813]
+                    NameExpr [814,816]
+                        SimpleName: is [814,816]
+        ExpressionStmt [827,838]
+            MethodCallExpr [827,837]
+                NameExpr [827,829]
+                    SimpleName: is [827,829]
+                SimpleName: close [830,835]
+to
+ClassOrInterfaceDeclaration [0,38]
+at 4
+===
+insert-tree
+---
+MethodDeclaration [850,1302]
+    Modifier: public [850,856]
+    SimpleName: test_decodeObject [862,879]
+    ClassOrInterfaceType [889,898]
+        SimpleName: Exception [889,898]
+    VoidType [857,861]
+    BlockStmt [899,1302]
+        ExpressionStmt [909,955]
+            VariableDeclarationExpr [909,954]
+                VariableDeclarator [921,954]
+                    ClassOrInterfaceType [909,920]
+                        SimpleName: List [909,913]
+                        ClassOrInterfaceType [914,919]
+                            SimpleName: Codec [914,919]
+                    SimpleName: decoders [921,929]
+                    ObjectCreationExpr [932,954]
+                        ClassOrInterfaceType [936,952]
+                            SimpleName: ArrayList [936,945]
+                            ClassOrInterfaceType [946,951]
+                                SimpleName: Codec [946,951]
+        ExpressionStmt [964,998]
+            MethodCallExpr [964,997]
+                NameExpr [964,972]
+                    SimpleName: decoders [964,972]
+                SimpleName: add [973,976]
+                ObjectCreationExpr [977,996]
+                    ClassOrInterfaceType [981,994]
+                        SimpleName: FastjsonCodec [981,994]
+        ExpressionStmt [1007,1040]
+            MethodCallExpr [1007,1039]
+                NameExpr [1007,1015]
+                    SimpleName: decoders [1007,1015]
+                SimpleName: add [1016,1019]
+                ObjectCreationExpr [1020,1038]
+                    ClassOrInterfaceType [1024,1036]
+                        SimpleName: JacksonCodec [1024,1036]
+        ForStmt [1050,1232]
+            VariableDeclarationExpr [1055,1064]
+                VariableDeclarator [1059,1064]
+                    PrimitiveType: int [1055,1058]
+                    SimpleName: i [1059,1060]
+                    IntegerLiteralExpr: 0 [1063,1064]
+            BinaryExpr [1066,1072]
+                NameExpr [1066,1067]
+                    SimpleName: i [1066,1067]
+                IntegerLiteralExpr: 10 [1070,1072]
+            UnaryExpr [1074,1077]
+                NameExpr [1076,1077]
+                    SimpleName: i [1076,1077]
+            BlockStmt [1079,1232]
+                ForEachStmt [1093,1188]
+                    VariableDeclarationExpr [1098,1111]
+                        VariableDeclarator [1104,1111]
+                            ClassOrInterfaceType [1098,1103]
+                                SimpleName: Codec [1098,1103]
+                            SimpleName: decoder [1104,1111]
+                    NameExpr [1114,1122]
+                        SimpleName: decoders [1114,1122]
+                    BlockStmt [1124,1188]
+                        ExpressionStmt [1142,1174]
+                            MethodCallExpr [1142,1173]
+                                SimpleName: decodeToJavaBean [1142,1158]
+                                NameExpr [1159,1163]
+                                    SimpleName: text [1159,1163]
+                                NameExpr [1165,1172]
+                                    SimpleName: decoder [1165,1172]
+                ExpressionStmt [1201,1222]
+                    MethodCallExpr [1201,1221]
+                        FieldAccessExpr [1201,1211]
+                            NameExpr [1201,1207]
+                                SimpleName: System [1201,1207]
+                            SimpleName: out [1208,1211]
+                        SimpleName: println [1212,1219]
+        ExpressionStmt [1241,1262]
+            MethodCallExpr [1241,1261]
+                FieldAccessExpr [1241,1251]
+                    NameExpr [1241,1247]
+                        SimpleName: System [1241,1247]
+                    SimpleName: out [1248,1251]
+                SimpleName: println [1252,1259]
+        ExpressionStmt [1271,1296]
+            MethodCallExpr [1271,1295]
+                FieldAccessExpr [1271,1281]
+                    NameExpr [1271,1277]
+                        SimpleName: System [1271,1277]
+                    SimpleName: out [1278,1281]
+                SimpleName: println [1282,1289]
+                NameExpr [1290,1294]
+                    SimpleName: text [1290,1294]
+to
+ClassOrInterfaceDeclaration [0,38]
+at 5
+===
+insert-tree
+---
+MethodDeclaration [1308,1741]
+    Modifier: public [1308,1314]
+    SimpleName: decodeToJavaBean [1320,1336]
+    Parameter [1337,1348]
+        ClassOrInterfaceType [1337,1343]
+            SimpleName: String [1337,1343]
+        SimpleName: text [1344,1348]
+    Parameter [1350,1363]
+        ClassOrInterfaceType [1350,1355]
+            SimpleName: Codec [1350,1355]
+        SimpleName: decoder [1356,1363]
+    ClassOrInterfaceType [1372,1381]
+        SimpleName: Exception [1372,1381]
+    VoidType [1315,1319]
+    BlockStmt [1382,1741]
+        ExpressionStmt [1392,1427]
+            VariableDeclarationExpr [1392,1426]
+                VariableDeclarator [1397,1426]
+                    PrimitiveType: long [1392,1396]
+                    SimpleName: startNano [1397,1406]
+                    MethodCallExpr [1409,1426]
+                        NameExpr [1409,1415]
+                            SimpleName: System [1409,1415]
+                        SimpleName: nanoTime [1416,1424]
+        ForStmt [1436,1585]
+            VariableDeclarationExpr [1441,1450]
+                VariableDeclarator [1445,1450]
+                    PrimitiveType: int [1441,1444]
+                    SimpleName: i [1445,1446]
+                    IntegerLiteralExpr: 0 [1449,1450]
+            BinaryExpr [1452,1461]
+                NameExpr [1452,1453]
+                    SimpleName: i [1452,1453]
+                NameExpr [1456,1461]
+                    SimpleName: COUNT [1456,1461]
+            UnaryExpr [1463,1466]
+                NameExpr [1465,1466]
+                    SimpleName: i [1465,1466]
+            BlockStmt [1468,1585]
+                ExpressionStmt [1482,1538]
+                    MethodCallExpr [1482,1537]
+                        NameExpr [1482,1489]
+                            SimpleName: decoder [1482,1489]
+                        SimpleName: decodeObject [1490,1502]
+                        NameExpr [1503,1507]
+                            SimpleName: text [1503,1507]
+                        ClassExpr [1509,1536]
+                            ClassOrInterfaceType [1509,1530]
+                                SimpleName: LongObject_100_Entity [1509,1530]
+                LineComment [1551,1575]
+        ExpressionStmt [1594,1636]
+            VariableDeclarationExpr [1594,1635]
+                VariableDeclarator [1599,1635]
+                    PrimitiveType: long [1594,1598]
+                    SimpleName: nano [1599,1603]
+                    BinaryExpr [1606,1635]
+                        MethodCallExpr [1606,1623]
+                            NameExpr [1606,1612]
+                                SimpleName: System [1606,1612]
+                            SimpleName: nanoTime [1613,1621]
+                        NameExpr [1626,1635]
+                            SimpleName: startNano [1626,1635]
+        ExpressionStmt [1645,1735]
+            MethodCallExpr [1645,1734]
+                FieldAccessExpr [1645,1655]
+                    NameExpr [1645,1651]
+                        SimpleName: System [1645,1651]
+                    SimpleName: out [1652,1655]
+                SimpleName: println [1656,1663]
+                BinaryExpr [1664,1733]
+                    BinaryExpr [1664,1691]
+                        MethodCallExpr [1664,1681]
+                            NameExpr [1664,1671]
+                                SimpleName: decoder [1664,1671]
+                            SimpleName: getName [1672,1679]
+                        StringLiteralExpr:  : 	 [1684,1691]
+                    MethodCallExpr [1694,1733]
+                        MethodCallExpr [1694,1720]
+                            NameExpr [1694,1706]
+                                SimpleName: NumberFormat [1694,1706]
+                            SimpleName: getInstance [1707,1718]
+                        SimpleName: format [1721,1727]
+                        NameExpr [1728,1732]
+                            SimpleName: nano [1728,1732]
+to
+ClassOrInterfaceDeclaration [0,38]
+at 6
+===
+insert-tree
+---
+ClassOrInterfaceType [493,501]
+    SimpleName: TestCase [493,501]
+to
+ClassOrInterfaceDeclaration [0,38]
+at 7

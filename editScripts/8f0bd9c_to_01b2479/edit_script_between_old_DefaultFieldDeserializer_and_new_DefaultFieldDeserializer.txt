@@ -1,0 +1,202 @@
+===
+insert-tree
+---
+PackageDeclaration [0,49]
+    Name: deserializer [8,48]
+        Name: parser [8,35]
+            Name: fastjson [8,28]
+                Name: alibaba [8,19]
+                    Name: com [8,11]
+to
+CompilationUnit [0,32]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [51,107]
+    Name: DefaultExtJSONParser [58,106]
+        Name: parser [58,85]
+            Name: fastjson [58,78]
+                Name: alibaba [58,69]
+                    Name: com [58,61]
+to
+CompilationUnit [0,32]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [108,153]
+    Name: JSONToken [115,152]
+        Name: parser [115,142]
+            Name: fastjson [115,135]
+                Name: alibaba [115,126]
+                    Name: com [115,118]
+to
+CompilationUnit [0,32]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [154,202]
+    Name: ParserConfig [161,201]
+        Name: parser [161,188]
+            Name: fastjson [161,181]
+                Name: alibaba [161,172]
+                    Name: com [161,164]
+to
+CompilationUnit [0,32]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [203,246]
+    Name: FieldInfo [210,245]
+        Name: util [210,235]
+            Name: fastjson [210,230]
+                Name: alibaba [210,221]
+                    Name: com [210,213]
+to
+CompilationUnit [0,32]
+at 4
+===
+insert-node
+---
+Modifier: public [248,254]
+to
+ClassOrInterfaceDeclaration [0,32]
+at 0
+===
+insert-tree
+---
+FieldDeclaration [319,368]
+    Modifier: private [319,326]
+    VariableDeclarator [346,367]
+        ClassOrInterfaceType [327,345]
+            SimpleName: ObjectDeserializer [327,345]
+        SimpleName: fieldValueDeserilizer [346,367]
+to
+ClassOrInterfaceDeclaration [0,32]
+at 2
+===
+insert-tree
+---
+ConstructorDeclaration [374,504]
+    Modifier: public [374,380]
+    SimpleName: DefaultFieldDeserializer [381,405]
+    Parameter [406,426]
+        ClassOrInterfaceType [406,418]
+            SimpleName: ParserConfig [406,418]
+        SimpleName: mapping [419,426]
+    Parameter [428,442]
+        ClassOrInterfaceType [428,436]
+            SimpleName: Class [428,433]
+            WildcardType [434,435]
+        SimpleName: clazz [437,442]
+    Parameter [444,463]
+        ClassOrInterfaceType [444,453]
+            SimpleName: FieldInfo [444,453]
+        SimpleName: fieldInfo [454,463]
+    BlockStmt [464,504]
+        ExplicitConstructorInvocationStmt [474,498]
+            NameExpr [480,485]
+                SimpleName: clazz [480,485]
+            NameExpr [487,496]
+                SimpleName: fieldInfo [487,496]
+to
+ClassOrInterfaceDeclaration [0,32]
+at 3
+===
+insert-tree
+---
+MethodDeclaration [510,851]
+    MarkerAnnotationExpr [510,519]
+        Name: Override [511,519]
+    Modifier: public [524,530]
+    SimpleName: parseField [536,546]
+    Parameter [547,574]
+        ClassOrInterfaceType [547,567]
+            SimpleName: DefaultExtJSONParser [547,567]
+        SimpleName: parser [568,574]
+    Parameter [576,589]
+        ClassOrInterfaceType [576,582]
+            SimpleName: Object [576,582]
+        SimpleName: object [583,589]
+    VoidType [531,535]
+    BlockStmt [591,851]
+        IfStmt [601,730]
+            BinaryExpr [605,634]
+                NameExpr [605,626]
+                    SimpleName: fieldValueDeserilizer [605,626]
+                NullLiteralExpr [630,634]
+            BlockStmt [636,730]
+                ExpressionStmt [650,720]
+                    AssignExpr [650,719]
+                        NameExpr [650,671]
+                            SimpleName: fieldValueDeserilizer [650,671]
+                        MethodCallExpr [674,719]
+                            MethodCallExpr [674,692]
+                                NameExpr [674,680]
+                                    SimpleName: parser [674,680]
+                                SimpleName: getConfig [681,690]
+                            SimpleName: getDeserializer [693,708]
+                            NameExpr [709,718]
+                                SimpleName: fieldInfo [709,718]
+        ExpressionStmt [740,812]
+            VariableDeclarationExpr [740,811]
+                VariableDeclarator [747,811]
+                    ClassOrInterfaceType [740,746]
+                        SimpleName: Object [740,746]
+                    SimpleName: value [747,752]
+                    MethodCallExpr [755,811]
+                        NameExpr [755,776]
+                            SimpleName: fieldValueDeserilizer [755,776]
+                        SimpleName: deserialze [777,787]
+                        NameExpr [788,794]
+                            SimpleName: parser [788,794]
+                        MethodCallExpr [796,810]
+                            SimpleName: getFieldType [796,808]
+        ExpressionStmt [821,845]
+            MethodCallExpr [821,844]
+                SimpleName: setValue [821,829]
+                NameExpr [830,836]
+                    SimpleName: object [830,836]
+                NameExpr [838,843]
+                    SimpleName: value [838,843]
+to
+ClassOrInterfaceDeclaration [0,32]
+at 4
+===
+insert-tree
+---
+MethodDeclaration [857,1063]
+    Modifier: public [857,863]
+    SimpleName: getFastMatchToken [868,885]
+    PrimitiveType: int [864,867]
+    BlockStmt [888,1063]
+        IfStmt [898,1010]
+            BinaryExpr [902,931]
+                NameExpr [902,923]
+                    SimpleName: fieldValueDeserilizer [902,923]
+                NullLiteralExpr [927,931]
+            BlockStmt [933,1010]
+                ReturnStmt [947,996]
+                    MethodCallExpr [954,995]
+                        NameExpr [954,975]
+                            SimpleName: fieldValueDeserilizer [954,975]
+                        SimpleName: getFastMatchToken [976,993]
+        ReturnStmt [1028,1057]
+            FieldAccessExpr [1035,1056]
+                NameExpr [1035,1044]
+                    SimpleName: JSONToken [1035,1044]
+                SimpleName: LITERAL_INT [1045,1056]
+to
+ClassOrInterfaceDeclaration [0,32]
+at 5
+===
+insert-tree
+---
+ClassOrInterfaceType [294,311]
+    SimpleName: FieldDeserializer [294,311]
+to
+ClassOrInterfaceDeclaration [0,32]
+at 6

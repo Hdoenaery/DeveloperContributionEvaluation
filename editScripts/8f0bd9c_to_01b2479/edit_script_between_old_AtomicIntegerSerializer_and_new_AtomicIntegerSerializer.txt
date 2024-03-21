@@ -1,0 +1,116 @@
+===
+insert-tree
+---
+PackageDeclaration [604,644]
+    Name: serializer [612,643]
+        Name: fastjson [612,632]
+            Name: alibaba [612,623]
+                Name: com [612,615]
+to
+CompilationUnit [0,31]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [646,673]
+    Name: IOException [653,672]
+        Name: io [653,660]
+            Name: java [653,657]
+to
+CompilationUnit [0,31]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [674,723]
+    Name: AtomicInteger [681,722]
+        Name: atomic [681,708]
+            Name: concurrent [681,701]
+                Name: util [681,690]
+                    Name: java [681,685]
+to
+CompilationUnit [0,31]
+at 2
+===
+insert-node
+---
+Modifier: public [773,779]
+to
+ClassOrInterfaceDeclaration [0,31]
+at 0
+===
+insert-tree
+---
+FieldDeclaration [845,930]
+    Modifier: public [845,851]
+    Modifier: final [852,857]
+    Modifier: static [858,864]
+    VariableDeclarator [889,929]
+        ClassOrInterfaceType [865,888]
+            SimpleName: AtomicIntegerSerializer [865,888]
+        SimpleName: instance [889,897]
+        ObjectCreationExpr [900,929]
+            ClassOrInterfaceType [904,927]
+                SimpleName: AtomicIntegerSerializer [904,927]
+to
+ClassOrInterfaceDeclaration [0,31]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [936,1162]
+    Modifier: public [936,942]
+    SimpleName: write [948,953]
+    Parameter [954,979]
+        ClassOrInterfaceType [954,968]
+            SimpleName: JSONSerializer [954,968]
+        SimpleName: serializer [969,979]
+    Parameter [981,994]
+        ClassOrInterfaceType [981,987]
+            SimpleName: Object [981,987]
+        SimpleName: object [988,994]
+    ClassOrInterfaceType [1003,1014]
+        SimpleName: IOException [1003,1014]
+    VoidType [943,947]
+    BlockStmt [1015,1162]
+        ExpressionStmt [1025,1070]
+            VariableDeclarationExpr [1025,1069]
+                VariableDeclarator [1041,1069]
+                    ClassOrInterfaceType [1025,1040]
+                        SimpleName: SerializeWriter [1025,1040]
+                    SimpleName: out [1041,1044]
+                    MethodCallExpr [1047,1069]
+                        NameExpr [1047,1057]
+                            SimpleName: serializer [1047,1057]
+                        SimpleName: getWriter [1058,1067]
+        ExpressionStmt [1080,1123]
+            VariableDeclarationExpr [1080,1122]
+                VariableDeclarator [1094,1122]
+                    ClassOrInterfaceType [1080,1093]
+                        SimpleName: AtomicInteger [1080,1093]
+                    SimpleName: val [1094,1097]
+                    CastExpr [1100,1122]
+                        ClassOrInterfaceType [1101,1114]
+                            SimpleName: AtomicInteger [1101,1114]
+                        NameExpr [1116,1122]
+                            SimpleName: object [1116,1122]
+        ExpressionStmt [1132,1156]
+            MethodCallExpr [1132,1155]
+                NameExpr [1132,1135]
+                    SimpleName: out [1132,1135]
+                SimpleName: writeInt [1136,1144]
+                MethodCallExpr [1145,1154]
+                    NameExpr [1145,1148]
+                        SimpleName: val [1145,1148]
+                    SimpleName: get [1149,1152]
+to
+ClassOrInterfaceDeclaration [0,31]
+at 3
+===
+insert-tree
+---
+ClassOrInterfaceType [821,837]
+    SimpleName: ObjectSerializer [821,837]
+to
+ClassOrInterfaceDeclaration [0,31]
+at 4

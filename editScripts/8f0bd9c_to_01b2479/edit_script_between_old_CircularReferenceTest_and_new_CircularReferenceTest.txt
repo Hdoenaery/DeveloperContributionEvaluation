@@ -1,0 +1,170 @@
+===
+insert-tree
+---
+PackageDeclaration [0,34]
+    Name: bvt [8,33]
+        Name: test [8,29]
+            Name: json [8,24]
+                Name: alibaba [8,19]
+                    Name: com [8,11]
+to
+CompilationUnit [0,29]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [36,73]
+    Name: ByteArrayOutputStream [43,72]
+        Name: io [43,50]
+            Name: java [43,47]
+to
+CompilationUnit [0,29]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [74,108]
+    Name: ObjectOutputStream [81,107]
+        Name: io [81,88]
+            Name: java [81,85]
+to
+CompilationUnit [0,29]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [110,142]
+    Name: TestCase [117,141]
+        Name: framework [117,132]
+            Name: junit [117,122]
+to
+CompilationUnit [0,29]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [144,195]
+    Name: Category [151,194]
+        Name: case2 [151,185]
+            Name: entity [151,179]
+                Name: test [151,172]
+                    Name: json [151,167]
+                        Name: alibaba [151,162]
+                            Name: com [151,154]
+to
+CompilationUnit [0,29]
+at 4
+===
+insert-node
+---
+Modifier: public [197,203]
+to
+ClassOrInterfaceDeclaration [0,29]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [256,754]
+    Modifier: public [256,262]
+    SimpleName: test_0 [268,274]
+    ClassOrInterfaceType [284,293]
+        SimpleName: Exception [284,293]
+    VoidType [263,267]
+    BlockStmt [294,754]
+        ExpressionStmt [304,360]
+            VariableDeclarationExpr [304,359]
+                VariableDeclarator [326,359]
+                    ClassOrInterfaceType [304,325]
+                        SimpleName: ByteArrayOutputStream [304,325]
+                    SimpleName: out [326,329]
+                    ObjectCreationExpr [332,359]
+                        ClassOrInterfaceType [336,357]
+                            SimpleName: ByteArrayOutputStream [336,357]
+        ExpressionStmt [369,428]
+            VariableDeclarationExpr [369,427]
+                VariableDeclarator [388,427]
+                    ClassOrInterfaceType [369,387]
+                        SimpleName: ObjectOutputStream [369,387]
+                    SimpleName: objectOut [388,397]
+                    ObjectCreationExpr [400,427]
+                        ClassOrInterfaceType [404,422]
+                            SimpleName: ObjectOutputStream [404,422]
+                        NameExpr [423,426]
+                            SimpleName: out [423,426]
+        ExpressionStmt [438,466]
+            VariableDeclarationExpr [438,465]
+                VariableDeclarator [447,465]
+                    ClassOrInterfaceType [438,446]
+                        SimpleName: Category [438,446]
+                    SimpleName: p [447,448]
+                    ObjectCreationExpr [451,465]
+                        ClassOrInterfaceType [455,463]
+                            SimpleName: Category [455,463]
+        ExpressionStmt [475,486]
+            MethodCallExpr [475,485]
+                NameExpr [475,476]
+                    SimpleName: p [475,476]
+                SimpleName: setId [477,482]
+                IntegerLiteralExpr: 1 [483,484]
+        ExpressionStmt [495,513]
+            MethodCallExpr [495,512]
+                NameExpr [495,496]
+                    SimpleName: p [495,496]
+                SimpleName: setName [497,504]
+                StringLiteralExpr: root [505,511]
+        BlockStmt [522,714]
+            ExpressionStmt [536,568]
+                VariableDeclarationExpr [536,567]
+                    VariableDeclarator [545,567]
+                        ClassOrInterfaceType [536,544]
+                            SimpleName: Category [536,544]
+                        SimpleName: child [545,550]
+                        ObjectCreationExpr [553,567]
+                            ClassOrInterfaceType [557,565]
+                                SimpleName: Category [557,565]
+            ExpressionStmt [581,596]
+                MethodCallExpr [581,595]
+                    NameExpr [581,586]
+                        SimpleName: child [581,586]
+                    SimpleName: setId [587,592]
+                    IntegerLiteralExpr: 2 [593,594]
+            ExpressionStmt [609,632]
+                MethodCallExpr [609,631]
+                    NameExpr [609,614]
+                        SimpleName: child [609,614]
+                    SimpleName: setName [615,622]
+                    StringLiteralExpr: child [623,630]
+            ExpressionStmt [645,672]
+                MethodCallExpr [645,671]
+                    MethodCallExpr [645,660]
+                        NameExpr [645,646]
+                            SimpleName: p [645,646]
+                        SimpleName: getChildren [647,658]
+                    SimpleName: add [661,664]
+                    NameExpr [665,670]
+                        SimpleName: child [665,670]
+            ExpressionStmt [685,704]
+                MethodCallExpr [685,703]
+                    NameExpr [685,690]
+                        SimpleName: child [685,690]
+                    SimpleName: setParent [691,700]
+                    NameExpr [701,702]
+                        SimpleName: p [701,702]
+        ExpressionStmt [723,748]
+            MethodCallExpr [723,747]
+                NameExpr [723,732]
+                    SimpleName: objectOut [723,732]
+                SimpleName: writeObject [733,744]
+                NameExpr [745,746]
+                    SimpleName: p [745,746]
+to
+ClassOrInterfaceDeclaration [0,29]
+at 2
+===
+insert-tree
+---
+ClassOrInterfaceType [240,248]
+    SimpleName: TestCase [240,248]
+to
+ClassOrInterfaceDeclaration [0,29]
+at 3

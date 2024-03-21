@@ -1,0 +1,122 @@
+===
+insert-tree
+---
+PackageDeclaration [0,40]
+    Name: serializer [8,39]
+        Name: fastjson [8,28]
+            Name: alibaba [8,19]
+                Name: com [8,11]
+to
+CompilationUnit [0,28]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [42,69]
+    Name: IOException [49,68]
+        Name: io [49,56]
+            Name: java [49,53]
+to
+CompilationUnit [0,28]
+at 1
+===
+insert-node
+---
+Modifier: public [71,77]
+to
+ClassOrInterfaceDeclaration [0,28]
+at 0
+===
+insert-tree
+---
+FieldDeclaration [140,219]
+    Modifier: public [140,146]
+    Modifier: final [147,152]
+    Modifier: static [153,159]
+    VariableDeclarator [181,218]
+        ClassOrInterfaceType [160,180]
+            SimpleName: AppendableSerializer [160,180]
+        SimpleName: instance [181,189]
+        ObjectCreationExpr [192,218]
+            ClassOrInterfaceType [196,216]
+                SimpleName: AppendableSerializer [196,216]
+to
+ClassOrInterfaceDeclaration [0,28]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [225,655]
+    Modifier: public [225,231]
+    SimpleName: write [237,242]
+    Parameter [243,268]
+        ClassOrInterfaceType [243,257]
+            SimpleName: JSONSerializer [243,257]
+        SimpleName: serializer [258,268]
+    Parameter [270,283]
+        ClassOrInterfaceType [270,276]
+            SimpleName: Object [270,276]
+        SimpleName: object [277,283]
+    ClassOrInterfaceType [292,303]
+        SimpleName: IOException [292,303]
+    VoidType [232,236]
+    BlockStmt [304,655]
+        IfStmt [314,603]
+            BinaryExpr [318,332]
+                NameExpr [318,324]
+                    SimpleName: object [318,324]
+                NullLiteralExpr [328,332]
+            BlockStmt [334,603]
+                ExpressionStmt [348,393]
+                    VariableDeclarationExpr [348,392]
+                        VariableDeclarator [364,392]
+                            ClassOrInterfaceType [348,363]
+                                SimpleName: SerializeWriter [348,363]
+                            SimpleName: out [364,367]
+                            MethodCallExpr [370,392]
+                                NameExpr [370,380]
+                                    SimpleName: serializer [370,380]
+                                SimpleName: getWriter [381,390]
+                IfStmt [406,573]
+                    MethodCallExpr [410,465]
+                        NameExpr [410,413]
+                            SimpleName: out [410,413]
+                        SimpleName: isEnabled [414,423]
+                        FieldAccessExpr [424,464]
+                            NameExpr [424,441]
+                                SimpleName: SerializerFeature [424,441]
+                            SimpleName: WriteNullStringAsEmpty [442,464]
+                    BlockStmt [467,519]
+                        ExpressionStmt [485,505]
+                            MethodCallExpr [485,504]
+                                NameExpr [485,488]
+                                    SimpleName: out [485,488]
+                                SimpleName: writeString [489,500]
+                                StringLiteralExpr [501,503]
+                    BlockStmt [525,573]
+                        ExpressionStmt [543,559]
+                            MethodCallExpr [543,558]
+                                NameExpr [543,546]
+                                    SimpleName: out [543,546]
+                                SimpleName: writeNull [547,556]
+                ReturnStmt [586,593]
+        ExpressionStmt [613,649]
+            MethodCallExpr [613,648]
+                NameExpr [613,623]
+                    SimpleName: serializer [613,623]
+                SimpleName: write [624,629]
+                MethodCallExpr [630,647]
+                    NameExpr [630,636]
+                        SimpleName: object [630,636]
+                    SimpleName: toString [637,645]
+to
+ClassOrInterfaceDeclaration [0,28]
+at 3
+===
+insert-tree
+---
+ClassOrInterfaceType [116,132]
+    SimpleName: ObjectSerializer [116,132]
+to
+ClassOrInterfaceDeclaration [0,28]
+at 4

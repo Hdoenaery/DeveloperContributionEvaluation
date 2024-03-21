@@ -1,0 +1,153 @@
+===
+insert-tree
+---
+PackageDeclaration [0,41]
+    Name: parser [8,40]
+        Name: bvt [8,33]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,23]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [43,73]
+    Name: Assert [50,72]
+        Name: framework [50,65]
+            Name: junit [50,55]
+to
+CompilationUnit [0,23]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [74,106]
+    Name: TestCase [81,105]
+        Name: framework [81,96]
+            Name: junit [81,86]
+to
+CompilationUnit [0,23]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [108,155]
+    Name: SymbolTable [115,154]
+        Name: parser [115,142]
+            Name: fastjson [115,135]
+                Name: alibaba [115,126]
+                    Name: com [115,118]
+to
+CompilationUnit [0,23]
+at 3
+===
+insert-node
+---
+Modifier: public [157,163]
+to
+ClassOrInterfaceDeclaration [0,23]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [210,364]
+    Modifier: public [210,216]
+    SimpleName: test_0 [222,228]
+    ClassOrInterfaceType [238,247]
+        SimpleName: Exception [238,247]
+    VoidType [217,221]
+    BlockStmt [248,364]
+        ExpressionStmt [258,296]
+            VariableDeclarationExpr [258,295]
+                VariableDeclarator [270,295]
+                    ClassOrInterfaceType [258,269]
+                        SimpleName: SymbolTable [258,269]
+                    SimpleName: table [270,275]
+                    ObjectCreationExpr [278,295]
+                        ClassOrInterfaceType [282,293]
+                            SimpleName: SymbolTable [282,293]
+        ExpressionStmt [305,358]
+            MethodCallExpr [305,357]
+                NameExpr [305,311]
+                    SimpleName: Assert [305,311]
+                SimpleName: assertEquals [312,324]
+                StringLiteralExpr: true [325,331]
+                MethodCallExpr [333,356]
+                    NameExpr [333,338]
+                        SimpleName: table [333,338]
+                    SimpleName: addSymbol [339,348]
+                    StringLiteralExpr: true [349,355]
+to
+ClassOrInterfaceDeclaration [0,23]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [371,649]
+    Modifier: public [371,377]
+    SimpleName: test_dup [383,391]
+    ClassOrInterfaceType [401,410]
+        SimpleName: Exception [401,410]
+    VoidType [378,382]
+    BlockStmt [411,649]
+        ExpressionStmt [421,482]
+            VariableDeclarationExpr [421,481]
+                VariableDeclarator [430,481]
+                    ArrayType [421,429]
+                        ClassOrInterfaceType [421,427]
+                            SimpleName: String [421,427]
+                    SimpleName: array [430,435]
+                    ArrayCreationExpr [438,481]
+                        ClassOrInterfaceType [442,448]
+                            SimpleName: String [442,448]
+                        ArrayCreationLevel [448,450]
+                        ArrayInitializerExpr [451,481]
+                            StringLiteralExpr: uIX [453,458]
+                            StringLiteralExpr: thX [460,465]
+                            StringLiteralExpr: uHw [467,472]
+                            StringLiteralExpr: tgw [474,479]
+        ExpressionStmt [491,529]
+            VariableDeclarationExpr [491,528]
+                VariableDeclarator [503,528]
+                    ClassOrInterfaceType [491,502]
+                        SimpleName: SymbolTable [491,502]
+                    SimpleName: table [503,508]
+                    ObjectCreationExpr [511,528]
+                        ClassOrInterfaceType [515,526]
+                            SimpleName: SymbolTable [515,526]
+        ForEachStmt [538,643]
+            VariableDeclarationExpr [543,556]
+                VariableDeclarator [550,556]
+                    ClassOrInterfaceType [543,549]
+                        SimpleName: String [543,549]
+                    SimpleName: symbol [550,556]
+            NameExpr [559,564]
+                SimpleName: array [559,564]
+            BlockStmt [566,643]
+                ExpressionStmt [580,633]
+                    MethodCallExpr [580,632]
+                        NameExpr [580,586]
+                            SimpleName: Assert [580,586]
+                        SimpleName: assertEquals [587,599]
+                        NameExpr [600,606]
+                            SimpleName: symbol [600,606]
+                        MethodCallExpr [608,631]
+                            NameExpr [608,613]
+                                SimpleName: table [608,613]
+                            SimpleName: addSymbol [614,623]
+                            NameExpr [624,630]
+                                SimpleName: symbol [624,630]
+to
+ClassOrInterfaceDeclaration [0,23]
+at 3
+===
+insert-tree
+---
+ClassOrInterfaceType [194,202]
+    SimpleName: TestCase [194,202]
+to
+ClassOrInterfaceDeclaration [0,23]
+at 4

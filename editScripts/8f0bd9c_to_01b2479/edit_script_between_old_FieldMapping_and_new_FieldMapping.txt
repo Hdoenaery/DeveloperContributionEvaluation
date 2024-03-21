@@ -1,0 +1,574 @@
+===
+insert-tree
+---
+PackageDeclaration [0,19]
+    Name: media [8,18]
+        Name: data [8,12]
+to
+CompilationUnit [0,20]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [21,46]
+    Name: HashMap [28,45]
+        Name: util [28,37]
+            Name: java [28,32]
+to
+CompilationUnit [0,20]
+at 1
+===
+insert-node
+---
+Modifier: public [48,54]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 0
+===
+insert-node
+---
+Modifier: final [55,60]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 1
+===
+insert-tree
+---
+FieldDeclaration [83,126]
+    Modifier: public [83,89]
+    Modifier: final [90,95]
+    Modifier: static [96,102]
+    VariableDeclarator [107,125]
+        PrimitiveType: int [103,106]
+        SimpleName: FIELD_IX_MEDIA [107,121]
+        IntegerLiteralExpr: 1 [124,125]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 3
+===
+insert-tree
+---
+FieldDeclaration [128,187]
+    Modifier: public [128,134]
+    Modifier: final [135,140]
+    Modifier: static [141,147]
+    VariableDeclarator [155,186]
+        ClassOrInterfaceType [148,154]
+            SimpleName: String [148,154]
+        SimpleName: FULL_FIELD_NAME_MEDIA [155,176]
+        StringLiteralExpr: media [179,186]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 4
+===
+insert-tree
+---
+FieldDeclaration [189,233]
+    Modifier: public [189,195]
+    Modifier: final [196,201]
+    Modifier: static [202,208]
+    VariableDeclarator [213,232]
+        PrimitiveType: int [209,212]
+        SimpleName: FIELD_IX_IMAGES [213,228]
+        IntegerLiteralExpr: 2 [231,232]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 5
+===
+insert-tree
+---
+FieldDeclaration [235,296]
+    Modifier: public [235,241]
+    Modifier: final [242,247]
+    Modifier: static [248,254]
+    VariableDeclarator [262,295]
+        ClassOrInterfaceType [255,261]
+            SimpleName: String [255,261]
+        SimpleName: FULL_FIELD_NAME_IMAGES [262,284]
+        StringLiteralExpr: images [287,295]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 6
+===
+insert-tree
+---
+FieldDeclaration [298,342]
+    Modifier: public [298,304]
+    Modifier: final [305,310]
+    Modifier: static [311,317]
+    VariableDeclarator [322,341]
+        PrimitiveType: int [318,321]
+        SimpleName: FIELD_IX_PLAYER [322,337]
+        IntegerLiteralExpr: 3 [340,341]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 7
+===
+insert-tree
+---
+FieldDeclaration [344,405]
+    Modifier: public [344,350]
+    Modifier: final [351,356]
+    Modifier: static [357,363]
+    VariableDeclarator [371,404]
+        ClassOrInterfaceType [364,370]
+            SimpleName: String [364,370]
+        SimpleName: FULL_FIELD_NAME_PLAYER [371,393]
+        StringLiteralExpr: player [396,404]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 8
+===
+insert-tree
+---
+FieldDeclaration [407,448]
+    Modifier: public [407,413]
+    Modifier: final [414,419]
+    Modifier: static [420,426]
+    VariableDeclarator [431,447]
+        PrimitiveType: int [427,430]
+        SimpleName: FIELD_IX_URI [431,443]
+        IntegerLiteralExpr: 4 [446,447]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 9
+===
+insert-tree
+---
+FieldDeclaration [450,505]
+    Modifier: public [450,456]
+    Modifier: final [457,462]
+    Modifier: static [463,469]
+    VariableDeclarator [477,504]
+        ClassOrInterfaceType [470,476]
+            SimpleName: String [470,476]
+        SimpleName: FULL_FIELD_NAME_URI [477,496]
+        StringLiteralExpr: uri [499,504]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 10
+===
+insert-tree
+---
+FieldDeclaration [507,550]
+    Modifier: public [507,513]
+    Modifier: final [514,519]
+    Modifier: static [520,526]
+    VariableDeclarator [531,549]
+        PrimitiveType: int [527,530]
+        SimpleName: FIELD_IX_TITLE [531,545]
+        IntegerLiteralExpr: 5 [548,549]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 11
+===
+insert-tree
+---
+FieldDeclaration [552,611]
+    Modifier: public [552,558]
+    Modifier: final [559,564]
+    Modifier: static [565,571]
+    VariableDeclarator [579,610]
+        ClassOrInterfaceType [572,578]
+            SimpleName: String [572,578]
+        SimpleName: FULL_FIELD_NAME_TITLE [579,600]
+        StringLiteralExpr: title [603,610]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 12
+===
+insert-tree
+---
+FieldDeclaration [613,656]
+    Modifier: public [613,619]
+    Modifier: final [620,625]
+    Modifier: static [626,632]
+    VariableDeclarator [637,655]
+        PrimitiveType: int [633,636]
+        SimpleName: FIELD_IX_WIDTH [637,651]
+        IntegerLiteralExpr: 6 [654,655]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 13
+===
+insert-tree
+---
+FieldDeclaration [658,717]
+    Modifier: public [658,664]
+    Modifier: final [665,670]
+    Modifier: static [671,677]
+    VariableDeclarator [685,716]
+        ClassOrInterfaceType [678,684]
+            SimpleName: String [678,684]
+        SimpleName: FULL_FIELD_NAME_WIDTH [685,706]
+        StringLiteralExpr: width [709,716]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 14
+===
+insert-tree
+---
+FieldDeclaration [719,763]
+    Modifier: public [719,725]
+    Modifier: final [726,731]
+    Modifier: static [732,738]
+    VariableDeclarator [743,762]
+        PrimitiveType: int [739,742]
+        SimpleName: FIELD_IX_HEIGHT [743,758]
+        IntegerLiteralExpr: 7 [761,762]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 15
+===
+insert-tree
+---
+FieldDeclaration [765,826]
+    Modifier: public [765,771]
+    Modifier: final [772,777]
+    Modifier: static [778,784]
+    VariableDeclarator [792,825]
+        ClassOrInterfaceType [785,791]
+            SimpleName: String [785,791]
+        SimpleName: FULL_FIELD_NAME_HEIGHT [792,814]
+        StringLiteralExpr: height [817,825]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 16
+===
+insert-tree
+---
+FieldDeclaration [828,872]
+    Modifier: public [828,834]
+    Modifier: final [835,840]
+    Modifier: static [841,847]
+    VariableDeclarator [852,871]
+        PrimitiveType: int [848,851]
+        SimpleName: FIELD_IX_FORMAT [852,867]
+        IntegerLiteralExpr: 8 [870,871]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 17
+===
+insert-tree
+---
+FieldDeclaration [874,935]
+    Modifier: public [874,880]
+    Modifier: final [881,886]
+    Modifier: static [887,893]
+    VariableDeclarator [901,934]
+        ClassOrInterfaceType [894,900]
+            SimpleName: String [894,900]
+        SimpleName: FULL_FIELD_NAME_FORMAT [901,923]
+        StringLiteralExpr: format [926,934]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 18
+===
+insert-tree
+---
+FieldDeclaration [937,983]
+    Modifier: public [937,943]
+    Modifier: final [944,949]
+    Modifier: static [950,956]
+    VariableDeclarator [961,982]
+        PrimitiveType: int [957,960]
+        SimpleName: FIELD_IX_DURATION [961,978]
+        IntegerLiteralExpr: 9 [981,982]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 19
+===
+insert-tree
+---
+FieldDeclaration [985,1050]
+    Modifier: public [985,991]
+    Modifier: final [992,997]
+    Modifier: static [998,1004]
+    VariableDeclarator [1012,1049]
+        ClassOrInterfaceType [1005,1011]
+            SimpleName: String [1005,1011]
+        SimpleName: FULL_FIELD_NAME_DURATION [1012,1036]
+        StringLiteralExpr: duration [1039,1049]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 20
+===
+insert-tree
+---
+FieldDeclaration [1052,1095]
+    Modifier: public [1052,1058]
+    Modifier: final [1059,1064]
+    Modifier: static [1065,1071]
+    VariableDeclarator [1076,1094]
+        PrimitiveType: int [1072,1075]
+        SimpleName: FIELD_IX_SIZE [1076,1089]
+        IntegerLiteralExpr: 10 [1092,1094]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 21
+===
+insert-tree
+---
+FieldDeclaration [1097,1154]
+    Modifier: public [1097,1103]
+    Modifier: final [1104,1109]
+    Modifier: static [1110,1116]
+    VariableDeclarator [1124,1153]
+        ClassOrInterfaceType [1117,1123]
+            SimpleName: String [1117,1123]
+        SimpleName: FULL_FIELD_NAME_SIZE [1124,1144]
+        StringLiteralExpr: size [1147,1153]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 22
+===
+insert-tree
+---
+FieldDeclaration [1156,1202]
+    Modifier: public [1156,1162]
+    Modifier: final [1163,1168]
+    Modifier: static [1169,1175]
+    VariableDeclarator [1180,1201]
+        PrimitiveType: int [1176,1179]
+        SimpleName: FIELD_IX_BITRATE [1180,1196]
+        IntegerLiteralExpr: 11 [1199,1201]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 23
+===
+insert-tree
+---
+FieldDeclaration [1204,1267]
+    Modifier: public [1204,1210]
+    Modifier: final [1211,1216]
+    Modifier: static [1217,1223]
+    VariableDeclarator [1231,1266]
+        ClassOrInterfaceType [1224,1230]
+            SimpleName: String [1224,1230]
+        SimpleName: FULL_FIELD_NAME_BITRATE [1231,1254]
+        StringLiteralExpr: bitrate [1257,1266]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 24
+===
+insert-tree
+---
+FieldDeclaration [1269,1315]
+    Modifier: public [1269,1275]
+    Modifier: final [1276,1281]
+    Modifier: static [1282,1288]
+    VariableDeclarator [1293,1314]
+        PrimitiveType: int [1289,1292]
+        SimpleName: FIELD_IX_PERSONS [1293,1309]
+        IntegerLiteralExpr: 12 [1312,1314]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 25
+===
+insert-tree
+---
+FieldDeclaration [1317,1380]
+    Modifier: public [1317,1323]
+    Modifier: final [1324,1329]
+    Modifier: static [1330,1336]
+    VariableDeclarator [1344,1379]
+        ClassOrInterfaceType [1337,1343]
+            SimpleName: String [1337,1343]
+        SimpleName: FULL_FIELD_NAME_PERSONS [1344,1367]
+        StringLiteralExpr: persons [1370,1379]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 26
+===
+insert-tree
+---
+FieldDeclaration [1382,1430]
+    Modifier: public [1382,1388]
+    Modifier: final [1389,1394]
+    Modifier: static [1395,1401]
+    VariableDeclarator [1406,1429]
+        PrimitiveType: int [1402,1405]
+        SimpleName: FIELD_IX_COPYRIGHT [1406,1424]
+        IntegerLiteralExpr: 13 [1427,1429]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 27
+===
+insert-tree
+---
+FieldDeclaration [1432,1499]
+    Modifier: public [1432,1438]
+    Modifier: final [1439,1444]
+    Modifier: static [1445,1451]
+    VariableDeclarator [1459,1498]
+        ClassOrInterfaceType [1452,1458]
+            SimpleName: String [1452,1458]
+        SimpleName: FULL_FIELD_NAME_COPYRIGHT [1459,1484]
+        StringLiteralExpr: copyright [1487,1498]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 28
+===
+insert-tree
+---
+FieldDeclaration [3233,3326]
+    Modifier: public [3233,3239]
+    Modifier: static [3240,3246]
+    Modifier: final [3247,3252]
+    VariableDeclarator [3277,3325]
+        ClassOrInterfaceType [3253,3276]
+            SimpleName: HashMap [3253,3260]
+            ClassOrInterfaceType [3261,3267]
+                SimpleName: String [3261,3267]
+            ClassOrInterfaceType [3268,3275]
+                SimpleName: Integer [3268,3275]
+        SimpleName: fullFieldToIndex [3277,3293]
+        ObjectCreationExpr [3296,3325]
+            ClassOrInterfaceType [3300,3323]
+                SimpleName: HashMap [3300,3307]
+                ClassOrInterfaceType [3308,3314]
+                    SimpleName: String [3308,3314]
+                ClassOrInterfaceType [3315,3322]
+                    SimpleName: Integer [3315,3322]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 29
+===
+insert-tree
+---
+InitializerDeclaration [3328,4182]
+    BlockStmt [3335,4182]
+        ExpressionStmt [3339,3399]
+            MethodCallExpr [3339,3398]
+                NameExpr [3339,3355]
+                    SimpleName: fullFieldToIndex [3339,3355]
+                SimpleName: put [3356,3359]
+                NameExpr [3360,3381]
+                    SimpleName: FULL_FIELD_NAME_MEDIA [3360,3381]
+                NameExpr [3383,3397]
+                    SimpleName: FIELD_IX_MEDIA [3383,3397]
+        ExpressionStmt [3402,3464]
+            MethodCallExpr [3402,3463]
+                NameExpr [3402,3418]
+                    SimpleName: fullFieldToIndex [3402,3418]
+                SimpleName: put [3419,3422]
+                NameExpr [3423,3445]
+                    SimpleName: FULL_FIELD_NAME_IMAGES [3423,3445]
+                NameExpr [3447,3462]
+                    SimpleName: FIELD_IX_IMAGES [3447,3462]
+        ExpressionStmt [3467,3529]
+            MethodCallExpr [3467,3528]
+                NameExpr [3467,3483]
+                    SimpleName: fullFieldToIndex [3467,3483]
+                SimpleName: put [3484,3487]
+                NameExpr [3488,3510]
+                    SimpleName: FULL_FIELD_NAME_PLAYER [3488,3510]
+                NameExpr [3512,3527]
+                    SimpleName: FIELD_IX_PLAYER [3512,3527]
+        ExpressionStmt [3532,3588]
+            MethodCallExpr [3532,3587]
+                NameExpr [3532,3548]
+                    SimpleName: fullFieldToIndex [3532,3548]
+                SimpleName: put [3549,3552]
+                NameExpr [3553,3572]
+                    SimpleName: FULL_FIELD_NAME_URI [3553,3572]
+                NameExpr [3574,3586]
+                    SimpleName: FIELD_IX_URI [3574,3586]
+        ExpressionStmt [3591,3651]
+            MethodCallExpr [3591,3650]
+                NameExpr [3591,3607]
+                    SimpleName: fullFieldToIndex [3591,3607]
+                SimpleName: put [3608,3611]
+                NameExpr [3612,3633]
+                    SimpleName: FULL_FIELD_NAME_TITLE [3612,3633]
+                NameExpr [3635,3649]
+                    SimpleName: FIELD_IX_TITLE [3635,3649]
+        ExpressionStmt [3654,3714]
+            MethodCallExpr [3654,3713]
+                NameExpr [3654,3670]
+                    SimpleName: fullFieldToIndex [3654,3670]
+                SimpleName: put [3671,3674]
+                NameExpr [3675,3696]
+                    SimpleName: FULL_FIELD_NAME_WIDTH [3675,3696]
+                NameExpr [3698,3712]
+                    SimpleName: FIELD_IX_WIDTH [3698,3712]
+        ExpressionStmt [3717,3779]
+            MethodCallExpr [3717,3778]
+                NameExpr [3717,3733]
+                    SimpleName: fullFieldToIndex [3717,3733]
+                SimpleName: put [3734,3737]
+                NameExpr [3738,3760]
+                    SimpleName: FULL_FIELD_NAME_HEIGHT [3738,3760]
+                NameExpr [3762,3777]
+                    SimpleName: FIELD_IX_HEIGHT [3762,3777]
+        ExpressionStmt [3782,3844]
+            MethodCallExpr [3782,3843]
+                NameExpr [3782,3798]
+                    SimpleName: fullFieldToIndex [3782,3798]
+                SimpleName: put [3799,3802]
+                NameExpr [3803,3825]
+                    SimpleName: FULL_FIELD_NAME_FORMAT [3803,3825]
+                NameExpr [3827,3842]
+                    SimpleName: FIELD_IX_FORMAT [3827,3842]
+        ExpressionStmt [3847,3913]
+            MethodCallExpr [3847,3912]
+                NameExpr [3847,3863]
+                    SimpleName: fullFieldToIndex [3847,3863]
+                SimpleName: put [3864,3867]
+                NameExpr [3868,3892]
+                    SimpleName: FULL_FIELD_NAME_DURATION [3868,3892]
+                NameExpr [3894,3911]
+                    SimpleName: FIELD_IX_DURATION [3894,3911]
+        ExpressionStmt [3916,3974]
+            MethodCallExpr [3916,3973]
+                NameExpr [3916,3932]
+                    SimpleName: fullFieldToIndex [3916,3932]
+                SimpleName: put [3933,3936]
+                NameExpr [3937,3957]
+                    SimpleName: FULL_FIELD_NAME_SIZE [3937,3957]
+                NameExpr [3959,3972]
+                    SimpleName: FIELD_IX_SIZE [3959,3972]
+        ExpressionStmt [3977,4041]
+            MethodCallExpr [3977,4040]
+                NameExpr [3977,3993]
+                    SimpleName: fullFieldToIndex [3977,3993]
+                SimpleName: put [3994,3997]
+                NameExpr [3998,4021]
+                    SimpleName: FULL_FIELD_NAME_BITRATE [3998,4021]
+                NameExpr [4023,4039]
+                    SimpleName: FIELD_IX_BITRATE [4023,4039]
+        ExpressionStmt [4044,4108]
+            MethodCallExpr [4044,4107]
+                NameExpr [4044,4060]
+                    SimpleName: fullFieldToIndex [4044,4060]
+                SimpleName: put [4061,4064]
+                NameExpr [4065,4088]
+                    SimpleName: FULL_FIELD_NAME_PERSONS [4065,4088]
+                NameExpr [4090,4106]
+                    SimpleName: FIELD_IX_PERSONS [4090,4106]
+        ExpressionStmt [4111,4179]
+            MethodCallExpr [4111,4178]
+                NameExpr [4111,4127]
+                    SimpleName: fullFieldToIndex [4111,4127]
+                SimpleName: put [4128,4131]
+                NameExpr [4132,4157]
+                    SimpleName: FULL_FIELD_NAME_COPYRIGHT [4132,4157]
+                NameExpr [4159,4177]
+                    SimpleName: FIELD_IX_COPYRIGHT [4159,4177]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 30
+===
+insert-node
+---
+LineComment [1509,1589]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 31
+===
+insert-node
+---
+BlockComment [1598,3230]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 32

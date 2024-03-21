@@ -1,0 +1,85 @@
+===
+insert-tree
+---
+PackageDeclaration [0,38]
+    Name: bug [8,37]
+        Name: bvt [8,33]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,13]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [40,72]
+    Name: TestCase [47,71]
+        Name: framework [47,62]
+            Name: junit [47,52]
+to
+CompilationUnit [0,13]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [74,107]
+    Name: JSON [81,106]
+        Name: fastjson [81,101]
+            Name: alibaba [81,92]
+                Name: com [81,84]
+to
+CompilationUnit [0,13]
+at 2
+===
+insert-node
+---
+Modifier: public [109,115]
+to
+ClassOrInterfaceDeclaration [0,13]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [152,336]
+    Modifier: public [152,158]
+    SimpleName: test_bug11 [164,174]
+    ClassOrInterfaceType [184,193]
+        SimpleName: Exception [184,193]
+    VoidType [159,163]
+    BlockStmt [194,336]
+        ExpressionStmt [204,270]
+            VariableDeclarationExpr [204,269]
+                VariableDeclarator [211,269]
+                    ClassOrInterfaceType [204,210]
+                        SimpleName: String [204,210]
+                    SimpleName: text [211,215]
+                    StringLiteralExpr: [{KH:"(2010-2011-2)-13105-13039-1", JC:"1"}]  [218,269]
+        ExpressionStmt [279,296]
+            MethodCallExpr [279,295]
+                NameExpr [279,283]
+                    SimpleName: JSON [279,283]
+                SimpleName: parse [284,289]
+                NameExpr [290,294]
+                    SimpleName: text [290,294]
+        ExpressionStmt [305,330]
+            MethodCallExpr [305,329]
+                FieldAccessExpr [305,315]
+                    NameExpr [305,311]
+                        SimpleName: System [305,311]
+                    SimpleName: out [312,315]
+                SimpleName: println [316,323]
+                NameExpr [324,328]
+                    SimpleName: text [324,328]
+to
+ClassOrInterfaceDeclaration [0,13]
+at 2
+===
+insert-tree
+---
+ClassOrInterfaceType [136,144]
+    SimpleName: TestCase [136,144]
+to
+ClassOrInterfaceDeclaration [0,13]
+at 3

@@ -1,0 +1,149 @@
+===
+insert-tree
+---
+PackageDeclaration [0,45]
+    Name: serializer [8,44]
+        Name: bvt [8,33]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,19]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [47,78]
+    Name: Pattern [54,77]
+        Name: regex [54,69]
+            Name: util [54,63]
+                Name: java [54,58]
+to
+CompilationUnit [0,19]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [80,110]
+    Name: Assert [87,109]
+        Name: framework [87,102]
+            Name: junit [87,92]
+to
+CompilationUnit [0,19]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [111,143]
+    Name: TestCase [118,142]
+        Name: framework [118,133]
+            Name: junit [118,123]
+to
+CompilationUnit [0,19]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [145,178]
+    Name: JSON [152,177]
+        Name: fastjson [152,172]
+            Name: alibaba [152,163]
+                Name: com [152,155]
+to
+CompilationUnit [0,19]
+at 4
+===
+insert-node
+---
+Modifier: public [180,186]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [229,551]
+    Modifier: public [229,235]
+    SimpleName: test_file [241,250]
+    ClassOrInterfaceType [260,269]
+        SimpleName: Exception [260,269]
+    VoidType [236,240]
+    BlockStmt [270,551]
+        ExpressionStmt [280,315]
+            VariableDeclarationExpr [280,314]
+                VariableDeclarator [288,314]
+                    ClassOrInterfaceType [280,287]
+                        SimpleName: Pattern [280,287]
+                    SimpleName: p [288,289]
+                    MethodCallExpr [292,314]
+                        NameExpr [292,299]
+                            SimpleName: Pattern [292,299]
+                        SimpleName: compile [300,307]
+                        StringLiteralExpr: a*b [308,313]
+        ExpressionStmt [325,360]
+            VariableDeclarationExpr [325,359]
+                VariableDeclarator [332,359]
+                    ClassOrInterfaceType [325,331]
+                        SimpleName: String [325,331]
+                    SimpleName: text [332,336]
+                    MethodCallExpr [339,359]
+                        NameExpr [339,343]
+                            SimpleName: JSON [339,343]
+                        SimpleName: toJSONString [344,356]
+                        NameExpr [357,358]
+                            SimpleName: p [357,358]
+        ExpressionStmt [370,428]
+            MethodCallExpr [370,427]
+                NameExpr [370,376]
+                    SimpleName: Assert [370,376]
+                SimpleName: assertEquals [377,389]
+                MethodCallExpr [390,420]
+                    NameExpr [390,394]
+                        SimpleName: JSON [390,394]
+                    SimpleName: toJSONString [395,407]
+                    MethodCallExpr [408,419]
+                        NameExpr [408,409]
+                            SimpleName: p [408,409]
+                        SimpleName: pattern [410,417]
+                NameExpr [422,426]
+                    SimpleName: text [422,426]
+        ExpressionStmt [438,489]
+            VariableDeclarationExpr [438,488]
+                VariableDeclarator [446,488]
+                    ClassOrInterfaceType [438,445]
+                        SimpleName: Pattern [438,445]
+                    SimpleName: p1 [446,448]
+                    MethodCallExpr [451,488]
+                        NameExpr [451,455]
+                            SimpleName: JSON [451,455]
+                        SimpleName: parseObject [456,467]
+                        NameExpr [468,472]
+                            SimpleName: text [468,472]
+                        ClassExpr [474,487]
+                            ClassOrInterfaceType [474,481]
+                                SimpleName: Pattern [474,481]
+        ExpressionStmt [498,545]
+            MethodCallExpr [498,544]
+                NameExpr [498,504]
+                    SimpleName: Assert [498,504]
+                SimpleName: assertEquals [505,517]
+                MethodCallExpr [518,529]
+                    NameExpr [518,519]
+                        SimpleName: p [518,519]
+                    SimpleName: pattern [520,527]
+                MethodCallExpr [531,543]
+                    NameExpr [531,533]
+                        SimpleName: p1 [531,533]
+                    SimpleName: pattern [534,541]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 2
+===
+insert-tree
+---
+ClassOrInterfaceType [213,221]
+    SimpleName: TestCase [213,221]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 3

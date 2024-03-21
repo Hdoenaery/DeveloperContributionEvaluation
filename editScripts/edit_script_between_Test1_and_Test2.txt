@@ -1,0 +1,39 @@
+===
+update-node
+---
+SimpleName: Test1 [31,36]
+replace Test1 by Test2
+===
+insert-tree
+---
+ReturnStmt [92,105]
+    StringLiteralExpr: Bar [99,104]
+to
+IfStmt [80,106]
+at 1
+===
+insert-node
+---
+IfStmt [120,147]
+to
+IfStmt [80,106]
+at 2
+===
+insert-tree
+---
+BinaryExpr [124,131]
+    NameExpr [124,125]
+        SimpleName: i [124,125]
+    UnaryExpr [129,131]
+        IntegerLiteralExpr: 1 [130,131]
+to
+IfStmt [120,147]
+at 0
+===
+move-tree
+---
+ReturnStmt [92,106]
+    StringLiteralExpr: Foo! [99,105]
+to
+IfStmt [120,147]
+at 1

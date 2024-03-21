@@ -1,0 +1,133 @@
+===
+insert-tree
+---
+PackageDeclaration [0,38]
+    Name: bug [8,37]
+        Name: bvt [8,33]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,12]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [40,72]
+    Name: TestCase [47,71]
+        Name: framework [47,62]
+            Name: junit [47,52]
+to
+CompilationUnit [0,12]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [74,113]
+    Name: JSONObject [81,112]
+        Name: fastjson [81,101]
+            Name: alibaba [81,92]
+                Name: com [81,84]
+to
+CompilationUnit [0,12]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [114,171]
+    Name: InnerEntry [121,170]
+        Name: JSONTest [121,159]
+            Name: bug [121,150]
+                Name: bvt [121,146]
+                    Name: test [121,142]
+                        Name: json [121,137]
+                            Name: alibaba [121,132]
+                                Name: com [121,124]
+to
+CompilationUnit [0,12]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [172,229]
+    Name: OuterEntry [179,228]
+        Name: JSONTest [179,217]
+            Name: bug [179,208]
+                Name: bvt [179,204]
+                    Name: test [179,200]
+                        Name: json [179,195]
+                            Name: alibaba [179,190]
+                                Name: com [179,182]
+to
+CompilationUnit [0,12]
+at 4
+===
+insert-node
+---
+Modifier: public [231,237]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [273,525]
+    Modifier: public [273,279]
+    SimpleName: testToEntry2 [285,297]
+    VoidType [280,284]
+    BlockStmt [300,525]
+        ExpressionStmt [310,335]
+            VariableDeclarationExpr [310,334]
+                VariableDeclarator [321,334]
+                    ClassOrInterfaceType [310,320]
+                        SimpleName: InnerEntry [310,320]
+                    SimpleName: inner1 [321,327]
+                    NullLiteralExpr [330,334]
+        ExpressionStmt [349,398]
+            VariableDeclarationExpr [349,397]
+                VariableDeclarator [356,397]
+                    ClassOrInterfaceType [349,355]
+                        SimpleName: String [349,355]
+                    SimpleName: source1 [356,363]
+                    MethodCallExpr [366,397]
+                        NameExpr [366,376]
+                            SimpleName: JSONObject [366,376]
+                        SimpleName: toJSONString [377,389]
+                        NameExpr [390,396]
+                            SimpleName: inner1 [390,396]
+        ExpressionStmt [407,435]
+            MethodCallExpr [407,434]
+                FieldAccessExpr [407,417]
+                    NameExpr [407,413]
+                        SimpleName: System [407,413]
+                    SimpleName: out [414,417]
+                SimpleName: println [418,425]
+                NameExpr [426,433]
+                    SimpleName: source1 [426,433]
+        ExpressionStmt [444,514]
+            VariableDeclarationExpr [444,513]
+                VariableDeclarator [455,513]
+                    ClassOrInterfaceType [444,454]
+                        SimpleName: OuterEntry [444,454]
+                    SimpleName: inner2 [455,461]
+                    MethodCallExpr [464,513]
+                        NameExpr [464,474]
+                            SimpleName: JSONObject [464,474]
+                        SimpleName: parseObject [475,486]
+                        NameExpr [487,494]
+                            SimpleName: source1 [487,494]
+                        ClassExpr [496,512]
+                            ClassOrInterfaceType [496,506]
+                                SimpleName: OuterEntry [496,506]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 2
+===
+insert-tree
+---
+ClassOrInterfaceType [257,265]
+    SimpleName: TestCase [257,265]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 3

@@ -1,0 +1,214 @@
+===
+insert-tree
+---
+PackageDeclaration [604,638]
+    Name: bvt [612,637]
+        Name: test [612,633]
+            Name: json [612,628]
+                Name: alibaba [612,623]
+                    Name: com [612,615]
+to
+CompilationUnit [0,21]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [640,662]
+    Name: Date [647,661]
+        Name: util [647,656]
+            Name: java [647,651]
+to
+CompilationUnit [0,21]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [664,694]
+    Name: Assert [671,693]
+        Name: framework [671,686]
+            Name: junit [671,676]
+to
+CompilationUnit [0,21]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [695,727]
+    Name: TestCase [702,726]
+        Name: framework [702,717]
+            Name: junit [702,707]
+to
+CompilationUnit [0,21]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [729,762]
+    Name: JSON [736,761]
+        Name: fastjson [736,756]
+            Name: alibaba [736,747]
+                Name: com [736,739]
+to
+CompilationUnit [0,21]
+at 4
+===
+insert-node
+---
+Modifier: public [764,770]
+to
+ClassOrInterfaceDeclaration [0,21]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [815,1305]
+    Modifier: public [815,821]
+    SimpleName: test_toJSONString [827,844]
+    ClassOrInterfaceType [854,863]
+        SimpleName: Exception [854,863]
+    VoidType [822,826]
+    BlockStmt [864,1305]
+        ExpressionStmt [874,933]
+            MethodCallExpr [874,932]
+                NameExpr [874,880]
+                    SimpleName: Assert [874,880]
+                SimpleName: assertEquals [881,893]
+                StringLiteralExpr: null [894,900]
+                MethodCallExpr [902,931]
+                    NameExpr [902,906]
+                        SimpleName: JSON [902,906]
+                    SimpleName: toJSONString [907,919]
+                    FieldAccessExpr [920,930]
+                        NameExpr [920,926]
+                            SimpleName: Double [920,926]
+                        SimpleName: NaN [927,930]
+        ExpressionStmt [942,990]
+            MethodCallExpr [942,989]
+                NameExpr [942,948]
+                    SimpleName: Assert [942,948]
+                SimpleName: assertEquals [949,961]
+                StringLiteralExpr: 3 [962,965]
+                MethodCallExpr [967,988]
+                    NameExpr [967,971]
+                        SimpleName: JSON [967,971]
+                    SimpleName: toJSONString [972,984]
+                    DoubleLiteralExpr: 3D [985,987]
+        ExpressionStmt [999,1057]
+            MethodCallExpr [999,1056]
+                NameExpr [999,1005]
+                    SimpleName: Assert [999,1005]
+                SimpleName: assertEquals [1006,1018]
+                StringLiteralExpr: null [1019,1025]
+                MethodCallExpr [1027,1055]
+                    NameExpr [1027,1031]
+                        SimpleName: JSON [1027,1031]
+                    SimpleName: toJSONString [1032,1044]
+                    FieldAccessExpr [1045,1054]
+                        NameExpr [1045,1050]
+                            SimpleName: Float [1045,1050]
+                        SimpleName: NaN [1051,1054]
+        ExpressionStmt [1066,1114]
+            MethodCallExpr [1066,1113]
+                NameExpr [1066,1072]
+                    SimpleName: Assert [1066,1072]
+                SimpleName: assertEquals [1073,1085]
+                StringLiteralExpr: 3 [1086,1089]
+                MethodCallExpr [1091,1112]
+                    NameExpr [1091,1095]
+                        SimpleName: JSON [1091,1095]
+                    SimpleName: toJSONString [1096,1108]
+                    DoubleLiteralExpr: 3F [1109,1111]
+        ExpressionStmt [1123,1205]
+            MethodCallExpr [1123,1204]
+                NameExpr [1123,1129]
+                    SimpleName: Assert [1123,1129]
+                SimpleName: assertEquals [1130,1142]
+                StringLiteralExpr: 1292939095640 [1143,1158]
+                MethodCallExpr [1160,1203]
+                    NameExpr [1160,1164]
+                        SimpleName: JSON [1160,1164]
+                    SimpleName: toJSONString [1165,1177]
+                    ObjectCreationExpr [1178,1202]
+                        ClassOrInterfaceType [1182,1186]
+                            SimpleName: Date [1182,1186]
+                        LongLiteralExpr: 1292939095640L [1187,1201]
+        ExpressionStmt [1214,1299]
+            MethodCallExpr [1214,1298]
+                NameExpr [1214,1220]
+                    SimpleName: Assert [1214,1220]
+                SimpleName: assertEquals [1221,1233]
+                ObjectCreationExpr [1234,1258]
+                    ClassOrInterfaceType [1238,1242]
+                        SimpleName: Date [1238,1242]
+                    LongLiteralExpr: 1292939095640L [1243,1257]
+                MethodCallExpr [1260,1297]
+                    NameExpr [1260,1264]
+                        SimpleName: JSON [1260,1264]
+                    SimpleName: parse [1265,1270]
+                    StringLiteralExpr: new Date(1292939095640) [1271,1296]
+to
+ClassOrInterfaceDeclaration [0,21]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [1311,1608]
+    Modifier: public [1311,1317]
+    SimpleName: test_bug_0 [1323,1333]
+    ClassOrInterfaceType [1343,1352]
+        SimpleName: Exception [1343,1352]
+    VoidType [1318,1322]
+    BlockStmt [1353,1608]
+        ExpressionStmt [1363,1571]
+            VariableDeclarationExpr [1363,1570]
+                VariableDeclarator [1370,1570]
+                    ClassOrInterfaceType [1363,1369]
+                        SimpleName: String [1363,1369]
+                    SimpleName: text [1370,1374]
+                    StringLiteralExpr: [{"S":0,"T":"Register"},{"HOST_NAME":"qa-qd-62-187","IP":["172.29.62.187"],"MAC_ADDR":["00:16:3E:43:E5:1C"],"SERVICE_TAG":"NOSN00:16:3E:43:E5:1C","VERSION":"2.5"}]   [1377,1570]
+        ExpressionStmt [1580,1602]
+            MethodCallExpr [1580,1601]
+                NameExpr [1580,1584]
+                    SimpleName: JSON [1580,1584]
+                SimpleName: parseArray [1585,1595]
+                NameExpr [1596,1600]
+                    SimpleName: text [1596,1600]
+to
+ClassOrInterfaceDeclaration [0,21]
+at 3
+===
+insert-tree
+---
+MethodDeclaration [1614,1780]
+    Modifier: public [1614,1620]
+    SimpleName: test_bug_1 [1626,1636]
+    ClassOrInterfaceType [1646,1655]
+        SimpleName: Exception [1646,1655]
+    VoidType [1621,1625]
+    BlockStmt [1656,1780]
+        ExpressionStmt [1666,1743]
+            VariableDeclarationExpr [1666,1742]
+                VariableDeclarator [1673,1742]
+                    ClassOrInterfaceType [1666,1672]
+                        SimpleName: String [1666,1672]
+                    SimpleName: text [1673,1677]
+                    StringLiteralExpr: [{"S":2,"T":"ConnectResp"},
+ 	{"VAL" :null}] [1680,1742]
+        ExpressionStmt [1752,1774]
+            MethodCallExpr [1752,1773]
+                NameExpr [1752,1756]
+                    SimpleName: JSON [1752,1756]
+                SimpleName: parseArray [1757,1767]
+                NameExpr [1768,1772]
+                    SimpleName: text [1768,1772]
+to
+ClassOrInterfaceDeclaration [0,21]
+at 4
+===
+insert-tree
+---
+ClassOrInterfaceType [799,807]
+    SimpleName: TestCase [799,807]
+to
+ClassOrInterfaceDeclaration [0,21]
+at 5

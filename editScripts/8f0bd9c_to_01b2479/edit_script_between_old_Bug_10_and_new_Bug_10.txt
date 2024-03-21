@@ -1,0 +1,103 @@
+===
+insert-tree
+---
+PackageDeclaration [0,38]
+    Name: bug [8,37]
+        Name: bvt [8,33]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,14]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [40,72]
+    Name: TestCase [47,71]
+        Name: framework [47,62]
+            Name: junit [47,52]
+to
+CompilationUnit [0,14]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [74,107]
+    Name: JSON [81,106]
+        Name: fastjson [81,101]
+            Name: alibaba [81,92]
+                Name: com [81,84]
+to
+CompilationUnit [0,14]
+at 2
+===
+insert-node
+---
+Modifier: public [109,115]
+to
+ClassOrInterfaceDeclaration [0,14]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [153,424]
+    Modifier: public [153,159]
+    SimpleName: test_0 [165,171]
+    ClassOrInterfaceType [181,190]
+        SimpleName: Exception [181,190]
+    VoidType [160,164]
+    BlockStmt [191,424]
+        ExpressionStmt [201,391]
+            VariableDeclarationExpr [201,390]
+                VariableDeclarator [208,390]
+                    ClassOrInterfaceType [201,207]
+                        SimpleName: String [201,207]
+                    SimpleName: text [208,212]
+                    StringLiteralExpr: {'jdbcUrl':"jdbc:wrap-jdbc:filters=default:name=com.alibaba.dragoon.monitor:jdbc:mysql:\/\/10.20.129.167\/dragoon_v25monitordb?useUnicode=true&characterEncoding=UTF-8"} [215,390]
+        ExpressionStmt [401,418]
+            MethodCallExpr [401,417]
+                NameExpr [401,405]
+                    SimpleName: JSON [401,405]
+                SimpleName: parse [406,411]
+                NameExpr [412,416]
+                    SimpleName: text [412,416]
+to
+ClassOrInterfaceDeclaration [0,14]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [430,699]
+    Modifier: public [430,436]
+    SimpleName: test_1 [442,448]
+    ClassOrInterfaceType [458,467]
+        SimpleName: Exception [458,467]
+    VoidType [437,441]
+    BlockStmt [468,699]
+        ExpressionStmt [478,666]
+            VariableDeclarationExpr [478,665]
+                VariableDeclarator [485,665]
+                    ClassOrInterfaceType [478,484]
+                        SimpleName: String [478,484]
+                    SimpleName: text [485,489]
+                    StringLiteralExpr: {'jdbcUrl':'jdbc:wrap-jdbc:filters=default:name=com.alibaba.dragoon.monitor:jdbc:mysql:\/\/10.20.129.167\/dragoon_v25monitordb?useUnicode=true&characterEncoding=UTF-8'} [492,665]
+        ExpressionStmt [676,693]
+            MethodCallExpr [676,692]
+                NameExpr [676,680]
+                    SimpleName: JSON [676,680]
+                SimpleName: parse [681,686]
+                NameExpr [687,691]
+                    SimpleName: text [687,691]
+to
+ClassOrInterfaceDeclaration [0,14]
+at 3
+===
+insert-tree
+---
+ClassOrInterfaceType [137,145]
+    SimpleName: TestCase [137,145]
+to
+ClassOrInterfaceDeclaration [0,14]
+at 4

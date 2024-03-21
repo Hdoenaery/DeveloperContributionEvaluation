@@ -1,0 +1,134 @@
+===
+insert-tree
+---
+PackageDeclaration [0,34]
+    Name: bvt [8,33]
+        Name: test [8,29]
+            Name: json [8,24]
+                Name: alibaba [8,19]
+                    Name: com [8,11]
+to
+CompilationUnit [0,21]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [37,63]
+    Name: Timestamp [44,62]
+        Name: sql [44,52]
+            Name: java [44,48]
+to
+CompilationUnit [0,21]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [65,95]
+    Name: Assert [72,94]
+        Name: framework [72,87]
+            Name: junit [72,77]
+to
+CompilationUnit [0,21]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [96,128]
+    Name: TestCase [103,127]
+        Name: framework [103,118]
+            Name: junit [103,108]
+to
+CompilationUnit [0,21]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [130,163]
+    Name: JSON [137,162]
+        Name: fastjson [137,157]
+            Name: alibaba [137,148]
+                Name: com [137,140]
+to
+CompilationUnit [0,21]
+at 4
+===
+insert-node
+---
+Modifier: public [165,171]
+to
+ClassOrInterfaceDeclaration [0,21]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [215,529]
+    Modifier: public [215,221]
+    SimpleName: test_0 [227,233]
+    ClassOrInterfaceType [244,253]
+        SimpleName: Exception [244,253]
+    VoidType [222,226]
+    BlockStmt [254,529]
+        ExpressionStmt [264,305]
+            VariableDeclarationExpr [264,304]
+                VariableDeclarator [269,304]
+                    PrimitiveType: long [264,268]
+                    SimpleName: millis [269,275]
+                    MethodCallExpr [278,304]
+                        NameExpr [278,284]
+                            SimpleName: System [278,284]
+                        SimpleName: currentTimeMillis [285,302]
+        ExpressionStmt [323,414]
+            MethodCallExpr [323,413]
+                NameExpr [323,329]
+                    SimpleName: Assert [323,329]
+                SimpleName: assertEquals [330,342]
+                ObjectCreationExpr [343,364]
+                    ClassOrInterfaceType [347,356]
+                        SimpleName: Timestamp [347,356]
+                    NameExpr [357,363]
+                        SimpleName: millis [357,363]
+                MethodCallExpr [366,412]
+                    NameExpr [366,370]
+                        SimpleName: JSON [366,370]
+                    SimpleName: parseObject [371,382]
+                    BinaryExpr [383,394]
+                        StringLiteralExpr [383,385]
+                        NameExpr [388,394]
+                            SimpleName: millis [388,394]
+                    ClassExpr [396,411]
+                        ClassOrInterfaceType [396,405]
+                            SimpleName: Timestamp [396,405]
+        ExpressionStmt [423,523]
+            MethodCallExpr [423,522]
+                NameExpr [423,429]
+                    SimpleName: Assert [423,429]
+                SimpleName: assertEquals [430,442]
+                ObjectCreationExpr [443,464]
+                    ClassOrInterfaceType [447,456]
+                        SimpleName: Timestamp [447,456]
+                    NameExpr [457,463]
+                        SimpleName: millis [457,463]
+                MethodCallExpr [466,521]
+                    NameExpr [466,470]
+                        SimpleName: JSON [466,470]
+                    SimpleName: parseObject [471,482]
+                    BinaryExpr [483,503]
+                        BinaryExpr [483,496]
+                            StringLiteralExpr: " [483,487]
+                            NameExpr [490,496]
+                                SimpleName: millis [490,496]
+                        StringLiteralExpr: " [499,503]
+                    ClassExpr [505,520]
+                        ClassOrInterfaceType [505,514]
+                            SimpleName: Timestamp [505,514]
+to
+ClassOrInterfaceDeclaration [0,21]
+at 2
+===
+insert-tree
+---
+ClassOrInterfaceType [200,208]
+    SimpleName: TestCase [200,208]
+to
+ClassOrInterfaceDeclaration [0,21]
+at 3

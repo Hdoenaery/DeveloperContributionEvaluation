@@ -1,0 +1,151 @@
+===
+insert-tree
+---
+PackageDeclaration [0,45]
+    Name: serializer [8,44]
+        Name: bvt [8,33]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,29]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [47,79]
+    Name: Charset [54,78]
+        Name: charset [54,70]
+            Name: nio [54,62]
+                Name: java [54,58]
+to
+CompilationUnit [0,29]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [81,113]
+    Name: TestCase [88,112]
+        Name: framework [88,103]
+            Name: junit [88,93]
+to
+CompilationUnit [0,29]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [115,139]
+    Name: Assert [122,138]
+        Name: junit [122,131]
+            Name: org [122,125]
+to
+CompilationUnit [0,29]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [141,174]
+    Name: JSON [148,173]
+        Name: fastjson [148,168]
+            Name: alibaba [148,159]
+                Name: com [148,151]
+to
+CompilationUnit [0,29]
+at 4
+===
+insert-tree
+---
+ImportDeclaration [175,232]
+    Name: SerializerFeature [182,231]
+        Name: serializer [182,213]
+            Name: fastjson [182,202]
+                Name: alibaba [182,193]
+                    Name: com [182,185]
+to
+CompilationUnit [0,29]
+at 5
+===
+insert-node
+---
+Modifier: public [234,240]
+to
+ClassOrInterfaceDeclaration [0,29]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [293,440]
+    Modifier: public [293,299]
+    SimpleName: test_0 [305,311]
+    VoidType [300,304]
+    BlockStmt [314,440]
+        ExpressionStmt [324,434]
+            MethodCallExpr [324,433]
+                NameExpr [324,330]
+                    SimpleName: Assert [324,330]
+                SimpleName: assertEquals [331,343]
+                StringLiteralExpr: {"value":null} [344,362]
+                MethodCallExpr [364,432]
+                    NameExpr [364,368]
+                        SimpleName: JSON [364,368]
+                    SimpleName: toJSONString [369,381]
+                    ObjectCreationExpr [382,394]
+                        ClassOrInterfaceType [386,392]
+                            SimpleName: Entity [386,392]
+                    FieldAccessExpr [396,431]
+                        NameExpr [396,413]
+                            SimpleName: SerializerFeature [396,413]
+                        SimpleName: WriteMapNullValue [414,431]
+to
+ClassOrInterfaceDeclaration [0,29]
+at 2
+===
+insert-tree
+---
+ClassOrInterfaceDeclaration [446,675]
+    Modifier: public [446,452]
+    Modifier: static [453,459]
+    SimpleName: Entity [466,472]
+    FieldDeclaration [484,506]
+        Modifier: private [484,491]
+        VariableDeclarator [500,505]
+            ClassOrInterfaceType [492,499]
+                SimpleName: Charset [492,499]
+            SimpleName: value [500,505]
+    MethodDeclaration [516,579]
+        Modifier: public [516,522]
+        SimpleName: getValue [531,539]
+        ClassOrInterfaceType [523,530]
+            SimpleName: Charset [523,530]
+        BlockStmt [542,579]
+            ReturnStmt [556,569]
+                NameExpr [563,568]
+                    SimpleName: value [563,568]
+    MethodDeclaration [589,668]
+        Modifier: public [589,595]
+        SimpleName: setValue [601,609]
+        Parameter [610,623]
+            ClassOrInterfaceType [610,617]
+                SimpleName: Charset [610,617]
+            SimpleName: value [618,623]
+        VoidType [596,600]
+        BlockStmt [625,668]
+            ExpressionStmt [639,658]
+                AssignExpr [639,657]
+                    FieldAccessExpr [639,649]
+                        ThisExpr [639,643]
+                        SimpleName: value [644,649]
+                    NameExpr [652,657]
+                        SimpleName: value [652,657]
+to
+ClassOrInterfaceDeclaration [0,29]
+at 3
+===
+insert-tree
+---
+ClassOrInterfaceType [277,285]
+    SimpleName: TestCase [277,285]
+to
+ClassOrInterfaceDeclaration [0,29]
+at 4

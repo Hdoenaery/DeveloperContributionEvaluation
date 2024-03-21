@@ -1,0 +1,156 @@
+===
+insert-tree
+---
+PackageDeclaration [0,34]
+    Name: util [8,33]
+        Name: fastjson [8,28]
+            Name: alibaba [8,19]
+                Name: com [8,11]
+to
+CompilationUnit [0,22]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [36,78]
+    Name: JSONException [43,77]
+        Name: fastjson [43,63]
+            Name: alibaba [43,54]
+                Name: com [43,46]
+to
+CompilationUnit [0,22]
+at 1
+===
+insert-node
+---
+Modifier: public [80,86]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 0
+===
+insert-tree
+---
+ConstructorDeclaration [135,219]
+    Modifier: public [135,141]
+    SimpleName: ASMClassLoader [142,156]
+    BlockStmt [158,219]
+        ExplicitConstructorInvocationStmt [168,213]
+            MethodCallExpr [174,211]
+                ClassExpr [174,194]
+                    ClassOrInterfaceType [174,188]
+                        SimpleName: ASMClassLoader [174,188]
+                SimpleName: getClassLoader [195,209]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [225,417]
+    Modifier: public [225,231]
+    SimpleName: defineClassPublic [241,258]
+    Parameter [259,270]
+        ClassOrInterfaceType [259,265]
+            SimpleName: String [259,265]
+        SimpleName: name [266,270]
+    Parameter [272,280]
+        ArrayType [272,278]
+            PrimitiveType: byte [272,276]
+        SimpleName: b [279,280]
+    Parameter [282,289]
+        PrimitiveType: int [282,285]
+        SimpleName: off [286,289]
+    Parameter [291,298]
+        PrimitiveType: int [291,294]
+        SimpleName: len [295,298]
+    ClassOrInterfaceType [307,323]
+        SimpleName: ClassFormatError [307,323]
+    ClassOrInterfaceType [232,240]
+        SimpleName: Class [232,237]
+        WildcardType [238,239]
+    BlockStmt [324,417]
+        ExpressionStmt [334,388]
+            VariableDeclarationExpr [334,387]
+                VariableDeclarator [343,387]
+                    ClassOrInterfaceType [334,342]
+                        SimpleName: Class [334,339]
+                        WildcardType [340,341]
+                    SimpleName: clazz [343,348]
+                    MethodCallExpr [351,387]
+                        SimpleName: defineClass [351,362]
+                        NameExpr [363,367]
+                            SimpleName: name [363,367]
+                        NameExpr [369,370]
+                            SimpleName: b [369,370]
+                        NameExpr [372,375]
+                            SimpleName: off [372,375]
+                        NameExpr [377,380]
+                            SimpleName: len [377,380]
+                        NullLiteralExpr [382,386]
+        ReturnStmt [398,411]
+            NameExpr [405,410]
+                SimpleName: clazz [405,410]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 3
+===
+insert-tree
+---
+MethodDeclaration [423,759]
+    Modifier: public [423,429]
+    Modifier: static [430,436]
+    SimpleName: forName [446,453]
+    Parameter [454,470]
+        ClassOrInterfaceType [454,460]
+            SimpleName: String [454,460]
+        SimpleName: className [461,470]
+    ClassOrInterfaceType [437,445]
+        SimpleName: Class [437,442]
+        WildcardType [443,444]
+    BlockStmt [472,759]
+        TryStmt [482,753]
+            BlockStmt [486,636]
+                ExpressionStmt [500,573]
+                    VariableDeclarationExpr [500,572]
+                        VariableDeclarator [512,572]
+                            ClassOrInterfaceType [500,511]
+                                SimpleName: ClassLoader [500,511]
+                            SimpleName: classLoader [512,523]
+                            MethodCallExpr [526,572]
+                                MethodCallExpr [526,548]
+                                    NameExpr [526,532]
+                                        SimpleName: Thread [526,532]
+                                    SimpleName: currentThread [533,546]
+                                SimpleName: getContextClassLoader [549,570]
+                ReturnStmt [586,626]
+                    MethodCallExpr [593,625]
+                        NameExpr [593,604]
+                            SimpleName: classLoader [593,604]
+                        SimpleName: loadClass [605,614]
+                        NameExpr [615,624]
+                            SimpleName: className [615,624]
+            CatchClause [637,753]
+                Parameter [644,668]
+                    ClassOrInterfaceType [644,666]
+                        SimpleName: ClassNotFoundException [644,666]
+                    SimpleName: e [667,668]
+                BlockStmt [670,753]
+                    ThrowStmt [684,743]
+                        ObjectCreationExpr [690,742]
+                            ClassOrInterfaceType [694,707]
+                                SimpleName: JSONException [694,707]
+                            BinaryExpr [708,741]
+                                StringLiteralExpr: class nout found :  [708,729]
+                                NameExpr [732,741]
+                                    SimpleName: className [732,741]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 4
+===
+insert-tree
+---
+ClassOrInterfaceType [116,127]
+    SimpleName: ClassLoader [116,127]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 5

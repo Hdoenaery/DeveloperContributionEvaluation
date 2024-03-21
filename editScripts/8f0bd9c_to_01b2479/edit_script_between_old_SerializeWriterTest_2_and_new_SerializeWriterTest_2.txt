@@ -1,0 +1,184 @@
+===
+insert-tree
+---
+PackageDeclaration [0,45]
+    Name: serializer [8,44]
+        Name: bvt [8,33]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,29]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [47,77]
+    Name: Assert [54,76]
+        Name: framework [54,69]
+            Name: junit [54,59]
+to
+CompilationUnit [0,29]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [78,110]
+    Name: TestCase [85,109]
+        Name: framework [85,100]
+            Name: junit [85,90]
+to
+CompilationUnit [0,29]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [112,167]
+    Name: SerializeWriter [119,166]
+        Name: serializer [119,150]
+            Name: fastjson [119,139]
+                Name: alibaba [119,130]
+                    Name: com [119,122]
+to
+CompilationUnit [0,29]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [168,225]
+    Name: SerializerFeature [175,224]
+        Name: serializer [175,206]
+            Name: fastjson [175,195]
+                Name: alibaba [175,186]
+                    Name: com [175,178]
+to
+CompilationUnit [0,29]
+at 4
+===
+insert-node
+---
+Modifier: public [227,233]
+to
+ClassOrInterfaceDeclaration [0,29]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [286,576]
+    Modifier: public [286,292]
+    SimpleName: test_0 [298,304]
+    ClassOrInterfaceType [314,323]
+        SimpleName: Exception [314,323]
+    VoidType [293,297]
+    BlockStmt [324,576]
+        ExpressionStmt [334,379]
+            VariableDeclarationExpr [334,378]
+                VariableDeclarator [350,378]
+                    ClassOrInterfaceType [334,349]
+                        SimpleName: SerializeWriter [334,349]
+                    SimpleName: out [350,353]
+                    ObjectCreationExpr [356,378]
+                        ClassOrInterfaceType [360,375]
+                            SimpleName: SerializeWriter [360,375]
+                        IntegerLiteralExpr: 1 [376,377]
+        ExpressionStmt [388,442]
+            MethodCallExpr [388,441]
+                NameExpr [388,391]
+                    SimpleName: out [388,391]
+                SimpleName: config [392,398]
+                FieldAccessExpr [399,434]
+                    NameExpr [399,416]
+                        SimpleName: SerializerFeature [399,416]
+                    SimpleName: WriteTabAsSpecial [417,434]
+                BooleanLiteralExpr: true [436,440]
+        ExpressionStmt [451,489]
+            MethodCallExpr [451,488]
+                NameExpr [451,454]
+                    SimpleName: out [451,454]
+                SimpleName: writeString [455,466]
+                StringLiteralExpr: 	
+ 
+\ " [467,487]
+        ExpressionStmt [498,570]
+            MethodCallExpr [498,569]
+                NameExpr [498,504]
+                    SimpleName: Assert [498,504]
+                SimpleName: assertEquals [505,517]
+                StringLiteralExpr: "\t\n \b\n\r\f\\ \"" [518,552]
+                MethodCallExpr [554,568]
+                    NameExpr [554,557]
+                        SimpleName: out [554,557]
+                    SimpleName: toString [558,566]
+to
+ClassOrInterfaceDeclaration [0,29]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [586,933]
+    Modifier: public [586,592]
+    SimpleName: test_1 [598,604]
+    ClassOrInterfaceType [614,623]
+        SimpleName: Exception [614,623]
+    VoidType [593,597]
+    BlockStmt [624,933]
+        ExpressionStmt [634,679]
+            VariableDeclarationExpr [634,678]
+                VariableDeclarator [650,678]
+                    ClassOrInterfaceType [634,649]
+                        SimpleName: SerializeWriter [634,649]
+                    SimpleName: out [650,653]
+                    ObjectCreationExpr [656,678]
+                        ClassOrInterfaceType [660,675]
+                            SimpleName: SerializeWriter [660,675]
+                        IntegerLiteralExpr: 1 [676,677]
+        ExpressionStmt [688,742]
+            MethodCallExpr [688,741]
+                NameExpr [688,691]
+                    SimpleName: out [688,691]
+                SimpleName: config [692,698]
+                FieldAccessExpr [699,734]
+                    NameExpr [699,716]
+                        SimpleName: SerializerFeature [699,716]
+                    SimpleName: WriteTabAsSpecial [717,734]
+                BooleanLiteralExpr: true [736,740]
+        ExpressionStmt [751,803]
+            MethodCallExpr [751,802]
+                NameExpr [751,754]
+                    SimpleName: out [751,754]
+                SimpleName: config [755,761]
+                FieldAccessExpr [762,795]
+                    NameExpr [762,779]
+                        SimpleName: SerializerFeature [762,779]
+                    SimpleName: UseSingleQuotes [780,795]
+                BooleanLiteralExpr: true [797,801]
+        ExpressionStmt [812,850]
+            MethodCallExpr [812,849]
+                NameExpr [812,815]
+                    SimpleName: out [812,815]
+                SimpleName: writeString [816,827]
+                StringLiteralExpr: 	
+ 
+\ " [828,848]
+        ExpressionStmt [859,927]
+            MethodCallExpr [859,926]
+                NameExpr [859,865]
+                    SimpleName: Assert [859,865]
+                SimpleName: assertEquals [866,878]
+                StringLiteralExpr: '\t\n \b\n\r\f\\ "' [879,909]
+                MethodCallExpr [911,925]
+                    NameExpr [911,914]
+                        SimpleName: out [911,914]
+                    SimpleName: toString [915,923]
+to
+ClassOrInterfaceDeclaration [0,29]
+at 3
+===
+insert-tree
+---
+ClassOrInterfaceType [270,278]
+    SimpleName: TestCase [270,278]
+to
+ClassOrInterfaceDeclaration [0,29]
+at 4

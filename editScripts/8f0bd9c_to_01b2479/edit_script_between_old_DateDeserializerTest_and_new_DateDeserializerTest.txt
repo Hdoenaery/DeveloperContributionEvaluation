@@ -1,0 +1,115 @@
+===
+insert-tree
+---
+PackageDeclaration [0,47]
+    Name: deser [8,46]
+        Name: parser [8,40]
+            Name: bvt [8,33]
+                Name: test [8,29]
+                    Name: json [8,24]
+                        Name: alibaba [8,19]
+                            Name: com [8,11]
+to
+CompilationUnit [0,28]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [49,71]
+    Name: Date [56,70]
+        Name: util [56,65]
+            Name: java [56,60]
+to
+CompilationUnit [0,28]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [73,103]
+    Name: Assert [80,102]
+        Name: framework [80,95]
+            Name: junit [80,85]
+to
+CompilationUnit [0,28]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [104,136]
+    Name: TestCase [111,135]
+        Name: framework [111,126]
+            Name: junit [111,116]
+to
+CompilationUnit [0,28]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [138,171]
+    Name: JSON [145,170]
+        Name: fastjson [145,165]
+            Name: alibaba [145,156]
+                Name: com [145,148]
+to
+CompilationUnit [0,28]
+at 4
+===
+insert-node
+---
+Modifier: public [173,179]
+to
+ClassOrInterfaceDeclaration [0,28]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [231,426]
+    Modifier: public [231,237]
+    SimpleName: test_date [243,252]
+    ClassOrInterfaceType [262,271]
+        SimpleName: Exception [262,271]
+    VoidType [238,242]
+    BlockStmt [272,426]
+        ExpressionStmt [282,323]
+            VariableDeclarationExpr [282,322]
+                VariableDeclarator [287,322]
+                    PrimitiveType: long [282,286]
+                    SimpleName: millis [287,293]
+                    MethodCallExpr [296,322]
+                        NameExpr [296,302]
+                            SimpleName: System [296,302]
+                        SimpleName: currentTimeMillis [303,320]
+        ExpressionStmt [332,420]
+            MethodCallExpr [332,419]
+                NameExpr [332,338]
+                    SimpleName: Assert [332,338]
+                SimpleName: assertEquals [339,351]
+                ObjectCreationExpr [352,368]
+                    ClassOrInterfaceType [356,360]
+                        SimpleName: Date [356,360]
+                    NameExpr [361,367]
+                        SimpleName: millis [361,367]
+                MethodCallExpr [370,418]
+                    NameExpr [370,374]
+                        SimpleName: JSON [370,374]
+                    SimpleName: parseObject [375,386]
+                    BinaryExpr [387,405]
+                        BinaryExpr [387,399]
+                            StringLiteralExpr: ' [387,390]
+                            NameExpr [393,399]
+                                SimpleName: millis [393,399]
+                        StringLiteralExpr: ' [402,405]
+                    ClassExpr [407,417]
+                        ClassOrInterfaceType [407,411]
+                            SimpleName: Date [407,411]
+to
+ClassOrInterfaceDeclaration [0,28]
+at 2
+===
+insert-tree
+---
+ClassOrInterfaceType [215,223]
+    SimpleName: TestCase [215,223]
+to
+ClassOrInterfaceDeclaration [0,28]
+at 3

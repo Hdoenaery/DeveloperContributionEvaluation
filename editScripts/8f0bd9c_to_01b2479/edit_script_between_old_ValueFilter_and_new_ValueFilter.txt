@@ -1,0 +1,40 @@
+===
+insert-tree
+---
+PackageDeclaration [0,40]
+    Name: serializer [8,39]
+        Name: fastjson [8,28]
+            Name: alibaba [8,19]
+                Name: com [8,11]
+to
+CompilationUnit [0,19]
+at 0
+===
+insert-node
+---
+Modifier: public [42,48]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [78,135]
+    SimpleName: process [85,92]
+    Parameter [93,106]
+        ClassOrInterfaceType [93,99]
+            SimpleName: Object [93,99]
+        SimpleName: source [100,106]
+    Parameter [108,119]
+        ClassOrInterfaceType [108,114]
+            SimpleName: String [108,114]
+        SimpleName: name [115,119]
+    Parameter [121,133]
+        ClassOrInterfaceType [121,127]
+            SimpleName: Object [121,127]
+        SimpleName: value [128,133]
+    ClassOrInterfaceType [78,84]
+        SimpleName: Object [78,84]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 2

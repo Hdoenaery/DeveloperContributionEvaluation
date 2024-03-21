@@ -1,0 +1,48 @@
+===
+insert-tree
+---
+PackageDeclaration [604,644]
+    Name: serializer [612,643]
+        Name: fastjson [612,632]
+            Name: alibaba [612,623]
+                Name: com [612,615]
+to
+CompilationUnit [0,24]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [646,673]
+    Name: IOException [653,672]
+        Name: io [653,660]
+            Name: java [653,657]
+to
+CompilationUnit [0,24]
+at 1
+===
+insert-node
+---
+Modifier: public [723,729]
+to
+ClassOrInterfaceDeclaration [0,24]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [764,845]
+    Modifier: abstract [764,772]
+    SimpleName: write [778,783]
+    Parameter [784,809]
+        ClassOrInterfaceType [784,798]
+            SimpleName: JSONSerializer [784,798]
+        SimpleName: serializer [799,809]
+    Parameter [811,824]
+        ClassOrInterfaceType [811,817]
+            SimpleName: Object [811,817]
+        SimpleName: object [818,824]
+    ClassOrInterfaceType [833,844]
+        SimpleName: IOException [833,844]
+    VoidType [773,777]
+to
+ClassOrInterfaceDeclaration [0,24]
+at 2

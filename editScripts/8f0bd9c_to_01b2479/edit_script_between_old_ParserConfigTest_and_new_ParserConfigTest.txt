@@ -1,0 +1,155 @@
+===
+insert-tree
+---
+PackageDeclaration [0,45]
+    Name: serializer [8,44]
+        Name: bvt [8,33]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,24]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [47,77]
+    Name: Assert [54,76]
+        Name: framework [54,69]
+            Name: junit [54,59]
+to
+CompilationUnit [0,24]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [78,110]
+    Name: TestCase [85,109]
+        Name: framework [85,100]
+            Name: junit [85,90]
+to
+CompilationUnit [0,24]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [112,154]
+    Name: JSONException [119,153]
+        Name: fastjson [119,139]
+            Name: alibaba [119,130]
+                Name: com [119,122]
+to
+CompilationUnit [0,24]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [155,203]
+    Name: ParserConfig [162,202]
+        Name: parser [162,189]
+            Name: fastjson [162,182]
+                Name: alibaba [162,173]
+                    Name: com [162,165]
+to
+CompilationUnit [0,24]
+at 4
+===
+insert-node
+---
+Modifier: public [205,211]
+to
+ClassOrInterfaceDeclaration [0,24]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [259,387]
+    Modifier: public [259,265]
+    SimpleName: test_0 [271,277]
+    ClassOrInterfaceType [287,296]
+        SimpleName: Exception [287,296]
+    VoidType [266,270]
+    BlockStmt [297,387]
+        ExpressionStmt [307,348]
+            VariableDeclarationExpr [307,347]
+                VariableDeclarator [320,347]
+                    ClassOrInterfaceType [307,319]
+                        SimpleName: ParserConfig [307,319]
+                    SimpleName: config [320,326]
+                    ObjectCreationExpr [329,347]
+                        ClassOrInterfaceType [333,345]
+                            SimpleName: ParserConfig [333,345]
+        ExpressionStmt [357,381]
+            MethodCallExpr [357,380]
+                NameExpr [357,363]
+                    SimpleName: config [357,363]
+                SimpleName: getDerializers [364,378]
+to
+ClassOrInterfaceDeclaration [0,24]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [393,715]
+    Modifier: public [393,399]
+    SimpleName: test_error_0 [405,417]
+    ClassOrInterfaceType [427,436]
+        SimpleName: Exception [427,436]
+    VoidType [400,404]
+    BlockStmt [437,715]
+        ExpressionStmt [447,488]
+            VariableDeclarationExpr [447,487]
+                VariableDeclarator [460,487]
+                    ClassOrInterfaceType [447,459]
+                        SimpleName: ParserConfig [447,459]
+                    SimpleName: config [460,466]
+                    ObjectCreationExpr [469,487]
+                        ClassOrInterfaceType [473,485]
+                            SimpleName: ParserConfig [473,485]
+        ExpressionStmt [506,529]
+            VariableDeclarationExpr [506,528]
+                VariableDeclarator [516,528]
+                    ClassOrInterfaceType [506,515]
+                        SimpleName: Exception [506,515]
+                    SimpleName: error [516,521]
+                    NullLiteralExpr [524,528]
+        TryStmt [538,672]
+            BlockStmt [542,611]
+                ExpressionStmt [556,601]
+                    MethodCallExpr [556,600]
+                        NameExpr [556,562]
+                            SimpleName: config [556,562]
+                        SimpleName: createJavaBeanDeserializer [563,589]
+                        ClassExpr [590,599]
+                            PrimitiveType: int [590,593]
+            CatchClause [612,672]
+                Parameter [619,635]
+                    ClassOrInterfaceType [619,632]
+                        SimpleName: JSONException [619,632]
+                    SimpleName: ex [633,635]
+                BlockStmt [637,672]
+                    ExpressionStmt [651,662]
+                        AssignExpr [651,661]
+                            NameExpr [651,656]
+                                SimpleName: error [651,656]
+                            NameExpr [659,661]
+                                SimpleName: ex [659,661]
+        ExpressionStmt [681,709]
+            MethodCallExpr [681,708]
+                NameExpr [681,687]
+                    SimpleName: Assert [681,687]
+                SimpleName: assertNotNull [688,701]
+                NameExpr [702,707]
+                    SimpleName: error [702,707]
+to
+ClassOrInterfaceDeclaration [0,24]
+at 3
+===
+insert-tree
+---
+ClassOrInterfaceType [243,251]
+    SimpleName: TestCase [243,251]
+to
+ClassOrInterfaceDeclaration [0,24]
+at 4

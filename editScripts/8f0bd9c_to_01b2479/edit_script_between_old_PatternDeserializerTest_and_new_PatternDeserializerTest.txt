@@ -1,0 +1,217 @@
+===
+insert-tree
+---
+PackageDeclaration [0,47]
+    Name: deser [8,46]
+        Name: parser [8,40]
+            Name: bvt [8,33]
+                Name: test [8,29]
+                    Name: json [8,24]
+                        Name: alibaba [8,19]
+                            Name: com [8,11]
+to
+CompilationUnit [0,31]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [49,80]
+    Name: Pattern [56,79]
+        Name: regex [56,71]
+            Name: util [56,65]
+                Name: java [56,60]
+to
+CompilationUnit [0,31]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [82,112]
+    Name: Assert [89,111]
+        Name: framework [89,104]
+            Name: junit [89,94]
+to
+CompilationUnit [0,31]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [113,145]
+    Name: TestCase [120,144]
+        Name: framework [120,135]
+            Name: junit [120,125]
+to
+CompilationUnit [0,31]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [147,180]
+    Name: JSON [154,179]
+        Name: fastjson [154,174]
+            Name: alibaba [154,165]
+                Name: com [154,157]
+to
+CompilationUnit [0,31]
+at 4
+===
+insert-tree
+---
+ImportDeclaration [181,237]
+    Name: DefaultExtJSONParser [188,236]
+        Name: parser [188,215]
+            Name: fastjson [188,208]
+                Name: alibaba [188,199]
+                    Name: com [188,191]
+to
+CompilationUnit [0,31]
+at 5
+===
+insert-tree
+---
+ImportDeclaration [238,283]
+    Name: JSONToken [245,282]
+        Name: parser [245,272]
+            Name: fastjson [245,265]
+                Name: alibaba [245,256]
+                    Name: com [245,248]
+to
+CompilationUnit [0,31]
+at 6
+===
+insert-tree
+---
+ImportDeclaration [284,332]
+    Name: ParserConfig [291,331]
+        Name: parser [291,318]
+            Name: fastjson [291,311]
+                Name: alibaba [291,302]
+                    Name: com [291,294]
+to
+CompilationUnit [0,31]
+at 7
+===
+insert-tree
+---
+ImportDeclaration [333,401]
+    Name: PatternDeserializer [340,400]
+        Name: deserializer [340,380]
+            Name: parser [340,367]
+                Name: fastjson [340,360]
+                    Name: alibaba [340,351]
+                        Name: com [340,343]
+to
+CompilationUnit [0,31]
+at 8
+===
+insert-node
+---
+Modifier: public [403,409]
+to
+ClassOrInterfaceDeclaration [0,31]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [464,1038]
+    Modifier: public [464,470]
+    SimpleName: test_pattern [476,488]
+    ClassOrInterfaceType [498,507]
+        SimpleName: Exception [498,507]
+    VoidType [471,475]
+    BlockStmt [508,1038]
+        ExpressionStmt [518,624]
+            MethodCallExpr [518,623]
+                NameExpr [518,524]
+                    SimpleName: Assert [518,524]
+                SimpleName: assertEquals [525,537]
+                MethodCallExpr [538,570]
+                    MethodCallExpr [538,560]
+                        NameExpr [538,545]
+                            SimpleName: Pattern [538,545]
+                        SimpleName: compile [546,553]
+                        StringLiteralExpr: abc [554,559]
+                    SimpleName: pattern [561,568]
+                MethodCallExpr [572,622]
+                    MethodCallExpr [572,612]
+                        NameExpr [572,576]
+                            SimpleName: JSON [572,576]
+                        SimpleName: parseObject [577,588]
+                        StringLiteralExpr: 'abc' [589,596]
+                        ClassExpr [598,611]
+                            ClassOrInterfaceType [598,605]
+                                SimpleName: Pattern [598,605]
+                    SimpleName: pattern [613,620]
+        ExpressionStmt [634,701]
+            MethodCallExpr [634,700]
+                NameExpr [634,640]
+                    SimpleName: Assert [634,640]
+                SimpleName: assertEquals [641,653]
+                NullLiteralExpr [654,658]
+                MethodCallExpr [660,699]
+                    NameExpr [660,664]
+                        SimpleName: JSON [660,664]
+                    SimpleName: parseObject [665,676]
+                    StringLiteralExpr: null [677,683]
+                    ClassExpr [685,698]
+                        ClassOrInterfaceType [685,692]
+                            SimpleName: Pattern [685,692]
+        ExpressionStmt [711,837]
+            VariableDeclarationExpr [711,836]
+                VariableDeclarator [732,836]
+                    ClassOrInterfaceType [711,731]
+                        SimpleName: DefaultExtJSONParser [711,731]
+                    SimpleName: parser [732,738]
+                    ObjectCreationExpr [741,836]
+                        ClassOrInterfaceType [745,765]
+                            SimpleName: DefaultExtJSONParser [745,765]
+                        StringLiteralExpr: null [766,772]
+                        MethodCallExpr [774,806]
+                            NameExpr [774,786]
+                                SimpleName: ParserConfig [774,786]
+                            SimpleName: getGlobalInstance [787,804]
+                        FieldAccessExpr [808,835]
+                            NameExpr [808,812]
+                                SimpleName: JSON [808,812]
+                            SimpleName: DEFAULT_PARSER_FEATURE [813,835]
+        ExpressionStmt [846,927]
+            MethodCallExpr [846,926]
+                NameExpr [846,852]
+                    SimpleName: Assert [846,852]
+                SimpleName: assertEquals [853,865]
+                NullLiteralExpr [866,870]
+                MethodCallExpr [872,925]
+                    FieldAccessExpr [872,900]
+                        NameExpr [872,891]
+                            SimpleName: PatternDeserializer [872,891]
+                        SimpleName: instance [892,900]
+                    SimpleName: deserialze [901,911]
+                    NameExpr [912,918]
+                        SimpleName: parser [912,918]
+                    NullLiteralExpr [920,924]
+        ExpressionStmt [936,1032]
+            MethodCallExpr [936,1031]
+                NameExpr [936,942]
+                    SimpleName: Assert [936,942]
+                SimpleName: assertEquals [943,955]
+                FieldAccessExpr [956,980]
+                    NameExpr [956,965]
+                        SimpleName: JSONToken [956,965]
+                    SimpleName: LITERAL_STRING [966,980]
+                MethodCallExpr [982,1030]
+                    FieldAccessExpr [982,1010]
+                        NameExpr [982,1001]
+                            SimpleName: PatternDeserializer [982,1001]
+                        SimpleName: instance [1002,1010]
+                    SimpleName: getFastMatchToken [1011,1028]
+to
+ClassOrInterfaceDeclaration [0,31]
+at 2
+===
+insert-tree
+---
+ClassOrInterfaceType [448,456]
+    SimpleName: TestCase [448,456]
+to
+ClassOrInterfaceDeclaration [0,31]
+at 3

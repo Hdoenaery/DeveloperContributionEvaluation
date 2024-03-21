@@ -1,0 +1,147 @@
+===
+insert-tree
+---
+PackageDeclaration [0,45]
+    Name: serializer [8,44]
+        Name: bvt [8,33]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,20]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [47,73]
+    Name: TimeZone [54,72]
+        Name: util [54,63]
+            Name: java [54,58]
+to
+CompilationUnit [0,20]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [75,105]
+    Name: Assert [82,104]
+        Name: framework [82,97]
+            Name: junit [82,87]
+to
+CompilationUnit [0,20]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [106,138]
+    Name: TestCase [113,137]
+        Name: framework [113,128]
+            Name: junit [113,118]
+to
+CompilationUnit [0,20]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [140,173]
+    Name: JSON [147,172]
+        Name: fastjson [147,167]
+            Name: alibaba [147,158]
+                Name: com [147,150]
+to
+CompilationUnit [0,20]
+at 4
+===
+insert-node
+---
+Modifier: public [175,181]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [225,564]
+    Modifier: public [225,231]
+    SimpleName: test_timezone [237,250]
+    ClassOrInterfaceType [260,269]
+        SimpleName: Exception [260,269]
+    VoidType [232,236]
+    BlockStmt [270,564]
+        ExpressionStmt [280,317]
+            VariableDeclarationExpr [280,316]
+                VariableDeclarator [289,316]
+                    ClassOrInterfaceType [280,288]
+                        SimpleName: TimeZone [280,288]
+                    SimpleName: tz1 [289,292]
+                    MethodCallExpr [295,316]
+                        NameExpr [295,303]
+                            SimpleName: TimeZone [295,303]
+                        SimpleName: getDefault [304,314]
+        ExpressionStmt [326,363]
+            VariableDeclarationExpr [326,362]
+                VariableDeclarator [333,362]
+                    ClassOrInterfaceType [326,332]
+                        SimpleName: String [326,332]
+                    SimpleName: text [333,337]
+                    MethodCallExpr [340,362]
+                        NameExpr [340,344]
+                            SimpleName: JSON [340,344]
+                        SimpleName: toJSONString [345,357]
+                        NameExpr [358,361]
+                            SimpleName: tz1 [358,361]
+        ExpressionStmt [373,431]
+            MethodCallExpr [373,430]
+                NameExpr [373,379]
+                    SimpleName: Assert [373,379]
+                SimpleName: assertEquals [380,392]
+                MethodCallExpr [393,423]
+                    NameExpr [393,397]
+                        SimpleName: JSON [393,397]
+                    SimpleName: toJSONString [398,410]
+                    MethodCallExpr [411,422]
+                        NameExpr [411,414]
+                            SimpleName: tz1 [411,414]
+                        SimpleName: getID [415,420]
+                NameExpr [425,429]
+                    SimpleName: text [425,429]
+        ExpressionStmt [449,503]
+            VariableDeclarationExpr [449,502]
+                VariableDeclarator [458,502]
+                    ClassOrInterfaceType [449,457]
+                        SimpleName: TimeZone [449,457]
+                    SimpleName: tz2 [458,461]
+                    MethodCallExpr [464,502]
+                        NameExpr [464,468]
+                            SimpleName: JSON [464,468]
+                        SimpleName: parseObject [469,480]
+                        NameExpr [481,485]
+                            SimpleName: text [481,485]
+                        ClassExpr [487,501]
+                            ClassOrInterfaceType [487,495]
+                                SimpleName: TimeZone [487,495]
+        ExpressionStmt [512,558]
+            MethodCallExpr [512,557]
+                NameExpr [512,518]
+                    SimpleName: Assert [512,518]
+                SimpleName: assertEquals [519,531]
+                MethodCallExpr [532,543]
+                    NameExpr [532,535]
+                        SimpleName: tz1 [532,535]
+                    SimpleName: getID [536,541]
+                MethodCallExpr [545,556]
+                    NameExpr [545,548]
+                        SimpleName: tz2 [545,548]
+                    SimpleName: getID [549,554]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 2
+===
+insert-tree
+---
+ClassOrInterfaceType [209,217]
+    SimpleName: TestCase [209,217]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 3

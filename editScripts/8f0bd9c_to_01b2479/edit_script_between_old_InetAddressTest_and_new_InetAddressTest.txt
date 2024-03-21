@@ -1,0 +1,197 @@
+===
+insert-tree
+---
+PackageDeclaration [0,45]
+    Name: serializer [8,44]
+        Name: bvt [8,33]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,23]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [47,75]
+    Name: InetAddress [54,74]
+        Name: net [54,62]
+            Name: java [54,58]
+to
+CompilationUnit [0,23]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [77,107]
+    Name: Assert [84,106]
+        Name: framework [84,99]
+            Name: junit [84,89]
+to
+CompilationUnit [0,23]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [108,140]
+    Name: TestCase [115,139]
+        Name: framework [115,130]
+            Name: junit [115,120]
+to
+CompilationUnit [0,23]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [142,175]
+    Name: JSON [149,174]
+        Name: fastjson [149,169]
+            Name: alibaba [149,160]
+                Name: com [149,152]
+to
+CompilationUnit [0,23]
+at 4
+===
+insert-node
+---
+Modifier: public [177,183]
+to
+ClassOrInterfaceDeclaration [0,23]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [230,598]
+    Modifier: public [230,236]
+    SimpleName: test_inetAddress [242,258]
+    ClassOrInterfaceType [268,277]
+        SimpleName: Exception [268,277]
+    VoidType [237,241]
+    BlockStmt [278,598]
+        ExpressionStmt [288,337]
+            VariableDeclarationExpr [288,336]
+                VariableDeclarator [300,336]
+                    ClassOrInterfaceType [288,299]
+                        SimpleName: InetAddress [288,299]
+                    SimpleName: address [300,307]
+                    MethodCallExpr [310,336]
+                        NameExpr [310,321]
+                            SimpleName: InetAddress [310,321]
+                        SimpleName: getLocalHost [322,334]
+        ExpressionStmt [347,388]
+            VariableDeclarationExpr [347,387]
+                VariableDeclarator [354,387]
+                    ClassOrInterfaceType [347,353]
+                        SimpleName: String [347,353]
+                    SimpleName: text [354,358]
+                    MethodCallExpr [361,387]
+                        NameExpr [361,365]
+                            SimpleName: JSON [361,365]
+                        SimpleName: toJSONString [366,378]
+                        NameExpr [379,386]
+                            SimpleName: address [379,386]
+        ExpressionStmt [398,469]
+            MethodCallExpr [398,468]
+                NameExpr [398,404]
+                    SimpleName: Assert [398,404]
+                SimpleName: assertEquals [405,417]
+                MethodCallExpr [418,461]
+                    NameExpr [418,422]
+                        SimpleName: JSON [418,422]
+                    SimpleName: toJSONString [423,435]
+                    MethodCallExpr [436,460]
+                        NameExpr [436,443]
+                            SimpleName: address [436,443]
+                        SimpleName: getHostAddress [444,458]
+                NameExpr [463,467]
+                    SimpleName: text [463,467]
+        ExpressionStmt [479,544]
+            VariableDeclarationExpr [479,543]
+                VariableDeclarator [491,543]
+                    ClassOrInterfaceType [479,490]
+                        SimpleName: InetAddress [479,490]
+                    SimpleName: address2 [491,499]
+                    MethodCallExpr [502,543]
+                        NameExpr [502,506]
+                            SimpleName: JSON [502,506]
+                        SimpleName: parseObject [507,518]
+                        NameExpr [519,523]
+                            SimpleName: text [519,523]
+                        ClassExpr [525,542]
+                            ClassOrInterfaceType [525,536]
+                                SimpleName: InetAddress [525,536]
+        ExpressionStmt [553,592]
+            MethodCallExpr [553,591]
+                NameExpr [553,559]
+                    SimpleName: Assert [553,559]
+                SimpleName: assertEquals [560,572]
+                NameExpr [573,580]
+                    SimpleName: address [573,580]
+                NameExpr [582,590]
+                    SimpleName: address2 [582,590]
+to
+ClassOrInterfaceDeclaration [0,23]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [604,732]
+    Modifier: public [604,610]
+    SimpleName: test_null [616,625]
+    ClassOrInterfaceType [635,644]
+        SimpleName: Exception [635,644]
+    VoidType [611,615]
+    BlockStmt [645,732]
+        ExpressionStmt [655,726]
+            MethodCallExpr [655,725]
+                NameExpr [655,661]
+                    SimpleName: Assert [655,661]
+                SimpleName: assertEquals [662,674]
+                NullLiteralExpr [675,679]
+                MethodCallExpr [681,724]
+                    NameExpr [681,685]
+                        SimpleName: JSON [681,685]
+                    SimpleName: parseObject [686,697]
+                    StringLiteralExpr: null [698,704]
+                    ClassExpr [706,723]
+                        ClassOrInterfaceType [706,717]
+                            SimpleName: InetAddress [706,717]
+to
+ClassOrInterfaceDeclaration [0,23]
+at 3
+===
+insert-tree
+---
+MethodDeclaration [742,871]
+    Modifier: public [742,748]
+    SimpleName: test_empty [754,764]
+    ClassOrInterfaceType [774,783]
+        SimpleName: Exception [774,783]
+    VoidType [749,753]
+    BlockStmt [784,871]
+        ExpressionStmt [794,865]
+            MethodCallExpr [794,864]
+                NameExpr [794,800]
+                    SimpleName: Assert [794,800]
+                SimpleName: assertEquals [801,813]
+                NullLiteralExpr [814,818]
+                MethodCallExpr [820,863]
+                    NameExpr [820,824]
+                        SimpleName: JSON [820,824]
+                    SimpleName: parseObject [825,836]
+                    StringLiteralExpr: "" [837,843]
+                    ClassExpr [845,862]
+                        ClassOrInterfaceType [845,856]
+                            SimpleName: InetAddress [845,856]
+to
+ClassOrInterfaceDeclaration [0,23]
+at 4
+===
+insert-tree
+---
+ClassOrInterfaceType [214,222]
+    SimpleName: TestCase [214,222]
+to
+ClassOrInterfaceDeclaration [0,23]
+at 5

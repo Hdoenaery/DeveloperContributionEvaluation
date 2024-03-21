@@ -1,0 +1,172 @@
+===
+insert-tree
+---
+PackageDeclaration [0,47]
+    Name: encode [8,46]
+        Name: benchmark [8,39]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,21]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [49,74]
+    Name: HashMap [56,73]
+        Name: util [56,65]
+            Name: java [56,60]
+to
+CompilationUnit [0,21]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [75,96]
+    Name: Map [82,95]
+        Name: util [82,91]
+            Name: java [82,86]
+to
+CompilationUnit [0,21]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [98,151]
+    Name: BenchmarkCase [105,150]
+        Name: benchmark [105,136]
+            Name: test [105,126]
+                Name: json [105,121]
+                    Name: alibaba [105,116]
+                        Name: com [105,108]
+to
+CompilationUnit [0,21]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [152,193]
+    Name: Codec [159,192]
+        Name: codec [159,186]
+            Name: test [159,180]
+                Name: json [159,175]
+                    Name: alibaba [159,170]
+                        Name: com [159,162]
+to
+CompilationUnit [0,21]
+at 4
+===
+insert-node
+---
+Modifier: public [195,201]
+to
+ClassOrInterfaceDeclaration [0,21]
+at 0
+===
+insert-tree
+---
+FieldDeclaration [251,273]
+    Modifier: private [251,258]
+    VariableDeclarator [266,272]
+        ClassOrInterfaceType [259,265]
+            SimpleName: Object [259,265]
+        SimpleName: object [266,272]
+to
+ClassOrInterfaceDeclaration [0,21]
+at 2
+===
+insert-tree
+---
+ConstructorDeclaration [279,548]
+    SingleMemberAnnotationExpr [279,325]
+        Name: SuppressWarnings [280,296]
+        ArrayInitializerExpr [297,324]
+            StringLiteralExpr: rawtypes [299,309]
+            StringLiteralExpr: unchecked [311,322]
+    Modifier: public [330,336]
+    SimpleName: Map1000Encode [337,350]
+    BlockStmt [352,548]
+        ExplicitConstructorInvocationStmt [362,385]
+            StringLiteralExpr: Map1000Encode [368,383]
+        ExpressionStmt [395,419]
+            VariableDeclarationExpr [395,418]
+                VariableDeclarator [399,418]
+                    ClassOrInterfaceType [395,398]
+                        SimpleName: Map [395,398]
+                    SimpleName: map [399,402]
+                    ObjectCreationExpr [405,418]
+                        ClassOrInterfaceType [409,416]
+                            SimpleName: HashMap [409,416]
+        ForStmt [428,515]
+            VariableDeclarationExpr [433,442]
+                VariableDeclarator [437,442]
+                    PrimitiveType: int [433,436]
+                    SimpleName: i [437,438]
+                    IntegerLiteralExpr: 0 [441,442]
+            BinaryExpr [444,452]
+                NameExpr [444,445]
+                    SimpleName: i [444,445]
+                IntegerLiteralExpr: 1000 [448,452]
+            UnaryExpr [454,457]
+                NameExpr [456,457]
+                    SimpleName: i [456,457]
+            BlockStmt [459,515]
+                ExpressionStmt [473,505]
+                    MethodCallExpr [473,504]
+                        NameExpr [473,476]
+                            SimpleName: map [473,476]
+                        SimpleName: put [477,480]
+                        MethodCallExpr [481,500]
+                            NameExpr [481,488]
+                                SimpleName: Integer [481,488]
+                            SimpleName: toString [489,497]
+                            NameExpr [498,499]
+                                SimpleName: i [498,499]
+                        NameExpr [502,503]
+                            SimpleName: i [502,503]
+        ExpressionStmt [524,542]
+            AssignExpr [524,541]
+                FieldAccessExpr [524,535]
+                    ThisExpr [524,528]
+                    SimpleName: object [529,535]
+                NameExpr [538,541]
+                    SimpleName: map [538,541]
+to
+ClassOrInterfaceDeclaration [0,21]
+at 3
+===
+insert-tree
+---
+MethodDeclaration [554,655]
+    MarkerAnnotationExpr [554,563]
+        Name: Override [555,563]
+    Modifier: public [568,574]
+    SimpleName: execute [580,587]
+    Parameter [588,599]
+        ClassOrInterfaceType [588,593]
+            SimpleName: Codec [588,593]
+        SimpleName: codec [594,599]
+    ClassOrInterfaceType [608,617]
+        SimpleName: Exception [608,617]
+    VoidType [575,579]
+    BlockStmt [618,655]
+        ExpressionStmt [628,649]
+            MethodCallExpr [628,648]
+                NameExpr [628,633]
+                    SimpleName: codec [628,633]
+                SimpleName: encode [634,640]
+                NameExpr [641,647]
+                    SimpleName: object [641,647]
+to
+ClassOrInterfaceDeclaration [0,21]
+at 4
+===
+insert-tree
+---
+ClassOrInterfaceType [230,243]
+    SimpleName: BenchmarkCase [230,243]
+to
+ClassOrInterfaceDeclaration [0,21]
+at 5

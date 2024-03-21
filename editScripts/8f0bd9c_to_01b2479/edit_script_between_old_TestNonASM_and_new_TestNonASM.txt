@@ -1,0 +1,127 @@
+===
+insert-tree
+---
+PackageDeclaration [0,38]
+    Name: asm [8,37]
+        Name: bvt [8,33]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,18]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [40,70]
+    Name: Assert [47,69]
+        Name: framework [47,62]
+            Name: junit [47,52]
+to
+CompilationUnit [0,18]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [71,103]
+    Name: TestCase [78,102]
+        Name: framework [78,93]
+            Name: junit [78,83]
+to
+CompilationUnit [0,18]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [105,153]
+    Name: ParserConfig [112,152]
+        Name: parser [112,139]
+            Name: fastjson [112,132]
+                Name: alibaba [112,123]
+                    Name: com [112,115]
+to
+CompilationUnit [0,18]
+at 3
+===
+insert-node
+---
+Modifier: public [155,161]
+to
+ClassOrInterfaceDeclaration [0,18]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [203,512]
+    Modifier: public [203,209]
+    SimpleName: test_no_asm [215,226]
+    ClassOrInterfaceType [236,245]
+        SimpleName: Exception [236,245]
+    VoidType [210,214]
+    BlockStmt [246,512]
+        ExpressionStmt [256,298]
+            VariableDeclarationExpr [256,297]
+                VariableDeclarator [269,297]
+                    ClassOrInterfaceType [256,268]
+                        SimpleName: ParserConfig [256,268]
+                    SimpleName: mapping [269,276]
+                    ObjectCreationExpr [279,297]
+                        ClassOrInterfaceType [283,295]
+                            SimpleName: ParserConfig [283,295]
+        ExpressionStmt [316,344]
+            MethodCallExpr [316,343]
+                NameExpr [316,323]
+                    SimpleName: mapping [316,323]
+                SimpleName: setAsmEnable [324,336]
+                BooleanLiteralExpr: false [337,342]
+        ExpressionStmt [353,403]
+            MethodCallExpr [353,402]
+                NameExpr [353,359]
+                    SimpleName: Assert [353,359]
+                SimpleName: assertEquals [360,372]
+                BooleanLiteralExpr: false [373,378]
+                MethodCallExpr [380,401]
+                    NameExpr [380,387]
+                        SimpleName: mapping [380,387]
+                    SimpleName: isAsmEnable [388,399]
+        ExpressionStmt [421,448]
+            MethodCallExpr [421,447]
+                NameExpr [421,428]
+                    SimpleName: mapping [421,428]
+                SimpleName: setAsmEnable [429,441]
+                BooleanLiteralExpr: true [442,446]
+        ExpressionStmt [457,506]
+            MethodCallExpr [457,505]
+                NameExpr [457,463]
+                    SimpleName: Assert [457,463]
+                SimpleName: assertEquals [464,476]
+                BooleanLiteralExpr: true [477,481]
+                MethodCallExpr [483,504]
+                    NameExpr [483,490]
+                        SimpleName: mapping [483,490]
+                    SimpleName: isAsmEnable [491,502]
+to
+ClassOrInterfaceDeclaration [0,18]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [522,580]
+    Modifier: public [522,528]
+    SimpleName: test_error [534,544]
+    ClassOrInterfaceType [554,563]
+        SimpleName: Exception [554,563]
+    VoidType [529,533]
+    BlockStmt [564,580]
+to
+ClassOrInterfaceDeclaration [0,18]
+at 3
+===
+insert-tree
+---
+ClassOrInterfaceType [187,195]
+    SimpleName: TestCase [187,195]
+to
+ClassOrInterfaceDeclaration [0,18]
+at 4

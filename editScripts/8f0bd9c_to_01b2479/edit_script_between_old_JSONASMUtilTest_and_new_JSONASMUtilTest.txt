@@ -1,0 +1,218 @@
+===
+insert-tree
+---
+PackageDeclaration [0,39]
+    Name: util [8,38]
+        Name: bvt [8,33]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,23]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [41,66]
+    Name: HashMap [48,65]
+        Name: util [48,57]
+            Name: java [48,52]
+to
+CompilationUnit [0,23]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [68,98]
+    Name: Assert [75,97]
+        Name: framework [75,90]
+            Name: junit [75,80]
+to
+CompilationUnit [0,23]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [99,131]
+    Name: TestCase [106,130]
+        Name: framework [106,121]
+            Name: junit [106,111]
+to
+CompilationUnit [0,23]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [133,175]
+    Name: ASMUtils [140,174]
+        Name: util [140,165]
+            Name: fastjson [140,160]
+                Name: alibaba [140,151]
+                    Name: com [140,143]
+to
+CompilationUnit [0,23]
+at 4
+===
+insert-node
+---
+Modifier: public [177,183]
+to
+ClassOrInterfaceDeclaration [0,23]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [230,664]
+    Modifier: public [230,236]
+    SimpleName: test_0 [242,248]
+    ClassOrInterfaceType [258,267]
+        SimpleName: Exception [258,267]
+    VoidType [237,241]
+    BlockStmt [268,664]
+        ExpressionStmt [278,356]
+            MethodCallExpr [278,355]
+                NameExpr [278,284]
+                    SimpleName: Assert [278,284]
+                SimpleName: assertEquals [285,297]
+                StringLiteralExpr: ()I [298,303]
+                MethodCallExpr [305,354]
+                    NameExpr [305,313]
+                        SimpleName: ASMUtils [305,313]
+                    SimpleName: getDesc [314,321]
+                    MethodCallExpr [322,353]
+                        ClassExpr [322,335]
+                            ClassOrInterfaceType [322,329]
+                                SimpleName: HashMap [322,329]
+                        SimpleName: getMethod [336,345]
+                        StringLiteralExpr: size [346,352]
+        ExpressionStmt [365,491]
+            MethodCallExpr [365,490]
+                NameExpr [365,371]
+                    SimpleName: Assert [365,371]
+                SimpleName: assertEquals [372,384]
+                StringLiteralExpr: (Ljava/lang/Object;)Ljava/lang/Object; [385,425]
+                MethodCallExpr [427,489]
+                    NameExpr [427,435]
+                        SimpleName: ASMUtils [427,435]
+                    SimpleName: getDesc [436,443]
+                    MethodCallExpr [444,488]
+                        ClassExpr [444,457]
+                            ClassOrInterfaceType [444,451]
+                                SimpleName: HashMap [444,451]
+                        SimpleName: getMethod [458,467]
+                        StringLiteralExpr: get [468,473]
+                        ClassExpr [475,487]
+                            ClassOrInterfaceType [475,481]
+                                SimpleName: Object [475,481]
+        ExpressionStmt [500,658]
+            MethodCallExpr [500,657]
+                NameExpr [500,506]
+                    SimpleName: Assert [500,506]
+                SimpleName: assertEquals [507,519]
+                StringLiteralExpr: (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; [520,578]
+                MethodCallExpr [580,656]
+                    NameExpr [580,588]
+                        SimpleName: ASMUtils [580,588]
+                    SimpleName: getDesc [589,596]
+                    MethodCallExpr [597,655]
+                        ClassExpr [597,610]
+                            ClassOrInterfaceType [597,604]
+                                SimpleName: HashMap [597,604]
+                        SimpleName: getMethod [611,620]
+                        StringLiteralExpr: put [621,626]
+                        ClassExpr [628,640]
+                            ClassOrInterfaceType [628,634]
+                                SimpleName: Object [628,634]
+                        ClassExpr [642,654]
+                            ClassOrInterfaceType [642,648]
+                                SimpleName: Object [642,648]
+to
+ClassOrInterfaceDeclaration [0,23]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [670,861]
+    Modifier: public [670,676]
+    SimpleName: test_1 [682,688]
+    ClassOrInterfaceType [698,707]
+        SimpleName: Exception [698,707]
+    VoidType [677,681]
+    BlockStmt [708,861]
+        ExpressionStmt [718,772]
+            MethodCallExpr [718,771]
+                NameExpr [718,724]
+                    SimpleName: Assert [718,724]
+                SimpleName: assertEquals [725,737]
+                StringLiteralExpr: I [738,741]
+                MethodCallExpr [743,770]
+                    NameExpr [743,751]
+                        SimpleName: ASMUtils [743,751]
+                    SimpleName: getType [752,759]
+                    ClassExpr [760,769]
+                        PrimitiveType: int [760,763]
+        ExpressionStmt [781,855]
+            MethodCallExpr [781,854]
+                NameExpr [781,787]
+                    SimpleName: Assert [781,787]
+                SimpleName: assertEquals [788,800]
+                StringLiteralExpr: java/lang/Integer [801,820]
+                MethodCallExpr [822,853]
+                    NameExpr [822,830]
+                        SimpleName: ASMUtils [822,830]
+                    SimpleName: getType [831,838]
+                    ClassExpr [839,852]
+                        ClassOrInterfaceType [839,846]
+                            SimpleName: Integer [839,846]
+to
+ClassOrInterfaceDeclaration [0,23]
+at 3
+===
+insert-tree
+---
+MethodDeclaration [867,1066]
+    Modifier: public [867,873]
+    SimpleName: test_2 [879,885]
+    ClassOrInterfaceType [895,904]
+        SimpleName: Exception [895,904]
+    VoidType [874,878]
+    BlockStmt [905,1066]
+        ExpressionStmt [915,972]
+            MethodCallExpr [915,971]
+                NameExpr [915,921]
+                    SimpleName: Assert [915,921]
+                SimpleName: assertEquals [922,934]
+                StringLiteralExpr: [I [935,939]
+                MethodCallExpr [941,970]
+                    NameExpr [941,949]
+                        SimpleName: ASMUtils [941,949]
+                    SimpleName: getType [950,957]
+                    ClassExpr [958,969]
+                        ArrayType [958,963]
+                            PrimitiveType: int [958,961]
+        ExpressionStmt [981,1060]
+            MethodCallExpr [981,1059]
+                NameExpr [981,987]
+                    SimpleName: Assert [981,987]
+                SimpleName: assertEquals [988,1000]
+                StringLiteralExpr: [Ljava/lang/Integer; [1001,1023]
+                MethodCallExpr [1025,1058]
+                    NameExpr [1025,1033]
+                        SimpleName: ASMUtils [1025,1033]
+                    SimpleName: getType [1034,1041]
+                    ClassExpr [1042,1057]
+                        ArrayType [1042,1051]
+                            ClassOrInterfaceType [1042,1049]
+                                SimpleName: Integer [1042,1049]
+to
+ClassOrInterfaceDeclaration [0,23]
+at 4
+===
+insert-tree
+---
+ClassOrInterfaceType [214,222]
+    SimpleName: TestCase [214,222]
+to
+ClassOrInterfaceDeclaration [0,23]
+at 5

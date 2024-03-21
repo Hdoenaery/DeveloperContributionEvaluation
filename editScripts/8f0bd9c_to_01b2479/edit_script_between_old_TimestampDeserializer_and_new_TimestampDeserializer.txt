@@ -1,0 +1,272 @@
+===
+insert-tree
+---
+PackageDeclaration [0,49]
+    Name: deserializer [8,48]
+        Name: parser [8,35]
+            Name: fastjson [8,28]
+                Name: alibaba [8,19]
+                    Name: com [8,11]
+to
+CompilationUnit [0,29]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [51,81]
+    Name: Type [58,80]
+        Name: reflect [58,75]
+            Name: lang [58,67]
+                Name: java [58,62]
+to
+CompilationUnit [0,29]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [82,104]
+    Name: Date [89,103]
+        Name: util [89,98]
+            Name: java [89,93]
+to
+CompilationUnit [0,29]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [106,148]
+    Name: JSONException [113,147]
+        Name: fastjson [113,133]
+            Name: alibaba [113,124]
+                Name: com [113,116]
+to
+CompilationUnit [0,29]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [149,205]
+    Name: DefaultExtJSONParser [156,204]
+        Name: parser [156,183]
+            Name: fastjson [156,176]
+                Name: alibaba [156,167]
+                    Name: com [156,159]
+to
+CompilationUnit [0,29]
+at 4
+===
+insert-tree
+---
+ImportDeclaration [206,251]
+    Name: JSONToken [213,250]
+        Name: parser [213,240]
+            Name: fastjson [213,233]
+                Name: alibaba [213,224]
+                    Name: com [213,216]
+to
+CompilationUnit [0,29]
+at 5
+===
+insert-node
+---
+Modifier: public [253,259]
+to
+ClassOrInterfaceDeclaration [0,29]
+at 0
+===
+insert-tree
+---
+FieldDeclaration [325,406]
+    Modifier: public [325,331]
+    Modifier: final [332,337]
+    Modifier: static [338,344]
+    VariableDeclarator [367,405]
+        ClassOrInterfaceType [345,366]
+            SimpleName: TimestampDeserializer [345,366]
+        SimpleName: instance [367,375]
+        ObjectCreationExpr [378,405]
+            ClassOrInterfaceType [382,403]
+                SimpleName: TimestampDeserializer [382,403]
+to
+ClassOrInterfaceDeclaration [0,29]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [412,1207]
+    SingleMemberAnnotationExpr [412,442]
+        Name: SuppressWarnings [413,429]
+        StringLiteralExpr: unchecked [430,441]
+    Modifier: public [447,453]
+    TypeParameter [455,456]
+        SimpleName: T [455,456]
+    SimpleName: deserialze [460,470]
+    Parameter [471,498]
+        ClassOrInterfaceType [471,491]
+            SimpleName: DefaultExtJSONParser [471,491]
+        SimpleName: parser [492,498]
+    Parameter [500,510]
+        ClassOrInterfaceType [500,504]
+            SimpleName: Type [500,504]
+        SimpleName: clazz [505,510]
+    ClassOrInterfaceType [458,459]
+        SimpleName: T [458,459]
+    BlockStmt [512,1207]
+        ExpressionStmt [522,550]
+            VariableDeclarationExpr [522,549]
+                VariableDeclarator [529,549]
+                    ClassOrInterfaceType [522,528]
+                        SimpleName: Object [522,528]
+                    SimpleName: val [529,532]
+                    MethodCallExpr [535,549]
+                        NameExpr [535,541]
+                            SimpleName: parser [535,541]
+                        SimpleName: parse [542,547]
+        IfStmt [568,621]
+            BinaryExpr [572,583]
+                NameExpr [572,575]
+                    SimpleName: val [572,575]
+                NullLiteralExpr [579,583]
+            BlockStmt [585,621]
+                ReturnStmt [599,611]
+                    NullLiteralExpr [606,610]
+        IfStmt [631,748]
+            InstanceOfExpr [635,664]
+                NameExpr [635,638]
+                    SimpleName: val [635,638]
+                ClassOrInterfaceType [650,664]
+                    ClassOrInterfaceType [650,659]
+                        ClassOrInterfaceType [650,654]
+                            SimpleName: java [650,654]
+                        SimpleName: util [655,659]
+                    SimpleName: Date [660,664]
+            BlockStmt [666,748]
+                ReturnStmt [680,738]
+                    CastExpr [687,737]
+                        ClassOrInterfaceType [688,689]
+                            SimpleName: T [688,689]
+                        ObjectCreationExpr [691,737]
+                            ClassOrInterfaceType [695,713]
+                                ClassOrInterfaceType [695,703]
+                                    ClassOrInterfaceType [695,699]
+                                        SimpleName: java [695,699]
+                                    SimpleName: sql [700,703]
+                                SimpleName: Timestamp [704,713]
+                            MethodCallExpr [714,736]
+                                EnclosedExpr [714,726]
+                                    CastExpr [715,725]
+                                        ClassOrInterfaceType [716,720]
+                                            SimpleName: Date [716,720]
+                                        NameExpr [722,725]
+                                            SimpleName: val [722,725]
+                                SimpleName: getTime [727,734]
+        IfStmt [758,871]
+            InstanceOfExpr [762,783]
+                NameExpr [762,765]
+                    SimpleName: val [762,765]
+                ClassOrInterfaceType [777,783]
+                    SimpleName: Number [777,783]
+            BlockStmt [785,871]
+                ReturnStmt [799,861]
+                    CastExpr [806,860]
+                        ClassOrInterfaceType [807,808]
+                            SimpleName: T [807,808]
+                        ObjectCreationExpr [810,860]
+                            ClassOrInterfaceType [814,832]
+                                ClassOrInterfaceType [814,822]
+                                    ClassOrInterfaceType [814,818]
+                                        SimpleName: java [814,818]
+                                    SimpleName: sql [819,822]
+                                SimpleName: Timestamp [823,832]
+                            MethodCallExpr [833,859]
+                                EnclosedExpr [833,847]
+                                    CastExpr [834,846]
+                                        ClassOrInterfaceType [835,841]
+                                            SimpleName: Number [835,841]
+                                        NameExpr [843,846]
+                                            SimpleName: val [843,846]
+                                SimpleName: longValue [848,857]
+        IfStmt [881,1152]
+            InstanceOfExpr [885,906]
+                NameExpr [885,888]
+                    SimpleName: val [885,888]
+                ClassOrInterfaceType [900,906]
+                    SimpleName: String [900,906]
+            BlockStmt [908,1152]
+                ExpressionStmt [922,951]
+                    VariableDeclarationExpr [922,950]
+                        VariableDeclarator [929,950]
+                            ClassOrInterfaceType [922,928]
+                                SimpleName: String [922,928]
+                            SimpleName: strVal [929,935]
+                            CastExpr [938,950]
+                                ClassOrInterfaceType [939,945]
+                                    SimpleName: String [939,945]
+                                NameExpr [947,950]
+                                    SimpleName: val [947,950]
+                IfStmt [964,1034]
+                    BinaryExpr [968,988]
+                        MethodCallExpr [968,983]
+                            NameExpr [968,974]
+                                SimpleName: strVal [968,974]
+                            SimpleName: length [975,981]
+                        IntegerLiteralExpr: 0 [987,988]
+                    BlockStmt [990,1034]
+                        ReturnStmt [1008,1020]
+                            NullLiteralExpr [1015,1019]
+                ExpressionStmt [1048,1086]
+                    VariableDeclarationExpr [1048,1085]
+                        VariableDeclarator [1053,1085]
+                            PrimitiveType: long [1048,1052]
+                            SimpleName: longVal [1053,1060]
+                            MethodCallExpr [1063,1085]
+                                NameExpr [1063,1067]
+                                    SimpleName: Long [1063,1067]
+                                SimpleName: parseLong [1068,1077]
+                                NameExpr [1078,1084]
+                                    SimpleName: strVal [1078,1084]
+                ReturnStmt [1099,1142]
+                    CastExpr [1106,1141]
+                        ClassOrInterfaceType [1107,1108]
+                            SimpleName: T [1107,1108]
+                        ObjectCreationExpr [1110,1141]
+                            ClassOrInterfaceType [1114,1132]
+                                ClassOrInterfaceType [1114,1122]
+                                    ClassOrInterfaceType [1114,1118]
+                                        SimpleName: java [1114,1118]
+                                    SimpleName: sql [1119,1122]
+                                SimpleName: Timestamp [1123,1132]
+                            NameExpr [1133,1140]
+                                SimpleName: longVal [1133,1140]
+        ThrowStmt [1162,1201]
+            ObjectCreationExpr [1168,1200]
+                ClassOrInterfaceType [1172,1185]
+                    SimpleName: JSONException [1172,1185]
+                StringLiteralExpr: parse error [1186,1199]
+to
+ClassOrInterfaceDeclaration [0,29]
+at 3
+===
+insert-tree
+---
+MethodDeclaration [1213,1289]
+    Modifier: public [1213,1219]
+    SimpleName: getFastMatchToken [1224,1241]
+    PrimitiveType: int [1220,1223]
+    BlockStmt [1244,1289]
+        ReturnStmt [1254,1283]
+            FieldAccessExpr [1261,1282]
+                NameExpr [1261,1270]
+                    SimpleName: JSONToken [1261,1270]
+                SimpleName: LITERAL_INT [1271,1282]
+to
+ClassOrInterfaceDeclaration [0,29]
+at 4
+===
+insert-tree
+---
+ClassOrInterfaceType [299,317]
+    SimpleName: ObjectDeserializer [299,317]
+to
+ClassOrInterfaceDeclaration [0,29]
+at 5

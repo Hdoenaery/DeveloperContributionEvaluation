@@ -1,0 +1,72 @@
+===
+insert-node
+---
+Modifier: public [1056,1062]
+to
+ClassOrInterfaceDeclaration [1056,70993]
+at 0
+===
+insert-node
+---
+Modifier: final [1063,1068]
+to
+ClassOrInterfaceDeclaration [1056,70993]
+at 1
+===
+insert-node
+---
+SimpleName: SerializeWriter [1075,1090]
+to
+ClassOrInterfaceDeclaration [1056,70993]
+at 2
+===
+insert-tree
+---
+FieldDeclaration [2013,2047]
+    Modifier: protected [2013,2022]
+    VariableDeclarator [2031,2046]
+        PrimitiveType: boolean [2023,2030]
+        SimpleName: wrtiteClassName [2031,2046]
+to
+ClassOrInterfaceDeclaration [1056,70993]
+at 20
+===
+insert-node
+---
+LineComment [61813,61842]
+to
+ClassOrInterfaceDeclaration [1056,70993]
+at 111
+===
+update-node
+---
+SimpleName: writeClassName [5649,5663]
+replace writeClassName by wrtiteClassName
+===
+delete-node
+---
+Modifier: public [1056,1062]
+===
+===
+delete-node
+---
+Modifier: final [1063,1068]
+===
+===
+delete-node
+---
+SimpleName: SerializeWriter [1075,1090]
+===
+===
+delete-tree
+---
+FieldDeclaration [2013,2046]
+    Modifier: protected [2013,2022]
+    VariableDeclarator [2031,2045]
+        PrimitiveType: boolean [2023,2030]
+        SimpleName: writeClassName [2031,2045]
+===
+delete-node
+---
+LineComment [61811,61840]
+===

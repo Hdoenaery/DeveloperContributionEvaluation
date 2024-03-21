@@ -1,0 +1,200 @@
+===
+insert-tree
+---
+PackageDeclaration [604,644]
+    Name: annotation [612,643]
+        Name: fastjson [612,632]
+            Name: alibaba [612,623]
+                Name: com [612,615]
+to
+CompilationUnit [0,17]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [646,686]
+    Name: ElementType [653,685]
+        Name: annotation [653,673]
+            Name: lang [653,662]
+                Name: java [653,657]
+to
+CompilationUnit [0,17]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [687,725]
+    Name: Retention [694,724]
+        Name: annotation [694,714]
+            Name: lang [694,703]
+                Name: java [694,698]
+to
+CompilationUnit [0,17]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [726,770]
+    Name: RetentionPolicy [733,769]
+        Name: annotation [733,753]
+            Name: lang [733,742]
+                Name: java [733,737]
+to
+CompilationUnit [0,17]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [771,806]
+    Name: Target [778,805]
+        Name: annotation [778,798]
+            Name: lang [778,787]
+                Name: java [778,782]
+to
+CompilationUnit [0,17]
+at 4
+===
+insert-tree
+---
+ImportDeclaration [808,851]
+    Name: Feature [815,850]
+        Name: parser [815,842]
+            Name: fastjson [815,835]
+                Name: alibaba [815,826]
+                    Name: com [815,818]
+to
+CompilationUnit [0,17]
+at 5
+===
+insert-tree
+---
+ImportDeclaration [852,909]
+    Name: SerializerFeature [859,908]
+        Name: serializer [859,890]
+            Name: fastjson [859,879]
+                Name: alibaba [859,870]
+                    Name: com [859,862]
+to
+CompilationUnit [0,17]
+at 6
+===
+insert-node
+---
+AnnotationDeclaration [959,1320]
+to
+CompilationUnit [0,17]
+at 7
+===
+insert-tree
+---
+SingleMemberAnnotationExpr [959,994]
+    Name: Retention [960,969]
+    FieldAccessExpr [970,993]
+        NameExpr [970,985]
+            SimpleName: RetentionPolicy [970,985]
+        SimpleName: RUNTIME [986,993]
+to
+AnnotationDeclaration [959,1320]
+at 0
+===
+insert-tree
+---
+SingleMemberAnnotationExpr [995,1045]
+    Name: Target [996,1002]
+    ArrayInitializerExpr [1003,1044]
+        FieldAccessExpr [1005,1023]
+            NameExpr [1005,1016]
+                SimpleName: ElementType [1005,1016]
+            SimpleName: METHOD [1017,1023]
+        FieldAccessExpr [1025,1042]
+            NameExpr [1025,1036]
+                SimpleName: ElementType [1025,1036]
+            SimpleName: FIELD [1037,1042]
+to
+AnnotationDeclaration [959,1320]
+at 1
+===
+insert-node
+---
+Modifier: public [1046,1052]
+to
+AnnotationDeclaration [959,1320]
+at 2
+===
+move-tree
+---
+SimpleName: JSONField [6,15]
+to
+AnnotationDeclaration [959,1320]
+at 3
+===
+insert-tree
+---
+AnnotationMemberDeclaration [1081,1106]
+    ClassOrInterfaceType [1081,1087]
+        SimpleName: String [1081,1087]
+    SimpleName: name [1088,1092]
+    StringLiteralExpr [1103,1105]
+to
+AnnotationDeclaration [959,1320]
+at 4
+===
+insert-tree
+---
+AnnotationMemberDeclaration [1112,1139]
+    ClassOrInterfaceType [1112,1118]
+        SimpleName: String [1112,1118]
+    SimpleName: format [1119,1125]
+    StringLiteralExpr [1136,1138]
+to
+AnnotationDeclaration [959,1320]
+at 5
+===
+insert-tree
+---
+AnnotationMemberDeclaration [1145,1178]
+    PrimitiveType: boolean [1145,1152]
+    SimpleName: serialize [1153,1162]
+    BooleanLiteralExpr: true [1173,1177]
+to
+AnnotationDeclaration [959,1320]
+at 6
+===
+insert-tree
+---
+AnnotationMemberDeclaration [1184,1219]
+    PrimitiveType: boolean [1184,1191]
+    SimpleName: deserialize [1192,1203]
+    BooleanLiteralExpr: true [1214,1218]
+to
+AnnotationDeclaration [959,1320]
+at 7
+===
+insert-tree
+---
+AnnotationMemberDeclaration [1225,1275]
+    ArrayType [1225,1244]
+        ClassOrInterfaceType [1225,1242]
+            SimpleName: SerializerFeature [1225,1242]
+    SimpleName: serialzeFeatures [1245,1261]
+    ArrayInitializerExpr [1272,1274]
+to
+AnnotationDeclaration [959,1320]
+at 8
+===
+insert-tree
+---
+AnnotationMemberDeclaration [1281,1318]
+    ArrayType [1281,1290]
+        ClassOrInterfaceType [1281,1288]
+            SimpleName: Feature [1281,1288]
+    SimpleName: parseFeatures [1291,1304]
+    ArrayInitializerExpr [1315,1317]
+to
+AnnotationDeclaration [959,1320]
+at 9
+===
+delete-node
+---
+ClassOrInterfaceDeclaration [0,17]
+===

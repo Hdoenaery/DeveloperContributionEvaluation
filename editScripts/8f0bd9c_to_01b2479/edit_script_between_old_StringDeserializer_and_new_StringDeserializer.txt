@@ -1,0 +1,271 @@
+===
+insert-tree
+---
+PackageDeclaration [0,49]
+    Name: deserializer [8,48]
+        Name: parser [8,35]
+            Name: fastjson [8,28]
+                Name: alibaba [8,19]
+                    Name: com [8,11]
+to
+CompilationUnit [0,26]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [51,81]
+    Name: Type [58,80]
+        Name: reflect [58,75]
+            Name: lang [58,67]
+                Name: java [58,62]
+to
+CompilationUnit [0,26]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [83,139]
+    Name: DefaultExtJSONParser [90,138]
+        Name: parser [90,117]
+            Name: fastjson [90,110]
+                Name: alibaba [90,101]
+                    Name: com [90,93]
+to
+CompilationUnit [0,26]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [140,185]
+    Name: JSONLexer [147,184]
+        Name: parser [147,174]
+            Name: fastjson [147,167]
+                Name: alibaba [147,158]
+                    Name: com [147,150]
+to
+CompilationUnit [0,26]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [186,231]
+    Name: JSONToken [193,230]
+        Name: parser [193,220]
+            Name: fastjson [193,213]
+                Name: alibaba [193,204]
+                    Name: com [193,196]
+to
+CompilationUnit [0,26]
+at 4
+===
+insert-node
+---
+Modifier: public [233,239]
+to
+ClassOrInterfaceDeclaration [0,26]
+at 0
+===
+insert-tree
+---
+FieldDeclaration [302,377]
+    Modifier: public [302,308]
+    Modifier: final [309,314]
+    Modifier: static [315,321]
+    VariableDeclarator [341,376]
+        ClassOrInterfaceType [322,340]
+            SimpleName: StringDeserializer [322,340]
+        SimpleName: instance [341,349]
+        ObjectCreationExpr [352,376]
+            ClassOrInterfaceType [356,374]
+                SimpleName: StringDeserializer [356,374]
+to
+ClassOrInterfaceDeclaration [0,26]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [383,529]
+    SingleMemberAnnotationExpr [383,413]
+        Name: SuppressWarnings [384,400]
+        StringLiteralExpr: unchecked [401,412]
+    Modifier: public [418,424]
+    TypeParameter [426,427]
+        SimpleName: T [426,427]
+    SimpleName: deserialze [431,441]
+    Parameter [442,469]
+        ClassOrInterfaceType [442,462]
+            SimpleName: DefaultExtJSONParser [442,462]
+        SimpleName: parser [463,469]
+    Parameter [471,481]
+        ClassOrInterfaceType [471,475]
+            SimpleName: Type [471,475]
+        SimpleName: clazz [476,481]
+    ClassOrInterfaceType [429,430]
+        SimpleName: T [429,430]
+    BlockStmt [483,529]
+        ReturnStmt [493,523]
+            CastExpr [500,522]
+                ClassOrInterfaceType [501,502]
+                    SimpleName: T [501,502]
+                MethodCallExpr [504,522]
+                    SimpleName: deserialze [504,514]
+                    NameExpr [515,521]
+                        SimpleName: parser [515,521]
+to
+ClassOrInterfaceDeclaration [0,26]
+at 3
+===
+insert-tree
+---
+MethodDeclaration [539,1214]
+    SingleMemberAnnotationExpr [539,569]
+        Name: SuppressWarnings [540,556]
+        StringLiteralExpr: unchecked [557,568]
+    Modifier: public [574,580]
+    Modifier: static [581,587]
+    TypeParameter [589,590]
+        SimpleName: T [589,590]
+    SimpleName: deserialze [594,604]
+    Parameter [605,632]
+        ClassOrInterfaceType [605,625]
+            SimpleName: DefaultExtJSONParser [605,625]
+        SimpleName: parser [626,632]
+    ClassOrInterfaceType [592,593]
+        SimpleName: T [592,593]
+    BlockStmt [634,1214]
+        ExpressionStmt [644,686]
+            VariableDeclarationExpr [644,685]
+                Modifier: final [644,649]
+                VariableDeclarator [660,685]
+                    ClassOrInterfaceType [650,659]
+                        SimpleName: JSONLexer [650,659]
+                    SimpleName: lexer [660,665]
+                    MethodCallExpr [668,685]
+                        NameExpr [668,674]
+                            SimpleName: parser [668,674]
+                        SimpleName: getLexer [675,683]
+        IfStmt [695,871]
+            BinaryExpr [699,740]
+                MethodCallExpr [699,712]
+                    NameExpr [699,704]
+                        SimpleName: lexer [699,704]
+                    SimpleName: token [705,710]
+                FieldAccessExpr [716,740]
+                    NameExpr [716,725]
+                        SimpleName: JSONToken [716,725]
+                    SimpleName: LITERAL_STRING [726,740]
+            BlockStmt [742,871]
+                ExpressionStmt [756,787]
+                    VariableDeclarationExpr [756,786]
+                        VariableDeclarator [763,786]
+                            ClassOrInterfaceType [756,762]
+                                SimpleName: String [756,762]
+                            SimpleName: val [763,766]
+                            MethodCallExpr [769,786]
+                                NameExpr [769,774]
+                                    SimpleName: lexer [769,774]
+                                SimpleName: stringVal [775,784]
+                ExpressionStmt [800,833]
+                    MethodCallExpr [800,832]
+                        NameExpr [800,805]
+                            SimpleName: lexer [800,805]
+                        SimpleName: nextToken [806,815]
+                        FieldAccessExpr [816,831]
+                            NameExpr [816,825]
+                                SimpleName: JSONToken [816,825]
+                            SimpleName: COMMA [826,831]
+                ReturnStmt [846,861]
+                    CastExpr [853,860]
+                        ClassOrInterfaceType [854,855]
+                            SimpleName: T [854,855]
+                        NameExpr [857,860]
+                            SimpleName: val [857,860]
+        IfStmt [889,1065]
+            BinaryExpr [893,931]
+                MethodCallExpr [893,906]
+                    NameExpr [893,898]
+                        SimpleName: lexer [893,898]
+                    SimpleName: token [899,904]
+                FieldAccessExpr [910,931]
+                    NameExpr [910,919]
+                        SimpleName: JSONToken [910,919]
+                    SimpleName: LITERAL_INT [920,931]
+            BlockStmt [933,1065]
+                ExpressionStmt [947,981]
+                    VariableDeclarationExpr [947,980]
+                        VariableDeclarator [954,980]
+                            ClassOrInterfaceType [947,953]
+                                SimpleName: String [947,953]
+                            SimpleName: val [954,957]
+                            MethodCallExpr [960,980]
+                                NameExpr [960,965]
+                                    SimpleName: lexer [960,965]
+                                SimpleName: numberString [966,978]
+                ExpressionStmt [994,1027]
+                    MethodCallExpr [994,1026]
+                        NameExpr [994,999]
+                            SimpleName: lexer [994,999]
+                        SimpleName: nextToken [1000,1009]
+                        FieldAccessExpr [1010,1025]
+                            NameExpr [1010,1019]
+                                SimpleName: JSONToken [1010,1019]
+                            SimpleName: COMMA [1020,1025]
+                ReturnStmt [1040,1055]
+                    CastExpr [1047,1054]
+                        ClassOrInterfaceType [1048,1049]
+                            SimpleName: T [1048,1049]
+                        NameExpr [1051,1054]
+                            SimpleName: val [1051,1054]
+        ExpressionStmt [1075,1105]
+            VariableDeclarationExpr [1075,1104]
+                VariableDeclarator [1082,1104]
+                    ClassOrInterfaceType [1075,1081]
+                        SimpleName: Object [1075,1081]
+                    SimpleName: value [1082,1087]
+                    MethodCallExpr [1090,1104]
+                        NameExpr [1090,1096]
+                            SimpleName: parser [1090,1096]
+                        SimpleName: parse [1097,1102]
+        IfStmt [1115,1170]
+            BinaryExpr [1119,1132]
+                NameExpr [1119,1124]
+                    SimpleName: value [1119,1124]
+                NullLiteralExpr [1128,1132]
+            BlockStmt [1134,1170]
+                ReturnStmt [1148,1160]
+                    NullLiteralExpr [1155,1159]
+        ReturnStmt [1180,1208]
+            CastExpr [1187,1207]
+                ClassOrInterfaceType [1188,1189]
+                    SimpleName: T [1188,1189]
+                MethodCallExpr [1191,1207]
+                    NameExpr [1191,1196]
+                        SimpleName: value [1191,1196]
+                    SimpleName: toString [1197,1205]
+to
+ClassOrInterfaceDeclaration [0,26]
+at 4
+===
+insert-tree
+---
+MethodDeclaration [1220,1299]
+    Modifier: public [1220,1226]
+    SimpleName: getFastMatchToken [1231,1248]
+    PrimitiveType: int [1227,1230]
+    BlockStmt [1251,1299]
+        ReturnStmt [1261,1293]
+            FieldAccessExpr [1268,1292]
+                NameExpr [1268,1277]
+                    SimpleName: JSONToken [1268,1277]
+                SimpleName: LITERAL_STRING [1278,1292]
+to
+ClassOrInterfaceDeclaration [0,26]
+at 5
+===
+insert-tree
+---
+ClassOrInterfaceType [276,294]
+    SimpleName: ObjectDeserializer [276,294]
+to
+ClassOrInterfaceDeclaration [0,26]
+at 6

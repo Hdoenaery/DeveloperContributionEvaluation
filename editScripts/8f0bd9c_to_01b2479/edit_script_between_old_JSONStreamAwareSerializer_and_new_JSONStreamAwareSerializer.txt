@@ -1,0 +1,112 @@
+===
+insert-tree
+---
+PackageDeclaration [604,644]
+    Name: serializer [612,643]
+        Name: fastjson [612,632]
+            Name: alibaba [612,623]
+                Name: com [612,615]
+to
+CompilationUnit [0,33]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [646,673]
+    Name: IOException [653,672]
+        Name: io [653,660]
+            Name: java [653,657]
+to
+CompilationUnit [0,33]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [675,719]
+    Name: JSONStreamAware [682,718]
+        Name: fastjson [682,702]
+            Name: alibaba [682,693]
+                Name: com [682,685]
+to
+CompilationUnit [0,33]
+at 2
+===
+insert-node
+---
+Modifier: public [769,775]
+to
+ClassOrInterfaceDeclaration [0,33]
+at 0
+===
+insert-tree
+---
+FieldDeclaration [843,926]
+    Modifier: public [843,849]
+    Modifier: static [850,856]
+    VariableDeclarator [883,925]
+        ClassOrInterfaceType [857,882]
+            SimpleName: JSONStreamAwareSerializer [857,882]
+        SimpleName: instance [883,891]
+        ObjectCreationExpr [894,925]
+            ClassOrInterfaceType [898,923]
+                SimpleName: JSONStreamAwareSerializer [898,923]
+to
+ClassOrInterfaceDeclaration [0,33]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [932,1167]
+    Modifier: public [932,938]
+    SimpleName: write [944,949]
+    Parameter [950,975]
+        ClassOrInterfaceType [950,964]
+            SimpleName: JSONSerializer [950,964]
+        SimpleName: serializer [965,975]
+    Parameter [977,990]
+        ClassOrInterfaceType [977,983]
+            SimpleName: Object [977,983]
+        SimpleName: object [984,990]
+    ClassOrInterfaceType [999,1010]
+        SimpleName: IOException [999,1010]
+    VoidType [939,943]
+    BlockStmt [1011,1167]
+        ExpressionStmt [1021,1066]
+            VariableDeclarationExpr [1021,1065]
+                VariableDeclarator [1037,1065]
+                    ClassOrInterfaceType [1021,1036]
+                        SimpleName: SerializeWriter [1021,1036]
+                    SimpleName: out [1037,1040]
+                    MethodCallExpr [1043,1065]
+                        NameExpr [1043,1053]
+                            SimpleName: serializer [1043,1053]
+                        SimpleName: getWriter [1054,1063]
+        ExpressionStmt [1076,1125]
+            VariableDeclarationExpr [1076,1124]
+                VariableDeclarator [1092,1124]
+                    ClassOrInterfaceType [1076,1091]
+                        SimpleName: JSONStreamAware [1076,1091]
+                    SimpleName: aware [1092,1097]
+                    CastExpr [1100,1124]
+                        ClassOrInterfaceType [1101,1116]
+                            SimpleName: JSONStreamAware [1101,1116]
+                        NameExpr [1118,1124]
+                            SimpleName: object [1118,1124]
+        ExpressionStmt [1134,1161]
+            MethodCallExpr [1134,1160]
+                NameExpr [1134,1139]
+                    SimpleName: aware [1134,1139]
+                SimpleName: writeJSONString [1140,1155]
+                NameExpr [1156,1159]
+                    SimpleName: out [1156,1159]
+to
+ClassOrInterfaceDeclaration [0,33]
+at 3
+===
+insert-tree
+---
+ClassOrInterfaceType [819,835]
+    SimpleName: ObjectSerializer [819,835]
+to
+ClassOrInterfaceDeclaration [0,33]
+at 4

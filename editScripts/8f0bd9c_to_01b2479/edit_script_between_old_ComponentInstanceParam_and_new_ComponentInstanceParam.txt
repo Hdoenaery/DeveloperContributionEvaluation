@@ -1,0 +1,118 @@
+===
+insert-tree
+---
+PackageDeclaration [0,47]
+    Name: pagemodel [8,46]
+        Name: entity [8,36]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,30]
+at 0
+===
+insert-node
+---
+Modifier: public [153,159]
+to
+ClassOrInterfaceDeclaration [0,30]
+at 0
+===
+insert-tree
+---
+FieldDeclaration [196,216]
+    Modifier: private [196,203]
+    VariableDeclarator [211,215]
+        ClassOrInterfaceType [204,210]
+            SimpleName: String [204,210]
+        SimpleName: name [211,215]
+to
+ClassOrInterfaceDeclaration [0,30]
+at 2
+===
+insert-tree
+---
+FieldDeclaration [221,242]
+    Modifier: private [221,228]
+    VariableDeclarator [236,241]
+        ClassOrInterfaceType [229,235]
+            SimpleName: String [229,235]
+        SimpleName: value [236,241]
+to
+ClassOrInterfaceDeclaration [0,30]
+at 3
+===
+insert-tree
+---
+MethodDeclaration [248,300]
+    Modifier: public [248,254]
+    SimpleName: getName [262,269]
+    ClassOrInterfaceType [255,261]
+        SimpleName: String [255,261]
+    BlockStmt [272,300]
+        ReturnStmt [282,294]
+            NameExpr [289,293]
+                SimpleName: name [289,293]
+to
+ClassOrInterfaceDeclaration [0,30]
+at 4
+===
+insert-tree
+---
+MethodDeclaration [306,372]
+    Modifier: public [306,312]
+    SimpleName: setName [318,325]
+    Parameter [326,337]
+        ClassOrInterfaceType [326,332]
+            SimpleName: String [326,332]
+        SimpleName: name [333,337]
+    VoidType [313,317]
+    BlockStmt [339,372]
+        ExpressionStmt [349,366]
+            AssignExpr [349,365]
+                FieldAccessExpr [349,358]
+                    ThisExpr [349,353]
+                    SimpleName: name [354,358]
+                NameExpr [361,365]
+                    SimpleName: name [361,365]
+to
+ClassOrInterfaceDeclaration [0,30]
+at 5
+===
+insert-tree
+---
+MethodDeclaration [378,432]
+    Modifier: public [378,384]
+    SimpleName: getValue [392,400]
+    ClassOrInterfaceType [385,391]
+        SimpleName: String [385,391]
+    BlockStmt [403,432]
+        ReturnStmt [413,426]
+            NameExpr [420,425]
+                SimpleName: value [420,425]
+to
+ClassOrInterfaceDeclaration [0,30]
+at 6
+===
+insert-tree
+---
+MethodDeclaration [438,508]
+    Modifier: public [438,444]
+    SimpleName: setValue [450,458]
+    Parameter [459,471]
+        ClassOrInterfaceType [459,465]
+            SimpleName: String [459,465]
+        SimpleName: value [466,471]
+    VoidType [445,449]
+    BlockStmt [473,508]
+        ExpressionStmt [483,502]
+            AssignExpr [483,501]
+                FieldAccessExpr [483,493]
+                    ThisExpr [483,487]
+                    SimpleName: value [488,493]
+                NameExpr [496,501]
+                    SimpleName: value [496,501]
+to
+ClassOrInterfaceDeclaration [0,30]
+at 7

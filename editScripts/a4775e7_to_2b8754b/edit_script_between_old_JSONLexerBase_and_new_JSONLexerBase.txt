@@ -1,0 +1,240 @@
+===
+insert-node
+---
+Modifier: public [1752,1758]
+to
+ClassOrInterfaceDeclaration [1752,85367]
+at 0
+===
+insert-node
+---
+Modifier: abstract [1759,1767]
+to
+ClassOrInterfaceDeclaration [1752,85367]
+at 1
+===
+insert-node
+---
+SimpleName: JSONLexerBase [1774,1787]
+to
+ClassOrInterfaceDeclaration [1752,85367]
+at 2
+===
+insert-tree
+---
+FieldDeclaration [2774,2858]
+    Modifier: public [2774,2780]
+    VariableDeclarator [2830,2857]
+        PrimitiveType: int [2781,2784]
+        SimpleName: matchStat [2830,2839]
+        NameExpr [2851,2857]
+            SimpleName: UNKOWN [2851,2857]
+to
+ClassOrInterfaceDeclaration [1752,85367]
+at 18
+===
+insert-node
+---
+LineComment [15287,15316]
+to
+ClassOrInterfaceDeclaration [1752,85367]
+at 111
+===
+insert-node
+---
+LineComment [15321,15338]
+to
+ClassOrInterfaceDeclaration [1752,85367]
+at 112
+===
+insert-node
+---
+LineComment [15343,15416]
+to
+ClassOrInterfaceDeclaration [1752,85367]
+at 113
+===
+insert-node
+---
+LineComment [15421,15440]
+to
+ClassOrInterfaceDeclaration [1752,85367]
+at 114
+===
+insert-node
+---
+LineComment [15445,15451]
+to
+ClassOrInterfaceDeclaration [1752,85367]
+at 115
+===
+insert-node
+---
+LineComment [15456,15469]
+to
+ClassOrInterfaceDeclaration [1752,85367]
+at 116
+===
+insert-node
+---
+LineComment [15474,15478]
+to
+ClassOrInterfaceDeclaration [1752,85367]
+at 117
+===
+insert-node
+---
+LineComment [17055,17141]
+to
+ClassOrInterfaceDeclaration [1752,85367]
+at 118
+===
+update-node
+---
+SimpleName: UNKNOWN [31356,31363]
+replace UNKNOWN by UNKOWN
+===
+update-node
+---
+SimpleName: UNKNOWN [33395,33402]
+replace UNKNOWN by UNKOWN
+===
+update-node
+---
+SimpleName: UNKNOWN [35907,35914]
+replace UNKNOWN by UNKOWN
+===
+update-node
+---
+SimpleName: UNKNOWN [37888,37895]
+replace UNKNOWN by UNKOWN
+===
+update-node
+---
+SimpleName: UNKNOWN [40432,40439]
+replace UNKNOWN by UNKOWN
+===
+update-node
+---
+SimpleName: UNKNOWN [42291,42298]
+replace UNKNOWN by UNKOWN
+===
+update-node
+---
+SimpleName: UNKNOWN [45537,45544]
+replace UNKNOWN by UNKOWN
+===
+update-node
+---
+SimpleName: UNKNOWN [48169,48176]
+replace UNKNOWN by UNKOWN
+===
+update-node
+---
+SimpleName: UNKNOWN [50233,50240]
+replace UNKNOWN by UNKOWN
+===
+update-node
+---
+SimpleName: UNKNOWN [51519,51526]
+replace UNKNOWN by UNKOWN
+===
+update-node
+---
+SimpleName: UNKNOWN [52648,52655]
+replace UNKNOWN by UNKOWN
+===
+update-node
+---
+SimpleName: UNKNOWN [55244,55251]
+replace UNKNOWN by UNKOWN
+===
+update-node
+---
+SimpleName: UNKNOWN [57307,57314]
+replace UNKNOWN by UNKOWN
+===
+update-node
+---
+SimpleName: UNKNOWN [58443,58450]
+replace UNKNOWN by UNKOWN
+===
+update-node
+---
+SimpleName: UNKNOWN [60996,61003]
+replace UNKNOWN by UNKOWN
+===
+update-node
+---
+SimpleName: UNKNOWN [62597,62604]
+replace UNKNOWN by UNKOWN
+===
+update-node
+---
+SimpleName: UNKNOWN [65653,65660]
+replace UNKNOWN by UNKOWN
+===
+delete-node
+---
+Modifier: public [1752,1758]
+===
+===
+delete-node
+---
+Modifier: abstract [1759,1767]
+===
+===
+delete-node
+---
+SimpleName: JSONLexerBase [1774,1787]
+===
+===
+delete-tree
+---
+FieldDeclaration [2774,2859]
+    Modifier: public [2774,2780]
+    VariableDeclarator [2830,2858]
+        PrimitiveType: int [2781,2784]
+        SimpleName: matchStat [2830,2839]
+        NameExpr [2851,2858]
+            SimpleName: UNKNOWN [2851,2858]
+===
+delete-node
+---
+LineComment [15288,15317]
+===
+===
+delete-node
+---
+LineComment [15322,15339]
+===
+===
+delete-node
+---
+LineComment [15344,15417]
+===
+===
+delete-node
+---
+LineComment [15422,15441]
+===
+===
+delete-node
+---
+LineComment [15446,15452]
+===
+===
+delete-node
+---
+LineComment [15457,15470]
+===
+===
+delete-node
+---
+LineComment [15475,15479]
+===
+===
+delete-node
+---
+LineComment [17056,17142]
+===

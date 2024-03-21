@@ -1,0 +1,196 @@
+===
+insert-tree
+---
+PackageDeclaration [0,45]
+    Name: bug [8,44]
+        Name: parser [8,40]
+            Name: bvt [8,33]
+                Name: test [8,29]
+                    Name: json [8,24]
+                        Name: alibaba [8,19]
+                            Name: com [8,11]
+to
+CompilationUnit [0,12]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [47,77]
+    Name: Assert [54,76]
+        Name: framework [54,69]
+            Name: junit [54,59]
+to
+CompilationUnit [0,12]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [78,110]
+    Name: TestCase [85,109]
+        Name: framework [85,100]
+            Name: junit [85,90]
+to
+CompilationUnit [0,12]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [112,145]
+    Name: JSON [119,144]
+        Name: fastjson [119,139]
+            Name: alibaba [119,130]
+                Name: com [119,122]
+to
+CompilationUnit [0,12]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [146,184]
+    Name: JSONArray [153,183]
+        Name: fastjson [153,173]
+            Name: alibaba [153,164]
+                Name: com [153,156]
+to
+CompilationUnit [0,12]
+at 4
+===
+insert-tree
+---
+ImportDeclaration [185,224]
+    Name: JSONObject [192,223]
+        Name: fastjson [192,212]
+            Name: alibaba [192,203]
+                Name: com [192,195]
+to
+CompilationUnit [0,12]
+at 5
+===
+insert-node
+---
+Modifier: public [226,232]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [268,526]
+    Modifier: public [268,274]
+    SimpleName: test_0 [280,286]
+    ClassOrInterfaceType [296,305]
+        SimpleName: Exception [296,305]
+    VoidType [275,279]
+    BlockStmt [306,526]
+        ExpressionStmt [316,342]
+            VariableDeclarationExpr [316,341]
+                VariableDeclarator [323,341]
+                    ClassOrInterfaceType [316,322]
+                        SimpleName: String [316,322]
+                    SimpleName: text [323,327]
+                    StringLiteralExpr: {a:1,b:2} [330,341]
+        ExpressionStmt [351,410]
+            VariableDeclarationExpr [351,409]
+                VariableDeclarator [362,409]
+                    ClassOrInterfaceType [351,361]
+                        SimpleName: JSONObject [351,361]
+                    SimpleName: json [362,366]
+                    MethodCallExpr [369,409]
+                        NameExpr [369,373]
+                            SimpleName: JSON [369,373]
+                        SimpleName: parseObject [374,385]
+                        NameExpr [386,390]
+                            SimpleName: text [386,390]
+                        ClassExpr [392,408]
+                            ClassOrInterfaceType [392,402]
+                                SimpleName: JSONObject [392,402]
+        ExpressionStmt [419,465]
+            MethodCallExpr [419,464]
+                NameExpr [419,425]
+                    SimpleName: Assert [419,425]
+                SimpleName: assertEquals [426,438]
+                IntegerLiteralExpr: 1 [439,440]
+                MethodCallExpr [442,463]
+                    NameExpr [442,446]
+                        SimpleName: json [442,446]
+                    SimpleName: getIntValue [447,458]
+                    StringLiteralExpr: a [459,462]
+        ExpressionStmt [474,520]
+            MethodCallExpr [474,519]
+                NameExpr [474,480]
+                    SimpleName: Assert [474,480]
+                SimpleName: assertEquals [481,493]
+                IntegerLiteralExpr: 2 [494,495]
+                MethodCallExpr [497,518]
+                    NameExpr [497,501]
+                        SimpleName: json [497,501]
+                    SimpleName: getIntValue [502,513]
+                    StringLiteralExpr: b [514,517]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [532,786]
+    Modifier: public [532,538]
+    SimpleName: test_array [544,554]
+    ClassOrInterfaceType [564,573]
+        SimpleName: Exception [564,573]
+    VoidType [539,543]
+    BlockStmt [574,786]
+        ExpressionStmt [584,608]
+            VariableDeclarationExpr [584,607]
+                VariableDeclarator [591,607]
+                    ClassOrInterfaceType [584,590]
+                        SimpleName: String [584,590]
+                    SimpleName: text [591,595]
+                    StringLiteralExpr: [1, 2]} [598,607]
+        ExpressionStmt [617,674]
+            VariableDeclarationExpr [617,673]
+                VariableDeclarator [627,673]
+                    ClassOrInterfaceType [617,626]
+                        SimpleName: JSONArray [617,626]
+                    SimpleName: json [627,631]
+                    MethodCallExpr [634,673]
+                        NameExpr [634,638]
+                            SimpleName: JSON [634,638]
+                        SimpleName: parseObject [639,650]
+                        NameExpr [651,655]
+                            SimpleName: text [651,655]
+                        ClassExpr [657,672]
+                            ClassOrInterfaceType [657,666]
+                                SimpleName: JSONArray [657,666]
+        ExpressionStmt [683,727]
+            MethodCallExpr [683,726]
+                NameExpr [683,689]
+                    SimpleName: Assert [683,689]
+                SimpleName: assertEquals [690,702]
+                IntegerLiteralExpr: 1 [703,704]
+                MethodCallExpr [706,725]
+                    NameExpr [706,710]
+                        SimpleName: json [706,710]
+                    SimpleName: getIntValue [711,722]
+                    IntegerLiteralExpr: 0 [723,724]
+        ExpressionStmt [736,780]
+            MethodCallExpr [736,779]
+                NameExpr [736,742]
+                    SimpleName: Assert [736,742]
+                SimpleName: assertEquals [743,755]
+                IntegerLiteralExpr: 2 [756,757]
+                MethodCallExpr [759,778]
+                    NameExpr [759,763]
+                        SimpleName: json [759,763]
+                    SimpleName: getIntValue [764,775]
+                    IntegerLiteralExpr: 1 [776,777]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 3
+===
+insert-tree
+---
+ClassOrInterfaceType [252,260]
+    SimpleName: TestCase [252,260]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 4

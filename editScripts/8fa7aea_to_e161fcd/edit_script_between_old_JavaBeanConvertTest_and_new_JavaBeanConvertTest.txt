@@ -1,0 +1,334 @@
+===
+move-tree
+---
+ExpressionStmt [1244,1302]
+    MethodCallExpr [1244,1301]
+        NameExpr [1244,1253]
+            SimpleName: paramJson [1244,1253]
+        SimpleName: put [1254,1257]
+        StringLiteralExpr: strToJsonArray [1258,1274]
+        MethodCallExpr [1276,1300]
+            NameExpr [1276,1285]
+                SimpleName: jsonArray [1276,1285]
+            SimpleName: toJSONString [1286,1298]
+to
+BlockStmt [479,2455]
+at 17
+===
+move-tree
+---
+ExpressionStmt [489,529]
+    VariableDeclarationExpr [489,528]
+        VariableDeclarator [509,528]
+            ClassOrInterfaceType [489,508]
+                SimpleName: Map [489,492]
+                ClassOrInterfaceType [493,499]
+                    SimpleName: String [493,499]
+                ClassOrInterfaceType [501,507]
+                    SimpleName: Object [501,507]
+            SimpleName: map [509,512]
+            ObjectCreationExpr [515,528]
+                ClassOrInterfaceType [519,526]
+                    SimpleName: HashMap [519,526]
+to
+BlockStmt [479,2455]
+at 17
+===
+move-tree
+---
+ExpressionStmt [538,564]
+    MethodCallExpr [538,563]
+        NameExpr [538,541]
+            SimpleName: map [538,541]
+        SimpleName: put [542,545]
+        StringLiteralExpr: key1 [546,552]
+        StringLiteralExpr: value1 [554,562]
+to
+BlockStmt [479,2455]
+at 17
+===
+move-tree
+---
+ExpressionStmt [573,599]
+    MethodCallExpr [573,598]
+        NameExpr [573,576]
+            SimpleName: map [573,576]
+        SimpleName: put [577,580]
+        StringLiteralExpr: key2 [581,587]
+        StringLiteralExpr: value2 [589,597]
+to
+BlockStmt [479,2455]
+at 17
+===
+move-tree
+---
+ExpressionStmt [923,949]
+    MethodCallExpr [923,948]
+        NameExpr [923,932]
+            SimpleName: paramJson [923,932]
+        SimpleName: put [933,936]
+        StringLiteralExpr: map [937,942]
+        NameExpr [944,947]
+            SimpleName: map [944,947]
+to
+BlockStmt [479,2455]
+at 17
+===
+move-tree
+---
+ExpressionStmt [1942,1978]
+    MethodCallExpr [1942,1977]
+        NameExpr [1942,1951]
+            SimpleName: paramJson [1942,1951]
+        SimpleName: put [1952,1955]
+        StringLiteralExpr: date [1956,1962]
+        StringLiteralExpr: 2021-03-23 [1964,1976]
+to
+BlockStmt [479,2455]
+at 20
+===
+insert-node
+---
+ExpressionStmt [1187,1220]
+to
+BlockStmt [479,2455]
+at 21
+===
+insert-node
+---
+MethodCallExpr [1187,1219]
+to
+ExpressionStmt [1187,1220]
+at 0
+===
+update-node
+---
+StringLiteralExpr: strToJsonObject [1189,1206]
+replace strToJsonObject by jsonObject
+===
+move-tree
+---
+NameExpr [958,967]
+    SimpleName: paramJson [958,967]
+to
+MethodCallExpr [1311,1373]
+at 0
+===
+update-node
+---
+StringLiteralExpr: strToJsonObjectList [1325,1346]
+replace strToJsonObjectList by jsonArray
+===
+move-tree
+---
+NameExpr [1007,1016]
+    SimpleName: paramJson [1007,1016]
+to
+MethodCallExpr [1244,1301]
+at 0
+===
+update-node
+---
+StringLiteralExpr: strToJsonArray [1258,1274]
+replace strToJsonArray by jsonObjectList
+===
+move-tree
+---
+NameExpr [1400,1409]
+    SimpleName: paramJson [1400,1409]
+to
+MethodCallExpr [1187,1219]
+at 0
+===
+insert-node
+---
+SimpleName: put [1197,1200]
+to
+MethodCallExpr [1187,1219]
+at 1
+===
+insert-node
+---
+StringLiteralExpr: testEnum [1201,1211]
+to
+MethodCallExpr [1187,1219]
+at 2
+===
+insert-node
+---
+StringLiteralExpr: A_A [1213,1218]
+to
+MethodCallExpr [1187,1219]
+at 3
+===
+update-node
+---
+SimpleName: convertDO [2268,2277]
+replace convertDO by testDO
+===
+update-node
+---
+SimpleName: convertDO [2397,2406]
+replace convertDO by testDO
+===
+update-node
+---
+SimpleName: ConvertDO [2258,2267]
+replace ConvertDO by TestDO
+===
+update-node
+---
+SimpleName: ConvertDO [2316,2325]
+replace ConvertDO by TestDO
+===
+delete-node
+---
+SimpleName: put [968,971]
+===
+===
+delete-node
+---
+StringLiteralExpr: jsonObject [972,984]
+===
+===
+delete-tree
+---
+NameExpr [986,996]
+    SimpleName: jsonObject [986,996]
+===
+delete-node
+---
+MethodCallExpr [958,997]
+===
+===
+delete-node
+---
+ExpressionStmt [958,998]
+===
+===
+delete-node
+---
+SimpleName: put [1017,1020]
+===
+===
+delete-node
+---
+StringLiteralExpr: jsonArray [1021,1032]
+===
+===
+delete-tree
+---
+NameExpr [1034,1043]
+    SimpleName: jsonArray [1034,1043]
+===
+delete-node
+---
+MethodCallExpr [1007,1044]
+===
+===
+delete-node
+---
+ExpressionStmt [1007,1045]
+===
+===
+delete-tree
+---
+ExpressionStmt [1054,1097]
+    MethodCallExpr [1054,1096]
+        NameExpr [1054,1063]
+            SimpleName: paramJson [1054,1063]
+        SimpleName: put [1064,1067]
+        StringLiteralExpr: jsonObjectList [1068,1084]
+        NameExpr [1086,1095]
+            SimpleName: jsonArray [1086,1095]
+===
+delete-tree
+---
+ExpressionStmt [1135,1166]
+    MethodCallExpr [1135,1165]
+        NameExpr [1135,1144]
+            SimpleName: paramJson [1135,1144]
+        SimpleName: put [1145,1148]
+        StringLiteralExpr: strToMap [1149,1159]
+        NameExpr [1161,1164]
+            SimpleName: map [1161,1164]
+===
+delete-tree
+---
+NameExpr [1311,1320]
+    SimpleName: paramJson [1311,1320]
+===
+delete-tree
+---
+NameExpr [1244,1253]
+    SimpleName: paramJson [1244,1253]
+===
+delete-node
+---
+SimpleName: put [1410,1413]
+===
+===
+delete-node
+---
+StringLiteralExpr: character [1414,1425]
+===
+===
+delete-node
+---
+StringLiteralExpr: c [1427,1430]
+===
+===
+delete-node
+---
+MethodCallExpr [1400,1431]
+===
+===
+delete-node
+---
+ExpressionStmt [1400,1432]
+===
+===
+delete-tree
+---
+ExpressionStmt [2036,2077]
+    MethodCallExpr [2036,2076]
+        NameExpr [2036,2045]
+            SimpleName: paramJson [2036,2045]
+        SimpleName: put [2046,2049]
+        StringLiteralExpr: localDate [2050,2061]
+        StringLiteralExpr: 2021-03-24 [2063,2075]
+===
+delete-tree
+---
+ExpressionStmt [2086,2125]
+    MethodCallExpr [2086,2124]
+        NameExpr [2086,2095]
+            SimpleName: paramJson [2086,2095]
+        SimpleName: put [2096,2099]
+        StringLiteralExpr: localTime [2100,2111]
+        StringLiteralExpr: 16:03:24 [2113,2123]
+===
+delete-tree
+---
+ExpressionStmt [2134,2188]
+    MethodCallExpr [2134,2187]
+        NameExpr [2134,2143]
+            SimpleName: paramJson [2134,2143]
+        SimpleName: put [2144,2147]
+        StringLiteralExpr: localDateTime [2148,2163]
+        StringLiteralExpr: 2021-03-24 16:03:24 [2165,2186]
+===
+delete-tree
+---
+ExpressionStmt [2212,2248]
+    MethodCallExpr [2212,2247]
+        NameExpr [2212,2221]
+            SimpleName: paramJson [2212,2221]
+        SimpleName: put [2222,2225]
+        StringLiteralExpr: convertEnum [2226,2239]
+        StringLiteralExpr: A_A [2241,2246]
+===
+delete-node
+---
+LineComment [2409,2449]
+===

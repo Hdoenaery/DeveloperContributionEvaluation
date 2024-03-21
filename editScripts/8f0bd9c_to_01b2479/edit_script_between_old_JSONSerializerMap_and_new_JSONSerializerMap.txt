@@ -1,0 +1,34 @@
+===
+insert-tree
+---
+PackageDeclaration [0,40]
+    Name: serializer [8,39]
+        Name: fastjson [8,28]
+            Name: alibaba [8,19]
+                Name: com [8,11]
+to
+CompilationUnit [0,25]
+at 0
+===
+insert-tree
+---
+MarkerAnnotationExpr [42,53]
+    Name: Deprecated [43,53]
+to
+ClassOrInterfaceDeclaration [0,25]
+at 0
+===
+insert-node
+---
+Modifier: public [54,60]
+to
+ClassOrInterfaceDeclaration [0,25]
+at 1
+===
+insert-tree
+---
+ClassOrInterfaceType [93,108]
+    SimpleName: SerializeConfig [93,108]
+to
+ClassOrInterfaceDeclaration [0,25]
+at 3

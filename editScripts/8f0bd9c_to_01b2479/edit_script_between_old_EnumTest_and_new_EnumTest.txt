@@ -1,0 +1,196 @@
+===
+insert-tree
+---
+PackageDeclaration [0,45]
+    Name: serializer [8,44]
+        Name: bvt [8,33]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,16]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [47,77]
+    Name: Assert [54,76]
+        Name: framework [54,69]
+            Name: junit [54,59]
+to
+CompilationUnit [0,16]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [78,110]
+    Name: TestCase [85,109]
+        Name: framework [85,100]
+            Name: junit [85,90]
+to
+CompilationUnit [0,16]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [112,145]
+    Name: JSON [119,144]
+        Name: fastjson [119,139]
+            Name: alibaba [119,130]
+                Name: com [119,122]
+to
+CompilationUnit [0,16]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [146,203]
+    Name: SerializerFeature [153,202]
+        Name: serializer [153,184]
+            Name: fastjson [153,173]
+                Name: alibaba [153,164]
+                    Name: com [153,156]
+to
+CompilationUnit [0,16]
+at 4
+===
+insert-node
+---
+Modifier: public [205,211]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 0
+===
+insert-tree
+---
+EnumDeclaration [251,309]
+    Modifier: public [251,257]
+    Modifier: static [258,264]
+    SimpleName: Type [270,274]
+    EnumConstantDeclaration [285,288]
+        SimpleName: Big [285,288]
+    EnumConstantDeclaration [290,296]
+        SimpleName: Medium [290,296]
+    EnumConstantDeclaration [298,303]
+        SimpleName: Small [298,303]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [315,948]
+    Modifier: public [315,321]
+    SimpleName: test_enum [327,336]
+    ClassOrInterfaceType [346,355]
+        SimpleName: Exception [346,355]
+    VoidType [322,326]
+    BlockStmt [356,948]
+        ExpressionStmt [366,420]
+            MethodCallExpr [366,419]
+                NameExpr [366,372]
+                    SimpleName: Assert [366,372]
+                SimpleName: assertEquals [373,385]
+                StringLiteralExpr: 0 [386,389]
+                MethodCallExpr [391,418]
+                    NameExpr [391,395]
+                        SimpleName: JSON [391,395]
+                    SimpleName: toJSONString [396,408]
+                    FieldAccessExpr [409,417]
+                        NameExpr [409,413]
+                            SimpleName: Type [409,413]
+                        SimpleName: Big [414,417]
+        ExpressionStmt [434,491]
+            MethodCallExpr [434,490]
+                NameExpr [434,440]
+                    SimpleName: Assert [434,440]
+                SimpleName: assertEquals [441,453]
+                StringLiteralExpr: 1 [454,457]
+                MethodCallExpr [459,489]
+                    NameExpr [459,463]
+                        SimpleName: JSON [459,463]
+                    SimpleName: toJSONString [464,476]
+                    FieldAccessExpr [477,488]
+                        NameExpr [477,481]
+                            SimpleName: Type [477,481]
+                        SimpleName: Medium [482,488]
+        ExpressionStmt [505,561]
+            MethodCallExpr [505,560]
+                NameExpr [505,511]
+                    SimpleName: Assert [505,511]
+                SimpleName: assertEquals [512,524]
+                StringLiteralExpr: 2 [525,528]
+                MethodCallExpr [530,559]
+                    NameExpr [530,534]
+                        SimpleName: JSON [530,534]
+                    SimpleName: toJSONString [535,547]
+                    FieldAccessExpr [548,558]
+                        NameExpr [548,552]
+                            SimpleName: Type [548,552]
+                        SimpleName: Small [553,558]
+        ExpressionStmt [576,678]
+            MethodCallExpr [576,677]
+                NameExpr [576,582]
+                    SimpleName: Assert [576,582]
+                SimpleName: assertEquals [583,595]
+                StringLiteralExpr: "Big" [596,605]
+                MethodCallExpr [607,676]
+                    NameExpr [607,611]
+                        SimpleName: JSON [607,611]
+                    SimpleName: toJSONString [612,624]
+                    FieldAccessExpr [625,633]
+                        NameExpr [625,629]
+                            SimpleName: Type [625,629]
+                        SimpleName: Big [630,633]
+                    FieldAccessExpr [635,675]
+                        NameExpr [635,652]
+                            SimpleName: SerializerFeature [635,652]
+                        SimpleName: WriteEnumUsingToString [653,675]
+        ExpressionStmt [696,804]
+            MethodCallExpr [696,803]
+                NameExpr [696,702]
+                    SimpleName: Assert [696,702]
+                SimpleName: assertEquals [703,715]
+                StringLiteralExpr: "Medium" [716,728]
+                MethodCallExpr [730,802]
+                    NameExpr [730,734]
+                        SimpleName: JSON [730,734]
+                    SimpleName: toJSONString [735,747]
+                    FieldAccessExpr [748,759]
+                        NameExpr [748,752]
+                            SimpleName: Type [748,752]
+                        SimpleName: Medium [753,759]
+                    FieldAccessExpr [761,801]
+                        NameExpr [761,778]
+                            SimpleName: SerializerFeature [761,778]
+                        SimpleName: WriteEnumUsingToString [779,801]
+        ExpressionStmt [825,931]
+            MethodCallExpr [825,930]
+                NameExpr [825,831]
+                    SimpleName: Assert [825,831]
+                SimpleName: assertEquals [832,844]
+                StringLiteralExpr: "Small" [845,856]
+                MethodCallExpr [858,929]
+                    NameExpr [858,862]
+                        SimpleName: JSON [858,862]
+                    SimpleName: toJSONString [863,875]
+                    FieldAccessExpr [876,886]
+                        NameExpr [876,880]
+                            SimpleName: Type [876,880]
+                        SimpleName: Small [881,886]
+                    FieldAccessExpr [888,928]
+                        NameExpr [888,905]
+                            SimpleName: SerializerFeature [888,905]
+                        SimpleName: WriteEnumUsingToString [906,928]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 3
+===
+insert-tree
+---
+ClassOrInterfaceType [235,243]
+    SimpleName: TestCase [235,243]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 4

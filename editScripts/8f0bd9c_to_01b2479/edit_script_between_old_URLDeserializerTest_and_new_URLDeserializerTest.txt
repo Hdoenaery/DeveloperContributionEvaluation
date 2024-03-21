@@ -1,0 +1,272 @@
+===
+insert-tree
+---
+PackageDeclaration [0,47]
+    Name: deser [8,46]
+        Name: parser [8,40]
+            Name: bvt [8,33]
+                Name: test [8,29]
+                    Name: json [8,24]
+                        Name: alibaba [8,19]
+                            Name: com [8,11]
+to
+CompilationUnit [0,27]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [49,69]
+    Name: URL [56,68]
+        Name: net [56,64]
+            Name: java [56,60]
+to
+CompilationUnit [0,27]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [71,101]
+    Name: Assert [78,100]
+        Name: framework [78,93]
+            Name: junit [78,83]
+to
+CompilationUnit [0,27]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [102,134]
+    Name: TestCase [109,133]
+        Name: framework [109,124]
+            Name: junit [109,114]
+to
+CompilationUnit [0,27]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [136,169]
+    Name: JSON [143,168]
+        Name: fastjson [143,163]
+            Name: alibaba [143,154]
+                Name: com [143,146]
+to
+CompilationUnit [0,27]
+at 4
+===
+insert-tree
+---
+ImportDeclaration [170,212]
+    Name: JSONException [177,211]
+        Name: fastjson [177,197]
+            Name: alibaba [177,188]
+                Name: com [177,180]
+to
+CompilationUnit [0,27]
+at 5
+===
+insert-tree
+---
+ImportDeclaration [213,269]
+    Name: DefaultExtJSONParser [220,268]
+        Name: parser [220,247]
+            Name: fastjson [220,240]
+                Name: alibaba [220,231]
+                    Name: com [220,223]
+to
+CompilationUnit [0,27]
+at 6
+===
+insert-tree
+---
+ImportDeclaration [270,315]
+    Name: JSONToken [277,314]
+        Name: parser [277,304]
+            Name: fastjson [277,297]
+                Name: alibaba [277,288]
+                    Name: com [277,280]
+to
+CompilationUnit [0,27]
+at 7
+===
+insert-tree
+---
+ImportDeclaration [316,364]
+    Name: ParserConfig [323,363]
+        Name: parser [323,350]
+            Name: fastjson [323,343]
+                Name: alibaba [323,334]
+                    Name: com [323,326]
+to
+CompilationUnit [0,27]
+at 8
+===
+insert-tree
+---
+ImportDeclaration [365,429]
+    Name: URLDeserializer [372,428]
+        Name: deserializer [372,412]
+            Name: parser [372,399]
+                Name: fastjson [372,392]
+                    Name: alibaba [372,383]
+                        Name: com [372,375]
+to
+CompilationUnit [0,27]
+at 9
+===
+insert-node
+---
+Modifier: public [431,437]
+to
+ClassOrInterfaceDeclaration [0,27]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [488,1053]
+    Modifier: public [488,494]
+    SimpleName: test_url [500,508]
+    ClassOrInterfaceType [518,527]
+        SimpleName: Exception [518,527]
+    VoidType [495,499]
+    BlockStmt [528,1053]
+        ExpressionStmt [538,650]
+            MethodCallExpr [538,649]
+                NameExpr [538,544]
+                    SimpleName: Assert [538,544]
+                SimpleName: assertEquals [545,557]
+                ObjectCreationExpr [558,591]
+                    ClassOrInterfaceType [562,565]
+                        SimpleName: URL [562,565]
+                    StringLiteralExpr: http://www.alibaba.com [566,590]
+                MethodCallExpr [593,648]
+                    NameExpr [593,597]
+                        SimpleName: JSON [593,597]
+                    SimpleName: parseObject [598,609]
+                    StringLiteralExpr: 'http://www.alibaba.com' [610,636]
+                    ClassExpr [638,647]
+                        ClassOrInterfaceType [638,641]
+                            SimpleName: URL [638,641]
+        ExpressionStmt [660,723]
+            MethodCallExpr [660,722]
+                NameExpr [660,666]
+                    SimpleName: Assert [660,666]
+                SimpleName: assertEquals [667,679]
+                NullLiteralExpr [680,684]
+                MethodCallExpr [686,721]
+                    NameExpr [686,690]
+                        SimpleName: JSON [686,690]
+                    SimpleName: parseObject [691,702]
+                    StringLiteralExpr: null [703,709]
+                    ClassExpr [711,720]
+                        ClassOrInterfaceType [711,714]
+                            SimpleName: URL [711,714]
+        ExpressionStmt [733,859]
+            VariableDeclarationExpr [733,858]
+                VariableDeclarator [754,858]
+                    ClassOrInterfaceType [733,753]
+                        SimpleName: DefaultExtJSONParser [733,753]
+                    SimpleName: parser [754,760]
+                    ObjectCreationExpr [763,858]
+                        ClassOrInterfaceType [767,787]
+                            SimpleName: DefaultExtJSONParser [767,787]
+                        StringLiteralExpr: null [788,794]
+                        MethodCallExpr [796,828]
+                            NameExpr [796,808]
+                                SimpleName: ParserConfig [796,808]
+                            SimpleName: getGlobalInstance [809,826]
+                        FieldAccessExpr [830,857]
+                            NameExpr [830,834]
+                                SimpleName: JSON [830,834]
+                            SimpleName: DEFAULT_PARSER_FEATURE [835,857]
+        ExpressionStmt [868,945]
+            MethodCallExpr [868,944]
+                NameExpr [868,874]
+                    SimpleName: Assert [868,874]
+                SimpleName: assertEquals [875,887]
+                NullLiteralExpr [888,892]
+                MethodCallExpr [894,943]
+                    FieldAccessExpr [894,918]
+                        NameExpr [894,909]
+                            SimpleName: URLDeserializer [894,909]
+                        SimpleName: instance [910,918]
+                    SimpleName: deserialze [919,929]
+                    NameExpr [930,936]
+                        SimpleName: parser [930,936]
+                    NullLiteralExpr [938,942]
+        ExpressionStmt [954,1046]
+            MethodCallExpr [954,1045]
+                NameExpr [954,960]
+                    SimpleName: Assert [954,960]
+                SimpleName: assertEquals [961,973]
+                FieldAccessExpr [974,998]
+                    NameExpr [974,983]
+                        SimpleName: JSONToken [974,983]
+                    SimpleName: LITERAL_STRING [984,998]
+                MethodCallExpr [1000,1044]
+                    FieldAccessExpr [1000,1024]
+                        NameExpr [1000,1015]
+                            SimpleName: URLDeserializer [1000,1015]
+                        SimpleName: instance [1016,1024]
+                    SimpleName: getFastMatchToken [1025,1042]
+to
+ClassOrInterfaceDeclaration [0,27]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [1059,1309]
+    Modifier: public [1059,1065]
+    SimpleName: test_url_error [1071,1085]
+    ClassOrInterfaceType [1095,1104]
+        SimpleName: Exception [1095,1104]
+    VoidType [1066,1070]
+    BlockStmt [1105,1309]
+        ExpressionStmt [1115,1139]
+            VariableDeclarationExpr [1115,1138]
+                VariableDeclarator [1129,1138]
+                    ClassOrInterfaceType [1115,1128]
+                        SimpleName: JSONException [1115,1128]
+                    SimpleName: ex [1129,1131]
+                    NullLiteralExpr [1134,1138]
+        TryStmt [1148,1269]
+            BlockStmt [1152,1213]
+                ExpressionStmt [1166,1203]
+                    MethodCallExpr [1166,1202]
+                        NameExpr [1166,1170]
+                            SimpleName: JSON [1166,1170]
+                        SimpleName: parseObject [1171,1182]
+                        StringLiteralExpr: '123' [1183,1190]
+                        ClassExpr [1192,1201]
+                            ClassOrInterfaceType [1192,1195]
+                                SimpleName: URL [1192,1195]
+            CatchClause [1214,1269]
+                Parameter [1221,1236]
+                    ClassOrInterfaceType [1221,1234]
+                        SimpleName: JSONException [1221,1234]
+                    SimpleName: e [1235,1236]
+                BlockStmt [1238,1269]
+                    ExpressionStmt [1252,1259]
+                        AssignExpr [1252,1258]
+                            NameExpr [1252,1254]
+                                SimpleName: ex [1252,1254]
+                            NameExpr [1257,1258]
+                                SimpleName: e [1257,1258]
+        ExpressionStmt [1278,1303]
+            MethodCallExpr [1278,1302]
+                NameExpr [1278,1284]
+                    SimpleName: Assert [1278,1284]
+                SimpleName: assertNotNull [1285,1298]
+                NameExpr [1299,1301]
+                    SimpleName: ex [1299,1301]
+to
+ClassOrInterfaceDeclaration [0,27]
+at 3
+===
+insert-tree
+---
+ClassOrInterfaceType [472,480]
+    SimpleName: TestCase [472,480]
+to
+ClassOrInterfaceDeclaration [0,27]
+at 4

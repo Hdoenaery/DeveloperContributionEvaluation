@@ -1,0 +1,120 @@
+===
+insert-tree
+---
+PackageDeclaration [0,38]
+    Name: bug [8,37]
+        Name: bvt [8,33]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,13]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [40,62]
+    Name: List [47,61]
+        Name: util [47,56]
+            Name: java [47,51]
+to
+CompilationUnit [0,13]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [64,94]
+    Name: Assert [71,93]
+        Name: framework [71,86]
+            Name: junit [71,76]
+to
+CompilationUnit [0,13]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [95,127]
+    Name: TestCase [102,126]
+        Name: framework [102,117]
+            Name: junit [102,107]
+to
+CompilationUnit [0,13]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [129,167]
+    Name: JSONArray [136,166]
+        Name: fastjson [136,156]
+            Name: alibaba [136,147]
+                Name: com [136,139]
+to
+CompilationUnit [0,13]
+at 4
+===
+insert-node
+---
+Modifier: public [169,175]
+to
+ClassOrInterfaceDeclaration [0,13]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [212,494]
+    Modifier: public [212,218]
+    SimpleName: test_0 [224,230]
+    ClassOrInterfaceType [240,249]
+        SimpleName: Exception [240,249]
+    VoidType [219,223]
+    BlockStmt [250,494]
+        ExpressionStmt [260,359]
+            VariableDeclarationExpr [260,358]
+                VariableDeclarator [273,358]
+                    ClassOrInterfaceType [260,272]
+                        SimpleName: List [260,264]
+                        ClassOrInterfaceType [265,271]
+                            SimpleName: String [265,271]
+                    SimpleName: typeList [273,281]
+                    MethodCallExpr [284,358]
+                        NameExpr [284,293]
+                            SimpleName: JSONArray [284,293]
+                        SimpleName: parseArray [294,304]
+                        StringLiteralExpr: ['java.lang.Class','java.lang.Long'] [305,343]
+                        ClassExpr [345,357]
+                            ClassOrInterfaceType [345,351]
+                                SimpleName: String [345,351]
+        ExpressionStmt [368,424]
+            MethodCallExpr [368,423]
+                NameExpr [368,374]
+                    SimpleName: Assert [368,374]
+                SimpleName: assertEquals [375,387]
+                StringLiteralExpr: java.lang.Class [388,405]
+                MethodCallExpr [407,422]
+                    NameExpr [407,415]
+                        SimpleName: typeList [407,415]
+                    SimpleName: get [416,419]
+                    IntegerLiteralExpr: 0 [420,421]
+        ExpressionStmt [433,488]
+            MethodCallExpr [433,487]
+                NameExpr [433,439]
+                    SimpleName: Assert [433,439]
+                SimpleName: assertEquals [440,452]
+                StringLiteralExpr: java.lang.Long [453,469]
+                MethodCallExpr [471,486]
+                    NameExpr [471,479]
+                        SimpleName: typeList [471,479]
+                    SimpleName: get [480,483]
+                    IntegerLiteralExpr: 1 [484,485]
+to
+ClassOrInterfaceDeclaration [0,13]
+at 2
+===
+insert-tree
+---
+ClassOrInterfaceType [196,204]
+    SimpleName: TestCase [196,204]
+to
+ClassOrInterfaceDeclaration [0,13]
+at 3

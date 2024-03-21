@@ -1,0 +1,108 @@
+===
+insert-tree
+---
+PackageDeclaration [0,40]
+    Name: serializer [8,39]
+        Name: fastjson [8,28]
+            Name: alibaba [8,19]
+                Name: com [8,11]
+to
+CompilationUnit [0,28]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [42,69]
+    Name: IOException [49,68]
+        Name: io [49,56]
+            Name: java [49,53]
+to
+CompilationUnit [0,28]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [71,116]
+    Name: SimpleType [78,115]
+        Name: openmbean [78,104]
+            Name: management [78,94]
+                Name: javax [78,83]
+to
+CompilationUnit [0,28]
+at 2
+===
+insert-node
+---
+Modifier: public [118,124]
+to
+ClassOrInterfaceDeclaration [0,28]
+at 0
+===
+insert-tree
+---
+FieldDeclaration [187,266]
+    Modifier: public [187,193]
+    Modifier: final [194,199]
+    Modifier: static [200,206]
+    VariableDeclarator [228,265]
+        ClassOrInterfaceType [207,227]
+            SimpleName: SimpleTypeSerializer [207,227]
+        SimpleName: instance [228,236]
+        ObjectCreationExpr [239,265]
+            ClassOrInterfaceType [243,263]
+                SimpleName: SimpleTypeSerializer [243,263]
+to
+ClassOrInterfaceDeclaration [0,28]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [272,485]
+    SingleMemberAnnotationExpr [272,301]
+        Name: SuppressWarnings [273,289]
+        StringLiteralExpr: rawtypes [290,300]
+    Modifier: public [306,312]
+    SimpleName: write [318,323]
+    Parameter [324,349]
+        ClassOrInterfaceType [324,338]
+            SimpleName: JSONSerializer [324,338]
+        SimpleName: serializer [339,349]
+    Parameter [351,364]
+        ClassOrInterfaceType [351,357]
+            SimpleName: Object [351,357]
+        SimpleName: object [358,364]
+    ClassOrInterfaceType [373,384]
+        SimpleName: IOException [373,384]
+    VoidType [313,317]
+    BlockStmt [385,485]
+        ExpressionStmt [395,433]
+            VariableDeclarationExpr [395,432]
+                VariableDeclarator [406,432]
+                    ClassOrInterfaceType [395,405]
+                        SimpleName: SimpleType [395,405]
+                    SimpleName: type [406,410]
+                    CastExpr [413,432]
+                        ClassOrInterfaceType [414,424]
+                            SimpleName: SimpleType [414,424]
+                        NameExpr [426,432]
+                            SimpleName: object [426,432]
+        ExpressionStmt [442,479]
+            MethodCallExpr [442,478]
+                NameExpr [442,452]
+                    SimpleName: serializer [442,452]
+                SimpleName: write [453,458]
+                MethodCallExpr [459,477]
+                    NameExpr [459,463]
+                        SimpleName: type [459,463]
+                    SimpleName: getTypeName [464,475]
+to
+ClassOrInterfaceDeclaration [0,28]
+at 3
+===
+insert-tree
+---
+ClassOrInterfaceType [163,179]
+    SimpleName: ObjectSerializer [163,179]
+to
+ClassOrInterfaceDeclaration [0,28]
+at 4

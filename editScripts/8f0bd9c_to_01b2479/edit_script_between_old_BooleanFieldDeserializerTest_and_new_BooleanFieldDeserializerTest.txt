@@ -1,0 +1,181 @@
+===
+insert-tree
+---
+PackageDeclaration [0,47]
+    Name: deser [8,46]
+        Name: parser [8,40]
+            Name: bvt [8,33]
+                Name: test [8,29]
+                    Name: json [8,24]
+                        Name: alibaba [8,19]
+                            Name: com [8,11]
+to
+CompilationUnit [0,36]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [49,79]
+    Name: Assert [56,78]
+        Name: framework [56,71]
+            Name: junit [56,61]
+to
+CompilationUnit [0,36]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [80,112]
+    Name: TestCase [87,111]
+        Name: framework [87,102]
+            Name: junit [87,92]
+to
+CompilationUnit [0,36]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [114,147]
+    Name: JSON [121,146]
+        Name: fastjson [121,141]
+            Name: alibaba [121,132]
+                Name: com [121,124]
+to
+CompilationUnit [0,36]
+at 3
+===
+insert-node
+---
+Modifier: public [149,155]
+to
+ClassOrInterfaceDeclaration [0,36]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [215,424]
+    Modifier: public [215,221]
+    SimpleName: test_0 [227,233]
+    ClassOrInterfaceType [243,252]
+        SimpleName: Exception [243,252]
+    VoidType [222,226]
+    BlockStmt [253,424]
+        ExpressionStmt [263,327]
+            VariableDeclarationExpr [263,326]
+                VariableDeclarator [270,326]
+                    ClassOrInterfaceType [263,269]
+                        SimpleName: Entity [263,269]
+                    SimpleName: a [270,271]
+                    MethodCallExpr [274,326]
+                        NameExpr [274,278]
+                            SimpleName: JSON [274,278]
+                        SimpleName: parseObject [279,290]
+                        StringLiteralExpr: {f1:null, f2:null} [291,311]
+                        ClassExpr [313,325]
+                            ClassOrInterfaceType [313,319]
+                                SimpleName: Entity [313,319]
+        ExpressionStmt [336,372]
+            MethodCallExpr [336,371]
+                NameExpr [336,342]
+                    SimpleName: Assert [336,342]
+                SimpleName: assertEquals [343,355]
+                BooleanLiteralExpr: true [356,360]
+                MethodCallExpr [362,370]
+                    NameExpr [362,363]
+                        SimpleName: a [362,363]
+                    SimpleName: isF1 [364,368]
+        ExpressionStmt [381,418]
+            MethodCallExpr [381,417]
+                NameExpr [381,387]
+                    SimpleName: Assert [381,387]
+                SimpleName: assertEquals [388,400]
+                NullLiteralExpr [401,405]
+                MethodCallExpr [407,416]
+                    NameExpr [407,408]
+                        SimpleName: a [407,408]
+                    SimpleName: getF2 [409,414]
+to
+ClassOrInterfaceDeclaration [0,36]
+at 2
+===
+insert-tree
+---
+ClassOrInterfaceDeclaration [430,831]
+    Modifier: public [430,436]
+    Modifier: static [437,443]
+    SimpleName: Entity [450,456]
+    FieldDeclaration [468,494]
+        Modifier: private [468,475]
+        VariableDeclarator [484,493]
+            PrimitiveType: boolean [476,483]
+            SimpleName: f1 [484,486]
+            BooleanLiteralExpr: true [489,493]
+    FieldDeclaration [503,537]
+        Modifier: private [503,510]
+        VariableDeclarator [519,536]
+            ClassOrInterfaceType [511,518]
+                SimpleName: Boolean [511,518]
+            SimpleName: f2 [519,521]
+            FieldAccessExpr [524,536]
+                NameExpr [524,531]
+                    SimpleName: Boolean [524,531]
+                SimpleName: TRUE [532,536]
+    MethodDeclaration [547,603]
+        Modifier: public [547,553]
+        SimpleName: isF1 [562,566]
+        PrimitiveType: boolean [554,561]
+        BlockStmt [569,603]
+            ReturnStmt [583,593]
+                NameExpr [590,592]
+                    SimpleName: f1 [590,592]
+    MethodDeclaration [613,680]
+        Modifier: public [613,619]
+        SimpleName: setF1 [625,630]
+        Parameter [631,641]
+            PrimitiveType: boolean [631,638]
+            SimpleName: f1 [639,641]
+        VoidType [620,624]
+        BlockStmt [643,680]
+            ExpressionStmt [657,670]
+                AssignExpr [657,669]
+                    FieldAccessExpr [657,664]
+                        ThisExpr [657,661]
+                        SimpleName: f1 [662,664]
+                    NameExpr [667,669]
+                        SimpleName: f1 [667,669]
+    MethodDeclaration [690,747]
+        Modifier: public [690,696]
+        SimpleName: getF2 [705,710]
+        ClassOrInterfaceType [697,704]
+            SimpleName: Boolean [697,704]
+        BlockStmt [713,747]
+            ReturnStmt [727,737]
+                NameExpr [734,736]
+                    SimpleName: f2 [734,736]
+    MethodDeclaration [757,824]
+        Modifier: public [757,763]
+        SimpleName: setF2 [769,774]
+        Parameter [775,785]
+            ClassOrInterfaceType [775,782]
+                SimpleName: Boolean [775,782]
+            SimpleName: f2 [783,785]
+        VoidType [764,768]
+        BlockStmt [787,824]
+            ExpressionStmt [801,814]
+                AssignExpr [801,813]
+                    FieldAccessExpr [801,808]
+                        ThisExpr [801,805]
+                        SimpleName: f2 [806,808]
+                    NameExpr [811,813]
+                        SimpleName: f2 [811,813]
+to
+ClassOrInterfaceDeclaration [0,36]
+at 3
+===
+insert-tree
+---
+ClassOrInterfaceType [199,207]
+    SimpleName: TestCase [199,207]
+to
+ClassOrInterfaceDeclaration [0,36]
+at 4

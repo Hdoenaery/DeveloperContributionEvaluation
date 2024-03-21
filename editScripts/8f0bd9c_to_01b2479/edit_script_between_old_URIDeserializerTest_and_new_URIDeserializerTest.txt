@@ -1,0 +1,182 @@
+===
+insert-tree
+---
+PackageDeclaration [0,47]
+    Name: deser [8,46]
+        Name: parser [8,40]
+            Name: bvt [8,33]
+                Name: test [8,29]
+                    Name: json [8,24]
+                        Name: alibaba [8,19]
+                            Name: com [8,11]
+to
+CompilationUnit [0,27]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [49,79]
+    Name: Assert [56,78]
+        Name: framework [56,71]
+            Name: junit [56,61]
+to
+CompilationUnit [0,27]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [80,112]
+    Name: TestCase [87,111]
+        Name: framework [87,102]
+            Name: junit [87,92]
+to
+CompilationUnit [0,27]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [114,147]
+    Name: JSON [121,146]
+        Name: fastjson [121,141]
+            Name: alibaba [121,132]
+                Name: com [121,124]
+to
+CompilationUnit [0,27]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [148,204]
+    Name: DefaultExtJSONParser [155,203]
+        Name: parser [155,182]
+            Name: fastjson [155,175]
+                Name: alibaba [155,166]
+                    Name: com [155,158]
+to
+CompilationUnit [0,27]
+at 4
+===
+insert-tree
+---
+ImportDeclaration [205,250]
+    Name: JSONToken [212,249]
+        Name: parser [212,239]
+            Name: fastjson [212,232]
+                Name: alibaba [212,223]
+                    Name: com [212,215]
+to
+CompilationUnit [0,27]
+at 5
+===
+insert-tree
+---
+ImportDeclaration [251,299]
+    Name: ParserConfig [258,298]
+        Name: parser [258,285]
+            Name: fastjson [258,278]
+                Name: alibaba [258,269]
+                    Name: com [258,261]
+to
+CompilationUnit [0,27]
+at 6
+===
+insert-tree
+---
+ImportDeclaration [300,364]
+    Name: URIDeserializer [307,363]
+        Name: deserializer [307,347]
+            Name: parser [307,334]
+                Name: fastjson [307,327]
+                    Name: alibaba [307,318]
+                        Name: com [307,310]
+to
+CompilationUnit [0,27]
+at 7
+===
+insert-node
+---
+Modifier: public [366,372]
+to
+ClassOrInterfaceDeclaration [0,27]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [423,834]
+    Modifier: public [423,429]
+    SimpleName: test_null [435,444]
+    ClassOrInterfaceType [454,463]
+        SimpleName: Exception [454,463]
+    VoidType [430,434]
+    BlockStmt [464,834]
+        ExpressionStmt [474,496]
+            VariableDeclarationExpr [474,495]
+                VariableDeclarator [481,495]
+                    ClassOrInterfaceType [474,480]
+                        SimpleName: String [474,480]
+                    SimpleName: input [481,486]
+                    StringLiteralExpr: null [489,495]
+        ExpressionStmt [505,630]
+            VariableDeclarationExpr [505,629]
+                VariableDeclarator [526,629]
+                    ClassOrInterfaceType [505,525]
+                        SimpleName: DefaultExtJSONParser [505,525]
+                    SimpleName: parser [526,532]
+                    ObjectCreationExpr [535,629]
+                        ClassOrInterfaceType [539,559]
+                            SimpleName: DefaultExtJSONParser [539,559]
+                        NameExpr [560,565]
+                            SimpleName: input [560,565]
+                        MethodCallExpr [567,599]
+                            NameExpr [567,579]
+                                SimpleName: ParserConfig [567,579]
+                            SimpleName: getGlobalInstance [580,597]
+                        FieldAccessExpr [601,628]
+                            NameExpr [601,605]
+                                SimpleName: JSON [601,605]
+                            SimpleName: DEFAULT_PARSER_FEATURE [606,628]
+        ExpressionStmt [640,686]
+            VariableDeclarationExpr [640,685]
+                VariableDeclarator [656,685]
+                    ClassOrInterfaceType [640,655]
+                        SimpleName: URIDeserializer [640,655]
+                    SimpleName: deser [656,661]
+                    ObjectCreationExpr [664,685]
+                        ClassOrInterfaceType [668,683]
+                            SimpleName: URIDeserializer [668,683]
+        ExpressionStmt [695,768]
+            MethodCallExpr [695,767]
+                NameExpr [695,701]
+                    SimpleName: Assert [695,701]
+                SimpleName: assertEquals [702,714]
+                FieldAccessExpr [715,739]
+                    NameExpr [715,724]
+                        SimpleName: JSONToken [715,724]
+                    SimpleName: LITERAL_STRING [725,739]
+                MethodCallExpr [741,766]
+                    NameExpr [741,746]
+                        SimpleName: deser [741,746]
+                    SimpleName: getFastMatchToken [747,764]
+        ExpressionStmt [778,828]
+            MethodCallExpr [778,827]
+                NameExpr [778,784]
+                    SimpleName: Assert [778,784]
+                SimpleName: assertNull [785,795]
+                MethodCallExpr [796,826]
+                    NameExpr [796,801]
+                        SimpleName: deser [796,801]
+                    SimpleName: deserialze [802,812]
+                    NameExpr [813,819]
+                        SimpleName: parser [813,819]
+                    NullLiteralExpr [821,825]
+to
+ClassOrInterfaceDeclaration [0,27]
+at 2
+===
+insert-tree
+---
+ClassOrInterfaceType [407,415]
+    SimpleName: TestCase [407,415]
+to
+ClassOrInterfaceDeclaration [0,27]
+at 3

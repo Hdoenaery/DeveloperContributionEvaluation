@@ -1,0 +1,263 @@
+===
+insert-tree
+---
+PackageDeclaration [0,34]
+    Name: bvt [8,33]
+        Name: test [8,29]
+            Name: json [8,24]
+                Name: alibaba [8,19]
+                    Name: com [8,11]
+to
+CompilationUnit [0,21]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [36,58]
+    Name: List [43,57]
+        Name: util [43,52]
+            Name: java [43,47]
+to
+CompilationUnit [0,21]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [60,90]
+    Name: Assert [67,89]
+        Name: framework [67,82]
+            Name: junit [67,72]
+to
+CompilationUnit [0,21]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [91,123]
+    Name: TestCase [98,122]
+        Name: framework [98,113]
+            Name: junit [98,103]
+to
+CompilationUnit [0,21]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [125,158]
+    Name: JSON [132,157]
+        Name: fastjson [132,152]
+            Name: alibaba [132,143]
+                Name: com [132,135]
+to
+CompilationUnit [0,21]
+at 4
+===
+insert-tree
+---
+ImportDeclaration [159,207]
+    Name: ParserConfig [166,206]
+        Name: parser [166,193]
+            Name: fastjson [166,186]
+                Name: alibaba [166,177]
+                    Name: com [166,169]
+to
+CompilationUnit [0,21]
+at 5
+===
+insert-tree
+---
+ImportDeclaration [208,263]
+    Name: SerializeConfig [215,262]
+        Name: serializer [215,246]
+            Name: fastjson [215,235]
+                Name: alibaba [215,226]
+                    Name: com [215,218]
+to
+CompilationUnit [0,21]
+at 6
+===
+insert-tree
+---
+ImportDeclaration [264,321]
+    Name: SerializerFeature [271,320]
+        Name: serializer [271,302]
+            Name: fastjson [271,291]
+                Name: alibaba [271,282]
+                    Name: com [271,274]
+to
+CompilationUnit [0,21]
+at 7
+===
+insert-node
+---
+Modifier: public [323,329]
+to
+ClassOrInterfaceDeclaration [0,21]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [373,935]
+    Modifier: public [373,379]
+    SimpleName: test_codec_null [385,400]
+    ClassOrInterfaceType [410,419]
+        SimpleName: Exception [410,419]
+    VoidType [380,384]
+    BlockStmt [420,935]
+        ExpressionStmt [430,446]
+            VariableDeclarationExpr [430,445]
+                VariableDeclarator [433,445]
+                    ClassOrInterfaceType [430,432]
+                        SimpleName: V0 [430,432]
+                    SimpleName: v [433,434]
+                    ObjectCreationExpr [437,445]
+                        ClassOrInterfaceType [441,443]
+                            SimpleName: V0 [441,443]
+        ExpressionStmt [456,504]
+            VariableDeclarationExpr [456,503]
+                VariableDeclarator [472,503]
+                    ClassOrInterfaceType [456,471]
+                        SimpleName: SerializeConfig [456,471]
+                    SimpleName: mapping [472,479]
+                    ObjectCreationExpr [482,503]
+                        ClassOrInterfaceType [486,501]
+                            SimpleName: SerializeConfig [486,501]
+        ExpressionStmt [513,541]
+            MethodCallExpr [513,540]
+                NameExpr [513,520]
+                    SimpleName: mapping [513,520]
+                SimpleName: setAsmEnable [521,533]
+                BooleanLiteralExpr: false [534,539]
+        ExpressionStmt [551,632]
+            VariableDeclarationExpr [551,631]
+                VariableDeclarator [558,631]
+                    ClassOrInterfaceType [551,557]
+                        SimpleName: String [551,557]
+                    SimpleName: text [558,562]
+                    MethodCallExpr [565,631]
+                        NameExpr [565,569]
+                            SimpleName: JSON [565,569]
+                        SimpleName: toJSONString [570,582]
+                        NameExpr [583,584]
+                            SimpleName: v [583,584]
+                        NameExpr [586,593]
+                            SimpleName: mapping [586,593]
+                        FieldAccessExpr [595,630]
+                            NameExpr [595,612]
+                                SimpleName: SerializerFeature [595,612]
+                            SimpleName: WriteMapNullValue [613,630]
+        ExpressionStmt [641,687]
+            MethodCallExpr [641,686]
+                NameExpr [641,647]
+                    SimpleName: Assert [641,647]
+                SimpleName: assertEquals [648,660]
+                StringLiteralExpr: {"value":null} [661,679]
+                NameExpr [681,685]
+                    SimpleName: text [681,685]
+        ExpressionStmt [697,738]
+            VariableDeclarationExpr [697,737]
+                VariableDeclarator [710,737]
+                    ClassOrInterfaceType [697,709]
+                        SimpleName: ParserConfig [697,709]
+                    SimpleName: config [710,716]
+                    ObjectCreationExpr [719,737]
+                        ClassOrInterfaceType [723,735]
+                            SimpleName: ParserConfig [723,735]
+        ExpressionStmt [747,774]
+            MethodCallExpr [747,773]
+                NameExpr [747,753]
+                    SimpleName: config [747,753]
+                SimpleName: setAsmEnable [754,766]
+                BooleanLiteralExpr: false [767,772]
+        ExpressionStmt [792,870]
+            VariableDeclarationExpr [792,869]
+                VariableDeclarator [795,869]
+                    ClassOrInterfaceType [792,794]
+                        SimpleName: V0 [792,794]
+                    SimpleName: v1 [795,797]
+                    MethodCallExpr [800,869]
+                        NameExpr [800,804]
+                            SimpleName: JSON [800,804]
+                        SimpleName: parseObject [805,816]
+                        NameExpr [817,821]
+                            SimpleName: text [817,821]
+                        ClassExpr [823,831]
+                            ClassOrInterfaceType [823,825]
+                                SimpleName: V0 [823,825]
+                        NameExpr [833,839]
+                            SimpleName: config [833,839]
+                        FieldAccessExpr [841,868]
+                            NameExpr [841,845]
+                                SimpleName: JSON [841,845]
+                            SimpleName: DEFAULT_PARSER_FEATURE [846,868]
+        ExpressionStmt [880,929]
+            MethodCallExpr [880,928]
+                NameExpr [880,886]
+                    SimpleName: Assert [880,886]
+                SimpleName: assertEquals [887,899]
+                MethodCallExpr [900,913]
+                    NameExpr [900,902]
+                        SimpleName: v1 [900,902]
+                    SimpleName: getValue [903,911]
+                MethodCallExpr [915,927]
+                    NameExpr [915,916]
+                        SimpleName: v [915,916]
+                    SimpleName: getValue [917,925]
+to
+ClassOrInterfaceDeclaration [0,21]
+at 2
+===
+insert-tree
+---
+ClassOrInterfaceDeclaration [938,1127]
+    Modifier: public [938,944]
+    Modifier: static [945,951]
+    SimpleName: V0 [958,960]
+    FieldDeclaration [966,993]
+        Modifier: private [966,973]
+        VariableDeclarator [987,992]
+            ClassOrInterfaceType [974,986]
+                SimpleName: List [974,978]
+                ClassOrInterfaceType [979,985]
+                    SimpleName: Object [979,985]
+            SimpleName: value [987,992]
+    MethodDeclaration [997,1050]
+        Modifier: public [997,1003]
+        SimpleName: getValue [1017,1025]
+        ClassOrInterfaceType [1004,1016]
+            SimpleName: List [1004,1008]
+            ClassOrInterfaceType [1009,1015]
+                SimpleName: Object [1009,1015]
+        BlockStmt [1028,1050]
+            ReturnStmt [1033,1046]
+                NameExpr [1040,1045]
+                    SimpleName: value [1040,1045]
+    MethodDeclaration [1054,1123]
+        Modifier: public [1054,1060]
+        SimpleName: setValue [1066,1074]
+        Parameter [1075,1093]
+            ClassOrInterfaceType [1075,1087]
+                SimpleName: List [1075,1079]
+                ClassOrInterfaceType [1080,1086]
+                    SimpleName: Object [1080,1086]
+            SimpleName: value [1088,1093]
+        VoidType [1061,1065]
+        BlockStmt [1095,1123]
+            ExpressionStmt [1100,1119]
+                AssignExpr [1100,1118]
+                    FieldAccessExpr [1100,1110]
+                        ThisExpr [1100,1104]
+                        SimpleName: value [1105,1110]
+                    NameExpr [1113,1118]
+                        SimpleName: value [1113,1118]
+to
+ClassOrInterfaceDeclaration [0,21]
+at 3
+===
+insert-tree
+---
+ClassOrInterfaceType [358,366]
+    SimpleName: TestCase [358,366]
+to
+ClassOrInterfaceDeclaration [0,21]
+at 4

@@ -1,0 +1,117 @@
+===
+insert-tree
+---
+PackageDeclaration [604,644]
+    Name: serializer [612,643]
+        Name: fastjson [612,632]
+            Name: alibaba [612,623]
+                Name: com [612,615]
+to
+CompilationUnit [0,25]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [646,673]
+    Name: IOException [653,672]
+        Name: io [653,660]
+            Name: java [653,657]
+to
+CompilationUnit [0,25]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [674,705]
+    Name: Pattern [681,704]
+        Name: regex [681,696]
+            Name: util [681,690]
+                Name: java [681,685]
+to
+CompilationUnit [0,25]
+at 2
+===
+insert-node
+---
+Modifier: public [755,761]
+to
+ClassOrInterfaceDeclaration [0,25]
+at 0
+===
+insert-tree
+---
+FieldDeclaration [821,894]
+    Modifier: public [821,827]
+    Modifier: final [828,833]
+    Modifier: static [834,840]
+    VariableDeclarator [859,893]
+        ClassOrInterfaceType [841,858]
+            SimpleName: PatternSerializer [841,858]
+        SimpleName: instance [859,867]
+        ObjectCreationExpr [870,893]
+            ClassOrInterfaceType [874,891]
+                SimpleName: PatternSerializer [874,891]
+to
+ClassOrInterfaceDeclaration [0,25]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [900,1168]
+    Modifier: public [900,906]
+    SimpleName: write [912,917]
+    Parameter [918,943]
+        ClassOrInterfaceType [918,932]
+            SimpleName: JSONSerializer [918,932]
+        SimpleName: serializer [933,943]
+    Parameter [945,958]
+        ClassOrInterfaceType [945,951]
+            SimpleName: Object [945,951]
+        SimpleName: object [952,958]
+    ClassOrInterfaceType [967,978]
+        SimpleName: IOException [967,978]
+    VoidType [907,911]
+    BlockStmt [979,1168]
+        IfStmt [989,1076]
+            BinaryExpr [993,1007]
+                NameExpr [993,999]
+                    SimpleName: object [993,999]
+                NullLiteralExpr [1003,1007]
+            BlockStmt [1009,1076]
+                ExpressionStmt [1023,1046]
+                    MethodCallExpr [1023,1045]
+                        NameExpr [1023,1033]
+                            SimpleName: serializer [1023,1033]
+                        SimpleName: writeNull [1034,1043]
+                ReturnStmt [1059,1066]
+        ExpressionStmt [1094,1123]
+            VariableDeclarationExpr [1094,1122]
+                VariableDeclarator [1102,1122]
+                    ClassOrInterfaceType [1094,1101]
+                        SimpleName: Pattern [1094,1101]
+                    SimpleName: p [1102,1103]
+                    CastExpr [1106,1122]
+                        ClassOrInterfaceType [1107,1114]
+                            SimpleName: Pattern [1107,1114]
+                        NameExpr [1116,1122]
+                            SimpleName: object [1116,1122]
+        ExpressionStmt [1132,1162]
+            MethodCallExpr [1132,1161]
+                NameExpr [1132,1142]
+                    SimpleName: serializer [1132,1142]
+                SimpleName: write [1143,1148]
+                MethodCallExpr [1149,1160]
+                    NameExpr [1149,1150]
+                        SimpleName: p [1149,1150]
+                    SimpleName: pattern [1151,1158]
+to
+ClassOrInterfaceDeclaration [0,25]
+at 3
+===
+insert-tree
+---
+ClassOrInterfaceType [797,813]
+    SimpleName: ObjectSerializer [797,813]
+to
+ClassOrInterfaceDeclaration [0,25]
+at 4

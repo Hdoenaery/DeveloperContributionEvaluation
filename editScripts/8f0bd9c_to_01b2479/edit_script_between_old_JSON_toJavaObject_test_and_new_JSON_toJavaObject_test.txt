@@ -1,0 +1,209 @@
+===
+insert-tree
+---
+PackageDeclaration [0,34]
+    Name: bvt [8,33]
+        Name: test [8,29]
+            Name: json [8,24]
+                Name: alibaba [8,19]
+                    Name: com [8,11]
+to
+CompilationUnit [0,30]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [36,66]
+    Name: Assert [43,65]
+        Name: framework [43,58]
+            Name: junit [43,48]
+to
+CompilationUnit [0,30]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [67,99]
+    Name: TestCase [74,98]
+        Name: framework [74,89]
+            Name: junit [74,79]
+to
+CompilationUnit [0,30]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [101,134]
+    Name: JSON [108,133]
+        Name: fastjson [108,128]
+            Name: alibaba [108,119]
+                Name: com [108,111]
+to
+CompilationUnit [0,30]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [135,174]
+    Name: JSONObject [142,173]
+        Name: fastjson [142,162]
+            Name: alibaba [142,153]
+                Name: com [142,145]
+to
+CompilationUnit [0,30]
+at 4
+===
+insert-tree
+---
+ImportDeclaration [175,223]
+    Name: ParserConfig [182,222]
+        Name: parser [182,209]
+            Name: fastjson [182,202]
+                Name: alibaba [182,193]
+                    Name: com [182,185]
+to
+CompilationUnit [0,30]
+at 5
+===
+insert-tree
+---
+ImportDeclaration [224,267]
+    Name: TypeUtils [231,266]
+        Name: util [231,256]
+            Name: fastjson [231,251]
+                Name: alibaba [231,242]
+                    Name: com [231,234]
+to
+CompilationUnit [0,30]
+at 6
+===
+insert-node
+---
+Modifier: public [269,275]
+to
+ClassOrInterfaceDeclaration [0,30]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [329,471]
+    Modifier: public [329,335]
+    SimpleName: test_0 [341,347]
+    ClassOrInterfaceType [357,366]
+        SimpleName: Exception [357,366]
+    VoidType [336,340]
+    BlockStmt [367,471]
+        ExpressionStmt [377,432]
+            VariableDeclarationExpr [377,431]
+                VariableDeclarator [379,431]
+                    ClassOrInterfaceType [377,378]
+                        SimpleName: A [377,378]
+                    SimpleName: a [379,380]
+                    CastExpr [383,431]
+                        ClassOrInterfaceType [384,385]
+                            SimpleName: A [384,385]
+                        MethodCallExpr [387,431]
+                            NameExpr [387,391]
+                                SimpleName: JSON [387,391]
+                            SimpleName: toJavaObject [392,404]
+                            ObjectCreationExpr [405,421]
+                                ClassOrInterfaceType [409,419]
+                                    SimpleName: JSONObject [409,419]
+                            ClassExpr [423,430]
+                                ClassOrInterfaceType [423,424]
+                                    SimpleName: A [423,424]
+        ExpressionStmt [441,465]
+            MethodCallExpr [441,464]
+                NameExpr [441,447]
+                    SimpleName: Assert [441,447]
+                SimpleName: assertNotNull [448,461]
+                NameExpr [462,463]
+                    SimpleName: a [462,463]
+to
+ClassOrInterfaceDeclaration [0,30]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [477,641]
+    Modifier: public [477,483]
+    SimpleName: test_1 [489,495]
+    ClassOrInterfaceType [505,514]
+        SimpleName: Exception [505,514]
+    VoidType [484,488]
+    BlockStmt [515,641]
+        ExpressionStmt [525,602]
+            VariableDeclarationExpr [525,601]
+                VariableDeclarator [527,601]
+                    ClassOrInterfaceType [525,526]
+                        SimpleName: A [525,526]
+                    SimpleName: a [527,528]
+                    CastExpr [531,601]
+                        ClassOrInterfaceType [532,533]
+                            SimpleName: A [532,533]
+                        MethodCallExpr [535,601]
+                            NameExpr [535,544]
+                                SimpleName: TypeUtils [535,544]
+                            SimpleName: cast [545,549]
+                            ObjectCreationExpr [550,557]
+                                ClassOrInterfaceType [554,555]
+                                    SimpleName: B [554,555]
+                            ClassExpr [559,566]
+                                ClassOrInterfaceType [559,560]
+                                    SimpleName: A [559,560]
+                            MethodCallExpr [568,600]
+                                NameExpr [568,580]
+                                    SimpleName: ParserConfig [568,580]
+                                SimpleName: getGlobalInstance [581,598]
+        ExpressionStmt [611,635]
+            MethodCallExpr [611,634]
+                NameExpr [611,617]
+                    SimpleName: Assert [611,617]
+                SimpleName: assertNotNull [618,631]
+                NameExpr [632,633]
+                    SimpleName: a [632,633]
+to
+ClassOrInterfaceDeclaration [0,30]
+at 3
+===
+insert-tree
+---
+ClassOrInterfaceDeclaration [647,677]
+    Modifier: public [647,653]
+    Modifier: static [654,660]
+    SimpleName: A [667,668]
+to
+ClassOrInterfaceDeclaration [0,30]
+at 4
+===
+insert-tree
+---
+ClassOrInterfaceDeclaration [683,718]
+    Modifier: public [683,689]
+    Modifier: static [690,696]
+    SimpleName: IB [707,709]
+to
+ClassOrInterfaceDeclaration [0,30]
+at 5
+===
+insert-tree
+---
+ClassOrInterfaceDeclaration [724,778]
+    Modifier: public [724,730]
+    Modifier: static [731,737]
+    SimpleName: B [744,745]
+    ClassOrInterfaceType [754,755]
+        SimpleName: A [754,755]
+    ClassOrInterfaceType [767,769]
+        SimpleName: IB [767,769]
+to
+ClassOrInterfaceDeclaration [0,30]
+at 6
+===
+insert-tree
+---
+ClassOrInterfaceType [313,321]
+    SimpleName: TestCase [313,321]
+to
+ClassOrInterfaceDeclaration [0,30]
+at 7

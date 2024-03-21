@@ -1,0 +1,126 @@
+===
+insert-tree
+---
+PackageDeclaration [0,47]
+    Name: pagemodel [8,46]
+        Name: entity [8,36]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,22]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [49,77]
+    Name: Serializable [56,76]
+        Name: io [56,63]
+            Name: java [56,60]
+to
+CompilationUnit [0,22]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [78,100]
+    Name: List [85,99]
+        Name: util [85,94]
+            Name: java [85,89]
+to
+CompilationUnit [0,22]
+at 2
+===
+insert-node
+---
+Modifier: public [197,203]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 0
+===
+insert-tree
+---
+FieldDeclaration [282,352]
+    Modifier: private [282,289]
+    Modifier: static [290,296]
+    Modifier: final [297,302]
+    VariableDeclarator [311,351]
+        PrimitiveType: long [303,307]
+        SimpleName: serialVersionUID [311,327]
+        UnaryExpr [330,351]
+            LongLiteralExpr: 3025232531863199667L [331,351]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 2
+===
+insert-tree
+---
+FieldDeclaration [358,395]
+    Modifier: private [358,365]
+    VariableDeclarator [387,394]
+        ClassOrInterfaceType [366,386]
+            SimpleName: List [366,370]
+            ClassOrInterfaceType [371,385]
+                SimpleName: RegionInstance [371,385]
+        SimpleName: regions [387,394]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 3
+===
+insert-tree
+---
+MethodDeclaration [401,473]
+    Modifier: public [401,407]
+    SimpleName: getRegions [429,439]
+    ClassOrInterfaceType [408,428]
+        SimpleName: List [408,412]
+        ClassOrInterfaceType [413,427]
+            SimpleName: RegionInstance [413,427]
+    BlockStmt [442,473]
+        ReturnStmt [452,467]
+            NameExpr [459,466]
+                SimpleName: regions [459,466]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 4
+===
+insert-tree
+---
+MethodDeclaration [479,571]
+    Modifier: public [479,485]
+    SimpleName: setRegions [491,501]
+    Parameter [502,530]
+        ClassOrInterfaceType [502,522]
+            SimpleName: List [502,506]
+            ClassOrInterfaceType [507,521]
+                SimpleName: RegionInstance [507,521]
+        SimpleName: regions [523,530]
+    VoidType [486,490]
+    BlockStmt [532,571]
+        ExpressionStmt [542,565]
+            AssignExpr [542,564]
+                FieldAccessExpr [542,554]
+                    ThisExpr [542,546]
+                    SimpleName: regions [547,554]
+                NameExpr [557,564]
+                    SimpleName: regions [557,564]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 5
+===
+insert-tree
+---
+ClassOrInterfaceType [233,250]
+    SimpleName: ComponentInstance [233,250]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 6
+===
+insert-tree
+---
+ClassOrInterfaceType [262,274]
+    SimpleName: Serializable [262,274]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 7

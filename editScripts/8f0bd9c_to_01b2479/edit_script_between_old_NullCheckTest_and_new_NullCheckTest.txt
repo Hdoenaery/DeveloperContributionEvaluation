@@ -1,0 +1,105 @@
+===
+insert-tree
+---
+PackageDeclaration [0,41]
+    Name: parser [8,40]
+        Name: bvt [8,33]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,21]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [43,73]
+    Name: Assert [50,72]
+        Name: framework [50,65]
+            Name: junit [50,55]
+to
+CompilationUnit [0,21]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [74,106]
+    Name: TestCase [81,105]
+        Name: framework [81,96]
+            Name: junit [81,86]
+to
+CompilationUnit [0,21]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [108,141]
+    Name: JSON [115,140]
+        Name: fastjson [115,135]
+            Name: alibaba [115,126]
+                Name: com [115,118]
+to
+CompilationUnit [0,21]
+at 3
+===
+insert-node
+---
+Modifier: public [143,149]
+to
+ClassOrInterfaceDeclaration [0,21]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [194,395]
+    Modifier: public [194,200]
+    SimpleName: test_0 [206,212]
+    ClassOrInterfaceType [222,231]
+        SimpleName: Exception [222,231]
+    VoidType [201,205]
+    BlockStmt [232,395]
+        ExpressionStmt [242,286]
+            MethodCallExpr [242,285]
+                NameExpr [242,248]
+                    SimpleName: Assert [242,248]
+                SimpleName: assertEquals [249,261]
+                NullLiteralExpr [262,266]
+                MethodCallExpr [268,284]
+                    NameExpr [268,272]
+                        SimpleName: JSON [268,272]
+                    SimpleName: parse [273,278]
+                    NullLiteralExpr [279,283]
+        ExpressionStmt [295,337]
+            MethodCallExpr [295,336]
+                NameExpr [295,301]
+                    SimpleName: Assert [295,301]
+                SimpleName: assertEquals [302,314]
+                NullLiteralExpr [315,319]
+                MethodCallExpr [321,335]
+                    NameExpr [321,325]
+                        SimpleName: JSON [321,325]
+                    SimpleName: parse [326,331]
+                    StringLiteralExpr [332,334]
+        ExpressionStmt [346,389]
+            MethodCallExpr [346,388]
+                NameExpr [346,352]
+                    SimpleName: Assert [346,352]
+                SimpleName: assertEquals [353,365]
+                NullLiteralExpr [366,370]
+                MethodCallExpr [372,387]
+                    NameExpr [372,376]
+                        SimpleName: JSON [372,376]
+                    SimpleName: parse [377,382]
+                    StringLiteralExpr:   [383,386]
+to
+ClassOrInterfaceDeclaration [0,21]
+at 2
+===
+insert-tree
+---
+ClassOrInterfaceType [178,186]
+    SimpleName: TestCase [178,186]
+to
+ClassOrInterfaceDeclaration [0,21]
+at 3

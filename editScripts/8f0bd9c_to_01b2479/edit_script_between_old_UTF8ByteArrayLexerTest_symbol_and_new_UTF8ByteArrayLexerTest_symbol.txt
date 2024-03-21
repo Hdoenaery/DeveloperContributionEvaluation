@@ -1,0 +1,98 @@
+===
+insert-tree
+---
+PackageDeclaration [0,41]
+    Name: parser [8,40]
+        Name: bvt [8,33]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,37]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [43,75]
+    Name: TestCase [50,74]
+        Name: framework [50,65]
+            Name: junit [50,55]
+to
+CompilationUnit [0,37]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [77,110]
+    Name: JSON [84,109]
+        Name: fastjson [84,104]
+            Name: alibaba [84,95]
+                Name: com [84,87]
+to
+CompilationUnit [0,37]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [111,150]
+    Name: JSONObject [118,149]
+        Name: fastjson [118,138]
+            Name: alibaba [118,129]
+                Name: com [118,121]
+to
+CompilationUnit [0,37]
+at 3
+===
+insert-node
+---
+Modifier: public [152,158]
+to
+ClassOrInterfaceDeclaration [0,37]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [219,417]
+    Modifier: public [219,225]
+    SimpleName: test_utf8 [231,240]
+    ClassOrInterfaceType [250,259]
+        SimpleName: Exception [250,259]
+    VoidType [226,230]
+    BlockStmt [260,417]
+        ExpressionStmt [270,341]
+            VariableDeclarationExpr [270,340]
+                VariableDeclarator [277,340]
+                    ArrayType [270,276]
+                        PrimitiveType: byte [270,274]
+                    SimpleName: bytes [277,282]
+                    MethodCallExpr [285,340]
+                        StringLiteralExpr: {"name":"温家宝", "name":"xx"} [285,322]
+                        SimpleName: getBytes [323,331]
+                        StringLiteralExpr: UTF-8 [332,339]
+        ExpressionStmt [351,411]
+            VariableDeclarationExpr [351,410]
+                VariableDeclarator [362,410]
+                    ClassOrInterfaceType [351,361]
+                        SimpleName: JSONObject [351,361]
+                    SimpleName: json [362,366]
+                    MethodCallExpr [369,410]
+                        NameExpr [369,373]
+                            SimpleName: JSON [369,373]
+                        SimpleName: parseObject [374,385]
+                        NameExpr [386,391]
+                            SimpleName: bytes [386,391]
+                        ClassExpr [393,409]
+                            ClassOrInterfaceType [393,403]
+                                SimpleName: JSONObject [393,403]
+to
+ClassOrInterfaceDeclaration [0,37]
+at 2
+===
+insert-tree
+---
+ClassOrInterfaceType [203,211]
+    SimpleName: TestCase [203,211]
+to
+ClassOrInterfaceDeclaration [0,37]
+at 3

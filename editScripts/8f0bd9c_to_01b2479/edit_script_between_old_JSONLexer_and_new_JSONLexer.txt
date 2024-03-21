@@ -1,0 +1,352 @@
+===
+insert-tree
+---
+PackageDeclaration [604,640]
+    Name: parser [612,639]
+        Name: fastjson [612,632]
+            Name: alibaba [612,623]
+                Name: com [612,615]
+to
+CompilationUnit [0,17]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [642,670]
+    Name: BigDecimal [649,669]
+        Name: math [649,658]
+            Name: java [649,653]
+to
+CompilationUnit [0,17]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [671,697]
+    Name: Calendar [678,696]
+        Name: util [678,687]
+            Name: java [678,682]
+to
+CompilationUnit [0,17]
+at 2
+===
+insert-node
+---
+Modifier: public [747,753]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [781,798]
+    SimpleName: nextToken [786,795]
+    VoidType [781,785]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [804,831]
+    SimpleName: nextToken [809,818]
+    Parameter [819,829]
+        PrimitiveType: int [819,822]
+        SimpleName: expect [823,829]
+    VoidType [804,808]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 3
+===
+insert-tree
+---
+MethodDeclaration [837,849]
+    SimpleName: token [841,846]
+    PrimitiveType: int [837,840]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 4
+===
+insert-tree
+---
+MethodDeclaration [855,865]
+    SimpleName: pos [859,862]
+    PrimitiveType: int [855,858]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 5
+===
+insert-tree
+---
+MethodDeclaration [871,890]
+    SimpleName: stringVal [878,887]
+    ClassOrInterfaceType [871,877]
+        SimpleName: String [871,877]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 6
+===
+insert-tree
+---
+MethodDeclaration [896,918]
+    SimpleName: integerValue [903,915]
+    ClassOrInterfaceType [896,902]
+        SimpleName: Number [896,902]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 7
+===
+insert-tree
+---
+MethodDeclaration [928,964]
+    SimpleName: nextTokenWithColon [933,951]
+    Parameter [952,962]
+        PrimitiveType: int [952,955]
+        SimpleName: expect [956,962]
+    VoidType [928,932]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 8
+===
+insert-tree
+---
+MethodDeclaration [970,996]
+    SimpleName: decimalValue [981,993]
+    ClassOrInterfaceType [970,980]
+        SimpleName: BigDecimal [970,980]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 9
+===
+insert-tree
+---
+MethodDeclaration [1006,1027]
+    SimpleName: doubleValue [1013,1024]
+    PrimitiveType: double [1006,1012]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 10
+===
+insert-tree
+---
+MethodDeclaration [1037,1056]
+    SimpleName: floatValue [1043,1053]
+    PrimitiveType: float [1037,1042]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 11
+===
+insert-tree
+---
+MethodDeclaration [1062,1106]
+    SimpleName: config [1067,1073]
+    Parameter [1074,1089]
+        ClassOrInterfaceType [1074,1081]
+            SimpleName: Feature [1074,1081]
+        SimpleName: feature [1082,1089]
+    Parameter [1091,1104]
+        PrimitiveType: boolean [1091,1098]
+        SimpleName: state [1099,1104]
+    VoidType [1062,1066]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 12
+===
+insert-tree
+---
+MethodDeclaration [1112,1147]
+    SimpleName: isEnabled [1120,1129]
+    Parameter [1130,1145]
+        ClassOrInterfaceType [1130,1137]
+            SimpleName: Feature [1130,1137]
+        SimpleName: feature [1138,1145]
+    PrimitiveType: boolean [1112,1119]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 13
+===
+insert-tree
+---
+MethodDeclaration [1153,1175]
+    SimpleName: numberString [1160,1172]
+    ClassOrInterfaceType [1153,1159]
+        SimpleName: String [1153,1159]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 14
+===
+insert-tree
+---
+MethodDeclaration [1181,1197]
+    SimpleName: isEOF [1189,1194]
+    PrimitiveType: boolean [1181,1188]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 15
+===
+insert-tree
+---
+MethodDeclaration [1203,1242]
+    SimpleName: symbol [1210,1216]
+    Parameter [1217,1240]
+        ClassOrInterfaceType [1217,1228]
+            SimpleName: SymbolTable [1217,1228]
+        SimpleName: symbolTable [1229,1240]
+    ClassOrInterfaceType [1203,1209]
+        SimpleName: String [1203,1209]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 16
+===
+insert-tree
+---
+MethodDeclaration [1248,1271]
+    SimpleName: isBlankInput [1256,1268]
+    PrimitiveType: boolean [1248,1255]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 17
+===
+insert-tree
+---
+MethodDeclaration [1277,1295]
+    SimpleName: getCurrent [1282,1292]
+    PrimitiveType: char [1277,1281]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 18
+===
+insert-tree
+---
+MethodDeclaration [1301,1323]
+    SimpleName: skipWhitespace [1306,1320]
+    VoidType [1301,1305]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 19
+===
+insert-tree
+---
+MethodDeclaration [1329,1360]
+    SimpleName: incrementBufferPosition [1334,1357]
+    VoidType [1329,1333]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 20
+===
+insert-tree
+---
+MethodDeclaration [1366,1415]
+    SimpleName: scanSymbol [1373,1383]
+    Parameter [1384,1413]
+        Modifier: final [1384,1389]
+        ClassOrInterfaceType [1390,1401]
+            SimpleName: SymbolTable [1390,1401]
+        SimpleName: symbolTable [1402,1413]
+    ClassOrInterfaceType [1366,1372]
+        SimpleName: String [1366,1372]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 21
+===
+insert-tree
+---
+MethodDeclaration [1421,1488]
+    SimpleName: scanSymbol [1428,1438]
+    Parameter [1439,1468]
+        Modifier: final [1439,1444]
+        ClassOrInterfaceType [1445,1456]
+            SimpleName: SymbolTable [1445,1456]
+        SimpleName: symbolTable [1457,1468]
+    Parameter [1470,1486]
+        Modifier: final [1470,1475]
+        PrimitiveType: char [1476,1480]
+        SimpleName: quote [1481,1486]
+    ClassOrInterfaceType [1421,1427]
+        SimpleName: String [1421,1427]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 22
+===
+insert-tree
+---
+MethodDeclaration [1494,1521]
+    SimpleName: resetStringPosition [1499,1518]
+    VoidType [1494,1498]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 23
+===
+insert-tree
+---
+MethodDeclaration [1527,1584]
+    SimpleName: scanSymbolUnQuoted [1534,1552]
+    Parameter [1553,1582]
+        Modifier: final [1553,1558]
+        ClassOrInterfaceType [1559,1570]
+            SimpleName: SymbolTable [1559,1570]
+        SimpleName: symbolTable [1571,1582]
+    ClassOrInterfaceType [1527,1533]
+        SimpleName: String [1527,1533]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 24
+===
+insert-tree
+---
+MethodDeclaration [1590,1608]
+    SimpleName: scanString [1595,1605]
+    VoidType [1590,1594]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 25
+===
+insert-tree
+---
+MethodDeclaration [1614,1632]
+    SimpleName: scanNumber [1619,1629]
+    VoidType [1614,1618]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 26
+===
+insert-tree
+---
+MethodDeclaration [1638,1671]
+    SimpleName: scanISO8601DateIfMatch [1646,1668]
+    PrimitiveType: boolean [1638,1645]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 27
+===
+insert-tree
+---
+MethodDeclaration [1677,1700]
+    SimpleName: getCalendar [1686,1697]
+    ClassOrInterfaceType [1677,1685]
+        SimpleName: Calendar [1677,1685]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 28
+===
+insert-tree
+---
+MethodDeclaration [1706,1750]
+    SimpleName: intValue [1710,1718]
+    ClassOrInterfaceType [1728,1749]
+        SimpleName: NumberFormatException [1728,1749]
+    PrimitiveType: int [1706,1709]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 29
+===
+insert-tree
+---
+MethodDeclaration [1756,1802]
+    SimpleName: longValue [1761,1770]
+    ClassOrInterfaceType [1780,1801]
+        SimpleName: NumberFormatException [1780,1801]
+    PrimitiveType: long [1756,1760]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 30

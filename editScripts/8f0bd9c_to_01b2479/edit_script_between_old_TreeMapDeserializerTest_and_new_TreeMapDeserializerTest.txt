@@ -1,0 +1,107 @@
+===
+insert-tree
+---
+PackageDeclaration [0,47]
+    Name: deser [8,46]
+        Name: parser [8,40]
+            Name: bvt [8,33]
+                Name: test [8,29]
+                    Name: json [8,24]
+                        Name: alibaba [8,19]
+                            Name: com [8,11]
+to
+CompilationUnit [0,31]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [49,74]
+    Name: TreeMap [56,73]
+        Name: util [56,65]
+            Name: java [56,60]
+to
+CompilationUnit [0,31]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [76,106]
+    Name: Assert [83,105]
+        Name: framework [83,98]
+            Name: junit [83,88]
+to
+CompilationUnit [0,31]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [107,139]
+    Name: TestCase [114,138]
+        Name: framework [114,129]
+            Name: junit [114,119]
+to
+CompilationUnit [0,31]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [141,174]
+    Name: JSON [148,173]
+        Name: fastjson [148,168]
+            Name: alibaba [148,159]
+                Name: com [148,151]
+to
+CompilationUnit [0,31]
+at 4
+===
+insert-node
+---
+Modifier: public [176,182]
+to
+ClassOrInterfaceDeclaration [0,31]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [236,395]
+    Modifier: public [236,242]
+    SimpleName: test_0 [248,254]
+    ClassOrInterfaceType [265,274]
+        SimpleName: Exception [265,274]
+    VoidType [243,247]
+    BlockStmt [275,395]
+        ExpressionStmt [285,341]
+            VariableDeclarationExpr [285,340]
+                VariableDeclarator [293,340]
+                    ClassOrInterfaceType [285,292]
+                        SimpleName: TreeMap [285,292]
+                    SimpleName: treeMap [293,300]
+                    MethodCallExpr [303,340]
+                        NameExpr [303,307]
+                            SimpleName: JSON [303,307]
+                        SimpleName: parseObject [308,319]
+                        StringLiteralExpr: {} [320,324]
+                        ClassExpr [326,339]
+                            ClassOrInterfaceType [326,333]
+                                SimpleName: TreeMap [326,333]
+        ExpressionStmt [350,389]
+            MethodCallExpr [350,388]
+                NameExpr [350,356]
+                    SimpleName: Assert [350,356]
+                SimpleName: assertEquals [357,369]
+                IntegerLiteralExpr: 0 [370,371]
+                MethodCallExpr [373,387]
+                    NameExpr [373,380]
+                        SimpleName: treeMap [373,380]
+                    SimpleName: size [381,385]
+to
+ClassOrInterfaceDeclaration [0,31]
+at 2
+===
+insert-tree
+---
+ClassOrInterfaceType [221,229]
+    SimpleName: TestCase [221,229]
+to
+ClassOrInterfaceDeclaration [0,31]
+at 3

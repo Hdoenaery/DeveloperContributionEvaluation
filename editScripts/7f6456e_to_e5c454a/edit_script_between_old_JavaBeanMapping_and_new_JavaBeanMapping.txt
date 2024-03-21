@@ -1,0 +1,8 @@
+===
+insert-tree
+---
+MarkerAnnotationExpr [38,49]
+    Name: Deprecated [39,49]
+to
+ClassOrInterfaceDeclaration [38,239]
+at 0

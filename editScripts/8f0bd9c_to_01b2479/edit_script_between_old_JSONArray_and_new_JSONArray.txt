@@ -1,0 +1,1841 @@
+===
+insert-tree
+---
+PackageDeclaration [604,633]
+    Name: fastjson [612,632]
+        Name: alibaba [612,623]
+            Name: com [612,615]
+to
+CompilationUnit [0,17]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [635,702]
+    Name: castToBigDecimal [649,701]
+        Name: TypeUtils [649,684]
+            Name: util [649,674]
+                Name: fastjson [649,669]
+                    Name: alibaba [649,660]
+                        Name: com [649,652]
+to
+CompilationUnit [0,17]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [703,770]
+    Name: castToBigInteger [717,769]
+        Name: TypeUtils [717,752]
+            Name: util [717,742]
+                Name: fastjson [717,737]
+                    Name: alibaba [717,728]
+                        Name: com [717,720]
+to
+CompilationUnit [0,17]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [771,835]
+    Name: castToBoolean [785,834]
+        Name: TypeUtils [785,820]
+            Name: util [785,810]
+                Name: fastjson [785,805]
+                    Name: alibaba [785,796]
+                        Name: com [785,788]
+to
+CompilationUnit [0,17]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [836,897]
+    Name: castToByte [850,896]
+        Name: TypeUtils [850,885]
+            Name: util [850,875]
+                Name: fastjson [850,870]
+                    Name: alibaba [850,861]
+                        Name: com [850,853]
+to
+CompilationUnit [0,17]
+at 4
+===
+insert-tree
+---
+ImportDeclaration [898,959]
+    Name: castToDate [912,958]
+        Name: TypeUtils [912,947]
+            Name: util [912,937]
+                Name: fastjson [912,932]
+                    Name: alibaba [912,923]
+                        Name: com [912,915]
+to
+CompilationUnit [0,17]
+at 5
+===
+insert-tree
+---
+ImportDeclaration [960,1023]
+    Name: castToDouble [974,1022]
+        Name: TypeUtils [974,1009]
+            Name: util [974,999]
+                Name: fastjson [974,994]
+                    Name: alibaba [974,985]
+                        Name: com [974,977]
+to
+CompilationUnit [0,17]
+at 6
+===
+insert-tree
+---
+ImportDeclaration [1024,1086]
+    Name: castToFloat [1038,1085]
+        Name: TypeUtils [1038,1073]
+            Name: util [1038,1063]
+                Name: fastjson [1038,1058]
+                    Name: alibaba [1038,1049]
+                        Name: com [1038,1041]
+to
+CompilationUnit [0,17]
+at 7
+===
+insert-tree
+---
+ImportDeclaration [1087,1147]
+    Name: castToInt [1101,1146]
+        Name: TypeUtils [1101,1136]
+            Name: util [1101,1126]
+                Name: fastjson [1101,1121]
+                    Name: alibaba [1101,1112]
+                        Name: com [1101,1104]
+to
+CompilationUnit [0,17]
+at 8
+===
+insert-tree
+---
+ImportDeclaration [1148,1209]
+    Name: castToLong [1162,1208]
+        Name: TypeUtils [1162,1197]
+            Name: util [1162,1187]
+                Name: fastjson [1162,1182]
+                    Name: alibaba [1162,1173]
+                        Name: com [1162,1165]
+to
+CompilationUnit [0,17]
+at 9
+===
+insert-tree
+---
+ImportDeclaration [1210,1272]
+    Name: castToShort [1224,1271]
+        Name: TypeUtils [1224,1259]
+            Name: util [1224,1249]
+                Name: fastjson [1224,1244]
+                    Name: alibaba [1224,1235]
+                        Name: com [1224,1227]
+to
+CompilationUnit [0,17]
+at 10
+===
+insert-tree
+---
+ImportDeclaration [1273,1337]
+    Name: castToSqlDate [1287,1336]
+        Name: TypeUtils [1287,1322]
+            Name: util [1287,1312]
+                Name: fastjson [1287,1307]
+                    Name: alibaba [1287,1298]
+                        Name: com [1287,1290]
+to
+CompilationUnit [0,17]
+at 11
+===
+insert-tree
+---
+ImportDeclaration [1338,1401]
+    Name: castToString [1352,1400]
+        Name: TypeUtils [1352,1387]
+            Name: util [1352,1377]
+                Name: fastjson [1352,1372]
+                    Name: alibaba [1352,1363]
+                        Name: com [1352,1355]
+to
+CompilationUnit [0,17]
+at 12
+===
+insert-tree
+---
+ImportDeclaration [1402,1468]
+    Name: castToTimestamp [1416,1467]
+        Name: TypeUtils [1416,1451]
+            Name: util [1416,1441]
+                Name: fastjson [1416,1436]
+                    Name: alibaba [1416,1427]
+                        Name: com [1416,1419]
+to
+CompilationUnit [0,17]
+at 13
+===
+insert-tree
+---
+ImportDeclaration [1470,1498]
+    Name: Serializable [1477,1497]
+        Name: io [1477,1484]
+            Name: java [1477,1481]
+to
+CompilationUnit [0,17]
+at 14
+===
+insert-tree
+---
+ImportDeclaration [1499,1527]
+    Name: BigDecimal [1506,1526]
+        Name: math [1506,1515]
+            Name: java [1506,1510]
+to
+CompilationUnit [0,17]
+at 15
+===
+insert-tree
+---
+ImportDeclaration [1528,1556]
+    Name: BigInteger [1535,1555]
+        Name: math [1535,1544]
+            Name: java [1535,1539]
+to
+CompilationUnit [0,17]
+at 16
+===
+insert-tree
+---
+ImportDeclaration [1557,1584]
+    Name: ArrayList [1564,1583]
+        Name: util [1564,1573]
+            Name: java [1564,1568]
+to
+CompilationUnit [0,17]
+at 17
+===
+insert-tree
+---
+ImportDeclaration [1585,1613]
+    Name: Collection [1592,1612]
+        Name: util [1592,1601]
+            Name: java [1592,1596]
+to
+CompilationUnit [0,17]
+at 18
+===
+insert-tree
+---
+ImportDeclaration [1614,1640]
+    Name: Iterator [1621,1639]
+        Name: util [1621,1630]
+            Name: java [1621,1625]
+to
+CompilationUnit [0,17]
+at 19
+===
+insert-tree
+---
+ImportDeclaration [1641,1663]
+    Name: List [1648,1662]
+        Name: util [1648,1657]
+            Name: java [1648,1652]
+to
+CompilationUnit [0,17]
+at 20
+===
+insert-tree
+---
+ImportDeclaration [1664,1694]
+    Name: ListIterator [1671,1693]
+        Name: util [1671,1680]
+            Name: java [1671,1675]
+to
+CompilationUnit [0,17]
+at 21
+===
+insert-tree
+---
+ImportDeclaration [1695,1725]
+    Name: RandomAccess [1702,1724]
+        Name: util [1702,1711]
+            Name: java [1702,1706]
+to
+CompilationUnit [0,17]
+at 22
+===
+insert-tree
+---
+ImportDeclaration [1727,1770]
+    Name: TypeUtils [1734,1769]
+        Name: util [1734,1759]
+            Name: fastjson [1734,1754]
+                Name: alibaba [1734,1745]
+                    Name: com [1734,1737]
+to
+CompilationUnit [0,17]
+at 23
+===
+insert-node
+---
+Modifier: public [1820,1826]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 0
+===
+insert-tree
+---
+FieldDeclaration [1937,1986]
+    Modifier: private [1937,1944]
+    Modifier: static [1945,1951]
+    Modifier: final [1952,1957]
+    VariableDeclarator [1964,1985]
+        PrimitiveType: long [1958,1962]
+        SimpleName: serialVersionUID [1964,1980]
+        LongLiteralExpr: 1L [1983,1985]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 2
+===
+insert-tree
+---
+FieldDeclaration [1991,2023]
+    Modifier: private [1991,1998]
+    Modifier: final [1999,2004]
+    VariableDeclarator [2018,2022]
+        ClassOrInterfaceType [2005,2017]
+            SimpleName: List [2005,2009]
+            ClassOrInterfaceType [2010,2016]
+                SimpleName: Object [2010,2016]
+        SimpleName: list [2018,2022]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 3
+===
+insert-tree
+---
+ConstructorDeclaration [2029,2101]
+    Modifier: public [2029,2035]
+    SimpleName: JSONArray [2036,2045]
+    BlockStmt [2047,2101]
+        ExpressionStmt [2057,2095]
+            AssignExpr [2057,2094]
+                FieldAccessExpr [2057,2066]
+                    ThisExpr [2057,2061]
+                    SimpleName: list [2062,2066]
+                ObjectCreationExpr [2069,2094]
+                    ClassOrInterfaceType [2073,2090]
+                        SimpleName: ArrayList [2073,2082]
+                        ClassOrInterfaceType [2083,2089]
+                            SimpleName: Object [2083,2089]
+                    IntegerLiteralExpr: 10 [2091,2093]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 4
+===
+insert-tree
+---
+ConstructorDeclaration [2107,2175]
+    Modifier: public [2107,2113]
+    SimpleName: JSONArray [2114,2123]
+    Parameter [2124,2141]
+        ClassOrInterfaceType [2124,2136]
+            SimpleName: List [2124,2128]
+            ClassOrInterfaceType [2129,2135]
+                SimpleName: Object [2129,2135]
+        SimpleName: list [2137,2141]
+    BlockStmt [2142,2175]
+        ExpressionStmt [2152,2169]
+            AssignExpr [2152,2168]
+                FieldAccessExpr [2152,2161]
+                    ThisExpr [2152,2156]
+                    SimpleName: list [2157,2161]
+                NameExpr [2164,2168]
+                    SimpleName: list [2164,2168]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 5
+===
+insert-tree
+---
+ConstructorDeclaration [2181,2285]
+    Modifier: public [2181,2187]
+    SimpleName: JSONArray [2188,2197]
+    Parameter [2198,2217]
+        PrimitiveType: int [2198,2201]
+        SimpleName: initialCapacity [2202,2217]
+    BlockStmt [2218,2285]
+        ExpressionStmt [2228,2279]
+            AssignExpr [2228,2278]
+                FieldAccessExpr [2228,2237]
+                    ThisExpr [2228,2232]
+                    SimpleName: list [2233,2237]
+                ObjectCreationExpr [2240,2278]
+                    ClassOrInterfaceType [2244,2261]
+                        SimpleName: ArrayList [2244,2253]
+                        ClassOrInterfaceType [2254,2260]
+                            SimpleName: Object [2254,2260]
+                    NameExpr [2262,2277]
+                        SimpleName: initialCapacity [2262,2277]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 6
+===
+insert-tree
+---
+MethodDeclaration [2291,2344]
+    Modifier: public [2291,2297]
+    SimpleName: size [2302,2306]
+    PrimitiveType: int [2298,2301]
+    BlockStmt [2309,2344]
+        ReturnStmt [2319,2338]
+            MethodCallExpr [2326,2337]
+                NameExpr [2326,2330]
+                    SimpleName: list [2326,2330]
+                SimpleName: size [2331,2335]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 7
+===
+insert-tree
+---
+MethodDeclaration [2350,2413]
+    Modifier: public [2350,2356]
+    SimpleName: isEmpty [2365,2372]
+    PrimitiveType: boolean [2357,2364]
+    BlockStmt [2375,2413]
+        ReturnStmt [2385,2407]
+            MethodCallExpr [2392,2406]
+                NameExpr [2392,2396]
+                    SimpleName: list [2392,2396]
+                SimpleName: isEmpty [2397,2404]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 8
+===
+insert-tree
+---
+MethodDeclaration [2419,2493]
+    Modifier: public [2419,2425]
+    SimpleName: contains [2434,2442]
+    Parameter [2443,2451]
+        ClassOrInterfaceType [2443,2449]
+            SimpleName: Object [2443,2449]
+        SimpleName: o [2450,2451]
+    PrimitiveType: boolean [2426,2433]
+    BlockStmt [2453,2493]
+        ReturnStmt [2463,2487]
+            MethodCallExpr [2470,2486]
+                NameExpr [2470,2474]
+                    SimpleName: list [2470,2474]
+                SimpleName: contains [2475,2483]
+                NameExpr [2484,2485]
+                    SimpleName: o [2484,2485]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 9
+===
+insert-tree
+---
+MethodDeclaration [2499,2573]
+    Modifier: public [2499,2505]
+    SimpleName: iterator [2523,2531]
+    ClassOrInterfaceType [2506,2522]
+        SimpleName: Iterator [2506,2514]
+        ClassOrInterfaceType [2515,2521]
+            SimpleName: Object [2515,2521]
+    BlockStmt [2534,2573]
+        ReturnStmt [2544,2567]
+            MethodCallExpr [2551,2566]
+                NameExpr [2551,2555]
+                    SimpleName: list [2551,2555]
+                SimpleName: iterator [2556,2564]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 10
+===
+insert-tree
+---
+MethodDeclaration [2579,2643]
+    Modifier: public [2579,2585]
+    SimpleName: toArray [2595,2602]
+    ArrayType [2586,2594]
+        ClassOrInterfaceType [2586,2592]
+            SimpleName: Object [2586,2592]
+    BlockStmt [2605,2643]
+        ReturnStmt [2615,2637]
+            MethodCallExpr [2622,2636]
+                NameExpr [2622,2626]
+                    SimpleName: list [2622,2626]
+                SimpleName: toArray [2627,2634]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 11
+===
+insert-tree
+---
+MethodDeclaration [2649,2718]
+    Modifier: public [2649,2655]
+    TypeParameter [2657,2658]
+        SimpleName: T [2657,2658]
+    SimpleName: toArray [2664,2671]
+    Parameter [2672,2677]
+        ArrayType [2672,2675]
+            ClassOrInterfaceType [2672,2673]
+                SimpleName: T [2672,2673]
+        SimpleName: a [2676,2677]
+    ArrayType [2660,2663]
+        ClassOrInterfaceType [2660,2661]
+            SimpleName: T [2660,2661]
+    BlockStmt [2679,2718]
+        ReturnStmt [2689,2712]
+            MethodCallExpr [2696,2711]
+                NameExpr [2696,2700]
+                    SimpleName: list [2696,2700]
+                SimpleName: toArray [2701,2708]
+                NameExpr [2709,2710]
+                    SimpleName: a [2709,2710]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 12
+===
+insert-tree
+---
+MethodDeclaration [2724,2788]
+    Modifier: public [2724,2730]
+    SimpleName: add [2739,2742]
+    Parameter [2743,2751]
+        ClassOrInterfaceType [2743,2749]
+            SimpleName: Object [2743,2749]
+        SimpleName: e [2750,2751]
+    PrimitiveType: boolean [2731,2738]
+    BlockStmt [2753,2788]
+        ReturnStmt [2763,2782]
+            MethodCallExpr [2770,2781]
+                NameExpr [2770,2774]
+                    SimpleName: list [2770,2774]
+                SimpleName: add [2775,2778]
+                NameExpr [2779,2780]
+                    SimpleName: e [2779,2780]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 13
+===
+insert-tree
+---
+MethodDeclaration [2794,2864]
+    Modifier: public [2794,2800]
+    SimpleName: remove [2809,2815]
+    Parameter [2816,2824]
+        ClassOrInterfaceType [2816,2822]
+            SimpleName: Object [2816,2822]
+        SimpleName: o [2823,2824]
+    PrimitiveType: boolean [2801,2808]
+    BlockStmt [2826,2864]
+        ReturnStmt [2836,2858]
+            MethodCallExpr [2843,2857]
+                NameExpr [2843,2847]
+                    SimpleName: list [2843,2847]
+                SimpleName: remove [2848,2854]
+                NameExpr [2855,2856]
+                    SimpleName: o [2855,2856]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 14
+===
+insert-tree
+---
+MethodDeclaration [2870,2957]
+    Modifier: public [2870,2876]
+    SimpleName: containsAll [2885,2896]
+    Parameter [2897,2912]
+        ClassOrInterfaceType [2897,2910]
+            SimpleName: Collection [2897,2907]
+            WildcardType [2908,2909]
+        SimpleName: c [2911,2912]
+    PrimitiveType: boolean [2877,2884]
+    BlockStmt [2914,2957]
+        ReturnStmt [2924,2951]
+            MethodCallExpr [2931,2950]
+                NameExpr [2931,2935]
+                    SimpleName: list [2931,2935]
+                SimpleName: containsAll [2936,2947]
+                NameExpr [2948,2949]
+                    SimpleName: c [2948,2949]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 15
+===
+insert-tree
+---
+MethodDeclaration [2963,3055]
+    Modifier: public [2963,2969]
+    SimpleName: addAll [2978,2984]
+    Parameter [2985,3015]
+        ClassOrInterfaceType [2985,3013]
+            SimpleName: Collection [2985,2995]
+            WildcardType [2996,3012]
+                ClassOrInterfaceType [3006,3012]
+                    SimpleName: Object [3006,3012]
+        SimpleName: c [3014,3015]
+    PrimitiveType: boolean [2970,2977]
+    BlockStmt [3017,3055]
+        ReturnStmt [3027,3049]
+            MethodCallExpr [3034,3048]
+                NameExpr [3034,3038]
+                    SimpleName: list [3034,3038]
+                SimpleName: addAll [3039,3045]
+                NameExpr [3046,3047]
+                    SimpleName: c [3046,3047]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 16
+===
+insert-tree
+---
+MethodDeclaration [3061,3171]
+    Modifier: public [3061,3067]
+    SimpleName: addAll [3076,3082]
+    Parameter [3083,3092]
+        PrimitiveType: int [3083,3086]
+        SimpleName: index [3087,3092]
+    Parameter [3094,3124]
+        ClassOrInterfaceType [3094,3122]
+            SimpleName: Collection [3094,3104]
+            WildcardType [3105,3121]
+                ClassOrInterfaceType [3115,3121]
+                    SimpleName: Object [3115,3121]
+        SimpleName: c [3123,3124]
+    PrimitiveType: boolean [3068,3075]
+    BlockStmt [3126,3171]
+        ReturnStmt [3136,3165]
+            MethodCallExpr [3143,3164]
+                NameExpr [3143,3147]
+                    SimpleName: list [3143,3147]
+                SimpleName: addAll [3148,3154]
+                NameExpr [3155,3160]
+                    SimpleName: index [3155,3160]
+                NameExpr [3162,3163]
+                    SimpleName: c [3162,3163]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 17
+===
+insert-tree
+---
+MethodDeclaration [3177,3260]
+    Modifier: public [3177,3183]
+    SimpleName: removeAll [3192,3201]
+    Parameter [3202,3217]
+        ClassOrInterfaceType [3202,3215]
+            SimpleName: Collection [3202,3212]
+            WildcardType [3213,3214]
+        SimpleName: c [3216,3217]
+    PrimitiveType: boolean [3184,3191]
+    BlockStmt [3219,3260]
+        ReturnStmt [3229,3254]
+            MethodCallExpr [3236,3253]
+                NameExpr [3236,3240]
+                    SimpleName: list [3236,3240]
+                SimpleName: removeAll [3241,3250]
+                NameExpr [3251,3252]
+                    SimpleName: c [3251,3252]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 18
+===
+insert-tree
+---
+MethodDeclaration [3266,3349]
+    Modifier: public [3266,3272]
+    SimpleName: retainAll [3281,3290]
+    Parameter [3291,3306]
+        ClassOrInterfaceType [3291,3304]
+            SimpleName: Collection [3291,3301]
+            WildcardType [3302,3303]
+        SimpleName: c [3305,3306]
+    PrimitiveType: boolean [3273,3280]
+    BlockStmt [3308,3349]
+        ReturnStmt [3318,3343]
+            MethodCallExpr [3325,3342]
+                NameExpr [3325,3329]
+                    SimpleName: list [3325,3329]
+                SimpleName: retainAll [3330,3339]
+                NameExpr [3340,3341]
+                    SimpleName: c [3340,3341]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 19
+===
+insert-tree
+---
+MethodDeclaration [3355,3404]
+    Modifier: public [3355,3361]
+    SimpleName: clear [3367,3372]
+    VoidType [3362,3366]
+    BlockStmt [3375,3404]
+        ExpressionStmt [3385,3398]
+            MethodCallExpr [3385,3397]
+                NameExpr [3385,3389]
+                    SimpleName: list [3385,3389]
+                SimpleName: clear [3390,3395]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 20
+===
+insert-tree
+---
+MethodDeclaration [3410,3503]
+    Modifier: public [3410,3416]
+    SimpleName: set [3424,3427]
+    Parameter [3428,3437]
+        PrimitiveType: int [3428,3431]
+        SimpleName: index [3432,3437]
+    Parameter [3439,3453]
+        ClassOrInterfaceType [3439,3445]
+            SimpleName: Object [3439,3445]
+        SimpleName: element [3446,3453]
+    ClassOrInterfaceType [3417,3423]
+        SimpleName: Object [3417,3423]
+    BlockStmt [3455,3503]
+        ReturnStmt [3465,3497]
+            MethodCallExpr [3472,3496]
+                NameExpr [3472,3476]
+                    SimpleName: list [3472,3476]
+                SimpleName: set [3477,3480]
+                NameExpr [3481,3486]
+                    SimpleName: index [3481,3486]
+                NameExpr [3488,3495]
+                    SimpleName: element [3488,3495]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 21
+===
+insert-tree
+---
+MethodDeclaration [3509,3593]
+    Modifier: public [3509,3515]
+    SimpleName: add [3521,3524]
+    Parameter [3525,3534]
+        PrimitiveType: int [3525,3528]
+        SimpleName: index [3529,3534]
+    Parameter [3536,3550]
+        ClassOrInterfaceType [3536,3542]
+            SimpleName: Object [3536,3542]
+        SimpleName: element [3543,3550]
+    VoidType [3516,3520]
+    BlockStmt [3552,3593]
+        ExpressionStmt [3562,3587]
+            MethodCallExpr [3562,3586]
+                NameExpr [3562,3566]
+                    SimpleName: list [3562,3566]
+                SimpleName: add [3567,3570]
+                NameExpr [3571,3576]
+                    SimpleName: index [3571,3576]
+                NameExpr [3578,3585]
+                    SimpleName: element [3578,3585]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 22
+===
+insert-tree
+---
+MethodDeclaration [3599,3673]
+    Modifier: public [3599,3605]
+    SimpleName: remove [3613,3619]
+    Parameter [3620,3629]
+        PrimitiveType: int [3620,3623]
+        SimpleName: index [3624,3629]
+    ClassOrInterfaceType [3606,3612]
+        SimpleName: Object [3606,3612]
+    BlockStmt [3631,3673]
+        ReturnStmt [3641,3667]
+            MethodCallExpr [3648,3666]
+                NameExpr [3648,3652]
+                    SimpleName: list [3648,3652]
+                SimpleName: remove [3653,3659]
+                NameExpr [3660,3665]
+                    SimpleName: index [3660,3665]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 23
+===
+insert-tree
+---
+MethodDeclaration [3679,3747]
+    Modifier: public [3679,3685]
+    SimpleName: indexOf [3690,3697]
+    Parameter [3698,3706]
+        ClassOrInterfaceType [3698,3704]
+            SimpleName: Object [3698,3704]
+        SimpleName: o [3705,3706]
+    PrimitiveType: int [3686,3689]
+    BlockStmt [3708,3747]
+        ReturnStmt [3718,3741]
+            MethodCallExpr [3725,3740]
+                NameExpr [3725,3729]
+                    SimpleName: list [3725,3729]
+                SimpleName: indexOf [3730,3737]
+                NameExpr [3738,3739]
+                    SimpleName: o [3738,3739]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 24
+===
+insert-tree
+---
+MethodDeclaration [3753,3829]
+    Modifier: public [3753,3759]
+    SimpleName: lastIndexOf [3764,3775]
+    Parameter [3776,3784]
+        ClassOrInterfaceType [3776,3782]
+            SimpleName: Object [3776,3782]
+        SimpleName: o [3783,3784]
+    PrimitiveType: int [3760,3763]
+    BlockStmt [3786,3829]
+        ReturnStmt [3796,3823]
+            MethodCallExpr [3803,3822]
+                NameExpr [3803,3807]
+                    SimpleName: list [3803,3807]
+                SimpleName: lastIndexOf [3808,3819]
+                NameExpr [3820,3821]
+                    SimpleName: o [3820,3821]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 25
+===
+insert-tree
+---
+MethodDeclaration [3835,3921]
+    Modifier: public [3835,3841]
+    SimpleName: listIterator [3863,3875]
+    ClassOrInterfaceType [3842,3862]
+        SimpleName: ListIterator [3842,3854]
+        ClassOrInterfaceType [3855,3861]
+            SimpleName: Object [3855,3861]
+    BlockStmt [3878,3921]
+        ReturnStmt [3888,3915]
+            MethodCallExpr [3895,3914]
+                NameExpr [3895,3899]
+                    SimpleName: list [3895,3899]
+                SimpleName: listIterator [3900,3912]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 26
+===
+insert-tree
+---
+MethodDeclaration [3927,4027]
+    Modifier: public [3927,3933]
+    SimpleName: listIterator [3955,3967]
+    Parameter [3968,3977]
+        PrimitiveType: int [3968,3971]
+        SimpleName: index [3972,3977]
+    ClassOrInterfaceType [3934,3954]
+        SimpleName: ListIterator [3934,3946]
+        ClassOrInterfaceType [3947,3953]
+            SimpleName: Object [3947,3953]
+    BlockStmt [3979,4027]
+        ReturnStmt [3989,4021]
+            MethodCallExpr [3996,4020]
+                NameExpr [3996,4000]
+                    SimpleName: list [3996,4000]
+                SimpleName: listIterator [4001,4013]
+                NameExpr [4014,4019]
+                    SimpleName: index [4014,4019]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 27
+===
+insert-tree
+---
+MethodDeclaration [4033,4145]
+    Modifier: public [4033,4039]
+    SimpleName: subList [4053,4060]
+    Parameter [4061,4074]
+        PrimitiveType: int [4061,4064]
+        SimpleName: fromIndex [4065,4074]
+    Parameter [4076,4087]
+        PrimitiveType: int [4076,4079]
+        SimpleName: toIndex [4080,4087]
+    ClassOrInterfaceType [4040,4052]
+        SimpleName: List [4040,4044]
+        ClassOrInterfaceType [4045,4051]
+            SimpleName: Object [4045,4051]
+    BlockStmt [4089,4145]
+        ReturnStmt [4099,4139]
+            MethodCallExpr [4106,4138]
+                NameExpr [4106,4110]
+                    SimpleName: list [4106,4110]
+                SimpleName: subList [4111,4118]
+                NameExpr [4119,4128]
+                    SimpleName: fromIndex [4119,4128]
+                NameExpr [4130,4137]
+                    SimpleName: toIndex [4130,4137]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 28
+===
+insert-tree
+---
+MethodDeclaration [4151,4219]
+    Modifier: public [4151,4157]
+    SimpleName: get [4165,4168]
+    Parameter [4169,4178]
+        PrimitiveType: int [4169,4172]
+        SimpleName: index [4173,4178]
+    ClassOrInterfaceType [4158,4164]
+        SimpleName: Object [4158,4164]
+    BlockStmt [4180,4219]
+        ReturnStmt [4190,4213]
+            MethodCallExpr [4197,4212]
+                NameExpr [4197,4201]
+                    SimpleName: list [4197,4201]
+                SimpleName: get [4202,4205]
+                NameExpr [4206,4211]
+                    SimpleName: index [4206,4211]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 29
+===
+insert-tree
+---
+MethodDeclaration [4225,4452]
+    Modifier: public [4225,4231]
+    SimpleName: getJSONObject [4243,4256]
+    Parameter [4257,4266]
+        PrimitiveType: int [4257,4260]
+        SimpleName: index [4261,4266]
+    ClassOrInterfaceType [4232,4242]
+        SimpleName: JSONObject [4232,4242]
+    BlockStmt [4268,4452]
+        ExpressionStmt [4278,4309]
+            VariableDeclarationExpr [4278,4308]
+                VariableDeclarator [4285,4308]
+                    ClassOrInterfaceType [4278,4284]
+                        SimpleName: Object [4278,4284]
+                    SimpleName: value [4285,4290]
+                    MethodCallExpr [4293,4308]
+                        NameExpr [4293,4297]
+                            SimpleName: list [4293,4297]
+                        SimpleName: get [4298,4301]
+                        NameExpr [4302,4307]
+                            SimpleName: index [4302,4307]
+        IfStmt [4319,4402]
+            InstanceOfExpr [4323,4350]
+                NameExpr [4323,4328]
+                    SimpleName: value [4323,4328]
+                ClassOrInterfaceType [4340,4350]
+                    SimpleName: JSONObject [4340,4350]
+            BlockStmt [4352,4402]
+                ReturnStmt [4366,4392]
+                    CastExpr [4373,4391]
+                        ClassOrInterfaceType [4374,4384]
+                            SimpleName: JSONObject [4374,4384]
+                        NameExpr [4386,4391]
+                            SimpleName: value [4386,4391]
+        ReturnStmt [4412,4446]
+            CastExpr [4419,4445]
+                ClassOrInterfaceType [4420,4430]
+                    SimpleName: JSONObject [4420,4430]
+                MethodCallExpr [4432,4445]
+                    SimpleName: toJSON [4432,4438]
+                    NameExpr [4439,4444]
+                        SimpleName: value [4439,4444]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 30
+===
+insert-tree
+---
+MethodDeclaration [4458,4680]
+    Modifier: public [4458,4464]
+    SimpleName: getJSONArray [4475,4487]
+    Parameter [4488,4497]
+        PrimitiveType: int [4488,4491]
+        SimpleName: index [4492,4497]
+    ClassOrInterfaceType [4465,4474]
+        SimpleName: JSONArray [4465,4474]
+    BlockStmt [4499,4680]
+        ExpressionStmt [4509,4540]
+            VariableDeclarationExpr [4509,4539]
+                VariableDeclarator [4516,4539]
+                    ClassOrInterfaceType [4509,4515]
+                        SimpleName: Object [4509,4515]
+                    SimpleName: value [4516,4521]
+                    MethodCallExpr [4524,4539]
+                        NameExpr [4524,4528]
+                            SimpleName: list [4524,4528]
+                        SimpleName: get [4529,4532]
+                        NameExpr [4533,4538]
+                            SimpleName: index [4533,4538]
+        IfStmt [4550,4631]
+            InstanceOfExpr [4554,4580]
+                NameExpr [4554,4559]
+                    SimpleName: value [4554,4559]
+                ClassOrInterfaceType [4571,4580]
+                    SimpleName: JSONArray [4571,4580]
+            BlockStmt [4582,4631]
+                ReturnStmt [4596,4621]
+                    CastExpr [4603,4620]
+                        ClassOrInterfaceType [4604,4613]
+                            SimpleName: JSONArray [4604,4613]
+                        NameExpr [4615,4620]
+                            SimpleName: value [4615,4620]
+        ReturnStmt [4641,4674]
+            CastExpr [4648,4673]
+                ClassOrInterfaceType [4649,4658]
+                    SimpleName: JSONArray [4649,4658]
+                MethodCallExpr [4660,4673]
+                    SimpleName: toJSON [4660,4666]
+                    NameExpr [4667,4672]
+                        SimpleName: value [4667,4672]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 31
+===
+insert-tree
+---
+MethodDeclaration [4686,4834]
+    Modifier: public [4686,4692]
+    TypeParameter [4694,4695]
+        SimpleName: T [4694,4695]
+    SimpleName: getObject [4699,4708]
+    Parameter [4709,4718]
+        PrimitiveType: int [4709,4712]
+        SimpleName: index [4713,4718]
+    Parameter [4720,4734]
+        ClassOrInterfaceType [4720,4728]
+            SimpleName: Class [4720,4725]
+            ClassOrInterfaceType [4726,4727]
+                SimpleName: T [4726,4727]
+        SimpleName: clazz [4729,4734]
+    ClassOrInterfaceType [4697,4698]
+        SimpleName: T [4697,4698]
+    BlockStmt [4736,4834]
+        ExpressionStmt [4746,4775]
+            VariableDeclarationExpr [4746,4774]
+                VariableDeclarator [4753,4774]
+                    ClassOrInterfaceType [4746,4752]
+                        SimpleName: Object [4746,4752]
+                    SimpleName: obj [4753,4756]
+                    MethodCallExpr [4759,4774]
+                        NameExpr [4759,4763]
+                            SimpleName: list [4759,4763]
+                        SimpleName: get [4764,4767]
+                        NameExpr [4768,4773]
+                            SimpleName: index [4768,4773]
+        ReturnStmt [4784,4828]
+            MethodCallExpr [4791,4827]
+                NameExpr [4791,4800]
+                    SimpleName: TypeUtils [4791,4800]
+                SimpleName: castToJavaBean [4801,4815]
+                NameExpr [4816,4819]
+                    SimpleName: obj [4816,4819]
+                NameExpr [4821,4826]
+                    SimpleName: clazz [4821,4826]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 32
+===
+insert-tree
+---
+MethodDeclaration [4840,5022]
+    Modifier: public [4840,4846]
+    SimpleName: getBoolean [4855,4865]
+    Parameter [4866,4875]
+        PrimitiveType: int [4866,4869]
+        SimpleName: index [4870,4875]
+    ClassOrInterfaceType [4847,4854]
+        SimpleName: Boolean [4847,4854]
+    BlockStmt [4877,5022]
+        ExpressionStmt [4887,4913]
+            VariableDeclarationExpr [4887,4912]
+                VariableDeclarator [4894,4912]
+                    ClassOrInterfaceType [4887,4893]
+                        SimpleName: Object [4887,4893]
+                    SimpleName: value [4894,4899]
+                    MethodCallExpr [4902,4912]
+                        SimpleName: get [4902,4905]
+                        NameExpr [4906,4911]
+                            SimpleName: index [4906,4911]
+        IfStmt [4923,4978]
+            BinaryExpr [4927,4940]
+                NameExpr [4927,4932]
+                    SimpleName: value [4927,4932]
+                NullLiteralExpr [4936,4940]
+            BlockStmt [4942,4978]
+                ReturnStmt [4956,4968]
+                    NullLiteralExpr [4963,4967]
+        ReturnStmt [4988,5016]
+            MethodCallExpr [4995,5015]
+                SimpleName: castToBoolean [4995,5008]
+                NameExpr [5009,5014]
+                    SimpleName: value [5009,5014]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 33
+===
+insert-tree
+---
+MethodDeclaration [5028,5231]
+    Modifier: public [5028,5034]
+    SimpleName: getBooleanValue [5043,5058]
+    Parameter [5059,5068]
+        PrimitiveType: int [5059,5062]
+        SimpleName: index [5063,5068]
+    PrimitiveType: boolean [5035,5042]
+    BlockStmt [5070,5231]
+        ExpressionStmt [5080,5106]
+            VariableDeclarationExpr [5080,5105]
+                VariableDeclarator [5087,5105]
+                    ClassOrInterfaceType [5080,5086]
+                        SimpleName: Object [5080,5086]
+                    SimpleName: value [5087,5092]
+                    MethodCallExpr [5095,5105]
+                        SimpleName: get [5095,5098]
+                        NameExpr [5099,5104]
+                            SimpleName: index [5099,5104]
+        IfStmt [5116,5172]
+            BinaryExpr [5120,5133]
+                NameExpr [5120,5125]
+                    SimpleName: value [5120,5125]
+                NullLiteralExpr [5129,5133]
+            BlockStmt [5135,5172]
+                ReturnStmt [5149,5162]
+                    BooleanLiteralExpr: false [5156,5161]
+        ReturnStmt [5182,5225]
+            MethodCallExpr [5189,5224]
+                MethodCallExpr [5189,5209]
+                    SimpleName: castToBoolean [5189,5202]
+                    NameExpr [5203,5208]
+                        SimpleName: value [5203,5208]
+                SimpleName: booleanValue [5210,5222]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 34
+===
+insert-tree
+---
+MethodDeclaration [5237,5345]
+    Modifier: public [5237,5243]
+    SimpleName: getByte [5249,5256]
+    Parameter [5257,5266]
+        PrimitiveType: int [5257,5260]
+        SimpleName: index [5261,5266]
+    ClassOrInterfaceType [5244,5248]
+        SimpleName: Byte [5244,5248]
+    BlockStmt [5268,5345]
+        ExpressionStmt [5278,5304]
+            VariableDeclarationExpr [5278,5303]
+                VariableDeclarator [5285,5303]
+                    ClassOrInterfaceType [5278,5284]
+                        SimpleName: Object [5278,5284]
+                    SimpleName: value [5285,5290]
+                    MethodCallExpr [5293,5303]
+                        SimpleName: get [5293,5296]
+                        NameExpr [5297,5302]
+                            SimpleName: index [5297,5302]
+        ReturnStmt [5314,5339]
+            MethodCallExpr [5321,5338]
+                SimpleName: castToByte [5321,5331]
+                NameExpr [5332,5337]
+                    SimpleName: value [5332,5337]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 35
+===
+insert-tree
+---
+MethodDeclaration [5351,5538]
+    Modifier: public [5351,5357]
+    SimpleName: getByteValue [5363,5375]
+    Parameter [5376,5385]
+        PrimitiveType: int [5376,5379]
+        SimpleName: index [5380,5385]
+    PrimitiveType: byte [5358,5362]
+    BlockStmt [5387,5538]
+        ExpressionStmt [5397,5423]
+            VariableDeclarationExpr [5397,5422]
+                VariableDeclarator [5404,5422]
+                    ClassOrInterfaceType [5397,5403]
+                        SimpleName: Object [5397,5403]
+                    SimpleName: value [5404,5409]
+                    MethodCallExpr [5412,5422]
+                        SimpleName: get [5412,5415]
+                        NameExpr [5416,5421]
+                            SimpleName: index [5416,5421]
+        IfStmt [5433,5485]
+            BinaryExpr [5437,5450]
+                NameExpr [5437,5442]
+                    SimpleName: value [5437,5442]
+                NullLiteralExpr [5446,5450]
+            BlockStmt [5452,5485]
+                ReturnStmt [5466,5475]
+                    IntegerLiteralExpr: 0 [5473,5474]
+        ReturnStmt [5495,5532]
+            MethodCallExpr [5502,5531]
+                MethodCallExpr [5502,5519]
+                    SimpleName: castToByte [5502,5512]
+                    NameExpr [5513,5518]
+                        SimpleName: value [5513,5518]
+                SimpleName: byteValue [5520,5529]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 36
+===
+insert-tree
+---
+MethodDeclaration [5544,5655]
+    Modifier: public [5544,5550]
+    SimpleName: getShort [5557,5565]
+    Parameter [5566,5575]
+        PrimitiveType: int [5566,5569]
+        SimpleName: index [5570,5575]
+    ClassOrInterfaceType [5551,5556]
+        SimpleName: Short [5551,5556]
+    BlockStmt [5577,5655]
+        ExpressionStmt [5587,5613]
+            VariableDeclarationExpr [5587,5612]
+                VariableDeclarator [5594,5612]
+                    ClassOrInterfaceType [5587,5593]
+                        SimpleName: Object [5587,5593]
+                    SimpleName: value [5594,5599]
+                    MethodCallExpr [5602,5612]
+                        SimpleName: get [5602,5605]
+                        NameExpr [5606,5611]
+                            SimpleName: index [5606,5611]
+        ReturnStmt [5623,5649]
+            MethodCallExpr [5630,5648]
+                SimpleName: castToShort [5630,5641]
+                NameExpr [5642,5647]
+                    SimpleName: value [5642,5647]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 37
+===
+insert-tree
+---
+MethodDeclaration [5661,5852]
+    Modifier: public [5661,5667]
+    SimpleName: getShortValue [5674,5687]
+    Parameter [5688,5697]
+        PrimitiveType: int [5688,5691]
+        SimpleName: index [5692,5697]
+    PrimitiveType: short [5668,5673]
+    BlockStmt [5699,5852]
+        ExpressionStmt [5709,5735]
+            VariableDeclarationExpr [5709,5734]
+                VariableDeclarator [5716,5734]
+                    ClassOrInterfaceType [5709,5715]
+                        SimpleName: Object [5709,5715]
+                    SimpleName: value [5716,5721]
+                    MethodCallExpr [5724,5734]
+                        SimpleName: get [5724,5727]
+                        NameExpr [5728,5733]
+                            SimpleName: index [5728,5733]
+        IfStmt [5745,5797]
+            BinaryExpr [5749,5762]
+                NameExpr [5749,5754]
+                    SimpleName: value [5749,5754]
+                NullLiteralExpr [5758,5762]
+            BlockStmt [5764,5797]
+                ReturnStmt [5778,5787]
+                    IntegerLiteralExpr: 0 [5785,5786]
+        ReturnStmt [5807,5846]
+            MethodCallExpr [5814,5845]
+                MethodCallExpr [5814,5832]
+                    SimpleName: castToShort [5814,5825]
+                    NameExpr [5826,5831]
+                        SimpleName: value [5826,5831]
+                SimpleName: shortValue [5833,5843]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 38
+===
+insert-tree
+---
+MethodDeclaration [5858,5971]
+    Modifier: public [5858,5864]
+    SimpleName: getInteger [5873,5883]
+    Parameter [5884,5893]
+        PrimitiveType: int [5884,5887]
+        SimpleName: index [5888,5893]
+    ClassOrInterfaceType [5865,5872]
+        SimpleName: Integer [5865,5872]
+    BlockStmt [5895,5971]
+        ExpressionStmt [5905,5931]
+            VariableDeclarationExpr [5905,5930]
+                VariableDeclarator [5912,5930]
+                    ClassOrInterfaceType [5905,5911]
+                        SimpleName: Object [5905,5911]
+                    SimpleName: value [5912,5917]
+                    MethodCallExpr [5920,5930]
+                        SimpleName: get [5920,5923]
+                        NameExpr [5924,5929]
+                            SimpleName: index [5924,5929]
+        ReturnStmt [5941,5965]
+            MethodCallExpr [5948,5964]
+                SimpleName: castToInt [5948,5957]
+                NameExpr [5958,5963]
+                    SimpleName: value [5958,5963]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 39
+===
+insert-tree
+---
+MethodDeclaration [5977,6160]
+    Modifier: public [5977,5983]
+    SimpleName: getIntValue [5988,5999]
+    Parameter [6000,6009]
+        PrimitiveType: int [6000,6003]
+        SimpleName: index [6004,6009]
+    PrimitiveType: int [5984,5987]
+    BlockStmt [6011,6160]
+        ExpressionStmt [6021,6047]
+            VariableDeclarationExpr [6021,6046]
+                VariableDeclarator [6028,6046]
+                    ClassOrInterfaceType [6021,6027]
+                        SimpleName: Object [6021,6027]
+                    SimpleName: value [6028,6033]
+                    MethodCallExpr [6036,6046]
+                        SimpleName: get [6036,6039]
+                        NameExpr [6040,6045]
+                            SimpleName: index [6040,6045]
+        IfStmt [6057,6109]
+            BinaryExpr [6061,6074]
+                NameExpr [6061,6066]
+                    SimpleName: value [6061,6066]
+                NullLiteralExpr [6070,6074]
+            BlockStmt [6076,6109]
+                ReturnStmt [6090,6099]
+                    IntegerLiteralExpr: 0 [6097,6098]
+        ReturnStmt [6119,6154]
+            MethodCallExpr [6126,6153]
+                MethodCallExpr [6126,6142]
+                    SimpleName: castToInt [6126,6135]
+                    NameExpr [6136,6141]
+                        SimpleName: value [6136,6141]
+                SimpleName: intValue [6143,6151]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 40
+===
+insert-tree
+---
+MethodDeclaration [6166,6274]
+    Modifier: public [6166,6172]
+    SimpleName: getLong [6178,6185]
+    Parameter [6186,6195]
+        PrimitiveType: int [6186,6189]
+        SimpleName: index [6190,6195]
+    ClassOrInterfaceType [6173,6177]
+        SimpleName: Long [6173,6177]
+    BlockStmt [6197,6274]
+        ExpressionStmt [6207,6233]
+            VariableDeclarationExpr [6207,6232]
+                VariableDeclarator [6214,6232]
+                    ClassOrInterfaceType [6207,6213]
+                        SimpleName: Object [6207,6213]
+                    SimpleName: value [6214,6219]
+                    MethodCallExpr [6222,6232]
+                        SimpleName: get [6222,6225]
+                        NameExpr [6226,6231]
+                            SimpleName: index [6226,6231]
+        ReturnStmt [6243,6268]
+            MethodCallExpr [6250,6267]
+                SimpleName: castToLong [6250,6260]
+                NameExpr [6261,6266]
+                    SimpleName: value [6261,6266]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 41
+===
+insert-tree
+---
+MethodDeclaration [6280,6468]
+    Modifier: public [6280,6286]
+    SimpleName: getLongValue [6292,6304]
+    Parameter [6305,6314]
+        PrimitiveType: int [6305,6308]
+        SimpleName: index [6309,6314]
+    PrimitiveType: long [6287,6291]
+    BlockStmt [6316,6468]
+        ExpressionStmt [6326,6352]
+            VariableDeclarationExpr [6326,6351]
+                VariableDeclarator [6333,6351]
+                    ClassOrInterfaceType [6326,6332]
+                        SimpleName: Object [6326,6332]
+                    SimpleName: value [6333,6338]
+                    MethodCallExpr [6341,6351]
+                        SimpleName: get [6341,6344]
+                        NameExpr [6345,6350]
+                            SimpleName: index [6345,6350]
+        IfStmt [6362,6415]
+            BinaryExpr [6366,6379]
+                NameExpr [6366,6371]
+                    SimpleName: value [6366,6371]
+                NullLiteralExpr [6375,6379]
+            BlockStmt [6381,6415]
+                ReturnStmt [6395,6405]
+                    LongLiteralExpr: 0L [6402,6404]
+        ReturnStmt [6425,6462]
+            MethodCallExpr [6432,6461]
+                MethodCallExpr [6432,6449]
+                    SimpleName: castToLong [6432,6442]
+                    NameExpr [6443,6448]
+                        SimpleName: value [6443,6448]
+                SimpleName: longValue [6450,6459]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 42
+===
+insert-tree
+---
+MethodDeclaration [6474,6585]
+    Modifier: public [6474,6480]
+    SimpleName: getFloat [6487,6495]
+    Parameter [6496,6505]
+        PrimitiveType: int [6496,6499]
+        SimpleName: index [6500,6505]
+    ClassOrInterfaceType [6481,6486]
+        SimpleName: Float [6481,6486]
+    BlockStmt [6507,6585]
+        ExpressionStmt [6517,6543]
+            VariableDeclarationExpr [6517,6542]
+                VariableDeclarator [6524,6542]
+                    ClassOrInterfaceType [6517,6523]
+                        SimpleName: Object [6517,6523]
+                    SimpleName: value [6524,6529]
+                    MethodCallExpr [6532,6542]
+                        SimpleName: get [6532,6535]
+                        NameExpr [6536,6541]
+                            SimpleName: index [6536,6541]
+        ReturnStmt [6553,6579]
+            MethodCallExpr [6560,6578]
+                SimpleName: castToFloat [6560,6571]
+                NameExpr [6572,6577]
+                    SimpleName: value [6572,6577]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 43
+===
+insert-tree
+---
+MethodDeclaration [6591,6783]
+    Modifier: public [6591,6597]
+    SimpleName: getFloatValue [6604,6617]
+    Parameter [6618,6627]
+        PrimitiveType: int [6618,6621]
+        SimpleName: index [6622,6627]
+    PrimitiveType: float [6598,6603]
+    BlockStmt [6629,6783]
+        ExpressionStmt [6639,6665]
+            VariableDeclarationExpr [6639,6664]
+                VariableDeclarator [6646,6664]
+                    ClassOrInterfaceType [6639,6645]
+                        SimpleName: Object [6639,6645]
+                    SimpleName: value [6646,6651]
+                    MethodCallExpr [6654,6664]
+                        SimpleName: get [6654,6657]
+                        NameExpr [6658,6663]
+                            SimpleName: index [6658,6663]
+        IfStmt [6675,6728]
+            BinaryExpr [6679,6692]
+                NameExpr [6679,6684]
+                    SimpleName: value [6679,6684]
+                NullLiteralExpr [6688,6692]
+            BlockStmt [6694,6728]
+                ReturnStmt [6708,6718]
+                    DoubleLiteralExpr: 0F [6715,6717]
+        ReturnStmt [6738,6777]
+            MethodCallExpr [6745,6776]
+                MethodCallExpr [6745,6763]
+                    SimpleName: castToFloat [6745,6756]
+                    NameExpr [6757,6762]
+                        SimpleName: value [6757,6762]
+                SimpleName: floatValue [6764,6774]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 44
+===
+insert-tree
+---
+MethodDeclaration [6789,6903]
+    Modifier: public [6789,6795]
+    SimpleName: getDouble [6803,6812]
+    Parameter [6813,6822]
+        PrimitiveType: int [6813,6816]
+        SimpleName: index [6817,6822]
+    ClassOrInterfaceType [6796,6802]
+        SimpleName: Double [6796,6802]
+    BlockStmt [6824,6903]
+        ExpressionStmt [6834,6860]
+            VariableDeclarationExpr [6834,6859]
+                VariableDeclarator [6841,6859]
+                    ClassOrInterfaceType [6834,6840]
+                        SimpleName: Object [6834,6840]
+                    SimpleName: value [6841,6846]
+                    MethodCallExpr [6849,6859]
+                        SimpleName: get [6849,6852]
+                        NameExpr [6853,6858]
+                            SimpleName: index [6853,6858]
+        ReturnStmt [6870,6897]
+            MethodCallExpr [6877,6896]
+                SimpleName: castToDouble [6877,6889]
+                NameExpr [6890,6895]
+                    SimpleName: value [6890,6895]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 45
+===
+insert-tree
+---
+MethodDeclaration [6909,7104]
+    Modifier: public [6909,6915]
+    SimpleName: getDoubleValue [6923,6937]
+    Parameter [6938,6947]
+        PrimitiveType: int [6938,6941]
+        SimpleName: index [6942,6947]
+    PrimitiveType: double [6916,6922]
+    BlockStmt [6949,7104]
+        ExpressionStmt [6959,6985]
+            VariableDeclarationExpr [6959,6984]
+                VariableDeclarator [6966,6984]
+                    ClassOrInterfaceType [6959,6965]
+                        SimpleName: Object [6959,6965]
+                    SimpleName: value [6966,6971]
+                    MethodCallExpr [6974,6984]
+                        SimpleName: get [6974,6977]
+                        NameExpr [6978,6983]
+                            SimpleName: index [6978,6983]
+        IfStmt [6995,7048]
+            BinaryExpr [6999,7012]
+                NameExpr [6999,7004]
+                    SimpleName: value [6999,7004]
+                NullLiteralExpr [7008,7012]
+            BlockStmt [7014,7048]
+                ReturnStmt [7028,7038]
+                    DoubleLiteralExpr: 0D [7035,7037]
+        ReturnStmt [7058,7098]
+            MethodCallExpr [7065,7097]
+                MethodCallExpr [7065,7084]
+                    SimpleName: castToDouble [7065,7077]
+                    NameExpr [7078,7083]
+                        SimpleName: value [7078,7083]
+                SimpleName: floatValue [7085,7095]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 46
+===
+insert-tree
+---
+MethodDeclaration [7110,7236]
+    Modifier: public [7110,7116]
+    SimpleName: getBigDecimal [7128,7141]
+    Parameter [7142,7151]
+        PrimitiveType: int [7142,7145]
+        SimpleName: index [7146,7151]
+    ClassOrInterfaceType [7117,7127]
+        SimpleName: BigDecimal [7117,7127]
+    BlockStmt [7153,7236]
+        ExpressionStmt [7163,7189]
+            VariableDeclarationExpr [7163,7188]
+                VariableDeclarator [7170,7188]
+                    ClassOrInterfaceType [7163,7169]
+                        SimpleName: Object [7163,7169]
+                    SimpleName: value [7170,7175]
+                    MethodCallExpr [7178,7188]
+                        SimpleName: get [7178,7181]
+                        NameExpr [7182,7187]
+                            SimpleName: index [7182,7187]
+        ReturnStmt [7199,7230]
+            MethodCallExpr [7206,7229]
+                SimpleName: castToBigDecimal [7206,7222]
+                NameExpr [7223,7228]
+                    SimpleName: value [7223,7228]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 47
+===
+insert-tree
+---
+MethodDeclaration [7242,7368]
+    Modifier: public [7242,7248]
+    SimpleName: getBigInteger [7260,7273]
+    Parameter [7274,7283]
+        PrimitiveType: int [7274,7277]
+        SimpleName: index [7278,7283]
+    ClassOrInterfaceType [7249,7259]
+        SimpleName: BigInteger [7249,7259]
+    BlockStmt [7285,7368]
+        ExpressionStmt [7295,7321]
+            VariableDeclarationExpr [7295,7320]
+                VariableDeclarator [7302,7320]
+                    ClassOrInterfaceType [7295,7301]
+                        SimpleName: Object [7295,7301]
+                    SimpleName: value [7302,7307]
+                    MethodCallExpr [7310,7320]
+                        SimpleName: get [7310,7313]
+                        NameExpr [7314,7319]
+                            SimpleName: index [7314,7319]
+        ReturnStmt [7331,7362]
+            MethodCallExpr [7338,7361]
+                SimpleName: castToBigInteger [7338,7354]
+                NameExpr [7355,7360]
+                    SimpleName: value [7355,7360]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 48
+===
+insert-tree
+---
+MethodDeclaration [7374,7488]
+    Modifier: public [7374,7380]
+    SimpleName: getString [7388,7397]
+    Parameter [7398,7407]
+        PrimitiveType: int [7398,7401]
+        SimpleName: index [7402,7407]
+    ClassOrInterfaceType [7381,7387]
+        SimpleName: String [7381,7387]
+    BlockStmt [7409,7488]
+        ExpressionStmt [7419,7445]
+            VariableDeclarationExpr [7419,7444]
+                VariableDeclarator [7426,7444]
+                    ClassOrInterfaceType [7419,7425]
+                        SimpleName: Object [7419,7425]
+                    SimpleName: value [7426,7431]
+                    MethodCallExpr [7434,7444]
+                        SimpleName: get [7434,7437]
+                        NameExpr [7438,7443]
+                            SimpleName: index [7438,7443]
+        ReturnStmt [7455,7482]
+            MethodCallExpr [7462,7481]
+                SimpleName: castToString [7462,7474]
+                NameExpr [7475,7480]
+                    SimpleName: value [7475,7480]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 49
+===
+insert-tree
+---
+MethodDeclaration [7494,7612]
+    Modifier: public [7494,7500]
+    SimpleName: getDate [7516,7523]
+    Parameter [7524,7533]
+        PrimitiveType: int [7524,7527]
+        SimpleName: index [7528,7533]
+    ClassOrInterfaceType [7501,7515]
+        ClassOrInterfaceType [7501,7510]
+            ClassOrInterfaceType [7501,7505]
+                SimpleName: java [7501,7505]
+            SimpleName: util [7506,7510]
+        SimpleName: Date [7511,7515]
+    BlockStmt [7535,7612]
+        ExpressionStmt [7545,7571]
+            VariableDeclarationExpr [7545,7570]
+                VariableDeclarator [7552,7570]
+                    ClassOrInterfaceType [7545,7551]
+                        SimpleName: Object [7545,7551]
+                    SimpleName: value [7552,7557]
+                    MethodCallExpr [7560,7570]
+                        SimpleName: get [7560,7563]
+                        NameExpr [7564,7569]
+                            SimpleName: index [7564,7569]
+        ReturnStmt [7581,7606]
+            MethodCallExpr [7588,7605]
+                SimpleName: castToDate [7588,7598]
+                NameExpr [7599,7604]
+                    SimpleName: value [7599,7604]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 50
+===
+insert-tree
+---
+MethodDeclaration [7618,7741]
+    Modifier: public [7618,7624]
+    SimpleName: getSqlDate [7639,7649]
+    Parameter [7650,7659]
+        PrimitiveType: int [7650,7653]
+        SimpleName: index [7654,7659]
+    ClassOrInterfaceType [7625,7638]
+        ClassOrInterfaceType [7625,7633]
+            ClassOrInterfaceType [7625,7629]
+                SimpleName: java [7625,7629]
+            SimpleName: sql [7630,7633]
+        SimpleName: Date [7634,7638]
+    BlockStmt [7661,7741]
+        ExpressionStmt [7671,7697]
+            VariableDeclarationExpr [7671,7696]
+                VariableDeclarator [7678,7696]
+                    ClassOrInterfaceType [7671,7677]
+                        SimpleName: Object [7671,7677]
+                    SimpleName: value [7678,7683]
+                    MethodCallExpr [7686,7696]
+                        SimpleName: get [7686,7689]
+                        NameExpr [7690,7695]
+                            SimpleName: index [7690,7695]
+        ReturnStmt [7707,7735]
+            MethodCallExpr [7714,7734]
+                SimpleName: castToSqlDate [7714,7727]
+                NameExpr [7728,7733]
+                    SimpleName: value [7728,7733]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 51
+===
+insert-tree
+---
+MethodDeclaration [7747,7879]
+    Modifier: public [7747,7753]
+    SimpleName: getTimestamp [7773,7785]
+    Parameter [7786,7795]
+        PrimitiveType: int [7786,7789]
+        SimpleName: index [7790,7795]
+    ClassOrInterfaceType [7754,7772]
+        ClassOrInterfaceType [7754,7762]
+            ClassOrInterfaceType [7754,7758]
+                SimpleName: java [7754,7758]
+            SimpleName: sql [7759,7762]
+        SimpleName: Timestamp [7763,7772]
+    BlockStmt [7797,7879]
+        ExpressionStmt [7807,7833]
+            VariableDeclarationExpr [7807,7832]
+                VariableDeclarator [7814,7832]
+                    ClassOrInterfaceType [7807,7813]
+                        SimpleName: Object [7807,7813]
+                    SimpleName: value [7814,7819]
+                    MethodCallExpr [7822,7832]
+                        SimpleName: get [7822,7825]
+                        NameExpr [7826,7831]
+                            SimpleName: index [7826,7831]
+        ReturnStmt [7843,7873]
+            MethodCallExpr [7850,7872]
+                SimpleName: castToTimestamp [7850,7865]
+                NameExpr [7866,7871]
+                    SimpleName: value [7866,7871]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 52
+===
+insert-tree
+---
+MethodDeclaration [7885,7987]
+    MarkerAnnotationExpr [7885,7894]
+        Name: Override [7886,7894]
+    Modifier: public [7899,7905]
+    SimpleName: clone [7913,7918]
+    ClassOrInterfaceType [7906,7912]
+        SimpleName: Object [7906,7912]
+    BlockStmt [7921,7987]
+        ReturnStmt [7931,7981]
+            ObjectCreationExpr [7938,7980]
+                ClassOrInterfaceType [7942,7951]
+                    SimpleName: JSONArray [7942,7951]
+                ObjectCreationExpr [7952,7979]
+                    ClassOrInterfaceType [7956,7973]
+                        SimpleName: ArrayList [7956,7965]
+                        ClassOrInterfaceType [7966,7972]
+                            SimpleName: Object [7966,7972]
+                    NameExpr [7974,7978]
+                        SimpleName: list [7974,7978]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 53
+===
+insert-tree
+---
+MethodDeclaration [7997,8076]
+    Modifier: public [7997,8003]
+    SimpleName: equals [8012,8018]
+    Parameter [8019,8029]
+        ClassOrInterfaceType [8019,8025]
+            SimpleName: Object [8019,8025]
+        SimpleName: obj [8026,8029]
+    PrimitiveType: boolean [8004,8011]
+    BlockStmt [8031,8076]
+        ReturnStmt [8041,8070]
+            MethodCallExpr [8048,8069]
+                FieldAccessExpr [8048,8057]
+                    ThisExpr [8048,8052]
+                    SimpleName: list [8053,8057]
+                SimpleName: equals [8058,8064]
+                NameExpr [8065,8068]
+                    SimpleName: obj [8065,8068]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 54
+===
+insert-tree
+---
+MethodDeclaration [8086,8152]
+    Modifier: public [8086,8092]
+    SimpleName: hashCode [8097,8105]
+    PrimitiveType: int [8093,8096]
+    BlockStmt [8108,8152]
+        ReturnStmt [8118,8146]
+            MethodCallExpr [8125,8145]
+                FieldAccessExpr [8125,8134]
+                    ThisExpr [8125,8129]
+                    SimpleName: list [8130,8134]
+                SimpleName: hashCode [8135,8143]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 55
+===
+insert-tree
+---
+ClassOrInterfaceType [1851,1855]
+    SimpleName: JSON [1851,1855]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 56
+===
+insert-tree
+---
+ClassOrInterfaceType [1867,1879]
+    SimpleName: List [1867,1871]
+    ClassOrInterfaceType [1872,1878]
+        SimpleName: Object [1872,1878]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 57
+===
+insert-tree
+---
+ClassOrInterfaceType [1881,1890]
+    SimpleName: JSONAware [1881,1890]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 58
+===
+insert-tree
+---
+ClassOrInterfaceType [1892,1901]
+    SimpleName: Cloneable [1892,1901]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 59
+===
+insert-tree
+---
+ClassOrInterfaceType [1903,1915]
+    SimpleName: RandomAccess [1903,1915]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 60
+===
+insert-tree
+---
+ClassOrInterfaceType [1917,1929]
+    SimpleName: Serializable [1917,1929]
+to
+ClassOrInterfaceDeclaration [0,17]
+at 61

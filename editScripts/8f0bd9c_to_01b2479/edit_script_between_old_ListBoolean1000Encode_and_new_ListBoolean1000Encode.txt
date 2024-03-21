@@ -1,0 +1,166 @@
+===
+insert-tree
+---
+PackageDeclaration [0,47]
+    Name: encode [8,46]
+        Name: benchmark [8,39]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,29]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [49,73]
+    Name: Arrays [56,72]
+        Name: util [56,65]
+            Name: java [56,60]
+to
+CompilationUnit [0,29]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [75,128]
+    Name: BenchmarkCase [82,127]
+        Name: benchmark [82,113]
+            Name: test [82,103]
+                Name: json [82,98]
+                    Name: alibaba [82,93]
+                        Name: com [82,85]
+to
+CompilationUnit [0,29]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [129,170]
+    Name: Codec [136,169]
+        Name: codec [136,163]
+            Name: test [136,157]
+                Name: json [136,152]
+                    Name: alibaba [136,147]
+                        Name: com [136,139]
+to
+CompilationUnit [0,29]
+at 3
+===
+insert-node
+---
+Modifier: public [172,178]
+to
+ClassOrInterfaceDeclaration [0,29]
+at 0
+===
+insert-tree
+---
+FieldDeclaration [236,258]
+    Modifier: private [236,243]
+    VariableDeclarator [251,257]
+        ClassOrInterfaceType [244,250]
+            SimpleName: Object [244,250]
+        SimpleName: object [251,257]
+to
+ClassOrInterfaceDeclaration [0,29]
+at 2
+===
+insert-tree
+---
+ConstructorDeclaration [264,528]
+    Modifier: public [264,270]
+    SimpleName: ListBoolean1000Encode [271,292]
+    BlockStmt [294,528]
+        ExplicitConstructorInvocationStmt [304,336]
+            StringLiteralExpr: BooleanArray1000Encode [310,334]
+        ExpressionStmt [346,382]
+            VariableDeclarationExpr [346,381]
+                VariableDeclarator [356,381]
+                    ArrayType [346,355]
+                        PrimitiveType: boolean [346,353]
+                    SimpleName: array [356,361]
+                    ArrayCreationExpr [364,381]
+                        PrimitiveType: boolean [368,375]
+                        ArrayCreationLevel [375,381]
+                            IntegerLiteralExpr: 1000 [376,380]
+        ForStmt [391,478]
+            VariableDeclarationExpr [396,405]
+                VariableDeclarator [400,405]
+                    PrimitiveType: int [396,399]
+                    SimpleName: i [400,401]
+                    IntegerLiteralExpr: 0 [404,405]
+            BinaryExpr [407,423]
+                NameExpr [407,408]
+                    SimpleName: i [407,408]
+                FieldAccessExpr [411,423]
+                    NameExpr [411,416]
+                        SimpleName: array [411,416]
+                    SimpleName: length [417,423]
+            UnaryExpr [425,428]
+                NameExpr [427,428]
+                    SimpleName: i [427,428]
+            BlockStmt [430,478]
+                ExpressionStmt [444,468]
+                    AssignExpr [444,467]
+                        ArrayAccessExpr [444,452]
+                            NameExpr [444,449]
+                                SimpleName: array [444,449]
+                            NameExpr [450,451]
+                                SimpleName: i [450,451]
+                        EnclosedExpr [455,467]
+                            BinaryExpr [456,466]
+                                BinaryExpr [456,461]
+                                    NameExpr [456,457]
+                                        SimpleName: i [456,457]
+                                    IntegerLiteralExpr: 2 [460,461]
+                                IntegerLiteralExpr: 0 [465,466]
+        ExpressionStmt [487,522]
+            AssignExpr [487,521]
+                FieldAccessExpr [487,498]
+                    ThisExpr [487,491]
+                    SimpleName: object [492,498]
+                MethodCallExpr [501,521]
+                    NameExpr [501,507]
+                        SimpleName: Arrays [501,507]
+                    SimpleName: asList [508,514]
+                    NameExpr [515,520]
+                        SimpleName: array [515,520]
+to
+ClassOrInterfaceDeclaration [0,29]
+at 3
+===
+insert-tree
+---
+MethodDeclaration [534,635]
+    MarkerAnnotationExpr [534,543]
+        Name: Override [535,543]
+    Modifier: public [548,554]
+    SimpleName: execute [560,567]
+    Parameter [568,579]
+        ClassOrInterfaceType [568,573]
+            SimpleName: Codec [568,573]
+        SimpleName: codec [574,579]
+    ClassOrInterfaceType [588,597]
+        SimpleName: Exception [588,597]
+    VoidType [555,559]
+    BlockStmt [598,635]
+        ExpressionStmt [608,629]
+            MethodCallExpr [608,628]
+                NameExpr [608,613]
+                    SimpleName: codec [608,613]
+                SimpleName: encode [614,620]
+                NameExpr [621,627]
+                    SimpleName: object [621,627]
+to
+ClassOrInterfaceDeclaration [0,29]
+at 4
+===
+insert-tree
+---
+ClassOrInterfaceType [215,228]
+    SimpleName: BenchmarkCase [215,228]
+to
+ClassOrInterfaceDeclaration [0,29]
+at 5

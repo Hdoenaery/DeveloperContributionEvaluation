@@ -1,0 +1,213 @@
+===
+insert-tree
+---
+PackageDeclaration [0,45]
+    Name: serializer [8,44]
+        Name: bvt [8,33]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,38]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [47,81]
+    Name: SimpleDateFormat [54,80]
+        Name: text [54,63]
+            Name: java [54,58]
+to
+CompilationUnit [0,38]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [82,104]
+    Name: Date [89,103]
+        Name: util [89,98]
+            Name: java [89,93]
+to
+CompilationUnit [0,38]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [106,136]
+    Name: Assert [113,135]
+        Name: framework [113,128]
+            Name: junit [113,118]
+to
+CompilationUnit [0,38]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [137,169]
+    Name: TestCase [144,168]
+        Name: framework [144,159]
+            Name: junit [144,149]
+to
+CompilationUnit [0,38]
+at 4
+===
+insert-tree
+---
+ImportDeclaration [171,204]
+    Name: JSON [178,203]
+        Name: fastjson [178,198]
+            Name: alibaba [178,189]
+                Name: com [178,181]
+to
+CompilationUnit [0,38]
+at 5
+===
+insert-tree
+---
+ImportDeclaration [205,260]
+    Name: SerializeConfig [212,259]
+        Name: serializer [212,243]
+            Name: fastjson [212,232]
+                Name: alibaba [212,223]
+                    Name: com [212,215]
+to
+CompilationUnit [0,38]
+at 6
+===
+insert-tree
+---
+ImportDeclaration [261,327]
+    Name: SimpleDateFormatSerializer [268,326]
+        Name: serializer [268,299]
+            Name: fastjson [268,288]
+                Name: alibaba [268,279]
+                    Name: com [268,271]
+to
+CompilationUnit [0,38]
+at 7
+===
+insert-node
+---
+Modifier: public [329,335]
+to
+ClassOrInterfaceDeclaration [0,38]
+at 0
+===
+insert-tree
+---
+FieldDeclaration [397,460]
+    Modifier: private [397,404]
+    Modifier: static [405,411]
+    VariableDeclarator [428,459]
+        ClassOrInterfaceType [412,427]
+            SimpleName: SerializeConfig [412,427]
+        SimpleName: mapping [428,435]
+        ObjectCreationExpr [438,459]
+            ClassOrInterfaceType [442,457]
+                SimpleName: SerializeConfig [442,457]
+to
+ClassOrInterfaceDeclaration [0,38]
+at 2
+===
+insert-tree
+---
+InitializerDeclaration [465,558]
+    BlockStmt [472,558]
+        ExpressionStmt [482,552]
+            MethodCallExpr [482,551]
+                NameExpr [482,489]
+                    SimpleName: mapping [482,489]
+                SimpleName: put [490,493]
+                ClassExpr [494,504]
+                    ClassOrInterfaceType [494,498]
+                        SimpleName: Date [494,498]
+                ObjectCreationExpr [506,550]
+                    ClassOrInterfaceType [510,536]
+                        SimpleName: SimpleDateFormatSerializer [510,536]
+                    StringLiteralExpr: yyyy-MM-dd [537,549]
+to
+ClassOrInterfaceDeclaration [0,38]
+at 3
+===
+insert-tree
+---
+MethodDeclaration [568,907]
+    Modifier: public [568,574]
+    SimpleName: test_0 [580,586]
+    ClassOrInterfaceType [596,605]
+        SimpleName: Exception [596,605]
+    VoidType [575,579]
+    BlockStmt [606,907]
+        ExpressionStmt [616,639]
+            VariableDeclarationExpr [616,638]
+                VariableDeclarator [621,638]
+                    ClassOrInterfaceType [616,620]
+                        SimpleName: Date [616,620]
+                    SimpleName: date [621,625]
+                    ObjectCreationExpr [628,638]
+                        ClassOrInterfaceType [632,636]
+                            SimpleName: Date [632,636]
+        ExpressionStmt [648,695]
+            VariableDeclarationExpr [648,694]
+                VariableDeclarator [655,694]
+                    ClassOrInterfaceType [648,654]
+                        SimpleName: String [648,654]
+                    SimpleName: text [655,659]
+                    MethodCallExpr [662,694]
+                        NameExpr [662,666]
+                            SimpleName: JSON [662,666]
+                        SimpleName: toJSONString [667,679]
+                        NameExpr [680,684]
+                            SimpleName: date [680,684]
+                        NameExpr [686,693]
+                            SimpleName: mapping [686,693]
+        ExpressionStmt [704,798]
+            MethodCallExpr [704,797]
+                NameExpr [704,710]
+                    SimpleName: Assert [704,710]
+                SimpleName: assertEquals [711,723]
+                MethodCallExpr [724,790]
+                    NameExpr [724,728]
+                        SimpleName: JSON [724,728]
+                    SimpleName: toJSONString [729,741]
+                    MethodCallExpr [742,789]
+                        ObjectCreationExpr [742,776]
+                            ClassOrInterfaceType [746,762]
+                                SimpleName: SimpleDateFormat [746,762]
+                            StringLiteralExpr: yyyy-MM-dd [763,775]
+                        SimpleName: format [777,783]
+                        NameExpr [784,788]
+                            SimpleName: date [784,788]
+                NameExpr [792,796]
+                    SimpleName: text [792,796]
+        ExpressionStmt [807,901]
+            MethodCallExpr [807,900]
+                NameExpr [807,813]
+                    SimpleName: Assert [807,813]
+                SimpleName: assertEquals [814,826]
+                MethodCallExpr [827,893]
+                    NameExpr [827,831]
+                        SimpleName: JSON [827,831]
+                    SimpleName: toJSONString [832,844]
+                    MethodCallExpr [845,892]
+                        ObjectCreationExpr [845,879]
+                            ClassOrInterfaceType [849,865]
+                                SimpleName: SimpleDateFormat [849,865]
+                            StringLiteralExpr: yyyy-MM-dd [866,878]
+                        SimpleName: format [880,886]
+                        NameExpr [887,891]
+                            SimpleName: date [887,891]
+                NameExpr [895,899]
+                    SimpleName: text [895,899]
+to
+ClassOrInterfaceDeclaration [0,38]
+at 4
+===
+insert-tree
+---
+ClassOrInterfaceType [381,389]
+    SimpleName: TestCase [381,389]
+to
+ClassOrInterfaceDeclaration [0,38]
+at 5

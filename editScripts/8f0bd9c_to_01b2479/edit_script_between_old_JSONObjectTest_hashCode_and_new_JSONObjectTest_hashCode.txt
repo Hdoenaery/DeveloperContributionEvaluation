@@ -1,0 +1,125 @@
+===
+insert-tree
+---
+PackageDeclaration [0,34]
+    Name: bvt [8,33]
+        Name: test [8,29]
+            Name: json [8,24]
+                Name: alibaba [8,19]
+                    Name: com [8,11]
+to
+CompilationUnit [0,31]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [36,66]
+    Name: Assert [43,65]
+        Name: framework [43,58]
+            Name: junit [43,48]
+to
+CompilationUnit [0,31]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [67,99]
+    Name: TestCase [74,98]
+        Name: framework [74,89]
+            Name: junit [74,79]
+to
+CompilationUnit [0,31]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [101,134]
+    Name: JSON [108,133]
+        Name: fastjson [108,128]
+            Name: alibaba [108,119]
+                Name: com [108,111]
+to
+CompilationUnit [0,31]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [135,174]
+    Name: JSONObject [142,173]
+        Name: fastjson [142,162]
+            Name: alibaba [142,153]
+                Name: com [142,145]
+to
+CompilationUnit [0,31]
+at 4
+===
+insert-node
+---
+Modifier: public [176,182]
+to
+ClassOrInterfaceDeclaration [0,31]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [237,376]
+    Modifier: public [237,243]
+    SimpleName: test_hashCode [249,262]
+    ClassOrInterfaceType [272,281]
+        SimpleName: Exception [272,281]
+    VoidType [244,248]
+    BlockStmt [282,376]
+        ExpressionStmt [292,370]
+            MethodCallExpr [292,369]
+                NameExpr [292,298]
+                    SimpleName: Assert [292,298]
+                SimpleName: assertEquals [299,311]
+                MethodCallExpr [312,339]
+                    ObjectCreationExpr [312,328]
+                        ClassOrInterfaceType [316,326]
+                            SimpleName: JSONObject [316,326]
+                    SimpleName: hashCode [329,337]
+                MethodCallExpr [341,368]
+                    ObjectCreationExpr [341,357]
+                        ClassOrInterfaceType [345,355]
+                            SimpleName: JSONObject [345,355]
+                    SimpleName: hashCode [358,366]
+to
+ClassOrInterfaceDeclaration [0,31]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [382,521]
+    Modifier: public [382,388]
+    SimpleName: test_hashCode_1 [394,409]
+    ClassOrInterfaceType [419,428]
+        SimpleName: Exception [419,428]
+    VoidType [389,393]
+    BlockStmt [429,521]
+        ExpressionStmt [439,515]
+            MethodCallExpr [439,514]
+                NameExpr [439,445]
+                    SimpleName: Assert [439,445]
+                SimpleName: assertEquals [446,458]
+                MethodCallExpr [459,484]
+                    NameExpr [459,463]
+                        SimpleName: JSON [459,463]
+                    SimpleName: parseObject [464,475]
+                    StringLiteralExpr: {a:1} [476,483]
+                MethodCallExpr [486,513]
+                    NameExpr [486,490]
+                        SimpleName: JSON [486,490]
+                    SimpleName: parseObject [491,502]
+                    StringLiteralExpr: {'a':1} [503,512]
+to
+ClassOrInterfaceDeclaration [0,31]
+at 3
+===
+insert-tree
+---
+ClassOrInterfaceType [221,229]
+    SimpleName: TestCase [221,229]
+to
+ClassOrInterfaceDeclaration [0,31]
+at 4

@@ -1,0 +1,330 @@
+===
+insert-tree
+---
+PackageDeclaration [1660,1693]
+    Name: asm [1668,1692]
+        Name: fastjson [1668,1688]
+            Name: alibaba [1668,1679]
+                Name: com [1668,1671]
+to
+CompilationUnit [0,19]
+at 0
+===
+insert-node
+---
+Modifier: final [1804,1809]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 0
+===
+insert-tree
+---
+FieldDeclaration [1949,1972]
+    VariableDeclarator [1967,1971]
+        ClassOrInterfaceType [1949,1960]
+            SimpleName: FieldWriter [1949,1960]
+        SimpleName: next [1967,1971]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 2
+===
+insert-tree
+---
+FieldDeclaration [2029,2054]
+    Modifier: private [2029,2036]
+    Modifier: final [2037,2042]
+    VariableDeclarator [2047,2053]
+        PrimitiveType: int [2043,2046]
+        SimpleName: access [2047,2053]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 3
+===
+insert-tree
+---
+FieldDeclaration [2158,2181]
+    Modifier: private [2158,2165]
+    Modifier: final [2166,2171]
+    VariableDeclarator [2176,2180]
+        PrimitiveType: int [2172,2175]
+        SimpleName: name [2176,2180]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 4
+===
+insert-tree
+---
+FieldDeclaration [2290,2313]
+    Modifier: private [2290,2297]
+    Modifier: final [2298,2303]
+    VariableDeclarator [2308,2312]
+        PrimitiveType: int [2304,2307]
+        SimpleName: desc [2308,2312]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 5
+===
+insert-tree
+---
+ConstructorDeclaration [2944,3311]
+    SimpleName: FieldWriter [2944,2955]
+    Parameter [2956,2976]
+        Modifier: final [2956,2961]
+        ClassOrInterfaceType [2962,2973]
+            SimpleName: ClassWriter [2962,2973]
+        SimpleName: cw [2974,2976]
+    Parameter [2978,2994]
+        Modifier: final [2978,2983]
+        PrimitiveType: int [2984,2987]
+        SimpleName: access [2988,2994]
+    Parameter [2996,3013]
+        Modifier: final [2996,3001]
+        ClassOrInterfaceType [3002,3008]
+            SimpleName: String [3002,3008]
+        SimpleName: name [3009,3013]
+    Parameter [3015,3032]
+        Modifier: final [3015,3020]
+        ClassOrInterfaceType [3021,3027]
+            SimpleName: String [3021,3027]
+        SimpleName: desc [3028,3032]
+    BlockStmt [3033,3311]
+        IfStmt [3043,3170]
+            BinaryExpr [3047,3068]
+                FieldAccessExpr [3047,3060]
+                    NameExpr [3047,3049]
+                        SimpleName: cw [3047,3049]
+                    SimpleName: firstField [3050,3060]
+                NullLiteralExpr [3064,3068]
+            BlockStmt [3070,3115]
+                ExpressionStmt [3084,3105]
+                    AssignExpr [3084,3104]
+                        FieldAccessExpr [3084,3097]
+                            NameExpr [3084,3086]
+                                SimpleName: cw [3084,3086]
+                            SimpleName: firstField [3087,3097]
+                        ThisExpr [3100,3104]
+            BlockStmt [3121,3170]
+                ExpressionStmt [3135,3160]
+                    AssignExpr [3135,3159]
+                        FieldAccessExpr [3135,3152]
+                            FieldAccessExpr [3135,3147]
+                                NameExpr [3135,3137]
+                                    SimpleName: cw [3135,3137]
+                                SimpleName: lastField [3138,3147]
+                            SimpleName: next [3148,3152]
+                        ThisExpr [3155,3159]
+        ExpressionStmt [3179,3199]
+            AssignExpr [3179,3198]
+                FieldAccessExpr [3179,3191]
+                    NameExpr [3179,3181]
+                        SimpleName: cw [3179,3181]
+                    SimpleName: lastField [3182,3191]
+                ThisExpr [3194,3198]
+        ExpressionStmt [3208,3229]
+            AssignExpr [3208,3228]
+                FieldAccessExpr [3208,3219]
+                    ThisExpr [3208,3212]
+                    SimpleName: access [3213,3219]
+                NameExpr [3222,3228]
+                    SimpleName: access [3222,3228]
+        ExpressionStmt [3238,3267]
+            AssignExpr [3238,3266]
+                FieldAccessExpr [3238,3247]
+                    ThisExpr [3238,3242]
+                    SimpleName: name [3243,3247]
+                MethodCallExpr [3250,3266]
+                    NameExpr [3250,3252]
+                        SimpleName: cw [3250,3252]
+                    SimpleName: newUTF8 [3253,3260]
+                    NameExpr [3261,3265]
+                        SimpleName: name [3261,3265]
+        ExpressionStmt [3276,3305]
+            AssignExpr [3276,3304]
+                FieldAccessExpr [3276,3285]
+                    ThisExpr [3276,3280]
+                    SimpleName: desc [3281,3285]
+                MethodCallExpr [3288,3304]
+                    NameExpr [3288,3290]
+                        SimpleName: cw [3288,3290]
+                    SimpleName: newUTF8 [3291,3298]
+                    NameExpr [3299,3303]
+                        SimpleName: desc [3299,3303]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 6
+===
+insert-tree
+---
+MethodDeclaration [3530,3560]
+    Modifier: public [3530,3536]
+    SimpleName: visitEnd [3542,3550]
+    VoidType [3537,3541]
+    BlockStmt [3553,3560]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 7
+===
+insert-tree
+---
+MethodDeclaration [3852,3891]
+    SimpleName: getSize [3856,3863]
+    PrimitiveType: int [3852,3855]
+    BlockStmt [3866,3891]
+        ReturnStmt [3876,3885]
+            IntegerLiteralExpr: 8 [3883,3884]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 8
+===
+insert-tree
+---
+MethodDeclaration [4050,4422]
+    SimpleName: put [4055,4058]
+    Parameter [4059,4079]
+        Modifier: final [4059,4064]
+        ClassOrInterfaceType [4065,4075]
+            SimpleName: ByteVector [4065,4075]
+        SimpleName: out [4076,4079]
+    VoidType [4050,4054]
+    BlockStmt [4081,4422]
+        ExpressionStmt [4091,4278]
+            VariableDeclarationExpr [4091,4277]
+                VariableDeclarator [4095,4277]
+                    PrimitiveType: int [4091,4094]
+                    SimpleName: mask [4095,4099]
+                    BinaryExpr [4102,4277]
+                        BinaryExpr [4102,4162]
+                            FieldAccessExpr [4102,4124]
+                                NameExpr [4102,4109]
+                                    SimpleName: Opcodes [4102,4109]
+                                SimpleName: ACC_DEPRECATED [4110,4124]
+                            FieldAccessExpr [4127,4162]
+                                NameExpr [4127,4138]
+                                    SimpleName: ClassWriter [4127,4138]
+                                SimpleName: ACC_SYNTHETIC_ATTRIBUTE [4139,4162]
+                        EnclosedExpr [4165,4277]
+                            BinaryExpr [4166,4276]
+                                EnclosedExpr [4166,4212]
+                                    BinaryExpr [4167,4211]
+                                        NameExpr [4167,4173]
+                                            SimpleName: access [4167,4173]
+                                        FieldAccessExpr [4176,4211]
+                                            NameExpr [4176,4187]
+                                                SimpleName: ClassWriter [4176,4187]
+                                            SimpleName: ACC_SYNTHETIC_ATTRIBUTE [4188,4211]
+                                EnclosedExpr [4215,4276]
+                                    BinaryExpr [4216,4275]
+                                        FieldAccessExpr [4216,4251]
+                                            NameExpr [4216,4227]
+                                                SimpleName: ClassWriter [4216,4227]
+                                            SimpleName: ACC_SYNTHETIC_ATTRIBUTE [4228,4251]
+                                        FieldAccessExpr [4254,4275]
+                                            NameExpr [4254,4261]
+                                                SimpleName: Opcodes [4254,4261]
+                                            SimpleName: ACC_SYNTHETIC [4262,4275]
+        ExpressionStmt [4287,4346]
+            MethodCallExpr [4287,4345]
+                MethodCallExpr [4287,4330]
+                    MethodCallExpr [4287,4315]
+                        NameExpr [4287,4290]
+                            SimpleName: out [4287,4290]
+                        SimpleName: putShort [4291,4299]
+                        BinaryExpr [4300,4314]
+                            NameExpr [4300,4306]
+                                SimpleName: access [4300,4306]
+                            UnaryExpr [4309,4314]
+                                NameExpr [4310,4314]
+                                    SimpleName: mask [4310,4314]
+                    SimpleName: putShort [4316,4324]
+                    NameExpr [4325,4329]
+                        SimpleName: name [4325,4329]
+                SimpleName: putShort [4331,4339]
+                NameExpr [4340,4344]
+                    SimpleName: desc [4340,4344]
+        ExpressionStmt [4355,4378]
+            VariableDeclarationExpr [4355,4377]
+                VariableDeclarator [4359,4377]
+                    PrimitiveType: int [4355,4358]
+                    SimpleName: attributeCount [4359,4373]
+                    IntegerLiteralExpr: 0 [4376,4377]
+        ExpressionStmt [4387,4416]
+            MethodCallExpr [4387,4415]
+                NameExpr [4387,4390]
+                    SimpleName: out [4387,4390]
+                SimpleName: putShort [4391,4399]
+                NameExpr [4400,4414]
+                    SimpleName: attributeCount [4400,4414]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 9
+===
+insert-tree
+---
+ClassOrInterfaceType [1839,1851]
+    SimpleName: FieldVisitor [1839,1851]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 10
+===
+insert-node
+---
+LineComment [2319,2394]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 11
+===
+insert-node
+---
+LineComment [2399,2413]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 12
+===
+insert-node
+---
+LineComment [2418,2493]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 13
+===
+insert-node
+---
+LineComment [3317,3392]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 14
+===
+insert-node
+---
+LineComment [3397,3444]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 15
+===
+insert-node
+---
+LineComment [3449,3524]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 16
+===
+insert-node
+---
+LineComment [3566,3641]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 17
+===
+insert-node
+---
+LineComment [3646,3664]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 18
+===
+insert-node
+---
+LineComment [3669,3744]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 19

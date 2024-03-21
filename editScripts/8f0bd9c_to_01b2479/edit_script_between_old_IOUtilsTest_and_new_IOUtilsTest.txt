@@ -1,0 +1,369 @@
+===
+insert-tree
+---
+PackageDeclaration [0,41]
+    Name: parser [8,40]
+        Name: bvt [8,33]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,19]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [43,70]
+    Name: ByteBuffer [50,69]
+        Name: nio [50,58]
+            Name: java [50,54]
+to
+CompilationUnit [0,19]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [71,98]
+    Name: CharBuffer [78,97]
+        Name: nio [78,86]
+            Name: java [78,82]
+to
+CompilationUnit [0,19]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [99,135]
+    Name: CoderResult [106,134]
+        Name: charset [106,122]
+            Name: nio [106,114]
+                Name: java [106,110]
+to
+CompilationUnit [0,19]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [137,167]
+    Name: Assert [144,166]
+        Name: framework [144,159]
+            Name: junit [144,149]
+to
+CompilationUnit [0,19]
+at 4
+===
+insert-tree
+---
+ImportDeclaration [168,200]
+    Name: TestCase [175,199]
+        Name: framework [175,190]
+            Name: junit [175,180]
+to
+CompilationUnit [0,19]
+at 5
+===
+insert-tree
+---
+ImportDeclaration [202,235]
+    Name: JSON [209,234]
+        Name: fastjson [209,229]
+            Name: alibaba [209,220]
+                Name: com [209,212]
+to
+CompilationUnit [0,19]
+at 6
+===
+insert-tree
+---
+ImportDeclaration [236,277]
+    Name: IOUtils [243,276]
+        Name: util [243,268]
+            Name: fastjson [243,263]
+                Name: alibaba [243,254]
+                    Name: com [243,246]
+to
+CompilationUnit [0,19]
+at 7
+===
+insert-tree
+---
+ImportDeclaration [278,323]
+    Name: UTF8Decoder [285,322]
+        Name: util [285,310]
+            Name: fastjson [285,305]
+                Name: alibaba [285,296]
+                    Name: com [285,288]
+to
+CompilationUnit [0,19]
+at 8
+===
+insert-node
+---
+Modifier: public [325,331]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [374,728]
+    Modifier: public [374,380]
+    SimpleName: test_error_0 [386,398]
+    ClassOrInterfaceType [408,417]
+        SimpleName: Exception [408,417]
+    VoidType [381,385]
+    BlockStmt [418,728]
+        ExpressionStmt [428,451]
+            VariableDeclarationExpr [428,450]
+                VariableDeclarator [438,450]
+                    ClassOrInterfaceType [428,437]
+                        SimpleName: Exception [428,437]
+                    SimpleName: error [438,443]
+                    NullLiteralExpr [446,450]
+        TryStmt [460,685]
+            BlockStmt [464,628]
+                ExpressionStmt [478,618]
+                    MethodCallExpr [478,617]
+                        NameExpr [478,485]
+                            SimpleName: IOUtils [478,485]
+                        SimpleName: decode [486,492]
+                        FieldAccessExpr [493,517]
+                            NameExpr [493,497]
+                                SimpleName: JSON [493,497]
+                            SimpleName: UTF8_CharsetEncoder [498,517]
+                        MethodCallExpr [519,559]
+                            NameExpr [519,529]
+                                SimpleName: ByteBuffer [519,529]
+                            SimpleName: wrap [530,534]
+                            MethodCallExpr [535,558]
+                                StringLiteralExpr: abc [535,540]
+                                SimpleName: getBytes [541,549]
+                                StringLiteralExpr: UTF-8 [550,557]
+                        MethodCallExpr [588,616]
+                            NameExpr [588,598]
+                                SimpleName: CharBuffer [588,598]
+                            SimpleName: wrap [599,603]
+                            ArrayCreationExpr [604,615]
+                                PrimitiveType: char [608,612]
+                                ArrayCreationLevel [612,615]
+                                    IntegerLiteralExpr: 0 [613,614]
+            CatchClause [629,685]
+                Parameter [636,648]
+                    ClassOrInterfaceType [636,645]
+                        SimpleName: Exception [636,645]
+                    SimpleName: ex [646,648]
+                BlockStmt [650,685]
+                    ExpressionStmt [664,675]
+                        AssignExpr [664,674]
+                            NameExpr [664,669]
+                                SimpleName: error [664,669]
+                            NameExpr [672,674]
+                                SimpleName: ex [672,674]
+        ExpressionStmt [694,722]
+            MethodCallExpr [694,721]
+                NameExpr [694,700]
+                    SimpleName: Assert [694,700]
+                SimpleName: assertNotNull [701,714]
+                NameExpr [715,720]
+                    SimpleName: error [715,720]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [738,1093]
+    Modifier: public [738,744]
+    SimpleName: test_error_1 [750,762]
+    ClassOrInterfaceType [772,781]
+        SimpleName: Exception [772,781]
+    VoidType [745,749]
+    BlockStmt [782,1093]
+        ExpressionStmt [792,815]
+            VariableDeclarationExpr [792,814]
+                VariableDeclarator [802,814]
+                    ClassOrInterfaceType [792,801]
+                        SimpleName: Exception [792,801]
+                    SimpleName: error [802,807]
+                    NullLiteralExpr [810,814]
+        TryStmt [824,1050]
+            BlockStmt [828,993]
+                ExpressionStmt [842,983]
+                    MethodCallExpr [842,982]
+                        NameExpr [842,849]
+                            SimpleName: IOUtils [842,849]
+                        SimpleName: decode [850,856]
+                        ObjectCreationExpr [857,881]
+                            ClassOrInterfaceType [861,879]
+                                SimpleName: MockCharsetDecoder [861,879]
+                        MethodCallExpr [883,923]
+                            NameExpr [883,893]
+                                SimpleName: ByteBuffer [883,893]
+                            SimpleName: wrap [894,898]
+                            MethodCallExpr [899,922]
+                                StringLiteralExpr: abc [899,904]
+                                SimpleName: getBytes [905,913]
+                                StringLiteralExpr: UTF-8 [914,921]
+                        MethodCallExpr [952,981]
+                            NameExpr [952,962]
+                                SimpleName: CharBuffer [952,962]
+                            SimpleName: wrap [963,967]
+                            ArrayCreationExpr [968,980]
+                                PrimitiveType: char [972,976]
+                                ArrayCreationLevel [976,980]
+                                    IntegerLiteralExpr: 10 [977,979]
+            CatchClause [994,1050]
+                Parameter [1001,1013]
+                    ClassOrInterfaceType [1001,1010]
+                        SimpleName: Exception [1001,1010]
+                    SimpleName: ex [1011,1013]
+                BlockStmt [1015,1050]
+                    ExpressionStmt [1029,1040]
+                        AssignExpr [1029,1039]
+                            NameExpr [1029,1034]
+                                SimpleName: error [1029,1034]
+                            NameExpr [1037,1039]
+                                SimpleName: ex [1037,1039]
+        ExpressionStmt [1059,1087]
+            MethodCallExpr [1059,1086]
+                NameExpr [1059,1065]
+                    SimpleName: Assert [1059,1065]
+                SimpleName: assertNotNull [1066,1079]
+                NameExpr [1080,1085]
+                    SimpleName: error [1080,1085]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 3
+===
+insert-tree
+---
+MethodDeclaration [1103,1459]
+    Modifier: public [1103,1109]
+    SimpleName: test_error_2 [1115,1127]
+    ClassOrInterfaceType [1137,1146]
+        SimpleName: Exception [1137,1146]
+    VoidType [1110,1114]
+    BlockStmt [1147,1459]
+        ExpressionStmt [1157,1180]
+            VariableDeclarationExpr [1157,1179]
+                VariableDeclarator [1167,1179]
+                    ClassOrInterfaceType [1157,1166]
+                        SimpleName: Exception [1157,1166]
+                    SimpleName: error [1167,1172]
+                    NullLiteralExpr [1175,1179]
+        TryStmt [1189,1416]
+            BlockStmt [1193,1359]
+                ExpressionStmt [1207,1349]
+                    MethodCallExpr [1207,1348]
+                        NameExpr [1207,1214]
+                            SimpleName: IOUtils [1207,1214]
+                        SimpleName: decode [1215,1221]
+                        ObjectCreationExpr [1222,1247]
+                            ClassOrInterfaceType [1226,1245]
+                                SimpleName: MockCharsetDecoder2 [1226,1245]
+                        MethodCallExpr [1249,1289]
+                            NameExpr [1249,1259]
+                                SimpleName: ByteBuffer [1249,1259]
+                            SimpleName: wrap [1260,1264]
+                            MethodCallExpr [1265,1288]
+                                StringLiteralExpr: abc [1265,1270]
+                                SimpleName: getBytes [1271,1279]
+                                StringLiteralExpr: UTF-8 [1280,1287]
+                        MethodCallExpr [1318,1347]
+                            NameExpr [1318,1328]
+                                SimpleName: CharBuffer [1318,1328]
+                            SimpleName: wrap [1329,1333]
+                            ArrayCreationExpr [1334,1346]
+                                PrimitiveType: char [1338,1342]
+                                ArrayCreationLevel [1342,1346]
+                                    IntegerLiteralExpr: 10 [1343,1345]
+            CatchClause [1360,1416]
+                Parameter [1367,1379]
+                    ClassOrInterfaceType [1367,1376]
+                        SimpleName: Exception [1367,1376]
+                    SimpleName: ex [1377,1379]
+                BlockStmt [1381,1416]
+                    ExpressionStmt [1395,1406]
+                        AssignExpr [1395,1405]
+                            NameExpr [1395,1400]
+                                SimpleName: error [1395,1400]
+                            NameExpr [1403,1405]
+                                SimpleName: ex [1403,1405]
+        ExpressionStmt [1425,1453]
+            MethodCallExpr [1425,1452]
+                NameExpr [1425,1431]
+                    SimpleName: Assert [1425,1431]
+                SimpleName: assertNotNull [1432,1445]
+                NameExpr [1446,1451]
+                    SimpleName: error [1446,1451]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 4
+===
+insert-tree
+---
+ClassOrInterfaceDeclaration [1465,1659]
+    Modifier: public [1465,1471]
+    Modifier: static [1472,1478]
+    SimpleName: MockCharsetDecoder [1485,1503]
+    MethodDeclaration [1535,1653]
+        MarkerAnnotationExpr [1535,1544]
+            Name: Override [1536,1544]
+        Modifier: protected [1553,1562]
+        SimpleName: implFlush [1575,1584]
+        Parameter [1585,1599]
+            ClassOrInterfaceType [1585,1595]
+                SimpleName: CharBuffer [1585,1595]
+            SimpleName: out [1596,1599]
+        ClassOrInterfaceType [1563,1574]
+            SimpleName: CoderResult [1563,1574]
+        BlockStmt [1601,1653]
+            ReturnStmt [1615,1643]
+                FieldAccessExpr [1622,1642]
+                    NameExpr [1622,1633]
+                        SimpleName: CoderResult [1622,1633]
+                    SimpleName: OVERFLOW [1634,1642]
+    ClassOrInterfaceType [1512,1523]
+        SimpleName: UTF8Decoder [1512,1523]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 5
+===
+insert-tree
+---
+ClassOrInterfaceDeclaration [1669,1878]
+    Modifier: public [1669,1675]
+    Modifier: static [1676,1682]
+    SimpleName: MockCharsetDecoder2 [1689,1708]
+    MethodDeclaration [1740,1872]
+        MarkerAnnotationExpr [1740,1749]
+            Name: Override [1741,1749]
+        Modifier: protected [1758,1767]
+        SimpleName: implFlush [1780,1789]
+        Parameter [1790,1804]
+            ClassOrInterfaceType [1790,1800]
+                SimpleName: CharBuffer [1790,1800]
+            SimpleName: out [1801,1804]
+        ClassOrInterfaceType [1768,1779]
+            SimpleName: CoderResult [1768,1779]
+        BlockStmt [1806,1872]
+            ReturnStmt [1820,1862]
+                MethodCallExpr [1827,1861]
+                    NameExpr [1827,1838]
+                        SimpleName: CoderResult [1827,1838]
+                    SimpleName: unmappableForLength [1839,1858]
+                    IntegerLiteralExpr: 1 [1859,1860]
+    ClassOrInterfaceType [1717,1728]
+        SimpleName: UTF8Decoder [1717,1728]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 6
+===
+insert-tree
+---
+ClassOrInterfaceType [358,366]
+    SimpleName: TestCase [358,366]
+to
+ClassOrInterfaceDeclaration [0,19]
+at 7

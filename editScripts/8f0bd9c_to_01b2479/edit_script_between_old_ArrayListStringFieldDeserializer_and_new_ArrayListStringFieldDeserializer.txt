@@ -1,0 +1,179 @@
+===
+insert-tree
+---
+PackageDeclaration [0,49]
+    Name: deserializer [8,48]
+        Name: parser [8,35]
+            Name: fastjson [8,28]
+                Name: alibaba [8,19]
+                    Name: com [8,11]
+to
+CompilationUnit [0,40]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [51,78]
+    Name: ArrayList [58,77]
+        Name: util [58,67]
+            Name: java [58,62]
+to
+CompilationUnit [0,40]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [80,136]
+    Name: DefaultExtJSONParser [87,135]
+        Name: parser [87,114]
+            Name: fastjson [87,107]
+                Name: alibaba [87,98]
+                    Name: com [87,90]
+to
+CompilationUnit [0,40]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [137,182]
+    Name: JSONToken [144,181]
+        Name: parser [144,171]
+            Name: fastjson [144,164]
+                Name: alibaba [144,155]
+                    Name: com [144,147]
+to
+CompilationUnit [0,40]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [183,231]
+    Name: ParserConfig [190,230]
+        Name: parser [190,217]
+            Name: fastjson [190,210]
+                Name: alibaba [190,201]
+                    Name: com [190,193]
+to
+CompilationUnit [0,40]
+at 4
+===
+insert-tree
+---
+ImportDeclaration [232,275]
+    Name: FieldInfo [239,274]
+        Name: util [239,264]
+            Name: fastjson [239,259]
+                Name: alibaba [239,250]
+                    Name: com [239,242]
+to
+CompilationUnit [0,40]
+at 5
+===
+insert-node
+---
+Modifier: public [277,283]
+to
+ClassOrInterfaceDeclaration [0,40]
+at 0
+===
+insert-tree
+---
+ConstructorDeclaration [356,495]
+    Modifier: public [356,362]
+    SimpleName: ArrayListStringFieldDeserializer [363,395]
+    Parameter [396,416]
+        ClassOrInterfaceType [396,408]
+            SimpleName: ParserConfig [396,408]
+        SimpleName: mapping [409,416]
+    Parameter [418,432]
+        ClassOrInterfaceType [418,426]
+            SimpleName: Class [418,423]
+            WildcardType [424,425]
+        SimpleName: clazz [427,432]
+    Parameter [434,453]
+        ClassOrInterfaceType [434,443]
+            SimpleName: FieldInfo [434,443]
+        SimpleName: fieldInfo [444,453]
+    BlockStmt [454,495]
+        ExplicitConstructorInvocationStmt [464,488]
+            NameExpr [470,475]
+                SimpleName: clazz [470,475]
+            NameExpr [477,486]
+                SimpleName: fieldInfo [477,486]
+to
+ClassOrInterfaceDeclaration [0,40]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [501,574]
+    Modifier: public [501,507]
+    SimpleName: getFastMatchToken [512,529]
+    PrimitiveType: int [508,511]
+    BlockStmt [532,574]
+        ReturnStmt [542,568]
+            FieldAccessExpr [549,567]
+                NameExpr [549,558]
+                    SimpleName: JSONToken [549,558]
+                SimpleName: LBRACKET [559,567]
+to
+ClassOrInterfaceDeclaration [0,40]
+at 3
+===
+insert-tree
+---
+MethodDeclaration [580,822]
+    MarkerAnnotationExpr [580,589]
+        Name: Override [581,589]
+    Modifier: public [594,600]
+    SimpleName: parseField [606,616]
+    Parameter [617,644]
+        ClassOrInterfaceType [617,637]
+            SimpleName: DefaultExtJSONParser [617,637]
+        SimpleName: parser [638,644]
+    Parameter [646,659]
+        ClassOrInterfaceType [646,652]
+            SimpleName: Object [646,652]
+        SimpleName: object [653,659]
+    VoidType [601,605]
+    BlockStmt [661,822]
+        ExpressionStmt [671,720]
+            VariableDeclarationExpr [671,719]
+                VariableDeclarator [689,719]
+                    ClassOrInterfaceType [671,688]
+                        SimpleName: ArrayList [671,680]
+                        ClassOrInterfaceType [681,687]
+                            SimpleName: Object [681,687]
+                    SimpleName: list [689,693]
+                    ObjectCreationExpr [696,719]
+                        ClassOrInterfaceType [700,717]
+                            SimpleName: ArrayList [700,709]
+                            ClassOrInterfaceType [710,716]
+                                SimpleName: Object [710,716]
+        ExpressionStmt [730,783]
+            MethodCallExpr [730,782]
+                NameExpr [730,757]
+                    SimpleName: ArrayListStringDeserializer [730,757]
+                SimpleName: parseArray [758,768]
+                NameExpr [769,775]
+                    SimpleName: parser [769,775]
+                NameExpr [777,781]
+                    SimpleName: list [777,781]
+        ExpressionStmt [793,816]
+            MethodCallExpr [793,815]
+                SimpleName: setValue [793,801]
+                NameExpr [802,808]
+                    SimpleName: object [802,808]
+                NameExpr [810,814]
+                    SimpleName: list [810,814]
+to
+ClassOrInterfaceDeclaration [0,40]
+at 4
+===
+insert-tree
+---
+ClassOrInterfaceType [331,348]
+    SimpleName: FieldDeserializer [331,348]
+to
+ClassOrInterfaceDeclaration [0,40]
+at 5

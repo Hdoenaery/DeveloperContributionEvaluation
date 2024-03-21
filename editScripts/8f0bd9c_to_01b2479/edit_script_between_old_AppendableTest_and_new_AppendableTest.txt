@@ -1,0 +1,165 @@
+===
+insert-tree
+---
+PackageDeclaration [0,45]
+    Name: serializer [8,44]
+        Name: bvt [8,33]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,22]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [47,75]
+    Name: StringWriter [54,74]
+        Name: io [54,61]
+            Name: java [54,58]
+to
+CompilationUnit [0,22]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [77,107]
+    Name: Assert [84,106]
+        Name: framework [84,99]
+            Name: junit [84,89]
+to
+CompilationUnit [0,22]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [108,140]
+    Name: TestCase [115,139]
+        Name: framework [115,130]
+            Name: junit [115,120]
+to
+CompilationUnit [0,22]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [142,175]
+    Name: JSON [149,174]
+        Name: fastjson [149,169]
+            Name: alibaba [149,160]
+                Name: com [149,152]
+to
+CompilationUnit [0,22]
+at 4
+===
+insert-node
+---
+Modifier: public [178,184]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [230,482]
+    Modifier: public [230,236]
+    SimpleName: test_stringbufer [242,258]
+    ClassOrInterfaceType [268,277]
+        SimpleName: Exception [268,277]
+    VoidType [237,241]
+    BlockStmt [278,482]
+        ExpressionStmt [288,324]
+            VariableDeclarationExpr [288,323]
+                VariableDeclarator [299,323]
+                    ClassOrInterfaceType [288,298]
+                        SimpleName: Appendable [288,298]
+                    SimpleName: obj [299,302]
+                    ObjectCreationExpr [305,323]
+                        ClassOrInterfaceType [309,321]
+                            SimpleName: StringBuffer [309,321]
+        ExpressionStmt [333,351]
+            MethodCallExpr [333,350]
+                NameExpr [333,336]
+                    SimpleName: obj [333,336]
+                SimpleName: append [337,343]
+                StringLiteralExpr: abc [344,349]
+        ExpressionStmt [369,406]
+            VariableDeclarationExpr [369,405]
+                VariableDeclarator [376,405]
+                    ClassOrInterfaceType [369,375]
+                        SimpleName: String [369,375]
+                    SimpleName: text [376,380]
+                    MethodCallExpr [383,405]
+                        NameExpr [383,387]
+                            SimpleName: JSON [383,387]
+                        SimpleName: toJSONString [388,400]
+                        NameExpr [401,404]
+                            SimpleName: obj [401,404]
+        ExpressionStmt [424,461]
+            MethodCallExpr [424,460]
+                NameExpr [424,430]
+                    SimpleName: Assert [424,430]
+                SimpleName: assertEquals [431,443]
+                StringLiteralExpr: "abc" [444,453]
+                NameExpr [455,459]
+                    SimpleName: text [455,459]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [492,735]
+    Modifier: public [492,498]
+    SimpleName: test_stringwriter [504,521]
+    ClassOrInterfaceType [531,540]
+        SimpleName: Exception [531,540]
+    VoidType [499,503]
+    BlockStmt [541,735]
+        ExpressionStmt [551,587]
+            VariableDeclarationExpr [551,586]
+                VariableDeclarator [562,586]
+                    ClassOrInterfaceType [551,561]
+                        SimpleName: Appendable [551,561]
+                    SimpleName: obj [562,565]
+                    ObjectCreationExpr [568,586]
+                        ClassOrInterfaceType [572,584]
+                            SimpleName: StringWriter [572,584]
+        ExpressionStmt [596,614]
+            MethodCallExpr [596,613]
+                NameExpr [596,599]
+                    SimpleName: obj [596,599]
+                SimpleName: append [600,606]
+                StringLiteralExpr: abc [607,612]
+        ExpressionStmt [632,669]
+            VariableDeclarationExpr [632,668]
+                VariableDeclarator [639,668]
+                    ClassOrInterfaceType [632,638]
+                        SimpleName: String [632,638]
+                    SimpleName: text [639,643]
+                    MethodCallExpr [646,668]
+                        NameExpr [646,650]
+                            SimpleName: JSON [646,650]
+                        SimpleName: toJSONString [651,663]
+                        NameExpr [664,667]
+                            SimpleName: obj [664,667]
+        ExpressionStmt [687,724]
+            MethodCallExpr [687,723]
+                NameExpr [687,693]
+                    SimpleName: Assert [687,693]
+                SimpleName: assertEquals [694,706]
+                StringLiteralExpr: "abc" [707,716]
+                NameExpr [718,722]
+                    SimpleName: text [718,722]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 3
+===
+insert-tree
+---
+ClassOrInterfaceType [214,222]
+    SimpleName: TestCase [214,222]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 4

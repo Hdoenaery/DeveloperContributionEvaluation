@@ -1,0 +1,20 @@
+===
+insert-node
+---
+LineComment [633,685]
+to
+BlockStmt [264,686]
+at 8
+===
+delete-tree
+---
+ExpressionStmt [635,683]
+    MethodCallExpr [635,682]
+        SimpleName: assertEquals [635,647]
+        ClassExpr [648,664]
+            ClassOrInterfaceType [648,658]
+                SimpleName: JSONObject [648,658]
+        MethodCallExpr [666,681]
+            NameExpr [666,670]
+                SimpleName: obj2 [666,670]
+            SimpleName: getClass [671,679]

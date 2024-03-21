@@ -1,0 +1,184 @@
+===
+insert-tree
+---
+PackageDeclaration [0,45]
+    Name: serializer [8,44]
+        Name: bvt [8,33]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,27]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [47,77]
+    Name: Assert [54,76]
+        Name: framework [54,69]
+            Name: junit [54,59]
+to
+CompilationUnit [0,27]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [78,110]
+    Name: TestCase [85,109]
+        Name: framework [85,100]
+            Name: junit [85,90]
+to
+CompilationUnit [0,27]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [112,166]
+    Name: JSONSerializer [119,165]
+        Name: serializer [119,150]
+            Name: fastjson [119,139]
+                Name: alibaba [119,130]
+                    Name: com [119,122]
+to
+CompilationUnit [0,27]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [167,222]
+    Name: SerializeWriter [174,221]
+        Name: serializer [174,205]
+            Name: fastjson [174,194]
+                Name: alibaba [174,185]
+                    Name: com [174,177]
+to
+CompilationUnit [0,27]
+at 4
+===
+insert-node
+---
+Modifier: public [224,230]
+to
+ClassOrInterfaceDeclaration [0,27]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [280,943]
+    Modifier: public [280,286]
+    SimpleName: test_0 [292,298]
+    ClassOrInterfaceType [309,318]
+        SimpleName: Exception [309,318]
+    VoidType [287,291]
+    BlockStmt [319,943]
+        ExpressionStmt [329,373]
+            VariableDeclarationExpr [329,372]
+                VariableDeclarator [345,372]
+                    ClassOrInterfaceType [329,344]
+                        SimpleName: SerializeWriter [329,344]
+                    SimpleName: out [345,348]
+                    ObjectCreationExpr [351,372]
+                        ClassOrInterfaceType [355,370]
+                            SimpleName: SerializeWriter [355,370]
+        ExpressionStmt [382,434]
+            VariableDeclarationExpr [382,433]
+                VariableDeclarator [397,433]
+                    ClassOrInterfaceType [382,396]
+                        SimpleName: JSONSerializer [382,396]
+                    SimpleName: serializer [397,407]
+                    ObjectCreationExpr [410,433]
+                        ClassOrInterfaceType [414,428]
+                            SimpleName: JSONSerializer [414,428]
+                        NameExpr [429,432]
+                            SimpleName: out [429,432]
+        ExpressionStmt [452,511]
+            MethodCallExpr [452,510]
+                NameExpr [452,458]
+                    SimpleName: Assert [452,458]
+                SimpleName: assertEquals [459,471]
+                IntegerLiteralExpr: 0 [472,473]
+                MethodCallExpr [475,509]
+                    MethodCallExpr [475,502]
+                        NameExpr [475,485]
+                            SimpleName: serializer [475,485]
+                        SimpleName: getNameFilters [486,500]
+                    SimpleName: size [503,507]
+        ExpressionStmt [520,579]
+            MethodCallExpr [520,578]
+                NameExpr [520,526]
+                    SimpleName: Assert [520,526]
+                SimpleName: assertEquals [527,539]
+                IntegerLiteralExpr: 0 [540,541]
+                MethodCallExpr [543,577]
+                    MethodCallExpr [543,570]
+                        NameExpr [543,553]
+                            SimpleName: serializer [543,553]
+                        SimpleName: getNameFilters [554,568]
+                    SimpleName: size [571,575]
+        ExpressionStmt [597,657]
+            MethodCallExpr [597,656]
+                NameExpr [597,603]
+                    SimpleName: Assert [597,603]
+                SimpleName: assertEquals [604,616]
+                IntegerLiteralExpr: 0 [617,618]
+                MethodCallExpr [620,655]
+                    MethodCallExpr [620,648]
+                        NameExpr [620,630]
+                            SimpleName: serializer [620,630]
+                        SimpleName: getValueFilters [631,646]
+                    SimpleName: size [649,653]
+        ExpressionStmt [666,726]
+            MethodCallExpr [666,725]
+                NameExpr [666,672]
+                    SimpleName: Assert [666,672]
+                SimpleName: assertEquals [673,685]
+                IntegerLiteralExpr: 0 [686,687]
+                MethodCallExpr [689,724]
+                    MethodCallExpr [689,717]
+                        NameExpr [689,699]
+                            SimpleName: serializer [689,699]
+                        SimpleName: getValueFilters [700,715]
+                    SimpleName: size [718,722]
+        ExpressionStmt [744,807]
+            MethodCallExpr [744,806]
+                NameExpr [744,750]
+                    SimpleName: Assert [744,750]
+                SimpleName: assertEquals [751,763]
+                IntegerLiteralExpr: 0 [764,765]
+                MethodCallExpr [767,805]
+                    MethodCallExpr [767,798]
+                        NameExpr [767,777]
+                            SimpleName: serializer [767,777]
+                        SimpleName: getPropertyFilters [778,796]
+                    SimpleName: size [799,803]
+        ExpressionStmt [816,879]
+            MethodCallExpr [816,878]
+                NameExpr [816,822]
+                    SimpleName: Assert [816,822]
+                SimpleName: assertEquals [823,835]
+                IntegerLiteralExpr: 0 [836,837]
+                MethodCallExpr [839,877]
+                    MethodCallExpr [839,870]
+                        NameExpr [839,849]
+                            SimpleName: serializer [839,849]
+                        SimpleName: getPropertyFilters [850,868]
+                    SimpleName: size [871,875]
+        ExpressionStmt [897,937]
+            MethodCallExpr [897,936]
+                NameExpr [897,907]
+                    SimpleName: serializer [897,907]
+                SimpleName: writeWithFormat [908,923]
+                StringLiteralExpr: 123 [924,929]
+                NullLiteralExpr [931,935]
+to
+ClassOrInterfaceDeclaration [0,27]
+at 2
+===
+insert-tree
+---
+ClassOrInterfaceType [265,273]
+    SimpleName: TestCase [265,273]
+to
+ClassOrInterfaceDeclaration [0,27]
+at 3

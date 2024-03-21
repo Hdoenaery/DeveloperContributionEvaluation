@@ -1,0 +1,131 @@
+===
+insert-tree
+---
+PackageDeclaration [0,38]
+    Name: bug [8,37]
+        Name: bvt [8,33]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,13]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [40,67]
+    Name: InputStream [47,66]
+        Name: io [47,54]
+            Name: java [47,51]
+to
+CompilationUnit [0,13]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [69,101]
+    Name: TestCase [76,100]
+        Name: framework [76,91]
+            Name: junit [76,81]
+to
+CompilationUnit [0,13]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [103,140]
+    Name: IOUtils [110,139]
+        Name: io [110,131]
+            Name: commons [110,128]
+                Name: apache [110,120]
+                    Name: org [110,113]
+to
+CompilationUnit [0,13]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [142,175]
+    Name: JSON [149,174]
+        Name: fastjson [149,169]
+            Name: alibaba [149,160]
+                Name: com [149,152]
+to
+CompilationUnit [0,13]
+at 4
+===
+insert-node
+---
+Modifier: public [177,183]
+to
+ClassOrInterfaceDeclaration [0,13]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [220,506]
+    Modifier: public [220,226]
+    SimpleName: test_0 [232,238]
+    ClassOrInterfaceType [248,257]
+        SimpleName: Exception [248,257]
+    VoidType [227,231]
+    BlockStmt [258,506]
+        ExpressionStmt [268,298]
+            VariableDeclarationExpr [268,297]
+                VariableDeclarator [275,297]
+                    ClassOrInterfaceType [268,274]
+                        SimpleName: String [268,274]
+                    SimpleName: resource [275,283]
+                    StringLiteralExpr: json.json [286,297]
+        ExpressionStmt [307,401]
+            VariableDeclarationExpr [307,400]
+                VariableDeclarator [319,400]
+                    ClassOrInterfaceType [307,318]
+                        SimpleName: InputStream [307,318]
+                    SimpleName: is [319,321]
+                    MethodCallExpr [324,400]
+                        MethodCallExpr [324,370]
+                            MethodCallExpr [324,346]
+                                NameExpr [324,330]
+                                    SimpleName: Thread [324,330]
+                                SimpleName: currentThread [331,344]
+                            SimpleName: getContextClassLoader [347,368]
+                        SimpleName: getResourceAsStream [371,390]
+                        NameExpr [391,399]
+                            SimpleName: resource [391,399]
+        ExpressionStmt [410,445]
+            VariableDeclarationExpr [410,444]
+                VariableDeclarator [417,444]
+                    ClassOrInterfaceType [410,416]
+                        SimpleName: String [410,416]
+                    SimpleName: text [417,421]
+                    MethodCallExpr [424,444]
+                        NameExpr [424,431]
+                            SimpleName: IOUtils [424,431]
+                        SimpleName: toString [432,440]
+                        NameExpr [441,443]
+                            SimpleName: is [441,443]
+        ExpressionStmt [454,465]
+            MethodCallExpr [454,464]
+                NameExpr [454,456]
+                    SimpleName: is [454,456]
+                SimpleName: close [457,462]
+        ExpressionStmt [483,500]
+            MethodCallExpr [483,499]
+                NameExpr [483,487]
+                    SimpleName: JSON [483,487]
+                SimpleName: parse [488,493]
+                NameExpr [494,498]
+                    SimpleName: text [494,498]
+to
+ClassOrInterfaceDeclaration [0,13]
+at 2
+===
+insert-tree
+---
+ClassOrInterfaceType [204,212]
+    SimpleName: TestCase [204,212]
+to
+ClassOrInterfaceDeclaration [0,13]
+at 3

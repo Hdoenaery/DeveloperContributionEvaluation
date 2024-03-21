@@ -1,0 +1,119 @@
+===
+insert-node
+---
+LineComment [968,1000]
+to
+CompilationUnit [0,33102]
+at 12
+===
+insert-node
+---
+Modifier: public [1050,1056]
+to
+ClassOrInterfaceDeclaration [1050,33101]
+at 0
+===
+insert-node
+---
+Modifier: final [1057,1062]
+to
+ClassOrInterfaceDeclaration [1050,33101]
+at 1
+===
+insert-node
+---
+SimpleName: JSONScanner [1069,1080]
+to
+ClassOrInterfaceDeclaration [1050,33101]
+at 2
+===
+insert-node
+---
+LineComment [4502,4598]
+to
+ClassOrInterfaceDeclaration [1050,33101]
+at 43
+===
+insert-node
+---
+LineComment [4603,4623]
+to
+ClassOrInterfaceDeclaration [1050,33101]
+at 44
+===
+insert-node
+---
+LineComment [4628,4632]
+to
+ClassOrInterfaceDeclaration [1050,33101]
+at 45
+===
+update-node
+---
+SimpleName: UNKNOWN [2275,2282]
+replace UNKNOWN by UNKOWN
+===
+update-node
+---
+SimpleName: UNKNOWN [18851,18858]
+replace UNKNOWN by UNKOWN
+===
+update-node
+---
+SimpleName: UNKNOWN [20856,20863]
+replace UNKNOWN by UNKOWN
+===
+update-node
+---
+SimpleName: UNKNOWN [23353,23360]
+replace UNKNOWN by UNKOWN
+===
+update-node
+---
+SimpleName: UNKNOWN [25244,25251]
+replace UNKNOWN by UNKOWN
+===
+update-node
+---
+SimpleName: UNKNOWN [28226,28233]
+replace UNKNOWN by UNKOWN
+===
+update-node
+---
+SimpleName: UNKNOWN [30432,30439]
+replace UNKNOWN by UNKOWN
+===
+delete-node
+---
+Modifier: public [1050,1056]
+===
+===
+delete-node
+---
+Modifier: final [1057,1062]
+===
+===
+delete-node
+---
+SimpleName: JSONScanner [1069,1080]
+===
+===
+delete-node
+---
+LineComment [4503,4599]
+===
+===
+delete-node
+---
+LineComment [4604,4624]
+===
+===
+delete-node
+---
+LineComment [4629,4633]
+===
+===
+delete-node
+---
+LineComment [968,1000]
+===

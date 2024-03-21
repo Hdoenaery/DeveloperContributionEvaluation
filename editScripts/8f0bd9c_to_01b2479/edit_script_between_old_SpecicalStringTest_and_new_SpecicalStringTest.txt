@@ -1,0 +1,294 @@
+===
+insert-tree
+---
+PackageDeclaration [0,45]
+    Name: serializer [8,44]
+        Name: bvt [8,33]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,26]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [47,72]
+    Name: HashMap [54,71]
+        Name: util [54,63]
+            Name: java [54,58]
+to
+CompilationUnit [0,26]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [73,94]
+    Name: Map [80,93]
+        Name: util [80,89]
+            Name: java [80,84]
+to
+CompilationUnit [0,26]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [96,126]
+    Name: Assert [103,125]
+        Name: framework [103,118]
+            Name: junit [103,108]
+to
+CompilationUnit [0,26]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [127,159]
+    Name: TestCase [134,158]
+        Name: framework [134,149]
+            Name: junit [134,139]
+to
+CompilationUnit [0,26]
+at 4
+===
+insert-tree
+---
+ImportDeclaration [161,194]
+    Name: JSON [168,193]
+        Name: fastjson [168,188]
+            Name: alibaba [168,179]
+                Name: com [168,171]
+to
+CompilationUnit [0,26]
+at 5
+===
+insert-tree
+---
+ImportDeclaration [195,234]
+    Name: JSONObject [202,233]
+        Name: fastjson [202,222]
+            Name: alibaba [202,213]
+                Name: com [202,205]
+to
+CompilationUnit [0,26]
+at 6
+===
+insert-tree
+---
+ImportDeclaration [235,282]
+    Name: JSONScanner [242,281]
+        Name: parser [242,269]
+            Name: fastjson [242,262]
+                Name: alibaba [242,253]
+                    Name: com [242,245]
+to
+CompilationUnit [0,26]
+at 7
+===
+insert-node
+---
+Modifier: public [284,290]
+to
+ClassOrInterfaceDeclaration [0,26]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [339,803]
+    Modifier: public [339,345]
+    SimpleName: test_0 [351,357]
+    ClassOrInterfaceType [368,377]
+        SimpleName: Exception [368,377]
+    VoidType [346,350]
+    BlockStmt [378,803]
+        ExpressionStmt [388,400]
+            VariableDeclarationExpr [388,399]
+                VariableDeclarator [395,399]
+                    ClassOrInterfaceType [388,394]
+                        SimpleName: String [388,394]
+                    SimpleName: text [395,399]
+        BlockStmt [409,709]
+            ExpressionStmt [423,458]
+                VariableDeclarationExpr [423,457]
+                    VariableDeclarator [434,457]
+                        ClassOrInterfaceType [423,433]
+                            SimpleName: JSONObject [423,433]
+                        SimpleName: json [434,438]
+                        ObjectCreationExpr [441,457]
+                            ClassOrInterfaceType [445,455]
+                                SimpleName: JSONObject [445,455]
+            ExpressionStmt [484,540]
+                VariableDeclarationExpr [484,539]
+                    VariableDeclarator [504,539]
+                        ClassOrInterfaceType [484,503]
+                            SimpleName: Map [484,487]
+                            ClassOrInterfaceType [488,494]
+                                SimpleName: String [488,494]
+                            ClassOrInterfaceType [496,502]
+                                SimpleName: Object [496,502]
+                        SimpleName: map [504,507]
+                        ObjectCreationExpr [510,539]
+                            ClassOrInterfaceType [514,537]
+                                SimpleName: HashMap [514,521]
+                                ClassOrInterfaceType [522,528]
+                                    SimpleName: String [522,528]
+                                ClassOrInterfaceType [530,536]
+                                    SimpleName: Object [530,536]
+            ExpressionStmt [553,575]
+                MethodCallExpr [553,574]
+                    NameExpr [553,556]
+                        SimpleName: map [553,556]
+                    SimpleName: put [557,560]
+                    StringLiteralExpr: name [561,567]
+                    StringLiteralExpr: 张三 [569,573]
+            ExpressionStmt [601,642]
+                MethodCallExpr [601,641]
+                    NameExpr [601,605]
+                        SimpleName: json [601,605]
+                    SimpleName: put [606,609]
+                    StringLiteralExpr: text [610,616]
+                    MethodCallExpr [618,640]
+                        NameExpr [618,622]
+                            SimpleName: JSON [618,622]
+                        SimpleName: toJSONString [623,635]
+                        NameExpr [636,639]
+                            SimpleName: map [636,639]
+            ExpressionStmt [668,699]
+                AssignExpr [668,698]
+                    NameExpr [668,672]
+                        SimpleName: text [668,672]
+                    MethodCallExpr [675,698]
+                        NameExpr [675,679]
+                            SimpleName: JSON [675,679]
+                        SimpleName: toJSONString [680,692]
+                        NameExpr [693,697]
+                            SimpleName: json [693,697]
+        ExpressionStmt [727,797]
+            MethodCallExpr [727,796]
+                NameExpr [727,733]
+                    SimpleName: Assert [727,733]
+                SimpleName: assertEquals [734,746]
+                StringLiteralExpr: {"text":"{\"name\":\"张三\"}"} [747,789]
+                NameExpr [791,795]
+                    SimpleName: text [791,795]
+to
+ClassOrInterfaceDeclaration [0,26]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [813,1421]
+    Modifier: public [813,819]
+    SimpleName: test_string2 [825,837]
+    ClassOrInterfaceType [847,856]
+        SimpleName: Exception [847,856]
+    VoidType [820,824]
+    BlockStmt [857,1421]
+        ExpressionStmt [867,907]
+            VariableDeclarationExpr [867,906]
+                VariableDeclarator [881,906]
+                    ClassOrInterfaceType [867,880]
+                        SimpleName: StringBuilder [867,880]
+                    SimpleName: buf [881,884]
+                    ObjectCreationExpr [887,906]
+                        ClassOrInterfaceType [891,904]
+                            SimpleName: StringBuilder [891,904]
+        ExpressionStmt [917,933]
+            MethodCallExpr [917,932]
+                NameExpr [917,920]
+                    SimpleName: buf [917,920]
+                SimpleName: append [921,927]
+                CharLiteralExpr: " [928,931]
+        ForStmt [942,1063]
+            VariableDeclarationExpr [947,956]
+                VariableDeclarator [951,956]
+                    PrimitiveType: int [947,950]
+                    SimpleName: i [951,952]
+                    IntegerLiteralExpr: 0 [955,956]
+            BinaryExpr [958,965]
+                NameExpr [958,959]
+                    SimpleName: i [958,959]
+                IntegerLiteralExpr: 200 [962,965]
+            UnaryExpr [967,970]
+                NameExpr [969,970]
+                    SimpleName: i [969,970]
+            BlockStmt [972,1063]
+                ExpressionStmt [986,1053]
+                    MethodCallExpr [986,1052]
+                        NameExpr [986,989]
+                            SimpleName: buf [986,989]
+                        SimpleName: append [990,996]
+                        BinaryExpr [997,1051]
+                            StringLiteralExpr: \\\/\b\f\n\r\t\u [997,1024]
+                            MethodCallExpr [1027,1051]
+                                NameExpr [1027,1034]
+                                    SimpleName: Integer [1027,1034]
+                                SimpleName: toHexString [1035,1046]
+                                CharLiteralExpr: 中 [1047,1050]
+        ExpressionStmt [1072,1088]
+            MethodCallExpr [1072,1087]
+                NameExpr [1072,1075]
+                    SimpleName: buf [1072,1075]
+                SimpleName: append [1076,1082]
+                CharLiteralExpr: " [1083,1086]
+        ExpressionStmt [1098,1127]
+            VariableDeclarationExpr [1098,1126]
+                VariableDeclarator [1105,1126]
+                    ClassOrInterfaceType [1098,1104]
+                        SimpleName: String [1098,1104]
+                    SimpleName: text [1105,1109]
+                    MethodCallExpr [1112,1126]
+                        NameExpr [1112,1115]
+                            SimpleName: buf [1112,1115]
+                        SimpleName: toString [1116,1124]
+        ExpressionStmt [1137,1208]
+            VariableDeclarationExpr [1137,1207]
+                VariableDeclarator [1149,1207]
+                    ClassOrInterfaceType [1137,1148]
+                        SimpleName: JSONScanner [1137,1148]
+                    SimpleName: lexer [1149,1154]
+                    ObjectCreationExpr [1157,1207]
+                        ClassOrInterfaceType [1161,1172]
+                            SimpleName: JSONScanner [1161,1172]
+                        MethodCallExpr [1173,1191]
+                            NameExpr [1173,1177]
+                                SimpleName: text [1173,1177]
+                            SimpleName: toCharArray [1178,1189]
+                        MethodCallExpr [1193,1206]
+                            NameExpr [1193,1197]
+                                SimpleName: text [1193,1197]
+                            SimpleName: length [1198,1204]
+        ExpressionStmt [1217,1235]
+            MethodCallExpr [1217,1234]
+                NameExpr [1217,1222]
+                    SimpleName: lexer [1217,1222]
+                SimpleName: nextToken [1223,1232]
+        ExpressionStmt [1245,1281]
+            MethodCallExpr [1245,1280]
+                NameExpr [1245,1251]
+                    SimpleName: Assert [1245,1251]
+                SimpleName: assertEquals [1252,1264]
+                IntegerLiteralExpr: 0 [1265,1266]
+                MethodCallExpr [1268,1279]
+                    NameExpr [1268,1273]
+                        SimpleName: lexer [1268,1273]
+                    SimpleName: pos [1274,1277]
+        ExpressionStmt [1291,1309]
+            MethodCallExpr [1291,1308]
+                NameExpr [1291,1296]
+                    SimpleName: lexer [1291,1296]
+                SimpleName: stringVal [1297,1306]
+        LineComment [1319,1372]
+        LineComment [1381,1414]
+to
+ClassOrInterfaceDeclaration [0,26]
+at 3
+===
+insert-tree
+---
+ClassOrInterfaceType [324,332]
+    SimpleName: TestCase [324,332]
+to
+ClassOrInterfaceDeclaration [0,26]
+at 4

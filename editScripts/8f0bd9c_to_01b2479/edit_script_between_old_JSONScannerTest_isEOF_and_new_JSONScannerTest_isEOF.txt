@@ -1,0 +1,241 @@
+===
+insert-tree
+---
+PackageDeclaration [0,41]
+    Name: parser [8,40]
+        Name: bvt [8,33]
+            Name: test [8,29]
+                Name: json [8,24]
+                    Name: alibaba [8,19]
+                        Name: com [8,11]
+to
+CompilationUnit [0,29]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [43,73]
+    Name: Assert [50,72]
+        Name: framework [50,65]
+            Name: junit [50,55]
+to
+CompilationUnit [0,29]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [74,106]
+    Name: TestCase [81,105]
+        Name: framework [81,96]
+            Name: junit [81,86]
+to
+CompilationUnit [0,29]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [108,141]
+    Name: JSON [115,140]
+        Name: fastjson [115,135]
+            Name: alibaba [115,126]
+                Name: com [115,118]
+to
+CompilationUnit [0,29]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [142,181]
+    Name: JSONObject [149,180]
+        Name: fastjson [149,169]
+            Name: alibaba [149,160]
+                Name: com [149,152]
+to
+CompilationUnit [0,29]
+at 4
+===
+insert-tree
+---
+ImportDeclaration [182,229]
+    Name: JSONScanner [189,228]
+        Name: parser [189,216]
+            Name: fastjson [189,209]
+                Name: alibaba [189,200]
+                    Name: com [189,192]
+to
+CompilationUnit [0,29]
+at 5
+===
+insert-node
+---
+Modifier: public [231,237]
+to
+ClassOrInterfaceDeclaration [0,29]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [290,458]
+    Modifier: public [290,296]
+    SimpleName: test_0 [302,308]
+    ClassOrInterfaceType [318,327]
+        SimpleName: Exception [318,327]
+    VoidType [297,301]
+    BlockStmt [328,458]
+        ExpressionStmt [338,359]
+            VariableDeclarationExpr [338,358]
+                VariableDeclarator [345,358]
+                    ClassOrInterfaceType [338,344]
+                        SimpleName: String [338,344]
+                    SimpleName: text [345,349]
+                    StringLiteralExpr: {}   [352,358]
+        ExpressionStmt [368,408]
+            VariableDeclarationExpr [368,407]
+                VariableDeclarator [379,407]
+                    ClassOrInterfaceType [368,378]
+                        SimpleName: JSONObject [368,378]
+                    SimpleName: obj [379,382]
+                    MethodCallExpr [385,407]
+                        NameExpr [385,389]
+                            SimpleName: JSON [385,389]
+                        SimpleName: parseObject [390,401]
+                        NameExpr [402,406]
+                            SimpleName: text [402,406]
+        ExpressionStmt [417,452]
+            MethodCallExpr [417,451]
+                NameExpr [417,423]
+                    SimpleName: Assert [417,423]
+                SimpleName: assertEquals [424,436]
+                IntegerLiteralExpr: 0 [437,438]
+                MethodCallExpr [440,450]
+                    NameExpr [440,443]
+                        SimpleName: obj [440,443]
+                    SimpleName: size [444,448]
+to
+ClassOrInterfaceDeclaration [0,29]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [464,629]
+    Modifier: public [464,470]
+    SimpleName: test_1 [476,482]
+    ClassOrInterfaceType [492,501]
+        SimpleName: Exception [492,501]
+    VoidType [471,475]
+    BlockStmt [502,629]
+        ExpressionStmt [512,554]
+            VariableDeclarationExpr [512,553]
+                VariableDeclarator [524,553]
+                    ClassOrInterfaceType [512,523]
+                        SimpleName: JSONScanner [512,523]
+                    SimpleName: lexer [524,529]
+                    ObjectCreationExpr [532,553]
+                        ClassOrInterfaceType [536,547]
+                            SimpleName: JSONScanner [536,547]
+                        StringLiteralExpr:    [548,552]
+        ExpressionStmt [563,581]
+            MethodCallExpr [563,580]
+                NameExpr [563,568]
+                    SimpleName: lexer [563,568]
+                SimpleName: nextToken [569,578]
+        ExpressionStmt [590,623]
+            MethodCallExpr [590,622]
+                NameExpr [590,596]
+                    SimpleName: Assert [590,596]
+                SimpleName: assertTrue [597,607]
+                MethodCallExpr [608,621]
+                    NameExpr [608,613]
+                        SimpleName: lexer [608,613]
+                    SimpleName: isEOF [614,619]
+to
+ClassOrInterfaceDeclaration [0,29]
+at 3
+===
+insert-tree
+---
+MethodDeclaration [635,828]
+    Modifier: public [635,641]
+    SimpleName: test_2 [647,653]
+    ClassOrInterfaceType [663,672]
+        SimpleName: Exception [663,672]
+    VoidType [642,646]
+    BlockStmt [673,828]
+        ExpressionStmt [683,726]
+            VariableDeclarationExpr [683,725]
+                VariableDeclarator [695,725]
+                    ClassOrInterfaceType [683,694]
+                        SimpleName: JSONScanner [683,694]
+                    SimpleName: lexer [695,700]
+                    ObjectCreationExpr [703,725]
+                        ClassOrInterfaceType [707,718]
+                            SimpleName: JSONScanner [707,718]
+                        StringLiteralExpr: 1   [719,724]
+        ExpressionStmt [735,753]
+            MethodCallExpr [735,752]
+                NameExpr [735,740]
+                    SimpleName: lexer [735,740]
+                SimpleName: nextToken [741,750]
+        ExpressionStmt [762,780]
+            MethodCallExpr [762,779]
+                NameExpr [762,767]
+                    SimpleName: lexer [762,767]
+                SimpleName: nextToken [768,777]
+        ExpressionStmt [789,822]
+            MethodCallExpr [789,821]
+                NameExpr [789,795]
+                    SimpleName: Assert [789,795]
+                SimpleName: assertTrue [796,806]
+                MethodCallExpr [807,820]
+                    NameExpr [807,812]
+                        SimpleName: lexer [807,812]
+                    SimpleName: isEOF [813,818]
+to
+ClassOrInterfaceDeclaration [0,29]
+at 4
+===
+insert-tree
+---
+MethodDeclaration [834,1001]
+    Modifier: public [834,840]
+    SimpleName: test_3 [846,852]
+    ClassOrInterfaceType [862,871]
+        SimpleName: Exception [862,871]
+    VoidType [841,845]
+    BlockStmt [872,1001]
+        ExpressionStmt [882,925]
+            VariableDeclarationExpr [882,924]
+                VariableDeclarator [894,924]
+                    ClassOrInterfaceType [882,893]
+                        SimpleName: JSONScanner [882,893]
+                    SimpleName: lexer [894,899]
+                    ObjectCreationExpr [902,924]
+                        ClassOrInterfaceType [906,917]
+                            SimpleName: JSONScanner [906,917]
+                        StringLiteralExpr:  {} [918,923]
+        ExpressionStmt [934,952]
+            MethodCallExpr [934,951]
+                NameExpr [934,939]
+                    SimpleName: lexer [934,939]
+                SimpleName: nextToken [940,949]
+        ExpressionStmt [961,995]
+            MethodCallExpr [961,994]
+                NameExpr [961,967]
+                    SimpleName: Assert [961,967]
+                SimpleName: assertTrue [968,978]
+                UnaryExpr [979,993]
+                    MethodCallExpr [980,993]
+                        NameExpr [980,985]
+                            SimpleName: lexer [980,985]
+                        SimpleName: isEOF [986,991]
+to
+ClassOrInterfaceDeclaration [0,29]
+at 5
+===
+insert-tree
+---
+ClassOrInterfaceType [274,282]
+    SimpleName: TestCase [274,282]
+to
+ClassOrInterfaceDeclaration [0,29]
+at 6

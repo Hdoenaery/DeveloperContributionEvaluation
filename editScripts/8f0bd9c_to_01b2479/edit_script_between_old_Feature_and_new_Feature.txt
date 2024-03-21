@@ -1,0 +1,248 @@
+===
+insert-tree
+---
+PackageDeclaration [604,640]
+    Name: parser [612,639]
+        Name: fastjson [612,632]
+            Name: alibaba [612,623]
+                Name: com [612,615]
+to
+CompilationUnit [0,15]
+at 0
+===
+insert-node
+---
+EnumDeclaration [690,1757]
+to
+CompilationUnit [0,15]
+at 1
+===
+insert-node
+---
+Modifier: public [690,696]
+to
+EnumDeclaration [690,1757]
+at 0
+===
+move-tree
+---
+SimpleName: Feature [6,13]
+to
+EnumDeclaration [690,1757]
+at 1
+===
+insert-tree
+---
+ConstructorDeclaration [1235,1292]
+    Modifier: private [1235,1242]
+    SimpleName: Feature [1243,1250]
+    BlockStmt [1252,1292]
+        ExpressionStmt [1262,1286]
+            AssignExpr [1262,1285]
+                NameExpr [1262,1266]
+                    SimpleName: mask [1262,1266]
+                EnclosedExpr [1269,1285]
+                    BinaryExpr [1270,1284]
+                        IntegerLiteralExpr: 1 [1270,1271]
+                        MethodCallExpr [1275,1284]
+                            SimpleName: ordinal [1275,1282]
+to
+EnumDeclaration [690,1757]
+at 2
+===
+insert-tree
+---
+FieldDeclaration [1298,1321]
+    Modifier: private [1298,1305]
+    Modifier: final [1306,1311]
+    VariableDeclarator [1316,1320]
+        PrimitiveType: int [1312,1315]
+        SimpleName: mask [1316,1320]
+to
+EnumDeclaration [690,1757]
+at 3
+===
+insert-tree
+---
+MethodDeclaration [1327,1382]
+    Modifier: public [1327,1333]
+    Modifier: final [1334,1339]
+    SimpleName: getMask [1344,1351]
+    PrimitiveType: int [1340,1343]
+    BlockStmt [1354,1382]
+        ReturnStmt [1364,1376]
+            NameExpr [1371,1375]
+                SimpleName: mask [1371,1375]
+to
+EnumDeclaration [690,1757]
+at 4
+===
+insert-tree
+---
+MethodDeclaration [1388,1510]
+    Modifier: public [1388,1394]
+    Modifier: static [1395,1401]
+    SimpleName: isEnabled [1410,1419]
+    Parameter [1420,1432]
+        PrimitiveType: int [1420,1423]
+        SimpleName: features [1424,1432]
+    Parameter [1434,1449]
+        ClassOrInterfaceType [1434,1441]
+            SimpleName: Feature [1434,1441]
+        SimpleName: feature [1442,1449]
+    PrimitiveType: boolean [1402,1409]
+    BlockStmt [1451,1510]
+        ReturnStmt [1461,1504]
+            BinaryExpr [1468,1503]
+                EnclosedExpr [1468,1498]
+                    BinaryExpr [1469,1497]
+                        NameExpr [1469,1477]
+                            SimpleName: features [1469,1477]
+                        MethodCallExpr [1480,1497]
+                            NameExpr [1480,1487]
+                                SimpleName: feature [1480,1487]
+                            SimpleName: getMask [1488,1495]
+                IntegerLiteralExpr: 0 [1502,1503]
+to
+EnumDeclaration [690,1757]
+at 5
+===
+insert-tree
+---
+MethodDeclaration [1516,1755]
+    Modifier: public [1516,1522]
+    Modifier: static [1523,1529]
+    SimpleName: config [1534,1540]
+    Parameter [1541,1553]
+        PrimitiveType: int [1541,1544]
+        SimpleName: features [1545,1553]
+    Parameter [1555,1570]
+        ClassOrInterfaceType [1555,1562]
+            SimpleName: Feature [1555,1562]
+        SimpleName: feature [1563,1570]
+    Parameter [1572,1585]
+        PrimitiveType: boolean [1572,1579]
+        SimpleName: state [1580,1585]
+    PrimitiveType: int [1530,1533]
+    BlockStmt [1587,1755]
+        IfStmt [1597,1723]
+            NameExpr [1601,1606]
+                SimpleName: state [1601,1606]
+            BlockStmt [1608,1662]
+                ExpressionStmt [1622,1652]
+                    AssignExpr [1622,1651]
+                        NameExpr [1622,1630]
+                            SimpleName: features [1622,1630]
+                        MethodCallExpr [1634,1651]
+                            NameExpr [1634,1641]
+                                SimpleName: feature [1634,1641]
+                            SimpleName: getMask [1642,1649]
+            BlockStmt [1668,1723]
+                ExpressionStmt [1682,1713]
+                    AssignExpr [1682,1712]
+                        NameExpr [1682,1690]
+                            SimpleName: features [1682,1690]
+                        UnaryExpr [1694,1712]
+                            MethodCallExpr [1695,1712]
+                                NameExpr [1695,1702]
+                                    SimpleName: feature [1695,1702]
+                                SimpleName: getMask [1703,1710]
+        ReturnStmt [1733,1749]
+            NameExpr [1740,1748]
+                SimpleName: features [1740,1748]
+to
+EnumDeclaration [690,1757]
+at 6
+===
+insert-tree
+---
+EnumConstantDeclaration [734,749]
+    SimpleName: AutoCloseSource [734,749]
+to
+EnumDeclaration [690,1757]
+at 7
+===
+insert-tree
+---
+EnumConstantDeclaration [773,785]
+    SimpleName: AllowComment [773,785]
+to
+EnumDeclaration [690,1757]
+at 8
+===
+insert-tree
+---
+EnumConstantDeclaration [809,832]
+    SimpleName: AllowUnQuotedFieldNames [809,832]
+to
+EnumDeclaration [690,1757]
+at 9
+===
+insert-tree
+---
+EnumConstantDeclaration [856,873]
+    SimpleName: AllowSingleQuotes [856,873]
+to
+EnumDeclaration [690,1757]
+at 10
+===
+insert-tree
+---
+EnumConstantDeclaration [897,913]
+    SimpleName: InternFieldNames [897,913]
+to
+EnumDeclaration [690,1757]
+at 11
+===
+insert-tree
+---
+EnumConstantDeclaration [937,959]
+    SimpleName: AllowISO8601DateFormat [937,959]
+to
+EnumDeclaration [690,1757]
+at 12
+===
+insert-tree
+---
+EnumConstantDeclaration [1005,1025]
+    SimpleName: AllowArbitraryCommas [1005,1025]
+to
+EnumDeclaration [690,1757]
+at 13
+===
+insert-tree
+---
+EnumConstantDeclaration [1056,1069]
+    SimpleName: UseBigDecimal [1056,1069]
+to
+EnumDeclaration [690,1757]
+at 14
+===
+insert-tree
+---
+EnumConstantDeclaration [1116,1130]
+    SimpleName: IgnoreNotMatch [1116,1130]
+to
+EnumDeclaration [690,1757]
+at 15
+===
+insert-tree
+---
+EnumConstantDeclaration [1161,1178]
+    SimpleName: SortFeidFastMatch [1161,1178]
+to
+EnumDeclaration [690,1757]
+at 16
+===
+insert-tree
+---
+EnumConstantDeclaration [1213,1223]
+    SimpleName: DisableASM [1213,1223]
+to
+EnumDeclaration [690,1757]
+at 17
+===
+delete-node
+---
+ClassOrInterfaceDeclaration [0,15]
+===

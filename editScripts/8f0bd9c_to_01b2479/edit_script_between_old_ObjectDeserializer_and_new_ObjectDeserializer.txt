@@ -1,0 +1,71 @@
+===
+insert-tree
+---
+PackageDeclaration [0,49]
+    Name: deserializer [8,48]
+        Name: parser [8,35]
+            Name: fastjson [8,28]
+                Name: alibaba [8,19]
+                    Name: com [8,11]
+to
+CompilationUnit [0,26]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [51,81]
+    Name: Type [58,80]
+        Name: reflect [58,75]
+            Name: lang [58,67]
+                Name: java [58,62]
+to
+CompilationUnit [0,26]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [83,139]
+    Name: DefaultExtJSONParser [90,138]
+        Name: parser [90,117]
+            Name: fastjson [90,110]
+                Name: alibaba [90,101]
+                    Name: com [90,93]
+to
+CompilationUnit [0,26]
+at 2
+===
+insert-node
+---
+Modifier: public [141,147]
+to
+ClassOrInterfaceDeclaration [0,26]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [183,240]
+    TypeParameter [184,185]
+        SimpleName: T [184,185]
+    SimpleName: deserialze [189,199]
+    Parameter [200,227]
+        ClassOrInterfaceType [200,220]
+            SimpleName: DefaultExtJSONParser [200,220]
+        SimpleName: parser [221,227]
+    Parameter [229,238]
+        ClassOrInterfaceType [229,233]
+            SimpleName: Type [229,233]
+        SimpleName: type [234,238]
+    ClassOrInterfaceType [187,188]
+        SimpleName: T [187,188]
+to
+ClassOrInterfaceDeclaration [0,26]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [250,274]
+    SimpleName: getFastMatchToken [254,271]
+    PrimitiveType: int [250,253]
+to
+ClassOrInterfaceDeclaration [0,26]
+at 3

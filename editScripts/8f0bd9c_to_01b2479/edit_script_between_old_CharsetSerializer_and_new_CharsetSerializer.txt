@@ -1,0 +1,117 @@
+===
+insert-tree
+---
+PackageDeclaration [0,40]
+    Name: serializer [8,39]
+        Name: fastjson [8,28]
+            Name: alibaba [8,19]
+                Name: com [8,11]
+to
+CompilationUnit [0,25]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [42,69]
+    Name: IOException [49,68]
+        Name: io [49,56]
+            Name: java [49,53]
+to
+CompilationUnit [0,25]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [70,102]
+    Name: Charset [77,101]
+        Name: charset [77,93]
+            Name: nio [77,85]
+                Name: java [77,81]
+to
+CompilationUnit [0,25]
+at 2
+===
+insert-node
+---
+Modifier: public [105,111]
+to
+ClassOrInterfaceDeclaration [0,25]
+at 0
+===
+insert-tree
+---
+FieldDeclaration [171,244]
+    Modifier: public [171,177]
+    Modifier: final [178,183]
+    Modifier: static [184,190]
+    VariableDeclarator [209,243]
+        ClassOrInterfaceType [191,208]
+            SimpleName: CharsetSerializer [191,208]
+        SimpleName: instance [209,217]
+        ObjectCreationExpr [220,243]
+            ClassOrInterfaceType [224,241]
+                SimpleName: CharsetSerializer [224,241]
+to
+ClassOrInterfaceDeclaration [0,25]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [250,523]
+    Modifier: public [250,256]
+    SimpleName: write [262,267]
+    Parameter [268,293]
+        ClassOrInterfaceType [268,282]
+            SimpleName: JSONSerializer [268,282]
+        SimpleName: serializer [283,293]
+    Parameter [295,308]
+        ClassOrInterfaceType [295,301]
+            SimpleName: Object [295,301]
+        SimpleName: object [302,308]
+    ClassOrInterfaceType [317,328]
+        SimpleName: IOException [317,328]
+    VoidType [257,261]
+    BlockStmt [329,523]
+        IfStmt [339,426]
+            BinaryExpr [343,357]
+                NameExpr [343,349]
+                    SimpleName: object [343,349]
+                NullLiteralExpr [353,357]
+            BlockStmt [359,426]
+                ExpressionStmt [373,396]
+                    MethodCallExpr [373,395]
+                        NameExpr [373,383]
+                            SimpleName: serializer [373,383]
+                        SimpleName: writeNull [384,393]
+                ReturnStmt [409,416]
+        ExpressionStmt [436,471]
+            VariableDeclarationExpr [436,470]
+                VariableDeclarator [444,470]
+                    ClassOrInterfaceType [436,443]
+                        SimpleName: Charset [436,443]
+                    SimpleName: charset [444,451]
+                    CastExpr [454,470]
+                        ClassOrInterfaceType [455,462]
+                            SimpleName: Charset [455,462]
+                        NameExpr [464,470]
+                            SimpleName: object [464,470]
+        ExpressionStmt [480,517]
+            MethodCallExpr [480,516]
+                NameExpr [480,490]
+                    SimpleName: serializer [480,490]
+                SimpleName: write [491,496]
+                MethodCallExpr [497,515]
+                    NameExpr [497,504]
+                        SimpleName: charset [497,504]
+                    SimpleName: toString [505,513]
+to
+ClassOrInterfaceDeclaration [0,25]
+at 3
+===
+insert-tree
+---
+ClassOrInterfaceType [147,163]
+    SimpleName: ObjectSerializer [147,163]
+to
+ClassOrInterfaceDeclaration [0,25]
+at 4

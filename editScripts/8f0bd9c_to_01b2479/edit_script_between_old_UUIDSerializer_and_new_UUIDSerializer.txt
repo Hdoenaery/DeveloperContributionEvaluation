@@ -1,0 +1,116 @@
+===
+insert-tree
+---
+PackageDeclaration [0,40]
+    Name: serializer [8,39]
+        Name: fastjson [8,28]
+            Name: alibaba [8,19]
+                Name: com [8,11]
+to
+CompilationUnit [0,22]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [42,69]
+    Name: IOException [49,68]
+        Name: io [49,56]
+            Name: java [49,53]
+to
+CompilationUnit [0,22]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [70,92]
+    Name: UUID [77,91]
+        Name: util [77,86]
+            Name: java [77,81]
+to
+CompilationUnit [0,22]
+at 2
+===
+insert-node
+---
+Modifier: public [94,100]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 0
+===
+insert-tree
+---
+FieldDeclaration [157,224]
+    Modifier: public [157,163]
+    Modifier: final [164,169]
+    Modifier: static [170,176]
+    VariableDeclarator [192,223]
+        ClassOrInterfaceType [177,191]
+            SimpleName: UUIDSerializer [177,191]
+        SimpleName: instance [192,200]
+        ObjectCreationExpr [203,223]
+            ClassOrInterfaceType [207,221]
+                SimpleName: UUIDSerializer [207,221]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 2
+===
+insert-tree
+---
+MethodDeclaration [230,489]
+    Modifier: public [230,236]
+    SimpleName: write [242,247]
+    Parameter [248,273]
+        ClassOrInterfaceType [248,262]
+            SimpleName: JSONSerializer [248,262]
+        SimpleName: serializer [263,273]
+    Parameter [275,288]
+        ClassOrInterfaceType [275,281]
+            SimpleName: Object [275,281]
+        SimpleName: object [282,288]
+    ClassOrInterfaceType [297,308]
+        SimpleName: IOException [297,308]
+    VoidType [237,241]
+    BlockStmt [309,489]
+        IfStmt [319,406]
+            BinaryExpr [323,337]
+                NameExpr [323,329]
+                    SimpleName: object [323,329]
+                NullLiteralExpr [333,337]
+            BlockStmt [339,406]
+                ExpressionStmt [353,376]
+                    MethodCallExpr [353,375]
+                        NameExpr [353,363]
+                            SimpleName: serializer [353,363]
+                        SimpleName: writeNull [364,373]
+                ReturnStmt [389,396]
+        ExpressionStmt [416,441]
+            VariableDeclarationExpr [416,440]
+                VariableDeclarator [421,440]
+                    ClassOrInterfaceType [416,420]
+                        SimpleName: UUID [416,420]
+                    SimpleName: uid [421,424]
+                    CastExpr [427,440]
+                        ClassOrInterfaceType [428,432]
+                            SimpleName: UUID [428,432]
+                        NameExpr [434,440]
+                            SimpleName: object [434,440]
+        ExpressionStmt [450,483]
+            MethodCallExpr [450,482]
+                NameExpr [450,460]
+                    SimpleName: serializer [450,460]
+                SimpleName: write [461,466]
+                MethodCallExpr [467,481]
+                    NameExpr [467,470]
+                        SimpleName: uid [467,470]
+                    SimpleName: toString [471,479]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 3
+===
+insert-tree
+---
+ClassOrInterfaceType [133,149]
+    SimpleName: ObjectSerializer [133,149]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 4

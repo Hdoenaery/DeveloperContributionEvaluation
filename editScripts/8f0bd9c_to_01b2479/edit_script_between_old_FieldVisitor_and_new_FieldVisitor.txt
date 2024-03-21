@@ -1,0 +1,27 @@
+===
+insert-tree
+---
+PackageDeclaration [1660,1693]
+    Name: asm [1668,1692]
+        Name: fastjson [1668,1688]
+            Name: alibaba [1668,1679]
+                Name: com [1668,1671]
+to
+CompilationUnit [0,20]
+at 0
+===
+insert-node
+---
+Modifier: public [1915,1921]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 0
+===
+insert-tree
+---
+MethodDeclaration [2162,2178]
+    SimpleName: visitEnd [2167,2175]
+    VoidType [2162,2166]
+to
+ClassOrInterfaceDeclaration [0,20]
+at 2

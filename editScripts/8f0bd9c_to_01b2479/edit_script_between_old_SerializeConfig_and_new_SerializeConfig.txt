@@ -1,0 +1,1035 @@
+===
+insert-tree
+---
+PackageDeclaration [604,644]
+    Name: serializer [612,643]
+        Name: fastjson [612,632]
+            Name: alibaba [612,623]
+                Name: com [612,615]
+to
+CompilationUnit [0,23]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [646,666]
+    Name: File [653,665]
+        Name: io [653,660]
+            Name: java [653,657]
+to
+CompilationUnit [0,23]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [667,701]
+    Name: Modifier [674,700]
+        Name: reflect [674,691]
+            Name: lang [674,683]
+                Name: java [674,678]
+to
+CompilationUnit [0,23]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [702,730]
+    Name: BigDecimal [709,729]
+        Name: math [709,718]
+            Name: java [709,713]
+to
+CompilationUnit [0,23]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [731,759]
+    Name: BigInteger [738,758]
+        Name: math [738,747]
+            Name: java [738,742]
+to
+CompilationUnit [0,23]
+at 4
+===
+insert-tree
+---
+ImportDeclaration [760,789]
+    Name: Inet4Address [767,788]
+        Name: net [767,775]
+            Name: java [767,771]
+to
+CompilationUnit [0,23]
+at 5
+===
+insert-tree
+---
+ImportDeclaration [790,819]
+    Name: Inet6Address [797,818]
+        Name: net [797,805]
+            Name: java [797,801]
+to
+CompilationUnit [0,23]
+at 6
+===
+insert-tree
+---
+ImportDeclaration [820,848]
+    Name: InetAddress [827,847]
+        Name: net [827,835]
+            Name: java [827,831]
+to
+CompilationUnit [0,23]
+at 7
+===
+insert-tree
+---
+ImportDeclaration [849,883]
+    Name: InetSocketAddress [856,882]
+        Name: net [856,864]
+            Name: java [856,860]
+to
+CompilationUnit [0,23]
+at 8
+===
+insert-tree
+---
+ImportDeclaration [884,904]
+    Name: URI [891,903]
+        Name: net [891,899]
+            Name: java [891,895]
+to
+CompilationUnit [0,23]
+at 9
+===
+insert-tree
+---
+ImportDeclaration [905,925]
+    Name: URL [912,924]
+        Name: net [912,920]
+            Name: java [912,916]
+to
+CompilationUnit [0,23]
+at 10
+===
+insert-tree
+---
+ImportDeclaration [926,958]
+    Name: Charset [933,957]
+        Name: charset [933,949]
+            Name: nio [933,941]
+                Name: java [933,937]
+to
+CompilationUnit [0,23]
+at 11
+===
+insert-tree
+---
+ImportDeclaration [959,983]
+    Name: Locale [966,982]
+        Name: util [966,975]
+            Name: java [966,970]
+to
+CompilationUnit [0,23]
+at 12
+===
+insert-tree
+---
+ImportDeclaration [984,1010]
+    Name: TimeZone [991,1009]
+        Name: util [991,1000]
+            Name: java [991,995]
+to
+CompilationUnit [0,23]
+at 13
+===
+insert-tree
+---
+ImportDeclaration [1011,1033]
+    Name: UUID [1018,1032]
+        Name: util [1018,1027]
+            Name: java [1018,1022]
+to
+CompilationUnit [0,23]
+at 14
+===
+insert-tree
+---
+ImportDeclaration [1034,1083]
+    Name: AtomicBoolean [1041,1082]
+        Name: atomic [1041,1068]
+            Name: concurrent [1041,1061]
+                Name: util [1041,1050]
+                    Name: java [1041,1045]
+to
+CompilationUnit [0,23]
+at 15
+===
+insert-tree
+---
+ImportDeclaration [1084,1133]
+    Name: AtomicInteger [1091,1132]
+        Name: atomic [1091,1118]
+            Name: concurrent [1091,1111]
+                Name: util [1091,1100]
+                    Name: java [1091,1095]
+to
+CompilationUnit [0,23]
+at 16
+===
+insert-tree
+---
+ImportDeclaration [1134,1188]
+    Name: AtomicIntegerArray [1141,1187]
+        Name: atomic [1141,1168]
+            Name: concurrent [1141,1161]
+                Name: util [1141,1150]
+                    Name: java [1141,1145]
+to
+CompilationUnit [0,23]
+at 17
+===
+insert-tree
+---
+ImportDeclaration [1189,1235]
+    Name: AtomicLong [1196,1234]
+        Name: atomic [1196,1223]
+            Name: concurrent [1196,1216]
+                Name: util [1196,1205]
+                    Name: java [1196,1200]
+to
+CompilationUnit [0,23]
+at 18
+===
+insert-tree
+---
+ImportDeclaration [1236,1287]
+    Name: AtomicLongArray [1243,1286]
+        Name: atomic [1243,1270]
+            Name: concurrent [1243,1263]
+                Name: util [1243,1252]
+                    Name: java [1243,1247]
+to
+CompilationUnit [0,23]
+at 19
+===
+insert-tree
+---
+ImportDeclaration [1288,1339]
+    Name: AtomicReference [1295,1338]
+        Name: atomic [1295,1322]
+            Name: concurrent [1295,1315]
+                Name: util [1295,1304]
+                    Name: java [1295,1299]
+to
+CompilationUnit [0,23]
+at 20
+===
+insert-tree
+---
+ImportDeclaration [1340,1371]
+    Name: Pattern [1347,1370]
+        Name: regex [1347,1362]
+            Name: util [1347,1356]
+                Name: java [1347,1351]
+to
+CompilationUnit [0,23]
+at 21
+===
+insert-tree
+---
+ImportDeclaration [1373,1408]
+    Name: ObjectName [1380,1407]
+        Name: management [1380,1396]
+            Name: javax [1380,1385]
+to
+CompilationUnit [0,23]
+at 22
+===
+insert-tree
+---
+ImportDeclaration [1409,1457]
+    Name: CompositeData [1416,1456]
+        Name: openmbean [1416,1442]
+            Name: management [1416,1432]
+                Name: javax [1416,1421]
+to
+CompilationUnit [0,23]
+at 23
+===
+insert-tree
+---
+ImportDeclaration [1458,1513]
+    Name: CompositeDataSupport [1465,1512]
+        Name: openmbean [1465,1491]
+            Name: management [1465,1481]
+                Name: javax [1465,1470]
+to
+CompilationUnit [0,23]
+at 24
+===
+insert-tree
+---
+ImportDeclaration [1514,1559]
+    Name: SimpleType [1521,1558]
+        Name: openmbean [1521,1547]
+            Name: management [1521,1537]
+                Name: javax [1521,1526]
+to
+CompilationUnit [0,23]
+at 25
+===
+insert-tree
+---
+ImportDeclaration [1560,1606]
+    Name: TabularData [1567,1605]
+        Name: openmbean [1567,1593]
+            Name: management [1567,1583]
+                Name: javax [1567,1572]
+to
+CompilationUnit [0,23]
+at 26
+===
+insert-tree
+---
+ImportDeclaration [1607,1660]
+    Name: TabularDataSupport [1614,1659]
+        Name: openmbean [1614,1640]
+            Name: management [1614,1630]
+                Name: javax [1614,1619]
+to
+CompilationUnit [0,23]
+at 27
+===
+insert-tree
+---
+ImportDeclaration [1662,1704]
+    Name: JSONException [1669,1703]
+        Name: fastjson [1669,1689]
+            Name: alibaba [1669,1680]
+                Name: com [1669,1672]
+to
+CompilationUnit [0,23]
+at 28
+===
+insert-tree
+---
+ImportDeclaration [1705,1754]
+    Name: IdentityHashMap [1712,1753]
+        Name: util [1712,1737]
+            Name: fastjson [1712,1732]
+                Name: alibaba [1712,1723]
+                    Name: com [1712,1715]
+to
+CompilationUnit [0,23]
+at 29
+===
+insert-node
+---
+Modifier: public [1838,1844]
+to
+ClassOrInterfaceDeclaration [0,23]
+at 0
+===
+insert-tree
+---
+FieldDeclaration [1926,2002]
+    Modifier: private [1926,1933]
+    Modifier: final [1934,1939]
+    Modifier: static [1940,1946]
+    VariableDeclarator [1963,2001]
+        ClassOrInterfaceType [1947,1962]
+            SimpleName: SerializeConfig [1947,1962]
+        SimpleName: globalInstance [1963,1977]
+        ObjectCreationExpr [1980,2001]
+            ClassOrInterfaceType [1984,1999]
+                SimpleName: SerializeConfig [1984,1999]
+to
+ClassOrInterfaceDeclaration [0,23]
+at 2
+===
+insert-tree
+---
+FieldDeclaration [2008,2069]
+    Modifier: private [2008,2015]
+    VariableDeclarator [2047,2068]
+        PrimitiveType: boolean [2016,2023]
+        SimpleName: asm [2047,2050]
+        BooleanLiteralExpr: true [2064,2068]
+to
+ClassOrInterfaceDeclaration [0,23]
+at 3
+===
+insert-tree
+---
+FieldDeclaration [2075,2158]
+    Modifier: private [2075,2082]
+    Modifier: final [2083,2088]
+    VariableDeclarator [2114,2157]
+        ClassOrInterfaceType [2089,2109]
+            SimpleName: ASMSerializerFactory [2089,2109]
+        SimpleName: asmFactory [2114,2124]
+        ObjectCreationExpr [2131,2157]
+            ClassOrInterfaceType [2135,2155]
+                SimpleName: ASMSerializerFactory [2135,2155]
+to
+ClassOrInterfaceDeclaration [0,23]
+at 4
+===
+insert-tree
+---
+MethodDeclaration [2164,2313]
+    Modifier: public [2164,2170]
+    Modifier: final [2171,2176]
+    SimpleName: createASMSerializer [2194,2213]
+    Parameter [2214,2228]
+        ClassOrInterfaceType [2214,2222]
+            SimpleName: Class [2214,2219]
+            WildcardType [2220,2221]
+        SimpleName: clazz [2223,2228]
+    ClassOrInterfaceType [2237,2246]
+        SimpleName: Exception [2237,2246]
+    ClassOrInterfaceType [2177,2193]
+        SimpleName: ObjectSerializer [2177,2193]
+    BlockStmt [2247,2313]
+        ReturnStmt [2257,2307]
+            MethodCallExpr [2264,2306]
+                NameExpr [2264,2274]
+                    SimpleName: asmFactory [2264,2274]
+                SimpleName: createJavaBeanSerializer [2275,2299]
+                NameExpr [2300,2305]
+                    SimpleName: clazz [2300,2305]
+to
+ClassOrInterfaceDeclaration [0,23]
+at 5
+===
+insert-tree
+---
+MethodDeclaration [2319,2793]
+    Modifier: public [2319,2325]
+    SimpleName: createJavaBeanSerializer [2343,2367]
+    Parameter [2368,2382]
+        ClassOrInterfaceType [2368,2376]
+            SimpleName: Class [2368,2373]
+            WildcardType [2374,2375]
+        SimpleName: clazz [2377,2382]
+    ClassOrInterfaceType [2326,2342]
+        SimpleName: ObjectSerializer [2326,2342]
+    BlockStmt [2384,2793]
+        IfStmt [2394,2501]
+            UnaryExpr [2398,2438]
+                MethodCallExpr [2399,2438]
+                    NameExpr [2399,2407]
+                        SimpleName: Modifier [2399,2407]
+                    SimpleName: isPublic [2408,2416]
+                    MethodCallExpr [2417,2437]
+                        NameExpr [2417,2422]
+                            SimpleName: clazz [2417,2422]
+                        SimpleName: getModifiers [2423,2435]
+            BlockStmt [2440,2501]
+                ReturnStmt [2454,2491]
+                    ObjectCreationExpr [2461,2490]
+                        ClassOrInterfaceType [2465,2483]
+                            SimpleName: JavaBeanSerializer [2465,2483]
+                        NameExpr [2484,2489]
+                            SimpleName: clazz [2484,2489]
+        IfStmt [2511,2740]
+            NameExpr [2515,2518]
+                SimpleName: asm [2515,2518]
+            BlockStmt [2520,2740]
+                TryStmt [2534,2730]
+                    BlockStmt [2538,2604]
+                        ReturnStmt [2556,2590]
+                            MethodCallExpr [2563,2589]
+                                SimpleName: createASMSerializer [2563,2582]
+                                NameExpr [2583,2588]
+                                    SimpleName: clazz [2583,2588]
+                    CatchClause [2605,2730]
+                        Parameter [2612,2623]
+                            ClassOrInterfaceType [2612,2621]
+                                SimpleName: Throwable [2612,2621]
+                            SimpleName: e [2622,2623]
+                        BlockStmt [2625,2730]
+                            ThrowStmt [2643,2716]
+                                ObjectCreationExpr [2649,2715]
+                                    ClassOrInterfaceType [2653,2666]
+                                        SimpleName: JSONException [2653,2666]
+                                    BinaryExpr [2667,2711]
+                                        StringLiteralExpr: create asm serilizer error, class  [2667,2703]
+                                        NameExpr [2706,2711]
+                                            SimpleName: clazz [2706,2711]
+                                    NameExpr [2713,2714]
+                                        SimpleName: e [2713,2714]
+        ReturnStmt [2750,2787]
+            ObjectCreationExpr [2757,2786]
+                ClassOrInterfaceType [2761,2779]
+                    SimpleName: JavaBeanSerializer [2761,2779]
+                NameExpr [2780,2785]
+                    SimpleName: clazz [2780,2785]
+to
+ClassOrInterfaceDeclaration [0,23]
+at 6
+===
+insert-tree
+---
+MethodDeclaration [2799,2855]
+    Modifier: public [2799,2805]
+    SimpleName: isAsmEnable [2814,2825]
+    PrimitiveType: boolean [2806,2813]
+    BlockStmt [2828,2855]
+        ReturnStmt [2838,2849]
+            NameExpr [2845,2848]
+                SimpleName: asm [2845,2848]
+to
+ClassOrInterfaceDeclaration [0,23]
+at 7
+===
+insert-tree
+---
+MethodDeclaration [2861,2942]
+    Modifier: public [2861,2867]
+    SimpleName: setAsmEnable [2873,2885]
+    Parameter [2886,2903]
+        PrimitiveType: boolean [2886,2893]
+        SimpleName: asmEnable [2894,2903]
+    VoidType [2868,2872]
+    BlockStmt [2905,2942]
+        ExpressionStmt [2915,2936]
+            AssignExpr [2915,2935]
+                FieldAccessExpr [2915,2923]
+                    ThisExpr [2915,2919]
+                    SimpleName: asm [2920,2923]
+                NameExpr [2926,2935]
+                    SimpleName: asmEnable [2926,2935]
+to
+ClassOrInterfaceDeclaration [0,23]
+at 8
+===
+insert-tree
+---
+MethodDeclaration [2948,3042]
+    Modifier: public [2948,2954]
+    Modifier: final [2955,2960]
+    Modifier: static [2961,2967]
+    SimpleName: getGlobalInstance [2984,3001]
+    ClassOrInterfaceType [2968,2983]
+        SimpleName: SerializeConfig [2968,2983]
+    BlockStmt [3004,3042]
+        ReturnStmt [3014,3036]
+            NameExpr [3021,3035]
+                SimpleName: globalInstance [3021,3035]
+to
+ClassOrInterfaceDeclaration [0,23]
+at 9
+===
+insert-tree
+---
+ConstructorDeclaration [3048,3113]
+    Modifier: public [3048,3054]
+    SimpleName: SerializeConfig [3055,3070]
+    BlockStmt [3072,3113]
+        ExplicitConstructorInvocationStmt [3082,3107]
+            NameExpr [3087,3105]
+                SimpleName: DEFAULT_TABLE_SIZE [3087,3105]
+to
+ClassOrInterfaceDeclaration [0,23]
+at 10
+===
+insert-tree
+---
+ConstructorDeclaration [3119,6067]
+    Modifier: public [3119,3125]
+    SimpleName: SerializeConfig [3126,3141]
+    Parameter [3142,3155]
+        PrimitiveType: int [3142,3145]
+        SimpleName: tableSize [3146,3155]
+    BlockStmt [3156,6067]
+        ExplicitConstructorInvocationStmt [3166,3183]
+            NameExpr [3172,3181]
+                SimpleName: tableSize [3172,3181]
+        ExpressionStmt [3193,3240]
+            MethodCallExpr [3193,3239]
+                SimpleName: put [3193,3196]
+                ClassExpr [3197,3210]
+                    ClassOrInterfaceType [3197,3204]
+                        SimpleName: Boolean [3197,3204]
+                FieldAccessExpr [3212,3238]
+                    NameExpr [3212,3229]
+                        SimpleName: BooleanSerializer [3212,3229]
+                    SimpleName: instance [3230,3238]
+        ExpressionStmt [3249,3300]
+            MethodCallExpr [3249,3299]
+                SimpleName: put [3249,3252]
+                ClassExpr [3253,3268]
+                    ClassOrInterfaceType [3253,3262]
+                        SimpleName: Character [3253,3262]
+                FieldAccessExpr [3270,3298]
+                    NameExpr [3270,3289]
+                        SimpleName: CharacterSerializer [3270,3289]
+                    SimpleName: instance [3290,3298]
+        ExpressionStmt [3309,3353]
+            MethodCallExpr [3309,3352]
+                SimpleName: put [3309,3312]
+                ClassExpr [3313,3323]
+                    ClassOrInterfaceType [3313,3317]
+                        SimpleName: Byte [3313,3317]
+                FieldAccessExpr [3325,3351]
+                    NameExpr [3325,3342]
+                        SimpleName: IntegerSerializer [3325,3342]
+                    SimpleName: instance [3343,3351]
+        ExpressionStmt [3362,3407]
+            MethodCallExpr [3362,3406]
+                SimpleName: put [3362,3365]
+                ClassExpr [3366,3377]
+                    ClassOrInterfaceType [3366,3371]
+                        SimpleName: Short [3366,3371]
+                FieldAccessExpr [3379,3405]
+                    NameExpr [3379,3396]
+                        SimpleName: IntegerSerializer [3379,3396]
+                    SimpleName: instance [3397,3405]
+        ExpressionStmt [3416,3463]
+            MethodCallExpr [3416,3462]
+                SimpleName: put [3416,3419]
+                ClassExpr [3420,3433]
+                    ClassOrInterfaceType [3420,3427]
+                        SimpleName: Integer [3420,3427]
+                FieldAccessExpr [3435,3461]
+                    NameExpr [3435,3452]
+                        SimpleName: IntegerSerializer [3435,3452]
+                    SimpleName: instance [3453,3461]
+        ExpressionStmt [3472,3513]
+            MethodCallExpr [3472,3512]
+                SimpleName: put [3472,3475]
+                ClassExpr [3476,3486]
+                    ClassOrInterfaceType [3476,3480]
+                        SimpleName: Long [3476,3480]
+                FieldAccessExpr [3488,3511]
+                    NameExpr [3488,3502]
+                        SimpleName: LongSerializer [3488,3502]
+                    SimpleName: instance [3503,3511]
+        ExpressionStmt [3522,3565]
+            MethodCallExpr [3522,3564]
+                SimpleName: put [3522,3525]
+                ClassExpr [3526,3537]
+                    ClassOrInterfaceType [3526,3531]
+                        SimpleName: Float [3526,3531]
+                FieldAccessExpr [3539,3563]
+                    NameExpr [3539,3554]
+                        SimpleName: FloatSerializer [3539,3554]
+                    SimpleName: instance [3555,3563]
+        ExpressionStmt [3574,3619]
+            MethodCallExpr [3574,3618]
+                SimpleName: put [3574,3577]
+                ClassExpr [3578,3590]
+                    ClassOrInterfaceType [3578,3584]
+                        SimpleName: Double [3578,3584]
+                FieldAccessExpr [3592,3617]
+                    NameExpr [3592,3608]
+                        SimpleName: DoubleSerializer [3592,3608]
+                    SimpleName: instance [3609,3617]
+        ExpressionStmt [3628,3681]
+            MethodCallExpr [3628,3680]
+                SimpleName: put [3628,3631]
+                ClassExpr [3632,3648]
+                    ClassOrInterfaceType [3632,3642]
+                        SimpleName: BigDecimal [3632,3642]
+                FieldAccessExpr [3650,3679]
+                    NameExpr [3650,3670]
+                        SimpleName: BigDecimalSerializer [3650,3670]
+                    SimpleName: instance [3671,3679]
+        ExpressionStmt [3690,3743]
+            MethodCallExpr [3690,3742]
+                SimpleName: put [3690,3693]
+                ClassExpr [3694,3710]
+                    ClassOrInterfaceType [3694,3704]
+                        SimpleName: BigInteger [3694,3704]
+                FieldAccessExpr [3712,3741]
+                    NameExpr [3712,3732]
+                        SimpleName: BigIntegerSerializer [3712,3732]
+                    SimpleName: instance [3733,3741]
+        ExpressionStmt [3752,3797]
+            MethodCallExpr [3752,3796]
+                SimpleName: put [3752,3755]
+                ClassExpr [3756,3768]
+                    ClassOrInterfaceType [3756,3762]
+                        SimpleName: String [3756,3762]
+                FieldAccessExpr [3770,3795]
+                    NameExpr [3770,3786]
+                        SimpleName: StringSerializer [3770,3786]
+                    SimpleName: instance [3787,3795]
+        ExpressionStmt [3806,3854]
+            MethodCallExpr [3806,3853]
+                SimpleName: put [3806,3809]
+                ClassExpr [3810,3822]
+                    ArrayType [3810,3816]
+                        PrimitiveType: byte [3810,3814]
+                FieldAccessExpr [3824,3852]
+                    NameExpr [3824,3843]
+                        SimpleName: ByteArraySerializer [3824,3843]
+                    SimpleName: instance [3844,3852]
+        ExpressionStmt [3863,3913]
+            MethodCallExpr [3863,3912]
+                SimpleName: put [3863,3866]
+                ClassExpr [3867,3880]
+                    ArrayType [3867,3874]
+                        PrimitiveType: short [3867,3872]
+                FieldAccessExpr [3882,3911]
+                    NameExpr [3882,3902]
+                        SimpleName: ShortArraySerializer [3882,3902]
+                    SimpleName: instance [3903,3911]
+        ExpressionStmt [3922,3968]
+            MethodCallExpr [3922,3967]
+                SimpleName: put [3922,3925]
+                ClassExpr [3926,3937]
+                    ArrayType [3926,3931]
+                        PrimitiveType: int [3926,3929]
+                FieldAccessExpr [3939,3966]
+                    NameExpr [3939,3957]
+                        SimpleName: IntArraySerializer [3939,3957]
+                    SimpleName: instance [3958,3966]
+        ExpressionStmt [3977,4025]
+            MethodCallExpr [3977,4024]
+                SimpleName: put [3977,3980]
+                ClassExpr [3981,3993]
+                    ArrayType [3981,3987]
+                        PrimitiveType: long [3981,3985]
+                FieldAccessExpr [3995,4023]
+                    NameExpr [3995,4014]
+                        SimpleName: LongArraySerializer [3995,4014]
+                    SimpleName: instance [4015,4023]
+        ExpressionStmt [4034,4084]
+            MethodCallExpr [4034,4083]
+                SimpleName: put [4034,4037]
+                ClassExpr [4038,4051]
+                    ArrayType [4038,4045]
+                        PrimitiveType: float [4038,4043]
+                FieldAccessExpr [4053,4082]
+                    NameExpr [4053,4073]
+                        SimpleName: FloatArraySerializer [4053,4073]
+                    SimpleName: instance [4074,4082]
+        ExpressionStmt [4093,4145]
+            MethodCallExpr [4093,4144]
+                SimpleName: put [4093,4096]
+                ClassExpr [4097,4111]
+                    ArrayType [4097,4105]
+                        PrimitiveType: double [4097,4103]
+                FieldAccessExpr [4113,4143]
+                    NameExpr [4113,4134]
+                        SimpleName: DoubleArraySerializer [4113,4134]
+                    SimpleName: instance [4135,4143]
+        ExpressionStmt [4154,4208]
+            MethodCallExpr [4154,4207]
+                SimpleName: put [4154,4157]
+                ClassExpr [4158,4173]
+                    ArrayType [4158,4167]
+                        PrimitiveType: boolean [4158,4165]
+                FieldAccessExpr [4175,4206]
+                    NameExpr [4175,4197]
+                        SimpleName: BooleanArraySerializer [4175,4197]
+                    SimpleName: instance [4198,4206]
+        ExpressionStmt [4217,4269]
+            MethodCallExpr [4217,4268]
+                SimpleName: put [4217,4220]
+                ClassExpr [4221,4235]
+                    ArrayType [4221,4229]
+                        ClassOrInterfaceType [4221,4227]
+                            SimpleName: Object [4221,4227]
+                FieldAccessExpr [4237,4267]
+                    NameExpr [4237,4258]
+                        SimpleName: ObjectArraySerializer [4237,4258]
+                    SimpleName: instance [4259,4267]
+        ExpressionStmt [4278,4321]
+            MethodCallExpr [4278,4320]
+                SimpleName: put [4278,4281]
+                ClassExpr [4282,4293]
+                    ClassOrInterfaceType [4282,4287]
+                        SimpleName: Class [4282,4287]
+                FieldAccessExpr [4295,4319]
+                    NameExpr [4295,4310]
+                        SimpleName: ClassSerializer [4295,4310]
+                    SimpleName: instance [4311,4319]
+        ExpressionStmt [4331,4376]
+            MethodCallExpr [4331,4375]
+                SimpleName: put [4331,4334]
+                ClassExpr [4335,4347]
+                    ClassOrInterfaceType [4335,4341]
+                        SimpleName: Locale [4335,4341]
+                FieldAccessExpr [4349,4374]
+                    NameExpr [4349,4365]
+                        SimpleName: LocaleSerializer [4349,4365]
+                    SimpleName: instance [4366,4374]
+        ExpressionStmt [4385,4434]
+            MethodCallExpr [4385,4433]
+                SimpleName: put [4385,4388]
+                ClassExpr [4389,4403]
+                    ClassOrInterfaceType [4389,4397]
+                        SimpleName: TimeZone [4389,4397]
+                FieldAccessExpr [4405,4432]
+                    NameExpr [4405,4423]
+                        SimpleName: TimeZoneSerializer [4405,4423]
+                    SimpleName: instance [4424,4432]
+        ExpressionStmt [4443,4484]
+            MethodCallExpr [4443,4483]
+                SimpleName: put [4443,4446]
+                ClassExpr [4447,4457]
+                    ClassOrInterfaceType [4447,4451]
+                        SimpleName: UUID [4447,4451]
+                FieldAccessExpr [4459,4482]
+                    NameExpr [4459,4473]
+                        SimpleName: UUIDSerializer [4459,4473]
+                    SimpleName: instance [4474,4482]
+        ExpressionStmt [4493,4548]
+            MethodCallExpr [4493,4547]
+                SimpleName: put [4493,4496]
+                ClassExpr [4497,4514]
+                    ClassOrInterfaceType [4497,4508]
+                        SimpleName: InetAddress [4497,4508]
+                FieldAccessExpr [4516,4546]
+                    NameExpr [4516,4537]
+                        SimpleName: InetAddressSerializer [4516,4537]
+                    SimpleName: instance [4538,4546]
+        ExpressionStmt [4557,4613]
+            MethodCallExpr [4557,4612]
+                SimpleName: put [4557,4560]
+                ClassExpr [4561,4579]
+                    ClassOrInterfaceType [4561,4573]
+                        SimpleName: Inet4Address [4561,4573]
+                FieldAccessExpr [4581,4611]
+                    NameExpr [4581,4602]
+                        SimpleName: InetAddressSerializer [4581,4602]
+                    SimpleName: instance [4603,4611]
+        ExpressionStmt [4622,4678]
+            MethodCallExpr [4622,4677]
+                SimpleName: put [4622,4625]
+                ClassExpr [4626,4644]
+                    ClassOrInterfaceType [4626,4638]
+                        SimpleName: Inet6Address [4626,4638]
+                FieldAccessExpr [4646,4676]
+                    NameExpr [4646,4667]
+                        SimpleName: InetAddressSerializer [4646,4667]
+                    SimpleName: instance [4668,4676]
+        ExpressionStmt [4687,4754]
+            MethodCallExpr [4687,4753]
+                SimpleName: put [4687,4690]
+                ClassExpr [4691,4714]
+                    ClassOrInterfaceType [4691,4708]
+                        SimpleName: InetSocketAddress [4691,4708]
+                FieldAccessExpr [4716,4752]
+                    NameExpr [4716,4743]
+                        SimpleName: InetSocketAddressSerializer [4716,4743]
+                    SimpleName: instance [4744,4752]
+        ExpressionStmt [4763,4804]
+            MethodCallExpr [4763,4803]
+                SimpleName: put [4763,4766]
+                ClassExpr [4767,4777]
+                    ClassOrInterfaceType [4767,4771]
+                        SimpleName: File [4767,4771]
+                FieldAccessExpr [4779,4802]
+                    NameExpr [4779,4793]
+                        SimpleName: FileSerializer [4779,4793]
+                    SimpleName: instance [4794,4802]
+        ExpressionStmt [4813,4852]
+            MethodCallExpr [4813,4851]
+                SimpleName: put [4813,4816]
+                ClassExpr [4817,4826]
+                    ClassOrInterfaceType [4817,4820]
+                        SimpleName: URI [4817,4820]
+                FieldAccessExpr [4828,4850]
+                    NameExpr [4828,4841]
+                        SimpleName: URISerializer [4828,4841]
+                    SimpleName: instance [4842,4850]
+        ExpressionStmt [4861,4900]
+            MethodCallExpr [4861,4899]
+                SimpleName: put [4861,4864]
+                ClassExpr [4865,4874]
+                    ClassOrInterfaceType [4865,4868]
+                        SimpleName: URL [4865,4868]
+                FieldAccessExpr [4876,4898]
+                    NameExpr [4876,4889]
+                        SimpleName: URLSerializer [4876,4889]
+                    SimpleName: instance [4890,4898]
+        ExpressionStmt [4909,4962]
+            MethodCallExpr [4909,4961]
+                SimpleName: put [4909,4912]
+                ClassExpr [4913,4929]
+                    ClassOrInterfaceType [4913,4923]
+                        SimpleName: Appendable [4913,4923]
+                FieldAccessExpr [4931,4960]
+                    NameExpr [4931,4951]
+                        SimpleName: AppendableSerializer [4931,4951]
+                    SimpleName: instance [4952,4960]
+        ExpressionStmt [4971,5026]
+            MethodCallExpr [4971,5025]
+                SimpleName: put [4971,4974]
+                ClassExpr [4975,4993]
+                    ClassOrInterfaceType [4975,4987]
+                        SimpleName: StringBuffer [4975,4987]
+                FieldAccessExpr [4995,5024]
+                    NameExpr [4995,5015]
+                        SimpleName: AppendableSerializer [4995,5015]
+                    SimpleName: instance [5016,5024]
+        ExpressionStmt [5035,5091]
+            MethodCallExpr [5035,5090]
+                SimpleName: put [5035,5038]
+                ClassExpr [5039,5058]
+                    ClassOrInterfaceType [5039,5052]
+                        SimpleName: StringBuilder [5039,5052]
+                FieldAccessExpr [5060,5089]
+                    NameExpr [5060,5080]
+                        SimpleName: AppendableSerializer [5060,5080]
+                    SimpleName: instance [5081,5089]
+        ExpressionStmt [5100,5147]
+            MethodCallExpr [5100,5146]
+                SimpleName: put [5100,5103]
+                ClassExpr [5104,5117]
+                    ClassOrInterfaceType [5104,5111]
+                        SimpleName: Pattern [5104,5111]
+                FieldAccessExpr [5119,5145]
+                    NameExpr [5119,5136]
+                        SimpleName: PatternSerializer [5119,5136]
+                    SimpleName: instance [5137,5145]
+        ExpressionStmt [5156,5203]
+            MethodCallExpr [5156,5202]
+                SimpleName: put [5156,5159]
+                ClassExpr [5160,5173]
+                    ClassOrInterfaceType [5160,5167]
+                        SimpleName: Charset [5160,5167]
+                FieldAccessExpr [5175,5201]
+                    NameExpr [5175,5192]
+                        SimpleName: CharsetSerializer [5175,5192]
+                    SimpleName: instance [5193,5201]
+        ExpressionStmt [5231,5290]
+            MethodCallExpr [5231,5289]
+                SimpleName: put [5231,5234]
+                ClassExpr [5235,5254]
+                    ClassOrInterfaceType [5235,5248]
+                        SimpleName: AtomicBoolean [5235,5248]
+                FieldAccessExpr [5256,5288]
+                    NameExpr [5256,5279]
+                        SimpleName: AtomicBooleanSerializer [5256,5279]
+                    SimpleName: instance [5280,5288]
+        ExpressionStmt [5299,5358]
+            MethodCallExpr [5299,5357]
+                SimpleName: put [5299,5302]
+                ClassExpr [5303,5322]
+                    ClassOrInterfaceType [5303,5316]
+                        SimpleName: AtomicInteger [5303,5316]
+                FieldAccessExpr [5324,5356]
+                    NameExpr [5324,5347]
+                        SimpleName: AtomicIntegerSerializer [5324,5347]
+                    SimpleName: instance [5348,5356]
+        ExpressionStmt [5367,5420]
+            MethodCallExpr [5367,5419]
+                SimpleName: put [5367,5370]
+                ClassExpr [5371,5387]
+                    ClassOrInterfaceType [5371,5381]
+                        SimpleName: AtomicLong [5371,5381]
+                FieldAccessExpr [5389,5418]
+                    NameExpr [5389,5409]
+                        SimpleName: AtomicLongSerializer [5389,5409]
+                    SimpleName: instance [5410,5418]
+        ExpressionStmt [5429,5492]
+            MethodCallExpr [5429,5491]
+                SimpleName: put [5429,5432]
+                ClassExpr [5433,5454]
+                    ClassOrInterfaceType [5433,5448]
+                        SimpleName: AtomicReference [5433,5448]
+                FieldAccessExpr [5456,5490]
+                    NameExpr [5456,5481]
+                        SimpleName: AtomicReferenceSerializer [5456,5481]
+                    SimpleName: instance [5482,5490]
+        ExpressionStmt [5501,5570]
+            MethodCallExpr [5501,5569]
+                SimpleName: put [5501,5504]
+                ClassExpr [5505,5529]
+                    ClassOrInterfaceType [5505,5523]
+                        SimpleName: AtomicIntegerArray [5505,5523]
+                FieldAccessExpr [5531,5568]
+                    NameExpr [5531,5559]
+                        SimpleName: AtomicIntegerArraySerializer [5531,5559]
+                    SimpleName: instance [5560,5568]
+        ExpressionStmt [5579,5642]
+            MethodCallExpr [5579,5641]
+                SimpleName: put [5579,5582]
+                ClassExpr [5583,5604]
+                    ClassOrInterfaceType [5583,5598]
+                        SimpleName: AtomicLongArray [5583,5598]
+                FieldAccessExpr [5606,5640]
+                    NameExpr [5606,5631]
+                        SimpleName: AtomicLongArraySerializer [5606,5631]
+                    SimpleName: instance [5632,5640]
+        ExpressionStmt [5667,5726]
+            MethodCallExpr [5667,5725]
+                SimpleName: put [5667,5670]
+                ClassExpr [5671,5690]
+                    ClassOrInterfaceType [5671,5684]
+                        SimpleName: CompositeData [5671,5684]
+                FieldAccessExpr [5692,5724]
+                    NameExpr [5692,5715]
+                        SimpleName: CompositeDataSerializer [5692,5715]
+                    SimpleName: instance [5716,5724]
+        ExpressionStmt [5735,5801]
+            MethodCallExpr [5735,5800]
+                SimpleName: put [5735,5738]
+                ClassExpr [5739,5765]
+                    ClassOrInterfaceType [5739,5759]
+                        SimpleName: CompositeDataSupport [5739,5759]
+                FieldAccessExpr [5767,5799]
+                    NameExpr [5767,5790]
+                        SimpleName: CompositeDataSerializer [5767,5790]
+                    SimpleName: instance [5791,5799]
+        ExpressionStmt [5810,5865]
+            MethodCallExpr [5810,5864]
+                SimpleName: put [5810,5813]
+                ClassExpr [5814,5831]
+                    ClassOrInterfaceType [5814,5825]
+                        SimpleName: TabularData [5814,5825]
+                FieldAccessExpr [5833,5863]
+                    NameExpr [5833,5854]
+                        SimpleName: TabularDataSerializer [5833,5854]
+                    SimpleName: instance [5855,5863]
+        ExpressionStmt [5874,5936]
+            MethodCallExpr [5874,5935]
+                SimpleName: put [5874,5877]
+                ClassExpr [5878,5902]
+                    ClassOrInterfaceType [5878,5896]
+                        SimpleName: TabularDataSupport [5878,5896]
+                FieldAccessExpr [5904,5934]
+                    NameExpr [5904,5925]
+                        SimpleName: TabularDataSerializer [5904,5925]
+                    SimpleName: instance [5926,5934]
+        ExpressionStmt [5945,5998]
+            MethodCallExpr [5945,5997]
+                SimpleName: put [5945,5948]
+                ClassExpr [5949,5965]
+                    ClassOrInterfaceType [5949,5959]
+                        SimpleName: ObjectName [5949,5959]
+                FieldAccessExpr [5967,5996]
+                    NameExpr [5967,5987]
+                        SimpleName: ObjectNameSerializer [5967,5987]
+                    SimpleName: instance [5988,5996]
+        ExpressionStmt [6007,6060]
+            MethodCallExpr [6007,6059]
+                SimpleName: put [6007,6010]
+                ClassExpr [6011,6027]
+                    ClassOrInterfaceType [6011,6021]
+                        SimpleName: SimpleType [6011,6021]
+                FieldAccessExpr [6029,6058]
+                    NameExpr [6029,6049]
+                        SimpleName: SimpleTypeSerializer [6029,6049]
+                    SimpleName: instance [6050,6058]
+to
+ClassOrInterfaceDeclaration [0,23]
+at 11
+===
+insert-tree
+---
+ClassOrInterfaceType [1875,1918]
+    SimpleName: IdentityHashMap [1875,1890]
+    ClassOrInterfaceType [1891,1899]
+        SimpleName: Class [1891,1896]
+        WildcardType [1897,1898]
+    ClassOrInterfaceType [1901,1917]
+        SimpleName: ObjectSerializer [1901,1917]
+to
+ClassOrInterfaceDeclaration [0,23]
+at 12
