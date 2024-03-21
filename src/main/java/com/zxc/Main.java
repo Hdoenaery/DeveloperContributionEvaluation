@@ -17,10 +17,11 @@ import gumtree.spoon.diff.DiffConfiguration;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class Main {
     public static void main(String args[]) throws Exception {
-        String gitDirectory = "E:/Postgraduate_study/fastjson";
+        String gitDirectory = "E:/Postgraduate_study/FlappyBird";
 
         List<String> commits = getAllCommitHashes(gitDirectory);//传入 Git 项目的目录路径，获取该项目所有的commit版本
 
@@ -34,20 +35,39 @@ public class Main {
 
         String newCommit = commits.get(commits.size()-3);
         String oldCommit = commits.get(commits.size()-2);
-        System.out.println("oldCommit = " + oldCommit);
-        System.out.println("newCommit = " + newCommit);
+
+//        System.out.println("oldCommit = " + oldCommit);
+//        System.out.println("newCommit = " + newCommit);
 //        String newCommit = "e161fcd62a4a75121bd22773e2cdbf2867a16225";
 //        String oldCommit = "8fa7aea250aaee5833b6d5da9ec76cfb63269d21";
 //        String newCommit = "679140e0ad6c0bb1cd3b8397f32c5fe55fc7f3b1";//新
 //        String oldCommit = "16a43f59be6130dd7d8346401e1575a2f1a2e435";//旧
-        getEditScriptsBetweenCommits(gitDirectory, newCommit, oldCommit); //获取两个commit之间所有发生更改的.java文件的编辑脚本
 
-        String folderPath = "DeveloperContributionEvaluation/editScripts/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"; //这些编辑脚本的保存路径
-        ASTScoreCalculator astScoreCalculator = new ASTScoreCalculator();
-        double score = astScoreCalculator.calculateTotalASTScore(folderPath); //计算这些编辑脚本的总得分
-        System.out.println("Total AST Score: " + String.format("%.2f", score));
+//        getEditScriptsBetweenCommits(gitDirectory, newCommit, oldCommit); //获取两个commit之间所有发生更改的.java文件的编辑脚本
+//        String folderPath = "DeveloperContributionEvaluation/editScripts/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"; //这些编辑脚本的保存路径
+//        ASTScoreCalculator astScoreCalculator = new ASTScoreCalculator();
+//        double score = astScoreCalculator.calculateTotalASTScore(folderPath); //计算这些编辑脚本的总得分
+//        System.out.println("Total AST Score: " + String.format("%.2f", score));
+
+//        以上计算AST编辑脚本分数
+//        ------------------------------------------------------------------------------------------------------------------------------------
+
+        CallGraph callGraph = new CallGraph();
+        String analyzedDirectory = "E:\\Postgraduate_study\\FlappyBird\\src\\main\\java\\com\\kingyu\\flappybird";
+        callGraph.getCallGraph(analyzedDirectory); //获取该项目的调用图
+
+        int lastSlashIndex = analyzedDirectory.lastIndexOf("\\");
+        String callGraphName = analyzedDirectory.substring(lastSlashIndex + 1) + "-file.dot";
+
+        //获取项目中每个文件所对应的节点编号
+        Map<String, Integer> fileToNodeMap = callGraph.getNodeMapping("DeveloperContributionEvaluation/CallGraphs/" + callGraphName);
+//        for (String key : fileToNodeMap.keySet()) {
+//            System.out.println("Key: " + key + ", Value: " + fileToNodeMap.get(key)); //输出键值对验证是否正确
+//        }
+
 
     }
+
 
     //生成两个commit之间有变化的.java文件之间的编辑脚本
     public static void getEditScriptsBetweenCommits(String gitDirectory, String newCommit, String oldCommit) throws IOException {
@@ -62,29 +82,29 @@ public class Main {
         }
 
         int cnt = 0;
-        for(String fileName:changedJavaFiles){
+        for(String fileNameLong:changedJavaFiles){
             // 获取两个版本中文件的内容
-            String fileContentAtNewCommit = getFileContentAtCommit(gitDirectory, fileName, newCommit);
-            String fileContentAtOldCommit = getFileContentAtCommit(gitDirectory, fileName, oldCommit);
+            String fileContentAtNewCommit = getFileContentAtCommit(gitDirectory, fileNameLong, newCommit);
+            String fileContentAtOldCommit = getFileContentAtCommit(gitDirectory, fileNameLong, oldCommit);
 
 //            if(fileContentAtNewCommit.equals("FileNotExist") || fileContentAtOldCommit.equals("FileNotExist")){
 //
-//                // TODO: 计算新增文件或删除文件的分数
+//                // 计算新增文件或删除文件的分数(将不存在的文件内容设为空即可)
 //                System.out.println("跳过" + ++cnt);
 //                continue;
 //            }
             // 获取最后一个斜杠的索引
-            int lastSlashIndex = fileName.lastIndexOf("/");
-            fileName = fileName.substring(lastSlashIndex + 1); //从文件路径中提取出文件名
+            int lastSlashIndex = fileNameLong.lastIndexOf("/");
+            String fileNameShort = fileNameLong.substring(lastSlashIndex + 1); //从文件路径中提取出文件名
 
 //            System.out.println("old" + fileContentAtOldCommit);
             System.out.println(++cnt);
-//            System.out.println("成功获取两个commit中文件" + fileName + "的内容");
+//            System.out.println("成功获取两个commit中文件" + fileNameShort + "的内容");
 
 
             //将该文件内容保存到临时文件夹tempFile中
-            String newFileName = filePath + "new_" + fileName;
-            String oldFileName = filePath + "old_" + fileName;
+            String newFileName = filePath + "new_" + fileNameShort;
+            String oldFileName = filePath + "old_" + fileNameShort;
             writeStringToFile(fileContentAtNewCommit, newFileName);
             writeStringToFile(fileContentAtOldCommit, oldFileName);
 
@@ -105,24 +125,24 @@ public class Main {
     }
 
     // 检查文件是否存在于提交中
-    public static boolean fileExistsInCommit(String gitDirectory, String fileName, String commitHash) {
+    public static boolean fileExistsInCommit(String gitDirectory, String fileNameLong, String commitHash) {
         String[] command = {"git", "ls-tree", "--name-only", "-r", commitHash};
         String filesInCommit = executeGitCommand(gitDirectory, command);
-        return filesInCommit.contains(fileName);
+        return filesInCommit.contains(fileNameLong);
     }
 
     //获取一个commit中指定文件的内容
-    public static String getFileContentAtCommit(String gitDirectory, String fileName, String commitHash) {
+    public static String getFileContentAtCommit(String gitDirectory, String fileNameLong, String commitHash) {
         // 检查文件是否存在
-        if (!fileExistsInCommit(gitDirectory, fileName, commitHash)) {
+        if (!fileExistsInCommit(gitDirectory, fileNameLong, commitHash)) {
 //            System.err.println("文件 " + fileName + " 不存在于提交 " + commitHash);
 //            return "FileNotExist"; // 返回字符串 "FileNotExist"
-            int lastSlashIndex = fileName.lastIndexOf("/");
-            fileName = fileName.substring(lastSlashIndex + 1); //从文件路径中提取出文件名
-            return "class " + fileName.replace(".java", "") + "{}";// 若该文件不存在，则认定该文件内容为空类
+            int lastSlashIndex = fileNameLong.lastIndexOf("/");
+            String fileNameShort = fileNameLong.substring(lastSlashIndex + 1); //从文件路径中提取出文件名
+            return "class " + fileNameShort.replace(".java", "") + "{}";// 若该文件不存在，则认定该文件内容为空类
         }
 //        System.out.println("成功获取该文件的内容：" + fileName);
-        String[] command = {"git", "show", commitHash + ":" + fileName};
+        String[] command = {"git", "show", commitHash + ":" + fileNameLong};
         String fileContent = executeGitCommand(gitDirectory, command);
         return fileContent;
     }
@@ -356,15 +376,15 @@ public class Main {
     }
 
     //将编辑脚本写入文件
-    private static void writeEditScriptToFile(EditScript actions, String fileName) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
+    private static void writeEditScriptToFile(EditScript actions, String fileNameLong) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileNameLong))) {
             // 将编辑脚本的字符串表示写入文件
             for (Action action : actions) {
                 writer.write(action.toString());
                 writer.newLine();
             }
-//            System.out.println("Edit script written to: " + fileName);
-            System.out.println(fileName);
+//            System.out.println("Edit script written to: " + fileNameLong);
+            System.out.println(fileNameLong);
         } catch (IOException e) {
             e.printStackTrace();
         }

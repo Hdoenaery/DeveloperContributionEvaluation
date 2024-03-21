@@ -1,0 +1,14 @@
+{
+  "schemaVersion" : "1.0",
+  "name" : "DeveloperContributionEvaluation-file-sdsm",
+  "variables" : [ "E:\\IDEA\\maven-project\\DeveloperContributionEvaluation\\src\\main\\java\\com\\zxc\\ASTScoreCalculator.java", "E:\\IDEA\\maven-project\\DeveloperContributionEvaluation\\src\\main\\java\\com\\zxc\\Demo.java", "E:\\IDEA\\maven-project\\DeveloperContributionEvaluation\\src\\main\\java\\com\\zxc\\Main.java", "E:\\IDEA\\maven-project\\DeveloperContributionEvaluation\\src\\main\\java\\com\\zxc\\Test1.java", "E:\\IDEA\\maven-project\\DeveloperContributionEvaluation\\src\\main\\java\\com\\zxc\\Test2.java", "E:\\IDEA\\maven-project\\DeveloperContributionEvaluation\\src\\main\\java\\com\\zxc\\Test3.java" ],
+  "cells" : [ {
+    "src" : 2,
+    "dest" : 0,
+    "values" : {
+      "Call" : 2.0,
+      "Create" : 1.0,
+      "Contain" : 1.0
+    }
+  } ]
+}

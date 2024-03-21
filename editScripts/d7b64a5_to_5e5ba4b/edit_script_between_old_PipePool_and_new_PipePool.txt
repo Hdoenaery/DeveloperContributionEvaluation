@@ -1,0 +1,246 @@
+===
+insert-tree
+---
+FieldDeclaration [286,359]
+    Modifier: private [286,293]
+    Modifier: static [294,300]
+    VariableDeclarator [318,358]
+        ClassOrInterfaceType [301,317]
+            SimpleName: List [301,305]
+            ClassOrInterfaceType [306,316]
+                SimpleName: MovingPipe [306,316]
+        SimpleName: movingPool [318,328]
+        ObjectCreationExpr [331,358]
+            ClassOrInterfaceType [335,356]
+                SimpleName: ArrayList [335,344]
+                ClassOrInterfaceType [345,355]
+                    SimpleName: MovingPipe [345,355]
+to
+ClassOrInterfaceDeclaration [193,988]
+at 3
+===
+insert-tree
+---
+Parameter [859,875]
+    ClassOrInterfaceType [859,865]
+        SimpleName: String [859,865]
+    SimpleName: className [866,875]
+to
+MethodDeclaration [663,835]
+at 3
+===
+insert-node
+---
+BlockStmt [877,1246]
+to
+MethodDeclaration [663,835]
+at 5
+===
+insert-node
+---
+BlockStmt [1331,1550]
+to
+MethodDeclaration [881,986]
+at 5
+===
+update-node
+---
+IntegerLiteralExpr: 50 [494,496]
+replace 50 by 30
+===
+insert-tree
+---
+ForStmt [703,787]
+    VariableDeclarationExpr [708,717]
+        VariableDeclarator [712,717]
+            PrimitiveType: int [708,711]
+            SimpleName: i [712,713]
+            IntegerLiteralExpr: 0 [716,717]
+    BinaryExpr [719,738]
+        NameExpr [719,720]
+            SimpleName: i [719,720]
+        NameExpr [723,738]
+            SimpleName: INIT_PIPE_COUNT [723,738]
+    UnaryExpr [740,743]
+        NameExpr [740,741]
+            SimpleName: i [740,741]
+    BlockStmt [745,787]
+        ExpressionStmt [750,783]
+            MethodCallExpr [750,782]
+                NameExpr [750,760]
+                    SimpleName: movingPool [750,760]
+                SimpleName: add [761,764]
+                ObjectCreationExpr [765,781]
+                    ClassOrInterfaceType [769,779]
+                        SimpleName: MovingPipe [769,779]
+to
+BlockStmt [538,617]
+at 1
+===
+insert-node
+---
+IfStmt [881,1243]
+to
+BlockStmt [877,1246]
+at 0
+===
+insert-node
+---
+IfStmt [1346,1547]
+to
+BlockStmt [1331,1550]
+at 0
+===
+insert-tree
+---
+MethodCallExpr [885,909]
+    StringLiteralExpr: Pipe [885,891]
+    SimpleName: equals [892,898]
+    NameExpr [899,908]
+        SimpleName: className [899,908]
+to
+IfStmt [881,1243]
+at 0
+===
+move-tree
+---
+BlockStmt [688,835]
+    ExpressionStmt [692,715]
+        VariableDeclarationExpr [692,714]
+            VariableDeclarator [696,714]
+                PrimitiveType: int [692,695]
+                SimpleName: size [696,700]
+                MethodCallExpr [703,714]
+                    NameExpr [703,707]
+                        SimpleName: pool [703,707]
+                    SimpleName: size [708,712]
+    IfStmt [718,832]
+        BinaryExpr [722,730]
+            NameExpr [722,726]
+                SimpleName: size [722,726]
+            IntegerLiteralExpr: 0 [729,730]
+        BlockStmt [732,783]
+            ReturnStmt [737,766]
+                MethodCallExpr [744,765]
+                    NameExpr [744,748]
+                        SimpleName: pool [744,748]
+                    SimpleName: remove [749,755]
+                    BinaryExpr [756,764]
+                        NameExpr [756,760]
+                            SimpleName: size [756,760]
+                        IntegerLiteralExpr: 1 [763,764]
+        BlockStmt [789,832]
+            ReturnStmt [794,812]
+                ObjectCreationExpr [801,811]
+                    ClassOrInterfaceType [805,809]
+                        SimpleName: Pipe [805,809]
+to
+IfStmt [881,1243]
+at 1
+===
+insert-tree
+---
+BlockStmt [1071,1243]
+    ExpressionStmt [1076,1105]
+        VariableDeclarationExpr [1076,1104]
+            VariableDeclarator [1080,1104]
+                PrimitiveType: int [1076,1079]
+                SimpleName: size [1080,1084]
+                MethodCallExpr [1087,1104]
+                    NameExpr [1087,1097]
+                        SimpleName: movingPool [1087,1097]
+                    SimpleName: size [1098,1102]
+    IfStmt [1109,1239]
+        BinaryExpr [1113,1121]
+            NameExpr [1113,1117]
+                SimpleName: size [1113,1117]
+            IntegerLiteralExpr: 0 [1120,1121]
+        BlockStmt [1123,1182]
+            ReturnStmt [1129,1164]
+                MethodCallExpr [1136,1163]
+                    NameExpr [1136,1146]
+                        SimpleName: movingPool [1136,1146]
+                    SimpleName: remove [1147,1153]
+                    BinaryExpr [1154,1162]
+                        NameExpr [1154,1158]
+                            SimpleName: size [1154,1158]
+                        IntegerLiteralExpr: 1 [1161,1162]
+        BlockStmt [1188,1239]
+            ReturnStmt [1194,1218]
+                ObjectCreationExpr [1201,1217]
+                    ClassOrInterfaceType [1205,1215]
+                        SimpleName: MovingPipe [1205,1215]
+to
+IfStmt [881,1243]
+at 2
+===
+insert-tree
+---
+BinaryExpr [1349,1378]
+    MethodCallExpr [1349,1364]
+        NameExpr [1349,1353]
+            SimpleName: pipe [1349,1353]
+        SimpleName: getClass [1354,1362]
+    ClassExpr [1368,1378]
+        ClassOrInterfaceType [1368,1372]
+            SimpleName: Pipe [1368,1372]
+to
+IfStmt [1346,1547]
+at 0
+===
+move-tree
+---
+BlockStmt [920,986]
+    IfStmt [924,982]
+        BinaryExpr [928,956]
+            MethodCallExpr [928,939]
+                NameExpr [928,932]
+                    SimpleName: pool [928,932]
+                SimpleName: size [933,937]
+            NameExpr [942,956]
+                SimpleName: MAX_PIPE_COUNT [942,956]
+        BlockStmt [958,982]
+            ExpressionStmt [963,978]
+                MethodCallExpr [963,977]
+                    NameExpr [963,967]
+                        SimpleName: pool [963,967]
+                    SimpleName: add [968,971]
+                    NameExpr [972,976]
+                        SimpleName: pipe [972,976]
+to
+IfStmt [1346,1547]
+at 1
+===
+insert-tree
+---
+BlockStmt [1454,1547]
+    IfStmt [1459,1543]
+        BinaryExpr [1463,1497]
+            MethodCallExpr [1463,1480]
+                NameExpr [1463,1473]
+                    SimpleName: movingPool [1463,1473]
+                SimpleName: size [1474,1478]
+            NameExpr [1483,1497]
+                SimpleName: MAX_PIPE_COUNT [1483,1497]
+        BlockStmt [1499,1543]
+            ExpressionStmt [1505,1538]
+                MethodCallExpr [1505,1537]
+                    NameExpr [1505,1515]
+                        SimpleName: movingPool [1505,1515]
+                    SimpleName: add [1516,1519]
+                    CastExpr [1520,1536]
+                        ClassOrInterfaceType [1521,1531]
+                            SimpleName: MovingPipe [1521,1531]
+                        NameExpr [1532,1536]
+                            SimpleName: pipe [1532,1536]
+to
+IfStmt [1346,1547]
+at 2
+===
+insert-tree
+---
+ClassOrInterfaceType [265,269]
+    SimpleName: Pipe [265,269]
+to
+ClassOrInterfaceType [255,266]
+at 1

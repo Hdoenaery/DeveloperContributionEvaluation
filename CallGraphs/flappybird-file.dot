@@ -1,0 +1,66 @@
+// 0:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\app\App.java
+// 1:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\app\Game.java
+// 2:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\component\Bird.java
+// 3:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\component\Cloud.java
+// 4:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\component\GameBackground.java
+// 5:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\component\GameElementLayer.java
+// 6:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\component\GameForeground.java
+// 7:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\component\GameOverAnimation.java
+// 8:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\component\MovingPipe.java
+// 9:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\component\Pipe.java
+// 10:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\component\PipePool.java
+// 11:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\component\ScoreCounter.java
+// 12:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\component\WelcomeAnimation.java
+// 13:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\util\Constant.java
+// 14:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\util\GameUtil.java
+// 15:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\util\MusicUtil.java
+digraph
+{
+	7 -> 14;
+	1 -> 4;
+	1 -> 2;
+	1 -> 12;
+	7 -> 13;
+	1 -> 13;
+	6 -> 2;
+	6 -> 3;
+	4 -> 14;
+	4 -> 13;
+	10 -> 13;
+	5 -> 2;
+	12 -> 13;
+	1 -> 6;
+	1 -> 5;
+	5 -> 9;
+	2 -> 1;
+	11 -> 2;
+	8 -> 13;
+	7 -> 2;
+	11 -> 15;
+	2 -> 4;
+	2 -> 7;
+	11 -> 13;
+	10 -> 5;
+	3 -> 2;
+	8 -> 2;
+	5 -> 10;
+	5 -> 11;
+	5 -> 13;
+	5 -> 14;
+	2 -> 11;
+	10 -> 9;
+	10 -> 8;
+	2 -> 14;
+	2 -> 13;
+	2 -> 15;
+	12 -> 14;
+	9 -> 13;
+	9 -> 2;
+	8 -> 9;
+	4 -> 2;
+	0 -> 1;
+	3 -> 13;
+	9 -> 14;
+	6 -> 14;
+	6 -> 13;
+}

@@ -1,0 +1,14 @@
+===
+insert-tree
+---
+FieldDeclaration [501,548]
+    Modifier: public [501,507]
+    Modifier: static [508,514]
+    Modifier: final [515,520]
+    VariableDeclarator [525,547]
+        PrimitiveType: int [521,524]
+        SimpleName: HOVER_MOVING_SCORE [525,543]
+        IntegerLiteralExpr: 4 [546,547]
+to
+ClassOrInterfaceDeclaration [127,2766]
+at 8
