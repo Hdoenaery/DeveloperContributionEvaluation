@@ -1,0 +1,45 @@
+// 0:E:\IDEA\maven-project\DeveloperContributionEvaluation\src\main\java\com\zxc\ASTScoreCalculator.java(com.zxc.ASTScoreCalculator.EditType.EditType)
+// 1:E:\IDEA\maven-project\DeveloperContributionEvaluation\src\main\java\com\zxc\ASTScoreCalculator.java(com.zxc.ASTScoreCalculator.EditType.getWeight)
+// 2:E:\IDEA\maven-project\DeveloperContributionEvaluation\src\main\java\com\zxc\ASTScoreCalculator.java(com.zxc.ASTScoreCalculator.calculateASTScore)
+// 3:E:\IDEA\maven-project\DeveloperContributionEvaluation\src\main\java\com\zxc\ASTScoreCalculator.java(com.zxc.ASTScoreCalculator.calculateTotalASTScore)
+// 4:E:\IDEA\maven-project\DeveloperContributionEvaluation\src\main\java\com\zxc\ASTScoreCalculator.java(com.zxc.ASTScoreCalculator.isSimpleNameOrModifierChange)
+// 5:E:\IDEA\maven-project\DeveloperContributionEvaluation\src\main\java\com\zxc\CallGraph.java(com.zxc.CallGraph.executeCmdCommand)
+// 6:E:\IDEA\maven-project\DeveloperContributionEvaluation\src\main\java\com\zxc\CallGraph.java(com.zxc.CallGraph.getCallGraph)
+// 7:E:\IDEA\maven-project\DeveloperContributionEvaluation\src\main\java\com\zxc\CallGraph.java(com.zxc.CallGraph.getNodeMapping)
+// 8:E:\IDEA\maven-project\DeveloperContributionEvaluation\src\main\java\com\zxc\Demo.java(com.zxc.Demo.say)
+// 9:E:\IDEA\maven-project\DeveloperContributionEvaluation\src\main\java\com\zxc\Main.java(com.zxc.Main.computeEditScript)
+// 10:E:\IDEA\maven-project\DeveloperContributionEvaluation\src\main\java\com\zxc\Main.java(com.zxc.Main.executeGitCommand)
+// 11:E:\IDEA\maven-project\DeveloperContributionEvaluation\src\main\java\com\zxc\Main.java(com.zxc.Main.fileExistsInCommit)
+// 12:E:\IDEA\maven-project\DeveloperContributionEvaluation\src\main\java\com\zxc\Main.java(com.zxc.Main.getASTFromFile)
+// 13:E:\IDEA\maven-project\DeveloperContributionEvaluation\src\main\java\com\zxc\Main.java(com.zxc.Main.getAllCommitHashes)
+// 14:E:\IDEA\maven-project\DeveloperContributionEvaluation\src\main\java\com\zxc\Main.java(com.zxc.Main.getChangedJavaFiles)
+// 15:E:\IDEA\maven-project\DeveloperContributionEvaluation\src\main\java\com\zxc\Main.java(com.zxc.Main.getEditScriptsBetweenCommits)
+// 16:E:\IDEA\maven-project\DeveloperContributionEvaluation\src\main\java\com\zxc\Main.java(com.zxc.Main.getFileContentAtCommit)
+// 17:E:\IDEA\maven-project\DeveloperContributionEvaluation\src\main\java\com\zxc\Main.java(com.zxc.Main.gumtreeSpoonASTDiff)
+// 18:E:\IDEA\maven-project\DeveloperContributionEvaluation\src\main\java\com\zxc\Main.java(com.zxc.Main.listJavaFiles)
+// 19:E:\IDEA\maven-project\DeveloperContributionEvaluation\src\main\java\com\zxc\Main.java(com.zxc.Main.main)
+// 20:E:\IDEA\maven-project\DeveloperContributionEvaluation\src\main\java\com\zxc\Main.java(com.zxc.Main.readFile)
+// 21:E:\IDEA\maven-project\DeveloperContributionEvaluation\src\main\java\com\zxc\Main.java(com.zxc.Main.writeEditScriptToFile)
+// 22:E:\IDEA\maven-project\DeveloperContributionEvaluation\src\main\java\com\zxc\Main.java(com.zxc.Main.writeStringToFile)
+// 23:E:\IDEA\maven-project\DeveloperContributionEvaluation\src\main\java\com\zxc\Test1.java(com.zxc.Test1.foo)
+// 24:E:\IDEA\maven-project\DeveloperContributionEvaluation\src\main\java\com\zxc\Test2.java(com.zxc.Test2.foo)
+// 25:E:\IDEA\maven-project\DeveloperContributionEvaluation\src\main\java\com\zxc\Test3.java(com.zxc.Test3.abc)
+// 26:E:\IDEA\maven-project\DeveloperContributionEvaluation\src\main\java\com\zxc\Test3.java(com.zxc.Test3.foo)
+digraph
+{
+	15 -> 9;
+	6 -> 5;
+	11 -> 10;
+	3 -> 2;
+	15 -> 22;
+	15 -> 14;
+	15 -> 16;
+	2 -> 1;
+	19 -> 7;
+	19 -> 6;
+	9 -> 21;
+	19 -> 13;
+	2 -> 4;
+	16 -> 10;
+	16 -> 11;
+}
