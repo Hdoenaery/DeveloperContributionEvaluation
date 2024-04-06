@@ -1,0 +1,24 @@
+// 0:E:\Postgraduate_study\fastjson\src\main\java\com\alibaba\fastjson\JSON.java
+// 1:E:\Postgraduate_study\fastjson\src\main\java\com\alibaba\fastjson\JSONArray.java
+// 2:E:\Postgraduate_study\fastjson\src\main\java\com\alibaba\fastjson\JSONAware.java
+// 3:E:\Postgraduate_study\fastjson\src\main\java\com\alibaba\fastjson\JSONException.java
+// 4:E:\Postgraduate_study\fastjson\src\main\java\com\alibaba\fastjson\JSONObject.java
+// 5:E:\Postgraduate_study\fastjson\src\main\java\com\alibaba\fastjson\JSONPObject.java
+// 6:E:\Postgraduate_study\fastjson\src\main\java\com\alibaba\fastjson\JSONPatch.java
+// 7:E:\Postgraduate_study\fastjson\src\main\java\com\alibaba\fastjson\JSONPatch2.java
+// 8:E:\Postgraduate_study\fastjson\src\main\java\com\alibaba\fastjson\JSONPatch3.java
+// 9:E:\Postgraduate_study\fastjson\src\main\java\com\alibaba\fastjson\JSONPatch4.java
+digraph
+{
+0 -> 1;
+0 -> 2;
+0 -> 3;
+1 -> 8;
+2 -> 8;
+3 -> 4;
+4 -> 8;
+5 -> 8;
+8 -> 5;
+8 -> 6;
+8 -> 7;
+}

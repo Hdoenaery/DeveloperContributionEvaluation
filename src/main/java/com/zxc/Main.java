@@ -16,14 +16,13 @@ import gumtree.spoon.diff.DiffConfiguration;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String args[]) throws Exception {
         String gitDirectory = "E:/Postgraduate_study/FlappyBird";
+        Tool tool = new Tool();
 
         List<String> commits = getAllCommitHashes(gitDirectory);//传入 Git 项目的目录路径，获取该项目所有的commit版本
 
@@ -33,16 +32,13 @@ public class Main {
 //        getASTFromFile(file1);
 //        computeEditScript(file1, file2, "", "");
 //        gumtreeSpoonASTDiff(file, file2);
-//        readFile();
+//        readEditScriptFile();
 
         String newCommit = commits.get(commits.size()-3);
         String oldCommit = commits.get(commits.size()-2);
 
-//        System.out.println(executeGitCommand(gitDirectory, new String[]{"git", "diff", oldCommit, newCommit}));
-        List<String> changedMethods = getChangedMethodsBetweenCommits(gitDirectory, oldCommit, newCommit);
-        for (String method : changedMethods) {
-            System.out.println(method);
-        }
+//        System.out.println(tool.executeGitCommand(gitDirectory, new String[]{"git", "diff", "-U50", oldCommit, newCommit}));
+
 //        System.out.println("oldCommit = " + oldCommit);
 //        System.out.println("newCommit = " + newCommit);
 //        String newCommit = "e161fcd62a4a75121bd22773e2cdbf2867a16225";
@@ -61,87 +57,57 @@ public class Main {
 
         CallGraph callGraph = new CallGraph();
         String analyzedDirectory = "E:\\Postgraduate_study\\FlappyBird\\src\\main\\java\\com\\kingyu\\flappybird";
-//        callGraph.getCallGraph(analyzedDirectory); //获取该项目的调用图
+        String outputFormat = "dot";
+        String granularity = "method";
+//        callGraph.getCallGraph(analyzedDirectory, outputFormat, granularity); //获取该项目的调用图
 
         int lastSlashIndex = analyzedDirectory.lastIndexOf("\\");
-        String callGraphName = analyzedDirectory.substring(lastSlashIndex + 1) + "-file.dot";
-        callGraphName = "DeveloperContributionEvaluationMethod-method.dot";
+        String callGraphName = analyzedDirectory.substring(lastSlashIndex + 1) + "-" + granularity + "." + outputFormat;
         String callGraphPath = "DeveloperContributionEvaluation/CallGraphs/" + callGraphName;
 
+        String callGraphPathTest = "DeveloperContributionEvaluation/CallGraphs/test2.dot";
+
         Map<Integer, List<Integer>> graphC = callGraph.buildGraph(callGraphPath);//根据调用图生成邻接表
-        System.out.println(graphC);
-        Map<Integer, Double> mapPr = new HashMap<>();
-        for (int i = 0; i < 27; i++) {
-            if(graphC.containsKey(i))
-                mapPr.put(i, 1.0);
-            else
-                mapPr.put(i, 0.0);
-        }
-        Map<Integer, Double> weight = callGraph.measureInterFunctionInteraction(graphC, mapPr, 1);
+//        System.out.println(graphC);
 
-        for (Map.Entry<Integer, Double> entry : weight.entrySet()) {
-            System.out.println("Node " + entry.getKey() + ": " + entry.getValue());
+        Map<Integer, Double> mapPr = callGraph.getPageRank(graphC);
+//        System.out.println(mapPr);
+        double sum = 0;
+        for(Double i:mapPr.values()) {
+            sum += i;
         }
+//        System.out.println("sum = " + sum);
 
-        //获取项目中每个文件所对应的节点编号
-//        Map<String, Integer> fileToNodeMap = callGraph.getNodeFileMapping("DeveloperContributionEvaluation/CallGraphs/" + callGraphName);
-//        for (String key : fileToNodeMap.keySet()) {
-//            System.out.println("Key: " + key + ", Value: " + fileToNodeMap.get(key)); //输出键值对验证是否正确
+//        System.out.println("gtaphC.size() = " + graphC.size());
+
+        Map<Integer, Double> nodeWeight = callGraph.measureInterFunctionInteraction(graphC, mapPr, 1);
+
+//        for (Map.Entry<Integer, Double> entry : nodeWeight.entrySet()) {
+//            System.out.println("Node " + entry.getKey() + ": weight = " + entry.getValue());
 //        }
+
+        //获取项目中每个函数在调用图中所对应的节点编号
+        Map<String, Integer> functionToNodeMap = callGraph.getNodeMapping("DeveloperContributionEvaluation/CallGraphs/" + callGraphName);
+//        for (String key : functionToNodeMap.keySet()) {
+//            System.out.println("functionName: " + key + "\nNode: " + functionToNodeMap.get(key)); //输出键值对验证是否正确
+//        }
+
+//        以上计算调用图中各节点的权重
+//        ------------------------------------------------------------------------------------------------------------------------------------
+
+        getChangedJavaFiles(gitDirectory, oldCommit, newCommit);
+        System.out.println("\nMethods is below:");
+
+        List<String> changedMethods = tool.getChangedMethods(gitDirectory, oldCommit, newCommit);
+        for (String method : changedMethods) {
+            System.out.println(method);
+        }
+
 
 
     }
 
-    public static List<String> getChangedMethodsBetweenCommits(String repoPath, String oldCommit, String newCommit) {
-        List<String> changedMethods = new ArrayList<>();
 
-        // 执行 git diff 命令获取两个 commit 之间的差异
-        String []gitDiffCommand = new String[]{"git", "diff", oldCommit, newCommit};
-        String diffOutput = executeGitCommand(repoPath, gitDiffCommand);
-//        System.out.println(diffOutput);
-        // 使用正则表达式匹配方法的定义或修改
-        Pattern pattern = Pattern.compile("^\\+\\s*(?:public\\s+|protected\\s+|private\\s+)?(?:static\\s+)?(?:synchronized\\s+)?(?:final\\s+)?(?:\\w+\\s+)*(\\w+)\\s*(?:<[^>]+>)?\\s+(\\w+)\\s*\\(.*\\)\\s*\\{");
-        java.util.regex.Matcher matcher = pattern.matcher(diffOutput);
-        while (matcher.find()) {
-            System.out.println(123465);
-            String methodName = matcher.group(2);
-            String methodSignature = matcher.group(1) + " " + matcher.group(2);
-            changedMethods.add(methodSignature);
-        }
-
-
-//        // 解析 diff 输出，提取有变更的 Java 函数
-//        if (diffOutput != null) {
-//            // 将 diff 输出按行分割
-//            String[] diffLines = diffOutput.split("\\r?\\n");
-//            boolean inJavaFileSection = false;
-//            StringBuilder changedMethodBuilder = new StringBuilder();
-//            for (String line : diffLines) {
-//                if (line.startsWith("diff --git")) {
-//                    // 进入 Java 文件区域
-//                    if (line.endsWith(".java")) {
-//                        inJavaFileSection = true;
-//                        changedMethodBuilder.setLength(0); // 清空之前的缓存
-//                        changedMethodBuilder.append(line).append("\n");
-//                    } else {
-//                        inJavaFileSection = false;
-//                    }
-//                } else if (inJavaFileSection) {
-//                    // 在 Java 文件区域内，添加每行内容到缓存
-//                    changedMethodBuilder.append(line).append("\n");
-//                }
-//                // 提取方法名
-//                if (line.startsWith("@@")) {
-//                    String methodHeader = extractMethodHeader(line);
-//                    if (methodHeader != null) {
-//                        changedMethods.add(methodHeader);
-//                    }
-//                }
-//            }
-//        }
-
-        return changedMethods;
-    }
 
     //生成两个commit之间有变化的.java文件之间的编辑脚本
     public static void getEditScriptsBetweenCommits(String gitDirectory, String newCommit, String oldCommit) throws IOException {
@@ -201,7 +167,7 @@ public class Main {
     // 检查文件是否存在于提交中
     public static boolean fileExistsInCommit(String gitDirectory, String fileNameLong, String commitHash) {
         String[] command = {"git", "ls-tree", "--name-only", "-r", commitHash};
-        String filesInCommit = executeGitCommand(gitDirectory, command);
+        String filesInCommit = new Tool().executeGitCommand(gitDirectory, command);
         return filesInCommit.contains(fileNameLong);
     }
 
@@ -217,9 +183,10 @@ public class Main {
         }
 //        System.out.println("成功获取该文件的内容：" + fileName);
         String[] command = {"git", "show", commitHash + ":" + fileNameLong};
-        String fileContent = executeGitCommand(gitDirectory, command);
+        String fileContent = Tool.executeGitCommand(gitDirectory, command);
         return fileContent;
     }
+
     //获取项目所有commit的版本号
     public static List<String> getAllCommitHashes(String gitDirectory) {
         List<String> commitHashes = new ArrayList<>();
@@ -286,39 +253,6 @@ public class Main {
         return changedFiles;
     }
 
-    //用于在特定目录中执行git命令，如executeGitCommand(gitDirectory, new String[]{"git", "log"});
-    public static String executeGitCommand(String gitDirectory, String[] command) {
-
-        StringBuilder output = new StringBuilder();
-
-        try {
-            // 创建 ProcessBuilder 对象，指定命令
-            ProcessBuilder builder = new ProcessBuilder(command);
-            builder.directory(new File(gitDirectory)); //设置命令工作目录
-            builder.redirectErrorStream(true); // 合并标准输出和错误输出流
-
-            // 启动进程
-            Process process = builder.start();
-
-            // 读取命令输出
-            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-            String line;
-            while ((line = reader.readLine()) != null) {
-                output.append(line).append("\n");
-//                System.out.println(line); // 输出命令输出
-            }
-
-            // 等待命令执行完成
-            int exitCode = process.waitFor();
-            if (exitCode != 0) {
-                System.err.println("命令执行失败，返回码：" + exitCode);
-            }
-        } catch (IOException | InterruptedException e) {
-            e.printStackTrace();
-        }
-        return output.toString();
-    }
-
     //列出一个文件夹下的所有.java文件
     public static void listJavaFiles(File folder) throws Exception {
         // 检查文件夹是否存在
@@ -344,7 +278,7 @@ public class Main {
     }
 
     //读文件，用于读取编辑脚本文件
-    public static void readFile()throws IOException{
+    public static void readEditScriptFile(String s)throws IOException{
         try (RandomAccessFile raf = new RandomAccessFile("E:/IDEA/maven-project/DeveloperContributionEvaluation/src/main/java/com/zxc/Test1.java", "r")) {
 //            System.out.println("Initial position: " + raf.getFilePointer());  // 初始位置
 

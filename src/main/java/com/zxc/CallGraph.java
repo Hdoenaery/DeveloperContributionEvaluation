@@ -1,14 +1,12 @@
 package com.zxc;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class CallGraph {
 
 
+    //衡量函数间影响
     public Map<Integer, Double> measureInterFunctionInteraction (Map<Integer, List<Integer>> graphC, Map<Integer, Double> mapPr, double decay) {
         Map<Integer, Double> mapOut = new HashMap<>();
         Map<Integer, Double> mapTmp = new HashMap<>();
@@ -28,10 +26,10 @@ public class CallGraph {
 
     private void process(Integer node, Map<Integer, List<Integer>> graphC, Map<Integer, Double> mapPr, Map<Integer, Double> mapTmp, double decay) {
         mapTmp.put(node, 0.0);
-        System.out.println(node);
-        System.out.println(graphC.get(node));
+//        System.out.println(node);
+//        System.out.println(graphC.get(node));
         if (graphC.get(node).isEmpty()) {
-            System.out.println("mapPr.get(node) = " + mapPr.get(node));
+//            System.out.println("mapPr.get(node) = " + mapPr.get(node));
             mapTmp.put(node, mapPr.get(node));//新值覆盖旧值
             return;
         }
@@ -40,10 +38,56 @@ public class CallGraph {
             if (!mapTmp.containsKey(child)) {
                 process(child, graphC, mapPr, mapTmp, decay);
             }
-            System.out.println("node = " + node);
             mapTmp.put(node, mapTmp.get(node) + mapTmp.get(child) * decay);
         }
     }
+
+
+    // 传入有向图，获取每个节点的PageRank值
+    public static Map<Integer, Double> getPageRank(Map<Integer, List<Integer>> graphC) {
+        // 初始化每个节点的PageRank值为1.0
+        Map<Integer, Double> pageRank = new HashMap<>();
+        for (Integer node : graphC.keySet()) {
+            pageRank.put(node, 1.0);
+        }
+
+        // 设置迭代次数和阻尼因子
+        int iterations = 100;// 迭代次数
+        double dampingFactor = 0.85;// 阻尼因子，一般取0.85
+
+        double sum = 0;
+
+        // 开始迭代计算PageRank值
+        for (int i = 0; i < iterations; i++) {
+            Map<Integer, Double> newPageRank = new HashMap<>();
+            sum = 0;
+            // 遍历每个节点
+            for (Integer node : graphC.keySet()) {
+                double rank = (1 - dampingFactor); // 初始化PageRank值
+
+                // 遍历所有指向node的节点
+                for (Integer incomingNode : graphC.keySet()) {
+                    if (graphC.get(incomingNode).contains(node)) {
+                        int outgoingLinks = graphC.get(incomingNode).size();//求指向node
+                        rank += dampingFactor * (pageRank.get(incomingNode) / outgoingLinks);
+                    }
+                }
+                newPageRank.put(node, rank);
+                sum += rank;
+            }
+
+            // 更新PageRank值
+            pageRank = newPageRank;
+        }
+
+//        System.out.println(sum);
+        for(Integer node : pageRank.keySet()){
+//            System.out.println(pageRank.get(node) / sum);
+            pageRank.replace(node, pageRank.get(node) / sum);
+        }
+        return pageRank;
+    }
+
     //解析调用图.dot文件，构建邻接表存图
     public static Map<Integer, List<Integer>> buildGraph(String callGraphPath) {
         Map<Integer, List<Integer>> adjacencyList = new HashMap<>();
@@ -83,8 +127,8 @@ public class CallGraph {
         return adjacencyList;
     }
 
-    //传入调用图以获得每个文件与它所对应的节点编号的映射Map
-    public static Map<String, Integer> getNodeFileMapping(String callGraphPath) {
+    //传入调用图以获得每个函数与它所对应的节点编号的映射Map
+    public static Map<String, Integer> getNodeMapping(String callGraphPath) {
         Map<String, Integer> fileToNodeMap = new HashMap<>();
 
         try (BufferedReader reader = new BufferedReader(new FileReader(callGraphPath))) {
@@ -105,16 +149,15 @@ public class CallGraph {
 
         return fileToNodeMap;
     }
-    //传入调用图以获得各个节点的得分
 
     //传入项目源代码路径以获取该项目的调用图
-    public static void getCallGraph(String src){
+    public static void getCallGraph(String src, String outputFormat, String granularity){
 
         String outputDirectory = "E:\\IDEA\\maven-project\\DeveloperContributionEvaluation\\CallGraphs";
         int lastSlashIndex = src.lastIndexOf("\\");
         String fileName = src.substring(lastSlashIndex + 1); //从文件路径中提取出文件名
 //        System.out.println("filename = " + fileName);
-        String command = "depends -f dot -d " + outputDirectory +
+        String command = "depends -f " + outputFormat + " -g " + granularity + " -d " + outputDirectory +
                 " java " + src + " " + fileName;
 //        System.out.println(command);
         executeCmdCommand("E:/Postgraduate_study/depends-0.9.7", command);
@@ -139,7 +182,7 @@ public class CallGraph {
             BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
             String line;
             while ((line = reader.readLine()) != null) {
-                System.out.println(line);//输出命令执行结果
+//                System.out.println(line);//输出命令执行结果
             }
 
             // 等待命令执行完成
