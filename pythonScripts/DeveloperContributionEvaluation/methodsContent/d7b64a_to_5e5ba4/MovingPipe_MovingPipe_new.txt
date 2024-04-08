@@ -1,0 +1,3 @@
+	public MovingPipe() {
+		super();
+	}

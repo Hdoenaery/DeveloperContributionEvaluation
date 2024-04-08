@@ -6,7 +6,9 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Tool {
 
@@ -14,7 +16,8 @@ public class Tool {
     public static List<String> getChangedMethods(String gitDirectory, String oldCommit, String newCommit) {
 //        String diffContent = executeGitCommand(gitDirectory, new String[]{"git", "diff", "-U50", oldCommit, newCommit});
         List<String> changedMethods = new ArrayList<>();
-
+        Map<String, Integer> LOC = new HashMap<>();
+        Map<String, Integer> CC = new HashMap<>();
         try {
             // 创建 ProcessBuilder 对象来启动 Python 进程
 //            ProcessBuilder processBuilder = new ProcessBuilder("python", "-c",
@@ -31,8 +34,12 @@ public class Tool {
             // 读取 Python 进程的输出
             BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
             String line;
+            int cnt = 0;
             while ((line = reader.readLine()) != null) {
-                changedMethods.add(line);
+                cnt++;
+                if(cnt % 5 == 1) {
+                    changedMethods.add(line);
+                }
             }
 
             // 等待 Python 进程退出，并获取退出代码

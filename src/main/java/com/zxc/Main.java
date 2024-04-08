@@ -16,6 +16,7 @@ import gumtree.spoon.diff.DiffConfiguration;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -95,14 +96,29 @@ public class Main {
 //        以上计算调用图中各节点的权重
 //        ------------------------------------------------------------------------------------------------------------------------------------
 
+        ComplexityCalculator complexityCalculator = new ComplexityCalculator();
         getChangedJavaFiles(gitDirectory, oldCommit, newCommit);
         System.out.println("\nMethods is below:");
 
-        List<String> changedMethods = tool.getChangedMethods(gitDirectory, oldCommit, newCommit);
+        complexityCalculator.getChangedMethods_LOC_CC(gitDirectory, oldCommit, newCommit);
+        List<String> changedMethods = complexityCalculator.getChangedMethods();
+        Map<String, Integer> LOC = complexityCalculator.getLOC();
+        Map<String, Integer> CC = complexityCalculator.getCC();
+        Map<String, Double> HV = complexityCalculator.getHV();
+        Map<String, Double> PCom = complexityCalculator.getPCom();
+        Map<String, Double> CM = new HashMap<>();
+
+//        List<String> changedMethods = tool.getChangedMethods(gitDirectory, oldCommit, newCommit);
         for (String method : changedMethods) {
+            CM.put(method, (LOC.get(method) + CC.get(method) + HV.get(method) - PCom.get(method)) / 2 + 1);
             System.out.println(method);
+            System.out.println("LOC = " + LOC.get(method) + ", CC = " + CC.get(method) +
+                    ", HV = " + HV.get(method) + ", PCom = " + PCom.get(method) + ", CM = " + CM.get(method));
+
         }
 
+//        以上计算各修改函数的复杂性度量(提取了各修改函数的内容)
+//        ------------------------------------------------------------------------------------------------------------------------------------
 
 
     }
