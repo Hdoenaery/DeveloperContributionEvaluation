@@ -1,0 +1,63 @@
+digraph "saveBestTime" {  
+"150" [label = <(METHOD,saveBestTime)<SUB>55</SUB>> ]
+"185" [label = <(METHOD_RETURN,void)<SUB>55</SUB>> ]
+"151" [label = <(PARAM,this)<SUB>55</SUB>> ]
+"152" [label = <(PARAM,long time)<SUB>55</SUB>> ]
+"155" [label = <(&lt;operator&gt;.assignment,File file = new File(Constant.SCORE_FILE_PATH))<SUB>56</SUB>> ]
+"158" [label = <(&lt;init&gt;,new File(Constant.SCORE_FILE_PATH))<SUB>56</SUB>> ]
+"164" [label = <(&lt;operator&gt;.assignment,DataOutputStream dos = new DataOutputStream(new...)<SUB>57</SUB>> ]
+"167" [label = <(&lt;init&gt;,new DataOutputStream(new FileOutputStream(file)))<SUB>57</SUB>> ]
+"178" [label = <(writeLong,dos.writeLong(time))<SUB>58</SUB>> ]
+"181" [label = <(close,dos.close())<SUB>59</SUB>> ]
+"155" [label = <(&lt;operator&gt;.assignment,File file = new File(Constant.SCORE_FILE_PATH))<SUB>56</SUB>> ]
+"155" [label = <(&lt;operator&gt;.assignment,File file = new File(Constant.SCORE_FILE_PATH))<SUB>56</SUB>> ]
+"158" [label = <(&lt;init&gt;,new File(Constant.SCORE_FILE_PATH))<SUB>56</SUB>> ]
+"158" [label = <(&lt;init&gt;,new File(Constant.SCORE_FILE_PATH))<SUB>56</SUB>> ]
+"164" [label = <(&lt;operator&gt;.assignment,DataOutputStream dos = new DataOutputStream(new...)<SUB>57</SUB>> ]
+"164" [label = <(&lt;operator&gt;.assignment,DataOutputStream dos = new DataOutputStream(new...)<SUB>57</SUB>> ]
+"167" [label = <(&lt;init&gt;,new DataOutputStream(new FileOutputStream(file)))<SUB>57</SUB>> ]
+"167" [label = <(&lt;init&gt;,new DataOutputStream(new FileOutputStream(file)))<SUB>57</SUB>> ]
+"178" [label = <(writeLong,dos.writeLong(time))<SUB>58</SUB>> ]
+"178" [label = <(writeLong,dos.writeLong(time))<SUB>58</SUB>> ]
+"181" [label = <(close,dos.close())<SUB>59</SUB>> ]
+"171" [label = <(&lt;operator&gt;.assignment,$obj1 = new FileOutputStream(file))<SUB>57</SUB>> ]
+"174" [label = <(&lt;init&gt;,new FileOutputStream(file))<SUB>57</SUB>> ]
+"177" [label = <(IDENTIFIER,$obj1,&lt;empty&gt;)<SUB>57</SUB>> ]
+"171" [label = <(&lt;operator&gt;.assignment,$obj1 = new FileOutputStream(file))<SUB>57</SUB>> ]
+"171" [label = <(&lt;operator&gt;.assignment,$obj1 = new FileOutputStream(file))<SUB>57</SUB>> ]
+"174" [label = <(&lt;init&gt;,new FileOutputStream(file))<SUB>57</SUB>> ]
+"174" [label = <(&lt;init&gt;,new FileOutputStream(file))<SUB>57</SUB>> ]
+  "151" -> "185"  [ label = "this"] 
+  "155" -> "185"  [ label = "File file = new File(Constant.SCORE_FILE_PATH)"] 
+  "158" -> "185"  [ label = "Constant.SCORE_FILE_PATH"] 
+  "158" -> "185"  [ label = "new File(Constant.SCORE_FILE_PATH)"] 
+  "164" -> "185"  [ label = "DataOutputStream dos = new DataOutputStream(new FileOutputStream(file))"] 
+  "171" -> "185"  [ label = "$obj1 = new FileOutputStream(file)"] 
+  "174" -> "185"  [ label = "$obj1"] 
+  "174" -> "185"  [ label = "file"] 
+  "174" -> "185"  [ label = "new FileOutputStream(file)"] 
+  "167" -> "185"  [ label = "new DataOutputStream(new FileOutputStream(file))"] 
+  "178" -> "185"  [ label = "time"] 
+  "178" -> "185"  [ label = "dos.writeLong(time)"] 
+  "181" -> "185"  [ label = "dos"] 
+  "181" -> "185"  [ label = "dos.close()"] 
+  "150" -> "151" 
+  "150" -> "152" 
+  "150" -> "155" 
+  "150" -> "164" 
+  "155" -> "158"  [ label = "file"] 
+  "150" -> "158" 
+  "164" -> "167"  [ label = "dos"] 
+  "150" -> "167" 
+  "174" -> "167"  [ label = "$obj1"] 
+  "167" -> "178"  [ label = "dos"] 
+  "150" -> "178" 
+  "152" -> "178"  [ label = "time"] 
+  "178" -> "181"  [ label = "dos"] 
+  "150" -> "181" 
+  "150" -> "171" 
+  "150" -> "177" 
+  "171" -> "174"  [ label = "$obj1"] 
+  "150" -> "174" 
+  "158" -> "174"  [ label = "file"] 
+}

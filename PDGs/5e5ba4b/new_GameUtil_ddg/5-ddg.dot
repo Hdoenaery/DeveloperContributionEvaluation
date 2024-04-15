@@ -1,0 +1,67 @@
+digraph "getStringHeight" {  
+"142" [label = <(METHOD,getStringHeight)<SUB>79</SUB>> ]
+"175" [label = <(METHOD_RETURN,int)<SUB>79</SUB>> ]
+"143" [label = <(PARAM,Font font)<SUB>79</SUB>> ]
+"144" [label = <(PARAM,String str)<SUB>79</SUB>> ]
+"147" [label = <(&lt;operator&gt;.assignment,AffineTransform affinetransform = new AffineTra...)<SUB>80</SUB>> ]
+"150" [label = <(&lt;init&gt;,new AffineTransform())<SUB>80</SUB>> ]
+"153" [label = <(&lt;operator&gt;.assignment,FontRenderContext frc = new FontRenderContext(a...)<SUB>81</SUB>> ]
+"156" [label = <(&lt;init&gt;,new FontRenderContext(affinetransform, true, true))<SUB>81</SUB>> ]
+"162" [label = <(&lt;operator&gt;.assignment,int textHeight = (int) (font.getStringBounds(st...)<SUB>82</SUB>> ]
+"171" [label = <(RETURN,return textHeight;,return textHeight;)<SUB>83</SUB>> ]
+"147" [label = <(&lt;operator&gt;.assignment,AffineTransform affinetransform = new AffineTra...)<SUB>80</SUB>> ]
+"147" [label = <(&lt;operator&gt;.assignment,AffineTransform affinetransform = new AffineTra...)<SUB>80</SUB>> ]
+"150" [label = <(&lt;init&gt;,new AffineTransform())<SUB>80</SUB>> ]
+"153" [label = <(&lt;operator&gt;.assignment,FontRenderContext frc = new FontRenderContext(a...)<SUB>81</SUB>> ]
+"153" [label = <(&lt;operator&gt;.assignment,FontRenderContext frc = new FontRenderContext(a...)<SUB>81</SUB>> ]
+"156" [label = <(&lt;init&gt;,new FontRenderContext(affinetransform, true, true))<SUB>81</SUB>> ]
+"156" [label = <(&lt;init&gt;,new FontRenderContext(affinetransform, true, true))<SUB>81</SUB>> ]
+"156" [label = <(&lt;init&gt;,new FontRenderContext(affinetransform, true, true))<SUB>81</SUB>> ]
+"156" [label = <(&lt;init&gt;,new FontRenderContext(affinetransform, true, true))<SUB>81</SUB>> ]
+"162" [label = <(&lt;operator&gt;.assignment,int textHeight = (int) (font.getStringBounds(st...)<SUB>82</SUB>> ]
+"162" [label = <(&lt;operator&gt;.assignment,int textHeight = (int) (font.getStringBounds(st...)<SUB>82</SUB>> ]
+"172" [label = <(IDENTIFIER,textHeight,return textHeight;)<SUB>83</SUB>> ]
+"164" [label = <(&lt;operator&gt;.cast,(int) (font.getStringBounds(str, frc).getHeight()))<SUB>82</SUB>> ]
+"164" [label = <(&lt;operator&gt;.cast,(int) (font.getStringBounds(str, frc).getHeight()))<SUB>82</SUB>> ]
+"166" [label = <(getHeight,font.getStringBounds(str, frc).getHeight())<SUB>82</SUB>> ]
+"167" [label = <(getStringBounds,font.getStringBounds(str, frc))<SUB>82</SUB>> ]
+"167" [label = <(getStringBounds,font.getStringBounds(str, frc))<SUB>82</SUB>> ]
+"167" [label = <(getStringBounds,font.getStringBounds(str, frc))<SUB>82</SUB>> ]
+  "171" -> "175"  [ label = "&lt;RET&gt;"] 
+  "147" -> "175"  [ label = "AffineTransform affinetransform = new AffineTransform()"] 
+  "150" -> "175"  [ label = "new AffineTransform()"] 
+  "153" -> "175"  [ label = "FontRenderContext frc = new FontRenderContext(affinetransform, true, true)"] 
+  "156" -> "175"  [ label = "affinetransform"] 
+  "156" -> "175"  [ label = "new FontRenderContext(affinetransform, true, true)"] 
+  "162" -> "175"  [ label = "textHeight"] 
+  "167" -> "175"  [ label = "font"] 
+  "167" -> "175"  [ label = "str"] 
+  "167" -> "175"  [ label = "frc"] 
+  "166" -> "175"  [ label = "font.getStringBounds(str, frc)"] 
+  "164" -> "175"  [ label = "font.getStringBounds(str, frc).getHeight()"] 
+  "162" -> "175"  [ label = "(int) (font.getStringBounds(str, frc).getHeight())"] 
+  "162" -> "175"  [ label = "int textHeight = (int) (font.getStringBounds(str, frc).getHeight())"] 
+  "142" -> "143" 
+  "142" -> "144" 
+  "142" -> "147" 
+  "142" -> "153" 
+  "142" -> "162" 
+  "166" -> "162"  [ label = "font.getStringBounds(str, frc)"] 
+  "172" -> "171"  [ label = "textHeight"] 
+  "147" -> "150"  [ label = "affinetransform"] 
+  "142" -> "150" 
+  "153" -> "156"  [ label = "frc"] 
+  "142" -> "156" 
+  "150" -> "156"  [ label = "affinetransform"] 
+  "162" -> "172"  [ label = "textHeight"] 
+  "142" -> "172" 
+  "142" -> "164" 
+  "166" -> "164"  [ label = "font.getStringBounds(str, frc)"] 
+  "167" -> "166"  [ label = "font"] 
+  "167" -> "166"  [ label = "str"] 
+  "167" -> "166"  [ label = "frc"] 
+  "143" -> "167"  [ label = "font"] 
+  "142" -> "167" 
+  "144" -> "167"  [ label = "str"] 
+  "156" -> "167"  [ label = "frc"] 
+}

@@ -1,0 +1,10 @@
+digraph "getMetrics" {  
+"266" [label = <(METHOD,getMetrics)> ]
+"270" [label = <(METHOD_RETURN,ANY)> ]
+"267" [label = <(PARAM,p1)> ]
+"268" [label = <(PARAM,p2)> ]
+  "267" -> "270"  [ label = "p1"] 
+  "268" -> "270"  [ label = "p2"] 
+  "266" -> "267" 
+  "266" -> "268" 
+}

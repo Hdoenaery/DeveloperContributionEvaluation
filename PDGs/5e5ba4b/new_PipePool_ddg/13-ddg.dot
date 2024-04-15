@@ -1,0 +1,10 @@
+digraph "size" {  
+"286" [label = <(METHOD,size)> ]
+"290" [label = <(METHOD_RETURN,ANY)> ]
+"287" [label = <(PARAM,p0)> ]
+"288" [label = <(PARAM,p1)> ]
+  "287" -> "290"  [ label = "p0"] 
+  "288" -> "290"  [ label = "p1"] 
+  "286" -> "287" 
+  "286" -> "288" 
+}

@@ -1,0 +1,12 @@
+digraph "&lt;init&gt;" {  
+"47" [label = <(METHOD,&lt;init&gt;)<SUB>24</SUB>> ]
+"51" [label = <(METHOD_RETURN,void)<SUB>26</SUB>> ]
+"23" [label = <(PARAM,this)<SUB>24</SUB>> ]
+"24" [label = <(&lt;init&gt;,super();)<SUB>25</SUB>> ]
+"24" [label = <(&lt;init&gt;,super();)<SUB>25</SUB>> ]
+  "24" -> "51"  [ label = "this"] 
+  "24" -> "51"  [ label = "super();"] 
+  "47" -> "23" 
+  "23" -> "24"  [ label = "this"] 
+  "47" -> "24" 
+}

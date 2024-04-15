@@ -1,0 +1,7 @@
+digraph "getInstance" {  
+"105" [label = <(METHOD,getInstance)<SUB>42</SUB>> ]
+"113" [label = <(METHOD_RETURN,com.bird.main.GameTime)<SUB>42</SUB>> ]
+"107" [label = <(RETURN,return GAME_TIME;,return GAME_TIME;)<SUB>43</SUB>> ]
+  "107" -> "113"  [ label = "&lt;RET&gt;"] 
+  "105" -> "107" 
+}

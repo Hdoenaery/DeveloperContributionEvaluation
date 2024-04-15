@@ -1,0 +1,10 @@
+digraph "close" {  
+"614" [label = <(METHOD,close)> ]
+"618" [label = <(METHOD_RETURN,ANY)> ]
+"615" [label = <(PARAM,p0)> ]
+"616" [label = <(PARAM,p1)> ]
+  "615" -> "618"  [ label = "p0"] 
+  "616" -> "618"  [ label = "p1"] 
+  "614" -> "615" 
+  "614" -> "616" 
+}

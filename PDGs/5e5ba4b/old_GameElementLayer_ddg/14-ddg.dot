@@ -1,0 +1,10 @@
+digraph "isVisible" {  
+"505" [label = <(METHOD,isVisible)> ]
+"509" [label = <(METHOD_RETURN,ANY)> ]
+"506" [label = <(PARAM,p0)> ]
+"507" [label = <(PARAM,p1)> ]
+  "506" -> "509"  [ label = "p0"] 
+  "507" -> "509"  [ label = "p1"] 
+  "505" -> "506" 
+  "505" -> "507" 
+}

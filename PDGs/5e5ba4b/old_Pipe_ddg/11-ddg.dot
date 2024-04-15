@@ -1,0 +1,17 @@
+digraph "setY" {  
+"637" [label = <(METHOD,setY)<SUB>186</SUB>> ]
+"646" [label = <(METHOD_RETURN,void)<SUB>186</SUB>> ]
+"23" [label = <(PARAM,this)<SUB>186</SUB>> ]
+"638" [label = <(PARAM,int y)<SUB>186</SUB>> ]
+"640" [label = <(&lt;operator&gt;.assignment,this.y = y)<SUB>187</SUB>> ]
+"640" [label = <(&lt;operator&gt;.assignment,this.y = y)<SUB>187</SUB>> ]
+"640" [label = <(&lt;operator&gt;.assignment,this.y = y)<SUB>187</SUB>> ]
+  "23" -> "646"  [ label = "this"] 
+  "640" -> "646"  [ label = "this.y"] 
+  "640" -> "646"  [ label = "y"] 
+  "640" -> "646"  [ label = "this.y = y"] 
+  "637" -> "23" 
+  "637" -> "638" 
+  "638" -> "640"  [ label = "y"] 
+  "637" -> "640" 
+}

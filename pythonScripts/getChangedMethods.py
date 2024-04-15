@@ -57,7 +57,7 @@ def getChangedMethods(repo_path, old_commit, new_commit):
 
                     # 将该方法内容保存到本地
                     file_path = 'DeveloperContributionEvaluation/methodsContent/' + old_commit[0:6] + \
-                                '_to_' + new_commit[0:6] + '/' + str(method.name.replace("::", "_")) + '_new.txt'
+                                '_to_' + new_commit[0:6] + '/' + str(method.name.replace("::", "_")) + '_new.java'
                     # 如果有方法重载，则会出现方法名重复，需要将方法参数也带上
                     if os.path.exists(file_path):
                         # 文件名中不允许出现的特殊字符
@@ -66,7 +66,7 @@ def getChangedMethods(repo_path, old_commit, new_commit):
                         # 删除不允许出现在文件名中的字符
                         file_path = 'DeveloperContributionEvaluation/methodsContent/' + old_commit[0:6] + \
                                     '_to_' + new_commit[0:6] + '/' + str(''.join(
-                            c for c in method.long_name.replace("::", "_") if c not in forbidden_chars)) + '_new.txt'
+                            c for c in method.long_name.replace("::", "_") if c not in forbidden_chars)) + '_new.java'
 
                     save_to_file(extracted_code, file_path)
 
@@ -101,7 +101,7 @@ def calculate_percentage_of_comments(file_content):
     return (comment_lines / total_lines) * 100 if total_lines > 0 else 0
 
 
-# 计算代码容量（计算不准确，有待完善）
+
 def calculate_halstead_volume(unique_operator_count, unique_operand_count, total_operator_count, total_operand_count):
     vocabulary_size = unique_operator_count + unique_operand_count
     program_length = total_operator_count + total_operand_count
@@ -117,7 +117,7 @@ def extract_operators_and_operands(source_code):
     operands = re.findall(operand_pattern, source_code)
     return operators, operands
 
-
+# 计算代码容量（计算不准确，有待完善）
 def calculate_method_halstead_volume(source_code):
     operators, operands = extract_operators_and_operands(source_code)
     unique_operators = set(operators)
@@ -149,7 +149,7 @@ if __name__ == "__main__":
     changedMethods, LOC, CC, Halstead_Volume, PCom = getChangedMethods(repo_path, old_commit, new_commit)
 
     for method in changedMethods:
-        print(method.long_name)
+        print(method.name)
         print(LOC[method.long_name])
         print(CC[method.long_name])
         print(Halstead_Volume[method.long_name])

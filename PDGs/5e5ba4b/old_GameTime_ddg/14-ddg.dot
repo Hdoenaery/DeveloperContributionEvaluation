@@ -1,0 +1,46 @@
+digraph "&lt;clinit&gt;" {  
+"476" [label = <(METHOD,&lt;clinit&gt;)> ]
+"514" [label = <(METHOD_RETURN,void)> ]
+"478" [label = <(&lt;operator&gt;.assignment,int GameTime.HOVER_BARRIER_TIME = 10)<SUB>20</SUB>> ]
+"483" [label = <(&lt;operator&gt;.assignment,int GameTime.MOVING_BARRIER_TIME = 20)<SUB>21</SUB>> ]
+"488" [label = <(&lt;operator&gt;.assignment,int GameTime.STATE_READY = 0)<SUB>24</SUB>> ]
+"493" [label = <(&lt;operator&gt;.assignment,int GameTime.STATE_START = 1)<SUB>25</SUB>> ]
+"498" [label = <(&lt;operator&gt;.assignment,int GameTime.STATE_OVER = 2)<SUB>26</SUB>> ]
+"503" [label = <(&lt;operator&gt;.assignment,int GameTime.FIRST_SCORE_TIME = 6700)<SUB>120</SUB>> ]
+"508" [label = <(&lt;operator&gt;.assignment,int GameTime.PER_SCORE_TIME = 2850)<SUB>121</SUB>> ]
+"478" [label = <(&lt;operator&gt;.assignment,int GameTime.HOVER_BARRIER_TIME = 10)<SUB>20</SUB>> ]
+"478" [label = <(&lt;operator&gt;.assignment,int GameTime.HOVER_BARRIER_TIME = 10)<SUB>20</SUB>> ]
+"483" [label = <(&lt;operator&gt;.assignment,int GameTime.MOVING_BARRIER_TIME = 20)<SUB>21</SUB>> ]
+"483" [label = <(&lt;operator&gt;.assignment,int GameTime.MOVING_BARRIER_TIME = 20)<SUB>21</SUB>> ]
+"488" [label = <(&lt;operator&gt;.assignment,int GameTime.STATE_READY = 0)<SUB>24</SUB>> ]
+"488" [label = <(&lt;operator&gt;.assignment,int GameTime.STATE_READY = 0)<SUB>24</SUB>> ]
+"493" [label = <(&lt;operator&gt;.assignment,int GameTime.STATE_START = 1)<SUB>25</SUB>> ]
+"493" [label = <(&lt;operator&gt;.assignment,int GameTime.STATE_START = 1)<SUB>25</SUB>> ]
+"498" [label = <(&lt;operator&gt;.assignment,int GameTime.STATE_OVER = 2)<SUB>26</SUB>> ]
+"498" [label = <(&lt;operator&gt;.assignment,int GameTime.STATE_OVER = 2)<SUB>26</SUB>> ]
+"503" [label = <(&lt;operator&gt;.assignment,int GameTime.FIRST_SCORE_TIME = 6700)<SUB>120</SUB>> ]
+"503" [label = <(&lt;operator&gt;.assignment,int GameTime.FIRST_SCORE_TIME = 6700)<SUB>120</SUB>> ]
+"508" [label = <(&lt;operator&gt;.assignment,int GameTime.PER_SCORE_TIME = 2850)<SUB>121</SUB>> ]
+"508" [label = <(&lt;operator&gt;.assignment,int GameTime.PER_SCORE_TIME = 2850)<SUB>121</SUB>> ]
+  "478" -> "514"  [ label = "GameTime.HOVER_BARRIER_TIME"] 
+  "478" -> "514"  [ label = "int GameTime.HOVER_BARRIER_TIME = 10"] 
+  "483" -> "514"  [ label = "GameTime.MOVING_BARRIER_TIME"] 
+  "483" -> "514"  [ label = "int GameTime.MOVING_BARRIER_TIME = 20"] 
+  "488" -> "514"  [ label = "GameTime.STATE_READY"] 
+  "488" -> "514"  [ label = "int GameTime.STATE_READY = 0"] 
+  "493" -> "514"  [ label = "GameTime.STATE_START"] 
+  "493" -> "514"  [ label = "int GameTime.STATE_START = 1"] 
+  "498" -> "514"  [ label = "GameTime.STATE_OVER"] 
+  "498" -> "514"  [ label = "int GameTime.STATE_OVER = 2"] 
+  "503" -> "514"  [ label = "GameTime.FIRST_SCORE_TIME"] 
+  "503" -> "514"  [ label = "int GameTime.FIRST_SCORE_TIME = 6700"] 
+  "508" -> "514"  [ label = "GameTime.PER_SCORE_TIME"] 
+  "508" -> "514"  [ label = "int GameTime.PER_SCORE_TIME = 2850"] 
+  "476" -> "478" 
+  "476" -> "483" 
+  "476" -> "488" 
+  "476" -> "493" 
+  "476" -> "498" 
+  "476" -> "503" 
+  "476" -> "508" 
+}

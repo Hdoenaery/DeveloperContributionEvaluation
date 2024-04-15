@@ -1,0 +1,10 @@
+digraph "getHeight" {  
+"1562" [label = <(METHOD,getHeight)> ]
+"1566" [label = <(METHOD_RETURN,ANY)> ]
+"1563" [label = <(PARAM,p0)> ]
+"1564" [label = <(PARAM,p1)> ]
+  "1563" -> "1566"  [ label = "p0"] 
+  "1564" -> "1566"  [ label = "p1"] 
+  "1562" -> "1563" 
+  "1562" -> "1564" 
+}

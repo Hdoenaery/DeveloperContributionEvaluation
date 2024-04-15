@@ -23,6 +23,7 @@ import java.util.Map;
 public class Main {
     public static void main(String args[]) throws Exception {
         String gitDirectory = "E:/Postgraduate_study/FlappyBird";
+        String projectName = "FlappyBird";
         Tool tool = new Tool();
 
         List<String> commits = getAllCommitHashes(gitDirectory);//传入 Git 项目的目录路径，获取该项目所有的commit版本
@@ -66,7 +67,7 @@ public class Main {
         String callGraphName = analyzedDirectory.substring(lastSlashIndex + 1) + "-" + granularity + "." + outputFormat;
         String callGraphPath = "DeveloperContributionEvaluation/CallGraphs/" + callGraphName;
 
-        String callGraphPathTest = "DeveloperContributionEvaluation/CallGraphs/test2.dot";
+//        String callGraphPathTest = "DeveloperContributionEvaluation/CallGraphs/test2.dot";
 
         Map<Integer, List<Integer>> graphC = callGraph.buildGraph(callGraphPath);//根据调用图生成邻接表
 //        System.out.println(graphC);
@@ -97,29 +98,46 @@ public class Main {
 //        ------------------------------------------------------------------------------------------------------------------------------------
 
         ComplexityCalculator complexityCalculator = new ComplexityCalculator();
-        getChangedJavaFiles(gitDirectory, oldCommit, newCommit);
-        System.out.println("\nMethods is below:");
-
+//        System.out.println("\nMethods is below:");
+//
         complexityCalculator.getChangedMethods_LOC_CC(gitDirectory, oldCommit, newCommit);
         List<String> changedMethods = complexityCalculator.getChangedMethods();
-        Map<String, Integer> LOC = complexityCalculator.getLOC();
-        Map<String, Integer> CC = complexityCalculator.getCC();
-        Map<String, Double> HV = complexityCalculator.getHV();
-        Map<String, Double> PCom = complexityCalculator.getPCom();
-        Map<String, Double> CM = new HashMap<>();
-
-//        List<String> changedMethods = tool.getChangedMethods(gitDirectory, oldCommit, newCommit);
-        for (String method : changedMethods) {
-            CM.put(method, (LOC.get(method) + CC.get(method) + HV.get(method) - PCom.get(method)) / 2 + 1);
-            System.out.println(method);
-            System.out.println("LOC = " + LOC.get(method) + ", CC = " + CC.get(method) +
-                    ", HV = " + HV.get(method) + ", PCom = " + PCom.get(method) + ", CM = " + CM.get(method));
-
-        }
+//        Map<String, Integer> LOC = complexityCalculator.getLOC();
+//        Map<String, Integer> CC = complexityCalculator.getCC();
+//        Map<String, Double> HV = complexityCalculator.getHV();
+//        Map<String, Double> PCom = complexityCalculator.getPCom();
+//        Map<String, Double> CM = new HashMap<>();
+//
+////        List<String> changedMethods = tool.getChangedMethods(gitDirectory, oldCommit, newCommit);
+//        for (String method : changedMethods) {
+//            CM.put(method, (LOC.get(method) + CC.get(method) + HV.get(method) - PCom.get(method)) / 2 + 1);
+//            System.out.println(method);
+//            System.out.println("LOC = " + LOC.get(method) + ", CC = " + CC.get(method) +
+//                    ", HV = " + HV.get(method) + ", PCom = " + PCom.get(method) + ", CM = " + CM.get(method));
+//
+//        }
 
 //        以上计算各修改函数的复杂性度量(提取了各修改函数的内容)
 //        ------------------------------------------------------------------------------------------------------------------------------------
+            DDG ddg = new DDG();
+            CDG cdg = new CDG();
+//            ddg.getDDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/tempFile/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
+//                    , newCommit, projectName);
+//            cdg.getCDG(gitDirectory + "/src", newCommit, projectName);
 
+        Map<String, Double> DDG_impact = new HashMap<>();
+        for(String method:changedMethods) {
+            String[] tmp = method.split(":");
+//            System.out.println(method);
+//            System.out.println(tmp[0]);
+//            System.out.println(tmp[2]);
+
+            DDG_impact.put(method,
+                    ddg.getDDGimpact("E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/" + newCommit.substring(0, 7), tmp[0], tmp[2]));
+        }
+        for(String method:changedMethods) {
+            System.out.println(method + "   " + DDG_impact.get(method));
+        }
 
     }
 

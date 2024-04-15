@@ -1,0 +1,8 @@
+digraph "playFly" {  
+"89" [label = <(METHOD,playFly)<SUB>33</SUB>> ]
+"97" [label = <(METHOD_RETURN,void)<SUB>33</SUB>> ]
+"91" [label = <(play,com.bird.util.MusicUtil.fly.play())<SUB>34</SUB>> ]
+"91" [label = <(play,com.bird.util.MusicUtil.fly.play())<SUB>34</SUB>> ]
+  "91" -> "97"  [ label = "com.bird.util.MusicUtil.fly"] 
+  "91" -> "97"  [ label = "com.bird.util.MusicUtil.fly.play()"] 
+}

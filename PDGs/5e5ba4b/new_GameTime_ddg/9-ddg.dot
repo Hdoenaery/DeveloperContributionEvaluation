@@ -1,0 +1,17 @@
+digraph "isReadyTiming" {  
+"277" [label = <(METHOD,isReadyTiming)<SUB>97</SUB>> ]
+"290" [label = <(METHOD_RETURN,boolean)<SUB>97</SUB>> ]
+"278" [label = <(PARAM,this)<SUB>97</SUB>> ]
+"280" [label = <(RETURN,return timeState == STATE_READY;,return timeState == STATE_READY;)<SUB>98</SUB>> ]
+"281" [label = <(&lt;operator&gt;.equals,timeState == STATE_READY)<SUB>98</SUB>> ]
+"281" [label = <(&lt;operator&gt;.equals,timeState == STATE_READY)<SUB>98</SUB>> ]
+"281" [label = <(&lt;operator&gt;.equals,timeState == STATE_READY)<SUB>98</SUB>> ]
+  "280" -> "290"  [ label = "&lt;RET&gt;"] 
+  "278" -> "290"  [ label = "this"] 
+  "281" -> "290"  [ label = "this.timeState"] 
+  "281" -> "290"  [ label = "com.bird.main.GameTime.STATE_READY"] 
+  "281" -> "290"  [ label = "timeState == STATE_READY"] 
+  "277" -> "278" 
+  "281" -> "280"  [ label = "timeState == STATE_READY"] 
+  "278" -> "281"  [ label = "this"] 
+}

@@ -1,0 +1,7 @@
+digraph "&lt;operator&gt;.minus" {  
+"587" [label = <(METHOD,&lt;operator&gt;.minus)> ]
+"590" [label = <(METHOD_RETURN,ANY)> ]
+"588" [label = <(PARAM,p1)> ]
+  "588" -> "590"  [ label = "p1"] 
+  "587" -> "588" 
+}

@@ -1,0 +1,10 @@
+digraph "TimeToScore" {  
+"1620" [label = <(METHOD,TimeToScore)> ]
+"1624" [label = <(METHOD_RETURN,ANY)> ]
+"1621" [label = <(PARAM,p0)> ]
+"1622" [label = <(PARAM,p1)> ]
+  "1621" -> "1624"  [ label = "p0"] 
+  "1622" -> "1624"  [ label = "p1"] 
+  "1620" -> "1621" 
+  "1620" -> "1622" 
+}

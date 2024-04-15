@@ -1,0 +1,10 @@
+digraph "isReadyTiming" {  
+"1670" [label = <(METHOD,isReadyTiming)> ]
+"1674" [label = <(METHOD_RETURN,ANY)> ]
+"1671" [label = <(PARAM,p0)> ]
+"1672" [label = <(PARAM,p1)> ]
+  "1671" -> "1674"  [ label = "p0"] 
+  "1672" -> "1674"  [ label = "p1"] 
+  "1670" -> "1671" 
+  "1670" -> "1672" 
+}

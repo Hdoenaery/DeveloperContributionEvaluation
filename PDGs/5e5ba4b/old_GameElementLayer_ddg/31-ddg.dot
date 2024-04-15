@@ -1,0 +1,10 @@
+digraph "getPipeRect" {  
+"601" [label = <(METHOD,getPipeRect)> ]
+"605" [label = <(METHOD_RETURN,ANY)> ]
+"602" [label = <(PARAM,p0)> ]
+"603" [label = <(PARAM,p1)> ]
+  "602" -> "605"  [ label = "p0"] 
+  "603" -> "605"  [ label = "p1"] 
+  "601" -> "602" 
+  "601" -> "603" 
+}

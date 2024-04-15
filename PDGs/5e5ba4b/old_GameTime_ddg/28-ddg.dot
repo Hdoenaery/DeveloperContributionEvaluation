@@ -1,0 +1,13 @@
+digraph "writeLong" {  
+"629" [label = <(METHOD,writeLong)> ]
+"634" [label = <(METHOD_RETURN,ANY)> ]
+"630" [label = <(PARAM,p0)> ]
+"631" [label = <(PARAM,p1)> ]
+"632" [label = <(PARAM,p2)> ]
+  "630" -> "634"  [ label = "p0"] 
+  "631" -> "634"  [ label = "p1"] 
+  "632" -> "634"  [ label = "p2"] 
+  "629" -> "630" 
+  "629" -> "631" 
+  "629" -> "632" 
+}
