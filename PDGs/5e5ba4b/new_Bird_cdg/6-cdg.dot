@@ -1,0 +1,69 @@
+digraph "BirdUp" {  
+"791" [label = <(keyIsReleased,this.keyIsReleased())<SUB>176</SUB>> ]
+"818" [label = <(&lt;operator&gt;.assignment,this.state = STATE_UP)<SUB>179</SUB>> ]
+"825" [label = <(&lt;operator&gt;.assignment,this.speed = SPEED_UP)<SUB>180</SUB>> ]
+"832" [label = <(playFly,playFly())<SUB>181</SUB>> ]
+"834" [label = <(&lt;operator&gt;.assignment,this.wingState = 0)<SUB>182</SUB>> ]
+"839" [label = <(keyPressed,this.keyPressed())<SUB>183</SUB>> ]
+"794" [label = <(&lt;operator&gt;.logicalOr,state == STATE_DEAD || state == STATE_FALL || s...)<SUB>177</SUB>> ]
+"817" [label = <(RETURN,return;,return;)<SUB>178</SUB>> ]
+"819" [label = <(&lt;operator&gt;.fieldAccess,this.state)<SUB>179</SUB>> ]
+"822" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.Bird.STATE_UP)<SUB>179</SUB>> ]
+"826" [label = <(&lt;operator&gt;.fieldAccess,this.speed)<SUB>180</SUB>> ]
+"829" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.Bird.SPEED_UP)<SUB>180</SUB>> ]
+"835" [label = <(&lt;operator&gt;.fieldAccess,this.wingState)<SUB>182</SUB>> ]
+"795" [label = <(&lt;operator&gt;.logicalOr,state == STATE_DEAD || state == STATE_FALL)<SUB>177</SUB>> ]
+"810" [label = <(&lt;operator&gt;.equals,state == STATE_UP)<SUB>177</SUB>> ]
+"821" [label = <(FIELD_IDENTIFIER,state,state)<SUB>179</SUB>> ]
+"824" [label = <(FIELD_IDENTIFIER,STATE_UP,STATE_UP)<SUB>179</SUB>> ]
+"828" [label = <(FIELD_IDENTIFIER,speed,speed)<SUB>180</SUB>> ]
+"831" [label = <(FIELD_IDENTIFIER,SPEED_UP,SPEED_UP)<SUB>180</SUB>> ]
+"837" [label = <(FIELD_IDENTIFIER,wingState,wingState)<SUB>182</SUB>> ]
+"796" [label = <(&lt;operator&gt;.equals,state == STATE_DEAD)<SUB>177</SUB>> ]
+"803" [label = <(&lt;operator&gt;.equals,state == STATE_FALL)<SUB>177</SUB>> ]
+"811" [label = <(&lt;operator&gt;.fieldAccess,this.state)<SUB>177</SUB>> ]
+"814" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.Bird.STATE_UP)<SUB>177</SUB>> ]
+"797" [label = <(&lt;operator&gt;.fieldAccess,this.state)<SUB>177</SUB>> ]
+"800" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.Bird.STATE_DEAD)<SUB>177</SUB>> ]
+"804" [label = <(&lt;operator&gt;.fieldAccess,this.state)<SUB>177</SUB>> ]
+"807" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.Bird.STATE_FALL)<SUB>177</SUB>> ]
+"813" [label = <(FIELD_IDENTIFIER,state,state)<SUB>177</SUB>> ]
+"816" [label = <(FIELD_IDENTIFIER,STATE_UP,STATE_UP)<SUB>177</SUB>> ]
+"799" [label = <(FIELD_IDENTIFIER,state,state)<SUB>177</SUB>> ]
+"802" [label = <(FIELD_IDENTIFIER,STATE_DEAD,STATE_DEAD)<SUB>177</SUB>> ]
+"806" [label = <(FIELD_IDENTIFIER,state,state)<SUB>177</SUB>> ]
+"809" [label = <(FIELD_IDENTIFIER,STATE_FALL,STATE_FALL)<SUB>177</SUB>> ]
+  "791" -> "802" 
+  "791" -> "795" 
+  "791" -> "797" 
+  "791" -> "799" 
+  "791" -> "794" 
+  "791" -> "800" 
+  "791" -> "796" 
+  "794" -> "819" 
+  "794" -> "832" 
+  "794" -> "817" 
+  "794" -> "818" 
+  "794" -> "821" 
+  "794" -> "837" 
+  "794" -> "831" 
+  "794" -> "822" 
+  "794" -> "826" 
+  "794" -> "834" 
+  "794" -> "825" 
+  "794" -> "824" 
+  "794" -> "835" 
+  "794" -> "839" 
+  "794" -> "829" 
+  "794" -> "828" 
+  "795" -> "811" 
+  "795" -> "816" 
+  "795" -> "813" 
+  "795" -> "810" 
+  "795" -> "814" 
+  "796" -> "804" 
+  "796" -> "809" 
+  "796" -> "806" 
+  "796" -> "807" 
+  "796" -> "803" 
+}

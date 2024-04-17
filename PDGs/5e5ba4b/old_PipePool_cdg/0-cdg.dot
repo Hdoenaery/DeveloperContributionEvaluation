@@ -1,0 +1,25 @@
+digraph "get" {  
+"36" [label = <(&lt;operator&gt;.greaterThan,size &gt; 0)<SUB>34</SUB>> ]
+"40" [label = <(RETURN,// 移除并返回最后一个
+return pool.remove(size - 1);,// 移除并返回最后一个
+return pool.remove(size - 1);)<SUB>35</SUB>> ]
+"41" [label = <(remove,com.bird.main.PipePool.pool.remove(size - 1))<SUB>35</SUB>> ]
+"50" [label = <(RETURN,// 空对象池，返回一个新对象
+return new Pipe();,// 空对象池，返回一个新对象
+return new Pipe();)<SUB>37</SUB>> ]
+"42" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.PipePool.pool)<SUB>35</SUB>> ]
+"45" [label = <(&lt;operator&gt;.subtraction,size - 1)<SUB>35</SUB>> ]
+"44" [label = <(FIELD_IDENTIFIER,pool,pool)<SUB>35</SUB>> ]
+"53" [label = <(&lt;operator&gt;.assignment,$obj0 = new Pipe())<SUB>37</SUB>> ]
+"56" [label = <(&lt;init&gt;,new Pipe())<SUB>37</SUB>> ]
+"55" [label = <(&lt;operator&gt;.alloc,new Pipe())<SUB>37</SUB>> ]
+  "36" -> "40" 
+  "36" -> "50" 
+  "36" -> "42" 
+  "36" -> "44" 
+  "36" -> "55" 
+  "36" -> "53" 
+  "36" -> "56" 
+  "36" -> "41" 
+  "36" -> "45" 
+}

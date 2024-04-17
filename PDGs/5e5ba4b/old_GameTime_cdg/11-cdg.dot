@@ -1,0 +1,61 @@
+digraph "TimeToScore" {  
+"371" [label = <(&lt;operator&gt;.logicalAnd,time &gt;= FIRST_SCORE_TIME &amp;&amp; time &lt; FIRST_SCORE_...)<SUB>127</SUB>> ]
+"422" [label = <(&lt;operator&gt;.greaterThan,score - temp &gt; 0)<SUB>132</SUB>> ]
+"372" [label = <(&lt;operator&gt;.greaterEqualsThan,time &gt;= FIRST_SCORE_TIME)<SUB>127</SUB>> ]
+"377" [label = <(&lt;operator&gt;.lessThan,time &lt; FIRST_SCORE_TIME + PER_SCORE_TIME)<SUB>127</SUB>> ]
+"387" [label = <(&lt;operator&gt;.assignment,this.score = 1)<SUB>128</SUB>> ]
+"430" [label = <(playScore,playScore())<SUB>133</SUB>> ]
+"379" [label = <(&lt;operator&gt;.addition,FIRST_SCORE_TIME + PER_SCORE_TIME)<SUB>127</SUB>> ]
+"388" [label = <(&lt;operator&gt;.fieldAccess,this.score)<SUB>128</SUB>> ]
+"394" [label = <(&lt;operator&gt;.greaterEqualsThan,time &gt;= FIRST_SCORE_TIME + PER_SCORE_TIME)<SUB>129</SUB>> ]
+"380" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.GameTime.FIRST_SCORE_TIME)<SUB>127</SUB>> ]
+"383" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.GameTime.PER_SCORE_TIME)<SUB>127</SUB>> ]
+"390" [label = <(FIELD_IDENTIFIER,score,score)<SUB>128</SUB>> ]
+"396" [label = <(&lt;operator&gt;.addition,FIRST_SCORE_TIME + PER_SCORE_TIME)<SUB>129</SUB>> ]
+"404" [label = <(&lt;operator&gt;.assignment,this.score = (int) (time - FIRST_SCORE_TIME) / ...)<SUB>130</SUB>> ]
+"382" [label = <(FIELD_IDENTIFIER,FIRST_SCORE_TIME,FIRST_SCORE_TIME)<SUB>127</SUB>> ]
+"385" [label = <(FIELD_IDENTIFIER,PER_SCORE_TIME,PER_SCORE_TIME)<SUB>127</SUB>> ]
+"397" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.GameTime.FIRST_SCORE_TIME)<SUB>129</SUB>> ]
+"400" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.GameTime.PER_SCORE_TIME)<SUB>129</SUB>> ]
+"405" [label = <(&lt;operator&gt;.fieldAccess,this.score)<SUB>130</SUB>> ]
+"408" [label = <(&lt;operator&gt;.addition,(int) (time - FIRST_SCORE_TIME) / PER_SCORE_TIM...)<SUB>130</SUB>> ]
+"399" [label = <(FIELD_IDENTIFIER,FIRST_SCORE_TIME,FIRST_SCORE_TIME)<SUB>129</SUB>> ]
+"402" [label = <(FIELD_IDENTIFIER,PER_SCORE_TIME,PER_SCORE_TIME)<SUB>129</SUB>> ]
+"407" [label = <(FIELD_IDENTIFIER,score,score)<SUB>130</SUB>> ]
+"409" [label = <(&lt;operator&gt;.division,(int) (time - FIRST_SCORE_TIME) / PER_SCORE_TIME)<SUB>130</SUB>> ]
+"410" [label = <(&lt;operator&gt;.cast,(int) (time - FIRST_SCORE_TIME))<SUB>130</SUB>> ]
+"417" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.GameTime.PER_SCORE_TIME)<SUB>130</SUB>> ]
+"411" [label = <(TYPE_REF,int,int)<SUB>130</SUB>> ]
+"412" [label = <(&lt;operator&gt;.subtraction,time - FIRST_SCORE_TIME)<SUB>130</SUB>> ]
+"419" [label = <(FIELD_IDENTIFIER,PER_SCORE_TIME,PER_SCORE_TIME)<SUB>130</SUB>> ]
+"414" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.GameTime.FIRST_SCORE_TIME)<SUB>130</SUB>> ]
+"416" [label = <(FIELD_IDENTIFIER,FIRST_SCORE_TIME,FIRST_SCORE_TIME)<SUB>130</SUB>> ]
+  "371" -> "387" 
+  "371" -> "402" 
+  "371" -> "388" 
+  "371" -> "390" 
+  "371" -> "399" 
+  "371" -> "397" 
+  "371" -> "394" 
+  "371" -> "396" 
+  "371" -> "400" 
+  "422" -> "430" 
+  "372" -> "385" 
+  "372" -> "377" 
+  "372" -> "379" 
+  "372" -> "382" 
+  "372" -> "383" 
+  "372" -> "380" 
+  "394" -> "409" 
+  "394" -> "408" 
+  "394" -> "404" 
+  "394" -> "419" 
+  "394" -> "412" 
+  "394" -> "416" 
+  "394" -> "411" 
+  "394" -> "405" 
+  "394" -> "417" 
+  "394" -> "407" 
+  "394" -> "410" 
+  "394" -> "414" 
+}

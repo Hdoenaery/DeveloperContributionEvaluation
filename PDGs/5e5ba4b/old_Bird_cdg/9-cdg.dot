@@ -1,0 +1,39 @@
+digraph "BirdDead" {  
+"906" [label = <(&lt;operator&gt;.equals,overImg == null)<SUB>203</SUB>> ]
+"912" [label = <(&lt;operator&gt;.assignment,this.overImg = GameUtil.loadBUfferedImage(Const...)<SUB>204</SUB>> ]
+"921" [label = <(&lt;operator&gt;.assignment,this.scoreImg = GameUtil.loadBUfferedImage(Cons...)<SUB>205</SUB>> ]
+"930" [label = <(&lt;operator&gt;.assignment,this.againImg = GameUtil.loadBUfferedImage(Cons...)<SUB>206</SUB>> ]
+"913" [label = <(&lt;operator&gt;.fieldAccess,this.overImg)<SUB>204</SUB>> ]
+"916" [label = <(loadBUfferedImage,loadBUfferedImage(Constant.OVER_IMG_PATH))<SUB>204</SUB>> ]
+"922" [label = <(&lt;operator&gt;.fieldAccess,this.scoreImg)<SUB>205</SUB>> ]
+"925" [label = <(loadBUfferedImage,loadBUfferedImage(Constant.SCORE_IMG_PATH))<SUB>205</SUB>> ]
+"931" [label = <(&lt;operator&gt;.fieldAccess,this.againImg)<SUB>206</SUB>> ]
+"934" [label = <(loadBUfferedImage,loadBUfferedImage(Constant.AGAIN_IMG_PATH))<SUB>206</SUB>> ]
+"915" [label = <(FIELD_IDENTIFIER,overImg,overImg)<SUB>204</SUB>> ]
+"918" [label = <(&lt;operator&gt;.fieldAccess,Constant.OVER_IMG_PATH)<SUB>204</SUB>> ]
+"924" [label = <(FIELD_IDENTIFIER,scoreImg,scoreImg)<SUB>205</SUB>> ]
+"927" [label = <(&lt;operator&gt;.fieldAccess,Constant.SCORE_IMG_PATH)<SUB>205</SUB>> ]
+"933" [label = <(FIELD_IDENTIFIER,againImg,againImg)<SUB>206</SUB>> ]
+"936" [label = <(&lt;operator&gt;.fieldAccess,Constant.AGAIN_IMG_PATH)<SUB>206</SUB>> ]
+"920" [label = <(FIELD_IDENTIFIER,OVER_IMG_PATH,OVER_IMG_PATH)<SUB>204</SUB>> ]
+"929" [label = <(FIELD_IDENTIFIER,SCORE_IMG_PATH,SCORE_IMG_PATH)<SUB>205</SUB>> ]
+"938" [label = <(FIELD_IDENTIFIER,AGAIN_IMG_PATH,AGAIN_IMG_PATH)<SUB>206</SUB>> ]
+  "906" -> "912" 
+  "906" -> "931" 
+  "906" -> "915" 
+  "906" -> "916" 
+  "906" -> "921" 
+  "906" -> "913" 
+  "906" -> "927" 
+  "906" -> "934" 
+  "906" -> "938" 
+  "906" -> "936" 
+  "906" -> "924" 
+  "906" -> "920" 
+  "906" -> "929" 
+  "906" -> "930" 
+  "906" -> "925" 
+  "906" -> "933" 
+  "906" -> "918" 
+  "906" -> "922" 
+}

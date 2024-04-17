@@ -1,6 +1,9 @@
 package com.zxc;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -24,8 +27,8 @@ class Node {
         if (obj == null || getClass() != obj.getClass())
             return false;
         Node other = (Node) obj;
-//        return id.equals(other.id) && label.equals(other.label);
-        return label.equals(other.label);  //Node的label相同即认为是同一节点
+        return id.equals(other.id) && label.equals(other.label);
+//        return label.equals(other.label);  //Node的label相同即认为是同一节点
     }
     @Override
     public int hashCode() {
@@ -57,15 +60,15 @@ class Edge {
     }
 }
 public class DDG {
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws IOException {
         Set<Node> oldNodes = new HashSet<>();
         Set<Node> newNodes = new HashSet<>();
         Set<Edge> oldEdges = new HashSet<>();
         Set<Edge> newEdges = new HashSet<>();
 
         // 解析两个版本的.dot文件
-//        parseDotFile("E:/Postgraduate_study/cpg/PipePool_old_ddg/3-ddg.dot", oldNodes, oldEdges);
-        parseDotFile("E:\\IDEA\\maven-project\\DeveloperContributionEvaluation\\PDGs\\5e5ba4b\\new_MovingPipe_ddg\\5-ddg.dot", newNodes, newEdges);
+        parseDotFile("E:\\IDEA\\maven-project\\DeveloperContributionEvaluation\\PDGs\\5e5ba4b\\old_Bird_ddg\\0-ddg.dot", oldNodes, oldEdges);
+        parseDotFile("E:\\IDEA\\maven-project\\DeveloperContributionEvaluation\\PDGs\\5e5ba4b\\new_Bird_ddg\\0-ddg.dot", newNodes, newEdges);
 
 
         // 查找发生更改的节点
@@ -91,7 +94,11 @@ public class DDG {
         }
         System.out.println("Backward Traversal Node Count: " + backwardTraversal.size());
 
-        double DDG_impact = Math.max((forwardTraversal.size() + backwardTraversal.size() - 1) * 1.0 / newNodes.size(), 0);
+        // 将 forwardTraversal 中的元素添加到 backwardTraversal 中，自动去重
+        backwardTraversal.addAll(forwardTraversal);
+        System.out.println("All Traversal Node Count: " + backwardTraversal.size());
+
+        double DDG_impact = Math.max(backwardTraversal.size() * 1.0 / newNodes.size(), 0);
         System.out.println(DDG_impact);
         System.out.println(oldNodes.size());
         System.out.println(newNodes.size());
@@ -99,7 +106,8 @@ public class DDG {
 
     }
 
-    public static double getDDGimpact(String src, String className, String methodName) throws FileNotFoundException {
+    //计算DDG_impact
+    public static double getDDGimpact(String src, String className, String methodName) {
         String oldDirectoryName = "old_" + className + "_ddg";
         String newDirectoryName = "new_" + className + "_ddg";
 
@@ -145,20 +153,24 @@ public class DDG {
         }
 //        System.out.println("Backward Traversal Node Count: " + backwardTraversal.size());
 
-        double DDG_impact = Math.max((forwardTraversal.size() + backwardTraversal.size() - 1) * 1.0 / newNodes.size(), 0);
-//        System.out.println(DDG_impact);
+        // 将 forwardTraversal 中的元素添加到 backwardTraversal 中，自动去重
+        backwardTraversal.addAll(forwardTraversal);
+//        System.out.println("All Traversal Node Count: " + backwardTraversal.size());
 
+        double DDG_impact = Math.max(backwardTraversal.size() * 1.0 / newNodes.size(), 0);
+//        System.out.println(DDG_impact);
+//        System.out.println(newNodes.size());
         return DDG_impact;
-//        return 1.0;
     }
 
+    //获取className类的methodName方法所对应的DDG文件路径
     public static String getDDGfilePath(String directoryPath, String className, String methodName) {
         // 构建目标文件夹路径
         File directory = new File(directoryPath);
 
         // 检查目标文件夹是否存在
         if (!directory.exists() || !directory.isDirectory()) {
-            System.out.println("getDDGimpact,目录不存在或不是一个有效的目录：" + directoryPath);
+            System.out.println("getDDGfilePath,目录不存在或不是一个有效的目录：" + directoryPath);
             return "";
         }
 
@@ -170,7 +182,14 @@ public class DDG {
                 if (file.isFile()) {
                     try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
                         String firstLine = reader.readLine();
-                        if (firstLine != null && firstLine.contains("\"" + methodName + "\"")) {
+                        if (className.equals(methodName)) {
+//                            System.out.println("class = " + className);
+//                            System.out.println("method = " + methodName);
+                            if (firstLine != null && firstLine.contains("\"&lt;init&gt;\"")) {
+//                                System.out.println(file.getPath());
+                                return file.getPath();
+                            }
+                        } else if (firstLine != null && firstLine.contains("\"" + methodName + "\"")) {
 //                            System.out.println(methodName);
 //                            System.out.println(file.getPath());
                             return file.getPath();
@@ -190,9 +209,130 @@ public class DDG {
         return "";
     }
 
+    // 查找发生更改的assignment节点
+    public static Set<Node> findChangedAssignmentNodes(Set<Node> oldNodes, Set<Node> newNodes) {
+        Set<Node> changedNodes = new HashSet<>();
+        for (Node newNode : newNodes) {
+            if (newNode.label.contains("assignment") && !oldNodes.contains(newNode)) {
+                boolean flag = true;
+                for(Node oldNode : oldNodes) {
+                    if(oldNode.label.equals(newNode.label)) {
+                        flag = false;
+                        break;
+                    }
+                }
+                if(flag)
+                    changedNodes.add(newNode);
+            }
+        }
+        return changedNodes;
+    }
 
-    //生成对应项目的DDG
-    public static void getDDG(String src, String newCommit, String projectName) {
+    // 解析.dot文件
+    public static void parseDotFile(String fileName, Set<Node> nodes, Set<Edge> edges) {
+        File file = new File(fileName);
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+            String line;
+            // 有些节点跨了多行，需要特殊处理
+            String previousLine = "";
+            while ((line = reader.readLine()) != null) {
+//                System.out.println("line = " + line);
+                if(line.trim().endsWith("{") || line.trim().endsWith("}"))
+                    continue;
+
+                if(!line.trim().endsWith("]") && !line.contains("->")) {
+                    previousLine += line;
+                    continue;
+                }
+                if(!previousLine.equals("")) {
+                    line = previousLine + line;
+                    previousLine = "";
+                }
+
+//                System.out.println(line);
+                if (line.startsWith("\"")) {
+    //                System.out.println(line);
+                    // 解析节点
+                    String[] parts = line.split("\\[label = ");
+
+                    String id = parts[0].trim().replace("\"", "").trim();
+                    String label = parts[1].trim().replace("]", "").trim();
+
+                    Pattern pattern = Pattern.compile("<SUB>(\\d+)</SUB>"); //提取行号的正则表达式
+                    Matcher matcher = pattern.matcher(label);
+                    String lineNumber = "";
+
+                    if (matcher.find()) {
+                        lineNumber = matcher.group(1);
+                    }
+                    label = label.replace("<SUB>", "").replace("</SUB>", "");
+                    label = label.substring(1, label.lastIndexOf(")") + 1);
+
+    //                System.out.println("id = " + id + "   label = " + label + "   lineNumber = " + lineNumber);
+
+
+                    Node node = new Node(id, label, lineNumber);
+                    nodes.add(node);
+                } else if (line.contains("->")) {
+//                    System.out.println(line);
+                    // 解析边
+                    String[] parts = line.split("->");
+                    String sourceId = parts[0].trim().replace("\"", "").trim();
+                    String targetId = parts[1].trim().split("\\[")[0].replace("\"", "").trim();
+//                    System.out.println("s = " + sourceId + "   t = " + targetId);
+                    Node source = getNodeById(nodes, sourceId);
+                    Node target = getNodeById(nodes, targetId);
+                    String label = "";
+                    String [] temp = line.split("\\[");
+                    if(temp.length > 1) {
+                        label = temp[1].trim().split("=")[1].trim();
+                    }
+                    Edge edge = new Edge(source, target, label);
+                    edges.add(edge);
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    // 根据节点id查找节点
+    public static Node getNodeById(Set<Node> nodes, String id) {
+        for (Node node : nodes) {
+            if (node.id.equals(id)) {
+                return node;
+            }
+        }
+        return null;
+    }
+
+    // 正向遍历
+    public static void traverseForward(Node node, Set<Node> visited, Set<Edge> edges) {
+        if (!visited.contains(node)) {
+            visited.add(node);
+            for (Edge edge : edges) {
+                if (edge.source.equals(node)) {
+                    traverseForward(edge.target, visited, edges);
+                }
+            }
+        }
+    }
+
+    // 反向遍历
+    public static void traverseBackward(Node node, Set<Node> visited, Set<Edge> edges) {
+        if (!visited.contains(node)) {
+            visited.add(node);
+            for (Edge edge : edges) {
+                if (edge.target.equals(node)) {
+                    traverseBackward(edge.source, visited, edges);
+                }
+            }
+        }
+    }
+
+    //生成对应文件的DDG
+    public static void getDDG(String src, String newCommit) {
         String basePath = "E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs";
         String folderName = newCommit.substring(0,7);
         String folderPath = basePath + "/" + folderName;
@@ -265,7 +405,7 @@ public class DDG {
 
                     // 打印第二个命令的输出
                     if (exitCode2 == 0) {
-                        System.out.println("joern-export ddg执行成功");
+                        System.out.println("joern-export ddg执行成功" + command1.get(5));
                     } else {
                         System.out.println("joern-export ddg执行失败，exit code：" + exitCode2);
                     }
@@ -274,120 +414,6 @@ public class DDG {
                 }
             } catch (IOException | InterruptedException e) {
                 e.printStackTrace();
-            }
-        }
-
-
-
-    }
-
-
-    // 查找发生更改的assignment节点
-    public static Set<Node> findChangedAssignmentNodes(Set<Node> oldNodes, Set<Node> newNodes) {
-        Set<Node> changedNodes = new HashSet<>();
-        for (Node newNode : newNodes) {
-            if (newNode.label.contains("assignment") && !oldNodes.contains(newNode)) {
-                changedNodes.add(newNode);
-            }
-        }
-        return changedNodes;
-    }
-
-    // 解析.dot文件
-    public static void parseDotFile(String fileName, Set<Node> nodes, Set<Edge> edges) throws FileNotFoundException {
-        File file = new File(fileName);
-        Scanner scanner = new Scanner(file);
-
-        // 有些节点跨了多行，需要特殊处理
-        String previousLine = "";
-        while (scanner.hasNextLine()) {
-            String line = scanner.nextLine();
-            if(line.trim().endsWith("{") || line.trim().endsWith("}"))
-                continue;
-
-            if(!line.endsWith("]")) {
-                previousLine += line;
-                continue;
-            }
-            if(!previousLine.equals("")) {
-                line = previousLine + line;
-                previousLine = "";
-            }
-
-//            System.out.println(line);
-            if (line.startsWith("\"")) {
-//                System.out.println(line);
-                // 解析节点
-                String[] parts = line.split("\\[label = ");
-
-                String id = parts[0].trim().replace("\"", "").trim();
-                String label = parts[1].trim().replace("]", "").trim();
-
-                Pattern pattern = Pattern.compile("<SUB>(\\d+)</SUB>"); //提取行号的正则表达式
-                Matcher matcher = pattern.matcher(label);
-                String lineNumber = "";
-
-                if (matcher.find()) {
-                    lineNumber = matcher.group(1);
-                }
-                label = label.replace("<SUB>", "").replace("</SUB>", "");
-                label = label.substring(1, label.lastIndexOf(")") + 1);
-
-//                System.out.println("id = " + id + "   label = " + label + "   lineNumber = " + lineNumber);
-
-
-                Node node = new Node(id, label, lineNumber);
-                nodes.add(node);
-            } else if (line.contains("->")) {
-                // 解析边
-                String[] parts = line.split("->");
-                String sourceId = parts[0].trim().replace("\"", "").trim();
-                String targetId = parts[1].trim().split("\\[")[0].replace("\"", "").trim();
-//                System.out.println("s = " + sourceId + "   t = " + targetId);
-                Node source = getNodeById(nodes, sourceId);
-                Node target = getNodeById(nodes, targetId);
-                String label = "";
-                String [] temp = line.split("\\[");
-                if(temp.length > 1) {
-                    label = temp[1].trim().split("=")[1].trim();
-                }
-                Edge edge = new Edge(source, target, label);
-                edges.add(edge);
-            }
-        }
-        scanner.close();
-    }
-
-    // 根据节点id查找节点
-    public static Node getNodeById(Set<Node> nodes, String id) {
-        for (Node node : nodes) {
-            if (node.id.equals(id)) {
-                return node;
-            }
-        }
-        return null;
-    }
-
-    // 正向遍历
-    public static void traverseForward(Node node, Set<Node> visited, Set<Edge> edges) {
-        if (!visited.contains(node)) {
-            visited.add(node);
-            for (Edge edge : edges) {
-                if (edge.source.equals(node)) {
-                    traverseForward(edge.target, visited, edges);
-                }
-            }
-        }
-    }
-
-    // 反向遍历
-    public static void traverseBackward(Node node, Set<Node> visited, Set<Edge> edges) {
-        if (!visited.contains(node)) {
-            visited.add(node);
-            for (Edge edge : edges) {
-                if (edge.target.equals(node)) {
-                    traverseBackward(edge.source, visited, edges);
-                }
             }
         }
     }

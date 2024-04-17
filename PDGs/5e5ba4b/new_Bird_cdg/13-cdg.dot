@@ -1,0 +1,128 @@
+digraph "drawGameover" {  
+"1189" [label = <(&lt;operator&gt;.greaterThan,timing.getBestScore() &gt; 0)<SUB>257</SUB>> ]
+"1250" [label = <(&lt;operator&gt;.greaterThan,flash++ &gt; COUNT)<SUB>265</SUB>> ]
+"1196" [label = <(&lt;operator&gt;.assignment,str = Long.toString(timing.getBestScore()))<SUB>258</SUB>> ]
+"1204" [label = <(&lt;operator&gt;.assignment,this.x = (Constant.FRAME_WIDTH + scoreImg.getWi...)<SUB>259</SUB>> ]
+"1224" [label = <(&lt;operator&gt;.assignmentMinus,this.x -= GameUtil.getStringWidth(Constant.SCOR...)<SUB>260</SUB>> ]
+"1236" [label = <(drawString,g.drawString(str, x, y))<SUB>261</SUB>> ]
+"1257" [label = <(&lt;operator&gt;.assignment,this.x = Constant.FRAME_WIDTH - againImg.getWid...)<SUB>266</SUB>> ]
+"1271" [label = <(&lt;operator&gt;.assignment,this.y = Constant.FRAME_HEIGHT / 5 * 3)<SUB>267</SUB>> ]
+"1282" [label = <(drawImage,g.drawImage(againImg, x, y, null))<SUB>268</SUB>> ]
+"1198" [label = <(toString,toString(timing.getBestScore()))<SUB>258</SUB>> ]
+"1205" [label = <(&lt;operator&gt;.fieldAccess,this.x)<SUB>259</SUB>> ]
+"1208" [label = <(&lt;operator&gt;.subtraction,(Constant.FRAME_WIDTH + scoreImg.getWidth() / 2...)<SUB>259</SUB>> ]
+"1225" [label = <(&lt;operator&gt;.fieldAccess,this.x)<SUB>260</SUB>> ]
+"1228" [label = <(&lt;operator&gt;.logicalShiftRight,GameUtil.getStringWidth(Constant.SCORE_FONT, st...)<SUB>260</SUB>> ]
+"1239" [label = <(&lt;operator&gt;.fieldAccess,this.x)<SUB>261</SUB>> ]
+"1242" [label = <(&lt;operator&gt;.fieldAccess,this.y)<SUB>261</SUB>> ]
+"1258" [label = <(&lt;operator&gt;.fieldAccess,this.x)<SUB>266</SUB>> ]
+"1261" [label = <(&lt;operator&gt;.logicalShiftRight,Constant.FRAME_WIDTH - againImg.getWidth() &gt;&gt; 1)<SUB>266</SUB>> ]
+"1272" [label = <(&lt;operator&gt;.fieldAccess,this.y)<SUB>267</SUB>> ]
+"1275" [label = <(&lt;operator&gt;.multiplication,Constant.FRAME_HEIGHT / 5 * 3)<SUB>267</SUB>> ]
+"1284" [label = <(&lt;operator&gt;.fieldAccess,this.againImg)<SUB>268</SUB>> ]
+"1287" [label = <(&lt;operator&gt;.fieldAccess,this.x)<SUB>268</SUB>> ]
+"1290" [label = <(&lt;operator&gt;.fieldAccess,this.y)<SUB>268</SUB>> ]
+"1295" [label = <(&lt;operator&gt;.equals,flash == COUNT * 2)<SUB>269</SUB>> ]
+"1302" [label = <(&lt;operator&gt;.assignment,this.flash = 0)<SUB>270</SUB>> ]
+"1200" [label = <(getBestScore,this.timing.getBestScore())<SUB>258</SUB>> ]
+"1207" [label = <(FIELD_IDENTIFIER,x,x)<SUB>259</SUB>> ]
+"1209" [label = <(&lt;operator&gt;.logicalShiftRight,Constant.FRAME_WIDTH + scoreImg.getWidth() / 2 ...)<SUB>259</SUB>> ]
+"1221" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.Bird.SCORE_LOCATE)<SUB>259</SUB>> ]
+"1227" [label = <(FIELD_IDENTIFIER,x,x)<SUB>260</SUB>> ]
+"1229" [label = <(getStringWidth,getStringWidth(Constant.SCORE_FONT, str))<SUB>260</SUB>> ]
+"1241" [label = <(FIELD_IDENTIFIER,x,x)<SUB>261</SUB>> ]
+"1244" [label = <(FIELD_IDENTIFIER,y,y)<SUB>261</SUB>> ]
+"1260" [label = <(FIELD_IDENTIFIER,x,x)<SUB>266</SUB>> ]
+"1262" [label = <(&lt;operator&gt;.subtraction,Constant.FRAME_WIDTH - againImg.getWidth())<SUB>266</SUB>> ]
+"1274" [label = <(FIELD_IDENTIFIER,y,y)<SUB>267</SUB>> ]
+"1276" [label = <(&lt;operator&gt;.division,Constant.FRAME_HEIGHT / 5)<SUB>267</SUB>> ]
+"1286" [label = <(FIELD_IDENTIFIER,againImg,againImg)<SUB>268</SUB>> ]
+"1289" [label = <(FIELD_IDENTIFIER,x,x)<SUB>268</SUB>> ]
+"1292" [label = <(FIELD_IDENTIFIER,y,y)<SUB>268</SUB>> ]
+"1296" [label = <(&lt;operator&gt;.fieldAccess,this.flash)<SUB>269</SUB>> ]
+"1299" [label = <(&lt;operator&gt;.multiplication,COUNT * 2)<SUB>269</SUB>> ]
+"1303" [label = <(&lt;operator&gt;.fieldAccess,this.flash)<SUB>270</SUB>> ]
+"1201" [label = <(&lt;operator&gt;.fieldAccess,this.timing)<SUB>258</SUB>> ]
+"1210" [label = <(&lt;operator&gt;.addition,Constant.FRAME_WIDTH + scoreImg.getWidth() / 2)<SUB>259</SUB>> ]
+"1223" [label = <(FIELD_IDENTIFIER,SCORE_LOCATE,SCORE_LOCATE)<SUB>259</SUB>> ]
+"1231" [label = <(&lt;operator&gt;.fieldAccess,Constant.SCORE_FONT)<SUB>260</SUB>> ]
+"1263" [label = <(&lt;operator&gt;.fieldAccess,Constant.FRAME_WIDTH)<SUB>266</SUB>> ]
+"1266" [label = <(getWidth,this.againImg.getWidth())<SUB>266</SUB>> ]
+"1277" [label = <(&lt;operator&gt;.fieldAccess,Constant.FRAME_HEIGHT)<SUB>267</SUB>> ]
+"1298" [label = <(FIELD_IDENTIFIER,flash,flash)<SUB>269</SUB>> ]
+"1305" [label = <(FIELD_IDENTIFIER,flash,flash)<SUB>270</SUB>> ]
+"1203" [label = <(FIELD_IDENTIFIER,timing,timing)<SUB>258</SUB>> ]
+"1211" [label = <(&lt;operator&gt;.fieldAccess,Constant.FRAME_WIDTH)<SUB>259</SUB>> ]
+"1214" [label = <(&lt;operator&gt;.division,scoreImg.getWidth() / 2)<SUB>259</SUB>> ]
+"1233" [label = <(FIELD_IDENTIFIER,SCORE_FONT,SCORE_FONT)<SUB>260</SUB>> ]
+"1265" [label = <(FIELD_IDENTIFIER,FRAME_WIDTH,FRAME_WIDTH)<SUB>266</SUB>> ]
+"1267" [label = <(&lt;operator&gt;.fieldAccess,this.againImg)<SUB>266</SUB>> ]
+"1279" [label = <(FIELD_IDENTIFIER,FRAME_HEIGHT,FRAME_HEIGHT)<SUB>267</SUB>> ]
+"1213" [label = <(FIELD_IDENTIFIER,FRAME_WIDTH,FRAME_WIDTH)<SUB>259</SUB>> ]
+"1215" [label = <(getWidth,this.scoreImg.getWidth())<SUB>259</SUB>> ]
+"1269" [label = <(FIELD_IDENTIFIER,againImg,againImg)<SUB>266</SUB>> ]
+"1216" [label = <(&lt;operator&gt;.fieldAccess,this.scoreImg)<SUB>259</SUB>> ]
+"1218" [label = <(FIELD_IDENTIFIER,scoreImg,scoreImg)<SUB>259</SUB>> ]
+  "1189" -> "1223" 
+  "1189" -> "1205" 
+  "1189" -> "1239" 
+  "1189" -> "1242" 
+  "1189" -> "1198" 
+  "1189" -> "1216" 
+  "1189" -> "1225" 
+  "1189" -> "1233" 
+  "1189" -> "1207" 
+  "1189" -> "1228" 
+  "1189" -> "1210" 
+  "1189" -> "1213" 
+  "1189" -> "1236" 
+  "1189" -> "1204" 
+  "1189" -> "1229" 
+  "1189" -> "1244" 
+  "1189" -> "1221" 
+  "1189" -> "1209" 
+  "1189" -> "1201" 
+  "1189" -> "1231" 
+  "1189" -> "1200" 
+  "1189" -> "1214" 
+  "1189" -> "1208" 
+  "1189" -> "1218" 
+  "1189" -> "1224" 
+  "1189" -> "1215" 
+  "1189" -> "1241" 
+  "1189" -> "1196" 
+  "1189" -> "1227" 
+  "1189" -> "1211" 
+  "1189" -> "1203" 
+  "1250" -> "1299" 
+  "1250" -> "1276" 
+  "1250" -> "1266" 
+  "1250" -> "1272" 
+  "1250" -> "1292" 
+  "1250" -> "1265" 
+  "1250" -> "1267" 
+  "1250" -> "1260" 
+  "1250" -> "1262" 
+  "1250" -> "1258" 
+  "1250" -> "1257" 
+  "1250" -> "1279" 
+  "1250" -> "1298" 
+  "1250" -> "1287" 
+  "1250" -> "1269" 
+  "1250" -> "1295" 
+  "1250" -> "1263" 
+  "1250" -> "1286" 
+  "1250" -> "1261" 
+  "1250" -> "1277" 
+  "1250" -> "1289" 
+  "1250" -> "1271" 
+  "1250" -> "1284" 
+  "1250" -> "1296" 
+  "1250" -> "1282" 
+  "1250" -> "1290" 
+  "1250" -> "1274" 
+  "1250" -> "1275" 
+  "1295" -> "1303" 
+  "1295" -> "1302" 
+  "1295" -> "1305" 
+}

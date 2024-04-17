@@ -1,0 +1,5 @@
+digraph "&lt;init&gt;" {  
+"100" [label = <(loadBestTime,this.loadBestTime())<SUB>38</SUB>> ]
+"103" [label = <(printStackTrace,e.printStackTrace())<SUB>40</SUB>> ]
+  "100" -> "103" 
+}

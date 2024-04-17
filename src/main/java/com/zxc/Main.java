@@ -119,25 +119,33 @@ public class Main {
 
 //        以上计算各修改函数的复杂性度量(提取了各修改函数的内容)
 //        ------------------------------------------------------------------------------------------------------------------------------------
-            DDG ddg = new DDG();
-            CDG cdg = new CDG();
-//            ddg.getDDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/tempFile/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
-//                    , newCommit, projectName);
-//            cdg.getCDG(gitDirectory + "/src", newCommit, projectName);
+        DDG ddg = new DDG();
+        CDG cdg = new CDG();
+        ddg.getDDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/tempFile/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
+                , newCommit);
+        cdg.getCDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/tempFile/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
+                , newCommit);
 
         Map<String, Double> DDG_impact = new HashMap<>();
         for(String method:changedMethods) {
             String[] tmp = method.split(":");
-//            System.out.println(method);
-//            System.out.println(tmp[0]);
-//            System.out.println(tmp[2]);
-
             DDG_impact.put(method,
                     ddg.getDDGimpact("E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/" + newCommit.substring(0, 7), tmp[0], tmp[2]));
         }
         for(String method:changedMethods) {
-            System.out.println(method + "   " + DDG_impact.get(method));
+            System.out.println("DDG_impact " + method + "   " + DDG_impact.get(method));
         }
+
+        Map<String, Double> CDG_impact = new HashMap<>();
+        for(String method:changedMethods) {
+            String[] tmp = method.split(":");
+            CDG_impact.put(method,
+                    cdg.getCDGimpact("E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/" + newCommit.substring(0, 7), tmp[0], tmp[2]));
+        }
+        for(String method:changedMethods) {
+            System.out.println("CDG_impact " + method + "   " + CDG_impact.get(method));
+        }
+
 
     }
 

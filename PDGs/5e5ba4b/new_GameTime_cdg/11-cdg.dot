@@ -1,0 +1,16 @@
+digraph "endTiming" {  
+"331" [label = <(&lt;operator&gt;.lessThan,bestScore &lt; score)<SUB>113</SUB>> ]
+"338" [label = <(&lt;operator&gt;.assignment,this.bestScore = score)<SUB>114</SUB>> ]
+"339" [label = <(&lt;operator&gt;.fieldAccess,this.bestScore)<SUB>114</SUB>> ]
+"342" [label = <(&lt;operator&gt;.fieldAccess,this.score)<SUB>114</SUB>> ]
+"347" [label = <(saveBestTime,this.saveBestTime(bestScore))<SUB>116</SUB>> ]
+"341" [label = <(FIELD_IDENTIFIER,bestScore,bestScore)<SUB>114</SUB>> ]
+"344" [label = <(FIELD_IDENTIFIER,score,score)<SUB>114</SUB>> ]
+"353" [label = <(printStackTrace,e.printStackTrace())<SUB>118</SUB>> ]
+  "331" -> "341" 
+  "331" -> "339" 
+  "331" -> "342" 
+  "331" -> "338" 
+  "331" -> "344" 
+  "347" -> "353" 
+}

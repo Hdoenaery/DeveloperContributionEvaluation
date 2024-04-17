@@ -1,0 +1,26 @@
+digraph "BirdDown" {  
+"866" [label = <(&lt;operator&gt;.assignment,this.state = STATE_DOWN)<SUB>190</SUB>> ]
+"850" [label = <(&lt;operator&gt;.logicalOr,state == STATE_DEAD || state == STATE_FALL)<SUB>188</SUB>> ]
+"865" [label = <(RETURN,return;,return;)<SUB>189</SUB>> ]
+"867" [label = <(&lt;operator&gt;.fieldAccess,this.state)<SUB>190</SUB>> ]
+"870" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.Bird.STATE_DOWN)<SUB>190</SUB>> ]
+"851" [label = <(&lt;operator&gt;.equals,state == STATE_DEAD)<SUB>188</SUB>> ]
+"858" [label = <(&lt;operator&gt;.equals,state == STATE_FALL)<SUB>188</SUB>> ]
+"869" [label = <(FIELD_IDENTIFIER,state,state)<SUB>190</SUB>> ]
+"872" [label = <(FIELD_IDENTIFIER,STATE_DOWN,STATE_DOWN)<SUB>190</SUB>> ]
+"859" [label = <(&lt;operator&gt;.fieldAccess,this.state)<SUB>188</SUB>> ]
+"862" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.Bird.STATE_FALL)<SUB>188</SUB>> ]
+"861" [label = <(FIELD_IDENTIFIER,state,state)<SUB>188</SUB>> ]
+"864" [label = <(FIELD_IDENTIFIER,STATE_FALL,STATE_FALL)<SUB>188</SUB>> ]
+  "850" -> "865" 
+  "850" -> "866" 
+  "850" -> "870" 
+  "850" -> "869" 
+  "850" -> "867" 
+  "850" -> "872" 
+  "851" -> "858" 
+  "851" -> "864" 
+  "851" -> "862" 
+  "851" -> "859" 
+  "851" -> "861" 
+}

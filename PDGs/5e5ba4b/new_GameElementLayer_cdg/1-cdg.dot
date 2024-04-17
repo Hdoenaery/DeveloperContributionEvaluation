@@ -1,0 +1,36 @@
+digraph "draw" {  
+"61" [label = <(&lt;operator&gt;.lessThan,i &lt; pipes.size())<SUB>28</SUB>> ]
+"67" [label = <(&lt;operator&gt;.postIncrement,i++)<SUB>28</SUB>> ]
+"63" [label = <(size,this.pipes.size())<SUB>28</SUB>> ]
+"71" [label = <(&lt;operator&gt;.assignment,Pipe pipe = pipes.get(i))<SUB>29</SUB>> ]
+"64" [label = <(&lt;operator&gt;.fieldAccess,this.pipes)<SUB>28</SUB>> ]
+"73" [label = <(get,this.pipes.get(i))<SUB>29</SUB>> ]
+"79" [label = <(isVisible,isVisible())<SUB>30</SUB>> ]
+"66" [label = <(FIELD_IDENTIFIER,pipes,pipes)<SUB>28</SUB>> ]
+"74" [label = <(&lt;operator&gt;.fieldAccess,this.pipes)<SUB>29</SUB>> ]
+"82" [label = <(draw,draw(g, bird))<SUB>31</SUB>> ]
+"76" [label = <(FIELD_IDENTIFIER,pipes,pipes)<SUB>29</SUB>> ]
+"89" [label = <(&lt;operator&gt;.assignment,Pipe remove = pipes.remove(i))<SUB>33</SUB>> ]
+"96" [label = <(giveBack,giveBack(remove))<SUB>34</SUB>> ]
+"99" [label = <(&lt;operator&gt;.postDecrement,i--)<SUB>35</SUB>> ]
+"91" [label = <(remove,this.pipes.remove(i))<SUB>33</SUB>> ]
+"92" [label = <(&lt;operator&gt;.fieldAccess,this.pipes)<SUB>33</SUB>> ]
+"94" [label = <(FIELD_IDENTIFIER,pipes,pipes)<SUB>33</SUB>> ]
+  "61" -> "73" 
+  "61" -> "61" 
+  "61" -> "64" 
+  "61" -> "66" 
+  "61" -> "71" 
+  "61" -> "67" 
+  "61" -> "74" 
+  "61" -> "63" 
+  "61" -> "76" 
+  "61" -> "79" 
+  "79" -> "94" 
+  "79" -> "96" 
+  "79" -> "89" 
+  "79" -> "99" 
+  "79" -> "92" 
+  "79" -> "91" 
+  "79" -> "82" 
+}
