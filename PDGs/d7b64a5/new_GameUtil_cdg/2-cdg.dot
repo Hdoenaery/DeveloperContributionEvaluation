@@ -1,0 +1,25 @@
+digraph "isInProbability" {  
+"79" [label = <(RETURN,return getRandomNumber(1, denominator + 1) &lt;= n...,return getRandomNumber(1, denominator + 1) &lt;= n...)<SUB>56</SUB>> ]
+"54" [label = <(&lt;operator&gt;.logicalOr,numerator &lt;= 0 || denominator &lt;= 0)<SUB>48</SUB>> ]
+"73" [label = <(&lt;operator&gt;.greaterEqualsThan,numerator &gt;= denominator)<SUB>52</SUB>> ]
+"80" [label = <(&lt;operator&gt;.lessEqualsThan,getRandomNumber(1, denominator + 1) &lt;= numerator)<SUB>56</SUB>> ]
+"55" [label = <(&lt;operator&gt;.lessEqualsThan,numerator &lt;= 0)<SUB>48</SUB>> ]
+"58" [label = <(&lt;operator&gt;.lessEqualsThan,denominator &lt;= 0)<SUB>48</SUB>> ]
+"62" [label = <(&lt;operator&gt;.throw,throw new Exception(&quot;传入了非法的参数&quot;);)<SUB>49</SUB>> ]
+"77" [label = <(RETURN,return true;,return true;)<SUB>53</SUB>> ]
+"81" [label = <(getRandomNumber,getRandomNumber(1, denominator + 1))<SUB>56</SUB>> ]
+"83" [label = <(&lt;operator&gt;.addition,denominator + 1)<SUB>56</SUB>> ]
+"65" [label = <(&lt;operator&gt;.assignment,$obj1 = new Exception(&quot;传入了非法的参数&quot;))<SUB>49</SUB>> ]
+"68" [label = <(&lt;init&gt;,new Exception(&quot;传入了非法的参数&quot;))<SUB>49</SUB>> ]
+"67" [label = <(&lt;operator&gt;.alloc,new Exception(&quot;传入了非法的参数&quot;))<SUB>49</SUB>> ]
+  "54" -> "68" 
+  "54" -> "65" 
+  "54" -> "67" 
+  "54" -> "62" 
+  "73" -> "80" 
+  "73" -> "77" 
+  "73" -> "83" 
+  "73" -> "81" 
+  "73" -> "79" 
+  "55" -> "58" 
+}

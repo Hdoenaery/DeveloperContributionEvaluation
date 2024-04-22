@@ -1,0 +1,19 @@
+digraph "resetGame" {  
+"784" [label = <(METHOD,resetGame)<SUB>92</SUB>> ]
+"807" [label = <(METHOD_RETURN,void)<SUB>92</SUB>> ]
+"785" [label = <(PARAM,this)<SUB>92</SUB>> ]
+"787" [label = <(setGameState,setGameState(STATE_READY))<SUB>93</SUB>> ]
+"793" [label = <(reset,this.outerClass.gameElement.reset())<SUB>94</SUB>> ]
+"799" [label = <(reset,this.outerClass.bird.reset())<SUB>95</SUB>> ]
+"787" [label = <(setGameState,setGameState(STATE_READY))<SUB>93</SUB>> ]
+"793" [label = <(reset,this.outerClass.gameElement.reset())<SUB>94</SUB>> ]
+"799" [label = <(reset,this.outerClass.bird.reset())<SUB>95</SUB>> ]
+  "785" -> "807"  [ label = "this"] 
+  "787" -> "807"  [ label = "this.outerClass.STATE_READY"] 
+  "787" -> "807"  [ label = "setGameState(STATE_READY)"] 
+  "793" -> "807"  [ label = "this.outerClass.gameElement"] 
+  "793" -> "807"  [ label = "this.outerClass.gameElement.reset()"] 
+  "799" -> "807"  [ label = "this.outerClass.bird"] 
+  "799" -> "807"  [ label = "this.outerClass.bird.reset()"] 
+  "784" -> "785" 
+}

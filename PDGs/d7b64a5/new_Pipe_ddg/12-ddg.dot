@@ -1,0 +1,17 @@
+digraph "setType" {  
+"647" [label = <(METHOD,setType)<SUB>190</SUB>> ]
+"656" [label = <(METHOD_RETURN,void)<SUB>190</SUB>> ]
+"25" [label = <(PARAM,this)<SUB>190</SUB>> ]
+"648" [label = <(PARAM,int type)<SUB>190</SUB>> ]
+"650" [label = <(&lt;operator&gt;.assignment,this.type = type)<SUB>191</SUB>> ]
+"650" [label = <(&lt;operator&gt;.assignment,this.type = type)<SUB>191</SUB>> ]
+"650" [label = <(&lt;operator&gt;.assignment,this.type = type)<SUB>191</SUB>> ]
+  "25" -> "656"  [ label = "this"] 
+  "650" -> "656"  [ label = "this.type"] 
+  "650" -> "656"  [ label = "type"] 
+  "650" -> "656"  [ label = "this.type = type"] 
+  "647" -> "25" 
+  "647" -> "648" 
+  "648" -> "650"  [ label = "type"] 
+  "647" -> "650" 
+}

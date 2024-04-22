@@ -1,0 +1,10 @@
+digraph "load" {  
+"1467" [label = <(METHOD,load)> ]
+"1471" [label = <(METHOD_RETURN,ANY)> ]
+"1468" [label = <(PARAM,p0)> ]
+"1469" [label = <(PARAM,p1)> ]
+  "1468" -> "1471"  [ label = "p0"] 
+  "1469" -> "1471"  [ label = "p1"] 
+  "1467" -> "1468" 
+  "1467" -> "1469" 
+}

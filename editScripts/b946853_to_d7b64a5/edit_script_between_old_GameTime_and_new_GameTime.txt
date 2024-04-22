@@ -1,0 +1,752 @@
+===
+insert-tree
+---
+PackageDeclaration [0,22]
+    Name: main [8,21]
+        Name: bird [8,16]
+            Name: com [8,11]
+to
+CompilationUnit [0,16]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [24,55]
+    Name: DataInputStream [31,54]
+        Name: io [31,38]
+            Name: java [31,35]
+to
+CompilationUnit [0,16]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [56,88]
+    Name: DataOutputStream [63,87]
+        Name: io [63,70]
+            Name: java [63,67]
+to
+CompilationUnit [0,16]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [89,109]
+    Name: File [96,108]
+        Name: io [96,103]
+            Name: java [96,100]
+to
+CompilationUnit [0,16]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [110,141]
+    Name: FileInputStream [117,140]
+        Name: io [117,124]
+            Name: java [117,121]
+to
+CompilationUnit [0,16]
+at 4
+===
+insert-tree
+---
+ImportDeclaration [142,174]
+    Name: FileOutputStream [149,173]
+        Name: io [149,156]
+            Name: java [149,153]
+to
+CompilationUnit [0,16]
+at 5
+===
+insert-tree
+---
+ImportDeclaration [176,206]
+    Name: Constant [183,205]
+        Name: util [183,196]
+            Name: bird [183,191]
+                Name: com [183,186]
+to
+CompilationUnit [0,16]
+at 6
+===
+insert-tree
+---
+ImportDeclaration [207,238]
+    Name: MusicUtil [214,237]
+        Name: util [214,227]
+            Name: bird [214,222]
+                Name: com [214,217]
+to
+CompilationUnit [0,16]
+at 7
+===
+insert-node
+---
+Modifier: public [282,288]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 0
+===
+insert-tree
+---
+FieldDeclaration [308,356]
+    Modifier: public [308,314]
+    Modifier: static [315,321]
+    Modifier: final [322,327]
+    VariableDeclarator [332,355]
+        PrimitiveType: int [328,331]
+        SimpleName: HOVER_BARRIER_TIME [332,350]
+        IntegerLiteralExpr: 10 [353,355]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 2
+===
+insert-tree
+---
+FieldDeclaration [371,420]
+    Modifier: public [371,377]
+    Modifier: static [378,384]
+    Modifier: final [385,390]
+    VariableDeclarator [395,419]
+        PrimitiveType: int [391,394]
+        SimpleName: MOVING_BARRIER_TIME [395,414]
+        IntegerLiteralExpr: 20 [417,419]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 3
+===
+insert-tree
+---
+FieldDeclaration [436,458]
+    Modifier: private [436,443]
+    VariableDeclarator [448,457]
+        PrimitiveType: int [444,447]
+        SimpleName: timeState [448,457]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 4
+===
+insert-tree
+---
+FieldDeclaration [470,510]
+    Modifier: public [470,476]
+    Modifier: static [477,483]
+    Modifier: final [484,489]
+    VariableDeclarator [494,509]
+        PrimitiveType: int [490,493]
+        SimpleName: STATE_READY [494,505]
+        IntegerLiteralExpr: 0 [508,509]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 5
+===
+insert-tree
+---
+FieldDeclaration [520,560]
+    Modifier: public [520,526]
+    Modifier: static [527,533]
+    Modifier: final [534,539]
+    VariableDeclarator [544,559]
+        PrimitiveType: int [540,543]
+        SimpleName: STATE_START [544,555]
+        IntegerLiteralExpr: 1 [558,559]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 6
+===
+insert-tree
+---
+FieldDeclaration [570,609]
+    Modifier: public [570,576]
+    Modifier: static [577,583]
+    Modifier: final [584,589]
+    VariableDeclarator [594,608]
+        PrimitiveType: int [590,593]
+        SimpleName: STATE_OVER [594,604]
+        IntegerLiteralExpr: 2 [607,608]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 7
+===
+insert-tree
+---
+FieldDeclaration [620,647]
+    Modifier: private [620,627]
+    VariableDeclarator [633,646]
+        PrimitiveType: long [628,632]
+        SimpleName: startTime [633,642]
+        IntegerLiteralExpr: 0 [645,646]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 8
+===
+insert-tree
+---
+FieldDeclaration [660,685]
+    Modifier: private [660,667]
+    VariableDeclarator [673,684]
+        PrimitiveType: long [668,672]
+        SimpleName: endTime [673,680]
+        IntegerLiteralExpr: 0 [683,684]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 9
+===
+insert-tree
+---
+FieldDeclaration [698,721]
+    Modifier: private [698,705]
+    VariableDeclarator [711,720]
+        PrimitiveType: long [706,710]
+        SimpleName: score [711,716]
+        IntegerLiteralExpr: 0 [719,720]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 10
+===
+insert-tree
+---
+FieldDeclaration [729,752]
+    Modifier: private [729,736]
+    VariableDeclarator [742,751]
+        PrimitiveType: long [737,741]
+        SimpleName: bestScore [742,751]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 11
+===
+insert-tree
+---
+ConstructorDeclaration [763,912]
+    Modifier: public [763,769]
+    SimpleName: GameTime [770,778]
+    BlockStmt [781,912]
+        ExpressionStmt [785,809]
+            AssignExpr [785,808]
+                NameExpr [785,794]
+                    SimpleName: timeState [785,794]
+                NameExpr [797,808]
+                    SimpleName: STATE_READY [797,808]
+        ExpressionStmt [812,827]
+            AssignExpr [812,826]
+                NameExpr [812,821]
+                    SimpleName: bestScore [812,821]
+                UnaryExpr [824,826]
+                    IntegerLiteralExpr: 1 [825,826]
+        TryStmt [831,909]
+            BlockStmt [835,859]
+                ExpressionStmt [840,855]
+                    MethodCallExpr [840,854]
+                        SimpleName: loadBestTime [840,852]
+            CatchClause [860,909]
+                Parameter [867,878]
+                    ClassOrInterfaceType [867,876]
+                        SimpleName: Exception [867,876]
+                    SimpleName: e [877,878]
+                BlockStmt [880,909]
+                    ExpressionStmt [885,905]
+                        MethodCallExpr [885,904]
+                            NameExpr [885,886]
+                                SimpleName: e [885,886]
+                            SimpleName: printStackTrace [887,902]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 12
+===
+insert-tree
+---
+MethodDeclaration [926,1172]
+    Modifier: private [926,933]
+    SimpleName: loadBestTime [939,951]
+    ClassOrInterfaceType [961,970]
+        SimpleName: Exception [961,970]
+    VoidType [934,938]
+    BlockStmt [971,1172]
+        ExpressionStmt [975,1022]
+            VariableDeclarationExpr [975,1021]
+                VariableDeclarator [980,1021]
+                    ClassOrInterfaceType [975,979]
+                        SimpleName: File [975,979]
+                    SimpleName: file [980,984]
+                    ObjectCreationExpr [987,1021]
+                        ClassOrInterfaceType [991,995]
+                            SimpleName: File [991,995]
+                        FieldAccessExpr [996,1020]
+                            NameExpr [996,1004]
+                                SimpleName: Constant [996,1004]
+                            SimpleName: SCORE_FILE_PATH [1005,1020]
+        IfStmt [1025,1169]
+            MethodCallExpr [1029,1042]
+                NameExpr [1029,1033]
+                    SimpleName: file [1029,1033]
+                SimpleName: exists [1034,1040]
+            BlockStmt [1044,1169]
+                ExpressionStmt [1049,1118]
+                    VariableDeclarationExpr [1049,1117]
+                        VariableDeclarator [1065,1117]
+                            ClassOrInterfaceType [1049,1064]
+                                SimpleName: DataInputStream [1049,1064]
+                            SimpleName: dis [1065,1068]
+                            ObjectCreationExpr [1071,1117]
+                                ClassOrInterfaceType [1075,1090]
+                                    SimpleName: DataInputStream [1075,1090]
+                                ObjectCreationExpr [1091,1116]
+                                    ClassOrInterfaceType [1095,1110]
+                                        SimpleName: FileInputStream [1095,1110]
+                                    NameExpr [1111,1115]
+                                        SimpleName: file [1111,1115]
+                ExpressionStmt [1122,1149]
+                    AssignExpr [1122,1148]
+                        NameExpr [1122,1131]
+                            SimpleName: bestScore [1122,1131]
+                        MethodCallExpr [1134,1148]
+                            NameExpr [1134,1137]
+                                SimpleName: dis [1134,1137]
+                            SimpleName: readLong [1138,1146]
+                ExpressionStmt [1153,1165]
+                    MethodCallExpr [1153,1164]
+                        NameExpr [1153,1156]
+                            SimpleName: dis [1153,1156]
+                        SimpleName: close [1157,1162]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 13
+===
+insert-tree
+---
+MethodDeclaration [1186,1406]
+    Modifier: public [1186,1192]
+    SimpleName: saveBestTime [1198,1210]
+    Parameter [1211,1220]
+        PrimitiveType: long [1211,1215]
+        SimpleName: time [1216,1220]
+    ClassOrInterfaceType [1229,1238]
+        SimpleName: Exception [1229,1238]
+    VoidType [1193,1197]
+    BlockStmt [1239,1406]
+        ExpressionStmt [1243,1290]
+            VariableDeclarationExpr [1243,1289]
+                VariableDeclarator [1248,1289]
+                    ClassOrInterfaceType [1243,1247]
+                        SimpleName: File [1243,1247]
+                    SimpleName: file [1248,1252]
+                    ObjectCreationExpr [1255,1289]
+                        ClassOrInterfaceType [1259,1263]
+                            SimpleName: File [1259,1263]
+                        FieldAccessExpr [1264,1288]
+                            NameExpr [1264,1272]
+                                SimpleName: Constant [1264,1272]
+                            SimpleName: SCORE_FILE_PATH [1273,1288]
+        ExpressionStmt [1293,1365]
+            VariableDeclarationExpr [1293,1364]
+                VariableDeclarator [1310,1364]
+                    ClassOrInterfaceType [1293,1309]
+                        SimpleName: DataOutputStream [1293,1309]
+                    SimpleName: dos [1310,1313]
+                    ObjectCreationExpr [1316,1364]
+                        ClassOrInterfaceType [1320,1336]
+                            SimpleName: DataOutputStream [1320,1336]
+                        ObjectCreationExpr [1337,1363]
+                            ClassOrInterfaceType [1341,1357]
+                                SimpleName: FileOutputStream [1341,1357]
+                            NameExpr [1358,1362]
+                                SimpleName: file [1358,1362]
+        ExpressionStmt [1368,1388]
+            MethodCallExpr [1368,1387]
+                NameExpr [1368,1371]
+                    SimpleName: dos [1368,1371]
+                SimpleName: writeLong [1372,1381]
+                NameExpr [1382,1386]
+                    SimpleName: time [1382,1386]
+        ExpressionStmt [1391,1403]
+            MethodCallExpr [1391,1402]
+                NameExpr [1391,1394]
+                    SimpleName: dos [1391,1394]
+                SimpleName: close [1395,1400]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 14
+===
+insert-tree
+---
+MethodDeclaration [1409,1460]
+    Modifier: public [1409,1415]
+    SimpleName: getBestScore [1421,1433]
+    PrimitiveType: long [1416,1420]
+    BlockStmt [1436,1460]
+        ReturnStmt [1440,1457]
+            NameExpr [1447,1456]
+                SimpleName: bestScore [1447,1456]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 15
+===
+insert-tree
+---
+MethodDeclaration [1463,1538]
+    Modifier: public [1463,1469]
+    SimpleName: setStartTime [1475,1487]
+    Parameter [1488,1502]
+        PrimitiveType: long [1488,1492]
+        SimpleName: startTime [1493,1502]
+    VoidType [1470,1474]
+    BlockStmt [1504,1538]
+        ExpressionStmt [1508,1535]
+            AssignExpr [1508,1534]
+                FieldAccessExpr [1508,1522]
+                    ThisExpr [1508,1512]
+                    SimpleName: startTime [1513,1522]
+                NameExpr [1525,1534]
+                    SimpleName: startTime [1525,1534]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 16
+===
+insert-tree
+---
+MethodDeclaration [1541,1609]
+    Modifier: public [1541,1547]
+    SimpleName: setOverTime [1553,1564]
+    Parameter [1565,1577]
+        PrimitiveType: long [1565,1569]
+        SimpleName: endTime [1570,1577]
+    VoidType [1548,1552]
+    BlockStmt [1579,1609]
+        ExpressionStmt [1583,1606]
+            AssignExpr [1583,1605]
+                FieldAccessExpr [1583,1595]
+                    ThisExpr [1583,1587]
+                    SimpleName: endTime [1588,1595]
+                NameExpr [1598,1605]
+                    SimpleName: endTime [1598,1605]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 17
+===
+insert-tree
+---
+MethodDeclaration [1651,1873]
+    Modifier: public [1651,1657]
+    SimpleName: getTime [1663,1670]
+    PrimitiveType: long [1658,1662]
+    BlockStmt [1673,1873]
+        IfStmt [1677,1870]
+            BinaryExpr [1681,1705]
+                NameExpr [1681,1690]
+                    SimpleName: timeState [1681,1690]
+                NameExpr [1694,1705]
+                    SimpleName: STATE_READY [1694,1705]
+            BlockStmt [1707,1733]
+                ReturnStmt [1712,1729]
+                    NameExpr [1719,1728]
+                        SimpleName: startTime [1719,1728]
+            IfStmt [1739,1870]
+                BinaryExpr [1743,1767]
+                    NameExpr [1743,1752]
+                        SimpleName: timeState [1743,1752]
+                    NameExpr [1756,1767]
+                        SimpleName: STATE_START [1756,1767]
+                BlockStmt [1769,1826]
+                    ReturnStmt [1774,1822]
+                        EnclosedExpr [1781,1821]
+                            BinaryExpr [1782,1820]
+                                MethodCallExpr [1782,1808]
+                                    NameExpr [1782,1788]
+                                        SimpleName: System [1782,1788]
+                                    SimpleName: currentTimeMillis [1789,1806]
+                                NameExpr [1811,1820]
+                                    SimpleName: startTime [1811,1820]
+                BlockStmt [1832,1870]
+                    ReturnStmt [1837,1866]
+                        EnclosedExpr [1844,1865]
+                            BinaryExpr [1845,1864]
+                                NameExpr [1845,1852]
+                                    SimpleName: endTime [1845,1852]
+                                NameExpr [1855,1864]
+                                    SimpleName: startTime [1855,1864]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 18
+===
+insert-tree
+---
+MethodDeclaration [1888,1950]
+    Modifier: public [1888,1894]
+    SimpleName: getTimeInSeconds [1900,1916]
+    PrimitiveType: long [1895,1899]
+    BlockStmt [1919,1950]
+        ReturnStmt [1923,1947]
+            BinaryExpr [1930,1946]
+                MethodCallExpr [1930,1939]
+                    SimpleName: getTime [1930,1937]
+                IntegerLiteralExpr: 1000 [1942,1946]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 19
+===
+insert-tree
+---
+MethodDeclaration [1965,2035]
+    Modifier: public [1965,1971]
+    SimpleName: isReadyTiming [1980,1993]
+    PrimitiveType: boolean [1972,1979]
+    BlockStmt [1996,2035]
+        ReturnStmt [2000,2032]
+            BinaryExpr [2007,2031]
+                NameExpr [2007,2016]
+                    SimpleName: timeState [2007,2016]
+                NameExpr [2020,2031]
+                    SimpleName: STATE_READY [2020,2031]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 20
+===
+insert-tree
+---
+MethodDeclaration [2047,2146]
+    Modifier: public [2047,2053]
+    SimpleName: startTiming [2059,2070]
+    VoidType [2054,2058]
+    BlockStmt [2073,2146]
+        ExpressionStmt [2077,2116]
+            AssignExpr [2077,2115]
+                NameExpr [2077,2086]
+                    SimpleName: startTime [2077,2086]
+                MethodCallExpr [2089,2115]
+                    NameExpr [2089,2095]
+                        SimpleName: System [2089,2095]
+                    SimpleName: currentTimeMillis [2096,2113]
+        ExpressionStmt [2119,2143]
+            AssignExpr [2119,2142]
+                NameExpr [2119,2128]
+                    SimpleName: timeState [2119,2128]
+                NameExpr [2131,2142]
+                    SimpleName: STATE_START [2131,2142]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 21
+===
+insert-tree
+---
+MethodDeclaration [2158,2437]
+    Modifier: public [2158,2164]
+    SimpleName: endTiming [2170,2179]
+    VoidType [2165,2169]
+    BlockStmt [2182,2437]
+        ExpressionStmt [2186,2223]
+            AssignExpr [2186,2222]
+                NameExpr [2186,2193]
+                    SimpleName: endTime [2186,2193]
+                MethodCallExpr [2196,2222]
+                    NameExpr [2196,2202]
+                        SimpleName: System [2196,2202]
+                    SimpleName: currentTimeMillis [2203,2220]
+        ExpressionStmt [2226,2249]
+            AssignExpr [2226,2248]
+                NameExpr [2226,2235]
+                    SimpleName: timeState [2226,2235]
+                NameExpr [2238,2248]
+                    SimpleName: STATE_OVER [2238,2248]
+        ExpressionStmt [2270,2297]
+            VariableDeclarationExpr [2270,2296]
+                VariableDeclarator [2275,2296]
+                    PrimitiveType: long [2270,2274]
+                    SimpleName: score [2275,2280]
+                    MethodCallExpr [2283,2296]
+                        SimpleName: TimeToScore [2283,2294]
+        IfStmt [2300,2344]
+            BinaryExpr [2304,2321]
+                NameExpr [2304,2313]
+                    SimpleName: bestScore [2304,2313]
+                NameExpr [2316,2321]
+                    SimpleName: score [2316,2321]
+            ExpressionStmt [2326,2344]
+                AssignExpr [2326,2343]
+                    NameExpr [2326,2335]
+                        SimpleName: bestScore [2326,2335]
+                    NameExpr [2338,2343]
+                        SimpleName: score [2338,2343]
+        TryStmt [2347,2434]
+            BlockStmt [2351,2384]
+                ExpressionStmt [2356,2380]
+                    MethodCallExpr [2356,2379]
+                        SimpleName: saveBestTime [2356,2368]
+                        NameExpr [2369,2378]
+                            SimpleName: bestScore [2369,2378]
+            CatchClause [2385,2434]
+                Parameter [2392,2403]
+                    ClassOrInterfaceType [2392,2401]
+                        SimpleName: Exception [2392,2401]
+                    SimpleName: e [2402,2403]
+                BlockStmt [2405,2434]
+                    ExpressionStmt [2410,2430]
+                        MethodCallExpr [2410,2429]
+                            NameExpr [2410,2411]
+                                SimpleName: e [2410,2411]
+                            SimpleName: printStackTrace [2412,2427]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 22
+===
+insert-tree
+---
+FieldDeclaration [2440,2489]
+    Modifier: private [2440,2447]
+    Modifier: static [2448,2454]
+    Modifier: final [2455,2460]
+    VariableDeclarator [2465,2488]
+        PrimitiveType: int [2461,2464]
+        SimpleName: FIRST_SCORE_TIME [2465,2481]
+        IntegerLiteralExpr: 6700 [2484,2488]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 23
+===
+insert-tree
+---
+FieldDeclaration [2513,2560]
+    Modifier: private [2513,2520]
+    Modifier: static [2521,2527]
+    Modifier: final [2528,2533]
+    VariableDeclarator [2538,2559]
+        PrimitiveType: int [2534,2537]
+        SimpleName: PER_SCORE_TIME [2538,2552]
+        IntegerLiteralExpr: 2850 [2555,2559]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 24
+===
+insert-tree
+---
+MethodDeclaration [2603,2981]
+    Modifier: public [2603,2609]
+    SimpleName: TimeToScore [2615,2626]
+    PrimitiveType: long [2610,2614]
+    BlockStmt [2629,2981]
+        ExpressionStmt [2633,2655]
+            VariableDeclarationExpr [2633,2654]
+                VariableDeclarator [2638,2654]
+                    PrimitiveType: long [2633,2637]
+                    SimpleName: time [2638,2642]
+                    MethodCallExpr [2645,2654]
+                        SimpleName: getTime [2645,2652]
+        ExpressionStmt [2658,2676]
+            VariableDeclarationExpr [2658,2675]
+                VariableDeclarator [2663,2675]
+                    PrimitiveType: long [2658,2662]
+                    SimpleName: temp [2663,2667]
+                    NameExpr [2670,2675]
+                        SimpleName: score [2670,2675]
+        IfStmt [2679,2895]
+            BinaryExpr [2683,2751]
+                BinaryExpr [2683,2707]
+                    NameExpr [2683,2687]
+                        SimpleName: time [2683,2687]
+                    NameExpr [2691,2707]
+                        SimpleName: FIRST_SCORE_TIME [2691,2707]
+                BinaryExpr [2711,2751]
+                    NameExpr [2711,2715]
+                        SimpleName: time [2711,2715]
+                    BinaryExpr [2718,2751]
+                        NameExpr [2718,2734]
+                            SimpleName: FIRST_SCORE_TIME [2718,2734]
+                        NameExpr [2737,2751]
+                            SimpleName: PER_SCORE_TIME [2737,2751]
+            BlockStmt [2753,2772]
+                ExpressionStmt [2758,2768]
+                    AssignExpr [2758,2767]
+                        NameExpr [2758,2763]
+                            SimpleName: score [2758,2763]
+                        IntegerLiteralExpr: 1 [2766,2767]
+            IfStmt [2778,2895]
+                BinaryExpr [2782,2823]
+                    NameExpr [2782,2786]
+                        SimpleName: time [2782,2786]
+                    BinaryExpr [2790,2823]
+                        NameExpr [2790,2806]
+                            SimpleName: FIRST_SCORE_TIME [2790,2806]
+                        NameExpr [2809,2823]
+                            SimpleName: PER_SCORE_TIME [2809,2823]
+                BlockStmt [2825,2895]
+                    ExpressionStmt [2830,2891]
+                        AssignExpr [2830,2890]
+                            NameExpr [2830,2835]
+                                SimpleName: score [2830,2835]
+                            BinaryExpr [2838,2890]
+                                BinaryExpr [2838,2886]
+                                    CastExpr [2838,2869]
+                                        PrimitiveType: int [2839,2842]
+                                        EnclosedExpr [2844,2869]
+                                            BinaryExpr [2845,2868]
+                                                NameExpr [2845,2849]
+                                                    SimpleName: time [2845,2849]
+                                                NameExpr [2852,2868]
+                                                    SimpleName: FIRST_SCORE_TIME [2852,2868]
+                                    NameExpr [2872,2886]
+                                        SimpleName: PER_SCORE_TIME [2872,2886]
+                                IntegerLiteralExpr: 1 [2889,2890]
+        IfStmt [2898,2962]
+            BinaryExpr [2902,2918]
+                BinaryExpr [2902,2914]
+                    NameExpr [2902,2907]
+                        SimpleName: score [2902,2907]
+                    NameExpr [2910,2914]
+                        SimpleName: temp [2910,2914]
+                IntegerLiteralExpr: 0 [2917,2918]
+            BlockStmt [2920,2962]
+                ExpressionStmt [2925,2947]
+                    MethodCallExpr [2925,2946]
+                        NameExpr [2925,2934]
+                            SimpleName: MusicUtil [2925,2934]
+                        SimpleName: playScore [2935,2944]
+        ReturnStmt [2965,2978]
+            NameExpr [2972,2977]
+                SimpleName: score [2972,2977]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 25
+===
+insert-tree
+---
+MethodDeclaration [3022,3087]
+    Modifier: public [3022,3028]
+    SimpleName: isTiming [3037,3045]
+    PrimitiveType: boolean [3029,3036]
+    BlockStmt [3048,3087]
+        ReturnStmt [3052,3084]
+            BinaryExpr [3059,3083]
+                NameExpr [3059,3068]
+                    SimpleName: timeState [3059,3068]
+                NameExpr [3072,3083]
+                    SimpleName: STATE_START [3072,3083]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 26
+===
+insert-tree
+---
+MethodDeclaration [3099,3182]
+    Modifier: public [3099,3105]
+    SimpleName: reset [3111,3116]
+    VoidType [3106,3110]
+    BlockStmt [3119,3182]
+        ExpressionStmt [3123,3147]
+            AssignExpr [3123,3146]
+                NameExpr [3123,3132]
+                    SimpleName: timeState [3123,3132]
+                NameExpr [3135,3146]
+                    SimpleName: STATE_READY [3135,3146]
+        ExpressionStmt [3150,3164]
+            AssignExpr [3150,3163]
+                NameExpr [3150,3159]
+                    SimpleName: startTime [3150,3159]
+                IntegerLiteralExpr: 0 [3162,3163]
+        ExpressionStmt [3167,3179]
+            AssignExpr [3167,3178]
+                NameExpr [3167,3174]
+                    SimpleName: endTime [3167,3174]
+                IntegerLiteralExpr: 0 [3177,3178]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 27

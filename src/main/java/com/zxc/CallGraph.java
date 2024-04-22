@@ -1,7 +1,12 @@
 package com.zxc;
 
 import java.io.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class CallGraph {
 
@@ -129,36 +134,61 @@ public class CallGraph {
 
     //传入调用图以获得每个函数与它所对应的节点编号的映射Map
     public static Map<String, Integer> getNodeMapping(String callGraphPath) {
-        Map<String, Integer> fileToNodeMap = new HashMap<>();
+        Map<String, Integer> methodToNodeMap = new HashMap<>();
 
         try (BufferedReader reader = new BufferedReader(new FileReader(callGraphPath))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 if (line.startsWith("//")) {
-                    int firstColonIndex = line.indexOf(':'); // 找到第一个出现的冒号的索引
-                    if (firstColonIndex != -1) { // 确保找到了冒号
-                        int nodeNumber = Integer.parseInt(line.substring(3, firstColonIndex));
-                        String fileNameLong = line.substring(firstColonIndex + 1).trim();
-                        fileToNodeMap.put(fileNameLong, nodeNumber);
+                    String className = null;
+                    String methodName = null;
+                    int nodeNumber = 0;
+                    // 定义正则表达式
+                    String regex = "// (\\d+).*\\\\([^.]+).*\\.([^)]+)\\)";
+
+                    // 编译正则表达式
+                    Pattern pattern = Pattern.compile(regex);
+
+                    // 创建 Matcher 对象
+                    Matcher matcher = pattern.matcher(line);
+
+                    // 查找匹配
+                    if (matcher.find()) {
+                        // 提取类名和方法名
+//                        System.out.println(line);
+//                        System.out.println(matcher.group(1));
+//                        System.out.println(matcher.group(2));
+//                        System.out.println(matcher.group(3));
+                        nodeNumber = Integer.parseInt(matcher.group(1));
+                        className = matcher.group(2);
+                        methodName = matcher.group(3);
                     }
+
+
+                    methodToNodeMap.put(className + "::" + methodName, nodeNumber);
+//                    int firstColonIndex = line.indexOf(':'); // 找到第一个出现的冒号的索引
+//                    if (firstColonIndex != -1) { // 确保找到了冒号
+//                        int nodeNumber = Integer.parseInt(line.substring(3, firstColonIndex));
+//                        String fileNameLong = line.substring(firstColonIndex + 1).trim();
+//                        System.out.println(fileNameLong);
+//
+//                    }
                 } else break;
             }
         } catch (IOException | NumberFormatException e) {
             e.printStackTrace();
         }
 
-        return fileToNodeMap;
+        return methodToNodeMap;
     }
 
     //传入项目源代码路径以获取该项目的调用图
-    public static void getCallGraph(String src, String outputFormat, String granularity){
+    public static void getCallGraph(String src, String outputFormat, String granularity, String projectName, String newCommit){
 
         String outputDirectory = "E:\\IDEA\\maven-project\\DeveloperContributionEvaluation\\CallGraphs";
-        int lastSlashIndex = src.lastIndexOf("\\");
-        String fileName = src.substring(lastSlashIndex + 1); //从文件路径中提取出文件名
-//        System.out.println("filename = " + fileName);
+
         String command = "depends -f " + outputFormat + " -g " + granularity + " -d " + outputDirectory +
-                " java " + src + " " + fileName;
+                " java " + src + " " + projectName + "_" + newCommit.substring(0, 7);
 //        System.out.println(command);
         executeCmdCommand("E:/Postgraduate_study/depends-0.9.7", command);
 

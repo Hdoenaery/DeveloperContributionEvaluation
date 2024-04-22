@@ -1,0 +1,307 @@
+===
+insert-tree
+---
+PackageDeclaration [0,22]
+    Name: main [8,21]
+        Name: bird [8,16]
+            Name: com [8,11]
+to
+CompilationUnit [0,22]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [24,49]
+    Name: Graphics [31,48]
+        Name: awt [31,39]
+            Name: java [31,35]
+to
+CompilationUnit [0,22]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [50,86]
+    Name: BufferedImage [57,85]
+        Name: image [57,71]
+            Name: awt [57,65]
+                Name: java [57,61]
+to
+CompilationUnit [0,22]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [88,118]
+    Name: Constant [95,117]
+        Name: util [95,108]
+            Name: bird [95,103]
+                Name: com [95,98]
+to
+CompilationUnit [0,22]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [119,149]
+    Name: GameUtil [126,148]
+        Name: util [126,139]
+            Name: bird [126,134]
+                Name: com [126,129]
+to
+CompilationUnit [0,22]
+at 4
+===
+insert-node
+---
+Modifier: public [207,213]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 0
+===
+insert-tree
+---
+FieldDeclaration [239,282]
+    Modifier: private [239,246]
+    Modifier: static [247,253]
+    VariableDeclarator [268,281]
+        ClassOrInterfaceType [254,267]
+            SimpleName: BufferedImage [254,267]
+        SimpleName: BackgroundImg [268,281]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 2
+===
+insert-tree
+---
+FieldDeclaration [292,310]
+    Modifier: private [292,299]
+    VariableDeclarator [304,309]
+        PrimitiveType: int [300,303]
+        SimpleName: speed [304,309]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 3
+===
+insert-tree
+---
+FieldDeclaration [322,341]
+    Modifier: private [322,329]
+    VariableDeclarator [334,340]
+        PrimitiveType: int [330,333]
+        SimpleName: layerX [334,340]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 4
+===
+insert-tree
+---
+ConstructorDeclaration [367,432]
+    Modifier: public [367,373]
+    SimpleName: GameBackground [374,388]
+    BlockStmt [391,432]
+        ExpressionStmt [395,410]
+            AssignExpr [395,409]
+                FieldAccessExpr [395,405]
+                    ThisExpr [395,399]
+                    SimpleName: speed [400,405]
+                IntegerLiteralExpr: 1 [408,409]
+        ExpressionStmt [413,429]
+            AssignExpr [413,428]
+                FieldAccessExpr [413,424]
+                    ThisExpr [413,417]
+                    SimpleName: layerX [418,424]
+                IntegerLiteralExpr: 0 [427,428]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 5
+===
+insert-tree
+---
+InitializerDeclaration [436,524]
+    BlockStmt [443,524]
+        ExpressionStmt [456,521]
+            AssignExpr [456,520]
+                NameExpr [456,469]
+                    SimpleName: BackgroundImg [456,469]
+                MethodCallExpr [472,520]
+                    NameExpr [472,480]
+                        SimpleName: GameUtil [472,480]
+                    SimpleName: loadBUfferedImage [481,498]
+                    FieldAccessExpr [499,519]
+                        NameExpr [499,507]
+                            SimpleName: Constant [499,507]
+                        SimpleName: BG_IMG_PATH [508,519]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 6
+===
+insert-tree
+---
+FieldDeclaration [527,595]
+    Modifier: public [527,533]
+    Modifier: static [534,540]
+    Modifier: final [541,546]
+    VariableDeclarator [551,594]
+        PrimitiveType: int [547,550]
+        SimpleName: BG_IMAGE_HEIGHT [551,566]
+        MethodCallExpr [569,594]
+            NameExpr [569,582]
+                SimpleName: BackgroundImg [569,582]
+            SimpleName: getHeight [583,592]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 7
+===
+insert-tree
+---
+MethodDeclaration [615,1146]
+    Modifier: public [615,621]
+    SimpleName: draw [627,631]
+    Parameter [632,642]
+        ClassOrInterfaceType [632,640]
+            SimpleName: Graphics [632,640]
+        SimpleName: g [641,642]
+    Parameter [644,653]
+        ClassOrInterfaceType [644,648]
+            SimpleName: Bird [644,648]
+        SimpleName: bird [649,653]
+    VoidType [622,626]
+    BlockStmt [655,1146]
+        ExpressionStmt [670,700]
+            MethodCallExpr [670,699]
+                NameExpr [670,671]
+                    SimpleName: g [670,671]
+                SimpleName: setColor [672,680]
+                FieldAccessExpr [681,698]
+                    NameExpr [681,689]
+                        SimpleName: Constant [681,689]
+                    SimpleName: BG_COLOR [690,698]
+        ExpressionStmt [703,765]
+            MethodCallExpr [703,764]
+                NameExpr [703,704]
+                    SimpleName: g [703,704]
+                SimpleName: fillRect [705,713]
+                IntegerLiteralExpr: 0 [714,715]
+                IntegerLiteralExpr: 0 [717,718]
+                FieldAccessExpr [720,740]
+                    NameExpr [720,728]
+                        SimpleName: Constant [720,728]
+                    SimpleName: FRAME_WIDTH [729,740]
+                FieldAccessExpr [742,763]
+                    NameExpr [742,750]
+                        SimpleName: Constant [742,750]
+                    SimpleName: FRAME_HEIGHT [751,763]
+        ExpressionStmt [784,824]
+            VariableDeclarationExpr [784,823]
+                VariableDeclarator [788,823]
+                    PrimitiveType: int [784,787]
+                    SimpleName: imgWidth [788,796]
+                    MethodCallExpr [799,823]
+                        NameExpr [799,812]
+                            SimpleName: BackgroundImg [799,812]
+                        SimpleName: getWidth [813,821]
+        ExpressionStmt [827,869]
+            VariableDeclarationExpr [827,868]
+                VariableDeclarator [831,868]
+                    PrimitiveType: int [827,830]
+                    SimpleName: imgHeight [831,840]
+                    MethodCallExpr [843,868]
+                        NameExpr [843,856]
+                            SimpleName: BackgroundImg [843,856]
+                        SimpleName: getHeight [857,866]
+        ExpressionStmt [873,921]
+            VariableDeclarationExpr [873,920]
+                VariableDeclarator [877,920]
+                    PrimitiveType: int [873,876]
+                    SimpleName: count [877,882]
+                    BinaryExpr [885,920]
+                        BinaryExpr [885,916]
+                            FieldAccessExpr [885,905]
+                                NameExpr [885,893]
+                                    SimpleName: Constant [885,893]
+                                SimpleName: FRAME_WIDTH [894,905]
+                            NameExpr [908,916]
+                                SimpleName: imgWidth [908,916]
+                        IntegerLiteralExpr: 2 [919,920]
+        ForStmt [943,1075]
+            VariableDeclarationExpr [948,957]
+                VariableDeclarator [952,957]
+                    PrimitiveType: int [948,951]
+                    SimpleName: i [952,953]
+                    IntegerLiteralExpr: 0 [956,957]
+            BinaryExpr [959,968]
+                NameExpr [959,960]
+                    SimpleName: i [959,960]
+                NameExpr [963,968]
+                    SimpleName: count [963,968]
+            UnaryExpr [970,973]
+                NameExpr [970,971]
+                    SimpleName: i [970,971]
+            BlockStmt [975,1075]
+                ExpressionStmt [980,1071]
+                    MethodCallExpr [980,1070]
+                        NameExpr [980,981]
+                            SimpleName: g [980,981]
+                        SimpleName: drawImage [982,991]
+                        NameExpr [992,1005]
+                            SimpleName: BackgroundImg [992,1005]
+                        BinaryExpr [1007,1028]
+                            BinaryExpr [1007,1019]
+                                NameExpr [1007,1015]
+                                    SimpleName: imgWidth [1007,1015]
+                                NameExpr [1018,1019]
+                                    SimpleName: i [1018,1019]
+                            NameExpr [1022,1028]
+                                SimpleName: layerX [1022,1028]
+                        BinaryExpr [1030,1063]
+                            FieldAccessExpr [1030,1051]
+                                NameExpr [1030,1038]
+                                    SimpleName: Constant [1030,1038]
+                                SimpleName: FRAME_HEIGHT [1039,1051]
+                            NameExpr [1054,1063]
+                                SimpleName: imgHeight [1054,1063]
+                        NullLiteralExpr [1065,1069]
+        IfStmt [1081,1128]
+            MethodCallExpr [1084,1097]
+                NameExpr [1084,1088]
+                    SimpleName: bird [1084,1088]
+                SimpleName: isDead [1089,1095]
+            BlockStmt [1099,1128]
+                ReturnStmt [1117,1124]
+        ExpressionStmt [1131,1143]
+            MethodCallExpr [1131,1142]
+                SimpleName: moveLogic [1131,1140]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 8
+===
+insert-tree
+---
+MethodDeclaration [1162,1266]
+    Modifier: private [1162,1169]
+    SimpleName: moveLogic [1175,1184]
+    VoidType [1170,1174]
+    BlockStmt [1187,1266]
+        ExpressionStmt [1191,1207]
+            AssignExpr [1191,1206]
+                NameExpr [1191,1197]
+                    SimpleName: layerX [1191,1197]
+                NameExpr [1201,1206]
+                    SimpleName: speed [1201,1206]
+        IfStmt [1210,1263]
+            BinaryExpr [1214,1247]
+                NameExpr [1214,1220]
+                    SimpleName: layerX [1214,1220]
+                MethodCallExpr [1223,1247]
+                    NameExpr [1223,1236]
+                        SimpleName: BackgroundImg [1223,1236]
+                    SimpleName: getWidth [1237,1245]
+            ExpressionStmt [1252,1263]
+                AssignExpr [1252,1262]
+                    NameExpr [1252,1258]
+                        SimpleName: layerX [1252,1258]
+                    IntegerLiteralExpr: 0 [1261,1262]
+to
+ClassOrInterfaceDeclaration [0,22]
+at 9

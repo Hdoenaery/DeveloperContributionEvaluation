@@ -1,0 +1,17 @@
+digraph "&lt;init&gt;" {  
+"1062" [label = <(METHOD,&lt;init&gt;)> ]
+"1069" [label = <(METHOD_RETURN,void)> ]
+"9" [label = <(PARAM,this)> ]
+"11" [label = <(PARAM,outerClass)<SUB>55</SUB>> ]
+"1064" [label = <(&lt;operator&gt;.assignment,this.outerClass = outerClass)<SUB>55</SUB>> ]
+"1064" [label = <(&lt;operator&gt;.assignment,this.outerClass = outerClass)<SUB>55</SUB>> ]
+"1064" [label = <(&lt;operator&gt;.assignment,this.outerClass = outerClass)<SUB>55</SUB>> ]
+  "9" -> "1069"  [ label = "this"] 
+  "1064" -> "1069"  [ label = "this.outerClass"] 
+  "1064" -> "1069"  [ label = "outerClass"] 
+  "1064" -> "1069"  [ label = "this.outerClass = outerClass"] 
+  "1062" -> "9" 
+  "1062" -> "11" 
+  "11" -> "1064"  [ label = "outerClass"] 
+  "1062" -> "1064" 
+}

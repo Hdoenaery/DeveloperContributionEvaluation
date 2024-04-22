@@ -1,0 +1,56 @@
+digraph "get" {  
+"26" [label = <(METHOD,get)<SUB>32</SUB>> ]
+"61" [label = <(METHOD_RETURN,ANY)<SUB>32</SUB>> ]
+"29" [label = <(&lt;operator&gt;.assignment,int size = pool.size())<SUB>33</SUB>> ]
+"29" [label = <(&lt;operator&gt;.assignment,int size = pool.size())<SUB>33</SUB>> ]
+"29" [label = <(&lt;operator&gt;.assignment,int size = pool.size())<SUB>33</SUB>> ]
+"36" [label = <(&lt;operator&gt;.greaterThan,size &gt; 0)<SUB>34</SUB>> ]
+"31" [label = <(size,com.bird.main.PipePool.pool.size())<SUB>33</SUB>> ]
+"36" [label = <(&lt;operator&gt;.greaterThan,size &gt; 0)<SUB>34</SUB>> ]
+"36" [label = <(&lt;operator&gt;.greaterThan,size &gt; 0)<SUB>34</SUB>> ]
+"40" [label = <(RETURN,// 移除并返回最后一个
+return pool.remove(size - 1);,// 移除并返回最后一个
+return pool.remove(size - 1);)<SUB>35</SUB>> ]
+"41" [label = <(remove,com.bird.main.PipePool.pool.remove(size - 1))<SUB>35</SUB>> ]
+"50" [label = <(RETURN,// 空对象池，返回一个新对象
+return new Pipe();,// 空对象池，返回一个新对象
+return new Pipe();)<SUB>37</SUB>> ]
+"41" [label = <(remove,com.bird.main.PipePool.pool.remove(size - 1))<SUB>35</SUB>> ]
+"41" [label = <(remove,com.bird.main.PipePool.pool.remove(size - 1))<SUB>35</SUB>> ]
+"51" [label = <(BLOCK,&lt;empty&gt;,&lt;empty&gt;)<SUB>37</SUB>> ]
+"45" [label = <(&lt;operator&gt;.subtraction,size - 1)<SUB>35</SUB>> ]
+"45" [label = <(&lt;operator&gt;.subtraction,size - 1)<SUB>35</SUB>> ]
+"53" [label = <(&lt;operator&gt;.assignment,$obj0 = new Pipe())<SUB>37</SUB>> ]
+"56" [label = <(&lt;init&gt;,new Pipe())<SUB>37</SUB>> ]
+"58" [label = <(IDENTIFIER,$obj0,&lt;empty&gt;)<SUB>37</SUB>> ]
+"53" [label = <(&lt;operator&gt;.assignment,$obj0 = new Pipe())<SUB>37</SUB>> ]
+"53" [label = <(&lt;operator&gt;.assignment,$obj0 = new Pipe())<SUB>37</SUB>> ]
+"56" [label = <(&lt;init&gt;,new Pipe())<SUB>37</SUB>> ]
+  "40" -> "61"  [ label = "&lt;RET&gt;"] 
+  "50" -> "61"  [ label = "&lt;RET&gt;"] 
+  "29" -> "61"  [ label = "com.bird.main.PipePool.pool.size()"] 
+  "29" -> "61"  [ label = "int size = pool.size()"] 
+  "36" -> "61"  [ label = "size &gt; 0"] 
+  "41" -> "61"  [ label = "com.bird.main.PipePool.pool"] 
+  "45" -> "61"  [ label = "size"] 
+  "41" -> "61"  [ label = "size - 1"] 
+  "41" -> "61"  [ label = "com.bird.main.PipePool.pool.remove(size - 1)"] 
+  "31" -> "29"  [ label = "com.bird.main.PipePool.pool"] 
+  "29" -> "36"  [ label = "size"] 
+  "26" -> "36" 
+  "41" -> "40"  [ label = "com.bird.main.PipePool.pool.remove(size - 1)"] 
+  "51" -> "50" 
+  "51" -> "50"  [ label = "&lt;empty&gt;"] 
+  "26" -> "50" 
+  "31" -> "41"  [ label = "com.bird.main.PipePool.pool"] 
+  "45" -> "41"  [ label = "size"] 
+  "45" -> "41"  [ label = "1"] 
+  "56" -> "51"  [ label = "$obj0"] 
+  "26" -> "51" 
+  "36" -> "45"  [ label = "size"] 
+  "26" -> "45" 
+  "26" -> "53" 
+  "26" -> "58" 
+  "53" -> "56"  [ label = "$obj0"] 
+  "26" -> "56" 
+}

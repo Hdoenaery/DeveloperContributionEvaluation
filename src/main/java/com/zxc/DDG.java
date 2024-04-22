@@ -238,7 +238,7 @@ public class DDG {
             String previousLine = "";
             while ((line = reader.readLine()) != null) {
 //                System.out.println("line = " + line);
-                if(line.trim().endsWith("{") || line.trim().endsWith("}"))
+                if(line.trim().startsWith("digraph") || line.trim().equals("}"))
                     continue;
 
                 if(!line.trim().endsWith("]") && !line.contains("->")) {

@@ -1,0 +1,10 @@
+digraph "getKeyChar" {  
+"1423" [label = <(METHOD,getKeyChar)> ]
+"1427" [label = <(METHOD_RETURN,ANY)> ]
+"1424" [label = <(PARAM,p0)> ]
+"1425" [label = <(PARAM,p1)> ]
+  "1424" -> "1427"  [ label = "p0"] 
+  "1425" -> "1427"  [ label = "p1"] 
+  "1423" -> "1424" 
+  "1423" -> "1425" 
+}

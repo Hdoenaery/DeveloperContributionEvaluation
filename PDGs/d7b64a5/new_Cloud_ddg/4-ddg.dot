@@ -1,0 +1,22 @@
+digraph "&lt;clinit&gt;" {  
+"254" [label = <(METHOD,&lt;clinit&gt;)> ]
+"272" [label = <(METHOD_RETURN,void)> ]
+"256" [label = <(&lt;operator&gt;.assignment,int Cloud.DIR_NONE = 0)<SUB>17</SUB>> ]
+"261" [label = <(&lt;operator&gt;.assignment,int Cloud.DIR_LEFT = 1)<SUB>18</SUB>> ]
+"266" [label = <(&lt;operator&gt;.assignment,int Cloud.DIR_RIGHT = 2)<SUB>19</SUB>> ]
+"256" [label = <(&lt;operator&gt;.assignment,int Cloud.DIR_NONE = 0)<SUB>17</SUB>> ]
+"256" [label = <(&lt;operator&gt;.assignment,int Cloud.DIR_NONE = 0)<SUB>17</SUB>> ]
+"261" [label = <(&lt;operator&gt;.assignment,int Cloud.DIR_LEFT = 1)<SUB>18</SUB>> ]
+"261" [label = <(&lt;operator&gt;.assignment,int Cloud.DIR_LEFT = 1)<SUB>18</SUB>> ]
+"266" [label = <(&lt;operator&gt;.assignment,int Cloud.DIR_RIGHT = 2)<SUB>19</SUB>> ]
+"266" [label = <(&lt;operator&gt;.assignment,int Cloud.DIR_RIGHT = 2)<SUB>19</SUB>> ]
+  "256" -> "272"  [ label = "Cloud.DIR_NONE"] 
+  "256" -> "272"  [ label = "int Cloud.DIR_NONE = 0"] 
+  "261" -> "272"  [ label = "Cloud.DIR_LEFT"] 
+  "261" -> "272"  [ label = "int Cloud.DIR_LEFT = 1"] 
+  "266" -> "272"  [ label = "Cloud.DIR_RIGHT"] 
+  "266" -> "272"  [ label = "int Cloud.DIR_RIGHT = 2"] 
+  "254" -> "256" 
+  "254" -> "261" 
+  "254" -> "266" 
+}

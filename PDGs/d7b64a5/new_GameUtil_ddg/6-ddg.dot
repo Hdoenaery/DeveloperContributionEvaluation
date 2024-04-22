@@ -1,0 +1,10 @@
+digraph "read" {  
+"195" [label = <(METHOD,read)> ]
+"199" [label = <(METHOD_RETURN,ANY)> ]
+"196" [label = <(PARAM,p1)> ]
+"197" [label = <(PARAM,p2)> ]
+  "196" -> "199"  [ label = "p1"] 
+  "197" -> "199"  [ label = "p2"] 
+  "195" -> "196" 
+  "195" -> "197" 
+}

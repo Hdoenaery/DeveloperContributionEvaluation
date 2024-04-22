@@ -29,58 +29,42 @@ public class Main {
         List<String> commits = getAllCommitHashes(gitDirectory);//传入 Git 项目的目录路径，获取该项目所有的commit版本
 
 
-//        String file1 = "E:/IDEA/maven-project/DeveloperContributionEvaluation/tempFile/8f0bd9c_to_01b2479/old_JSON.java";
-//        String file2 = "E:/IDEA/maven-project/DeveloperContributionEvaluation/tempFile/8f0bd9c_to_01b2479/new_JSON.java";
+//        String file1 = "E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/8f0bd9c_to_01b2479/old_JSON.java";
+//        String file2 = "E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/8f0bd9c_to_01b2479/new_JSON.java";
 //        getASTFromFile(file1);
 //        computeEditScript(file1, file2, "", "");
 //        gumtreeSpoonASTDiff(file, file2);
 //        readEditScriptFile();
 
-        String newCommit = commits.get(commits.size()-3);
-        String oldCommit = commits.get(commits.size()-2);
+        String newCommit = commits.get(commits.size()-2);
+        String oldCommit = commits.get(commits.size()-1);
 
-//        System.out.println(tool.executeGitCommand(gitDirectory, new String[]{"git", "diff", "-U50", oldCommit, newCommit}));
-
-//        System.out.println("oldCommit = " + oldCommit);
-//        System.out.println("newCommit = " + newCommit);
-//        String newCommit = "e161fcd62a4a75121bd22773e2cdbf2867a16225";
-//        String oldCommit = "8fa7aea250aaee5833b6d5da9ec76cfb63269d21";
-//        String newCommit = "679140e0ad6c0bb1cd3b8397f32c5fe55fc7f3b1";//新
-//        String oldCommit = "16a43f59be6130dd7d8346401e1575a2f1a2e435";//旧
-
-//        getEditScriptsBetweenCommits(gitDirectory, newCommit, oldCommit); //获取两个commit之间所有发生更改的.java文件的编辑脚本
-//        String folderPath = "DeveloperContributionEvaluation/editScripts/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"; //这些编辑脚本的保存路径
-//        ASTScoreCalculator astScoreCalculator = new ASTScoreCalculator();
-//        double score = astScoreCalculator.calculateTotalASTScore(folderPath); //计算这些编辑脚本的总得分
-//        System.out.println("Total AST Score: " + String.format("%.2f", score));
+        getEditScriptsBetweenCommits(gitDirectory, newCommit, oldCommit); //获取两个commit之间所有发生更改的.java文件的编辑脚本
+        String folderPath = "DeveloperContributionEvaluation/editScripts/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"; //这些编辑脚本的保存路径
+        ASTScoreCalculator astScoreCalculator = new ASTScoreCalculator();
+        double score = astScoreCalculator.calculateTotalASTScore(folderPath); //计算这些编辑脚本的总得分
+        System.out.println("Total AST Score: " + String.format("%.2f", score));
 
 //        以上计算AST编辑脚本分数
 //        ------------------------------------------------------------------------------------------------------------------------------------
 
         CallGraph callGraph = new CallGraph();
-        String analyzedDirectory = "E:\\Postgraduate_study\\FlappyBird\\src\\main\\java\\com\\kingyu\\flappybird";
+        String analyzedDirectory = "E:/Postgraduate_study/FlappyBird/src";
         String outputFormat = "dot";
         String granularity = "method";
-//        callGraph.getCallGraph(analyzedDirectory, outputFormat, granularity); //获取该项目的调用图
+        callGraph.getCallGraph(analyzedDirectory, outputFormat, granularity, projectName, newCommit); //获取该项目的调用图
 
-        int lastSlashIndex = analyzedDirectory.lastIndexOf("\\");
-        String callGraphName = analyzedDirectory.substring(lastSlashIndex + 1) + "-" + granularity + "." + outputFormat;
+        String callGraphName = projectName + "_" + newCommit.substring(0, 7) + "-" + granularity + "." + outputFormat;
         String callGraphPath = "DeveloperContributionEvaluation/CallGraphs/" + callGraphName;
 
-//        String callGraphPathTest = "DeveloperContributionEvaluation/CallGraphs/test2.dot";
 
         Map<Integer, List<Integer>> graphC = callGraph.buildGraph(callGraphPath);//根据调用图生成邻接表
-//        System.out.println(graphC);
 
         Map<Integer, Double> mapPr = callGraph.getPageRank(graphC);
-//        System.out.println(mapPr);
         double sum = 0;
         for(Double i:mapPr.values()) {
             sum += i;
         }
-//        System.out.println("sum = " + sum);
-
-//        System.out.println("gtaphC.size() = " + graphC.size());
 
         Map<Integer, Double> nodeWeight = callGraph.measureInterFunctionInteraction(graphC, mapPr, 1);
 
@@ -89,9 +73,9 @@ public class Main {
 //        }
 
         //获取项目中每个函数在调用图中所对应的节点编号
-        Map<String, Integer> functionToNodeMap = callGraph.getNodeMapping("DeveloperContributionEvaluation/CallGraphs/" + callGraphName);
-//        for (String key : functionToNodeMap.keySet()) {
-//            System.out.println("functionName: " + key + "\nNode: " + functionToNodeMap.get(key)); //输出键值对验证是否正确
+        Map<String, Integer> methodToNodeMap = callGraph.getNodeMapping("DeveloperContributionEvaluation/CallGraphs/" + callGraphName);
+//        for (String key : methodToNodeMap.keySet()) {
+//            System.out.println("methodName: " + key + "\nNode: " + methodToNodeMap.get(key)); //输出键值对验证是否正确
 //        }
 
 //        以上计算调用图中各节点的权重
@@ -102,13 +86,12 @@ public class Main {
 //
         complexityCalculator.getChangedMethods_LOC_CC(gitDirectory, oldCommit, newCommit);
         List<String> changedMethods = complexityCalculator.getChangedMethods();
-//        Map<String, Integer> LOC = complexityCalculator.getLOC();
-//        Map<String, Integer> CC = complexityCalculator.getCC();
-//        Map<String, Double> HV = complexityCalculator.getHV();
-//        Map<String, Double> PCom = complexityCalculator.getPCom();
-//        Map<String, Double> CM = new HashMap<>();
-//
-////        List<String> changedMethods = tool.getChangedMethods(gitDirectory, oldCommit, newCommit);
+        Map<String, Integer> LOC = complexityCalculator.getLOC();
+        Map<String, Integer> CC = complexityCalculator.getCC();
+        Map<String, Double> HV = complexityCalculator.getHV();
+        Map<String, Double> PCom = complexityCalculator.getPCom();
+        Map<String, Double> CM = new HashMap<>();
+
 //        for (String method : changedMethods) {
 //            CM.put(method, (LOC.get(method) + CC.get(method) + HV.get(method) - PCom.get(method)) / 2 + 1);
 //            System.out.println(method);
@@ -121,9 +104,9 @@ public class Main {
 //        ------------------------------------------------------------------------------------------------------------------------------------
         DDG ddg = new DDG();
         CDG cdg = new CDG();
-        ddg.getDDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/tempFile/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
+        ddg.getDDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
                 , newCommit);
-        cdg.getCDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/tempFile/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
+        cdg.getCDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
                 , newCommit);
 
         Map<String, Double> DDG_impact = new HashMap<>();
@@ -132,9 +115,9 @@ public class Main {
             DDG_impact.put(method,
                     ddg.getDDGimpact("E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/" + newCommit.substring(0, 7), tmp[0], tmp[2]));
         }
-        for(String method:changedMethods) {
-            System.out.println("DDG_impact " + method + "   " + DDG_impact.get(method));
-        }
+//        for(String method:changedMethods) {
+//            System.out.println("DDG_impact " + method + "   " + DDG_impact.get(method));
+//        }
 
         Map<String, Double> CDG_impact = new HashMap<>();
         for(String method:changedMethods) {
@@ -142,11 +125,26 @@ public class Main {
             CDG_impact.put(method,
                     cdg.getCDGimpact("E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/" + newCommit.substring(0, 7), tmp[0], tmp[2]));
         }
-        for(String method:changedMethods) {
-            System.out.println("CDG_impact " + method + "   " + CDG_impact.get(method));
+//        for(String method:changedMethods) {
+//            System.out.println("CDG_impact " + method + "   " + CDG_impact.get(method));
+//        }
+
+        for (String method : changedMethods) {
+            CM.put(method, (LOC.get(method) + CC.get(method) + HV.get(method) - PCom.get(method)) / 2 + 1);
+            System.out.println(method);
+            System.out.println("LOC = " + LOC.get(method) + ", CC = " + CC.get(method) +
+                    ", HV = " + HV.get(method) + ", PCom = " + PCom.get(method) + ", CM = " + CM.get(method));
+
+            double weight = 0.0;
+            if(methodToNodeMap.containsKey(method) && nodeWeight.containsKey(methodToNodeMap.get(method)))
+                weight = nodeWeight.get(methodToNodeMap.get(method));
+
+            System.out.println("weight = " + weight);
+
+            System.out.println("DDG_impact = " + DDG_impact.get(method) + " , CDG_impact = " + CDG_impact.get(method));
+
+            System.out.println();
         }
-
-
     }
 
 
@@ -156,7 +154,7 @@ public class Main {
         List<String> changedJavaFiles = getChangedJavaFiles(gitDirectory, newCommit, oldCommit);
 
         System.out.println("这两个commit之间所有的编辑脚本如下：");
-        String filePath = "DeveloperContributionEvaluation/tempFile/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/";
+        String filePath = "DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/";
         // 确保文件夹存在，如果不存在则创建它
         File folder = new File(filePath);
         if (!folder.exists()) {
@@ -184,7 +182,7 @@ public class Main {
 //            System.out.println("成功获取两个commit中文件" + fileNameShort + "的内容");
 
 
-            //将该文件内容保存到临时文件夹tempFile中
+            //将该文件内容保存到临时文件夹changedFilesContent中
             String newFileName = filePath + "new_" + fileNameShort;
             String oldFileName = filePath + "old_" + fileNameShort;
             writeStringToFile(fileContentAtNewCommit, newFileName);
@@ -275,11 +273,11 @@ public class Main {
             // 读取命令输出
             BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
             String line;
-            System.out.println("发生变更的.java文件如下：");
+//            System.out.println("发生变更的.java文件如下：");
             while ((line = reader.readLine()) != null) {
                 if (line.endsWith(".java")) { // 只添加 .java 文件名
                     changedFiles.add(line);
-                    System.out.println(line);
+//                    System.out.println(line);
                 }
             }
 
