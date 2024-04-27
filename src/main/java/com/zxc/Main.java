@@ -27,17 +27,16 @@ public class Main {
         Tool tool = new Tool();
 
         List<String> commits = getAllCommitHashes(gitDirectory);//传入 Git 项目的目录路径，获取该项目所有的commit版本
+        String newCommit = commits.get(commits.size()-3);
+        String oldCommit = commits.get(commits.size()-2);
 
-
-//        String file1 = "E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/8f0bd9c_to_01b2479/old_JSON.java";
-//        String file2 = "E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/8f0bd9c_to_01b2479/new_JSON.java";
-//        getASTFromFile(file1);
+//        String file1 = "E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/d7b64a5_to_5e5ba4b/old_Bird.java";
+//        String file2 = "E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/d7b64a5_to_5e5ba4b/new_Bird.java";
+//        getASTFromFile(file2, newCommit);
 //        computeEditScript(file1, file2, "", "");
 //        gumtreeSpoonASTDiff(file, file2);
 //        readEditScriptFile();
 
-        String newCommit = commits.get(commits.size()-2);
-        String oldCommit = commits.get(commits.size()-1);
 
         getEditScriptsBetweenCommits(gitDirectory, newCommit, oldCommit); //获取两个commit之间所有发生更改的.java文件的编辑脚本
         String folderPath = "DeveloperContributionEvaluation/editScripts/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"; //这些编辑脚本的保存路径
@@ -104,10 +103,10 @@ public class Main {
 //        ------------------------------------------------------------------------------------------------------------------------------------
         DDG ddg = new DDG();
         CDG cdg = new CDG();
-        ddg.getDDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
-                , newCommit);
-        cdg.getCDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
-                , newCommit);
+//        ddg.getDDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
+//                , newCommit);
+//        cdg.getCDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
+//                , newCommit);
 
         Map<String, Double> DDG_impact = new HashMap<>();
         for(String method:changedMethods) {
@@ -147,10 +146,8 @@ public class Main {
         }
     }
 
-
-
     //生成两个commit之间有变化的.java文件之间的编辑脚本
-    public static void getEditScriptsBetweenCommits(String gitDirectory, String newCommit, String oldCommit) throws IOException {
+    public static void getEditScriptsBetweenCommits(String gitDirectory, String newCommit, String oldCommit) throws Exception {
         List<String> changedJavaFiles = getChangedJavaFiles(gitDirectory, newCommit, oldCommit);
 
         System.out.println("这两个commit之间所有的编辑脚本如下：");
@@ -188,8 +185,8 @@ public class Main {
             writeStringToFile(fileContentAtNewCommit, newFileName);
             writeStringToFile(fileContentAtOldCommit, oldFileName);
 
+            getASTFromFile(newFileName, newCommit);
             computeEditScript(oldFileName, newFileName, oldCommit, newCommit);
-
         }
         System.out.println("所有编辑脚本获取结束");
 
@@ -337,8 +334,8 @@ public class Main {
         }
     }
 
-    //从源代码提取出抽象语法树
-    public static void getASTFromFile(String filePath) throws Exception {
+    //从源代码提取出抽象语法树，传入需要分析的.java文件的路径，和当前的commit号
+    public static void getASTFromFile(String filePath, String newCommit) throws Exception {
         Run.initGenerators(); // registers the available parsers
         TreeContext tc = TreeGenerators.getInstance().getTree(filePath); // retrieves and applies the default parser for the file
         Tree t = (Tree) tc.getRoot(); // retrieves the root of the tree
@@ -348,12 +345,7 @@ public class Main {
         // AST 的字符串表示
         String astString = t.toTreeString();
 
-        // 获取 Java 文件的目录路径
-        String javaFileDirectory = new File(filePath).getParent();
-//        System.out.println(javaFileDirectory);
-        // 构建 AST 文件的文件夹路径
-//        String astFolder = javaFileDirectory + "/ASTfiles/";
-        String astFolder = "DeveloperContributionEvaluation/ASTfiles/";
+        String astFolder = "DeveloperContributionEvaluation/ASTfiles/" + newCommit.substring(0,7) + "/";
 
         // 确保文件夹存在，如果不存在则创建它
         File folder = new File(astFolder);
@@ -399,15 +391,16 @@ public class Main {
         Run.initGenerators(); // registers the available parsers
         String srcFile = file1;
         String dstFile = file2;
+
         Tree src = TreeGenerators.getInstance().getTree(srcFile).getRoot(); // retrieves and applies the default parser for the file
         Tree dst = TreeGenerators.getInstance().getTree(dstFile).getRoot(); // retrieves and applies the default parser for the file
         Matcher defaultMatcher = Matchers.getInstance().getMatcher(); // retrieves the default matcher
         MappingStore mappings = defaultMatcher.match(src, dst); // computes the mappings between the trees
         EditScriptGenerator editScriptGenerator = new SimplifiedChawatheScriptGenerator(); // instantiates the simplified Chawathe script generator
         EditScript actions = editScriptGenerator.computeActions(mappings); // computes the edit script
-        for (Action action : actions) {
+//        for (Action action : actions) {
 //            System.out.println(action);
-        }
+//        }
 
         String filePath = "DeveloperContributionEvaluation/editScripts/";
         if(!oldCommit.equals("")){
