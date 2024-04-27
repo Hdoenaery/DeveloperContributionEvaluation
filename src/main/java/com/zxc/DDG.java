@@ -157,7 +157,9 @@ public class DDG {
         backwardTraversal.addAll(forwardTraversal);
 //        System.out.println("All Traversal Node Count: " + backwardTraversal.size());
 
-        double DDG_impact = Math.max(backwardTraversal.size() * 1.0 / newNodes.size(), 0);
+        double DDG_impact = 0.0;
+        if(newNodes.size() > 0)
+            DDG_impact = Math.max(backwardTraversal.size() * 1.0 / newNodes.size(), 0);
 //        System.out.println(DDG_impact);
 //        System.out.println(newNodes.size());
         return DDG_impact;
@@ -334,6 +336,17 @@ public class DDG {
     //生成对应文件的DDG
     public static void getDDG(String src, String newCommit) {
         String basePath = "E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs";
+        // 创建File对象，表示文件夹路径
+        File base = new File(basePath);
+        // 检查文件夹是否已存在
+        if (!base.exists()) {
+            // 如果不存在，则创建文件夹
+            boolean created = base.mkdir();
+            if (!created) {
+                System.out.println("无法创建文件夹：" + basePath);
+            }
+        }
+
         String folderName = newCommit.substring(0,7);
         String folderPath = basePath + "/" + folderName;
         // 创建File对象，表示文件夹路径
