@@ -39,10 +39,18 @@ public class Main {
 
 
         getEditScriptsBetweenCommits(gitDirectory, newCommit, oldCommit); //获取两个commit之间所有发生更改的.java文件的编辑脚本
-        String folderPath = "DeveloperContributionEvaluation/editScripts/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"; //这些编辑脚本的保存路径
+        String editscriptsPath = "DeveloperContributionEvaluation/editScripts/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"; //这些编辑脚本的保存路径
+        String astFolder = "DeveloperContributionEvaluation/ASTfiles/" + newCommit.substring(0,7) + "/";
+
         ASTScoreCalculator astScoreCalculator = new ASTScoreCalculator();
-        double score = astScoreCalculator.calculateTotalASTScore(folderPath); //计算这些编辑脚本的总得分
-        System.out.println("Total AST Score: " + String.format("%.2f", score));
+
+//        double score = 0;
+        Map<String, Double> astScore= astScoreCalculator.calculateTotalASTScore(editscriptsPath, astFolder); //计算每个变更方法的ast得分
+//        for (Map.Entry<String, Double> entry : astScore.entrySet()) {
+//            System.out.println("methodName = " + entry.getKey() + "   ; astScore = " + entry.getValue());
+//            score+=entry.getValue();
+//        }
+//        System.out.println("Total AST Score: " + String.format("%.2f", score));
 
 //        以上计算AST编辑脚本分数
 //        ------------------------------------------------------------------------------------------------------------------------------------
@@ -131,6 +139,9 @@ public class Main {
         for (String method : changedMethods) {
             CM.put(method, (LOC.get(method) + CC.get(method) + HV.get(method) - PCom.get(method)) / 2 + 1);
             System.out.println(method);
+            if(!astScore.containsKey(method))
+                astScore.put(method, 0.0);
+            System.out.println("astScore = " + astScore.get(method));
             System.out.println("LOC = " + LOC.get(method) + ", CC = " + CC.get(method) +
                     ", HV = " + HV.get(method) + ", PCom = " + PCom.get(method) + ", CM = " + CM.get(method));
 
@@ -354,7 +365,7 @@ public class Main {
         }
         // 指定要写入的文件名和路径
         String srcFileName = new File(filePath).getName();
-        String astFileName = astFolder + srcFileName.replace(".java", "") + "_AST.txt";
+        String astFileName = astFolder + srcFileName.replace(".java", "").replace("new_", "") + "_AST.txt";
 
         // 将 AST 字符串写入文件
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(astFileName))) {
@@ -411,8 +422,8 @@ public class Main {
                 folder.mkdirs();
             }
         }
-        String editScriptFileName = filePath + "edit_script_between_" +
-                new File(srcFile).getName().replace(".java", "") + "_and_" + new File(dstFile).getName().replace(".java", "") + ".txt";
+        String editScriptFileName = filePath + "editscript_" +
+                new File(srcFile).getName().replace(".java", "").replace("old_", "") + ".txt";
         writeEditScriptToFile(actions, editScriptFileName);
     }
 
