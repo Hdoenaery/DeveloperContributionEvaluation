@@ -1,0 +1,5 @@
+===
+update-node
+---
+SimpleName: GAME_INTERVAL [2339,2352]
+replace GAME_INTERVAL by FPS

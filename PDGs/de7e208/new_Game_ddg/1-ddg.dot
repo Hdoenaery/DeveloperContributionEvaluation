@@ -1,0 +1,119 @@
+digraph "initFrame" {  
+"665" [label = <(METHOD,initFrame)<SUB>50</SUB>> ]
+"695" [label = <(METHOD_RETURN,void)<SUB>50</SUB>> ]
+"4" [label = <(PARAM,this)<SUB>50</SUB>> ]
+"667" [label = <(setSize,setSize(FRAME_WIDTH, FRAME_HEIGHT))<SUB>51</SUB>> ]
+"670" [label = <(setTitle,setTitle(GAME_TITLE))<SUB>52</SUB>> ]
+"672" [label = <(setLocation,setLocation(FRAME_X, FRAME_Y))<SUB>53</SUB>> ]
+"675" [label = <(setResizable,this.setResizable(false))<SUB>54</SUB>> ]
+"677" [label = <(addWindowListener,this.addWindowListener(new WindowAdapter() {
+...)<SUB>56</SUB>> ]
+"684" [label = <(addKeyListener,this.addKeyListener(new BirdKeyListener()))<SUB>62</SUB>> ]
+"667" [label = <(setSize,setSize(FRAME_WIDTH, FRAME_HEIGHT))<SUB>51</SUB>> ]
+"667" [label = <(setSize,setSize(FRAME_WIDTH, FRAME_HEIGHT))<SUB>51</SUB>> ]
+"667" [label = <(setSize,setSize(FRAME_WIDTH, FRAME_HEIGHT))<SUB>51</SUB>> ]
+"670" [label = <(setTitle,setTitle(GAME_TITLE))<SUB>52</SUB>> ]
+"670" [label = <(setTitle,setTitle(GAME_TITLE))<SUB>52</SUB>> ]
+"672" [label = <(setLocation,setLocation(FRAME_X, FRAME_Y))<SUB>53</SUB>> ]
+"672" [label = <(setLocation,setLocation(FRAME_X, FRAME_Y))<SUB>53</SUB>> ]
+"672" [label = <(setLocation,setLocation(FRAME_X, FRAME_Y))<SUB>53</SUB>> ]
+"675" [label = <(setResizable,this.setResizable(false))<SUB>54</SUB>> ]
+"675" [label = <(setResizable,this.setResizable(false))<SUB>54</SUB>> ]
+"677" [label = <(addWindowListener,this.addWindowListener(new WindowAdapter() {
+...)<SUB>56</SUB>> ]
+"677" [label = <(addWindowListener,this.addWindowListener(new WindowAdapter() {
+...)<SUB>56</SUB>> ]
+"684" [label = <(addKeyListener,this.addKeyListener(new BirdKeyListener()))<SUB>62</SUB>> ]
+"684" [label = <(addKeyListener,this.addKeyListener(new BirdKeyListener()))<SUB>62</SUB>> ]
+"680" [label = <(&lt;operator&gt;.assignment,$obj0 = new WindowAdapter() {
+
+    @Override...)<SUB>56</SUB>> ]
+"79" [label = <(&lt;init&gt;,new WindowAdapter() {
+
+    @Override
+    pub...)<SUB>56</SUB>> ]
+"683" [label = <(IDENTIFIER,$obj0,&lt;empty&gt;)<SUB>56</SUB>> ]
+"687" [label = <(&lt;operator&gt;.assignment,$obj1 = new BirdKeyListener())<SUB>62</SUB>> ]
+"690" [label = <(&lt;init&gt;,new BirdKeyListener())<SUB>62</SUB>> ]
+"692" [label = <(IDENTIFIER,$obj1,&lt;empty&gt;)<SUB>62</SUB>> ]
+"680" [label = <(&lt;operator&gt;.assignment,$obj0 = new WindowAdapter() {
+
+    @Override...)<SUB>56</SUB>> ]
+"680" [label = <(&lt;operator&gt;.assignment,$obj0 = new WindowAdapter() {
+
+    @Override...)<SUB>56</SUB>> ]
+"79" [label = <(&lt;init&gt;,new WindowAdapter() {
+
+    @Override
+    pub...)<SUB>56</SUB>> ]
+"79" [label = <(&lt;init&gt;,new WindowAdapter() {
+
+    @Override
+    pub...)<SUB>56</SUB>> ]
+"687" [label = <(&lt;operator&gt;.assignment,$obj1 = new BirdKeyListener())<SUB>62</SUB>> ]
+"687" [label = <(&lt;operator&gt;.assignment,$obj1 = new BirdKeyListener())<SUB>62</SUB>> ]
+"690" [label = <(&lt;init&gt;,new BirdKeyListener())<SUB>62</SUB>> ]
+  "667" -> "695"  [ label = "FRAME_WIDTH"] 
+  "667" -> "695"  [ label = "setSize(FRAME_WIDTH, FRAME_HEIGHT)"] 
+  "670" -> "695"  [ label = "setTitle(GAME_TITLE)"] 
+  "672" -> "695"  [ label = "FRAME_Y"] 
+  "672" -> "695"  [ label = "setLocation(FRAME_X, FRAME_Y)"] 
+  "675" -> "695"  [ label = "this.setResizable(false)"] 
+  "680" -> "695"  [ label = "$obj0 = new WindowAdapter() {
+
+    @Override
+    public void windowClosing(WindowEvent e) {
+        // 结束程序
+        System.exit(0);
+    }
+}"] 
+  "79" -> "695"  [ label = "$obj0"] 
+  "79" -> "695"  [ label = "new WindowAdapter() {
+
+    @Override
+    public void windowClosing(WindowEvent e) {
+        // 结束程序
+        System.exit(0);
+    }
+}"] 
+  "677" -> "695"  [ label = "this.addWindowListener(new WindowAdapter() {
+
+    @Override
+    public void windowClosing(WindowEvent e) {
+        // 结束程序
+        System.exit(0);
+    }
+})"] 
+  "684" -> "695"  [ label = "this"] 
+  "687" -> "695"  [ label = "$obj1 = new BirdKeyListener()"] 
+  "690" -> "695"  [ label = "$obj1"] 
+  "690" -> "695"  [ label = "new BirdKeyListener()"] 
+  "684" -> "695"  [ label = "this.addKeyListener(new BirdKeyListener())"] 
+  "670" -> "695"  [ label = "GAME_TITLE"] 
+  "672" -> "695"  [ label = "FRAME_X"] 
+  "667" -> "695"  [ label = "FRAME_HEIGHT"] 
+  "665" -> "4" 
+  "4" -> "667"  [ label = "this"] 
+  "665" -> "667" 
+  "667" -> "670"  [ label = "this"] 
+  "665" -> "670" 
+  "670" -> "672"  [ label = "this"] 
+  "665" -> "672" 
+  "672" -> "675"  [ label = "this"] 
+  "665" -> "675" 
+  "79" -> "677"  [ label = "this"] 
+  "665" -> "677" 
+  "79" -> "677"  [ label = "$obj0"] 
+  "677" -> "684"  [ label = "this"] 
+  "665" -> "684" 
+  "690" -> "684"  [ label = "$obj1"] 
+  "665" -> "680" 
+  "665" -> "683" 
+  "665" -> "687" 
+  "665" -> "692" 
+  "680" -> "79"  [ label = "$obj0"] 
+  "665" -> "79" 
+  "675" -> "79"  [ label = "this"] 
+  "687" -> "690"  [ label = "$obj1"] 
+  "665" -> "690" 
+}

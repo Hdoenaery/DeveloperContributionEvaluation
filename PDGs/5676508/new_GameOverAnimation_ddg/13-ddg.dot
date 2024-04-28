@@ -1,0 +1,10 @@
+digraph "&lt;operator&gt;.addition" {  
+"402" [label = <(METHOD,&lt;operator&gt;.addition)> ]
+"406" [label = <(METHOD_RETURN,ANY)> ]
+"403" [label = <(PARAM,p1)> ]
+"404" [label = <(PARAM,p2)> ]
+  "403" -> "406"  [ label = "p1"] 
+  "404" -> "406"  [ label = "p2"] 
+  "402" -> "403" 
+  "402" -> "404" 
+}

@@ -1,0 +1,15 @@
+digraph "getCurrentScore" {  
+"935" [label = <(METHOD,getCurrentScore)<SUB>226</SUB>> ]
+"945" [label = <(METHOD_RETURN,long)<SUB>226</SUB>> ]
+"936" [label = <(PARAM,this)<SUB>226</SUB>> ]
+"938" [label = <(RETURN,return counter.getCurrentScore();,return counter.getCurrentScore();)<SUB>227</SUB>> ]
+"939" [label = <(getCurrentScore,this.counter.getCurrentScore())<SUB>227</SUB>> ]
+"939" [label = <(getCurrentScore,this.counter.getCurrentScore())<SUB>227</SUB>> ]
+  "938" -> "945"  [ label = "&lt;RET&gt;"] 
+  "936" -> "945"  [ label = "this"] 
+  "939" -> "945"  [ label = "this.counter"] 
+  "939" -> "945"  [ label = "this.counter.getCurrentScore()"] 
+  "935" -> "936" 
+  "939" -> "938"  [ label = "this.counter.getCurrentScore()"] 
+  "936" -> "939"  [ label = "this"] 
+}

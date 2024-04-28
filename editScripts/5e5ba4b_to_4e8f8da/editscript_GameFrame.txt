@@ -1,0 +1,42 @@
+===
+move-tree
+---
+ImportDeclaration [545,576]
+    Name: MusicUtil [552,575]
+        Name: util [552,565]
+            Name: bird [552,560]
+                Name: com [552,555]
+to
+CompilationUnit [0,4178]
+at 1
+===
+move-tree
+---
+ExpressionStmt [2833,2850]
+    MethodCallExpr [2833,2849]
+        NameExpr [2833,2842]
+            SimpleName: MusicUtil [2833,2842]
+        SimpleName: load [2843,2847]
+to
+BlockStmt [2688,2961]
+at 5
+===
+update-node
+---
+SimpleName: BirdUp [1984,1990]
+replace BirdUp by birdUp
+===
+update-node
+---
+SimpleName: BirdDown [2004,2012]
+replace BirdDown by birdDown
+===
+update-node
+---
+SimpleName: BirdUp [2161,2167]
+replace BirdUp by birdUp
+===
+update-node
+---
+SimpleName: BirdDown [2181,2189]
+replace BirdDown by birdDown

@@ -1,0 +1,27 @@
+digraph "isOutFrame" {  
+"141" [label = <(METHOD,isOutFrame)<SUB>52</SUB>> ]
+"157" [label = <(METHOD_RETURN,boolean)<SUB>52</SUB>> ]
+"142" [label = <(PARAM,this)<SUB>52</SUB>> ]
+"144" [label = <(RETURN,return x &lt; -1 * scaleImageWidth;,return x &lt; -1 * scaleImageWidth;)<SUB>53</SUB>> ]
+"145" [label = <(&lt;operator&gt;.lessThan,x &lt; -1 * scaleImageWidth)<SUB>53</SUB>> ]
+"145" [label = <(&lt;operator&gt;.lessThan,x &lt; -1 * scaleImageWidth)<SUB>53</SUB>> ]
+"145" [label = <(&lt;operator&gt;.lessThan,x &lt; -1 * scaleImageWidth)<SUB>53</SUB>> ]
+"149" [label = <(&lt;operator&gt;.multiplication,-1 * scaleImageWidth)<SUB>53</SUB>> ]
+"149" [label = <(&lt;operator&gt;.multiplication,-1 * scaleImageWidth)<SUB>53</SUB>> ]
+"150" [label = <(&lt;operator&gt;.minus,-1)<SUB>53</SUB>> ]
+  "144" -> "157"  [ label = "&lt;RET&gt;"] 
+  "142" -> "157"  [ label = "this"] 
+  "145" -> "157"  [ label = "this.x"] 
+  "149" -> "157"  [ label = "-1"] 
+  "149" -> "157"  [ label = "this.scaleImageWidth"] 
+  "145" -> "157"  [ label = "-1 * scaleImageWidth"] 
+  "145" -> "157"  [ label = "x &lt; -1 * scaleImageWidth"] 
+  "141" -> "142" 
+  "145" -> "144"  [ label = "x &lt; -1 * scaleImageWidth"] 
+  "142" -> "145"  [ label = "this"] 
+  "149" -> "145"  [ label = "-1"] 
+  "149" -> "145"  [ label = "this.scaleImageWidth"] 
+  "150" -> "149"  [ label = "1"] 
+  "142" -> "149"  [ label = "this"] 
+  "141" -> "150" 
+}

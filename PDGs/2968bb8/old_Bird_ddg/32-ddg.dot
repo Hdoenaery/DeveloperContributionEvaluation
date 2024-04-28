@@ -1,0 +1,10 @@
+digraph "&lt;operator&gt;.multiplication" {  
+"1664" [label = <(METHOD,&lt;operator&gt;.multiplication)> ]
+"1668" [label = <(METHOD_RETURN,ANY)> ]
+"1665" [label = <(PARAM,p1)> ]
+"1666" [label = <(PARAM,p2)> ]
+  "1665" -> "1668"  [ label = "p1"] 
+  "1666" -> "1668"  [ label = "p2"] 
+  "1664" -> "1665" 
+  "1664" -> "1666" 
+}

@@ -1,0 +1,53 @@
+===
+insert-tree
+---
+NameExpr [813,821]
+    SimpleName: GameUtil [813,821]
+to
+MethodCallExpr [861,884]
+at 0
+===
+update-node
+---
+SimpleName: drawTitle [861,870]
+replace drawTitle by drawImage
+===
+insert-tree
+---
+BinaryExpr [843,891]
+    BinaryExpr [843,886]
+        FieldAccessExpr [843,863]
+            NameExpr [843,851]
+                SimpleName: Constant [843,851]
+            SimpleName: FRAME_WIDTH [852,863]
+        MethodCallExpr [866,886]
+            NameExpr [866,875]
+                SimpleName: noticeImg [866,875]
+            SimpleName: getWidth [876,884]
+    IntegerLiteralExpr: 1 [890,891]
+to
+MethodCallExpr [861,884]
+at 3
+===
+insert-tree
+---
+BinaryExpr [893,922]
+    BinaryExpr [893,918]
+        FieldAccessExpr [893,914]
+            NameExpr [893,901]
+                SimpleName: Constant [893,901]
+            SimpleName: FRAME_HEIGHT [902,914]
+        IntegerLiteralExpr: 5 [917,918]
+    IntegerLiteralExpr: 3 [921,922]
+to
+MethodCallExpr [861,884]
+at 4
+===
+delete-tree
+---
+ImportDeclaration [149,196]
+    Name: drawTitle [163,195]
+        Name: GameUtil [163,185]
+            Name: util [163,176]
+                Name: bird [163,171]
+                    Name: com [163,166]

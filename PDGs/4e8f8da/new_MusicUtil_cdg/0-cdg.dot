@@ -1,0 +1,5 @@
+digraph "load" {  
+"62" [label = <(&lt;operator&gt;.assignment,com.bird.util.MusicUtil.score = Applet.newAudio...)<SUB>26</SUB>> ]
+"80" [label = <(printStackTrace,e.printStackTrace())<SUB>28</SUB>> ]
+  "62" -> "80" 
+}

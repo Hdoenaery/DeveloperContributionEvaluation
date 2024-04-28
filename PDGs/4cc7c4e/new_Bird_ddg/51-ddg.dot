@@ -1,0 +1,10 @@
+digraph "getScore" {  
+"1579" [label = <(METHOD,getScore)> ]
+"1583" [label = <(METHOD_RETURN,ANY)> ]
+"1580" [label = <(PARAM,p0)> ]
+"1581" [label = <(PARAM,p1)> ]
+  "1580" -> "1583"  [ label = "p0"] 
+  "1581" -> "1583"  [ label = "p1"] 
+  "1579" -> "1580" 
+  "1579" -> "1581" 
+}

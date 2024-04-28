@@ -1,0 +1,13 @@
+digraph "draw" {  
+"1501" [label = <(METHOD,draw)> ]
+"1506" [label = <(METHOD_RETURN,ANY)> ]
+"1502" [label = <(PARAM,p0)> ]
+"1503" [label = <(PARAM,p1)> ]
+"1504" [label = <(PARAM,p2)> ]
+  "1502" -> "1506"  [ label = "p0"] 
+  "1503" -> "1506"  [ label = "p1"] 
+  "1504" -> "1506"  [ label = "p2"] 
+  "1501" -> "1502" 
+  "1501" -> "1503" 
+  "1501" -> "1504" 
+}

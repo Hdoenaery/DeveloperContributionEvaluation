@@ -1,0 +1,10 @@
+digraph "&lt;operator&gt;.fieldAccess" {  
+"168" [label = <(METHOD,&lt;operator&gt;.fieldAccess)> ]
+"172" [label = <(METHOD_RETURN,ANY)> ]
+"169" [label = <(PARAM,p1)> ]
+"170" [label = <(PARAM,p2)> ]
+  "169" -> "172"  [ label = "p1"] 
+  "170" -> "172"  [ label = "p2"] 
+  "168" -> "169" 
+  "168" -> "170" 
+}

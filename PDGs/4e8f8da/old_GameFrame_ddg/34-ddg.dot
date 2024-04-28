@@ -1,0 +1,7 @@
+digraph "&lt;init&gt;" {  
+"1463" [label = <(METHOD,&lt;init&gt;)> ]
+"1466" [label = <(METHOD_RETURN,ANY)> ]
+"1464" [label = <(PARAM,p1)> ]
+  "1464" -> "1466"  [ label = "p1"] 
+  "1463" -> "1464" 
+}

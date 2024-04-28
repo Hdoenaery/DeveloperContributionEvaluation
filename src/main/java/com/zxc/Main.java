@@ -52,8 +52,18 @@ public class Main {
 //        gumtreeSpoonASTDiff(file, file2);
 //        readEditScriptFile();
 
-        String oldCommit = "0000000";
+        String oldCommit = "e2cb276d982a199bae9d8ab5dce196f2aeb18936";
+        boolean flag = false;
         for(String newCommit : commits) {
+//        String oldCommit = "2968bb8ebc7d9c606595625e26b83d1aae14e968";
+//        String newCommit = "ba1ce8c8d22a7e787c266ba86c1e2f9065b60c3a";
+            if(!flag) {
+                if(!newCommit.equals("2968bb8ebc7d9c606595625e26b83d1aae14e968"))
+                    continue;
+                else
+                    flag = true;
+            }
+
             System.out.println("\nnowCommitHash = " + newCommit.substring(0, 7));
             tool.executeGitCommand(gitDirectory, new String[]{"git", "checkout", newCommit});//切换到当前版本
 
@@ -194,8 +204,8 @@ public class Main {
             lastTime = nowTime;
 
 
-            if(newCommit.equals("5e5ba4bf131b5998c33474ebe34ac7e9d86187ad"))
-                break;
+//            if(newCommit.equals("5e5ba4bf131b5998c33474ebe34ac7e9d86187ad"))
+//                break;
         }
 
         // 记录程序结束时间

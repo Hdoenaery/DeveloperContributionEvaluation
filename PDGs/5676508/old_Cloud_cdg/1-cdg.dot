@@ -1,0 +1,9 @@
+digraph "draw" {  
+"102" [label = <(isDead,isDead())<SUB>39</SUB>> ]
+"104" [label = <(&lt;operator&gt;.assignment,this.speed = 1)<SUB>40</SUB>> ]
+"105" [label = <(&lt;operator&gt;.fieldAccess,this.speed)<SUB>40</SUB>> ]
+"107" [label = <(FIELD_IDENTIFIER,speed,speed)<SUB>40</SUB>> ]
+  "102" -> "107" 
+  "102" -> "104" 
+  "102" -> "105" 
+}

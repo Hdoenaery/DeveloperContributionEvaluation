@@ -1,0 +1,68 @@
+digraph "loadBestScore" {  
+"66" [label = <(METHOD,loadBestScore)<SUB>38</SUB>> ]
+"107" [label = <(METHOD_RETURN,void)<SUB>38</SUB>> ]
+"67" [label = <(PARAM,this)<SUB>38</SUB>> ]
+"70" [label = <(&lt;operator&gt;.assignment,File file = new File(Constant.SCORE_FILE_PATH))<SUB>39</SUB>> ]
+"73" [label = <(&lt;init&gt;,new File(Constant.SCORE_FILE_PATH))<SUB>39</SUB>> ]
+"70" [label = <(&lt;operator&gt;.assignment,File file = new File(Constant.SCORE_FILE_PATH))<SUB>39</SUB>> ]
+"70" [label = <(&lt;operator&gt;.assignment,File file = new File(Constant.SCORE_FILE_PATH))<SUB>39</SUB>> ]
+"73" [label = <(&lt;init&gt;,new File(Constant.SCORE_FILE_PATH))<SUB>39</SUB>> ]
+"73" [label = <(&lt;init&gt;,new File(Constant.SCORE_FILE_PATH))<SUB>39</SUB>> ]
+"79" [label = <(exists,file.exists())<SUB>40</SUB>> ]
+"79" [label = <(exists,file.exists())<SUB>40</SUB>> ]
+"83" [label = <(&lt;operator&gt;.assignment,DataInputStream dis = new DataInputStream(new F...)<SUB>41</SUB>> ]
+"86" [label = <(&lt;init&gt;,new DataInputStream(new FileInputStream(file)))<SUB>41</SUB>> ]
+"97" [label = <(&lt;operator&gt;.assignment,this.bestScore = dis.readLong())<SUB>42</SUB>> ]
+"103" [label = <(close,dis.close())<SUB>43</SUB>> ]
+"83" [label = <(&lt;operator&gt;.assignment,DataInputStream dis = new DataInputStream(new F...)<SUB>41</SUB>> ]
+"83" [label = <(&lt;operator&gt;.assignment,DataInputStream dis = new DataInputStream(new F...)<SUB>41</SUB>> ]
+"86" [label = <(&lt;init&gt;,new DataInputStream(new FileInputStream(file)))<SUB>41</SUB>> ]
+"86" [label = <(&lt;init&gt;,new DataInputStream(new FileInputStream(file)))<SUB>41</SUB>> ]
+"97" [label = <(&lt;operator&gt;.assignment,this.bestScore = dis.readLong())<SUB>42</SUB>> ]
+"97" [label = <(&lt;operator&gt;.assignment,this.bestScore = dis.readLong())<SUB>42</SUB>> ]
+"103" [label = <(close,dis.close())<SUB>43</SUB>> ]
+"90" [label = <(&lt;operator&gt;.assignment,$obj0 = new FileInputStream(file))<SUB>41</SUB>> ]
+"93" [label = <(&lt;init&gt;,new FileInputStream(file))<SUB>41</SUB>> ]
+"96" [label = <(IDENTIFIER,$obj0,&lt;empty&gt;)<SUB>41</SUB>> ]
+"101" [label = <(readLong,dis.readLong())<SUB>42</SUB>> ]
+"90" [label = <(&lt;operator&gt;.assignment,$obj0 = new FileInputStream(file))<SUB>41</SUB>> ]
+"90" [label = <(&lt;operator&gt;.assignment,$obj0 = new FileInputStream(file))<SUB>41</SUB>> ]
+"93" [label = <(&lt;init&gt;,new FileInputStream(file))<SUB>41</SUB>> ]
+"93" [label = <(&lt;init&gt;,new FileInputStream(file))<SUB>41</SUB>> ]
+  "67" -> "107"  [ label = "this"] 
+  "70" -> "107"  [ label = "File file = new File(Constant.SCORE_FILE_PATH)"] 
+  "73" -> "107"  [ label = "Constant.SCORE_FILE_PATH"] 
+  "73" -> "107"  [ label = "new File(Constant.SCORE_FILE_PATH)"] 
+  "79" -> "107"  [ label = "file.exists()"] 
+  "83" -> "107"  [ label = "DataInputStream dis = new DataInputStream(new FileInputStream(file))"] 
+  "90" -> "107"  [ label = "$obj0 = new FileInputStream(file)"] 
+  "93" -> "107"  [ label = "$obj0"] 
+  "93" -> "107"  [ label = "file"] 
+  "93" -> "107"  [ label = "new FileInputStream(file)"] 
+  "86" -> "107"  [ label = "new DataInputStream(new FileInputStream(file))"] 
+  "97" -> "107"  [ label = "this.bestScore"] 
+  "97" -> "107"  [ label = "dis.readLong()"] 
+  "97" -> "107"  [ label = "this.bestScore = dis.readLong()"] 
+  "103" -> "107"  [ label = "dis"] 
+  "103" -> "107"  [ label = "dis.close()"] 
+  "66" -> "67" 
+  "66" -> "70" 
+  "70" -> "73"  [ label = "file"] 
+  "66" -> "73" 
+  "73" -> "79"  [ label = "file"] 
+  "66" -> "79" 
+  "66" -> "83" 
+  "101" -> "97"  [ label = "dis"] 
+  "83" -> "86"  [ label = "dis"] 
+  "66" -> "86" 
+  "93" -> "86"  [ label = "$obj0"] 
+  "101" -> "103"  [ label = "dis"] 
+  "66" -> "103" 
+  "66" -> "90" 
+  "66" -> "96" 
+  "86" -> "101"  [ label = "dis"] 
+  "66" -> "101" 
+  "90" -> "93"  [ label = "$obj0"] 
+  "66" -> "93" 
+  "79" -> "93"  [ label = "file"] 
+}

@@ -1,0 +1,41 @@
+digraph "&lt;init&gt;" {  
+"642" [label = <(METHOD,&lt;init&gt;)<SUB>43</SUB>> ]
+"664" [label = <(METHOD_RETURN,void)<SUB>47</SUB>> ]
+"76" [label = <(PARAM,this)<SUB>43</SUB>> ]
+"644" [label = <(&lt;operator&gt;.assignment,BufferedImage this.bufImg = new BufferedImage(F...)<SUB>140</SUB>> ]
+"649" [label = <(&lt;init&gt;,new BufferedImage(FRAME_WIDTH, FRAME_HEIGHT, Bu...)<SUB>140</SUB>> ]
+"658" [label = <(initFrame,this.initFrame())<SUB>44</SUB>> ]
+"659" [label = <(setVisible,this.setVisible(true))<SUB>45</SUB>> ]
+"661" [label = <(initGame,this.initGame())<SUB>46</SUB>> ]
+"644" [label = <(&lt;operator&gt;.assignment,BufferedImage this.bufImg = new BufferedImage(F...)<SUB>140</SUB>> ]
+"644" [label = <(&lt;operator&gt;.assignment,BufferedImage this.bufImg = new BufferedImage(F...)<SUB>140</SUB>> ]
+"649" [label = <(&lt;init&gt;,new BufferedImage(FRAME_WIDTH, FRAME_HEIGHT, Bu...)<SUB>140</SUB>> ]
+"649" [label = <(&lt;init&gt;,new BufferedImage(FRAME_WIDTH, FRAME_HEIGHT, Bu...)<SUB>140</SUB>> ]
+"649" [label = <(&lt;init&gt;,new BufferedImage(FRAME_WIDTH, FRAME_HEIGHT, Bu...)<SUB>140</SUB>> ]
+"649" [label = <(&lt;init&gt;,new BufferedImage(FRAME_WIDTH, FRAME_HEIGHT, Bu...)<SUB>140</SUB>> ]
+"658" [label = <(initFrame,this.initFrame())<SUB>44</SUB>> ]
+"659" [label = <(setVisible,this.setVisible(true))<SUB>45</SUB>> ]
+"659" [label = <(setVisible,this.setVisible(true))<SUB>45</SUB>> ]
+"661" [label = <(initGame,this.initGame())<SUB>46</SUB>> ]
+  "644" -> "664"  [ label = "BufferedImage this.bufImg = new BufferedImage(FRAME_WIDTH, FRAME_HEIGHT, BufferedImage.TYPE_4BYTE_ABGR)"] 
+  "649" -> "664"  [ label = "FRAME_WIDTH"] 
+  "649" -> "664"  [ label = "BufferedImage.TYPE_4BYTE_ABGR"] 
+  "649" -> "664"  [ label = "new BufferedImage(FRAME_WIDTH, FRAME_HEIGHT, BufferedImage.TYPE_4BYTE_ABGR)"] 
+  "658" -> "664"  [ label = "this.initFrame()"] 
+  "659" -> "664"  [ label = "this.setVisible(true)"] 
+  "661" -> "664"  [ label = "this"] 
+  "661" -> "664"  [ label = "this.initGame()"] 
+  "649" -> "664"  [ label = "FRAME_HEIGHT"] 
+  "642" -> "76" 
+  "642" -> "644" 
+  "76" -> "649"  [ label = "this"] 
+  "644" -> "649"  [ label = "this.bufImg"] 
+  "642" -> "649" 
+  "76" -> "658"  [ label = "this"] 
+  "649" -> "658"  [ label = "this.bufImg"] 
+  "642" -> "658" 
+  "658" -> "659"  [ label = "this"] 
+  "642" -> "659" 
+  "659" -> "661"  [ label = "this"] 
+  "642" -> "661" 
+}

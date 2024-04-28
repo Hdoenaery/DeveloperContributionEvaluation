@@ -1,0 +1,16 @@
+===
+delete-tree
+---
+ImportDeclaration [24,55]
+    Name: MusicUtil [31,54]
+        Name: util [31,44]
+            Name: bird [31,39]
+                Name: com [31,34]
+===
+delete-tree
+---
+ExpressionStmt [2961,2978]
+    MethodCallExpr [2961,2977]
+        NameExpr [2961,2970]
+            SimpleName: MusicUtil [2961,2970]
+        SimpleName: load [2971,2975]

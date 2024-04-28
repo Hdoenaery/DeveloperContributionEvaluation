@@ -1,0 +1,13 @@
+digraph "loadBUfferedImage" {  
+"189" [label = <(METHOD,loadBUfferedImage)> ]
+"194" [label = <(METHOD_RETURN,ANY)> ]
+"190" [label = <(PARAM,p0)> ]
+"191" [label = <(PARAM,p1)> ]
+"192" [label = <(PARAM,p2)> ]
+  "190" -> "194"  [ label = "p0"] 
+  "191" -> "194"  [ label = "p1"] 
+  "192" -> "194"  [ label = "p2"] 
+  "189" -> "190" 
+  "189" -> "191" 
+  "189" -> "192" 
+}

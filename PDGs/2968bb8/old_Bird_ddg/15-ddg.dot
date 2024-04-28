@@ -1,0 +1,9 @@
+digraph "getBirdRect" {  
+"1454" [label = <(METHOD,getBirdRect)<SUB>294</SUB>> ]
+"1463" [label = <(METHOD_RETURN,java.awt.Rectangle)<SUB>294</SUB>> ]
+"1455" [label = <(PARAM,this)<SUB>294</SUB>> ]
+"1457" [label = <(RETURN,return birdRect;,return birdRect;)<SUB>295</SUB>> ]
+  "1457" -> "1463"  [ label = "&lt;RET&gt;"] 
+  "1455" -> "1463"  [ label = "this"] 
+  "1454" -> "1455" 
+}

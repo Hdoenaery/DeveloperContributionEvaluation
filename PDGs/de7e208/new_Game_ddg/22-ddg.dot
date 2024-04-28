@@ -1,0 +1,13 @@
+digraph "setResizable" {  
+"1395" [label = <(METHOD,setResizable)> ]
+"1400" [label = <(METHOD_RETURN,ANY)> ]
+"1396" [label = <(PARAM,p0)> ]
+"1397" [label = <(PARAM,p1)> ]
+"1398" [label = <(PARAM,p2)> ]
+  "1396" -> "1400"  [ label = "p0"] 
+  "1397" -> "1400"  [ label = "p1"] 
+  "1398" -> "1400"  [ label = "p2"] 
+  "1395" -> "1396" 
+  "1395" -> "1397" 
+  "1395" -> "1398" 
+}

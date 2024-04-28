@@ -1,0 +1,80 @@
+digraph "drawGameOver" {  
+"1213" [label = <(&lt;operator&gt;.greaterThan,countScore.getBestScore() &gt; 0)<SUB>251</SUB>> ]
+"1274" [label = <(&lt;operator&gt;.greaterThan,flash++ &gt; COUNT)<SUB>260</SUB>> ]
+"1280" [label = <(drawTitle,drawTitle(againImg, g))<SUB>261</SUB>> ]
+"1286" [label = <(&lt;operator&gt;.equals,// ÖØÖÃÉÁË¸²ÎÊý
+flash == COUNT * 2)<SUB>262</SUB>> ]
+"1293" [label = <(&lt;operator&gt;.assignment,this.flash = 0)<SUB>263</SUB>> ]
+"1220" [label = <(&lt;operator&gt;.assignment,str = Long.toString(countScore.getBestScore()))<SUB>252</SUB>> ]
+"1228" [label = <(&lt;operator&gt;.assignment,this.x = (Constant.FRAME_WIDTH + scoreImg.getWi...)<SUB>253</SUB>> ]
+"1248" [label = <(&lt;operator&gt;.assignmentMinus,this.x -= GameUtil.getStringWidth(Constant.SCOR...)<SUB>254</SUB>> ]
+"1260" [label = <(drawString,g.drawString(str, x, y))<SUB>255</SUB>> ]
+"1281" [label = <(&lt;operator&gt;.fieldAccess,this.againImg)<SUB>261</SUB>> ]
+"1294" [label = <(&lt;operator&gt;.fieldAccess,this.flash)<SUB>263</SUB>> ]
+"1222" [label = <(toString,toString(countScore.getBestScore()))<SUB>252</SUB>> ]
+"1229" [label = <(&lt;operator&gt;.fieldAccess,this.x)<SUB>253</SUB>> ]
+"1232" [label = <(&lt;operator&gt;.subtraction,(Constant.FRAME_WIDTH + scoreImg.getWidth() / 2...)<SUB>253</SUB>> ]
+"1249" [label = <(&lt;operator&gt;.fieldAccess,this.x)<SUB>254</SUB>> ]
+"1252" [label = <(&lt;operator&gt;.logicalShiftRight,GameUtil.getStringWidth(Constant.SCORE_FONT, st...)<SUB>254</SUB>> ]
+"1263" [label = <(&lt;operator&gt;.fieldAccess,this.x)<SUB>255</SUB>> ]
+"1266" [label = <(&lt;operator&gt;.fieldAccess,this.y)<SUB>255</SUB>> ]
+"1283" [label = <(FIELD_IDENTIFIER,againImg,againImg)<SUB>261</SUB>> ]
+"1296" [label = <(FIELD_IDENTIFIER,flash,flash)<SUB>263</SUB>> ]
+"1224" [label = <(getBestScore,this.countScore.getBestScore())<SUB>252</SUB>> ]
+"1231" [label = <(FIELD_IDENTIFIER,x,x)<SUB>253</SUB>> ]
+"1233" [label = <(&lt;operator&gt;.logicalShiftRight,Constant.FRAME_WIDTH + scoreImg.getWidth() / 2 ...)<SUB>253</SUB>> ]
+"1245" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.Bird.SCORE_LOCATE)<SUB>253</SUB>> ]
+"1251" [label = <(FIELD_IDENTIFIER,x,x)<SUB>254</SUB>> ]
+"1253" [label = <(getStringWidth,getStringWidth(Constant.SCORE_FONT, str))<SUB>254</SUB>> ]
+"1265" [label = <(FIELD_IDENTIFIER,x,x)<SUB>255</SUB>> ]
+"1268" [label = <(FIELD_IDENTIFIER,y,y)<SUB>255</SUB>> ]
+"1225" [label = <(&lt;operator&gt;.fieldAccess,this.countScore)<SUB>252</SUB>> ]
+"1234" [label = <(&lt;operator&gt;.addition,Constant.FRAME_WIDTH + scoreImg.getWidth() / 2)<SUB>253</SUB>> ]
+"1247" [label = <(FIELD_IDENTIFIER,SCORE_LOCATE,SCORE_LOCATE)<SUB>253</SUB>> ]
+"1255" [label = <(&lt;operator&gt;.fieldAccess,Constant.SCORE_FONT)<SUB>254</SUB>> ]
+"1227" [label = <(FIELD_IDENTIFIER,countScore,countScore)<SUB>252</SUB>> ]
+"1235" [label = <(&lt;operator&gt;.fieldAccess,Constant.FRAME_WIDTH)<SUB>253</SUB>> ]
+"1238" [label = <(&lt;operator&gt;.division,scoreImg.getWidth() / 2)<SUB>253</SUB>> ]
+"1257" [label = <(FIELD_IDENTIFIER,SCORE_FONT,SCORE_FONT)<SUB>254</SUB>> ]
+"1237" [label = <(FIELD_IDENTIFIER,FRAME_WIDTH,FRAME_WIDTH)<SUB>253</SUB>> ]
+"1239" [label = <(getWidth,this.scoreImg.getWidth())<SUB>253</SUB>> ]
+"1240" [label = <(&lt;operator&gt;.fieldAccess,this.scoreImg)<SUB>253</SUB>> ]
+"1242" [label = <(FIELD_IDENTIFIER,scoreImg,scoreImg)<SUB>253</SUB>> ]
+  "1213" -> "1240" 
+  "1213" -> "1251" 
+  "1213" -> "1268" 
+  "1213" -> "1229" 
+  "1213" -> "1252" 
+  "1213" -> "1234" 
+  "1213" -> "1266" 
+  "1213" -> "1248" 
+  "1213" -> "1222" 
+  "1213" -> "1253" 
+  "1213" -> "1239" 
+  "1213" -> "1238" 
+  "1213" -> "1231" 
+  "1213" -> "1263" 
+  "1213" -> "1247" 
+  "1213" -> "1242" 
+  "1213" -> "1245" 
+  "1213" -> "1255" 
+  "1213" -> "1225" 
+  "1213" -> "1235" 
+  "1213" -> "1232" 
+  "1213" -> "1233" 
+  "1213" -> "1265" 
+  "1213" -> "1249" 
+  "1213" -> "1237" 
+  "1213" -> "1224" 
+  "1213" -> "1220" 
+  "1213" -> "1260" 
+  "1213" -> "1228" 
+  "1213" -> "1257" 
+  "1213" -> "1227" 
+  "1274" -> "1283" 
+  "1274" -> "1281" 
+  "1274" -> "1280" 
+  "1286" -> "1294" 
+  "1286" -> "1293" 
+  "1286" -> "1296" 
+}

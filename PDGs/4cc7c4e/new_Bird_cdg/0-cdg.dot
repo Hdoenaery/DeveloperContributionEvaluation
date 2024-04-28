@@ -1,0 +1,43 @@
+digraph "&lt;init&gt;" {  
+"126" [label = <(&lt;operator&gt;.lessThan,j &lt; STATE_COUNT)<SUB>51</SUB>> ]
+"131" [label = <(&lt;operator&gt;.postIncrement,j++)<SUB>51</SUB>> ]
+"128" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.Bird.STATE_COUNT)<SUB>51</SUB>> ]
+"130" [label = <(FIELD_IDENTIFIER,STATE_COUNT,STATE_COUNT)<SUB>51</SUB>> ]
+"136" [label = <(&lt;operator&gt;.assignment,int i = 0)<SUB>52</SUB>> ]
+"139" [label = <(&lt;operator&gt;.lessThan,i &lt; IMG_COUNT)<SUB>52</SUB>> ]
+"144" [label = <(&lt;operator&gt;.postIncrement,i++)<SUB>52</SUB>> ]
+"141" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.Bird.IMG_COUNT)<SUB>52</SUB>> ]
+"147" [label = <(&lt;operator&gt;.assignment,birdImages[j][i] = GameUtil.loadBufferedImage(C...)<SUB>53</SUB>> ]
+"143" [label = <(FIELD_IDENTIFIER,IMG_COUNT,IMG_COUNT)<SUB>52</SUB>> ]
+"148" [label = <(&lt;operator&gt;.indexAccess,birdImages[j][i])<SUB>53</SUB>> ]
+"155" [label = <(loadBufferedImage,loadBufferedImage(Constant.BIRDS_IMG_PATH[j][i]))<SUB>53</SUB>> ]
+"149" [label = <(&lt;operator&gt;.indexAccess,birdImages[j])<SUB>53</SUB>> ]
+"157" [label = <(&lt;operator&gt;.indexAccess,Constant.BIRDS_IMG_PATH[j][i])<SUB>53</SUB>> ]
+"150" [label = <(&lt;operator&gt;.fieldAccess,this.birdImages)<SUB>53</SUB>> ]
+"158" [label = <(&lt;operator&gt;.indexAccess,Constant.BIRDS_IMG_PATH[j])<SUB>53</SUB>> ]
+"152" [label = <(FIELD_IDENTIFIER,birdImages,birdImages)<SUB>53</SUB>> ]
+"159" [label = <(&lt;operator&gt;.fieldAccess,Constant.BIRDS_IMG_PATH)<SUB>53</SUB>> ]
+"161" [label = <(FIELD_IDENTIFIER,BIRDS_IMG_PATH,BIRDS_IMG_PATH)<SUB>53</SUB>> ]
+  "126" -> "141" 
+  "126" -> "136" 
+  "126" -> "128" 
+  "126" -> "130" 
+  "126" -> "131" 
+  "126" -> "139" 
+  "126" -> "143" 
+  "126" -> "126" 
+  "139" -> "141" 
+  "139" -> "152" 
+  "139" -> "161" 
+  "139" -> "147" 
+  "139" -> "149" 
+  "139" -> "150" 
+  "139" -> "155" 
+  "139" -> "139" 
+  "139" -> "157" 
+  "139" -> "159" 
+  "139" -> "144" 
+  "139" -> "148" 
+  "139" -> "143" 
+  "139" -> "158" 
+}

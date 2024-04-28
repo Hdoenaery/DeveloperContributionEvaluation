@@ -1,0 +1,18 @@
+digraph "birdFall" {  
+"913" [label = <(METHOD,birdFall)<SUB>194</SUB>> ]
+"927" [label = <(METHOD_RETURN,void)<SUB>194</SUB>> ]
+"914" [label = <(PARAM,this)<SUB>194</SUB>> ]
+"916" [label = <(&lt;operator&gt;.assignment,this.state = STATE_FALL)<SUB>195</SUB>> ]
+"923" [label = <(playCrash,playCrash())<SUB>196</SUB>> ]
+"916" [label = <(&lt;operator&gt;.assignment,this.state = STATE_FALL)<SUB>195</SUB>> ]
+"916" [label = <(&lt;operator&gt;.assignment,this.state = STATE_FALL)<SUB>195</SUB>> ]
+"923" [label = <(playCrash,playCrash())<SUB>196</SUB>> ]
+  "914" -> "927"  [ label = "this"] 
+  "916" -> "927"  [ label = "this.state"] 
+  "916" -> "927"  [ label = "com.bird.main.Bird.STATE_FALL"] 
+  "916" -> "927"  [ label = "this.state = STATE_FALL"] 
+  "923" -> "927"  [ label = "playCrash()"] 
+  "923" -> "927"  [ label = "MusicUtil"] 
+  "913" -> "914" 
+  "913" -> "923" 
+}

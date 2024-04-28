@@ -30,9 +30,11 @@ def getChangedMethods(repo_path, old_commit, new_commit):
     for commit in Repository(repo_path, new_commit).traverse_commits():
         # print(commit.msg)
         for modified_file in commit.modified_files:
+            if modified_file.new_path == None:
+                continue
             if modified_file.new_path.endswith('.java'):
                 for method in modified_file.changed_methods:
-                    # print(method.name.split("::")[-1])
+                    # print(method.name)
                     # 过滤误报内容，pydriller工具可能会把一个for循环识别为一个方法
                     if is_java_keyword(method.name.split("::")[-1]):
                         continue
@@ -56,7 +58,7 @@ def getChangedMethods(repo_path, old_commit, new_commit):
                     PCom[method.long_name] = calculate_percentage_of_comments(extracted_code)
 
                     # 将该方法内容保存到本地
-                    file_path = 'DeveloperContributionEvaluation/changedMethodsContent/' + old_commit[0:6] + \
+                    file_path = 'DeveloperContributionEvaluation/methodsContent/' + old_commit[0:6] + \
                                 '_to_' + new_commit[0:6] + '/' + str(method.name.replace("::", "_")) + '_new.java'
                     # 如果有方法重载，则会出现方法名重复，需要将方法参数也带上
                     if os.path.exists(file_path):
@@ -64,7 +66,7 @@ def getChangedMethods(repo_path, old_commit, new_commit):
                         forbidden_chars = '/\\?*:|"<>'
 
                         # 删除不允许出现在文件名中的字符
-                        file_path = 'DeveloperContributionEvaluation/changedMethodsContent/' + old_commit[0:6] + \
+                        file_path = 'DeveloperContributionEvaluation/methodsContent/' + old_commit[0:6] + \
                                     '_to_' + new_commit[0:6] + '/' + str(''.join(
                             c for c in method.long_name.replace("::", "_") if c not in forbidden_chars)) + '_new.java'
 
@@ -105,6 +107,9 @@ def calculate_percentage_of_comments(file_content):
 def calculate_halstead_volume(unique_operator_count, unique_operand_count, total_operator_count, total_operand_count):
     vocabulary_size = unique_operator_count + unique_operand_count
     program_length = total_operator_count + total_operand_count
+    # print(f"vocabulary_size = {vocabulary_size}, program_length = {program_length}")
+    if vocabulary_size == 0:
+        vocabulary_size = 1
     volume = program_length * (math.log(vocabulary_size) / math.log(2))
     return volume
 
@@ -158,6 +163,8 @@ if __name__ == "__main__":
 # repo_path = 'E:/Postgraduate_study/FlappyBird'
 # old_commit = 'd7b64a56e687ca6e3a3b295342fe07f0fdcb87a2'
 # new_commit = '5e5ba4bf131b5998c33474ebe34ac7e9d86187ad'
+# old_commit = "e2cb276d982a199bae9d8ab5dce196f2aeb18936"
+# new_commit = "2968bb8ebc7d9c606595625e26b83d1aae14e968"
 #
 # changedMethods, LOC, CC, Halstead_Volume, PCom = getChangedMethods(repo_path, old_commit, new_commit)
 #

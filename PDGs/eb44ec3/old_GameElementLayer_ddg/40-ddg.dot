@@ -1,0 +1,10 @@
+digraph "&lt;operator&gt;.cast" {  
+"1028" [label = <(METHOD,&lt;operator&gt;.cast)> ]
+"1032" [label = <(METHOD_RETURN,ANY)> ]
+"1029" [label = <(PARAM,p1)> ]
+"1030" [label = <(PARAM,p2)> ]
+  "1029" -> "1032"  [ label = "p1"] 
+  "1030" -> "1032"  [ label = "p2"] 
+  "1028" -> "1029" 
+  "1028" -> "1030" 
+}

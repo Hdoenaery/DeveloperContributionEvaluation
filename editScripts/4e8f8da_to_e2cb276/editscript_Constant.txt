@@ -1,0 +1,220 @@
+===
+update-node
+---
+StringLiteralExpr: sources/img/background.png [478,506]
+replace sources/img/background.png by resources/img/background.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/title.png [1748,1771]
+replace sources/img/title.png by resources/img/title.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/start.png [1819,1842]
+replace sources/img/start.png by resources/img/start.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/score.png [1889,1912]
+replace sources/img/score.png by resources/img/score.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/over.png [1958,1980]
+replace sources/img/over.png by resources/img/over.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/again.png [2027,2050]
+replace sources/img/again.png by resources/img/again.png
+===
+update-node
+---
+StringLiteralExpr: sources/score [2099,2114]
+replace sources/score by resources/score
+===
+update-node
+---
+StringLiteralExpr: sources/img/cloud_0.png [1500,1525]
+replace sources/img/cloud_0.png by resources/img/cloud_0.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/cloud_1.png [1527,1552]
+replace sources/img/cloud_1.png by resources/img/cloud_1.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/pipe.png [1614,1636]
+replace sources/img/pipe.png by resources/img/pipe.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/pipe_top.png [1638,1664]
+replace sources/img/pipe_top.png by resources/img/pipe_top.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/pipe_bottom.png [1669,1698]
+replace sources/img/pipe_bottom.png by resources/img/pipe_bottom.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/0.png [645,664]
+replace sources/img/0.png by resources/img/0.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/1.png [666,685]
+replace sources/img/1.png by resources/img/1.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/2.png [687,706]
+replace sources/img/2.png by resources/img/2.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/3.png [708,727]
+replace sources/img/3.png by resources/img/3.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/4.png [729,748]
+replace sources/img/4.png by resources/img/4.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/5.png [755,774]
+replace sources/img/5.png by resources/img/5.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/6.png [776,795]
+replace sources/img/6.png by resources/img/6.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/7.png [797,816]
+replace sources/img/7.png by resources/img/7.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/up.png [825,845]
+replace sources/img/up.png by resources/img/up.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/up.png [847,867]
+replace sources/img/up.png by resources/img/up.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/up.png [869,889]
+replace sources/img/up.png by resources/img/up.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/up.png [891,911]
+replace sources/img/up.png by resources/img/up.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/up.png [918,938]
+replace sources/img/up.png by resources/img/up.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/up.png [940,960]
+replace sources/img/up.png by resources/img/up.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/up.png [962,982]
+replace sources/img/up.png by resources/img/up.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/up.png [984,1004]
+replace sources/img/up.png by resources/img/up.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/down_0.png [1013,1037]
+replace sources/img/down_0.png by resources/img/down_0.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/down_1.png [1039,1063]
+replace sources/img/down_1.png by resources/img/down_1.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/down_2.png [1065,1089]
+replace sources/img/down_2.png by resources/img/down_2.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/down_3.png [1091,1115]
+replace sources/img/down_3.png by resources/img/down_3.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/down_4.png [1122,1146]
+replace sources/img/down_4.png by resources/img/down_4.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/down_5.png [1148,1172]
+replace sources/img/down_5.png by resources/img/down_5.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/down_6.png [1174,1198]
+replace sources/img/down_6.png by resources/img/down_6.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/down_7.png [1205,1229]
+replace sources/img/down_7.png by resources/img/down_7.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/dead.png [1238,1260]
+replace sources/img/dead.png by resources/img/dead.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/dead.png [1262,1284]
+replace sources/img/dead.png by resources/img/dead.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/dead.png [1286,1308]
+replace sources/img/dead.png by resources/img/dead.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/dead.png [1310,1332]
+replace sources/img/dead.png by resources/img/dead.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/dead.png [1339,1361]
+replace sources/img/dead.png by resources/img/dead.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/dead.png [1363,1385]
+replace sources/img/dead.png by resources/img/dead.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/dead.png [1387,1409]
+replace sources/img/dead.png by resources/img/dead.png
+===
+update-node
+---
+StringLiteralExpr: sources/img/dead.png [1411,1433]
+replace sources/img/dead.png by resources/img/dead.png

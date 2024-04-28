@@ -1,0 +1,10 @@
+digraph "isDead" {  
+"233" [label = <(METHOD,isDead)> ]
+"237" [label = <(METHOD_RETURN,ANY)> ]
+"234" [label = <(PARAM,p0)> ]
+"235" [label = <(PARAM,p1)> ]
+  "234" -> "237"  [ label = "p0"] 
+  "235" -> "237"  [ label = "p1"] 
+  "233" -> "234" 
+  "233" -> "235" 
+}

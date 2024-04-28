@@ -1,0 +1,10 @@
+digraph "birdUp" {  
+"1433" [label = <(METHOD,birdUp)> ]
+"1437" [label = <(METHOD_RETURN,ANY)> ]
+"1434" [label = <(PARAM,p0)> ]
+"1435" [label = <(PARAM,p1)> ]
+  "1434" -> "1437"  [ label = "p0"] 
+  "1435" -> "1437"  [ label = "p1"] 
+  "1433" -> "1434" 
+  "1433" -> "1435" 
+}

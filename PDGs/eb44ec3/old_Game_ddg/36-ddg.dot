@@ -1,0 +1,10 @@
+digraph "getGraphics" {  
+"1462" [label = <(METHOD,getGraphics)> ]
+"1466" [label = <(METHOD_RETURN,ANY)> ]
+"1463" [label = <(PARAM,p0)> ]
+"1464" [label = <(PARAM,p1)> ]
+  "1463" -> "1466"  [ label = "p0"] 
+  "1464" -> "1466"  [ label = "p1"] 
+  "1462" -> "1463" 
+  "1462" -> "1464" 
+}

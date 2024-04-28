@@ -1,0 +1,10 @@
+digraph "&lt;clinit&gt;" {  
+"240" [label = <(METHOD,&lt;clinit&gt;)> ]
+"248" [label = <(METHOD_RETURN,void)> ]
+"242" [label = <(&lt;operator&gt;.assignment,int GameForeground.CLOUD_INTERVAL = 100)<SUB>22</SUB>> ]
+"242" [label = <(&lt;operator&gt;.assignment,int GameForeground.CLOUD_INTERVAL = 100)<SUB>22</SUB>> ]
+"242" [label = <(&lt;operator&gt;.assignment,int GameForeground.CLOUD_INTERVAL = 100)<SUB>22</SUB>> ]
+  "242" -> "248"  [ label = "GameForeground.CLOUD_INTERVAL"] 
+  "242" -> "248"  [ label = "int GameForeground.CLOUD_INTERVAL = 100"] 
+  "240" -> "242" 
+}

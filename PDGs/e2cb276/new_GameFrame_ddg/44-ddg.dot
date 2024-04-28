@@ -1,0 +1,10 @@
+digraph "repaint" {  
+"1519" [label = <(METHOD,repaint)> ]
+"1523" [label = <(METHOD_RETURN,ANY)> ]
+"1520" [label = <(PARAM,p0)> ]
+"1521" [label = <(PARAM,p1)> ]
+  "1520" -> "1523"  [ label = "p0"] 
+  "1521" -> "1523"  [ label = "p1"] 
+  "1519" -> "1520" 
+  "1519" -> "1521" 
+}

@@ -1,0 +1,10 @@
+digraph "&lt;operator&gt;.equals" {  
+"1428" [label = <(METHOD,&lt;operator&gt;.equals)> ]
+"1432" [label = <(METHOD_RETURN,ANY)> ]
+"1429" [label = <(PARAM,p1)> ]
+"1430" [label = <(PARAM,p2)> ]
+  "1429" -> "1432"  [ label = "p1"] 
+  "1430" -> "1432"  [ label = "p2"] 
+  "1428" -> "1429" 
+  "1428" -> "1430" 
+}

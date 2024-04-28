@@ -1,0 +1,13 @@
+digraph "isDead" {  
+"851" [label = <(&lt;operator&gt;.equals,state == STATE_FALL)<SUB>208</SUB>> ]
+"858" [label = <(&lt;operator&gt;.equals,state == STATE_DEAD)<SUB>208</SUB>> ]
+"859" [label = <(&lt;operator&gt;.fieldAccess,this.state)<SUB>208</SUB>> ]
+"862" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.Bird.STATE_DEAD)<SUB>208</SUB>> ]
+"861" [label = <(FIELD_IDENTIFIER,state,state)<SUB>208</SUB>> ]
+"864" [label = <(FIELD_IDENTIFIER,STATE_DEAD,STATE_DEAD)<SUB>208</SUB>> ]
+  "851" -> "859" 
+  "851" -> "858" 
+  "851" -> "864" 
+  "851" -> "862" 
+  "851" -> "861" 
+}

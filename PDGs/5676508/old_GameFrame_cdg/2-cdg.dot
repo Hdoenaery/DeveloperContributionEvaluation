@@ -1,0 +1,97 @@
+digraph "keyPressed" {  
+"696" [label = <(&lt;operator&gt;.fieldAccess,this.outerClass.gameState)<SUB>67</SUB>> ]
+"703" [label = <(&lt;operator&gt;.fieldAccess,this.outerClass.STATE_READY)<SUB>68</SUB>> ]
+"735" [label = <(&lt;operator&gt;.fieldAccess,this.outerClass.STATE_START)<SUB>76</SUB>> ]
+"761" [label = <(&lt;operator&gt;.fieldAccess,this.outerClass.STATE_OVER)<SUB>83</SUB>> ]
+"704" [label = <(&lt;operator&gt;.fieldAccess,this.outerClass)<SUB>68</SUB>> ]
+"707" [label = <(FIELD_IDENTIFIER,STATE_READY,STATE_READY)<SUB>68</SUB>> ]
+"709" [label = <(&lt;operator&gt;.equals,keycode == KeyEvent.VK_SPACE)<SUB>69</SUB>> ]
+"736" [label = <(&lt;operator&gt;.fieldAccess,this.outerClass)<SUB>76</SUB>> ]
+"739" [label = <(FIELD_IDENTIFIER,STATE_START,STATE_START)<SUB>76</SUB>> ]
+"741" [label = <(&lt;operator&gt;.equals,keycode == KeyEvent.VK_SPACE)<SUB>77</SUB>> ]
+"762" [label = <(&lt;operator&gt;.fieldAccess,this.outerClass)<SUB>83</SUB>> ]
+"765" [label = <(FIELD_IDENTIFIER,STATE_OVER,STATE_OVER)<SUB>83</SUB>> ]
+"767" [label = <(&lt;operator&gt;.equals,keycode == KeyEvent.VK_SPACE)<SUB>84</SUB>> ]
+"706" [label = <(FIELD_IDENTIFIER,outerClass,outerClass)<SUB>68</SUB>> ]
+"711" [label = <(&lt;operator&gt;.fieldAccess,KeyEvent.VK_SPACE)<SUB>69</SUB>> ]
+"715" [label = <(birdUp,this.outerClass.bird.birdUp())<SUB>71</SUB>> ]
+"721" [label = <(birdDown,this.outerClass.bird.birdDown())<SUB>72</SUB>> ]
+"727" [label = <(setGameState,setGameState(STATE_START))<SUB>73</SUB>> ]
+"738" [label = <(FIELD_IDENTIFIER,outerClass,outerClass)<SUB>76</SUB>> ]
+"743" [label = <(&lt;operator&gt;.fieldAccess,KeyEvent.VK_SPACE)<SUB>77</SUB>> ]
+"747" [label = <(birdUp,this.outerClass.bird.birdUp())<SUB>79</SUB>> ]
+"753" [label = <(birdDown,this.outerClass.bird.birdDown())<SUB>80</SUB>> ]
+"764" [label = <(FIELD_IDENTIFIER,outerClass,outerClass)<SUB>83</SUB>> ]
+"769" [label = <(&lt;operator&gt;.fieldAccess,KeyEvent.VK_SPACE)<SUB>84</SUB>> ]
+"773" [label = <(resetGame,this.resetGame())<SUB>86</SUB>> ]
+"713" [label = <(FIELD_IDENTIFIER,VK_SPACE,VK_SPACE)<SUB>69</SUB>> ]
+"716" [label = <(&lt;operator&gt;.fieldAccess,this.outerClass.bird)<SUB>71</SUB>> ]
+"722" [label = <(&lt;operator&gt;.fieldAccess,this.outerClass.bird)<SUB>72</SUB>> ]
+"728" [label = <(&lt;operator&gt;.fieldAccess,this.outerClass.STATE_START)<SUB>73</SUB>> ]
+"745" [label = <(FIELD_IDENTIFIER,VK_SPACE,VK_SPACE)<SUB>77</SUB>> ]
+"748" [label = <(&lt;operator&gt;.fieldAccess,this.outerClass.bird)<SUB>79</SUB>> ]
+"754" [label = <(&lt;operator&gt;.fieldAccess,this.outerClass.bird)<SUB>80</SUB>> ]
+"771" [label = <(FIELD_IDENTIFIER,VK_SPACE,VK_SPACE)<SUB>84</SUB>> ]
+"717" [label = <(&lt;operator&gt;.fieldAccess,this.outerClass)<SUB>71</SUB>> ]
+"720" [label = <(FIELD_IDENTIFIER,bird,bird)<SUB>71</SUB>> ]
+"723" [label = <(&lt;operator&gt;.fieldAccess,this.outerClass)<SUB>72</SUB>> ]
+"726" [label = <(FIELD_IDENTIFIER,bird,bird)<SUB>72</SUB>> ]
+"729" [label = <(&lt;operator&gt;.fieldAccess,this.outerClass)<SUB>73</SUB>> ]
+"732" [label = <(FIELD_IDENTIFIER,STATE_START,STATE_START)<SUB>73</SUB>> ]
+"749" [label = <(&lt;operator&gt;.fieldAccess,this.outerClass)<SUB>79</SUB>> ]
+"752" [label = <(FIELD_IDENTIFIER,bird,bird)<SUB>79</SUB>> ]
+"755" [label = <(&lt;operator&gt;.fieldAccess,this.outerClass)<SUB>80</SUB>> ]
+"758" [label = <(FIELD_IDENTIFIER,bird,bird)<SUB>80</SUB>> ]
+"719" [label = <(FIELD_IDENTIFIER,outerClass,outerClass)<SUB>71</SUB>> ]
+"725" [label = <(FIELD_IDENTIFIER,outerClass,outerClass)<SUB>72</SUB>> ]
+"731" [label = <(FIELD_IDENTIFIER,outerClass,outerClass)<SUB>73</SUB>> ]
+"751" [label = <(FIELD_IDENTIFIER,outerClass,outerClass)<SUB>79</SUB>> ]
+"757" [label = <(FIELD_IDENTIFIER,outerClass,outerClass)<SUB>80</SUB>> ]
+  "696" -> "771" 
+  "696" -> "769" 
+  "696" -> "761" 
+  "696" -> "762" 
+  "696" -> "704" 
+  "696" -> "707" 
+  "696" -> "764" 
+  "696" -> "711" 
+  "696" -> "743" 
+  "696" -> "738" 
+  "696" -> "765" 
+  "696" -> "767" 
+  "696" -> "713" 
+  "696" -> "735" 
+  "696" -> "745" 
+  "696" -> "709" 
+  "696" -> "736" 
+  "696" -> "741" 
+  "696" -> "703" 
+  "696" -> "739" 
+  "696" -> "706" 
+  "709" -> "727" 
+  "709" -> "732" 
+  "709" -> "715" 
+  "709" -> "722" 
+  "709" -> "721" 
+  "709" -> "723" 
+  "709" -> "731" 
+  "709" -> "719" 
+  "709" -> "729" 
+  "709" -> "717" 
+  "709" -> "725" 
+  "709" -> "728" 
+  "709" -> "720" 
+  "709" -> "716" 
+  "709" -> "726" 
+  "741" -> "752" 
+  "741" -> "754" 
+  "741" -> "755" 
+  "741" -> "758" 
+  "741" -> "747" 
+  "741" -> "757" 
+  "741" -> "751" 
+  "741" -> "748" 
+  "741" -> "749" 
+  "741" -> "753" 
+  "767" -> "773" 
+}

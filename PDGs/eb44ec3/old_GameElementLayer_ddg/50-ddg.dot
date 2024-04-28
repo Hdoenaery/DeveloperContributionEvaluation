@@ -1,0 +1,10 @@
+digraph "getBirdRect" {  
+"1081" [label = <(METHOD,getBirdRect)> ]
+"1085" [label = <(METHOD_RETURN,ANY)> ]
+"1082" [label = <(PARAM,p0)> ]
+"1083" [label = <(PARAM,p1)> ]
+  "1082" -> "1085"  [ label = "p0"] 
+  "1083" -> "1085"  [ label = "p1"] 
+  "1081" -> "1082" 
+  "1081" -> "1083" 
+}

@@ -1,0 +1,295 @@
+===
+move-tree
+---
+CatchClause [1079,1108]
+    Parameter [1086,1101]
+        ClassOrInterfaceType [1086,1097]
+            SimpleName: IOException [1086,1097]
+        SimpleName: ioe [1098,1101]
+    BlockStmt [1103,1108]
+to
+TryStmt [587,806]
+at 1
+===
+move-tree
+---
+CatchClause [777,806]
+    Parameter [784,799]
+        ClassOrInterfaceType [784,795]
+            SimpleName: IOException [784,795]
+        SimpleName: ioe [796,799]
+    BlockStmt [801,806]
+to
+TryStmt [881,1108]
+at 1
+===
+insert-node
+---
+VariableDeclarationExpr [533,597]
+to
+ExpressionStmt [645,698]
+at 0
+===
+update-node
+---
+SimpleName: ioe [1098,1101]
+replace ioe by ignored
+===
+insert-node
+---
+VariableDeclarationExpr [858,926]
+to
+ExpressionStmt [939,996]
+at 0
+===
+update-node
+---
+SimpleName: ioe [796,799]
+replace ioe by ignored
+===
+insert-node
+---
+VariableDeclarationExpr [1193,1261]
+to
+ExpressionStmt [1243,1300]
+at 0
+===
+update-node
+---
+SimpleName: ioe [1402,1405]
+replace ioe by ignored
+===
+insert-node
+---
+VariableDeclarator [545,597]
+to
+VariableDeclarationExpr [533,597]
+at 0
+===
+insert-node
+---
+VariableDeclarator [870,926]
+to
+VariableDeclarationExpr [858,926]
+at 0
+===
+insert-node
+---
+VariableDeclarator [1205,1261]
+to
+VariableDeclarationExpr [1193,1261]
+at 0
+===
+move-tree
+---
+ClassOrInterfaceType [449,460]
+    SimpleName: InputStream [449,460]
+to
+VariableDeclarator [545,597]
+at 0
+===
+move-tree
+---
+SimpleName: flyIn [645,650]
+to
+VariableDeclarator [545,597]
+at 1
+===
+move-tree
+---
+ObjectCreationExpr [653,697]
+    ClassOrInterfaceType [657,672]
+        SimpleName: FileInputStream [657,672]
+    StringLiteralExpr: resources/wav/fly.wav [673,696]
+to
+VariableDeclarator [545,597]
+at 2
+===
+move-tree
+---
+ClassOrInterfaceType [484,495]
+    SimpleName: InputStream [484,495]
+to
+VariableDeclarator [870,926]
+at 0
+===
+move-tree
+---
+SimpleName: crashIn [939,946]
+to
+VariableDeclarator [870,926]
+at 1
+===
+move-tree
+---
+ObjectCreationExpr [949,995]
+    ClassOrInterfaceType [953,968]
+        SimpleName: FileInputStream [953,968]
+    StringLiteralExpr: resources/wav/crash.wav [969,994]
+to
+VariableDeclarator [870,926]
+at 2
+===
+move-tree
+---
+ClassOrInterfaceType [521,532]
+    SimpleName: InputStream [521,532]
+to
+VariableDeclarator [1205,1261]
+at 0
+===
+move-tree
+---
+SimpleName: scoreIn [1243,1250]
+to
+VariableDeclarator [1205,1261]
+at 1
+===
+move-tree
+---
+ObjectCreationExpr [1253,1299]
+    ClassOrInterfaceType [1257,1272]
+        SimpleName: FileInputStream [1257,1272]
+    StringLiteralExpr: resources/wav/score.wav [1273,1298]
+to
+VariableDeclarator [1205,1261]
+at 2
+===
+delete-tree
+---
+ImportDeclaration [56,93]
+    Name: FileNotFoundException [63,92]
+        Name: io [63,70]
+            Name: java [63,67]
+===
+delete-node
+---
+Modifier: private [434,441]
+===
+===
+delete-node
+---
+Modifier: static [442,448]
+===
+===
+delete-node
+---
+SimpleName: flyIn [461,466]
+===
+===
+delete-node
+---
+VariableDeclarator [461,466]
+===
+===
+delete-node
+---
+FieldDeclaration [434,467]
+===
+===
+delete-node
+---
+Modifier: private [469,476]
+===
+===
+delete-node
+---
+Modifier: static [477,483]
+===
+===
+delete-node
+---
+SimpleName: crashIn [496,503]
+===
+===
+delete-node
+---
+VariableDeclarator [496,503]
+===
+===
+delete-node
+---
+FieldDeclaration [469,504]
+===
+===
+delete-node
+---
+Modifier: private [506,513]
+===
+===
+delete-node
+---
+Modifier: static [514,520]
+===
+===
+delete-node
+---
+SimpleName: scoreIn [533,540]
+===
+===
+delete-node
+---
+VariableDeclarator [533,540]
+===
+===
+delete-node
+---
+FieldDeclaration [506,541]
+===
+===
+delete-node
+---
+NameExpr [645,650]
+===
+===
+delete-node
+---
+AssignExpr [645,697]
+===
+===
+delete-tree
+---
+CatchClause [736,776]
+    Parameter [743,769]
+        ClassOrInterfaceType [743,764]
+            SimpleName: FileNotFoundException [743,764]
+        SimpleName: fnfe [765,769]
+    BlockStmt [771,776]
+===
+delete-node
+---
+NameExpr [939,946]
+===
+===
+delete-node
+---
+AssignExpr [939,995]
+===
+===
+delete-tree
+---
+CatchClause [1038,1078]
+    Parameter [1045,1071]
+        ClassOrInterfaceType [1045,1066]
+            SimpleName: FileNotFoundException [1045,1066]
+        SimpleName: fnfe [1067,1071]
+    BlockStmt [1073,1078]
+===
+delete-node
+---
+NameExpr [1243,1250]
+===
+===
+delete-node
+---
+AssignExpr [1243,1299]
+===
+===
+delete-tree
+---
+CatchClause [1342,1382]
+    Parameter [1349,1375]
+        ClassOrInterfaceType [1349,1370]
+            SimpleName: FileNotFoundException [1349,1370]
+        SimpleName: fnfe [1371,1375]
+    BlockStmt [1377,1382]

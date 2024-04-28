@@ -1,0 +1,10 @@
+digraph "printStackTrace" {  
+"250" [label = <(METHOD,printStackTrace)> ]
+"254" [label = <(METHOD_RETURN,ANY)> ]
+"251" [label = <(PARAM,p0)> ]
+"252" [label = <(PARAM,p1)> ]
+  "251" -> "254"  [ label = "p0"] 
+  "252" -> "254"  [ label = "p1"] 
+  "250" -> "251" 
+  "250" -> "252" 
+}

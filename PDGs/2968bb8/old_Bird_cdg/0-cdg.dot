@@ -1,0 +1,43 @@
+digraph "&lt;init&gt;" {  
+"128" [label = <(&lt;operator&gt;.lessThan,j &lt; STATE_COUNT)<SUB>51</SUB>> ]
+"133" [label = <(&lt;operator&gt;.postIncrement,j++)<SUB>51</SUB>> ]
+"130" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.Bird.STATE_COUNT)<SUB>51</SUB>> ]
+"132" [label = <(FIELD_IDENTIFIER,STATE_COUNT,STATE_COUNT)<SUB>51</SUB>> ]
+"138" [label = <(&lt;operator&gt;.assignment,int i = 0)<SUB>52</SUB>> ]
+"141" [label = <(&lt;operator&gt;.lessThan,i &lt; IMG_COUNT)<SUB>52</SUB>> ]
+"146" [label = <(&lt;operator&gt;.postIncrement,i++)<SUB>52</SUB>> ]
+"143" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.Bird.IMG_COUNT)<SUB>52</SUB>> ]
+"149" [label = <(&lt;operator&gt;.assignment,birdImgs[j][i] = GameUtil.loadBUfferedImage(Con...)<SUB>53</SUB>> ]
+"145" [label = <(FIELD_IDENTIFIER,IMG_COUNT,IMG_COUNT)<SUB>52</SUB>> ]
+"150" [label = <(&lt;operator&gt;.indexAccess,birdImgs[j][i])<SUB>53</SUB>> ]
+"157" [label = <(loadBUfferedImage,loadBUfferedImage(Constant.BIRDS_IMG_PATH[j][i]))<SUB>53</SUB>> ]
+"151" [label = <(&lt;operator&gt;.indexAccess,birdImgs[j])<SUB>53</SUB>> ]
+"159" [label = <(&lt;operator&gt;.indexAccess,Constant.BIRDS_IMG_PATH[j][i])<SUB>53</SUB>> ]
+"152" [label = <(&lt;operator&gt;.fieldAccess,this.birdImgs)<SUB>53</SUB>> ]
+"160" [label = <(&lt;operator&gt;.indexAccess,Constant.BIRDS_IMG_PATH[j])<SUB>53</SUB>> ]
+"154" [label = <(FIELD_IDENTIFIER,birdImgs,birdImgs)<SUB>53</SUB>> ]
+"161" [label = <(&lt;operator&gt;.fieldAccess,Constant.BIRDS_IMG_PATH)<SUB>53</SUB>> ]
+"163" [label = <(FIELD_IDENTIFIER,BIRDS_IMG_PATH,BIRDS_IMG_PATH)<SUB>53</SUB>> ]
+  "128" -> "141" 
+  "128" -> "145" 
+  "128" -> "128" 
+  "128" -> "130" 
+  "128" -> "132" 
+  "128" -> "138" 
+  "128" -> "143" 
+  "128" -> "133" 
+  "141" -> "160" 
+  "141" -> "141" 
+  "141" -> "152" 
+  "141" -> "154" 
+  "141" -> "145" 
+  "141" -> "146" 
+  "141" -> "161" 
+  "141" -> "163" 
+  "141" -> "149" 
+  "141" -> "150" 
+  "141" -> "151" 
+  "141" -> "157" 
+  "141" -> "159" 
+  "141" -> "143" 
+}

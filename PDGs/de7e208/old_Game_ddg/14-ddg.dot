@@ -1,0 +1,10 @@
+digraph "&lt;operator&gt;.assignment" {  
+"1349" [label = <(METHOD,&lt;operator&gt;.assignment)> ]
+"1353" [label = <(METHOD_RETURN,ANY)> ]
+"1350" [label = <(PARAM,p1)> ]
+"1351" [label = <(PARAM,p2)> ]
+  "1350" -> "1353"  [ label = "p1"] 
+  "1351" -> "1353"  [ label = "p2"] 
+  "1349" -> "1350" 
+  "1349" -> "1351" 
+}

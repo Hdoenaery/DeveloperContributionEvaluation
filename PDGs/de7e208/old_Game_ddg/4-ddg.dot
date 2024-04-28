@@ -1,0 +1,31 @@
+digraph "keyReleased" {  
+"812" [label = <(METHOD,keyReleased)<SUB>103</SUB>> ]
+"836" [label = <(METHOD_RETURN,void)<SUB>103</SUB>> ]
+"813" [label = <(PARAM,this)<SUB>103</SUB>> ]
+"814" [label = <(PARAM,KeyEvent e)<SUB>103</SUB>> ]
+"817" [label = <(&lt;operator&gt;.assignment,int keycode = e.getKeyChar())<SUB>104</SUB>> ]
+"817" [label = <(&lt;operator&gt;.assignment,int keycode = e.getKeyChar())<SUB>104</SUB>> ]
+"817" [label = <(&lt;operator&gt;.assignment,int keycode = e.getKeyChar())<SUB>104</SUB>> ]
+"822" [label = <(&lt;operator&gt;.equals,keycode == KeyEvent.VK_SPACE)<SUB>105</SUB>> ]
+"819" [label = <(getKeyChar,e.getKeyChar())<SUB>104</SUB>> ]
+"822" [label = <(&lt;operator&gt;.equals,keycode == KeyEvent.VK_SPACE)<SUB>105</SUB>> ]
+"822" [label = <(&lt;operator&gt;.equals,keycode == KeyEvent.VK_SPACE)<SUB>105</SUB>> ]
+"828" [label = <(keyReleased,this.outerClass.bird.keyReleased())<SUB>106</SUB>> ]
+"828" [label = <(keyReleased,this.outerClass.bird.keyReleased())<SUB>106</SUB>> ]
+  "813" -> "836"  [ label = "this"] 
+  "819" -> "836"  [ label = "e"] 
+  "817" -> "836"  [ label = "e.getKeyChar()"] 
+  "817" -> "836"  [ label = "int keycode = e.getKeyChar()"] 
+  "822" -> "836"  [ label = "keycode"] 
+  "822" -> "836"  [ label = "KeyEvent.VK_SPACE"] 
+  "822" -> "836"  [ label = "keycode == KeyEvent.VK_SPACE"] 
+  "828" -> "836"  [ label = "this.outerClass.bird"] 
+  "828" -> "836"  [ label = "this.outerClass.bird.keyReleased()"] 
+  "812" -> "813" 
+  "812" -> "814" 
+  "819" -> "817"  [ label = "e"] 
+  "814" -> "819"  [ label = "e"] 
+  "812" -> "819" 
+  "817" -> "822"  [ label = "keycode"] 
+  "812" -> "822" 
+}

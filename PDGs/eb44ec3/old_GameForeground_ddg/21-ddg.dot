@@ -1,0 +1,16 @@
+digraph "getRandomNumber" {  
+"385" [label = <(METHOD,getRandomNumber)> ]
+"391" [label = <(METHOD_RETURN,ANY)> ]
+"386" [label = <(PARAM,p0)> ]
+"387" [label = <(PARAM,p1)> ]
+"388" [label = <(PARAM,p2)> ]
+"389" [label = <(PARAM,p3)> ]
+  "386" -> "391"  [ label = "p0"] 
+  "387" -> "391"  [ label = "p1"] 
+  "388" -> "391"  [ label = "p2"] 
+  "389" -> "391"  [ label = "p3"] 
+  "385" -> "386" 
+  "385" -> "387" 
+  "385" -> "388" 
+  "385" -> "389" 
+}

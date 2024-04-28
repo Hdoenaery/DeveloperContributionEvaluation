@@ -1,0 +1,25 @@
+digraph "die" {  
+"746" [label = <(METHOD,die)<SUB>181</SUB>> ]
+"767" [label = <(METHOD_RETURN,void)<SUB>181</SUB>> ]
+"747" [label = <(PARAM,this)<SUB>181</SUB>> ]
+"749" [label = <(saveScore,this.counter.saveScore())<SUB>182</SUB>> ]
+"753" [label = <(&lt;operator&gt;.assignment,this.state = BIRD_DEAD)<SUB>183</SUB>> ]
+"760" [label = <(setGameState,setGameState(Game.STATE_OVER))<SUB>184</SUB>> ]
+"749" [label = <(saveScore,this.counter.saveScore())<SUB>182</SUB>> ]
+"753" [label = <(&lt;operator&gt;.assignment,this.state = BIRD_DEAD)<SUB>183</SUB>> ]
+"753" [label = <(&lt;operator&gt;.assignment,this.state = BIRD_DEAD)<SUB>183</SUB>> ]
+"760" [label = <(setGameState,setGameState(Game.STATE_OVER))<SUB>184</SUB>> ]
+"760" [label = <(setGameState,setGameState(Game.STATE_OVER))<SUB>184</SUB>> ]
+  "747" -> "767"  [ label = "this"] 
+  "749" -> "767"  [ label = "this.counter"] 
+  "749" -> "767"  [ label = "this.counter.saveScore()"] 
+  "753" -> "767"  [ label = "this.state"] 
+  "753" -> "767"  [ label = "com.kingyu.flappybird.game.Bird.BIRD_DEAD"] 
+  "753" -> "767"  [ label = "this.state = BIRD_DEAD"] 
+  "760" -> "767"  [ label = "Game"] 
+  "760" -> "767"  [ label = "Game.STATE_OVER"] 
+  "760" -> "767"  [ label = "setGameState(Game.STATE_OVER)"] 
+  "746" -> "747" 
+  "747" -> "749"  [ label = "this"] 
+  "746" -> "760" 
+}

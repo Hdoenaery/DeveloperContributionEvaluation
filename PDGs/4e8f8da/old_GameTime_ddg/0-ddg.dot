@@ -1,0 +1,51 @@
+digraph "&lt;init&gt;" {  
+"65" [label = <(METHOD,&lt;init&gt;)<SUB>31</SUB>> ]
+"104" [label = <(METHOD_RETURN,void)<SUB>40</SUB>> ]
+"15" [label = <(PARAM,this)<SUB>31</SUB>> ]
+"67" [label = <(&lt;operator&gt;.assignment,long this.startTime = 0)<SUB>26</SUB>> ]
+"72" [label = <(&lt;operator&gt;.assignment,long this.endTime = 0)<SUB>27</SUB>> ]
+"77" [label = <(&lt;operator&gt;.assignment,long this.score = 0)<SUB>28</SUB>> ]
+"82" [label = <(&lt;operator&gt;.assignment,this.timeState = STATE_READY)<SUB>32</SUB>> ]
+"89" [label = <(&lt;operator&gt;.assignment,this.bestScore = -1)<SUB>33</SUB>> ]
+"67" [label = <(&lt;operator&gt;.assignment,long this.startTime = 0)<SUB>26</SUB>> ]
+"67" [label = <(&lt;operator&gt;.assignment,long this.startTime = 0)<SUB>26</SUB>> ]
+"72" [label = <(&lt;operator&gt;.assignment,long this.endTime = 0)<SUB>27</SUB>> ]
+"72" [label = <(&lt;operator&gt;.assignment,long this.endTime = 0)<SUB>27</SUB>> ]
+"77" [label = <(&lt;operator&gt;.assignment,long this.score = 0)<SUB>28</SUB>> ]
+"77" [label = <(&lt;operator&gt;.assignment,long this.score = 0)<SUB>28</SUB>> ]
+"82" [label = <(&lt;operator&gt;.assignment,this.timeState = STATE_READY)<SUB>32</SUB>> ]
+"82" [label = <(&lt;operator&gt;.assignment,this.timeState = STATE_READY)<SUB>32</SUB>> ]
+"89" [label = <(&lt;operator&gt;.assignment,this.bestScore = -1)<SUB>33</SUB>> ]
+"89" [label = <(&lt;operator&gt;.assignment,this.bestScore = -1)<SUB>33</SUB>> ]
+"93" [label = <(&lt;operator&gt;.minus,-1)<SUB>33</SUB>> ]
+"97" [label = <(loadBestTime,this.loadBestTime())<SUB>36</SUB>> ]
+"99" [label = <(BLOCK,&lt;empty&gt;,&lt;empty&gt;)<SUB>37</SUB>> ]
+"97" [label = <(loadBestTime,this.loadBestTime())<SUB>36</SUB>> ]
+"100" [label = <(printStackTrace,e.printStackTrace())<SUB>38</SUB>> ]
+"100" [label = <(printStackTrace,e.printStackTrace())<SUB>38</SUB>> ]
+  "67" -> "104"  [ label = "long this.startTime = 0"] 
+  "72" -> "104"  [ label = "long this.endTime = 0"] 
+  "77" -> "104"  [ label = "long this.score = 0"] 
+  "82" -> "104"  [ label = "com.bird.main.GameTime.STATE_READY"] 
+  "82" -> "104"  [ label = "this.timeState = STATE_READY"] 
+  "89" -> "104"  [ label = "-1"] 
+  "89" -> "104"  [ label = "this.bestScore = -1"] 
+  "97" -> "104"  [ label = "this"] 
+  "97" -> "104"  [ label = "this.loadBestTime()"] 
+  "100" -> "104"  [ label = "e"] 
+  "65" -> "15" 
+  "65" -> "67" 
+  "65" -> "72" 
+  "65" -> "77" 
+  "93" -> "89"  [ label = "1"] 
+  "65" -> "93" 
+  "65" -> "99" 
+  "15" -> "97"  [ label = "this"] 
+  "67" -> "97"  [ label = "this.startTime"] 
+  "72" -> "97"  [ label = "this.endTime"] 
+  "77" -> "97"  [ label = "this.score"] 
+  "82" -> "97"  [ label = "this.timeState"] 
+  "89" -> "97"  [ label = "this.bestScore"] 
+  "65" -> "97" 
+  "65" -> "100" 
+}

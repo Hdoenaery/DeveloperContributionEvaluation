@@ -1,0 +1,36 @@
+digraph "draw" {  
+"311" [label = <(&lt;operator&gt;.greaterThan,speed &gt; 0)<SUB>80</SUB>> ]
+"316" [label = <(&lt;operator&gt;.assignment,this.image = birdImages[STATE_UP][0])<SUB>81</SUB>> ]
+"346" [label = <(&lt;operator&gt;.equals,state == STATE_DEAD)<SUB>84</SUB>> ]
+"317" [label = <(&lt;operator&gt;.fieldAccess,this.image)<SUB>81</SUB>> ]
+"320" [label = <(&lt;operator&gt;.indexAccess,birdImages[STATE_UP][0])<SUB>81</SUB>> ]
+"354" [label = <(drawGameOver,this.drawGameOver(g))<SUB>85</SUB>> ]
+"319" [label = <(FIELD_IDENTIFIER,image,image)<SUB>81</SUB>> ]
+"321" [label = <(&lt;operator&gt;.indexAccess,birdImages[STATE_UP])<SUB>81</SUB>> ]
+"358" [label = <(&lt;operator&gt;.notEquals,state != STATE_FALL)<SUB>86</SUB>> ]
+"322" [label = <(&lt;operator&gt;.fieldAccess,this.birdImages)<SUB>81</SUB>> ]
+"325" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.Bird.STATE_UP)<SUB>81</SUB>> ]
+"359" [label = <(&lt;operator&gt;.fieldAccess,this.state)<SUB>86</SUB>> ]
+"362" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.Bird.STATE_FALL)<SUB>86</SUB>> ]
+"366" [label = <(drawScore,this.drawScore(g))<SUB>87</SUB>> ]
+"324" [label = <(FIELD_IDENTIFIER,birdImages,birdImages)<SUB>81</SUB>> ]
+"327" [label = <(FIELD_IDENTIFIER,STATE_UP,STATE_UP)<SUB>81</SUB>> ]
+"361" [label = <(FIELD_IDENTIFIER,state,state)<SUB>86</SUB>> ]
+"364" [label = <(FIELD_IDENTIFIER,STATE_FALL,STATE_FALL)<SUB>86</SUB>> ]
+  "311" -> "319" 
+  "311" -> "320" 
+  "311" -> "325" 
+  "311" -> "322" 
+  "311" -> "317" 
+  "311" -> "327" 
+  "311" -> "316" 
+  "311" -> "321" 
+  "311" -> "324" 
+  "346" -> "361" 
+  "346" -> "354" 
+  "346" -> "362" 
+  "346" -> "364" 
+  "346" -> "358" 
+  "346" -> "359" 
+  "358" -> "366" 
+}

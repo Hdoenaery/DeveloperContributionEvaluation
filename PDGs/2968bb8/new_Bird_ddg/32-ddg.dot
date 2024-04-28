@@ -1,0 +1,13 @@
+digraph "min" {  
+"1589" [label = <(METHOD,min)> ]
+"1594" [label = <(METHOD_RETURN,ANY)> ]
+"1590" [label = <(PARAM,p1)> ]
+"1591" [label = <(PARAM,p2)> ]
+"1592" [label = <(PARAM,p3)> ]
+  "1590" -> "1594"  [ label = "p1"] 
+  "1591" -> "1594"  [ label = "p2"] 
+  "1592" -> "1594"  [ label = "p3"] 
+  "1589" -> "1590" 
+  "1589" -> "1591" 
+  "1589" -> "1592" 
+}

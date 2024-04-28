@@ -1,0 +1,22 @@
+digraph "isInFrame" {  
+"582" [label = <(METHOD,isInFrame)<SUB>173</SUB>> ]
+"599" [label = <(METHOD_RETURN,boolean)<SUB>173</SUB>> ]
+"583" [label = <(PARAM,this)<SUB>173</SUB>> ]
+"585" [label = <(RETURN,return x + width &lt; Constant.FRAME_WIDTH;,return x + width &lt; Constant.FRAME_WIDTH;)<SUB>174</SUB>> ]
+"586" [label = <(&lt;operator&gt;.lessThan,x + width &lt; Constant.FRAME_WIDTH)<SUB>174</SUB>> ]
+"586" [label = <(&lt;operator&gt;.lessThan,x + width &lt; Constant.FRAME_WIDTH)<SUB>174</SUB>> ]
+"586" [label = <(&lt;operator&gt;.lessThan,x + width &lt; Constant.FRAME_WIDTH)<SUB>174</SUB>> ]
+"587" [label = <(&lt;operator&gt;.addition,x + width)<SUB>174</SUB>> ]
+"587" [label = <(&lt;operator&gt;.addition,x + width)<SUB>174</SUB>> ]
+  "585" -> "599"  [ label = "&lt;RET&gt;"] 
+  "583" -> "599"  [ label = "this"] 
+  "587" -> "599"  [ label = "this.x"] 
+  "587" -> "599"  [ label = "this.width"] 
+  "586" -> "599"  [ label = "x + width"] 
+  "586" -> "599"  [ label = "Constant.FRAME_WIDTH"] 
+  "586" -> "599"  [ label = "x + width &lt; Constant.FRAME_WIDTH"] 
+  "582" -> "583" 
+  "586" -> "585"  [ label = "x + width &lt; Constant.FRAME_WIDTH"] 
+  "583" -> "586"  [ label = "this"] 
+  "583" -> "587"  [ label = "this"] 
+}

@@ -1,0 +1,13 @@
+digraph "sleep" {  
+"1534" [label = <(METHOD,sleep)> ]
+"1539" [label = <(METHOD_RETURN,ANY)> ]
+"1535" [label = <(PARAM,p0)> ]
+"1536" [label = <(PARAM,p1)> ]
+"1537" [label = <(PARAM,p2)> ]
+  "1535" -> "1539"  [ label = "p0"] 
+  "1536" -> "1539"  [ label = "p1"] 
+  "1537" -> "1539"  [ label = "p2"] 
+  "1534" -> "1535" 
+  "1534" -> "1536" 
+  "1534" -> "1537" 
+}

@@ -1,0 +1,10 @@
+digraph "&lt;operator&gt;.modulo" {  
+"1694" [label = <(METHOD,&lt;operator&gt;.modulo)> ]
+"1698" [label = <(METHOD_RETURN,ANY)> ]
+"1695" [label = <(PARAM,p1)> ]
+"1696" [label = <(PARAM,p2)> ]
+  "1695" -> "1698"  [ label = "p1"] 
+  "1696" -> "1698"  [ label = "p2"] 
+  "1694" -> "1695" 
+  "1694" -> "1696" 
+}

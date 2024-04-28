@@ -1,0 +1,85 @@
+digraph "birdFlap" {  
+"653" [label = <(keyIsReleased,this.keyIsReleased())<SUB>161</SUB>> ]
+"680" [label = <(playFly,playFly())<SUB>164</SUB>> ]
+"682" [label = <(&lt;operator&gt;.assignment,this.state = BIRD_UP)<SUB>165</SUB>> ]
+"712" [label = <(keyPressed,this.keyPressed())<SUB>170</SUB>> ]
+"656" [label = <(&lt;operator&gt;.logicalOr,state == BIRD_DEAD || state == BIRD_UP || state...)<SUB>162</SUB>> ]
+"679" [label = <(RETURN,// 小鸟死亡或坠落时返回
+return;,// 小鸟死亡或坠落时返回
+return;)<SUB>163</SUB>> ]
+"683" [label = <(&lt;operator&gt;.fieldAccess,this.state)<SUB>165</SUB>> ]
+"686" [label = <(&lt;operator&gt;.fieldAccess,com.kingyu.flappybird.game.Bird.BIRD_UP)<SUB>165</SUB>> ]
+"690" [label = <(&lt;operator&gt;.greaterThan,birdRect.y &gt; TOP_BOUNDARY)<SUB>166</SUB>> ]
+"657" [label = <(&lt;operator&gt;.logicalOr,state == BIRD_DEAD || state == BIRD_UP)<SUB>162</SUB>> ]
+"672" [label = <(&lt;operator&gt;.equals,state == BIRD_DEAD_FALL)<SUB>162</SUB>> ]
+"685" [label = <(FIELD_IDENTIFIER,state,state)<SUB>165</SUB>> ]
+"688" [label = <(FIELD_IDENTIFIER,BIRD_UP,BIRD_UP)<SUB>165</SUB>> ]
+"691" [label = <(&lt;operator&gt;.fieldAccess,birdRect.y)<SUB>166</SUB>> ]
+"696" [label = <(&lt;operator&gt;.fieldAccess,this.TOP_BOUNDARY)<SUB>166</SUB>> ]
+"700" [label = <(&lt;operator&gt;.assignment,this.velocity = ACC_FLAP)<SUB>167</SUB>> ]
+"707" [label = <(&lt;operator&gt;.assignment,this.wingState = 0)<SUB>168</SUB>> ]
+"658" [label = <(&lt;operator&gt;.equals,state == BIRD_DEAD)<SUB>162</SUB>> ]
+"665" [label = <(&lt;operator&gt;.equals,state == BIRD_UP)<SUB>162</SUB>> ]
+"673" [label = <(&lt;operator&gt;.fieldAccess,this.state)<SUB>162</SUB>> ]
+"676" [label = <(&lt;operator&gt;.fieldAccess,com.kingyu.flappybird.game.Bird.BIRD_DEAD_FALL)<SUB>162</SUB>> ]
+"692" [label = <(&lt;operator&gt;.fieldAccess,this.birdRect)<SUB>166</SUB>> ]
+"695" [label = <(FIELD_IDENTIFIER,y,y)<SUB>166</SUB>> ]
+"698" [label = <(FIELD_IDENTIFIER,TOP_BOUNDARY,TOP_BOUNDARY)<SUB>166</SUB>> ]
+"701" [label = <(&lt;operator&gt;.fieldAccess,this.velocity)<SUB>167</SUB>> ]
+"704" [label = <(&lt;operator&gt;.fieldAccess,com.kingyu.flappybird.game.Bird.ACC_FLAP)<SUB>167</SUB>> ]
+"708" [label = <(&lt;operator&gt;.fieldAccess,this.wingState)<SUB>168</SUB>> ]
+"659" [label = <(&lt;operator&gt;.fieldAccess,this.state)<SUB>162</SUB>> ]
+"662" [label = <(&lt;operator&gt;.fieldAccess,com.kingyu.flappybird.game.Bird.BIRD_DEAD)<SUB>162</SUB>> ]
+"666" [label = <(&lt;operator&gt;.fieldAccess,this.state)<SUB>162</SUB>> ]
+"669" [label = <(&lt;operator&gt;.fieldAccess,com.kingyu.flappybird.game.Bird.BIRD_UP)<SUB>162</SUB>> ]
+"675" [label = <(FIELD_IDENTIFIER,state,state)<SUB>162</SUB>> ]
+"678" [label = <(FIELD_IDENTIFIER,BIRD_DEAD_FALL,BIRD_DEAD_FALL)<SUB>162</SUB>> ]
+"694" [label = <(FIELD_IDENTIFIER,birdRect,birdRect)<SUB>166</SUB>> ]
+"703" [label = <(FIELD_IDENTIFIER,velocity,velocity)<SUB>167</SUB>> ]
+"706" [label = <(FIELD_IDENTIFIER,ACC_FLAP,ACC_FLAP)<SUB>167</SUB>> ]
+"710" [label = <(FIELD_IDENTIFIER,wingState,wingState)<SUB>168</SUB>> ]
+"661" [label = <(FIELD_IDENTIFIER,state,state)<SUB>162</SUB>> ]
+"664" [label = <(FIELD_IDENTIFIER,BIRD_DEAD,BIRD_DEAD)<SUB>162</SUB>> ]
+"668" [label = <(FIELD_IDENTIFIER,state,state)<SUB>162</SUB>> ]
+"671" [label = <(FIELD_IDENTIFIER,BIRD_UP,BIRD_UP)<SUB>162</SUB>> ]
+  "653" -> "658" 
+  "653" -> "657" 
+  "653" -> "661" 
+  "653" -> "664" 
+  "653" -> "662" 
+  "653" -> "656" 
+  "653" -> "659" 
+  "656" -> "685" 
+  "656" -> "680" 
+  "656" -> "683" 
+  "656" -> "696" 
+  "656" -> "686" 
+  "656" -> "682" 
+  "656" -> "691" 
+  "656" -> "712" 
+  "656" -> "690" 
+  "656" -> "679" 
+  "656" -> "694" 
+  "656" -> "698" 
+  "656" -> "692" 
+  "656" -> "695" 
+  "656" -> "688" 
+  "690" -> "704" 
+  "690" -> "708" 
+  "690" -> "707" 
+  "690" -> "710" 
+  "690" -> "700" 
+  "690" -> "701" 
+  "690" -> "703" 
+  "690" -> "706" 
+  "657" -> "675" 
+  "657" -> "676" 
+  "657" -> "678" 
+  "657" -> "673" 
+  "657" -> "672" 
+  "658" -> "668" 
+  "658" -> "665" 
+  "658" -> "669" 
+  "658" -> "666" 
+  "658" -> "671" 
+}

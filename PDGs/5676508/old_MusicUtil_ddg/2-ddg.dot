@@ -1,0 +1,37 @@
+digraph "playScore" {  
+"92" [label = <(METHOD,playScore)<SUB>43</SUB>> ]
+"124" [label = <(METHOD_RETURN,void)<SUB>43</SUB>> ]
+"115" [label = <(start,AudioPlayer.player.start(score))<SUB>50</SUB>> ]
+"115" [label = <(start,AudioPlayer.player.start(score))<SUB>50</SUB>> ]
+"115" [label = <(start,AudioPlayer.player.start(score))<SUB>50</SUB>> ]
+"97" [label = <(&lt;operator&gt;.assignment,InputStream scoreIn = new FileInputStream(&quot;reso...)<SUB>46</SUB>> ]
+"100" [label = <(&lt;init&gt;,new FileInputStream(&quot;resources/wav/score.wav&quot;))<SUB>46</SUB>> ]
+"103" [label = <(&lt;operator&gt;.assignment,com.bird.util.MusicUtil.score = new AudioStream...)<SUB>47</SUB>> ]
+"108" [label = <(&lt;init&gt;,new AudioStream(scoreIn))<SUB>47</SUB>> ]
+"114" [label = <(BLOCK,&lt;empty&gt;,&lt;empty&gt;)<SUB>48</SUB>> ]
+"97" [label = <(&lt;operator&gt;.assignment,InputStream scoreIn = new FileInputStream(&quot;reso...)<SUB>46</SUB>> ]
+"97" [label = <(&lt;operator&gt;.assignment,InputStream scoreIn = new FileInputStream(&quot;reso...)<SUB>46</SUB>> ]
+"100" [label = <(&lt;init&gt;,new FileInputStream(&quot;resources/wav/score.wav&quot;))<SUB>46</SUB>> ]
+"100" [label = <(&lt;init&gt;,new FileInputStream(&quot;resources/wav/score.wav&quot;))<SUB>46</SUB>> ]
+"103" [label = <(&lt;operator&gt;.assignment,com.bird.util.MusicUtil.score = new AudioStream...)<SUB>47</SUB>> ]
+"103" [label = <(&lt;operator&gt;.assignment,com.bird.util.MusicUtil.score = new AudioStream...)<SUB>47</SUB>> ]
+"108" [label = <(&lt;init&gt;,new AudioStream(scoreIn))<SUB>47</SUB>> ]
+"108" [label = <(&lt;init&gt;,new AudioStream(scoreIn))<SUB>47</SUB>> ]
+  "97" -> "124"  [ label = "InputStream scoreIn = new FileInputStream(&quot;resources/wav/score.wav&quot;)"] 
+  "100" -> "124"  [ label = "new FileInputStream(&quot;resources/wav/score.wav&quot;)"] 
+  "103" -> "124"  [ label = "com.bird.util.MusicUtil.score = new AudioStream(scoreIn)"] 
+  "108" -> "124"  [ label = "scoreIn"] 
+  "108" -> "124"  [ label = "new AudioStream(scoreIn)"] 
+  "115" -> "124"  [ label = "AudioPlayer.player"] 
+  "115" -> "124"  [ label = "com.bird.util.MusicUtil.score"] 
+  "115" -> "124"  [ label = "AudioPlayer.player.start(score)"] 
+  "108" -> "115"  [ label = "com.bird.util.MusicUtil.score"] 
+  "92" -> "97" 
+  "92" -> "103" 
+  "92" -> "114" 
+  "97" -> "100"  [ label = "scoreIn"] 
+  "92" -> "100" 
+  "103" -> "108"  [ label = "com.bird.util.MusicUtil.score"] 
+  "100" -> "108"  [ label = "scoreIn"] 
+  "92" -> "108" 
+}

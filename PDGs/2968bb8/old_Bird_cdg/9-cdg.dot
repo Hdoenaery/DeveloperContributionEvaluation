@@ -1,0 +1,39 @@
+digraph "birdDead" {  
+"979" [label = <(&lt;operator&gt;.equals,overImg == null)<SUB>210</SUB>> ]
+"985" [label = <(&lt;operator&gt;.assignment,this.overImg = GameUtil.loadBUfferedImage(Const...)<SUB>211</SUB>> ]
+"994" [label = <(&lt;operator&gt;.assignment,this.scoreImg = GameUtil.loadBUfferedImage(Cons...)<SUB>212</SUB>> ]
+"1003" [label = <(&lt;operator&gt;.assignment,this.againImg = GameUtil.loadBUfferedImage(Cons...)<SUB>213</SUB>> ]
+"986" [label = <(&lt;operator&gt;.fieldAccess,this.overImg)<SUB>211</SUB>> ]
+"989" [label = <(loadBUfferedImage,loadBUfferedImage(Constant.OVER_IMG_PATH))<SUB>211</SUB>> ]
+"995" [label = <(&lt;operator&gt;.fieldAccess,this.scoreImg)<SUB>212</SUB>> ]
+"998" [label = <(loadBUfferedImage,loadBUfferedImage(Constant.SCORE_IMG_PATH))<SUB>212</SUB>> ]
+"1004" [label = <(&lt;operator&gt;.fieldAccess,this.againImg)<SUB>213</SUB>> ]
+"1007" [label = <(loadBUfferedImage,loadBUfferedImage(Constant.AGAIN_IMG_PATH))<SUB>213</SUB>> ]
+"988" [label = <(FIELD_IDENTIFIER,overImg,overImg)<SUB>211</SUB>> ]
+"991" [label = <(&lt;operator&gt;.fieldAccess,Constant.OVER_IMG_PATH)<SUB>211</SUB>> ]
+"997" [label = <(FIELD_IDENTIFIER,scoreImg,scoreImg)<SUB>212</SUB>> ]
+"1000" [label = <(&lt;operator&gt;.fieldAccess,Constant.SCORE_IMG_PATH)<SUB>212</SUB>> ]
+"1006" [label = <(FIELD_IDENTIFIER,againImg,againImg)<SUB>213</SUB>> ]
+"1009" [label = <(&lt;operator&gt;.fieldAccess,Constant.AGAIN_IMG_PATH)<SUB>213</SUB>> ]
+"993" [label = <(FIELD_IDENTIFIER,OVER_IMG_PATH,OVER_IMG_PATH)<SUB>211</SUB>> ]
+"1002" [label = <(FIELD_IDENTIFIER,SCORE_IMG_PATH,SCORE_IMG_PATH)<SUB>212</SUB>> ]
+"1011" [label = <(FIELD_IDENTIFIER,AGAIN_IMG_PATH,AGAIN_IMG_PATH)<SUB>213</SUB>> ]
+  "979" -> "1011" 
+  "979" -> "1000" 
+  "979" -> "985" 
+  "979" -> "986" 
+  "979" -> "994" 
+  "979" -> "998" 
+  "979" -> "1006" 
+  "979" -> "989" 
+  "979" -> "1003" 
+  "979" -> "995" 
+  "979" -> "1002" 
+  "979" -> "991" 
+  "979" -> "1007" 
+  "979" -> "1004" 
+  "979" -> "993" 
+  "979" -> "997" 
+  "979" -> "988" 
+  "979" -> "1009" 
+}

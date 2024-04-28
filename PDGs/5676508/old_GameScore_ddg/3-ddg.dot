@@ -1,0 +1,63 @@
+digraph "saveBestScore" {  
+"110" [label = <(METHOD,saveBestScore)<SUB>48</SUB>> ]
+"145" [label = <(METHOD_RETURN,void)<SUB>48</SUB>> ]
+"111" [label = <(PARAM,this)<SUB>48</SUB>> ]
+"112" [label = <(PARAM,long score)<SUB>48</SUB>> ]
+"115" [label = <(&lt;operator&gt;.assignment,File file = new File(Constant.SCORE_FILE_PATH))<SUB>49</SUB>> ]
+"118" [label = <(&lt;init&gt;,new File(Constant.SCORE_FILE_PATH))<SUB>49</SUB>> ]
+"124" [label = <(&lt;operator&gt;.assignment,DataOutputStream dos = new DataOutputStream(new...)<SUB>50</SUB>> ]
+"127" [label = <(&lt;init&gt;,new DataOutputStream(new FileOutputStream(file)))<SUB>50</SUB>> ]
+"138" [label = <(writeLong,dos.writeLong(score))<SUB>51</SUB>> ]
+"141" [label = <(close,dos.close())<SUB>52</SUB>> ]
+"115" [label = <(&lt;operator&gt;.assignment,File file = new File(Constant.SCORE_FILE_PATH))<SUB>49</SUB>> ]
+"115" [label = <(&lt;operator&gt;.assignment,File file = new File(Constant.SCORE_FILE_PATH))<SUB>49</SUB>> ]
+"118" [label = <(&lt;init&gt;,new File(Constant.SCORE_FILE_PATH))<SUB>49</SUB>> ]
+"118" [label = <(&lt;init&gt;,new File(Constant.SCORE_FILE_PATH))<SUB>49</SUB>> ]
+"124" [label = <(&lt;operator&gt;.assignment,DataOutputStream dos = new DataOutputStream(new...)<SUB>50</SUB>> ]
+"124" [label = <(&lt;operator&gt;.assignment,DataOutputStream dos = new DataOutputStream(new...)<SUB>50</SUB>> ]
+"127" [label = <(&lt;init&gt;,new DataOutputStream(new FileOutputStream(file)))<SUB>50</SUB>> ]
+"127" [label = <(&lt;init&gt;,new DataOutputStream(new FileOutputStream(file)))<SUB>50</SUB>> ]
+"138" [label = <(writeLong,dos.writeLong(score))<SUB>51</SUB>> ]
+"138" [label = <(writeLong,dos.writeLong(score))<SUB>51</SUB>> ]
+"141" [label = <(close,dos.close())<SUB>52</SUB>> ]
+"131" [label = <(&lt;operator&gt;.assignment,$obj1 = new FileOutputStream(file))<SUB>50</SUB>> ]
+"134" [label = <(&lt;init&gt;,new FileOutputStream(file))<SUB>50</SUB>> ]
+"137" [label = <(IDENTIFIER,$obj1,&lt;empty&gt;)<SUB>50</SUB>> ]
+"131" [label = <(&lt;operator&gt;.assignment,$obj1 = new FileOutputStream(file))<SUB>50</SUB>> ]
+"131" [label = <(&lt;operator&gt;.assignment,$obj1 = new FileOutputStream(file))<SUB>50</SUB>> ]
+"134" [label = <(&lt;init&gt;,new FileOutputStream(file))<SUB>50</SUB>> ]
+"134" [label = <(&lt;init&gt;,new FileOutputStream(file))<SUB>50</SUB>> ]
+  "111" -> "145"  [ label = "this"] 
+  "115" -> "145"  [ label = "File file = new File(Constant.SCORE_FILE_PATH)"] 
+  "118" -> "145"  [ label = "Constant.SCORE_FILE_PATH"] 
+  "118" -> "145"  [ label = "new File(Constant.SCORE_FILE_PATH)"] 
+  "124" -> "145"  [ label = "DataOutputStream dos = new DataOutputStream(new FileOutputStream(file))"] 
+  "131" -> "145"  [ label = "$obj1 = new FileOutputStream(file)"] 
+  "134" -> "145"  [ label = "$obj1"] 
+  "134" -> "145"  [ label = "file"] 
+  "134" -> "145"  [ label = "new FileOutputStream(file)"] 
+  "127" -> "145"  [ label = "new DataOutputStream(new FileOutputStream(file))"] 
+  "138" -> "145"  [ label = "score"] 
+  "138" -> "145"  [ label = "dos.writeLong(score)"] 
+  "141" -> "145"  [ label = "dos"] 
+  "141" -> "145"  [ label = "dos.close()"] 
+  "110" -> "111" 
+  "110" -> "112" 
+  "110" -> "115" 
+  "110" -> "124" 
+  "115" -> "118"  [ label = "file"] 
+  "110" -> "118" 
+  "124" -> "127"  [ label = "dos"] 
+  "110" -> "127" 
+  "134" -> "127"  [ label = "$obj1"] 
+  "127" -> "138"  [ label = "dos"] 
+  "110" -> "138" 
+  "112" -> "138"  [ label = "score"] 
+  "138" -> "141"  [ label = "dos"] 
+  "110" -> "141" 
+  "110" -> "131" 
+  "110" -> "137" 
+  "131" -> "134"  [ label = "$obj1"] 
+  "110" -> "134" 
+  "118" -> "134"  [ label = "file"] 
+}

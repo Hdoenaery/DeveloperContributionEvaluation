@@ -1,0 +1,115 @@
+digraph "&lt;init&gt;" {  
+"40" [label = <(METHOD,&lt;init&gt;)<SUB>25</SUB>> ]
+"94" [label = <(METHOD_RETURN,void)<SUB>36</SUB>> ]
+"6" [label = <(PARAM,this)<SUB>25</SUB>> ]
+"41" [label = <(PARAM,BufferedImage img)<SUB>25</SUB>> ]
+"42" [label = <(PARAM,int x)<SUB>25</SUB>> ]
+"43" [label = <(PARAM,int y)<SUB>25</SUB>> ]
+"11" [label = <(&lt;init&gt;,super();)<SUB>26</SUB>> ]
+"45" [label = <(&lt;operator&gt;.assignment,this.img = img)<SUB>27</SUB>> ]
+"49" [label = <(&lt;operator&gt;.assignment,this.x = x)<SUB>28</SUB>> ]
+"53" [label = <(&lt;operator&gt;.assignment,this.y = y)<SUB>29</SUB>> ]
+"57" [label = <(&lt;operator&gt;.assignment,this.speed = Constant.GAME_SPEED * 2)<SUB>30</SUB>> ]
+"66" [label = <(&lt;operator&gt;.assignment,double scale = 1 + Math.random())<SUB>32</SUB>> ]
+"72" [label = <(&lt;operator&gt;.assignment,this.scaleImageWidth = (int) (scale * img.getWi...)<SUB>34</SUB>> ]
+"82" [label = <(&lt;operator&gt;.assignment,this.scaleImageHeight = (int) (scale * img.getW...)<SUB>35</SUB>> ]
+"11" [label = <(&lt;init&gt;,super();)<SUB>26</SUB>> ]
+"45" [label = <(&lt;operator&gt;.assignment,this.img = img)<SUB>27</SUB>> ]
+"45" [label = <(&lt;operator&gt;.assignment,this.img = img)<SUB>27</SUB>> ]
+"49" [label = <(&lt;operator&gt;.assignment,this.x = x)<SUB>28</SUB>> ]
+"49" [label = <(&lt;operator&gt;.assignment,this.x = x)<SUB>28</SUB>> ]
+"53" [label = <(&lt;operator&gt;.assignment,this.y = y)<SUB>29</SUB>> ]
+"53" [label = <(&lt;operator&gt;.assignment,this.y = y)<SUB>29</SUB>> ]
+"57" [label = <(&lt;operator&gt;.assignment,this.speed = Constant.GAME_SPEED * 2)<SUB>30</SUB>> ]
+"57" [label = <(&lt;operator&gt;.assignment,this.speed = Constant.GAME_SPEED * 2)<SUB>30</SUB>> ]
+"66" [label = <(&lt;operator&gt;.assignment,double scale = 1 + Math.random())<SUB>32</SUB>> ]
+"66" [label = <(&lt;operator&gt;.assignment,double scale = 1 + Math.random())<SUB>32</SUB>> ]
+"72" [label = <(&lt;operator&gt;.assignment,this.scaleImageWidth = (int) (scale * img.getWi...)<SUB>34</SUB>> ]
+"72" [label = <(&lt;operator&gt;.assignment,this.scaleImageWidth = (int) (scale * img.getWi...)<SUB>34</SUB>> ]
+"82" [label = <(&lt;operator&gt;.assignment,this.scaleImageHeight = (int) (scale * img.getW...)<SUB>35</SUB>> ]
+"82" [label = <(&lt;operator&gt;.assignment,this.scaleImageHeight = (int) (scale * img.getW...)<SUB>35</SUB>> ]
+"60" [label = <(&lt;operator&gt;.multiplication,Constant.GAME_SPEED * 2)<SUB>30</SUB>> ]
+"60" [label = <(&lt;operator&gt;.multiplication,Constant.GAME_SPEED * 2)<SUB>30</SUB>> ]
+"68" [label = <(&lt;operator&gt;.addition,1 + Math.random())<SUB>32</SUB>> ]
+"68" [label = <(&lt;operator&gt;.addition,1 + Math.random())<SUB>32</SUB>> ]
+"76" [label = <(&lt;operator&gt;.cast,(int) (scale * img.getWidth()))<SUB>34</SUB>> ]
+"76" [label = <(&lt;operator&gt;.cast,(int) (scale * img.getWidth()))<SUB>34</SUB>> ]
+"86" [label = <(&lt;operator&gt;.cast,(int) (scale * img.getWidth()))<SUB>35</SUB>> ]
+"86" [label = <(&lt;operator&gt;.cast,(int) (scale * img.getWidth()))<SUB>35</SUB>> ]
+"70" [label = <(random,Math.random())<SUB>32</SUB>> ]
+"78" [label = <(&lt;operator&gt;.multiplication,scale * img.getWidth())<SUB>34</SUB>> ]
+"78" [label = <(&lt;operator&gt;.multiplication,scale * img.getWidth())<SUB>34</SUB>> ]
+"88" [label = <(&lt;operator&gt;.multiplication,scale * img.getWidth())<SUB>35</SUB>> ]
+"88" [label = <(&lt;operator&gt;.multiplication,scale * img.getWidth())<SUB>35</SUB>> ]
+"80" [label = <(getWidth,img.getWidth())<SUB>34</SUB>> ]
+"90" [label = <(getWidth,img.getWidth())<SUB>35</SUB>> ]
+  "11" -> "94"  [ label = "this"] 
+  "11" -> "94"  [ label = "super();"] 
+  "45" -> "94"  [ label = "this.img"] 
+  "45" -> "94"  [ label = "this.img = img"] 
+  "49" -> "94"  [ label = "this.x"] 
+  "49" -> "94"  [ label = "x"] 
+  "49" -> "94"  [ label = "this.x = x"] 
+  "53" -> "94"  [ label = "this.y"] 
+  "53" -> "94"  [ label = "y"] 
+  "53" -> "94"  [ label = "this.y = y"] 
+  "57" -> "94"  [ label = "this.speed"] 
+  "60" -> "94"  [ label = "Constant.GAME_SPEED"] 
+  "57" -> "94"  [ label = "Constant.GAME_SPEED * 2"] 
+  "57" -> "94"  [ label = "this.speed = Constant.GAME_SPEED * 2"] 
+  "68" -> "94"  [ label = "Math.random()"] 
+  "66" -> "94"  [ label = "1 + Math.random()"] 
+  "66" -> "94"  [ label = "double scale = 1 + Math.random()"] 
+  "72" -> "94"  [ label = "this.scaleImageWidth"] 
+  "72" -> "94"  [ label = "this.scaleImageWidth = (int) (scale * img.getWidth())"] 
+  "82" -> "94"  [ label = "this.scaleImageHeight"] 
+  "88" -> "94"  [ label = "scale"] 
+  "90" -> "94"  [ label = "img"] 
+  "88" -> "94"  [ label = "img.getWidth()"] 
+  "86" -> "94"  [ label = "scale * img.getWidth()"] 
+  "82" -> "94"  [ label = "(int) (scale * img.getWidth())"] 
+  "82" -> "94"  [ label = "this.scaleImageHeight = (int) (scale * img.getWidth())"] 
+  "70" -> "94"  [ label = "Math"] 
+  "40" -> "6" 
+  "40" -> "41" 
+  "40" -> "42" 
+  "40" -> "43" 
+  "41" -> "45"  [ label = "img"] 
+  "40" -> "45" 
+  "42" -> "49"  [ label = "x"] 
+  "40" -> "49" 
+  "43" -> "53"  [ label = "y"] 
+  "40" -> "53" 
+  "60" -> "57"  [ label = "Constant.GAME_SPEED"] 
+  "60" -> "57"  [ label = "2"] 
+  "40" -> "66" 
+  "70" -> "66"  [ label = "Math"] 
+  "40" -> "72" 
+  "78" -> "72"  [ label = "scale"] 
+  "78" -> "72"  [ label = "img.getWidth()"] 
+  "40" -> "82" 
+  "88" -> "82"  [ label = "scale"] 
+  "88" -> "82"  [ label = "img.getWidth()"] 
+  "6" -> "11"  [ label = "this"] 
+  "40" -> "11" 
+  "40" -> "60" 
+  "40" -> "68" 
+  "70" -> "68"  [ label = "Math"] 
+  "40" -> "76" 
+  "78" -> "76"  [ label = "scale"] 
+  "78" -> "76"  [ label = "img.getWidth()"] 
+  "40" -> "86" 
+  "88" -> "86"  [ label = "scale"] 
+  "88" -> "86"  [ label = "img.getWidth()"] 
+  "40" -> "70" 
+  "66" -> "78"  [ label = "scale"] 
+  "40" -> "78" 
+  "80" -> "78"  [ label = "img"] 
+  "78" -> "88"  [ label = "scale"] 
+  "40" -> "88" 
+  "90" -> "88"  [ label = "img"] 
+  "40" -> "80" 
+  "41" -> "80"  [ label = "img"] 
+  "80" -> "90"  [ label = "img"] 
+  "40" -> "90" 
+}

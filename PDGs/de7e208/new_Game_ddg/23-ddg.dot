@@ -1,0 +1,13 @@
+digraph "addWindowListener" {  
+"1401" [label = <(METHOD,addWindowListener)> ]
+"1406" [label = <(METHOD_RETURN,ANY)> ]
+"1402" [label = <(PARAM,p0)> ]
+"1403" [label = <(PARAM,p1)> ]
+"1404" [label = <(PARAM,p2)> ]
+  "1402" -> "1406"  [ label = "p0"] 
+  "1403" -> "1406"  [ label = "p1"] 
+  "1404" -> "1406"  [ label = "p2"] 
+  "1401" -> "1402" 
+  "1401" -> "1403" 
+  "1401" -> "1404" 
+}

@@ -1,0 +1,28 @@
+digraph "&lt;clinit&gt;" {  
+"1024" [label = <(METHOD,&lt;clinit&gt;)> ]
+"1047" [label = <(METHOD_RETURN,void)> ]
+"1026" [label = <(&lt;operator&gt;.assignment,long GameFrame.serialVersionUID = 1L)<SUB>27</SUB>> ]
+"1031" [label = <(&lt;operator&gt;.assignment,int GameFrame.STATE_READY = 0)<SUB>30</SUB>> ]
+"1036" [label = <(&lt;operator&gt;.assignment,int GameFrame.STATE_START = 1)<SUB>31</SUB>> ]
+"1041" [label = <(&lt;operator&gt;.assignment,int GameFrame.STATE_OVER = 2)<SUB>32</SUB>> ]
+"1026" [label = <(&lt;operator&gt;.assignment,long GameFrame.serialVersionUID = 1L)<SUB>27</SUB>> ]
+"1026" [label = <(&lt;operator&gt;.assignment,long GameFrame.serialVersionUID = 1L)<SUB>27</SUB>> ]
+"1031" [label = <(&lt;operator&gt;.assignment,int GameFrame.STATE_READY = 0)<SUB>30</SUB>> ]
+"1031" [label = <(&lt;operator&gt;.assignment,int GameFrame.STATE_READY = 0)<SUB>30</SUB>> ]
+"1036" [label = <(&lt;operator&gt;.assignment,int GameFrame.STATE_START = 1)<SUB>31</SUB>> ]
+"1036" [label = <(&lt;operator&gt;.assignment,int GameFrame.STATE_START = 1)<SUB>31</SUB>> ]
+"1041" [label = <(&lt;operator&gt;.assignment,int GameFrame.STATE_OVER = 2)<SUB>32</SUB>> ]
+"1041" [label = <(&lt;operator&gt;.assignment,int GameFrame.STATE_OVER = 2)<SUB>32</SUB>> ]
+  "1026" -> "1047"  [ label = "GameFrame.serialVersionUID"] 
+  "1026" -> "1047"  [ label = "long GameFrame.serialVersionUID = 1L"] 
+  "1031" -> "1047"  [ label = "GameFrame.STATE_READY"] 
+  "1031" -> "1047"  [ label = "int GameFrame.STATE_READY = 0"] 
+  "1036" -> "1047"  [ label = "GameFrame.STATE_START"] 
+  "1036" -> "1047"  [ label = "int GameFrame.STATE_START = 1"] 
+  "1041" -> "1047"  [ label = "GameFrame.STATE_OVER"] 
+  "1041" -> "1047"  [ label = "int GameFrame.STATE_OVER = 2"] 
+  "1024" -> "1026" 
+  "1024" -> "1031" 
+  "1024" -> "1036" 
+  "1024" -> "1041" 
+}

@@ -1,0 +1,10 @@
+digraph "getInstance" {  
+"1124" [label = <(METHOD,getInstance)> ]
+"1128" [label = <(METHOD_RETURN,ANY)> ]
+"1125" [label = <(PARAM,p0)> ]
+"1126" [label = <(PARAM,p1)> ]
+  "1125" -> "1128"  [ label = "p0"] 
+  "1126" -> "1128"  [ label = "p1"] 
+  "1124" -> "1125" 
+  "1124" -> "1126" 
+}

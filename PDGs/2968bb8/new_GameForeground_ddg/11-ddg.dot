@@ -1,0 +1,13 @@
+digraph "loadBufferedImage" {  
+"331" [label = <(METHOD,loadBufferedImage)> ]
+"336" [label = <(METHOD_RETURN,ANY)> ]
+"332" [label = <(PARAM,p0)> ]
+"333" [label = <(PARAM,p1)> ]
+"334" [label = <(PARAM,p2)> ]
+  "332" -> "336"  [ label = "p0"] 
+  "333" -> "336"  [ label = "p1"] 
+  "334" -> "336"  [ label = "p2"] 
+  "331" -> "332" 
+  "331" -> "333" 
+  "331" -> "334" 
+}

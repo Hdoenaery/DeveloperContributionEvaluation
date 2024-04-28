@@ -1,0 +1,13 @@
+digraph "score" {  
+"1017" [label = <(METHOD,score)> ]
+"1022" [label = <(METHOD_RETURN,ANY)> ]
+"1018" [label = <(PARAM,p0)> ]
+"1019" [label = <(PARAM,p1)> ]
+"1020" [label = <(PARAM,p2)> ]
+  "1018" -> "1022"  [ label = "p0"] 
+  "1019" -> "1022"  [ label = "p1"] 
+  "1020" -> "1022"  [ label = "p2"] 
+  "1017" -> "1018" 
+  "1017" -> "1019" 
+  "1017" -> "1020" 
+}

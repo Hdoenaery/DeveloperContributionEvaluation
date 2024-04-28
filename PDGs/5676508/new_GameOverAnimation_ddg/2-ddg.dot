@@ -1,0 +1,10 @@
+digraph "&lt;clinit&gt;" {  
+"289" [label = <(METHOD,&lt;clinit&gt;)> ]
+"297" [label = <(METHOD_RETURN,void)> ]
+"291" [label = <(&lt;operator&gt;.assignment,int GameOverAnimation.SCORE_LOCATE = 5)<SUB>26</SUB>> ]
+"291" [label = <(&lt;operator&gt;.assignment,int GameOverAnimation.SCORE_LOCATE = 5)<SUB>26</SUB>> ]
+"291" [label = <(&lt;operator&gt;.assignment,int GameOverAnimation.SCORE_LOCATE = 5)<SUB>26</SUB>> ]
+  "291" -> "297"  [ label = "GameOverAnimation.SCORE_LOCATE"] 
+  "291" -> "297"  [ label = "int GameOverAnimation.SCORE_LOCATE = 5"] 
+  "289" -> "291" 
+}

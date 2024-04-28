@@ -1,0 +1,28 @@
+digraph "birdDown" {  
+"939" [label = <(&lt;operator&gt;.assignment,this.state = STATE_DOWN)<SUB>195</SUB>> ]
+"923" [label = <(&lt;operator&gt;.logicalOr,state == STATE_DEAD || state == STATE_FALL)<SUB>193</SUB>> ]
+"938" [label = <(RETURN,// 小鸟死亡或坠落时返回
+return;,// 小鸟死亡或坠落时返回
+return;)<SUB>194</SUB>> ]
+"940" [label = <(&lt;operator&gt;.fieldAccess,this.state)<SUB>195</SUB>> ]
+"943" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.Bird.STATE_DOWN)<SUB>195</SUB>> ]
+"924" [label = <(&lt;operator&gt;.equals,state == STATE_DEAD)<SUB>193</SUB>> ]
+"931" [label = <(&lt;operator&gt;.equals,state == STATE_FALL)<SUB>193</SUB>> ]
+"942" [label = <(FIELD_IDENTIFIER,state,state)<SUB>195</SUB>> ]
+"945" [label = <(FIELD_IDENTIFIER,STATE_DOWN,STATE_DOWN)<SUB>195</SUB>> ]
+"932" [label = <(&lt;operator&gt;.fieldAccess,this.state)<SUB>193</SUB>> ]
+"935" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.Bird.STATE_FALL)<SUB>193</SUB>> ]
+"934" [label = <(FIELD_IDENTIFIER,state,state)<SUB>193</SUB>> ]
+"937" [label = <(FIELD_IDENTIFIER,STATE_FALL,STATE_FALL)<SUB>193</SUB>> ]
+  "923" -> "942" 
+  "923" -> "945" 
+  "923" -> "940" 
+  "923" -> "943" 
+  "923" -> "939" 
+  "923" -> "938" 
+  "924" -> "931" 
+  "924" -> "932" 
+  "924" -> "934" 
+  "924" -> "935" 
+  "924" -> "937" 
+}

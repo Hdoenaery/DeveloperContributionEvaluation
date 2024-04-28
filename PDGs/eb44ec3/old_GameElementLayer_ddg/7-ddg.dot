@@ -1,0 +1,54 @@
+digraph "isCollideBird" {  
+"714" [label = <(METHOD,isCollideBird)<SUB>206</SUB>> ]
+"751" [label = <(METHOD_RETURN,void)<SUB>206</SUB>> ]
+"715" [label = <(PARAM,this)<SUB>206</SUB>> ]
+"716" [label = <(PARAM,Bird bird)<SUB>206</SUB>> ]
+"724" [label = <(&lt;operator&gt;.assignment,)<SUB>212</SUB>> ]
+"719" [label = <(isDead,isDead())<SUB>208</SUB>> ]
+"724" [label = <(&lt;operator&gt;.assignment,)<SUB>212</SUB>> ]
+"724" [label = <(&lt;operator&gt;.assignment,)<SUB>212</SUB>> ]
+"731" [label = <(hasNext,&lt;empty&gt;)<SUB>212</SUB>> ]
+"719" [label = <(isDead,isDead())<SUB>208</SUB>> ]
+"722" [label = <(RETURN,return;,return;)<SUB>209</SUB>> ]
+"726" [label = <(iterator,&lt;empty&gt;)<SUB>212</SUB>> ]
+"731" [label = <(hasNext,&lt;empty&gt;)<SUB>212</SUB>> ]
+"735" [label = <(&lt;operator&gt;.assignment,&lt;empty&gt;)<SUB>212</SUB>> ]
+"735" [label = <(&lt;operator&gt;.assignment,&lt;empty&gt;)<SUB>212</SUB>> ]
+"735" [label = <(&lt;operator&gt;.assignment,&lt;empty&gt;)<SUB>212</SUB>> ]
+"740" [label = <(intersects,getPipeRect().intersects(bird.getBirdRect()))<SUB>214</SUB>> ]
+"737" [label = <(next,&lt;empty&gt;)<SUB>212</SUB>> ]
+"740" [label = <(intersects,getPipeRect().intersects(bird.getBirdRect()))<SUB>214</SUB>> ]
+"740" [label = <(intersects,getPipeRect().intersects(bird.getBirdRect()))<SUB>214</SUB>> ]
+"746" [label = <(deadBirdFall,deadBirdFall())<SUB>215</SUB>> ]
+"748" [label = <(RETURN,return;,return;)<SUB>216</SUB>> ]
+"741" [label = <(getPipeRect,getPipeRect())<SUB>214</SUB>> ]
+"743" [label = <(getBirdRect,getBirdRect())<SUB>214</SUB>> ]
+"746" [label = <(deadBirdFall,deadBirdFall())<SUB>215</SUB>> ]
+  "722" -> "751"  [ label = "&lt;RET&gt;"] 
+  "748" -> "751"  [ label = "&lt;RET&gt;"] 
+  "715" -> "751"  [ label = "this"] 
+  "719" -> "751"  [ label = "bird"] 
+  "719" -> "751"  [ label = "isDead()"] 
+  "714" -> "715" 
+  "714" -> "716" 
+  "726" -> "724"  [ label = "this.pipes"] 
+  "716" -> "719"  [ label = "bird"] 
+  "714" -> "719" 
+  "714" -> "722" 
+  "715" -> "726"  [ label = "this"] 
+  "724" -> "731"  [ label = "$iterLocal0"] 
+  "737" -> "731"  [ label = "$iterLocal0"] 
+  "714" -> "731" 
+  "737" -> "735"  [ label = "$iterLocal0"] 
+  "731" -> "737"  [ label = "$iterLocal0"] 
+  "714" -> "737" 
+  "741" -> "740"  [ label = "pipe"] 
+  "743" -> "740"  [ label = "bird"] 
+  "714" -> "748" 
+  "735" -> "741"  [ label = "pipe"] 
+  "714" -> "741" 
+  "719" -> "743"  [ label = "bird"] 
+  "714" -> "743" 
+  "743" -> "746"  [ label = "bird"] 
+  "714" -> "746" 
+}

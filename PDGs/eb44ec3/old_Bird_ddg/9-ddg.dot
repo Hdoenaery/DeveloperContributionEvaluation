@@ -1,0 +1,36 @@
+digraph "deadBirdFall" {  
+"768" [label = <(METHOD,deadBirdFall)<SUB>188</SUB>> ]
+"796" [label = <(METHOD_RETURN,void)<SUB>188</SUB>> ]
+"769" [label = <(PARAM,this)<SUB>188</SUB>> ]
+"771" [label = <(&lt;operator&gt;.assignment,this.state = BIRD_DEAD_FALL)<SUB>189</SUB>> ]
+"778" [label = <(playCrash,playCrash())<SUB>190</SUB>> ]
+"780" [label = <(&lt;operator&gt;.assignment,this.velocity = 0)<SUB>191</SUB>> ]
+"771" [label = <(&lt;operator&gt;.assignment,this.state = BIRD_DEAD_FALL)<SUB>189</SUB>> ]
+"771" [label = <(&lt;operator&gt;.assignment,this.state = BIRD_DEAD_FALL)<SUB>189</SUB>> ]
+"778" [label = <(playCrash,playCrash())<SUB>190</SUB>> ]
+"780" [label = <(&lt;operator&gt;.assignment,this.velocity = 0)<SUB>191</SUB>> ]
+"780" [label = <(&lt;operator&gt;.assignment,this.velocity = 0)<SUB>191</SUB>> ]
+"787" [label = <(sleep,Thread.sleep(200))<SUB>194</SUB>> ]
+"791" [label = <(BLOCK,&lt;empty&gt;,&lt;empty&gt;)<SUB>195</SUB>> ]
+"787" [label = <(sleep,Thread.sleep(200))<SUB>194</SUB>> ]
+"787" [label = <(sleep,Thread.sleep(200))<SUB>194</SUB>> ]
+"792" [label = <(printStackTrace,e.printStackTrace())<SUB>196</SUB>> ]
+"792" [label = <(printStackTrace,e.printStackTrace())<SUB>196</SUB>> ]
+  "769" -> "796"  [ label = "this"] 
+  "771" -> "796"  [ label = "this.state"] 
+  "771" -> "796"  [ label = "com.kingyu.flappybird.game.Bird.BIRD_DEAD_FALL"] 
+  "771" -> "796"  [ label = "this.state = BIRD_DEAD_FALL"] 
+  "778" -> "796"  [ label = "playCrash()"] 
+  "780" -> "796"  [ label = "this.velocity"] 
+  "780" -> "796"  [ label = "this.velocity = 0"] 
+  "787" -> "796"  [ label = "Thread.sleep(200)"] 
+  "778" -> "796"  [ label = "MusicUtil"] 
+  "787" -> "796"  [ label = "Thread"] 
+  "792" -> "796"  [ label = "e"] 
+  "768" -> "769" 
+  "768" -> "780" 
+  "768" -> "778" 
+  "768" -> "791" 
+  "768" -> "787" 
+  "768" -> "792" 
+}

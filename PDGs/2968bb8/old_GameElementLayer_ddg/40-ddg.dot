@@ -1,0 +1,13 @@
+digraph "intersects" {  
+"1024" [label = <(METHOD,intersects)> ]
+"1029" [label = <(METHOD_RETURN,ANY)> ]
+"1025" [label = <(PARAM,p0)> ]
+"1026" [label = <(PARAM,p1)> ]
+"1027" [label = <(PARAM,p2)> ]
+  "1025" -> "1029"  [ label = "p0"] 
+  "1026" -> "1029"  [ label = "p1"] 
+  "1027" -> "1029"  [ label = "p2"] 
+  "1024" -> "1025" 
+  "1024" -> "1026" 
+  "1024" -> "1027" 
+}

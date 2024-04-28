@@ -1,0 +1,17 @@
+digraph "setDir" {  
+"244" [label = <(METHOD,setDir)<SUB>77</SUB>> ]
+"253" [label = <(METHOD_RETURN,void)<SUB>77</SUB>> ]
+"6" [label = <(PARAM,this)<SUB>77</SUB>> ]
+"245" [label = <(PARAM,int dir)<SUB>77</SUB>> ]
+"247" [label = <(&lt;operator&gt;.assignment,this.dir = dir)<SUB>78</SUB>> ]
+"247" [label = <(&lt;operator&gt;.assignment,this.dir = dir)<SUB>78</SUB>> ]
+"247" [label = <(&lt;operator&gt;.assignment,this.dir = dir)<SUB>78</SUB>> ]
+  "6" -> "253"  [ label = "this"] 
+  "247" -> "253"  [ label = "this.dir"] 
+  "247" -> "253"  [ label = "dir"] 
+  "247" -> "253"  [ label = "this.dir = dir"] 
+  "244" -> "6" 
+  "244" -> "245" 
+  "245" -> "247"  [ label = "dir"] 
+  "244" -> "247" 
+}

@@ -1,0 +1,1284 @@
+===
+insert-tree
+---
+ImportDeclaration [233,280]
+    Name: drawTitle [247,279]
+        Name: GameUtil [247,269]
+            Name: util [247,260]
+                Name: bird [247,255]
+                    Name: com [247,250]
+to
+CompilationUnit [0,7771]
+at 8
+===
+insert-node
+---
+Modifier: public [333,339]
+to
+ClassOrInterfaceDeclaration [288,7770]
+at 0
+===
+insert-node
+---
+SimpleName: Bird [346,350]
+to
+ClassOrInterfaceDeclaration [288,7770]
+at 1
+===
+insert-node
+---
+FieldDeclaration [521,541]
+to
+ClassOrInterfaceDeclaration [288,7770]
+at 7
+===
+insert-tree
+---
+FieldDeclaration [1155,1190]
+    Modifier: private [1155,1162]
+    Modifier: final [1163,1168]
+    VariableDeclarator [1179,1189]
+        ClassOrInterfaceType [1169,1178]
+            SimpleName: GameScore [1169,1178]
+        SimpleName: countScore [1179,1189]
+to
+ClassOrInterfaceDeclaration [288,7770]
+at 22
+===
+insert-node
+---
+LineComment [603,610]
+to
+ClassOrInterfaceDeclaration [288,7770]
+at 48
+===
+insert-node
+---
+Modifier: final [468,473]
+to
+FieldDeclaration [406,441]
+at 1
+===
+insert-node
+---
+Modifier: private [521,528]
+to
+FieldDeclaration [521,541]
+at 0
+===
+insert-node
+---
+Modifier: final [529,534]
+to
+FieldDeclaration [521,541]
+at 1
+===
+move-tree
+---
+VariableDeclarator [468,469]
+    PrimitiveType: int [464,467]
+    SimpleName: x [468,469]
+to
+FieldDeclaration [521,541]
+at 2
+===
+insert-node
+---
+Modifier: final [1055,1060]
+to
+FieldDeclaration [918,945]
+at 1
+===
+move-tree
+---
+ExpressionStmt [1451,1496]
+    VariableDeclarationExpr [1451,1495]
+        VariableDeclarator [1455,1495]
+            PrimitiveType: int [1451,1454]
+            SimpleName: ImgWidth [1455,1463]
+            MethodCallExpr [1466,1495]
+                ArrayAccessExpr [1466,1484]
+                    ArrayAccessExpr [1466,1481]
+                        NameExpr [1466,1474]
+                            SimpleName: birdImgs [1466,1474]
+                        NameExpr [1475,1480]
+                            SimpleName: state [1475,1480]
+                    IntegerLiteralExpr: 0 [1482,1483]
+                SimpleName: getWidth [1485,1493]
+to
+BlockStmt [1079,1843]
+at 6
+===
+update-node
+---
+SimpleName: drawGameover [6182,6194]
+replace drawGameover by drawGameOver
+===
+update-node
+---
+SimpleName: birdImgs [432,440]
+replace birdImgs by birdImages
+===
+move-tree
+---
+SwitchEntry [3746,4346]
+    NameExpr [3751,3761]
+        SimpleName: STATE_FALL [3751,3761]
+    ExpressionStmt [3781,3796]
+        AssignExpr [3781,3795]
+            NameExpr [3781,3786]
+                SimpleName: speed [3781,3786]
+            BinaryExpr [3790,3795]
+                NameExpr [3790,3791]
+                    SimpleName: g [3790,3791]
+                NameExpr [3794,3795]
+                    SimpleName: T [3794,3795]
+    ExpressionStmt [3800,3830]
+        AssignExpr [3800,3829]
+            NameExpr [3800,3801]
+                SimpleName: h [3800,3801]
+            BinaryExpr [3804,3829]
+                BinaryExpr [3804,3813]
+                    NameExpr [3804,3809]
+                        SimpleName: speed [3804,3809]
+                    NameExpr [3812,3813]
+                        SimpleName: T [3812,3813]
+                BinaryExpr [3816,3829]
+                    BinaryExpr [3816,3825]
+                        BinaryExpr [3816,3821]
+                            NameExpr [3816,3817]
+                                SimpleName: g [3816,3817]
+                            NameExpr [3820,3821]
+                                SimpleName: T [3820,3821]
+                        NameExpr [3824,3825]
+                            SimpleName: T [3824,3825]
+                    IntegerLiteralExpr: 2 [3828,3829]
+    ExpressionStmt [3834,3852]
+        AssignExpr [3834,3851]
+            NameExpr [3834,3835]
+                SimpleName: y [3834,3835]
+            CastExpr [3838,3851]
+                PrimitiveType: int [3839,3842]
+                EnclosedExpr [3844,3851]
+                    BinaryExpr [3845,3850]
+                        NameExpr [3845,3846]
+                            SimpleName: y [3845,3846]
+                        NameExpr [3849,3850]
+                            SimpleName: h [3849,3850]
+    ExpressionStmt [3856,3892]
+        AssignExpr [3856,3891]
+            FieldAccessExpr [3856,3866]
+                NameExpr [3856,3864]
+                    SimpleName: birdRect [3856,3864]
+                SimpleName: y [3865,3866]
+            CastExpr [3869,3891]
+                PrimitiveType: int [3870,3873]
+                EnclosedExpr [3875,3891]
+                    BinaryExpr [3876,3890]
+                        FieldAccessExpr [3876,3886]
+                            NameExpr [3876,3884]
+                                SimpleName: birdRect [3876,3884]
+                            SimpleName: y [3885,3886]
+                        NameExpr [3889,3890]
+                            SimpleName: h [3889,3890]
+    IfStmt [3945,4336]
+        BinaryExpr [3949,4049]
+            FieldAccessExpr [3949,3959]
+                NameExpr [3949,3957]
+                    SimpleName: birdRect [3949,3957]
+                SimpleName: y [3958,3959]
+            BinaryExpr [3963,4049]
+                BinaryExpr [3963,4009]
+                    FieldAccessExpr [3963,3984]
+                        NameExpr [3963,3971]
+                            SimpleName: Constant [3963,3971]
+                        SimpleName: FRAME_HEIGHT [3972,3984]
+                    FieldAccessExpr [3987,4009]
+                        NameExpr [3987,3995]
+                            SimpleName: Constant [3987,3995]
+                        SimpleName: GROUND_HEIGHT [3996,4009]
+                EnclosedExpr [4012,4049]
+                    BinaryExpr [4013,4048]
+                        MethodCallExpr [4013,4043]
+                            ArrayAccessExpr [4013,4031]
+                                ArrayAccessExpr [4013,4028]
+                                    NameExpr [4013,4021]
+                                        SimpleName: birdImgs [4013,4021]
+                                    NameExpr [4022,4027]
+                                        SimpleName: state [4022,4027]
+                                IntegerLiteralExpr: 0 [4029,4030]
+                            SimpleName: getHeight [4032,4041]
+                        IntegerLiteralExpr: 1 [4047,4048]
+        BlockStmt [4051,4336]
+            ExpressionStmt [4058,4149]
+                AssignExpr [4058,4148]
+                    NameExpr [4058,4059]
+                        SimpleName: y [4058,4059]
+                    BinaryExpr [4062,4148]
+                        BinaryExpr [4062,4108]
+                            FieldAccessExpr [4062,4083]
+                                NameExpr [4062,4070]
+                                    SimpleName: Constant [4062,4070]
+                                SimpleName: FRAME_HEIGHT [4071,4083]
+                            FieldAccessExpr [4086,4108]
+                                NameExpr [4086,4094]
+                                    SimpleName: Constant [4086,4094]
+                                SimpleName: GROUND_HEIGHT [4095,4108]
+                        EnclosedExpr [4111,4148]
+                            BinaryExpr [4112,4147]
+                                MethodCallExpr [4112,4142]
+                                    ArrayAccessExpr [4112,4130]
+                                        ArrayAccessExpr [4112,4127]
+                                            NameExpr [4112,4120]
+                                                SimpleName: birdImgs [4112,4120]
+                                            NameExpr [4121,4126]
+                                                SimpleName: state [4121,4126]
+                                        IntegerLiteralExpr: 0 [4128,4129]
+                                    SimpleName: getHeight [4131,4140]
+                                IntegerLiteralExpr: 1 [4146,4147]
+            ExpressionStmt [4154,4254]
+                AssignExpr [4154,4253]
+                    FieldAccessExpr [4154,4164]
+                        NameExpr [4154,4162]
+                            SimpleName: birdRect [4154,4162]
+                        SimpleName: y [4163,4164]
+                    BinaryExpr [4167,4253]
+                        BinaryExpr [4167,4213]
+                            FieldAccessExpr [4167,4188]
+                                NameExpr [4167,4175]
+                                    SimpleName: Constant [4167,4175]
+                                SimpleName: FRAME_HEIGHT [4176,4188]
+                            FieldAccessExpr [4191,4213]
+                                NameExpr [4191,4199]
+                                    SimpleName: Constant [4191,4199]
+                                SimpleName: GROUND_HEIGHT [4200,4213]
+                        EnclosedExpr [4216,4253]
+                            BinaryExpr [4217,4252]
+                                MethodCallExpr [4217,4247]
+                                    ArrayAccessExpr [4217,4235]
+                                        ArrayAccessExpr [4217,4232]
+                                            NameExpr [4217,4225]
+                                                SimpleName: birdImgs [4217,4225]
+                                            NameExpr [4226,4231]
+                                                SimpleName: state [4226,4231]
+                                        IntegerLiteralExpr: 0 [4233,4234]
+                                    SimpleName: getHeight [4236,4245]
+                                IntegerLiteralExpr: 1 [4251,4252]
+            ExpressionStmt [4260,4305]
+                MethodCallExpr [4260,4304]
+                    NameExpr [4260,4269]
+                        SimpleName: GameFrame [4260,4269]
+                    SimpleName: setGameState [4270,4282]
+                    FieldAccessExpr [4283,4303]
+                        NameExpr [4283,4292]
+                            SimpleName: GameFrame [4283,4292]
+                        SimpleName: STATE_OVER [4293,4303]
+            ExpressionStmt [4320,4331]
+                MethodCallExpr [4320,4330]
+                    SimpleName: birdDead [4320,4328]
+    BreakStmt [4340,4346]
+to
+SwitchStmt [3129,4380]
+at 1
+===
+move-tree
+---
+SwitchEntry [3208,3742]
+    NameExpr [3213,3223]
+        SimpleName: STATE_DOWN [3213,3223]
+    ExpressionStmt [3239,3254]
+        AssignExpr [3239,3253]
+            NameExpr [3239,3244]
+                SimpleName: speed [3239,3244]
+            BinaryExpr [3248,3253]
+                NameExpr [3248,3249]
+                    SimpleName: g [3248,3249]
+                NameExpr [3252,3253]
+                    SimpleName: T [3252,3253]
+    ExpressionStmt [3258,3288]
+        AssignExpr [3258,3287]
+            NameExpr [3258,3259]
+                SimpleName: h [3258,3259]
+            BinaryExpr [3262,3287]
+                BinaryExpr [3262,3271]
+                    NameExpr [3262,3267]
+                        SimpleName: speed [3262,3267]
+                    NameExpr [3270,3271]
+                        SimpleName: T [3270,3271]
+                BinaryExpr [3274,3287]
+                    BinaryExpr [3274,3283]
+                        BinaryExpr [3274,3279]
+                            NameExpr [3274,3275]
+                                SimpleName: g [3274,3275]
+                            NameExpr [3278,3279]
+                                SimpleName: T [3278,3279]
+                        NameExpr [3282,3283]
+                            SimpleName: T [3282,3283]
+                    IntegerLiteralExpr: 2 [3286,3287]
+    ExpressionStmt [3292,3310]
+        AssignExpr [3292,3309]
+            NameExpr [3292,3293]
+                SimpleName: y [3292,3293]
+            CastExpr [3296,3309]
+                PrimitiveType: int [3297,3300]
+                EnclosedExpr [3302,3309]
+                    BinaryExpr [3303,3308]
+                        NameExpr [3303,3304]
+                            SimpleName: y [3303,3304]
+                        NameExpr [3307,3308]
+                            SimpleName: h [3307,3308]
+    ExpressionStmt [3314,3350]
+        AssignExpr [3314,3349]
+            FieldAccessExpr [3314,3324]
+                NameExpr [3314,3322]
+                    SimpleName: birdRect [3314,3322]
+                SimpleName: y [3323,3324]
+            CastExpr [3327,3349]
+                PrimitiveType: int [3328,3331]
+                EnclosedExpr [3333,3349]
+                    BinaryExpr [3334,3348]
+                        FieldAccessExpr [3334,3344]
+                            NameExpr [3334,3342]
+                                SimpleName: birdRect [3334,3342]
+                            SimpleName: y [3343,3344]
+                        NameExpr [3347,3348]
+                            SimpleName: h [3347,3348]
+    IfStmt [3402,3731]
+        BinaryExpr [3406,3506]
+            FieldAccessExpr [3406,3416]
+                NameExpr [3406,3414]
+                    SimpleName: birdRect [3406,3414]
+                SimpleName: y [3415,3416]
+            BinaryExpr [3420,3506]
+                BinaryExpr [3420,3466]
+                    FieldAccessExpr [3420,3441]
+                        NameExpr [3420,3428]
+                            SimpleName: Constant [3420,3428]
+                        SimpleName: FRAME_HEIGHT [3429,3441]
+                    FieldAccessExpr [3444,3466]
+                        NameExpr [3444,3452]
+                            SimpleName: Constant [3444,3452]
+                        SimpleName: GROUND_HEIGHT [3453,3466]
+                EnclosedExpr [3469,3506]
+                    BinaryExpr [3470,3505]
+                        MethodCallExpr [3470,3500]
+                            ArrayAccessExpr [3470,3488]
+                                ArrayAccessExpr [3470,3485]
+                                    NameExpr [3470,3478]
+                                        SimpleName: birdImgs [3470,3478]
+                                    NameExpr [3479,3484]
+                                        SimpleName: state [3479,3484]
+                                IntegerLiteralExpr: 0 [3486,3487]
+                            SimpleName: getHeight [3489,3498]
+                        IntegerLiteralExpr: 1 [3504,3505]
+        BlockStmt [3508,3731]
+            ExpressionStmt [3514,3605]
+                AssignExpr [3514,3604]
+                    NameExpr [3514,3515]
+                        SimpleName: y [3514,3515]
+                    BinaryExpr [3518,3604]
+                        BinaryExpr [3518,3564]
+                            FieldAccessExpr [3518,3539]
+                                NameExpr [3518,3526]
+                                    SimpleName: Constant [3518,3526]
+                                SimpleName: FRAME_HEIGHT [3527,3539]
+                            FieldAccessExpr [3542,3564]
+                                NameExpr [3542,3550]
+                                    SimpleName: Constant [3542,3550]
+                                SimpleName: GROUND_HEIGHT [3551,3564]
+                        EnclosedExpr [3567,3604]
+                            BinaryExpr [3568,3603]
+                                MethodCallExpr [3568,3598]
+                                    ArrayAccessExpr [3568,3586]
+                                        ArrayAccessExpr [3568,3583]
+                                            NameExpr [3568,3576]
+                                                SimpleName: birdImgs [3568,3576]
+                                            NameExpr [3577,3582]
+                                                SimpleName: state [3577,3582]
+                                        IntegerLiteralExpr: 0 [3584,3585]
+                                    SimpleName: getHeight [3587,3596]
+                                IntegerLiteralExpr: 1 [3602,3603]
+            ExpressionStmt [3610,3710]
+                AssignExpr [3610,3709]
+                    FieldAccessExpr [3610,3620]
+                        NameExpr [3610,3618]
+                            SimpleName: birdRect [3610,3618]
+                        SimpleName: y [3619,3620]
+                    BinaryExpr [3623,3709]
+                        BinaryExpr [3623,3669]
+                            FieldAccessExpr [3623,3644]
+                                NameExpr [3623,3631]
+                                    SimpleName: Constant [3623,3631]
+                                SimpleName: FRAME_HEIGHT [3632,3644]
+                            FieldAccessExpr [3647,3669]
+                                NameExpr [3647,3655]
+                                    SimpleName: Constant [3647,3655]
+                                SimpleName: GROUND_HEIGHT [3656,3669]
+                        EnclosedExpr [3672,3709]
+                            BinaryExpr [3673,3708]
+                                MethodCallExpr [3673,3703]
+                                    ArrayAccessExpr [3673,3691]
+                                        ArrayAccessExpr [3673,3688]
+                                            NameExpr [3673,3681]
+                                                SimpleName: birdImgs [3673,3681]
+                                            NameExpr [3682,3687]
+                                                SimpleName: state [3682,3687]
+                                        IntegerLiteralExpr: 0 [3689,3690]
+                                    SimpleName: getHeight [3692,3701]
+                                IntegerLiteralExpr: 1 [3707,3708]
+            ExpressionStmt [3715,3726]
+                MethodCallExpr [3715,3725]
+                    SimpleName: birdFall [3715,3723]
+    BreakStmt [3736,3742]
+to
+SwitchStmt [3129,4380]
+at 2
+===
+insert-tree
+---
+ExpressionStmt [6620,6645]
+    MethodCallExpr [6620,6644]
+        NameExpr [6620,6630]
+            SimpleName: countScore [6620,6630]
+        SimpleName: isSaveScore [6631,6642]
+to
+BlockStmt [5304,5573]
+at 2
+===
+insert-node
+---
+IfStmt [8465,8521]
+to
+BlockStmt [6207,7411]
+at 16
+===
+move-tree
+---
+IfStmt [7366,7404]
+    BinaryExpr [7370,7388]
+        NameExpr [7370,7375]
+            SimpleName: flash [7370,7375]
+        BinaryExpr [7379,7388]
+            NameExpr [7379,7384]
+                SimpleName: COUNT [7379,7384]
+            IntegerLiteralExpr: 2 [7387,7388]
+    ExpressionStmt [7394,7404]
+        AssignExpr [7394,7403]
+            NameExpr [7394,7399]
+                SimpleName: flash [7394,7399]
+            IntegerLiteralExpr: 0 [7402,7403]
+to
+BlockStmt [6207,7411]
+at 17
+===
+move-tree
+---
+BinaryExpr [7212,7227]
+    UnaryExpr [7212,7219]
+        NameExpr [7212,7217]
+            SimpleName: flash [7212,7217]
+    NameExpr [7222,7227]
+        SimpleName: COUNT [7222,7227]
+to
+IfStmt [8465,8521]
+at 0
+===
+move-tree
+---
+ExpressionStmt [7328,7362]
+    MethodCallExpr [7328,7361]
+        NameExpr [7328,7329]
+            SimpleName: g [7328,7329]
+        SimpleName: drawImage [7330,7339]
+        NameExpr [7340,7348]
+            SimpleName: againImg [7340,7348]
+        NameExpr [7350,7351]
+            SimpleName: x [7350,7351]
+        NameExpr [7353,7354]
+            SimpleName: y [7353,7354]
+        NullLiteralExpr [7356,7360]
+to
+IfStmt [8465,8521]
+at 1
+===
+move-tree
+---
+NameExpr [3213,3223]
+    SimpleName: STATE_DOWN [3213,3223]
+to
+SwitchEntry [3746,4346]
+at 0
+===
+move-tree
+---
+ExpressionStmt [3239,3254]
+    AssignExpr [3239,3253]
+        NameExpr [3239,3244]
+            SimpleName: speed [3239,3244]
+        BinaryExpr [3248,3253]
+            NameExpr [3248,3249]
+                SimpleName: g [3248,3249]
+            NameExpr [3252,3253]
+                SimpleName: T [3252,3253]
+to
+SwitchEntry [3746,4346]
+at 1
+===
+move-tree
+---
+ExpressionStmt [3258,3288]
+    AssignExpr [3258,3287]
+        NameExpr [3258,3259]
+            SimpleName: h [3258,3259]
+        BinaryExpr [3262,3287]
+            BinaryExpr [3262,3271]
+                NameExpr [3262,3267]
+                    SimpleName: speed [3262,3267]
+                NameExpr [3270,3271]
+                    SimpleName: T [3270,3271]
+            BinaryExpr [3274,3287]
+                BinaryExpr [3274,3283]
+                    BinaryExpr [3274,3279]
+                        NameExpr [3274,3275]
+                            SimpleName: g [3274,3275]
+                        NameExpr [3278,3279]
+                            SimpleName: T [3278,3279]
+                    NameExpr [3282,3283]
+                        SimpleName: T [3282,3283]
+                IntegerLiteralExpr: 2 [3286,3287]
+to
+SwitchEntry [3746,4346]
+at 2
+===
+move-tree
+---
+ExpressionStmt [3292,3310]
+    AssignExpr [3292,3309]
+        NameExpr [3292,3293]
+            SimpleName: y [3292,3293]
+        CastExpr [3296,3309]
+            PrimitiveType: int [3297,3300]
+            EnclosedExpr [3302,3309]
+                BinaryExpr [3303,3308]
+                    NameExpr [3303,3304]
+                        SimpleName: y [3303,3304]
+                    NameExpr [3307,3308]
+                        SimpleName: h [3307,3308]
+to
+SwitchEntry [3746,4346]
+at 3
+===
+move-tree
+---
+ExpressionStmt [3314,3350]
+    AssignExpr [3314,3349]
+        FieldAccessExpr [3314,3324]
+            NameExpr [3314,3322]
+                SimpleName: birdRect [3314,3322]
+            SimpleName: y [3323,3324]
+        CastExpr [3327,3349]
+            PrimitiveType: int [3328,3331]
+            EnclosedExpr [3333,3349]
+                BinaryExpr [3334,3348]
+                    FieldAccessExpr [3334,3344]
+                        NameExpr [3334,3342]
+                            SimpleName: birdRect [3334,3342]
+                        SimpleName: y [3343,3344]
+                    NameExpr [3347,3348]
+                        SimpleName: h [3347,3348]
+to
+SwitchEntry [3746,4346]
+at 4
+===
+move-tree
+---
+NameExpr [3751,3761]
+    SimpleName: STATE_FALL [3751,3761]
+to
+SwitchEntry [3208,3742]
+at 0
+===
+move-tree
+---
+ExpressionStmt [3781,3796]
+    AssignExpr [3781,3795]
+        NameExpr [3781,3786]
+            SimpleName: speed [3781,3786]
+        BinaryExpr [3790,3795]
+            NameExpr [3790,3791]
+                SimpleName: g [3790,3791]
+            NameExpr [3794,3795]
+                SimpleName: T [3794,3795]
+to
+SwitchEntry [3208,3742]
+at 1
+===
+move-tree
+---
+ExpressionStmt [3800,3830]
+    AssignExpr [3800,3829]
+        NameExpr [3800,3801]
+            SimpleName: h [3800,3801]
+        BinaryExpr [3804,3829]
+            BinaryExpr [3804,3813]
+                NameExpr [3804,3809]
+                    SimpleName: speed [3804,3809]
+                NameExpr [3812,3813]
+                    SimpleName: T [3812,3813]
+            BinaryExpr [3816,3829]
+                BinaryExpr [3816,3825]
+                    BinaryExpr [3816,3821]
+                        NameExpr [3816,3817]
+                            SimpleName: g [3816,3817]
+                        NameExpr [3820,3821]
+                            SimpleName: T [3820,3821]
+                    NameExpr [3824,3825]
+                        SimpleName: T [3824,3825]
+                IntegerLiteralExpr: 2 [3828,3829]
+to
+SwitchEntry [3208,3742]
+at 2
+===
+move-tree
+---
+ExpressionStmt [3834,3852]
+    AssignExpr [3834,3851]
+        NameExpr [3834,3835]
+            SimpleName: y [3834,3835]
+        CastExpr [3838,3851]
+            PrimitiveType: int [3839,3842]
+            EnclosedExpr [3844,3851]
+                BinaryExpr [3845,3850]
+                    NameExpr [3845,3846]
+                        SimpleName: y [3845,3846]
+                    NameExpr [3849,3850]
+                        SimpleName: h [3849,3850]
+to
+SwitchEntry [3208,3742]
+at 3
+===
+move-tree
+---
+ExpressionStmt [3856,3892]
+    AssignExpr [3856,3891]
+        FieldAccessExpr [3856,3866]
+            NameExpr [3856,3864]
+                SimpleName: birdRect [3856,3864]
+            SimpleName: y [3865,3866]
+        CastExpr [3869,3891]
+            PrimitiveType: int [3870,3873]
+            EnclosedExpr [3875,3891]
+                BinaryExpr [3876,3890]
+                    FieldAccessExpr [3876,3886]
+                        NameExpr [3876,3884]
+                            SimpleName: birdRect [3876,3884]
+                        SimpleName: y [3885,3886]
+                    NameExpr [3889,3890]
+                        SimpleName: h [3889,3890]
+to
+SwitchEntry [3208,3742]
+at 4
+===
+move-tree
+---
+NameExpr [7328,7329]
+    SimpleName: g [7328,7329]
+to
+MethodCallExpr [7328,7361]
+at 2
+===
+update-node
+---
+SimpleName: timing [1083,1089]
+replace timing by countScore
+===
+update-node
+---
+SimpleName: birdImgs [1140,1148]
+replace birdImgs by birdImages
+===
+update-node
+---
+SimpleName: ImgHeight [1503,1512]
+replace ImgHeight by ImgWidth
+===
+update-node
+---
+SimpleName: ImgWidth [1455,1463]
+replace ImgWidth by ImgHeight
+===
+insert-node
+---
+MethodCallExpr [2172,2199]
+to
+VariableDeclarator [1901,1954]
+at 2
+===
+insert-node
+---
+VariableDeclarationExpr [3647,3683]
+to
+ExpressionStmt [3258,3288]
+at 0
+===
+update-node
+---
+SimpleName: TIME_FONT [5856,5865]
+replace TIME_FONT by CURRENT_SCORE_FONT
+===
+update-node
+---
+SimpleName: drawImage [7330,7339]
+replace drawImage by drawTitle
+===
+update-node
+---
+SimpleName: timing [7659,7665]
+replace timing by countScore
+===
+update-node
+---
+SimpleName: GameTime [1092,1100]
+replace GameTime by GameScore
+===
+update-node
+---
+SimpleName: getHeight [1534,1543]
+replace getHeight by getWidth
+===
+update-node
+---
+SimpleName: getWidth [1485,1493]
+replace getWidth by getHeight
+===
+move-tree
+---
+NameExpr [1644,1652]
+    SimpleName: ImgWidth [1644,1652]
+to
+BinaryExpr [1759,1787]
+at 0
+===
+move-tree
+---
+NameExpr [1673,1682]
+    SimpleName: ImgHeight [1673,1682]
+to
+BinaryExpr [1793,1822]
+at 0
+===
+move-tree
+---
+NameExpr [1915,1920]
+    SimpleName: state [1915,1920]
+to
+MethodCallExpr [2172,2199]
+at 0
+===
+insert-node
+---
+SimpleName: min [2177,2180]
+to
+MethodCallExpr [2172,2199]
+at 1
+===
+move-tree
+---
+NameExpr [1949,1954]
+    SimpleName: state [1949,1954]
+to
+MethodCallExpr [2172,2199]
+at 2
+===
+move-tree
+---
+NameExpr [1936,1946]
+    SimpleName: STATE_FALL [1936,1946]
+to
+MethodCallExpr [2172,2199]
+at 3
+===
+update-node
+---
+SimpleName: drawGameover [2279,2291]
+replace drawGameover by drawGameOver
+===
+insert-node
+---
+MethodCallExpr [3434,3461]
+to
+ArrayAccessExpr [3047,3096]
+at 1
+===
+insert-node
+---
+VariableDeclarator [3654,3683]
+to
+VariableDeclarationExpr [3647,3683]
+at 0
+===
+move-tree
+---
+ExpressionStmt [3715,3726]
+    MethodCallExpr [3715,3725]
+        SimpleName: birdFall [3715,3723]
+to
+BlockStmt [4051,4336]
+at 2
+===
+move-tree
+---
+ExpressionStmt [4260,4305]
+    MethodCallExpr [4260,4304]
+        NameExpr [4260,4269]
+            SimpleName: GameFrame [4260,4269]
+        SimpleName: setGameState [4270,4282]
+        FieldAccessExpr [4283,4303]
+            NameExpr [4283,4292]
+                SimpleName: GameFrame [4283,4292]
+            SimpleName: STATE_OVER [4293,4303]
+to
+BlockStmt [3508,3731]
+at 2
+===
+move-tree
+---
+ExpressionStmt [4320,4331]
+    MethodCallExpr [4320,4330]
+        SimpleName: birdDead [4320,4328]
+to
+BlockStmt [3508,3731]
+at 3
+===
+update-node
+---
+SimpleName: timing [6901,6907]
+replace timing by countScore
+===
+update-node
+---
+SimpleName: state [1915,1920]
+replace state by Math
+===
+update-node
+---
+SimpleName: birdImgs [3047,3055]
+replace birdImgs by birdImages
+===
+move-tree
+---
+NameExpr [3056,3061]
+    SimpleName: state [3056,3061]
+to
+MethodCallExpr [3434,3461]
+at 0
+===
+insert-node
+---
+SimpleName: min [3439,3442]
+to
+MethodCallExpr [3434,3461]
+at 1
+===
+move-tree
+---
+NameExpr [3090,3095]
+    SimpleName: state [3090,3095]
+to
+MethodCallExpr [3434,3461]
+at 2
+===
+move-tree
+---
+NameExpr [3077,3087]
+    SimpleName: STATE_FALL [3077,3087]
+to
+MethodCallExpr [3434,3461]
+at 3
+===
+insert-node
+---
+PrimitiveType: double [3647,3653]
+to
+VariableDeclarator [3654,3683]
+at 0
+===
+move-tree
+---
+SimpleName: h [3258,3259]
+to
+VariableDeclarator [3654,3683]
+at 1
+===
+move-tree
+---
+BinaryExpr [3262,3287]
+    BinaryExpr [3262,3271]
+        NameExpr [3262,3267]
+            SimpleName: speed [3262,3267]
+        NameExpr [3270,3271]
+            SimpleName: T [3270,3271]
+    BinaryExpr [3274,3287]
+        BinaryExpr [3274,3283]
+            BinaryExpr [3274,3279]
+                NameExpr [3274,3275]
+                    SimpleName: g [3274,3275]
+                NameExpr [3278,3279]
+                    SimpleName: T [3278,3279]
+            NameExpr [3282,3283]
+                SimpleName: T [3282,3283]
+        IntegerLiteralExpr: 2 [3286,3287]
+to
+VariableDeclarator [3654,3683]
+at 2
+===
+update-node
+---
+SimpleName: loadBUfferedImage [5390,5407]
+replace loadBUfferedImage by loadBufferedImage
+===
+update-node
+---
+SimpleName: loadBUfferedImage [5456,5473]
+replace loadBUfferedImage by loadBufferedImage
+===
+update-node
+---
+SimpleName: loadBUfferedImage [5523,5540]
+replace loadBUfferedImage by loadBufferedImage
+===
+update-node
+---
+SimpleName: TimeToScore [5904,5915]
+replace TimeToScore by getScore
+===
+update-node
+---
+SimpleName: TimeToScore [6717,6728]
+replace TimeToScore by getScore
+===
+update-node
+---
+SimpleName: birdImgs [2135,2143]
+replace birdImgs by birdImages
+===
+update-node
+---
+SimpleName: state [3056,3061]
+replace state by Math
+===
+update-node
+---
+SimpleName: timing [5897,5903]
+replace timing by countScore
+===
+update-node
+---
+SimpleName: timing [6710,6716]
+replace timing by countScore
+===
+update-node
+---
+SimpleName: loadBUfferedImage [1307,1324]
+replace loadBUfferedImage by loadBufferedImage
+===
+update-node
+---
+SimpleName: birdImgs [1515,1523]
+replace birdImgs by birdImages
+===
+update-node
+---
+SimpleName: birdImgs [1466,1474]
+replace birdImgs by birdImages
+===
+update-node
+---
+SimpleName: TIME_FONT [5986,5995]
+replace TIME_FONT by CURRENT_SCORE_FONT
+===
+update-node
+---
+SimpleName: timing [6953,6959]
+replace timing by countScore
+===
+update-node
+---
+SimpleName: birdImgs [7559,7567]
+replace birdImgs by birdImages
+===
+update-node
+---
+SimpleName: birdImgs [2000,2008]
+replace birdImgs by birdImages
+===
+update-node
+---
+SimpleName: birdImgs [2064,2072]
+replace birdImgs by birdImages
+===
+update-node
+---
+SimpleName: birdImgs [1281,1289]
+replace birdImgs by birdImages
+===
+update-node
+---
+SimpleName: birdImgs [4013,4021]
+replace birdImgs by birdImages
+===
+update-node
+---
+SimpleName: birdImgs [3470,3478]
+replace birdImgs by birdImages
+===
+update-node
+---
+SimpleName: birdImgs [4112,4120]
+replace birdImgs by birdImages
+===
+update-node
+---
+SimpleName: birdImgs [4217,4225]
+replace birdImgs by birdImages
+===
+update-node
+---
+SimpleName: birdImgs [3568,3576]
+replace birdImgs by birdImages
+===
+update-node
+---
+SimpleName: birdImgs [3673,3681]
+replace birdImgs by birdImages
+===
+delete-node
+---
+Modifier: public [288,294]
+===
+===
+delete-node
+---
+SimpleName: Bird [301,305]
+===
+===
+delete-tree
+---
+FieldDeclaration [1014,1038]
+    Modifier: private [1014,1021]
+    VariableDeclarator [1031,1037]
+        ClassOrInterfaceType [1022,1030]
+            SimpleName: GameTime [1022,1030]
+        SimpleName: timing [1031,1037]
+===
+delete-node
+---
+PrimitiveType: int [1628,1631]
+===
+===
+delete-node
+---
+SimpleName: rectWidth [1632,1641]
+===
+===
+delete-node
+---
+VariableDeclarator [1632,1652]
+===
+===
+delete-node
+---
+VariableDeclarationExpr [1628,1652]
+===
+===
+delete-node
+---
+ExpressionStmt [1628,1653]
+===
+===
+delete-node
+---
+PrimitiveType: int [1656,1659]
+===
+===
+delete-node
+---
+SimpleName: rectHeight [1660,1670]
+===
+===
+delete-node
+---
+VariableDeclarator [1660,1682]
+===
+===
+delete-node
+---
+VariableDeclarationExpr [1656,1682]
+===
+===
+delete-node
+---
+ExpressionStmt [1656,1683]
+===
+===
+delete-tree
+---
+NameExpr [1759,1768]
+    SimpleName: rectWidth [1759,1768]
+===
+delete-tree
+---
+NameExpr [1793,1803]
+    SimpleName: rectHeight [1793,1803]
+===
+delete-tree
+---
+NameExpr [1923,1933]
+    SimpleName: STATE_FALL [1923,1933]
+===
+delete-node
+---
+BinaryExpr [1915,1933]
+===
+===
+delete-node
+---
+ConditionalExpr [1915,1954]
+===
+===
+delete-node
+---
+BlockStmt [2330,2335]
+===
+===
+delete-tree
+---
+FieldDeclaration [2676,2693]
+    Modifier: private [2676,2683]
+    VariableDeclarator [2691,2692]
+        PrimitiveType: double [2684,2690]
+        SimpleName: h [2691,2692]
+===
+delete-tree
+---
+NameExpr [3064,3074]
+    SimpleName: STATE_FALL [3064,3074]
+===
+delete-node
+---
+BinaryExpr [3056,3074]
+===
+===
+delete-node
+---
+ConditionalExpr [3056,3095]
+===
+===
+delete-node
+---
+NameExpr [3258,3259]
+===
+===
+delete-node
+---
+AssignExpr [3258,3287]
+===
+===
+delete-node
+---
+BreakStmt [3170,3176]
+===
+===
+delete-node
+---
+BreakStmt [3198,3204]
+===
+===
+delete-tree
+---
+ExpressionStmt [5247,5266]
+    MethodCallExpr [5247,5265]
+        NameExpr [5247,5253]
+            SimpleName: timing [5247,5253]
+        SimpleName: endTiming [5254,5263]
+===
+delete-tree
+---
+MethodDeclaration [5672,5757]
+    Modifier: public [5672,5678]
+    SimpleName: startTiming [5684,5695]
+    VoidType [5679,5683]
+    BlockStmt [5698,5757]
+        IfStmt [5702,5754]
+            MethodCallExpr [5706,5728]
+                NameExpr [5706,5712]
+                    SimpleName: timing [5706,5712]
+                SimpleName: isReadyTiming [5713,5726]
+            ExpressionStmt [5733,5754]
+                MethodCallExpr [5733,5753]
+                    NameExpr [5733,5739]
+                        SimpleName: timing [5733,5739]
+                    SimpleName: startTiming [5740,5751]
+===
+delete-tree
+---
+NameExpr [7350,7351]
+    SimpleName: x [7350,7351]
+===
+delete-tree
+---
+NameExpr [7353,7354]
+    SimpleName: y [7353,7354]
+===
+delete-node
+---
+NullLiteralExpr [7356,7360]
+===
+===
+delete-tree
+---
+ExpressionStmt [7234,7286]
+    AssignExpr [7234,7285]
+        NameExpr [7234,7235]
+            SimpleName: x [7234,7235]
+        BinaryExpr [7238,7285]
+            BinaryExpr [7238,7280]
+                FieldAccessExpr [7238,7258]
+                    NameExpr [7238,7246]
+                        SimpleName: Constant [7238,7246]
+                    SimpleName: FRAME_WIDTH [7247,7258]
+                MethodCallExpr [7261,7280]
+                    NameExpr [7261,7269]
+                        SimpleName: againImg [7261,7269]
+                    SimpleName: getWidth [7270,7278]
+            IntegerLiteralExpr: 1 [7284,7285]
+===
+delete-tree
+---
+ExpressionStmt [7290,7324]
+    AssignExpr [7290,7323]
+        NameExpr [7290,7291]
+            SimpleName: y [7290,7291]
+        BinaryExpr [7294,7323]
+            BinaryExpr [7294,7319]
+                FieldAccessExpr [7294,7315]
+                    NameExpr [7294,7302]
+                        SimpleName: Constant [7294,7302]
+                    SimpleName: FRAME_HEIGHT [7303,7315]
+                IntegerLiteralExpr: 5 [7318,7319]
+            IntegerLiteralExpr: 3 [7322,7323]
+===
+delete-node
+---
+BlockStmt [7229,7408]
+===
+===
+delete-node
+---
+IfStmt [7208,7408]
+===
+===
+delete-node
+---
+LineComment [510,517]
+===

@@ -1,0 +1,26 @@
+digraph "draw" {  
+"235" [label = <(pipeLogic,this.pipeLogic())<SUB>111</SUB>> ]
+"205" [label = <(&lt;operator&gt;.fieldAccess,this.type)<SUB>92</SUB>> ]
+"231" [label = <(isDead,isDead())<SUB>108</SUB>> ]
+"210" [label = <(&lt;operator&gt;.fieldAccess,com.kingyu.flappybird.game.Pipe.TYPE_TOP_NORMAL)<SUB>93</SUB>> ]
+"213" [label = <(drawTopNormal,this.drawTopNormal(g))<SUB>94</SUB>> ]
+"217" [label = <(&lt;operator&gt;.fieldAccess,com.kingyu.flappybird.game.Pipe.TYPE_BOTTOM_NORMAL)<SUB>96</SUB>> ]
+"220" [label = <(drawBottomNormal,this.drawBottomNormal(g))<SUB>97</SUB>> ]
+"224" [label = <(&lt;operator&gt;.fieldAccess,com.kingyu.flappybird.game.Pipe.TYPE_HOVER_NORMAL)<SUB>99</SUB>> ]
+"227" [label = <(drawHoverNormal,this.drawHoverNormal(g))<SUB>100</SUB>> ]
+"234" [label = <(RETURN,return;,return;)<SUB>109</SUB>> ]
+"212" [label = <(FIELD_IDENTIFIER,TYPE_TOP_NORMAL,TYPE_TOP_NORMAL)<SUB>93</SUB>> ]
+"219" [label = <(FIELD_IDENTIFIER,TYPE_BOTTOM_NORMAL,TYPE_BOTTOM_NORMAL)<SUB>96</SUB>> ]
+"226" [label = <(FIELD_IDENTIFIER,TYPE_HOVER_NORMAL,TYPE_HOVER_NORMAL)<SUB>99</SUB>> ]
+  "205" -> "224" 
+  "205" -> "210" 
+  "205" -> "226" 
+  "205" -> "213" 
+  "205" -> "217" 
+  "205" -> "220" 
+  "205" -> "227" 
+  "205" -> "219" 
+  "205" -> "212" 
+  "231" -> "235" 
+  "231" -> "234" 
+}

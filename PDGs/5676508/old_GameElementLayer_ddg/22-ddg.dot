@@ -1,0 +1,7 @@
+digraph "&lt;operator&gt;.postDecrement" {  
+"903" [label = <(METHOD,&lt;operator&gt;.postDecrement)> ]
+"906" [label = <(METHOD_RETURN,ANY)> ]
+"904" [label = <(PARAM,p1)> ]
+  "904" -> "906"  [ label = "p1"] 
+  "903" -> "904" 
+}

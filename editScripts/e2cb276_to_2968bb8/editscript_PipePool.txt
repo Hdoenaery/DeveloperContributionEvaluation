@@ -1,0 +1,149 @@
+===
+insert-node
+---
+Modifier: final [233,238]
+to
+FieldDeclaration [218,273]
+at 2
+===
+insert-node
+---
+Modifier: final [303,308]
+to
+FieldDeclaration [286,359]
+at 2
+===
+move-tree
+---
+FieldAccessExpr [416,436]
+    NameExpr [416,424]
+        SimpleName: Constant [416,424]
+    SimpleName: FRAME_WIDTH [425,436]
+to
+BinaryExpr [644,663]
+at 1
+===
+insert-node
+---
+FieldAccessExpr [581,599]
+to
+BinaryExpr [719,738]
+at 1
+===
+update-node
+---
+SimpleName: FRAME_WIDTH [425,436]
+replace FRAME_WIDTH by FULL_PIPE
+===
+move-tree
+---
+NameExpr [723,738]
+    SimpleName: INIT_PIPE_COUNT [723,738]
+to
+FieldAccessExpr [581,599]
+at 0
+===
+insert-node
+---
+SimpleName: FULL_PIPE [590,599]
+to
+FieldAccessExpr [581,599]
+at 1
+===
+update-node
+---
+SimpleName: INIT_PIPE_COUNT [723,738]
+replace INIT_PIPE_COUNT by Constant
+===
+delete-tree
+---
+ClassOrInterfaceType [265,269]
+    SimpleName: Pipe [265,269]
+===
+delete-tree
+---
+ClassOrInterfaceType [345,355]
+    SimpleName: MovingPipe [345,355]
+===
+delete-node
+---
+Modifier: public [373,379]
+===
+===
+delete-node
+---
+Modifier: static [380,386]
+===
+===
+delete-node
+---
+Modifier: final [387,392]
+===
+===
+delete-node
+---
+PrimitiveType: int [393,396]
+===
+===
+delete-node
+---
+SimpleName: INIT_PIPE_COUNT [397,412]
+===
+===
+delete-tree
+---
+EnclosedExpr [442,503]
+    BinaryExpr [443,502]
+        FieldAccessExpr [443,463]
+            NameExpr [443,447]
+                SimpleName: Pipe [443,447]
+            SimpleName: PIPE_HEAD_WIDTH [448,463]
+        FieldAccessExpr [466,502]
+            NameExpr [466,482]
+                SimpleName: GameElementLayer [466,482]
+            SimpleName: HORIZONTAL_INTERVAL [483,502]
+===
+delete-node
+---
+BinaryExpr [416,503]
+===
+===
+delete-node
+---
+IntegerLiteralExpr: 2 [506,507]
+===
+===
+delete-node
+---
+BinaryExpr [416,507]
+===
+===
+delete-node
+---
+EnclosedExpr [415,508]
+===
+===
+delete-node
+---
+IntegerLiteralExpr: 2 [511,512]
+===
+===
+delete-node
+---
+BinaryExpr [415,512]
+===
+===
+delete-node
+---
+VariableDeclarator [397,512]
+===
+===
+delete-node
+---
+FieldDeclaration [373,513]
+===
+===
+delete-tree
+---
+NameExpr [648,663]
+    SimpleName: INIT_PIPE_COUNT [648,663]

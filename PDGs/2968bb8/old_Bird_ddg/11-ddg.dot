@@ -1,0 +1,17 @@
+digraph "startTiming" {  
+"1037" [label = <(METHOD,startTiming)<SUB>222</SUB>> ]
+"1051" [label = <(METHOD_RETURN,void)<SUB>222</SUB>> ]
+"1038" [label = <(PARAM,this)<SUB>222</SUB>> ]
+"1041" [label = <(isReadyTiming,this.timing.isReadyTiming())<SUB>223</SUB>> ]
+"1045" [label = <(startTiming,this.timing.startTiming())<SUB>224</SUB>> ]
+"1041" [label = <(isReadyTiming,this.timing.isReadyTiming())<SUB>223</SUB>> ]
+"1045" [label = <(startTiming,this.timing.startTiming())<SUB>224</SUB>> ]
+  "1038" -> "1051"  [ label = "this"] 
+  "1041" -> "1051"  [ label = "this.timing.isReadyTiming()"] 
+  "1045" -> "1051"  [ label = "this.timing"] 
+  "1045" -> "1051"  [ label = "this.timing.startTiming()"] 
+  "1037" -> "1038" 
+  "1038" -> "1041"  [ label = "this"] 
+  "1038" -> "1045"  [ label = "this"] 
+  "1041" -> "1045"  [ label = "this.timing"] 
+}

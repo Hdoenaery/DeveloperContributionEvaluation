@@ -1,0 +1,41 @@
+digraph "getTime" {  
+"226" [label = <(&lt;operator&gt;.equals,timeState == STATE_READY)<SUB>81</SUB>> ]
+"234" [label = <(RETURN,return startTime;,return startTime;)<SUB>82</SUB>> ]
+"235" [label = <(&lt;operator&gt;.fieldAccess,this.startTime)<SUB>82</SUB>> ]
+"240" [label = <(&lt;operator&gt;.equals,timeState == STATE_START)<SUB>83</SUB>> ]
+"237" [label = <(FIELD_IDENTIFIER,startTime,startTime)<SUB>82</SUB>> ]
+"241" [label = <(&lt;operator&gt;.fieldAccess,this.timeState)<SUB>83</SUB>> ]
+"244" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.GameTime.STATE_START)<SUB>83</SUB>> ]
+"248" [label = <(RETURN,return (System.currentTimeMillis() - startTime);,return (System.currentTimeMillis() - startTime);)<SUB>84</SUB>> ]
+"243" [label = <(FIELD_IDENTIFIER,timeState,timeState)<SUB>83</SUB>> ]
+"246" [label = <(FIELD_IDENTIFIER,STATE_START,STATE_START)<SUB>83</SUB>> ]
+"249" [label = <(&lt;operator&gt;.subtraction,System.currentTimeMillis() - startTime)<SUB>84</SUB>> ]
+"257" [label = <(RETURN,return (endTime - startTime);,return (endTime - startTime);)<SUB>86</SUB>> ]
+"250" [label = <(currentTimeMillis,System.currentTimeMillis())<SUB>84</SUB>> ]
+"252" [label = <(&lt;operator&gt;.fieldAccess,this.startTime)<SUB>84</SUB>> ]
+"258" [label = <(&lt;operator&gt;.subtraction,endTime - startTime)<SUB>86</SUB>> ]
+"254" [label = <(FIELD_IDENTIFIER,startTime,startTime)<SUB>84</SUB>> ]
+"259" [label = <(&lt;operator&gt;.fieldAccess,this.endTime)<SUB>86</SUB>> ]
+"262" [label = <(&lt;operator&gt;.fieldAccess,this.startTime)<SUB>86</SUB>> ]
+"261" [label = <(FIELD_IDENTIFIER,endTime,endTime)<SUB>86</SUB>> ]
+"264" [label = <(FIELD_IDENTIFIER,startTime,startTime)<SUB>86</SUB>> ]
+  "226" -> "235" 
+  "226" -> "240" 
+  "226" -> "241" 
+  "226" -> "244" 
+  "226" -> "243" 
+  "226" -> "237" 
+  "226" -> "234" 
+  "226" -> "246" 
+  "240" -> "258" 
+  "240" -> "257" 
+  "240" -> "261" 
+  "240" -> "262" 
+  "240" -> "249" 
+  "240" -> "264" 
+  "240" -> "248" 
+  "240" -> "250" 
+  "240" -> "259" 
+  "240" -> "252" 
+  "240" -> "254" 
+}

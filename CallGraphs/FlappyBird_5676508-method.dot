@@ -1,0 +1,206 @@
+// 0:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\app\GameApp.java(com.kingyu.flappybird.app.GameApp.main)
+// 1:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Bird.java(com.kingyu.flappybird.game.Bird.Bird)
+// 2:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Bird.java(com.kingyu.flappybird.game.Bird.birdFall)
+// 3:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Bird.java(com.kingyu.flappybird.game.Bird.birdFlap)
+// 4:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Bird.java(com.kingyu.flappybird.game.Bird.deadBirdFall)
+// 5:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Bird.java(com.kingyu.flappybird.game.Bird.die)
+// 6:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Bird.java(com.kingyu.flappybird.game.Bird.draw)
+// 7:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Bird.java(com.kingyu.flappybird.game.Bird.drawScore)
+// 8:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Bird.java(com.kingyu.flappybird.game.Bird.getBestScore)
+// 9:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Bird.java(com.kingyu.flappybird.game.Bird.getBirdRect)
+// 10:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Bird.java(com.kingyu.flappybird.game.Bird.getBirdX)
+// 11:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Bird.java(com.kingyu.flappybird.game.Bird.getCurrentScore)
+// 12:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Bird.java(com.kingyu.flappybird.game.Bird.isDead)
+// 13:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Bird.java(com.kingyu.flappybird.game.Bird.keyIsReleased)
+// 14:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Bird.java(com.kingyu.flappybird.game.Bird.keyPressed)
+// 15:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Bird.java(com.kingyu.flappybird.game.Bird.keyReleased)
+// 16:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Bird.java(com.kingyu.flappybird.game.Bird.movement)
+// 17:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Bird.java(com.kingyu.flappybird.game.Bird.reset)
+// 18:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Cloud.java(com.kingyu.flappybird.game.Cloud.Cloud)
+// 19:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Cloud.java(com.kingyu.flappybird.game.Cloud.draw)
+// 20:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Cloud.java(com.kingyu.flappybird.game.Cloud.isOutFrame)
+// 21:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Game.java(com.kingyu.flappybird.game.Game.BirdKeyListener.keyPressed)
+// 22:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Game.java(com.kingyu.flappybird.game.Game.BirdKeyListener.keyReleased)
+// 23:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Game.java(com.kingyu.flappybird.game.Game.BirdKeyListener.keyTyped)
+// 24:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Game.java(com.kingyu.flappybird.game.Game.BirdKeyListener.resetGame)
+// 25:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Game.java(com.kingyu.flappybird.game.Game.Game)
+// 26:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Game.java(com.kingyu.flappybird.game.Game.getGameState)
+// 27:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Game.java(com.kingyu.flappybird.game.Game.initFrame)
+// 28:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Game.java(com.kingyu.flappybird.game.Game.initFrame.windowClosing)
+// 29:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Game.java(com.kingyu.flappybird.game.Game.initGame)
+// 30:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Game.java(com.kingyu.flappybird.game.Game.run)
+// 31:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Game.java(com.kingyu.flappybird.game.Game.setGameState)
+// 32:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Game.java(com.kingyu.flappybird.game.Game.update)
+// 33:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\GameBackground.java(com.kingyu.flappybird.game.GameBackground.GameBackground)
+// 34:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\GameBackground.java(com.kingyu.flappybird.game.GameBackground.draw)
+// 35:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\GameBackground.java(com.kingyu.flappybird.game.GameBackground.moveLogic)
+// 36:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\GameElementLayer.java(com.kingyu.flappybird.game.GameElementLayer.GameElementLayer)
+// 37:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\GameElementLayer.java(com.kingyu.flappybird.game.GameElementLayer.addHoverPipe)
+// 38:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\GameElementLayer.java(com.kingyu.flappybird.game.GameElementLayer.addMovingHoverPipe)
+// 39:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\GameElementLayer.java(com.kingyu.flappybird.game.GameElementLayer.addMovingNormalPipe)
+// 40:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\GameElementLayer.java(com.kingyu.flappybird.game.GameElementLayer.addNormalPipe)
+// 41:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\GameElementLayer.java(com.kingyu.flappybird.game.GameElementLayer.draw)
+// 42:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\GameElementLayer.java(com.kingyu.flappybird.game.GameElementLayer.isCollideBird)
+// 43:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\GameElementLayer.java(com.kingyu.flappybird.game.GameElementLayer.pipeBornLogic)
+// 44:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\GameElementLayer.java(com.kingyu.flappybird.game.GameElementLayer.reset)
+// 45:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\GameForeground.java(com.kingyu.flappybird.game.GameForeground.GameForeground)
+// 46:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\GameForeground.java(com.kingyu.flappybird.game.GameForeground.cloudLogic)
+// 47:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\GameForeground.java(com.kingyu.flappybird.game.GameForeground.draw)
+// 48:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\GameOverAnimation.java(com.kingyu.flappybird.game.GameOverAnimation.GameOverAnimation)
+// 49:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\GameOverAnimation.java(com.kingyu.flappybird.game.GameOverAnimation.draw)
+// 50:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\MovingPipe.java(com.kingyu.flappybird.game.MovingPipe.MovingPipe)
+// 51:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\MovingPipe.java(com.kingyu.flappybird.game.MovingPipe.draw)
+// 52:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\MovingPipe.java(com.kingyu.flappybird.game.MovingPipe.drawBottomHard)
+// 53:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\MovingPipe.java(com.kingyu.flappybird.game.MovingPipe.drawHoverHard)
+// 54:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\MovingPipe.java(com.kingyu.flappybird.game.MovingPipe.drawTopHard)
+// 55:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\MovingPipe.java(com.kingyu.flappybird.game.MovingPipe.pipeLogic)
+// 56:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\MovingPipe.java(com.kingyu.flappybird.game.MovingPipe.setAttribute)
+// 57:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Pipe.java(com.kingyu.flappybird.game.Pipe.Pipe)
+// 58:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Pipe.java(com.kingyu.flappybird.game.Pipe.draw)
+// 59:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Pipe.java(com.kingyu.flappybird.game.Pipe.drawBottomNormal)
+// 60:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Pipe.java(com.kingyu.flappybird.game.Pipe.drawHoverNormal)
+// 61:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Pipe.java(com.kingyu.flappybird.game.Pipe.drawTopNormal)
+// 62:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Pipe.java(com.kingyu.flappybird.game.Pipe.getPipeRect)
+// 63:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Pipe.java(com.kingyu.flappybird.game.Pipe.getX)
+// 64:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Pipe.java(com.kingyu.flappybird.game.Pipe.isInFrame)
+// 65:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Pipe.java(com.kingyu.flappybird.game.Pipe.isVisible)
+// 66:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Pipe.java(com.kingyu.flappybird.game.Pipe.pipeLogic)
+// 67:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Pipe.java(com.kingyu.flappybird.game.Pipe.setAttribute)
+// 68:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\Pipe.java(com.kingyu.flappybird.game.Pipe.setRectangle)
+// 69:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\PipePool.java(com.kingyu.flappybird.game.PipePool.get)
+// 70:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\PipePool.java(com.kingyu.flappybird.game.PipePool.giveBack)
+// 71:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\ScoreCounter.java(com.kingyu.flappybird.game.ScoreCounter.ScoreCounter)
+// 72:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\ScoreCounter.java(com.kingyu.flappybird.game.ScoreCounter.getBestScore)
+// 73:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\ScoreCounter.java(com.kingyu.flappybird.game.ScoreCounter.getCurrentScore)
+// 74:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\ScoreCounter.java(com.kingyu.flappybird.game.ScoreCounter.getInstance)
+// 75:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\ScoreCounter.java(com.kingyu.flappybird.game.ScoreCounter.loadBestScore)
+// 76:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\ScoreCounter.java(com.kingyu.flappybird.game.ScoreCounter.reset)
+// 77:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\ScoreCounter.java(com.kingyu.flappybird.game.ScoreCounter.saveScore)
+// 78:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\ScoreCounter.java(com.kingyu.flappybird.game.ScoreCounter.score)
+// 79:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\WelcomeAnimation.java(com.kingyu.flappybird.game.WelcomeAnimation.WelcomeAnimation)
+// 80:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\game\WelcomeAnimation.java(com.kingyu.flappybird.game.WelcomeAnimation.draw)
+// 81:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\util\GameUtil.java(com.kingyu.flappybird.util.GameUtil.GameUtil)
+// 82:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\util\GameUtil.java(com.kingyu.flappybird.util.GameUtil.drawImage)
+// 83:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\util\GameUtil.java(com.kingyu.flappybird.util.GameUtil.getRandomNumber)
+// 84:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\util\GameUtil.java(com.kingyu.flappybird.util.GameUtil.getStringHeight)
+// 85:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\util\GameUtil.java(com.kingyu.flappybird.util.GameUtil.getStringWidth)
+// 86:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\util\GameUtil.java(com.kingyu.flappybird.util.GameUtil.isInProbability)
+// 87:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\util\GameUtil.java(com.kingyu.flappybird.util.GameUtil.loadBufferedImage)
+// 88:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\util\MusicUtil.java(com.kingyu.flappybird.util.MusicUtil.playCrash)
+// 89:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\util\MusicUtil.java(com.kingyu.flappybird.util.MusicUtil.playFly)
+// 90:E:\Postgraduate_study\FlappyBird\src\main\java\com\kingyu\flappybird\util\MusicUtil.java(com.kingyu.flappybird.util.MusicUtil.playScore)
+digraph
+{
+	24 -> 17;
+	21 -> 2;
+	21 -> 3;
+	32 -> 47;
+	43 -> 40;
+	4 -> 88;
+	49 -> 85;
+	40 -> 83;
+	49 -> 84;
+	32 -> 41;
+	49 -> 82;
+	42 -> 12;
+	38 -> 83;
+	7 -> 85;
+	79 -> 87;
+	58 -> 59;
+	24 -> 31;
+	43 -> 37;
+	43 -> 38;
+	32 -> 34;
+	43 -> 39;
+	43 -> 10;
+	42 -> 4;
+	67 -> 68;
+	1 -> 74;
+	51 -> 52;
+	42 -> 9;
+	7 -> 73;
+	49 -> 11;
+	16 -> 5;
+	34 -> 12;
+	3 -> 89;
+	29 -> 31;
+	38 -> 69;
+	78 -> 90;
+	46 -> 20;
+	38 -> 67;
+	5 -> 31;
+	38 -> 63;
+	78 -> 12;
+	41 -> 70;
+	41 -> 65;
+	37 -> 83;
+	51 -> 55;
+	51 -> 54;
+	51 -> 53;
+	44 -> 70;
+	6 -> 16;
+	3 -> 14;
+	43 -> 12;
+	3 -> 13;
+	56 -> 68;
+	6 -> 7;
+	39 -> 63;
+	43 -> 74;
+	39 -> 67;
+	39 -> 69;
+	47 -> 19;
+	41 -> 58;
+	34 -> 35;
+	43 -> 69;
+	6 -> 49;
+	43 -> 67;
+	43 -> 83;
+	1 -> 87;
+	46 -> 86;
+	21 -> 24;
+	43 -> 86;
+	32 -> 80;
+	49 -> 8;
+	76 -> 78;
+	73 -> 78;
+	46 -> 83;
+	37 -> 63;
+	41 -> 43;
+	16 -> 31;
+	58 -> 12;
+	42 -> 62;
+	21 -> 31;
+	37 -> 69;
+	37 -> 67;
+	71 -> 75;
+	39 -> 83;
+	86 -> 83;
+	31 -> 25;
+	41 -> 42;
+	58 -> 66;
+	47 -> 46;
+	40 -> 69;
+	22 -> 15;
+	58 -> 60;
+	16 -> 88;
+	40 -> 67;
+	24 -> 44;
+	58 -> 61;
+	8 -> 72;
+	40 -> 63;
+	11 -> 73;
+	43 -> 63;
+	43 -> 64;
+	5 -> 77;
+	32 -> 6;
+	17 -> 76;
+	19 -> 12;
+	51 -> 12;
+	25 -> 29;
+	80 -> 82;
+	25 -> 27;
+	45 -> 87;
+	74 -> 71;
+	77 -> 73;
+	48 -> 87;
+}

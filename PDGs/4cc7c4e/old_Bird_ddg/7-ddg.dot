@@ -1,0 +1,36 @@
+digraph "birdDown" {  
+"883" [label = <(METHOD,birdDown)<SUB>187</SUB>> ]
+"912" [label = <(METHOD_RETURN,void)<SUB>187</SUB>> ]
+"884" [label = <(PARAM,this)<SUB>187</SUB>> ]
+"903" [label = <(&lt;operator&gt;.assignment,this.state = STATE_DOWN)<SUB>190</SUB>> ]
+"887" [label = <(&lt;operator&gt;.logicalOr,state == STATE_DEAD || state == STATE_FALL)<SUB>188</SUB>> ]
+"902" [label = <(RETURN,// 小鸟死亡或坠落时返回
+return;,// 小鸟死亡或坠落时返回
+return;)<SUB>189</SUB>> ]
+"903" [label = <(&lt;operator&gt;.assignment,this.state = STATE_DOWN)<SUB>190</SUB>> ]
+"903" [label = <(&lt;operator&gt;.assignment,this.state = STATE_DOWN)<SUB>190</SUB>> ]
+"887" [label = <(&lt;operator&gt;.logicalOr,state == STATE_DEAD || state == STATE_FALL)<SUB>188</SUB>> ]
+"887" [label = <(&lt;operator&gt;.logicalOr,state == STATE_DEAD || state == STATE_FALL)<SUB>188</SUB>> ]
+"888" [label = <(&lt;operator&gt;.equals,state == STATE_DEAD)<SUB>188</SUB>> ]
+"888" [label = <(&lt;operator&gt;.equals,state == STATE_DEAD)<SUB>188</SUB>> ]
+"895" [label = <(&lt;operator&gt;.equals,state == STATE_FALL)<SUB>188</SUB>> ]
+"895" [label = <(&lt;operator&gt;.equals,state == STATE_FALL)<SUB>188</SUB>> ]
+  "902" -> "912"  [ label = "&lt;RET&gt;"] 
+  "884" -> "912"  [ label = "this"] 
+  "888" -> "912"  [ label = "this.state"] 
+  "888" -> "912"  [ label = "com.bird.main.Bird.STATE_DEAD"] 
+  "887" -> "912"  [ label = "state == STATE_DEAD"] 
+  "895" -> "912"  [ label = "this.state"] 
+  "895" -> "912"  [ label = "com.bird.main.Bird.STATE_FALL"] 
+  "887" -> "912"  [ label = "state == STATE_FALL"] 
+  "887" -> "912"  [ label = "state == STATE_DEAD || state == STATE_FALL"] 
+  "883" -> "884" 
+  "883" -> "902" 
+  "888" -> "887"  [ label = "this.state"] 
+  "888" -> "887"  [ label = "com.bird.main.Bird.STATE_DEAD"] 
+  "895" -> "887"  [ label = "this.state"] 
+  "895" -> "887"  [ label = "com.bird.main.Bird.STATE_FALL"] 
+  "884" -> "888"  [ label = "this"] 
+  "884" -> "895"  [ label = "this"] 
+  "888" -> "895"  [ label = "this.state"] 
+}

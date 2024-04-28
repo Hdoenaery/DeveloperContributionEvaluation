@@ -1,0 +1,31 @@
+digraph "reset" {  
+"459" [label = <(METHOD,reset)<SUB>149</SUB>> ]
+"486" [label = <(METHOD_RETURN,void)<SUB>149</SUB>> ]
+"460" [label = <(PARAM,this)<SUB>149</SUB>> ]
+"462" [label = <(&lt;operator&gt;.assignment,this.timeState = STATE_READY)<SUB>150</SUB>> ]
+"469" [label = <(&lt;operator&gt;.assignment,this.startTime = 0)<SUB>151</SUB>> ]
+"474" [label = <(&lt;operator&gt;.assignment,this.endTime = 0)<SUB>152</SUB>> ]
+"479" [label = <(&lt;operator&gt;.assignment,this.score = 0)<SUB>153</SUB>> ]
+"462" [label = <(&lt;operator&gt;.assignment,this.timeState = STATE_READY)<SUB>150</SUB>> ]
+"462" [label = <(&lt;operator&gt;.assignment,this.timeState = STATE_READY)<SUB>150</SUB>> ]
+"469" [label = <(&lt;operator&gt;.assignment,this.startTime = 0)<SUB>151</SUB>> ]
+"469" [label = <(&lt;operator&gt;.assignment,this.startTime = 0)<SUB>151</SUB>> ]
+"474" [label = <(&lt;operator&gt;.assignment,this.endTime = 0)<SUB>152</SUB>> ]
+"474" [label = <(&lt;operator&gt;.assignment,this.endTime = 0)<SUB>152</SUB>> ]
+"479" [label = <(&lt;operator&gt;.assignment,this.score = 0)<SUB>153</SUB>> ]
+"479" [label = <(&lt;operator&gt;.assignment,this.score = 0)<SUB>153</SUB>> ]
+  "460" -> "486"  [ label = "this"] 
+  "462" -> "486"  [ label = "this.timeState"] 
+  "462" -> "486"  [ label = "com.bird.main.GameTime.STATE_READY"] 
+  "462" -> "486"  [ label = "this.timeState = STATE_READY"] 
+  "469" -> "486"  [ label = "this.startTime"] 
+  "469" -> "486"  [ label = "this.startTime = 0"] 
+  "474" -> "486"  [ label = "this.endTime"] 
+  "474" -> "486"  [ label = "this.endTime = 0"] 
+  "479" -> "486"  [ label = "this.score"] 
+  "479" -> "486"  [ label = "this.score = 0"] 
+  "459" -> "460" 
+  "459" -> "469" 
+  "459" -> "474" 
+  "459" -> "479" 
+}

@@ -1,0 +1,16 @@
+digraph "&lt;init&gt;" {  
+"397" [label = <(METHOD,&lt;init&gt;)> ]
+"403" [label = <(METHOD_RETURN,ANY)> ]
+"398" [label = <(PARAM,p1)> ]
+"399" [label = <(PARAM,p2)> ]
+"400" [label = <(PARAM,p3)> ]
+"401" [label = <(PARAM,p4)> ]
+  "398" -> "403"  [ label = "p1"] 
+  "399" -> "403"  [ label = "p2"] 
+  "400" -> "403"  [ label = "p3"] 
+  "401" -> "403"  [ label = "p4"] 
+  "397" -> "398" 
+  "397" -> "399" 
+  "397" -> "400" 
+  "397" -> "401" 
+}

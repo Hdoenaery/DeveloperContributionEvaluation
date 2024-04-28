@@ -1,0 +1,16 @@
+digraph "windowClosing" {  
+"1049" [label = <(METHOD,windowClosing)<SUB>55</SUB>> ]
+"1059" [label = <(METHOD_RETURN,void)<SUB>56</SUB>> ]
+"1050" [label = <(PARAM,this)<SUB>55</SUB>> ]
+"1051" [label = <(PARAM,WindowEvent e)<SUB>56</SUB>> ]
+"1053" [label = <(exit,System.exit(0))<SUB>57</SUB>> ]
+"1053" [label = <(exit,System.exit(0))<SUB>57</SUB>> ]
+"1053" [label = <(exit,System.exit(0))<SUB>57</SUB>> ]
+  "1050" -> "1059"  [ label = "this"] 
+  "1051" -> "1059"  [ label = "e"] 
+  "1053" -> "1059"  [ label = "System.exit(0)"] 
+  "1053" -> "1059"  [ label = "System"] 
+  "1049" -> "1050" 
+  "1049" -> "1051" 
+  "1049" -> "1053" 
+}

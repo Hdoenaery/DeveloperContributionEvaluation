@@ -1,0 +1,409 @@
+===
+insert-node
+---
+FieldDeclaration [210,230]
+to
+ClassOrInterfaceDeclaration [160,1498]
+at 8
+===
+move-tree
+---
+Modifier: final [221,226]
+to
+FieldDeclaration [326,344]
+at 1
+===
+insert-node
+---
+Modifier: private [210,217]
+to
+FieldDeclaration [210,230]
+at 0
+===
+insert-node
+---
+Modifier: final [218,223]
+to
+FieldDeclaration [210,230]
+at 1
+===
+move-tree
+---
+VariableDeclarator [367,368]
+    PrimitiveType: int [360,363]
+    SimpleName: y [367,368]
+to
+FieldDeclaration [210,230]
+at 2
+===
+insert-node
+---
+Modifier: final [244,249]
+to
+FieldDeclaration [378,404]
+at 1
+===
+insert-node
+---
+Modifier: final [282,287]
+to
+FieldDeclaration [452,480]
+at 1
+===
+insert-node
+---
+Modifier: final [321,326]
+to
+FieldDeclaration [482,511]
+at 1
+===
+move-tree
+---
+BlockStmt [1262,1324]
+    IfStmt [1267,1320]
+        BinaryExpr [1271,1295]
+            NameExpr [1271,1272]
+                SimpleName: x [1271,1272]
+            BinaryExpr [1275,1295]
+                UnaryExpr [1275,1277]
+                    IntegerLiteralExpr: 1 [1276,1277]
+                NameExpr [1280,1295]
+                    SimpleName: scaleImageWidth [1280,1295]
+        BlockStmt [1297,1320]
+            ReturnStmt [1303,1315]
+                BooleanLiteralExpr: true [1310,1314]
+to
+MethodDeclaration [1183,1434]
+at 3
+===
+insert-node
+---
+LineComment [534,554]
+to
+BlockStmt [577,861]
+at 9
+===
+insert-node
+---
+ReturnStmt [1127,1159]
+to
+BlockStmt [1262,1324]
+at 0
+===
+insert-node
+---
+VariableDeclarationExpr [563,595]
+to
+ExpressionStmt [685,711]
+at 0
+===
+insert-node
+---
+MethodCallExpr [871,884]
+to
+IfStmt [946,988]
+at 0
+===
+move-tree
+---
+BinaryExpr [1271,1295]
+    NameExpr [1271,1272]
+        SimpleName: x [1271,1272]
+    BinaryExpr [1275,1295]
+        UnaryExpr [1275,1277]
+            IntegerLiteralExpr: 1 [1276,1277]
+        NameExpr [1280,1295]
+            SimpleName: scaleImageWidth [1280,1295]
+to
+ReturnStmt [1127,1159]
+at 0
+===
+insert-node
+---
+VariableDeclarator [570,595]
+to
+VariableDeclarationExpr [563,595]
+at 0
+===
+move-tree
+---
+NameExpr [949,952]
+    SimpleName: dir [949,952]
+to
+MethodCallExpr [871,884]
+at 0
+===
+update-node
+---
+SimpleName: DIR_NONE [956,964]
+replace DIR_NONE by isDead
+===
+move-tree
+---
+SimpleName: DIR_NONE [956,964]
+to
+MethodCallExpr [871,884]
+at 1
+===
+move-tree
+---
+NameExpr [1022,1027]
+    SimpleName: speed [1022,1027]
+to
+AssignExpr [994,1039]
+at 1
+===
+insert-node
+---
+PrimitiveType: double [563,569]
+to
+VariableDeclarator [570,595]
+at 0
+===
+move-tree
+---
+SimpleName: scale [685,690]
+to
+VariableDeclarator [570,595]
+at 1
+===
+move-tree
+---
+BinaryExpr [693,710]
+    IntegerLiteralExpr: 1 [693,694]
+    MethodCallExpr [697,710]
+        NameExpr [697,701]
+            SimpleName: Math [697,701]
+        SimpleName: random [702,708]
+to
+VariableDeclarator [570,595]
+at 2
+===
+update-node
+---
+SimpleName: dir [949,952]
+replace dir by bird
+===
+update-node
+---
+IntegerLiteralExpr: 0 [986,987]
+replace 0 by 1
+===
+delete-tree
+---
+ImportDeclaration [88,118]
+    Name: Constant [95,117]
+        Name: util [95,108]
+            Name: bird [95,103]
+                Name: com [95,98]
+===
+delete-tree
+---
+FieldDeclaration [183,199]
+    Modifier: private [183,190]
+    VariableDeclarator [195,198]
+        PrimitiveType: int [191,194]
+        SimpleName: dir [195,198]
+===
+delete-node
+---
+Modifier: public [207,213]
+===
+===
+delete-node
+---
+Modifier: static [214,220]
+===
+===
+delete-tree
+---
+VariableDeclarator [231,243]
+    PrimitiveType: int [227,230]
+    SimpleName: DIR_NONE [231,239]
+    IntegerLiteralExpr: 0 [242,243]
+===
+delete-node
+---
+FieldDeclaration [207,244]
+===
+===
+delete-tree
+---
+FieldDeclaration [246,283]
+    Modifier: public [246,252]
+    Modifier: static [253,259]
+    Modifier: final [260,265]
+    VariableDeclarator [270,282]
+        PrimitiveType: int [266,269]
+        SimpleName: DIR_LEFT [270,278]
+        IntegerLiteralExpr: 1 [281,282]
+===
+delete-tree
+---
+FieldDeclaration [285,323]
+    Modifier: public [285,291]
+    Modifier: static [292,298]
+    Modifier: final [299,304]
+    VariableDeclarator [309,322]
+        PrimitiveType: int [305,308]
+        SimpleName: DIR_RIGHT [309,318]
+        IntegerLiteralExpr: 2 [321,322]
+===
+delete-tree
+---
+FieldDeclaration [429,450]
+    Modifier: private [429,436]
+    VariableDeclarator [444,449]
+        PrimitiveType: double [437,443]
+        SimpleName: scale [444,449]
+===
+delete-tree
+---
+Parameter [554,561]
+    PrimitiveType: int [554,557]
+    SimpleName: dir [558,561]
+===
+delete-tree
+---
+ExpressionStmt [610,625]
+    AssignExpr [610,624]
+        FieldAccessExpr [610,618]
+            ThisExpr [610,614]
+            SimpleName: dir [615,618]
+        NameExpr [621,624]
+            SimpleName: dir [621,624]
+===
+delete-node
+---
+NameExpr [685,690]
+===
+===
+delete-node
+---
+AssignExpr [685,710]
+===
+===
+delete-node
+---
+NameExpr [956,964]
+===
+===
+delete-node
+---
+BinaryExpr [949,964]
+===
+===
+delete-tree
+---
+EnclosedExpr [998,1015]
+    BinaryExpr [999,1014]
+        NameExpr [999,1002]
+            SimpleName: dir [999,1002]
+        NameExpr [1006,1014]
+            SimpleName: DIR_LEFT [1006,1014]
+===
+delete-tree
+---
+NameExpr [1018,1019]
+    SimpleName: x [1018,1019]
+===
+delete-node
+---
+BinaryExpr [1018,1027]
+===
+===
+delete-tree
+---
+BinaryExpr [1030,1039]
+    NameExpr [1030,1031]
+        SimpleName: x [1030,1031]
+    NameExpr [1034,1039]
+        SimpleName: speed [1034,1039]
+===
+delete-node
+---
+ConditionalExpr [998,1039]
+===
+===
+delete-tree
+---
+BlockStmt [1297,1320]
+    ReturnStmt [1303,1315]
+        BooleanLiteralExpr: true [1310,1314]
+===
+delete-node
+---
+IfStmt [1267,1320]
+===
+===
+delete-tree
+---
+ExpressionStmt [1215,1238]
+    VariableDeclarationExpr [1215,1237]
+        VariableDeclarator [1223,1237]
+            PrimitiveType: boolean [1215,1222]
+            SimpleName: result [1223,1229]
+            BooleanLiteralExpr: false [1232,1237]
+===
+delete-tree
+---
+BinaryExpr [1245,1260]
+    NameExpr [1245,1248]
+        SimpleName: dir [1245,1248]
+    NameExpr [1252,1260]
+        SimpleName: DIR_LEFT [1252,1260]
+===
+delete-tree
+---
+IfStmt [1330,1414]
+    BinaryExpr [1334,1350]
+        NameExpr [1334,1337]
+            SimpleName: dir [1334,1337]
+        NameExpr [1341,1350]
+            SimpleName: DIR_RIGHT [1341,1350]
+    BlockStmt [1352,1414]
+        IfStmt [1357,1410]
+            BinaryExpr [1361,1385]
+                NameExpr [1361,1362]
+                    SimpleName: x [1361,1362]
+                FieldAccessExpr [1365,1385]
+                    NameExpr [1365,1373]
+                        SimpleName: Constant [1365,1373]
+                    SimpleName: FRAME_WIDTH [1374,1385]
+            BlockStmt [1387,1410]
+                ReturnStmt [1393,1405]
+                    BooleanLiteralExpr: true [1400,1404]
+===
+delete-node
+---
+IfStmt [1241,1414]
+===
+===
+delete-tree
+---
+ReturnStmt [1417,1431]
+    NameExpr [1424,1430]
+        SimpleName: result [1424,1430]
+===
+delete-node
+---
+BlockStmt [1211,1434]
+===
+===
+delete-tree
+---
+MethodDeclaration [1446,1496]
+    Modifier: public [1446,1452]
+    SimpleName: setDir [1458,1464]
+    Parameter [1465,1472]
+        PrimitiveType: int [1465,1468]
+        SimpleName: dir [1469,1472]
+    VoidType [1453,1457]
+    BlockStmt [1474,1496]
+        ExpressionStmt [1478,1493]
+            AssignExpr [1478,1492]
+                FieldAccessExpr [1478,1486]
+                    ThisExpr [1478,1482]
+                    SimpleName: dir [1483,1486]
+                NameExpr [1489,1492]
+                    SimpleName: dir [1489,1492]

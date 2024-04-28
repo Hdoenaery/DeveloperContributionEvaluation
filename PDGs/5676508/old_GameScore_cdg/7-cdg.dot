@@ -1,0 +1,16 @@
+digraph "isSaveScore" {  
+"193" [label = <(&lt;operator&gt;.lessThan,bestScore &lt; score)<SUB>73</SUB>> ]
+"200" [label = <(&lt;operator&gt;.assignment,this.bestScore = score)<SUB>74</SUB>> ]
+"201" [label = <(&lt;operator&gt;.fieldAccess,this.bestScore)<SUB>74</SUB>> ]
+"204" [label = <(&lt;operator&gt;.fieldAccess,this.score)<SUB>74</SUB>> ]
+"209" [label = <(saveBestScore,this.saveBestScore(bestScore))<SUB>76</SUB>> ]
+"203" [label = <(FIELD_IDENTIFIER,bestScore,bestScore)<SUB>74</SUB>> ]
+"206" [label = <(FIELD_IDENTIFIER,score,score)<SUB>74</SUB>> ]
+"215" [label = <(printStackTrace,e.printStackTrace())<SUB>78</SUB>> ]
+  "193" -> "201" 
+  "193" -> "204" 
+  "193" -> "203" 
+  "193" -> "206" 
+  "193" -> "200" 
+  "209" -> "215" 
+}

@@ -1,0 +1,10 @@
+digraph "getClass" {  
+"280" [label = <(METHOD,getClass)> ]
+"284" [label = <(METHOD_RETURN,ANY)> ]
+"281" [label = <(PARAM,p0)> ]
+"282" [label = <(PARAM,p1)> ]
+  "281" -> "284"  [ label = "p0"] 
+  "282" -> "284"  [ label = "p1"] 
+  "280" -> "281" 
+  "280" -> "282" 
+}

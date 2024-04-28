@@ -1,0 +1,71 @@
+digraph "birdUp" {  
+"867" [label = <(keyIsReleased,this.keyIsReleased())<SUB>180</SUB>> ]
+"894" [label = <(playFly,playFly())<SUB>183</SUB>> ]
+"896" [label = <(&lt;operator&gt;.assignment,this.state = STATE_UP)<SUB>184</SUB>> ]
+"903" [label = <(&lt;operator&gt;.assignment,this.speed = SPEED_UP)<SUB>185</SUB>> ]
+"910" [label = <(&lt;operator&gt;.assignment,this.wingState = 0)<SUB>186</SUB>> ]
+"915" [label = <(keyPressed,this.keyPressed())<SUB>187</SUB>> ]
+"870" [label = <(&lt;operator&gt;.logicalOr,state == STATE_DEAD || state == STATE_UP || sta...)<SUB>181</SUB>> ]
+"893" [label = <(RETURN,// 小鸟死亡或坠落时返回
+return;,// 小鸟死亡或坠落时返回
+return;)<SUB>182</SUB>> ]
+"897" [label = <(&lt;operator&gt;.fieldAccess,this.state)<SUB>184</SUB>> ]
+"900" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.Bird.STATE_UP)<SUB>184</SUB>> ]
+"904" [label = <(&lt;operator&gt;.fieldAccess,this.speed)<SUB>185</SUB>> ]
+"907" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.Bird.SPEED_UP)<SUB>185</SUB>> ]
+"911" [label = <(&lt;operator&gt;.fieldAccess,this.wingState)<SUB>186</SUB>> ]
+"871" [label = <(&lt;operator&gt;.logicalOr,state == STATE_DEAD || state == STATE_UP)<SUB>181</SUB>> ]
+"886" [label = <(&lt;operator&gt;.equals,state == STATE_FALL)<SUB>181</SUB>> ]
+"899" [label = <(FIELD_IDENTIFIER,state,state)<SUB>184</SUB>> ]
+"902" [label = <(FIELD_IDENTIFIER,STATE_UP,STATE_UP)<SUB>184</SUB>> ]
+"906" [label = <(FIELD_IDENTIFIER,speed,speed)<SUB>185</SUB>> ]
+"909" [label = <(FIELD_IDENTIFIER,SPEED_UP,SPEED_UP)<SUB>185</SUB>> ]
+"913" [label = <(FIELD_IDENTIFIER,wingState,wingState)<SUB>186</SUB>> ]
+"872" [label = <(&lt;operator&gt;.equals,state == STATE_DEAD)<SUB>181</SUB>> ]
+"879" [label = <(&lt;operator&gt;.equals,state == STATE_UP)<SUB>181</SUB>> ]
+"887" [label = <(&lt;operator&gt;.fieldAccess,this.state)<SUB>181</SUB>> ]
+"890" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.Bird.STATE_FALL)<SUB>181</SUB>> ]
+"873" [label = <(&lt;operator&gt;.fieldAccess,this.state)<SUB>181</SUB>> ]
+"876" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.Bird.STATE_DEAD)<SUB>181</SUB>> ]
+"880" [label = <(&lt;operator&gt;.fieldAccess,this.state)<SUB>181</SUB>> ]
+"883" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.Bird.STATE_UP)<SUB>181</SUB>> ]
+"889" [label = <(FIELD_IDENTIFIER,state,state)<SUB>181</SUB>> ]
+"892" [label = <(FIELD_IDENTIFIER,STATE_FALL,STATE_FALL)<SUB>181</SUB>> ]
+"875" [label = <(FIELD_IDENTIFIER,state,state)<SUB>181</SUB>> ]
+"878" [label = <(FIELD_IDENTIFIER,STATE_DEAD,STATE_DEAD)<SUB>181</SUB>> ]
+"882" [label = <(FIELD_IDENTIFIER,state,state)<SUB>181</SUB>> ]
+"885" [label = <(FIELD_IDENTIFIER,STATE_UP,STATE_UP)<SUB>181</SUB>> ]
+  "867" -> "870" 
+  "867" -> "878" 
+  "867" -> "872" 
+  "867" -> "873" 
+  "867" -> "876" 
+  "867" -> "871" 
+  "867" -> "875" 
+  "870" -> "900" 
+  "870" -> "909" 
+  "870" -> "915" 
+  "870" -> "896" 
+  "870" -> "913" 
+  "870" -> "906" 
+  "870" -> "902" 
+  "870" -> "893" 
+  "870" -> "904" 
+  "870" -> "910" 
+  "870" -> "899" 
+  "870" -> "903" 
+  "870" -> "907" 
+  "870" -> "911" 
+  "870" -> "894" 
+  "870" -> "897" 
+  "871" -> "887" 
+  "871" -> "892" 
+  "871" -> "889" 
+  "871" -> "890" 
+  "871" -> "886" 
+  "872" -> "879" 
+  "872" -> "883" 
+  "872" -> "880" 
+  "872" -> "885" 
+  "872" -> "882" 
+}

@@ -1,0 +1,7 @@
+digraph "getInstance" {  
+"59" [label = <(METHOD,getInstance)<SUB>33</SUB>> ]
+"67" [label = <(METHOD_RETURN,com.bird.main.GameScore)<SUB>33</SUB>> ]
+"61" [label = <(RETURN,return GAME_SCORE;,return GAME_SCORE;)<SUB>34</SUB>> ]
+  "61" -> "67"  [ label = "&lt;RET&gt;"] 
+  "59" -> "61" 
+}

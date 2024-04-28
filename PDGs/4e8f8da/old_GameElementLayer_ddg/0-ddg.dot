@@ -1,0 +1,18 @@
+digraph "&lt;init&gt;" {  
+"37" [label = <(METHOD,&lt;init&gt;)<SUB>21</SUB>> ]
+"51" [label = <(METHOD_RETURN,void)<SUB>23</SUB>> ]
+"38" [label = <(PARAM,this)<SUB>21</SUB>> ]
+"40" [label = <(&lt;operator&gt;.assignment,this.pipes = new ArrayList&lt;&gt;())<SUB>22</SUB>> ]
+"45" [label = <(&lt;init&gt;,new ArrayList&lt;&gt;())<SUB>22</SUB>> ]
+"40" [label = <(&lt;operator&gt;.assignment,this.pipes = new ArrayList&lt;&gt;())<SUB>22</SUB>> ]
+"40" [label = <(&lt;operator&gt;.assignment,this.pipes = new ArrayList&lt;&gt;())<SUB>22</SUB>> ]
+"45" [label = <(&lt;init&gt;,new ArrayList&lt;&gt;())<SUB>22</SUB>> ]
+  "38" -> "51"  [ label = "this"] 
+  "40" -> "51"  [ label = "this.pipes = new ArrayList&lt;&gt;()"] 
+  "45" -> "51"  [ label = "this.pipes"] 
+  "45" -> "51"  [ label = "new ArrayList&lt;&gt;()"] 
+  "37" -> "38" 
+  "37" -> "40" 
+  "38" -> "45"  [ label = "this"] 
+  "40" -> "45"  [ label = "this.pipes"] 
+}

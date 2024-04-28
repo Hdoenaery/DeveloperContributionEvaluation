@@ -1,0 +1,76 @@
+digraph "&lt;clinit&gt;" {  
+"1388" [label = <(METHOD,&lt;clinit&gt;)> ]
+"1451" [label = <(METHOD_RETURN,void)> ]
+"1390" [label = <(&lt;operator&gt;.assignment,int Bird.IMG_COUNT = 8)<SUB>19</SUB>> ]
+"1395" [label = <(&lt;operator&gt;.assignment,int Bird.STATE_COUNT = 4)<SUB>20</SUB>> ]
+"1400" [label = <(&lt;operator&gt;.assignment,int Bird.STATE_NORMAL = 0)<SUB>34</SUB>> ]
+"1405" [label = <(&lt;operator&gt;.assignment,int Bird.STATE_UP = 1)<SUB>35</SUB>> ]
+"1410" [label = <(&lt;operator&gt;.assignment,int Bird.STATE_DOWN = 2)<SUB>36</SUB>> ]
+"1415" [label = <(&lt;operator&gt;.assignment,int Bird.STATE_FALL = 3)<SUB>37</SUB>> ]
+"1420" [label = <(&lt;operator&gt;.assignment,int Bird.STATE_DEAD = 4)<SUB>38</SUB>> ]
+"1425" [label = <(&lt;operator&gt;.assignment,int Bird.RECT_DESCALE = 2)<SUB>41</SUB>> ]
+"1430" [label = <(&lt;operator&gt;.assignment,int Bird.SPEED_UP = 32)<SUB>97</SUB>> ]
+"1435" [label = <(&lt;operator&gt;.assignment,double Bird.g = 9.8)<SUB>98</SUB>> ]
+"1440" [label = <(&lt;operator&gt;.assignment,double Bird.T = 0.2)<SUB>99</SUB>> ]
+"1445" [label = <(&lt;operator&gt;.assignment,int Bird.SCORE_LOCATE = 5)<SUB>230</SUB>> ]
+"1390" [label = <(&lt;operator&gt;.assignment,int Bird.IMG_COUNT = 8)<SUB>19</SUB>> ]
+"1390" [label = <(&lt;operator&gt;.assignment,int Bird.IMG_COUNT = 8)<SUB>19</SUB>> ]
+"1395" [label = <(&lt;operator&gt;.assignment,int Bird.STATE_COUNT = 4)<SUB>20</SUB>> ]
+"1395" [label = <(&lt;operator&gt;.assignment,int Bird.STATE_COUNT = 4)<SUB>20</SUB>> ]
+"1400" [label = <(&lt;operator&gt;.assignment,int Bird.STATE_NORMAL = 0)<SUB>34</SUB>> ]
+"1400" [label = <(&lt;operator&gt;.assignment,int Bird.STATE_NORMAL = 0)<SUB>34</SUB>> ]
+"1405" [label = <(&lt;operator&gt;.assignment,int Bird.STATE_UP = 1)<SUB>35</SUB>> ]
+"1405" [label = <(&lt;operator&gt;.assignment,int Bird.STATE_UP = 1)<SUB>35</SUB>> ]
+"1410" [label = <(&lt;operator&gt;.assignment,int Bird.STATE_DOWN = 2)<SUB>36</SUB>> ]
+"1410" [label = <(&lt;operator&gt;.assignment,int Bird.STATE_DOWN = 2)<SUB>36</SUB>> ]
+"1415" [label = <(&lt;operator&gt;.assignment,int Bird.STATE_FALL = 3)<SUB>37</SUB>> ]
+"1415" [label = <(&lt;operator&gt;.assignment,int Bird.STATE_FALL = 3)<SUB>37</SUB>> ]
+"1420" [label = <(&lt;operator&gt;.assignment,int Bird.STATE_DEAD = 4)<SUB>38</SUB>> ]
+"1420" [label = <(&lt;operator&gt;.assignment,int Bird.STATE_DEAD = 4)<SUB>38</SUB>> ]
+"1425" [label = <(&lt;operator&gt;.assignment,int Bird.RECT_DESCALE = 2)<SUB>41</SUB>> ]
+"1425" [label = <(&lt;operator&gt;.assignment,int Bird.RECT_DESCALE = 2)<SUB>41</SUB>> ]
+"1430" [label = <(&lt;operator&gt;.assignment,int Bird.SPEED_UP = 32)<SUB>97</SUB>> ]
+"1430" [label = <(&lt;operator&gt;.assignment,int Bird.SPEED_UP = 32)<SUB>97</SUB>> ]
+"1435" [label = <(&lt;operator&gt;.assignment,double Bird.g = 9.8)<SUB>98</SUB>> ]
+"1435" [label = <(&lt;operator&gt;.assignment,double Bird.g = 9.8)<SUB>98</SUB>> ]
+"1440" [label = <(&lt;operator&gt;.assignment,double Bird.T = 0.2)<SUB>99</SUB>> ]
+"1440" [label = <(&lt;operator&gt;.assignment,double Bird.T = 0.2)<SUB>99</SUB>> ]
+"1445" [label = <(&lt;operator&gt;.assignment,int Bird.SCORE_LOCATE = 5)<SUB>230</SUB>> ]
+"1445" [label = <(&lt;operator&gt;.assignment,int Bird.SCORE_LOCATE = 5)<SUB>230</SUB>> ]
+  "1390" -> "1451"  [ label = "Bird.IMG_COUNT"] 
+  "1390" -> "1451"  [ label = "int Bird.IMG_COUNT = 8"] 
+  "1395" -> "1451"  [ label = "Bird.STATE_COUNT"] 
+  "1395" -> "1451"  [ label = "int Bird.STATE_COUNT = 4"] 
+  "1400" -> "1451"  [ label = "Bird.STATE_NORMAL"] 
+  "1400" -> "1451"  [ label = "int Bird.STATE_NORMAL = 0"] 
+  "1405" -> "1451"  [ label = "Bird.STATE_UP"] 
+  "1405" -> "1451"  [ label = "int Bird.STATE_UP = 1"] 
+  "1410" -> "1451"  [ label = "Bird.STATE_DOWN"] 
+  "1410" -> "1451"  [ label = "int Bird.STATE_DOWN = 2"] 
+  "1415" -> "1451"  [ label = "Bird.STATE_FALL"] 
+  "1415" -> "1451"  [ label = "int Bird.STATE_FALL = 3"] 
+  "1420" -> "1451"  [ label = "Bird.STATE_DEAD"] 
+  "1420" -> "1451"  [ label = "int Bird.STATE_DEAD = 4"] 
+  "1425" -> "1451"  [ label = "Bird.RECT_DESCALE"] 
+  "1425" -> "1451"  [ label = "int Bird.RECT_DESCALE = 2"] 
+  "1430" -> "1451"  [ label = "Bird.SPEED_UP"] 
+  "1430" -> "1451"  [ label = "int Bird.SPEED_UP = 32"] 
+  "1435" -> "1451"  [ label = "Bird.g"] 
+  "1435" -> "1451"  [ label = "double Bird.g = 9.8"] 
+  "1440" -> "1451"  [ label = "Bird.T"] 
+  "1440" -> "1451"  [ label = "double Bird.T = 0.2"] 
+  "1445" -> "1451"  [ label = "Bird.SCORE_LOCATE"] 
+  "1445" -> "1451"  [ label = "int Bird.SCORE_LOCATE = 5"] 
+  "1388" -> "1390" 
+  "1388" -> "1395" 
+  "1388" -> "1400" 
+  "1388" -> "1405" 
+  "1388" -> "1410" 
+  "1388" -> "1415" 
+  "1388" -> "1420" 
+  "1388" -> "1425" 
+  "1388" -> "1430" 
+  "1388" -> "1435" 
+  "1388" -> "1440" 
+  "1388" -> "1445" 
+}

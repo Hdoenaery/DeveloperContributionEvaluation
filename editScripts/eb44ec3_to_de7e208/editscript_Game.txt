@@ -1,0 +1,5 @@
+===
+update-node
+---
+SimpleName: getKeyChar [2241,2251]
+replace getKeyChar by getKeyCode

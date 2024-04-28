@@ -1,0 +1,22 @@
+digraph "main" {  
+"17" [label = <(METHOD,main)<SUB>14</SUB>> ]
+"30" [label = <(METHOD_RETURN,void)<SUB>14</SUB>> ]
+"18" [label = <(PARAM,String[] args)<SUB>14</SUB>> ]
+"20" [label = <(BLOCK,&lt;empty&gt;,&lt;empty&gt;)<SUB>15</SUB>> ]
+"22" [label = <(&lt;operator&gt;.assignment,$obj0 = new Game())<SUB>15</SUB>> ]
+"25" [label = <(&lt;init&gt;,new Game())<SUB>15</SUB>> ]
+"27" [label = <(IDENTIFIER,$obj0,&lt;empty&gt;)<SUB>15</SUB>> ]
+"22" [label = <(&lt;operator&gt;.assignment,$obj0 = new Game())<SUB>15</SUB>> ]
+"22" [label = <(&lt;operator&gt;.assignment,$obj0 = new Game())<SUB>15</SUB>> ]
+"25" [label = <(&lt;init&gt;,new Game())<SUB>15</SUB>> ]
+  "18" -> "30"  [ label = "args"] 
+  "22" -> "30"  [ label = "$obj0 = new Game()"] 
+  "25" -> "30"  [ label = "$obj0"] 
+  "25" -> "30"  [ label = "new Game()"] 
+  "17" -> "18" 
+  "17" -> "20" 
+  "17" -> "22" 
+  "17" -> "27" 
+  "22" -> "25"  [ label = "$obj0"] 
+  "17" -> "25" 
+}

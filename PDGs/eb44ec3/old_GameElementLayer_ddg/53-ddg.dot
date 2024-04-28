@@ -1,0 +1,10 @@
+digraph "&lt;operator&gt;.logicalShiftRight" {  
+"1096" [label = <(METHOD,&lt;operator&gt;.logicalShiftRight)> ]
+"1100" [label = <(METHOD_RETURN,ANY)> ]
+"1097" [label = <(PARAM,p1)> ]
+"1098" [label = <(PARAM,p2)> ]
+  "1097" -> "1100"  [ label = "p1"] 
+  "1098" -> "1100"  [ label = "p2"] 
+  "1096" -> "1097" 
+  "1096" -> "1098" 
+}

@@ -1,0 +1,24 @@
+digraph "run" {  
+"974" [label = <(METHOD,run)<SUB>152</SUB>> ]
+"996" [label = <(METHOD_RETURN,void)<SUB>154</SUB>> ]
+"63" [label = <(PARAM,this)<SUB>152</SUB>> ]
+"977" [label = <(LITERAL,true,while (true))<SUB>155</SUB>> ]
+"979" [label = <(repaint,this.repaint())<SUB>156</SUB>> ]
+"979" [label = <(repaint,this.repaint())<SUB>156</SUB>> ]
+"982" [label = <(sleep,sleep(GAME_INTERVAL))<SUB>158</SUB>> ]
+"986" [label = <(BLOCK,&lt;empty&gt;,&lt;empty&gt;)<SUB>159</SUB>> ]
+"982" [label = <(sleep,sleep(GAME_INTERVAL))<SUB>158</SUB>> ]
+"982" [label = <(sleep,sleep(GAME_INTERVAL))<SUB>158</SUB>> ]
+"987" [label = <(printStackTrace,e.printStackTrace())<SUB>160</SUB>> ]
+"987" [label = <(printStackTrace,e.printStackTrace())<SUB>160</SUB>> ]
+  "63" -> "996"  [ label = "this"] 
+  "987" -> "996"  [ label = "e"] 
+  "982" -> "996"  [ label = "Thread"] 
+  "974" -> "63" 
+  "974" -> "977" 
+  "63" -> "979"  [ label = "this"] 
+  "974" -> "979" 
+  "974" -> "986" 
+  "974" -> "982" 
+  "974" -> "987" 
+}

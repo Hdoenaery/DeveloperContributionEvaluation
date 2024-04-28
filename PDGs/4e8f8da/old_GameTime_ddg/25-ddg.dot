@@ -1,0 +1,10 @@
+digraph "readLong" {  
+"619" [label = <(METHOD,readLong)> ]
+"623" [label = <(METHOD_RETURN,ANY)> ]
+"620" [label = <(PARAM,p0)> ]
+"621" [label = <(PARAM,p1)> ]
+  "620" -> "623"  [ label = "p0"] 
+  "621" -> "623"  [ label = "p1"] 
+  "619" -> "620" 
+  "619" -> "621" 
+}

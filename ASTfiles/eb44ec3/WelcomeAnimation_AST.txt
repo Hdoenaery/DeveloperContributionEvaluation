@@ -1,0 +1,3 @@
+CompilationUnit [0,24]
+    ClassOrInterfaceDeclaration [0,24]
+        SimpleName: WelcomeAnimation [6,22]

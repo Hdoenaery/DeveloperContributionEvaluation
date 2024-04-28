@@ -1,0 +1,39 @@
+digraph "birdDead" {  
+"939" [label = <(&lt;operator&gt;.equals,overImg == null)<SUB>203</SUB>> ]
+"945" [label = <(&lt;operator&gt;.assignment,this.overImg = GameUtil.loadBufferedImage(Const...)<SUB>204</SUB>> ]
+"954" [label = <(&lt;operator&gt;.assignment,this.scoreImg = GameUtil.loadBufferedImage(Cons...)<SUB>205</SUB>> ]
+"963" [label = <(&lt;operator&gt;.assignment,this.againImg = GameUtil.loadBufferedImage(Cons...)<SUB>206</SUB>> ]
+"946" [label = <(&lt;operator&gt;.fieldAccess,this.overImg)<SUB>204</SUB>> ]
+"949" [label = <(loadBufferedImage,loadBufferedImage(Constant.OVER_IMG_PATH))<SUB>204</SUB>> ]
+"955" [label = <(&lt;operator&gt;.fieldAccess,this.scoreImg)<SUB>205</SUB>> ]
+"958" [label = <(loadBufferedImage,loadBufferedImage(Constant.SCORE_IMG_PATH))<SUB>205</SUB>> ]
+"964" [label = <(&lt;operator&gt;.fieldAccess,this.againImg)<SUB>206</SUB>> ]
+"967" [label = <(loadBufferedImage,loadBufferedImage(Constant.AGAIN_IMG_PATH))<SUB>206</SUB>> ]
+"948" [label = <(FIELD_IDENTIFIER,overImg,overImg)<SUB>204</SUB>> ]
+"951" [label = <(&lt;operator&gt;.fieldAccess,Constant.OVER_IMG_PATH)<SUB>204</SUB>> ]
+"957" [label = <(FIELD_IDENTIFIER,scoreImg,scoreImg)<SUB>205</SUB>> ]
+"960" [label = <(&lt;operator&gt;.fieldAccess,Constant.SCORE_IMG_PATH)<SUB>205</SUB>> ]
+"966" [label = <(FIELD_IDENTIFIER,againImg,againImg)<SUB>206</SUB>> ]
+"969" [label = <(&lt;operator&gt;.fieldAccess,Constant.AGAIN_IMG_PATH)<SUB>206</SUB>> ]
+"953" [label = <(FIELD_IDENTIFIER,OVER_IMG_PATH,OVER_IMG_PATH)<SUB>204</SUB>> ]
+"962" [label = <(FIELD_IDENTIFIER,SCORE_IMG_PATH,SCORE_IMG_PATH)<SUB>205</SUB>> ]
+"971" [label = <(FIELD_IDENTIFIER,AGAIN_IMG_PATH,AGAIN_IMG_PATH)<SUB>206</SUB>> ]
+  "939" -> "945" 
+  "939" -> "963" 
+  "939" -> "958" 
+  "939" -> "953" 
+  "939" -> "951" 
+  "939" -> "960" 
+  "939" -> "955" 
+  "939" -> "966" 
+  "939" -> "964" 
+  "939" -> "949" 
+  "939" -> "967" 
+  "939" -> "971" 
+  "939" -> "948" 
+  "939" -> "957" 
+  "939" -> "946" 
+  "939" -> "962" 
+  "939" -> "954" 
+  "939" -> "969" 
+}

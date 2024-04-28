@@ -1,0 +1,10 @@
+digraph "exit" {  
+"1545" [label = <(METHOD,exit)> ]
+"1549" [label = <(METHOD_RETURN,ANY)> ]
+"1546" [label = <(PARAM,p1)> ]
+"1547" [label = <(PARAM,p2)> ]
+  "1546" -> "1549"  [ label = "p1"] 
+  "1547" -> "1549"  [ label = "p2"] 
+  "1545" -> "1546" 
+  "1545" -> "1547" 
+}

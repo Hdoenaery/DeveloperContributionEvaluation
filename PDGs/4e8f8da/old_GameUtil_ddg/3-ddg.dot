@@ -1,0 +1,44 @@
+digraph "getRandomNumber" {  
+"90" [label = <(METHOD,getRandomNumber)<SUB>65</SUB>> ]
+"107" [label = <(METHOD_RETURN,int)<SUB>65</SUB>> ]
+"91" [label = <(PARAM,int min)<SUB>65</SUB>> ]
+"92" [label = <(PARAM,int max)<SUB>65</SUB>> ]
+"94" [label = <(RETURN,return (int) (Math.random() * (max - min) + min);,return (int) (Math.random() * (max - min) + min);)<SUB>66</SUB>> ]
+"95" [label = <(&lt;operator&gt;.cast,(int) (Math.random() * (max - min) + min))<SUB>66</SUB>> ]
+"95" [label = <(&lt;operator&gt;.cast,(int) (Math.random() * (max - min) + min))<SUB>66</SUB>> ]
+"95" [label = <(&lt;operator&gt;.cast,(int) (Math.random() * (max - min) + min))<SUB>66</SUB>> ]
+"97" [label = <(&lt;operator&gt;.addition,Math.random() * (max - min) + min)<SUB>66</SUB>> ]
+"97" [label = <(&lt;operator&gt;.addition,Math.random() * (max - min) + min)<SUB>66</SUB>> ]
+"98" [label = <(&lt;operator&gt;.multiplication,Math.random() * (max - min))<SUB>66</SUB>> ]
+"98" [label = <(&lt;operator&gt;.multiplication,Math.random() * (max - min))<SUB>66</SUB>> ]
+"99" [label = <(random,Math.random())<SUB>66</SUB>> ]
+"101" [label = <(&lt;operator&gt;.subtraction,max - min)<SUB>66</SUB>> ]
+"101" [label = <(&lt;operator&gt;.subtraction,max - min)<SUB>66</SUB>> ]
+  "94" -> "107"  [ label = "&lt;RET&gt;"] 
+  "99" -> "107"  [ label = "Math"] 
+  "98" -> "107"  [ label = "Math.random()"] 
+  "101" -> "107"  [ label = "max"] 
+  "98" -> "107"  [ label = "max - min"] 
+  "97" -> "107"  [ label = "Math.random() * (max - min)"] 
+  "97" -> "107"  [ label = "min"] 
+  "95" -> "107"  [ label = "Math.random() * (max - min) + min"] 
+  "95" -> "107"  [ label = "(int) (Math.random() * (max - min) + min)"] 
+  "90" -> "91" 
+  "90" -> "92" 
+  "95" -> "94"  [ label = "(int) (Math.random() * (max - min) + min)"] 
+  "90" -> "95" 
+  "98" -> "95"  [ label = "Math.random()"] 
+  "98" -> "95"  [ label = "max - min"] 
+  "101" -> "95"  [ label = "min"] 
+  "98" -> "97"  [ label = "Math.random()"] 
+  "98" -> "97"  [ label = "max - min"] 
+  "101" -> "97"  [ label = "min"] 
+  "90" -> "97" 
+  "99" -> "98"  [ label = "Math"] 
+  "101" -> "98"  [ label = "max"] 
+  "101" -> "98"  [ label = "min"] 
+  "90" -> "99" 
+  "92" -> "101"  [ label = "max"] 
+  "90" -> "101" 
+  "91" -> "101"  [ label = "min"] 
+}

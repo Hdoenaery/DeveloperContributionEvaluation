@@ -1,0 +1,33 @@
+===
+insert-node
+---
+Modifier: final [254,259]
+to
+FieldDeclaration [239,282]
+at 2
+===
+insert-node
+---
+Modifier: final [306,311]
+to
+FieldDeclaration [292,310]
+at 1
+===
+update-node
+---
+SimpleName: loadBUfferedImage [481,498]
+replace loadBUfferedImage by loadBufferedImage
+===
+delete-tree
+---
+FieldDeclaration [527,595]
+    Modifier: public [527,533]
+    Modifier: static [534,540]
+    Modifier: final [541,546]
+    VariableDeclarator [551,594]
+        PrimitiveType: int [547,550]
+        SimpleName: BG_IMAGE_HEIGHT [551,566]
+        MethodCallExpr [569,594]
+            NameExpr [569,582]
+                SimpleName: BackgroundImg [569,582]
+            SimpleName: getHeight [583,592]

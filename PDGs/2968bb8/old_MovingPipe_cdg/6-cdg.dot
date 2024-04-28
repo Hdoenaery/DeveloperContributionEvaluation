@@ -1,0 +1,54 @@
+digraph "pipeLogic" {  
+"385" [label = <(&lt;operator&gt;.lessThan,x &lt; -1 * PIPE_HEAD_WIDTH)<SUB>123</SUB>> ]
+"396" [label = <(&lt;operator&gt;.equals,dir == DIR_DOWN)<SUB>128</SUB>> ]
+"392" [label = <(&lt;operator&gt;.assignment,visible = false)<SUB>124</SUB>> ]
+"404" [label = <(&lt;operator&gt;.postIncrement,dealtY++)<SUB>129</SUB>> ]
+"405" [label = <(&lt;operator&gt;.fieldAccess,this.dealtY)<SUB>129</SUB>> ]
+"409" [label = <(&lt;operator&gt;.greaterThan,dealtY &gt; MAX_DEALY)<SUB>130</SUB>> ]
+"426" [label = <(&lt;operator&gt;.postDecrement,dealtY--)<SUB>134</SUB>> ]
+"407" [label = <(FIELD_IDENTIFIER,dealtY,dealtY)<SUB>129</SUB>> ]
+"410" [label = <(&lt;operator&gt;.fieldAccess,this.dealtY)<SUB>130</SUB>> ]
+"413" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.MovingPipe.MAX_DEALY)<SUB>130</SUB>> ]
+"417" [label = <(&lt;operator&gt;.assignment,this.dir = DIR_UP)<SUB>131</SUB>> ]
+"427" [label = <(&lt;operator&gt;.fieldAccess,this.dealtY)<SUB>134</SUB>> ]
+"431" [label = <(&lt;operator&gt;.lessEqualsThan,dealtY &lt;= 0)<SUB>135</SUB>> ]
+"412" [label = <(FIELD_IDENTIFIER,dealtY,dealtY)<SUB>130</SUB>> ]
+"415" [label = <(FIELD_IDENTIFIER,MAX_DEALY,MAX_DEALY)<SUB>130</SUB>> ]
+"418" [label = <(&lt;operator&gt;.fieldAccess,this.dir)<SUB>131</SUB>> ]
+"421" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.MovingPipe.DIR_UP)<SUB>131</SUB>> ]
+"429" [label = <(FIELD_IDENTIFIER,dealtY,dealtY)<SUB>134</SUB>> ]
+"432" [label = <(&lt;operator&gt;.fieldAccess,this.dealtY)<SUB>135</SUB>> ]
+"437" [label = <(&lt;operator&gt;.assignment,this.dir = DIR_DOWN)<SUB>136</SUB>> ]
+"420" [label = <(FIELD_IDENTIFIER,dir,dir)<SUB>131</SUB>> ]
+"423" [label = <(FIELD_IDENTIFIER,DIR_UP,DIR_UP)<SUB>131</SUB>> ]
+"434" [label = <(FIELD_IDENTIFIER,dealtY,dealtY)<SUB>135</SUB>> ]
+"438" [label = <(&lt;operator&gt;.fieldAccess,this.dir)<SUB>136</SUB>> ]
+"441" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.MovingPipe.DIR_DOWN)<SUB>136</SUB>> ]
+"440" [label = <(FIELD_IDENTIFIER,dir,dir)<SUB>136</SUB>> ]
+"443" [label = <(FIELD_IDENTIFIER,DIR_DOWN,DIR_DOWN)<SUB>136</SUB>> ]
+  "385" -> "392" 
+  "396" -> "409" 
+  "396" -> "404" 
+  "396" -> "434" 
+  "396" -> "413" 
+  "396" -> "412" 
+  "396" -> "427" 
+  "396" -> "429" 
+  "396" -> "432" 
+  "396" -> "431" 
+  "396" -> "405" 
+  "396" -> "415" 
+  "396" -> "407" 
+  "396" -> "410" 
+  "396" -> "426" 
+  "409" -> "423" 
+  "409" -> "418" 
+  "409" -> "421" 
+  "409" -> "420" 
+  "409" -> "417" 
+  "431" -> "437" 
+  "431" -> "440" 
+  "431" -> "438" 
+  "431" -> "441" 
+  "431" -> "443" 
+}

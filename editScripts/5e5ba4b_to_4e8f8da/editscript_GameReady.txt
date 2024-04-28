@@ -1,0 +1,41 @@
+===
+insert-node
+---
+LineComment [535,553]
+to
+BlockStmt [501,873]
+at 5
+===
+insert-node
+---
+LineComment [724,739]
+to
+BlockStmt [501,873]
+at 6
+===
+move-tree
+---
+BinaryExpr [572,597]
+    FieldAccessExpr [572,593]
+        NameExpr [572,580]
+            SimpleName: Constant [572,580]
+        SimpleName: FRAME_HEIGHT [581,593]
+    IntegerLiteralExpr: 5 [596,597]
+to
+VariableDeclarator [568,602]
+at 2
+===
+update-node
+---
+IntegerLiteralExpr: 5 [596,597]
+replace 5 by 3
+===
+delete-node
+---
+IntegerLiteralExpr: 1 [601,602]
+===
+===
+delete-node
+---
+BinaryExpr [572,602]
+===

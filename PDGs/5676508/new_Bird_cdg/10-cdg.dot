@@ -1,0 +1,13 @@
+digraph "isDead" {  
+"802" [label = <(&lt;operator&gt;.equals,state == BIRD_DEAD_FALL)<SUB>202</SUB>> ]
+"809" [label = <(&lt;operator&gt;.equals,state == BIRD_DEAD)<SUB>202</SUB>> ]
+"810" [label = <(&lt;operator&gt;.fieldAccess,this.state)<SUB>202</SUB>> ]
+"813" [label = <(&lt;operator&gt;.fieldAccess,com.kingyu.flappybird.game.Bird.BIRD_DEAD)<SUB>202</SUB>> ]
+"812" [label = <(FIELD_IDENTIFIER,state,state)<SUB>202</SUB>> ]
+"815" [label = <(FIELD_IDENTIFIER,BIRD_DEAD,BIRD_DEAD)<SUB>202</SUB>> ]
+  "802" -> "812" 
+  "802" -> "810" 
+  "802" -> "809" 
+  "802" -> "815" 
+  "802" -> "813" 
+}

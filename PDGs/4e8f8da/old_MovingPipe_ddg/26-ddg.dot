@@ -1,0 +1,10 @@
+digraph "&lt;operator&gt;.indexAccess" {  
+"628" [label = <(METHOD,&lt;operator&gt;.indexAccess)> ]
+"632" [label = <(METHOD_RETURN,ANY)> ]
+"629" [label = <(PARAM,p1)> ]
+"630" [label = <(PARAM,p2)> ]
+  "629" -> "632"  [ label = "p1"] 
+  "630" -> "632"  [ label = "p2"] 
+  "628" -> "629" 
+  "628" -> "630" 
+}

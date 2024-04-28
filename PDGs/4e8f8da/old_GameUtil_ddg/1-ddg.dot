@@ -1,0 +1,44 @@
+digraph "loadBUfferedImage" {  
+"23" [label = <(METHOD,loadBUfferedImage)<SUB>29</SUB>> ]
+"48" [label = <(METHOD_RETURN,java.awt.image.BufferedImage)<SUB>29</SUB>> ]
+"24" [label = <(PARAM,String imgPath)<SUB>29</SUB>> ]
+"44" [label = <(RETURN,return null;,return null;)<SUB>35</SUB>> ]
+"45" [label = <(LITERAL,null,return null;)<SUB>35</SUB>> ]
+"28" [label = <(RETURN,return ImageIO.read(new FileInputStream(imgPath));,return ImageIO.read(new FileInputStream(imgPath));)<SUB>31</SUB>> ]
+"41" [label = <(BLOCK,&lt;empty&gt;,&lt;empty&gt;)<SUB>32</SUB>> ]
+"29" [label = <(read,ImageIO.read(new FileInputStream(imgPath)))<SUB>31</SUB>> ]
+"42" [label = <(printStackTrace,e.printStackTrace())<SUB>33</SUB>> ]
+"29" [label = <(read,ImageIO.read(new FileInputStream(imgPath)))<SUB>31</SUB>> ]
+"29" [label = <(read,ImageIO.read(new FileInputStream(imgPath)))<SUB>31</SUB>> ]
+"42" [label = <(printStackTrace,e.printStackTrace())<SUB>33</SUB>> ]
+"33" [label = <(&lt;operator&gt;.assignment,$obj0 = new FileInputStream(imgPath))<SUB>31</SUB>> ]
+"36" [label = <(&lt;init&gt;,new FileInputStream(imgPath))<SUB>31</SUB>> ]
+"39" [label = <(IDENTIFIER,$obj0,&lt;empty&gt;)<SUB>31</SUB>> ]
+"33" [label = <(&lt;operator&gt;.assignment,$obj0 = new FileInputStream(imgPath))<SUB>31</SUB>> ]
+"33" [label = <(&lt;operator&gt;.assignment,$obj0 = new FileInputStream(imgPath))<SUB>31</SUB>> ]
+"36" [label = <(&lt;init&gt;,new FileInputStream(imgPath))<SUB>31</SUB>> ]
+"36" [label = <(&lt;init&gt;,new FileInputStream(imgPath))<SUB>31</SUB>> ]
+  "44" -> "48"  [ label = "&lt;RET&gt;"] 
+  "28" -> "48"  [ label = "&lt;RET&gt;"] 
+  "29" -> "48"  [ label = "ImageIO"] 
+  "33" -> "48"  [ label = "$obj0 = new FileInputStream(imgPath)"] 
+  "36" -> "48"  [ label = "$obj0"] 
+  "36" -> "48"  [ label = "imgPath"] 
+  "36" -> "48"  [ label = "new FileInputStream(imgPath)"] 
+  "29" -> "48"  [ label = "ImageIO.read(new FileInputStream(imgPath))"] 
+  "42" -> "48"  [ label = "e"] 
+  "23" -> "24" 
+  "45" -> "44"  [ label = "null"] 
+  "23" -> "44" 
+  "23" -> "45" 
+  "29" -> "28"  [ label = "ImageIO.read(new FileInputStream(imgPath))"] 
+  "23" -> "41" 
+  "23" -> "29" 
+  "36" -> "29"  [ label = "$obj0"] 
+  "23" -> "42" 
+  "23" -> "33" 
+  "23" -> "39" 
+  "33" -> "36"  [ label = "$obj0"] 
+  "23" -> "36" 
+  "24" -> "36"  [ label = "imgPath"] 
+}

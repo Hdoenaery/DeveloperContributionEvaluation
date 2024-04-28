@@ -1,0 +1,10 @@
+digraph "&lt;operator&gt;.subtraction" {  
+"254" [label = <(METHOD,&lt;operator&gt;.subtraction)> ]
+"258" [label = <(METHOD_RETURN,ANY)> ]
+"255" [label = <(PARAM,p1)> ]
+"256" [label = <(PARAM,p2)> ]
+  "255" -> "258"  [ label = "p1"] 
+  "256" -> "258"  [ label = "p2"] 
+  "254" -> "255" 
+  "254" -> "256" 
+}

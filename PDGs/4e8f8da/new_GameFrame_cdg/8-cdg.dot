@@ -1,0 +1,31 @@
+digraph "update" {  
+"943" [label = <(&lt;operator&gt;.equals,gameState == STATE_READY)<SUB>147</SUB>> ]
+"951" [label = <(draw,this.ready.draw(bufG))<SUB>148</SUB>> ]
+"956" [label = <(draw,this.bird.draw(bufG))<SUB>149</SUB>> ]
+"952" [label = <(&lt;operator&gt;.fieldAccess,this.ready)<SUB>148</SUB>> ]
+"957" [label = <(&lt;operator&gt;.fieldAccess,this.bird)<SUB>149</SUB>> ]
+"963" [label = <(draw,this.gameElement.draw(bufG, bird))<SUB>151</SUB>> ]
+"971" [label = <(draw,this.bird.draw(bufG))<SUB>152</SUB>> ]
+"954" [label = <(FIELD_IDENTIFIER,ready,ready)<SUB>148</SUB>> ]
+"959" [label = <(FIELD_IDENTIFIER,bird,bird)<SUB>149</SUB>> ]
+"964" [label = <(&lt;operator&gt;.fieldAccess,this.gameElement)<SUB>151</SUB>> ]
+"968" [label = <(&lt;operator&gt;.fieldAccess,this.bird)<SUB>151</SUB>> ]
+"972" [label = <(&lt;operator&gt;.fieldAccess,this.bird)<SUB>152</SUB>> ]
+"966" [label = <(FIELD_IDENTIFIER,gameElement,gameElement)<SUB>151</SUB>> ]
+"970" [label = <(FIELD_IDENTIFIER,bird,bird)<SUB>151</SUB>> ]
+"974" [label = <(FIELD_IDENTIFIER,bird,bird)<SUB>152</SUB>> ]
+  "943" -> "971" 
+  "943" -> "963" 
+  "943" -> "957" 
+  "943" -> "956" 
+  "943" -> "970" 
+  "943" -> "951" 
+  "943" -> "959" 
+  "943" -> "968" 
+  "943" -> "966" 
+  "943" -> "952" 
+  "943" -> "974" 
+  "943" -> "972" 
+  "943" -> "964" 
+  "943" -> "954" 
+}

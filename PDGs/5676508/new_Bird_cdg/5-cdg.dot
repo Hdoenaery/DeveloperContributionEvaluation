@@ -1,0 +1,195 @@
+digraph "movement" {  
+"496" [label = <(&lt;operator&gt;.fieldAccess,this.state)<SUB>124</SUB>> ]
+"501" [label = <(&lt;operator&gt;.fieldAccess,com.kingyu.flappybird.game.Bird.BIRD_FALL)<SUB>125</SUB>> ]
+"519" [label = <(&lt;operator&gt;.assignment,this.y = Math.min((y - velocity), BOTTOM_BOUNDARY))<SUB>129</SUB>> ]
+"535" [label = <(&lt;operator&gt;.assignment,birdRect.y = birdRect.y - velocity)<SUB>130</SUB>> ]
+"566" [label = <(&lt;operator&gt;.fieldAccess,com.kingyu.flappybird.game.Bird.BIRD_DEAD_FALL)<SUB>137</SUB>> ]
+"584" [label = <(&lt;operator&gt;.assignment,this.y = Math.min((y - velocity), BOTTOM_BOUNDARY))<SUB>141</SUB>> ]
+"600" [label = <(&lt;operator&gt;.assignment,birdRect.y = birdRect.y - velocity)<SUB>142</SUB>> ]
+"629" [label = <(&lt;operator&gt;.fieldAccess,com.kingyu.flappybird.game.Bird.BIRD_DEAD)<SUB>148</SUB>> ]
+"632" [label = <(setGameState,setGameState(Game.STATE_OVER))<SUB>149</SUB>> ]
+"639" [label = <(&lt;operator&gt;.fieldAccess,com.kingyu.flappybird.game.Bird.BIRD_NORMAL)<SUB>152</SUB>> ]
+"643" [label = <(&lt;operator&gt;.fieldAccess,com.kingyu.flappybird.game.Bird.BIRD_UP)<SUB>153</SUB>> ]
+"503" [label = <(FIELD_IDENTIFIER,BIRD_FALL,BIRD_FALL)<SUB>125</SUB>> ]
+"505" [label = <(&lt;operator&gt;.lessThan,velocity &lt; MAX_VEL_Y)<SUB>127</SUB>> ]
+"512" [label = <(&lt;operator&gt;.assignmentMinus,this.velocity -= ACC_Y)<SUB>128</SUB>> ]
+"520" [label = <(&lt;operator&gt;.fieldAccess,this.y)<SUB>129</SUB>> ]
+"523" [label = <(min,Math.min((y - velocity), BOTTOM_BOUNDARY))<SUB>129</SUB>> ]
+"536" [label = <(&lt;operator&gt;.fieldAccess,birdRect.y)<SUB>130</SUB>> ]
+"541" [label = <(&lt;operator&gt;.subtraction,birdRect.y - velocity)<SUB>130</SUB>> ]
+"551" [label = <(&lt;operator&gt;.greaterThan,birdRect.y &gt; BOTTOM_BOUNDARY)<SUB>131</SUB>> ]
+"568" [label = <(FIELD_IDENTIFIER,BIRD_DEAD_FALL,BIRD_DEAD_FALL)<SUB>137</SUB>> ]
+"570" [label = <(&lt;operator&gt;.lessThan,velocity &lt; MAX_VEL_Y)<SUB>139</SUB>> ]
+"577" [label = <(&lt;operator&gt;.assignmentMinus,this.velocity -= ACC_Y)<SUB>140</SUB>> ]
+"585" [label = <(&lt;operator&gt;.fieldAccess,this.y)<SUB>141</SUB>> ]
+"588" [label = <(min,Math.min((y - velocity), BOTTOM_BOUNDARY))<SUB>141</SUB>> ]
+"601" [label = <(&lt;operator&gt;.fieldAccess,birdRect.y)<SUB>142</SUB>> ]
+"606" [label = <(&lt;operator&gt;.subtraction,birdRect.y - velocity)<SUB>142</SUB>> ]
+"616" [label = <(&lt;operator&gt;.greaterThan,birdRect.y &gt; BOTTOM_BOUNDARY)<SUB>143</SUB>> ]
+"631" [label = <(FIELD_IDENTIFIER,BIRD_DEAD,BIRD_DEAD)<SUB>148</SUB>> ]
+"634" [label = <(&lt;operator&gt;.fieldAccess,Game.STATE_OVER)<SUB>149</SUB>> ]
+"641" [label = <(FIELD_IDENTIFIER,BIRD_NORMAL,BIRD_NORMAL)<SUB>152</SUB>> ]
+"645" [label = <(FIELD_IDENTIFIER,BIRD_UP,BIRD_UP)<SUB>153</SUB>> ]
+"506" [label = <(&lt;operator&gt;.fieldAccess,this.velocity)<SUB>127</SUB>> ]
+"509" [label = <(&lt;operator&gt;.fieldAccess,com.kingyu.flappybird.game.Bird.MAX_VEL_Y)<SUB>127</SUB>> ]
+"513" [label = <(&lt;operator&gt;.fieldAccess,this.velocity)<SUB>128</SUB>> ]
+"516" [label = <(&lt;operator&gt;.fieldAccess,com.kingyu.flappybird.game.Bird.ACC_Y)<SUB>128</SUB>> ]
+"522" [label = <(FIELD_IDENTIFIER,y,y)<SUB>129</SUB>> ]
+"525" [label = <(&lt;operator&gt;.subtraction,y - velocity)<SUB>129</SUB>> ]
+"532" [label = <(&lt;operator&gt;.fieldAccess,this.BOTTOM_BOUNDARY)<SUB>129</SUB>> ]
+"537" [label = <(&lt;operator&gt;.fieldAccess,this.birdRect)<SUB>130</SUB>> ]
+"540" [label = <(FIELD_IDENTIFIER,y,y)<SUB>130</SUB>> ]
+"542" [label = <(&lt;operator&gt;.fieldAccess,birdRect.y)<SUB>130</SUB>> ]
+"547" [label = <(&lt;operator&gt;.fieldAccess,this.velocity)<SUB>130</SUB>> ]
+"552" [label = <(&lt;operator&gt;.fieldAccess,birdRect.y)<SUB>131</SUB>> ]
+"557" [label = <(&lt;operator&gt;.fieldAccess,this.BOTTOM_BOUNDARY)<SUB>131</SUB>> ]
+"561" [label = <(playCrash,playCrash())<SUB>132</SUB>> ]
+"563" [label = <(die,this.die())<SUB>133</SUB>> ]
+"571" [label = <(&lt;operator&gt;.fieldAccess,this.velocity)<SUB>139</SUB>> ]
+"574" [label = <(&lt;operator&gt;.fieldAccess,com.kingyu.flappybird.game.Bird.MAX_VEL_Y)<SUB>139</SUB>> ]
+"578" [label = <(&lt;operator&gt;.fieldAccess,this.velocity)<SUB>140</SUB>> ]
+"581" [label = <(&lt;operator&gt;.fieldAccess,com.kingyu.flappybird.game.Bird.ACC_Y)<SUB>140</SUB>> ]
+"587" [label = <(FIELD_IDENTIFIER,y,y)<SUB>141</SUB>> ]
+"590" [label = <(&lt;operator&gt;.subtraction,y - velocity)<SUB>141</SUB>> ]
+"597" [label = <(&lt;operator&gt;.fieldAccess,this.BOTTOM_BOUNDARY)<SUB>141</SUB>> ]
+"602" [label = <(&lt;operator&gt;.fieldAccess,this.birdRect)<SUB>142</SUB>> ]
+"605" [label = <(FIELD_IDENTIFIER,y,y)<SUB>142</SUB>> ]
+"607" [label = <(&lt;operator&gt;.fieldAccess,birdRect.y)<SUB>142</SUB>> ]
+"612" [label = <(&lt;operator&gt;.fieldAccess,this.velocity)<SUB>142</SUB>> ]
+"617" [label = <(&lt;operator&gt;.fieldAccess,birdRect.y)<SUB>143</SUB>> ]
+"622" [label = <(&lt;operator&gt;.fieldAccess,this.BOTTOM_BOUNDARY)<SUB>143</SUB>> ]
+"626" [label = <(die,this.die())<SUB>144</SUB>> ]
+"636" [label = <(FIELD_IDENTIFIER,STATE_OVER,STATE_OVER)<SUB>149</SUB>> ]
+"508" [label = <(FIELD_IDENTIFIER,velocity,velocity)<SUB>127</SUB>> ]
+"511" [label = <(FIELD_IDENTIFIER,MAX_VEL_Y,MAX_VEL_Y)<SUB>127</SUB>> ]
+"515" [label = <(FIELD_IDENTIFIER,velocity,velocity)<SUB>128</SUB>> ]
+"518" [label = <(FIELD_IDENTIFIER,ACC_Y,ACC_Y)<SUB>128</SUB>> ]
+"526" [label = <(&lt;operator&gt;.fieldAccess,this.y)<SUB>129</SUB>> ]
+"529" [label = <(&lt;operator&gt;.fieldAccess,this.velocity)<SUB>129</SUB>> ]
+"534" [label = <(FIELD_IDENTIFIER,BOTTOM_BOUNDARY,BOTTOM_BOUNDARY)<SUB>129</SUB>> ]
+"539" [label = <(FIELD_IDENTIFIER,birdRect,birdRect)<SUB>130</SUB>> ]
+"543" [label = <(&lt;operator&gt;.fieldAccess,this.birdRect)<SUB>130</SUB>> ]
+"546" [label = <(FIELD_IDENTIFIER,y,y)<SUB>130</SUB>> ]
+"549" [label = <(FIELD_IDENTIFIER,velocity,velocity)<SUB>130</SUB>> ]
+"553" [label = <(&lt;operator&gt;.fieldAccess,this.birdRect)<SUB>131</SUB>> ]
+"556" [label = <(FIELD_IDENTIFIER,y,y)<SUB>131</SUB>> ]
+"559" [label = <(FIELD_IDENTIFIER,BOTTOM_BOUNDARY,BOTTOM_BOUNDARY)<SUB>131</SUB>> ]
+"573" [label = <(FIELD_IDENTIFIER,velocity,velocity)<SUB>139</SUB>> ]
+"576" [label = <(FIELD_IDENTIFIER,MAX_VEL_Y,MAX_VEL_Y)<SUB>139</SUB>> ]
+"580" [label = <(FIELD_IDENTIFIER,velocity,velocity)<SUB>140</SUB>> ]
+"583" [label = <(FIELD_IDENTIFIER,ACC_Y,ACC_Y)<SUB>140</SUB>> ]
+"591" [label = <(&lt;operator&gt;.fieldAccess,this.y)<SUB>141</SUB>> ]
+"594" [label = <(&lt;operator&gt;.fieldAccess,this.velocity)<SUB>141</SUB>> ]
+"599" [label = <(FIELD_IDENTIFIER,BOTTOM_BOUNDARY,BOTTOM_BOUNDARY)<SUB>141</SUB>> ]
+"604" [label = <(FIELD_IDENTIFIER,birdRect,birdRect)<SUB>142</SUB>> ]
+"608" [label = <(&lt;operator&gt;.fieldAccess,this.birdRect)<SUB>142</SUB>> ]
+"611" [label = <(FIELD_IDENTIFIER,y,y)<SUB>142</SUB>> ]
+"614" [label = <(FIELD_IDENTIFIER,velocity,velocity)<SUB>142</SUB>> ]
+"618" [label = <(&lt;operator&gt;.fieldAccess,this.birdRect)<SUB>143</SUB>> ]
+"621" [label = <(FIELD_IDENTIFIER,y,y)<SUB>143</SUB>> ]
+"624" [label = <(FIELD_IDENTIFIER,BOTTOM_BOUNDARY,BOTTOM_BOUNDARY)<SUB>143</SUB>> ]
+"528" [label = <(FIELD_IDENTIFIER,y,y)<SUB>129</SUB>> ]
+"531" [label = <(FIELD_IDENTIFIER,velocity,velocity)<SUB>129</SUB>> ]
+"545" [label = <(FIELD_IDENTIFIER,birdRect,birdRect)<SUB>130</SUB>> ]
+"555" [label = <(FIELD_IDENTIFIER,birdRect,birdRect)<SUB>131</SUB>> ]
+"593" [label = <(FIELD_IDENTIFIER,y,y)<SUB>141</SUB>> ]
+"596" [label = <(FIELD_IDENTIFIER,velocity,velocity)<SUB>141</SUB>> ]
+"610" [label = <(FIELD_IDENTIFIER,birdRect,birdRect)<SUB>142</SUB>> ]
+"620" [label = <(FIELD_IDENTIFIER,birdRect,birdRect)<SUB>143</SUB>> ]
+  "496" -> "591" 
+  "496" -> "621" 
+  "496" -> "574" 
+  "496" -> "599" 
+  "496" -> "529" 
+  "496" -> "608" 
+  "496" -> "505" 
+  "496" -> "546" 
+  "496" -> "503" 
+  "496" -> "522" 
+  "496" -> "584" 
+  "496" -> "597" 
+  "496" -> "616" 
+  "496" -> "566" 
+  "496" -> "511" 
+  "496" -> "537" 
+  "496" -> "520" 
+  "496" -> "631" 
+  "496" -> "614" 
+  "496" -> "605" 
+  "496" -> "618" 
+  "496" -> "555" 
+  "496" -> "602" 
+  "496" -> "634" 
+  "496" -> "622" 
+  "496" -> "559" 
+  "496" -> "588" 
+  "496" -> "596" 
+  "496" -> "549" 
+  "496" -> "528" 
+  "496" -> "540" 
+  "496" -> "568" 
+  "496" -> "643" 
+  "496" -> "600" 
+  "496" -> "607" 
+  "496" -> "506" 
+  "496" -> "531" 
+  "496" -> "604" 
+  "496" -> "570" 
+  "496" -> "547" 
+  "496" -> "612" 
+  "496" -> "508" 
+  "496" -> "641" 
+  "496" -> "543" 
+  "496" -> "526" 
+  "496" -> "620" 
+  "496" -> "573" 
+  "496" -> "611" 
+  "496" -> "534" 
+  "496" -> "509" 
+  "496" -> "556" 
+  "496" -> "576" 
+  "496" -> "636" 
+  "496" -> "593" 
+  "496" -> "536" 
+  "496" -> "552" 
+  "496" -> "519" 
+  "496" -> "610" 
+  "496" -> "629" 
+  "496" -> "535" 
+  "496" -> "571" 
+  "496" -> "541" 
+  "496" -> "617" 
+  "496" -> "587" 
+  "496" -> "545" 
+  "496" -> "606" 
+  "496" -> "624" 
+  "496" -> "585" 
+  "496" -> "525" 
+  "496" -> "553" 
+  "496" -> "639" 
+  "496" -> "542" 
+  "496" -> "557" 
+  "496" -> "523" 
+  "496" -> "632" 
+  "496" -> "594" 
+  "496" -> "590" 
+  "496" -> "551" 
+  "496" -> "532" 
+  "496" -> "601" 
+  "496" -> "501" 
+  "496" -> "539" 
+  "496" -> "645" 
+  "505" -> "512" 
+  "505" -> "513" 
+  "505" -> "515" 
+  "505" -> "518" 
+  "505" -> "516" 
+  "551" -> "561" 
+  "551" -> "563" 
+  "570" -> "581" 
+  "570" -> "580" 
+  "570" -> "583" 
+  "570" -> "577" 
+  "570" -> "578" 
+  "616" -> "626" 
+}

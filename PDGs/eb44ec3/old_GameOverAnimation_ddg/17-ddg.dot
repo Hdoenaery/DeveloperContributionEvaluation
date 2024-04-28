@@ -1,0 +1,10 @@
+digraph "getCurrentScore" {  
+"423" [label = <(METHOD,getCurrentScore)> ]
+"427" [label = <(METHOD_RETURN,ANY)> ]
+"424" [label = <(PARAM,p0)> ]
+"425" [label = <(PARAM,p1)> ]
+  "424" -> "427"  [ label = "p0"] 
+  "425" -> "427"  [ label = "p1"] 
+  "423" -> "424" 
+  "423" -> "425" 
+}

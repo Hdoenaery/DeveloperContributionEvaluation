@@ -1,0 +1,70 @@
+digraph "&lt;clinit&gt;" {  
+"977" [label = <(METHOD,&lt;clinit&gt;)> ]
+"1035" [label = <(METHOD_RETURN,void)> ]
+"979" [label = <(&lt;operator&gt;.assignment,int Bird.IMG_COUNT = 8)<SUB>18</SUB>> ]
+"984" [label = <(&lt;operator&gt;.assignment,int Bird.STATE_COUNT = 4)<SUB>19</SUB>> ]
+"989" [label = <(&lt;operator&gt;.assignment,int Bird.BIRD_NORMAL = 0)<SUB>31</SUB>> ]
+"994" [label = <(&lt;operator&gt;.assignment,int Bird.BIRD_UP = 1)<SUB>32</SUB>> ]
+"999" [label = <(&lt;operator&gt;.assignment,int Bird.BIRD_FALL = 2)<SUB>33</SUB>> ]
+"1004" [label = <(&lt;operator&gt;.assignment,int Bird.BIRD_DEAD_FALL = 3)<SUB>34</SUB>> ]
+"1009" [label = <(&lt;operator&gt;.assignment,int Bird.BIRD_DEAD = 4)<SUB>35</SUB>> ]
+"1014" [label = <(&lt;operator&gt;.assignment,int Bird.RECT_DESCALE = 2)<SUB>38</SUB>> ]
+"1019" [label = <(&lt;operator&gt;.assignment,int Bird.ACC_FLAP = 14)<SUB>94</SUB>> ]
+"1024" [label = <(&lt;operator&gt;.assignment,double Bird.ACC_Y = 2)<SUB>95</SUB>> ]
+"1029" [label = <(&lt;operator&gt;.assignment,int Bird.MAX_VEL_Y = 15)<SUB>96</SUB>> ]
+"979" [label = <(&lt;operator&gt;.assignment,int Bird.IMG_COUNT = 8)<SUB>18</SUB>> ]
+"979" [label = <(&lt;operator&gt;.assignment,int Bird.IMG_COUNT = 8)<SUB>18</SUB>> ]
+"984" [label = <(&lt;operator&gt;.assignment,int Bird.STATE_COUNT = 4)<SUB>19</SUB>> ]
+"984" [label = <(&lt;operator&gt;.assignment,int Bird.STATE_COUNT = 4)<SUB>19</SUB>> ]
+"989" [label = <(&lt;operator&gt;.assignment,int Bird.BIRD_NORMAL = 0)<SUB>31</SUB>> ]
+"989" [label = <(&lt;operator&gt;.assignment,int Bird.BIRD_NORMAL = 0)<SUB>31</SUB>> ]
+"994" [label = <(&lt;operator&gt;.assignment,int Bird.BIRD_UP = 1)<SUB>32</SUB>> ]
+"994" [label = <(&lt;operator&gt;.assignment,int Bird.BIRD_UP = 1)<SUB>32</SUB>> ]
+"999" [label = <(&lt;operator&gt;.assignment,int Bird.BIRD_FALL = 2)<SUB>33</SUB>> ]
+"999" [label = <(&lt;operator&gt;.assignment,int Bird.BIRD_FALL = 2)<SUB>33</SUB>> ]
+"1004" [label = <(&lt;operator&gt;.assignment,int Bird.BIRD_DEAD_FALL = 3)<SUB>34</SUB>> ]
+"1004" [label = <(&lt;operator&gt;.assignment,int Bird.BIRD_DEAD_FALL = 3)<SUB>34</SUB>> ]
+"1009" [label = <(&lt;operator&gt;.assignment,int Bird.BIRD_DEAD = 4)<SUB>35</SUB>> ]
+"1009" [label = <(&lt;operator&gt;.assignment,int Bird.BIRD_DEAD = 4)<SUB>35</SUB>> ]
+"1014" [label = <(&lt;operator&gt;.assignment,int Bird.RECT_DESCALE = 2)<SUB>38</SUB>> ]
+"1014" [label = <(&lt;operator&gt;.assignment,int Bird.RECT_DESCALE = 2)<SUB>38</SUB>> ]
+"1019" [label = <(&lt;operator&gt;.assignment,int Bird.ACC_FLAP = 14)<SUB>94</SUB>> ]
+"1019" [label = <(&lt;operator&gt;.assignment,int Bird.ACC_FLAP = 14)<SUB>94</SUB>> ]
+"1024" [label = <(&lt;operator&gt;.assignment,double Bird.ACC_Y = 2)<SUB>95</SUB>> ]
+"1024" [label = <(&lt;operator&gt;.assignment,double Bird.ACC_Y = 2)<SUB>95</SUB>> ]
+"1029" [label = <(&lt;operator&gt;.assignment,int Bird.MAX_VEL_Y = 15)<SUB>96</SUB>> ]
+"1029" [label = <(&lt;operator&gt;.assignment,int Bird.MAX_VEL_Y = 15)<SUB>96</SUB>> ]
+  "979" -> "1035"  [ label = "Bird.IMG_COUNT"] 
+  "979" -> "1035"  [ label = "int Bird.IMG_COUNT = 8"] 
+  "984" -> "1035"  [ label = "Bird.STATE_COUNT"] 
+  "984" -> "1035"  [ label = "int Bird.STATE_COUNT = 4"] 
+  "989" -> "1035"  [ label = "Bird.BIRD_NORMAL"] 
+  "989" -> "1035"  [ label = "int Bird.BIRD_NORMAL = 0"] 
+  "994" -> "1035"  [ label = "Bird.BIRD_UP"] 
+  "994" -> "1035"  [ label = "int Bird.BIRD_UP = 1"] 
+  "999" -> "1035"  [ label = "Bird.BIRD_FALL"] 
+  "999" -> "1035"  [ label = "int Bird.BIRD_FALL = 2"] 
+  "1004" -> "1035"  [ label = "Bird.BIRD_DEAD_FALL"] 
+  "1004" -> "1035"  [ label = "int Bird.BIRD_DEAD_FALL = 3"] 
+  "1009" -> "1035"  [ label = "Bird.BIRD_DEAD"] 
+  "1009" -> "1035"  [ label = "int Bird.BIRD_DEAD = 4"] 
+  "1014" -> "1035"  [ label = "Bird.RECT_DESCALE"] 
+  "1014" -> "1035"  [ label = "int Bird.RECT_DESCALE = 2"] 
+  "1019" -> "1035"  [ label = "Bird.ACC_FLAP"] 
+  "1019" -> "1035"  [ label = "int Bird.ACC_FLAP = 14"] 
+  "1024" -> "1035"  [ label = "Bird.ACC_Y"] 
+  "1024" -> "1035"  [ label = "double Bird.ACC_Y = 2"] 
+  "1029" -> "1035"  [ label = "Bird.MAX_VEL_Y"] 
+  "1029" -> "1035"  [ label = "int Bird.MAX_VEL_Y = 15"] 
+  "977" -> "979" 
+  "977" -> "984" 
+  "977" -> "989" 
+  "977" -> "994" 
+  "977" -> "999" 
+  "977" -> "1004" 
+  "977" -> "1009" 
+  "977" -> "1014" 
+  "977" -> "1019" 
+  "977" -> "1024" 
+  "977" -> "1029" 
+}

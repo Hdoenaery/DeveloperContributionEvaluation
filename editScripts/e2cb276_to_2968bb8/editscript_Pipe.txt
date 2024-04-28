@@ -1,0 +1,256 @@
+===
+insert-node
+---
+LineComment [5013,5025]
+to
+ClassOrInterfaceDeclaration [218,4621]
+at 39
+===
+insert-node
+---
+LineComment [5026,5055]
+to
+ClassOrInterfaceDeclaration [218,4621]
+at 40
+===
+insert-node
+---
+LineComment [5056,5075]
+to
+ClassOrInterfaceDeclaration [218,4621]
+at 41
+===
+insert-node
+---
+LineComment [5076,5081]
+to
+ClassOrInterfaceDeclaration [218,4621]
+at 42
+===
+insert-node
+---
+LineComment [5082,5084]
+to
+ClassOrInterfaceDeclaration [218,4621]
+at 43
+===
+insert-node
+---
+LineComment [5085,5114]
+to
+ClassOrInterfaceDeclaration [218,4621]
+at 44
+===
+insert-node
+---
+LineComment [5115,5134]
+to
+ClassOrInterfaceDeclaration [218,4621]
+at 45
+===
+insert-node
+---
+LineComment [5135,5140]
+to
+ClassOrInterfaceDeclaration [218,4621]
+at 46
+===
+insert-node
+---
+LineComment [5141,5143]
+to
+ClassOrInterfaceDeclaration [218,4621]
+at 47
+===
+insert-node
+---
+LineComment [5144,5179]
+to
+ClassOrInterfaceDeclaration [218,4621]
+at 48
+===
+insert-node
+---
+LineComment [5180,5205]
+to
+ClassOrInterfaceDeclaration [218,4621]
+at 49
+===
+insert-node
+---
+LineComment [5206,5211]
+to
+ClassOrInterfaceDeclaration [218,4621]
+at 50
+===
+insert-node
+---
+LineComment [5212,5214]
+to
+ClassOrInterfaceDeclaration [218,4621]
+at 51
+===
+insert-node
+---
+LineComment [5215,5254]
+to
+ClassOrInterfaceDeclaration [218,4621]
+at 52
+===
+insert-node
+---
+LineComment [5255,5284]
+to
+ClassOrInterfaceDeclaration [218,4621]
+at 53
+===
+insert-node
+---
+LineComment [5285,5290]
+to
+ClassOrInterfaceDeclaration [218,4621]
+at 54
+===
+insert-node
+---
+LineComment [5291,5293]
+to
+ClassOrInterfaceDeclaration [218,4621]
+at 55
+===
+insert-node
+---
+LineComment [5294,5339]
+to
+ClassOrInterfaceDeclaration [218,4621]
+at 56
+===
+insert-node
+---
+LineComment [5340,5371]
+to
+ClassOrInterfaceDeclaration [218,4621]
+at 57
+===
+insert-node
+---
+LineComment [5372,5377]
+to
+ClassOrInterfaceDeclaration [218,4621]
+at 58
+===
+update-node
+---
+SimpleName: MIN_SPEED [1232,1241]
+replace MIN_SPEED by SPEED
+===
+update-node
+---
+SimpleName: MIN_SPEED [1373,1382]
+replace MIN_SPEED by SPEED
+===
+update-node
+---
+SimpleName: loadBUfferedImage [473,490]
+replace loadBUfferedImage by loadBufferedImage
+===
+delete-tree
+---
+FieldDeclaration [1248,1286]
+    Modifier: public [1248,1254]
+    Modifier: static [1255,1261]
+    Modifier: final [1262,1267]
+    VariableDeclarator [1272,1285]
+        PrimitiveType: int [1268,1271]
+        SimpleName: MAX_SPEED [1272,1281]
+        IntegerLiteralExpr: 2 [1284,1285]
+===
+delete-tree
+---
+MethodDeclaration [4229,4271]
+    Modifier: public [4229,4235]
+    SimpleName: setX [4241,4245]
+    Parameter [4246,4251]
+        PrimitiveType: int [4246,4249]
+        SimpleName: x [4250,4251]
+    VoidType [4236,4240]
+    BlockStmt [4253,4271]
+        ExpressionStmt [4257,4268]
+            AssignExpr [4257,4267]
+                FieldAccessExpr [4257,4263]
+                    ThisExpr [4257,4261]
+                    SimpleName: x [4262,4263]
+                NameExpr [4266,4267]
+                    SimpleName: x [4266,4267]
+===
+delete-tree
+---
+MethodDeclaration [4274,4316]
+    Modifier: public [4274,4280]
+    SimpleName: setY [4286,4290]
+    Parameter [4291,4296]
+        PrimitiveType: int [4291,4294]
+        SimpleName: y [4295,4296]
+    VoidType [4281,4285]
+    BlockStmt [4298,4316]
+        ExpressionStmt [4302,4313]
+            AssignExpr [4302,4312]
+                FieldAccessExpr [4302,4308]
+                    ThisExpr [4302,4306]
+                    SimpleName: y [4307,4308]
+                NameExpr [4311,4312]
+                    SimpleName: y [4311,4312]
+===
+delete-tree
+---
+MethodDeclaration [4319,4373]
+    Modifier: public [4319,4325]
+    SimpleName: setType [4331,4338]
+    Parameter [4339,4347]
+        PrimitiveType: int [4339,4342]
+        SimpleName: type [4343,4347]
+    VoidType [4326,4330]
+    BlockStmt [4349,4373]
+        ExpressionStmt [4353,4370]
+            AssignExpr [4353,4369]
+                FieldAccessExpr [4353,4362]
+                    ThisExpr [4353,4357]
+                    SimpleName: type [4358,4362]
+                NameExpr [4365,4369]
+                    SimpleName: type [4365,4369]
+===
+delete-tree
+---
+MethodDeclaration [4376,4438]
+    Modifier: public [4376,4382]
+    SimpleName: setHeight [4388,4397]
+    Parameter [4398,4408]
+        PrimitiveType: int [4398,4401]
+        SimpleName: height [4402,4408]
+    VoidType [4383,4387]
+    BlockStmt [4410,4438]
+        ExpressionStmt [4414,4435]
+            AssignExpr [4414,4434]
+                FieldAccessExpr [4414,4425]
+                    ThisExpr [4414,4418]
+                    SimpleName: height [4419,4425]
+                NameExpr [4428,4434]
+                    SimpleName: height [4428,4434]
+===
+delete-tree
+---
+MethodDeclaration [4441,4511]
+    Modifier: public [4441,4447]
+    SimpleName: setVisible [4453,4463]
+    Parameter [4464,4479]
+        PrimitiveType: boolean [4464,4471]
+        SimpleName: visible [4472,4479]
+    VoidType [4448,4452]
+    BlockStmt [4481,4511]
+        ExpressionStmt [4485,4508]
+            AssignExpr [4485,4507]
+                FieldAccessExpr [4485,4497]
+                    ThisExpr [4485,4489]
+                    SimpleName: visible [4490,4497]
+                NameExpr [4500,4507]
+                    SimpleName: visible [4500,4507]

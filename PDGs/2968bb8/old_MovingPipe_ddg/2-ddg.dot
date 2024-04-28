@@ -1,0 +1,63 @@
+digraph "draw" {  
+"113" [label = <(METHOD,draw)<SUB>52</SUB>> ]
+"143" [label = <(METHOD_RETURN,void)<SUB>52</SUB>> ]
+"14" [label = <(PARAM,this)<SUB>52</SUB>> ]
+"114" [label = <(PARAM,Graphics g)<SUB>52</SUB>> ]
+"115" [label = <(PARAM,Bird bird)<SUB>52</SUB>> ]
+"140" [label = <(pipeLogic,this.pipeLogic())<SUB>69</SUB>> ]
+"118" [label = <(IDENTIFIER,type,switch(type))<SUB>53</SUB>> ]
+"136" [label = <(isDead,isDead())<SUB>66</SUB>> ]
+"140" [label = <(pipeLogic,this.pipeLogic())<SUB>69</SUB>> ]
+"121" [label = <(IDENTIFIER,TYPE_HOVER_HARD,&lt;empty&gt;)<SUB>54</SUB>> ]
+"122" [label = <(drawHoverHard,drawHoverHard(g))<SUB>55</SUB>> ]
+"126" [label = <(IDENTIFIER,TYPE_TOP_HARD,&lt;empty&gt;)<SUB>57</SUB>> ]
+"127" [label = <(drawTopHard,drawTopHard(g))<SUB>58</SUB>> ]
+"131" [label = <(IDENTIFIER,TYPE_BOTTOM_HARD,&lt;empty&gt;)<SUB>60</SUB>> ]
+"132" [label = <(drawBottomHard,drawBottomHard(g))<SUB>61</SUB>> ]
+"136" [label = <(isDead,isDead())<SUB>66</SUB>> ]
+"139" [label = <(RETURN,return;,return;)<SUB>67</SUB>> ]
+"122" [label = <(drawHoverHard,drawHoverHard(g))<SUB>55</SUB>> ]
+"122" [label = <(drawHoverHard,drawHoverHard(g))<SUB>55</SUB>> ]
+"127" [label = <(drawTopHard,drawTopHard(g))<SUB>58</SUB>> ]
+"127" [label = <(drawTopHard,drawTopHard(g))<SUB>58</SUB>> ]
+"132" [label = <(drawBottomHard,drawBottomHard(g))<SUB>61</SUB>> ]
+"132" [label = <(drawBottomHard,drawBottomHard(g))<SUB>61</SUB>> ]
+  "139" -> "143"  [ label = "&lt;RET&gt;"] 
+  "14" -> "143"  [ label = "this"] 
+  "114" -> "143"  [ label = "g"] 
+  "132" -> "143"  [ label = "this"] 
+  "132" -> "143"  [ label = "g"] 
+  "132" -> "143"  [ label = "drawBottomHard(g)"] 
+  "127" -> "143"  [ label = "this"] 
+  "127" -> "143"  [ label = "g"] 
+  "127" -> "143"  [ label = "drawTopHard(g)"] 
+  "122" -> "143"  [ label = "this"] 
+  "122" -> "143"  [ label = "g"] 
+  "122" -> "143"  [ label = "drawHoverHard(g)"] 
+  "136" -> "143"  [ label = "bird"] 
+  "136" -> "143"  [ label = "isDead()"] 
+  "113" -> "14" 
+  "113" -> "114" 
+  "113" -> "115" 
+  "113" -> "118" 
+  "14" -> "140"  [ label = "this"] 
+  "132" -> "140"  [ label = "this"] 
+  "127" -> "140"  [ label = "this"] 
+  "122" -> "140"  [ label = "this"] 
+  "113" -> "140" 
+  "113" -> "121" 
+  "113" -> "126" 
+  "113" -> "131" 
+  "115" -> "136"  [ label = "bird"] 
+  "113" -> "136" 
+  "113" -> "139" 
+  "14" -> "122"  [ label = "this"] 
+  "113" -> "122" 
+  "114" -> "122"  [ label = "g"] 
+  "14" -> "127"  [ label = "this"] 
+  "113" -> "127" 
+  "114" -> "127"  [ label = "g"] 
+  "14" -> "132"  [ label = "this"] 
+  "113" -> "132" 
+  "114" -> "132"  [ label = "g"] 
+}

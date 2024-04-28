@@ -1,0 +1,13 @@
+digraph "keyReleased" {  
+"812" [label = <(&lt;operator&gt;.equals,keycode == KeyEvent.VK_SPACE)<SUB>102</SUB>> ]
+"818" [label = <(keyReleased,this.outerClass.bird.keyReleased())<SUB>103</SUB>> ]
+"819" [label = <(&lt;operator&gt;.fieldAccess,this.outerClass.bird)<SUB>103</SUB>> ]
+"820" [label = <(&lt;operator&gt;.fieldAccess,this.outerClass)<SUB>103</SUB>> ]
+"823" [label = <(FIELD_IDENTIFIER,bird,bird)<SUB>103</SUB>> ]
+"822" [label = <(FIELD_IDENTIFIER,outerClass,outerClass)<SUB>103</SUB>> ]
+  "812" -> "819" 
+  "812" -> "818" 
+  "812" -> "820" 
+  "812" -> "823" 
+  "812" -> "822" 
+}

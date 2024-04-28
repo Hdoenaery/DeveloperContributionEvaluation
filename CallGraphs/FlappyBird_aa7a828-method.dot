@@ -1,0 +1,196 @@
+// 0:E:\Postgraduate_study\FlappyBird\src\com\bird\app\GameApp.java(com.bird.app.GameApp.main)
+// 1:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Bird.java(com.bird.main.Bird.Bird)
+// 2:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Bird.java(com.bird.main.Bird.birdDead)
+// 3:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Bird.java(com.bird.main.Bird.birdDown)
+// 4:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Bird.java(com.bird.main.Bird.birdFall)
+// 5:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Bird.java(com.bird.main.Bird.birdUp)
+// 6:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Bird.java(com.bird.main.Bird.draw)
+// 7:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Bird.java(com.bird.main.Bird.drawGameOver)
+// 8:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Bird.java(com.bird.main.Bird.drawScore)
+// 9:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Bird.java(com.bird.main.Bird.fly)
+// 10:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Bird.java(com.bird.main.Bird.getBirdRect)
+// 11:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Bird.java(com.bird.main.Bird.isDead)
+// 12:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Bird.java(com.bird.main.Bird.keyIsReleased)
+// 13:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Bird.java(com.bird.main.Bird.keyPressed)
+// 14:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Bird.java(com.bird.main.Bird.keyReleased)
+// 15:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Bird.java(com.bird.main.Bird.reset)
+// 16:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Cloud.java(com.bird.main.Cloud.Cloud)
+// 17:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Cloud.java(com.bird.main.Cloud.draw)
+// 18:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Cloud.java(com.bird.main.Cloud.isOutFrame)
+// 19:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameBackground.java(com.bird.main.GameBackground.GameBackground)
+// 20:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameBackground.java(com.bird.main.GameBackground.draw)
+// 21:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameBackground.java(com.bird.main.GameBackground.moveLogic)
+// 22:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameElementLayer.java(com.bird.main.GameElementLayer.GameElementLayer)
+// 23:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameElementLayer.java(com.bird.main.GameElementLayer.addHoverPipe)
+// 24:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameElementLayer.java(com.bird.main.GameElementLayer.addMovingHoverPipe)
+// 25:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameElementLayer.java(com.bird.main.GameElementLayer.addMovingNormalPipe)
+// 26:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameElementLayer.java(com.bird.main.GameElementLayer.addNormalPipe)
+// 27:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameElementLayer.java(com.bird.main.GameElementLayer.draw)
+// 28:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameElementLayer.java(com.bird.main.GameElementLayer.isCollideBird)
+// 29:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameElementLayer.java(com.bird.main.GameElementLayer.pipeBornLogic)
+// 30:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameElementLayer.java(com.bird.main.GameElementLayer.reset)
+// 31:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameForeground.java(com.bird.main.GameForeground.GameForeground)
+// 32:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameForeground.java(com.bird.main.GameForeground.cloudLogic)
+// 33:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameForeground.java(com.bird.main.GameForeground.draw)
+// 34:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameFrame.java(com.bird.main.GameFrame.BirdKeyListener.keyPressed)
+// 35:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameFrame.java(com.bird.main.GameFrame.BirdKeyListener.keyReleased)
+// 36:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameFrame.java(com.bird.main.GameFrame.BirdKeyListener.keyTyped)
+// 37:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameFrame.java(com.bird.main.GameFrame.BirdKeyListener.resetGame)
+// 38:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameFrame.java(com.bird.main.GameFrame.GameFrame)
+// 39:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameFrame.java(com.bird.main.GameFrame.initFrame)
+// 40:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameFrame.java(com.bird.main.GameFrame.initFrame.windowClosing)
+// 41:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameFrame.java(com.bird.main.GameFrame.initGame)
+// 42:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameFrame.java(com.bird.main.GameFrame.run)
+// 43:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameFrame.java(com.bird.main.GameFrame.setGameState)
+// 44:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameFrame.java(com.bird.main.GameFrame.update)
+// 45:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameReady.java(com.bird.main.GameReady.GameReady)
+// 46:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameReady.java(com.bird.main.GameReady.draw)
+// 47:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameScore.java(com.bird.main.GameScore.GameScore)
+// 48:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameScore.java(com.bird.main.GameScore.getBestScore)
+// 49:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameScore.java(com.bird.main.GameScore.getInstance)
+// 50:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameScore.java(com.bird.main.GameScore.getScore)
+// 51:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameScore.java(com.bird.main.GameScore.isSaveScore)
+// 52:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameScore.java(com.bird.main.GameScore.loadBestScore)
+// 53:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameScore.java(com.bird.main.GameScore.reset)
+// 54:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameScore.java(com.bird.main.GameScore.saveBestScore)
+// 55:E:\Postgraduate_study\FlappyBird\src\com\bird\main\GameScore.java(com.bird.main.GameScore.setScore)
+// 56:E:\Postgraduate_study\FlappyBird\src\com\bird\main\MovingPipe.java(com.bird.main.MovingPipe.MovingPipe)
+// 57:E:\Postgraduate_study\FlappyBird\src\com\bird\main\MovingPipe.java(com.bird.main.MovingPipe.draw)
+// 58:E:\Postgraduate_study\FlappyBird\src\com\bird\main\MovingPipe.java(com.bird.main.MovingPipe.drawBottomHard)
+// 59:E:\Postgraduate_study\FlappyBird\src\com\bird\main\MovingPipe.java(com.bird.main.MovingPipe.drawHoverHard)
+// 60:E:\Postgraduate_study\FlappyBird\src\com\bird\main\MovingPipe.java(com.bird.main.MovingPipe.drawTopHard)
+// 61:E:\Postgraduate_study\FlappyBird\src\com\bird\main\MovingPipe.java(com.bird.main.MovingPipe.pipeLogic)
+// 62:E:\Postgraduate_study\FlappyBird\src\com\bird\main\MovingPipe.java(com.bird.main.MovingPipe.setAttribute)
+// 63:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Pipe.java(com.bird.main.Pipe.Pipe)
+// 64:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Pipe.java(com.bird.main.Pipe.draw)
+// 65:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Pipe.java(com.bird.main.Pipe.drawBottomNormal)
+// 66:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Pipe.java(com.bird.main.Pipe.drawHoverNormal)
+// 67:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Pipe.java(com.bird.main.Pipe.drawTopNormal)
+// 68:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Pipe.java(com.bird.main.Pipe.getPipeRect)
+// 69:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Pipe.java(com.bird.main.Pipe.getX)
+// 70:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Pipe.java(com.bird.main.Pipe.isInFrame)
+// 71:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Pipe.java(com.bird.main.Pipe.isVisible)
+// 72:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Pipe.java(com.bird.main.Pipe.pipeLogic)
+// 73:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Pipe.java(com.bird.main.Pipe.setAttribute)
+// 74:E:\Postgraduate_study\FlappyBird\src\com\bird\main\Pipe.java(com.bird.main.Pipe.setRectangle)
+// 75:E:\Postgraduate_study\FlappyBird\src\com\bird\main\PipePool.java(com.bird.main.PipePool.get)
+// 76:E:\Postgraduate_study\FlappyBird\src\com\bird\main\PipePool.java(com.bird.main.PipePool.giveBack)
+// 77:E:\Postgraduate_study\FlappyBird\src\com\bird\util\GameUtil.java(com.bird.util.GameUtil.GameUtil)
+// 78:E:\Postgraduate_study\FlappyBird\src\com\bird\util\GameUtil.java(com.bird.util.GameUtil.drawTitle)
+// 79:E:\Postgraduate_study\FlappyBird\src\com\bird\util\GameUtil.java(com.bird.util.GameUtil.getRandomNumber)
+// 80:E:\Postgraduate_study\FlappyBird\src\com\bird\util\GameUtil.java(com.bird.util.GameUtil.getStringHeight)
+// 81:E:\Postgraduate_study\FlappyBird\src\com\bird\util\GameUtil.java(com.bird.util.GameUtil.getStringWidth)
+// 82:E:\Postgraduate_study\FlappyBird\src\com\bird\util\GameUtil.java(com.bird.util.GameUtil.isInProbability)
+// 83:E:\Postgraduate_study\FlappyBird\src\com\bird\util\GameUtil.java(com.bird.util.GameUtil.loadBufferedImage)
+// 84:E:\Postgraduate_study\FlappyBird\src\com\bird\util\MusicUtil.java(com.bird.util.MusicUtil.playCrash)
+// 85:E:\Postgraduate_study\FlappyBird\src\com\bird\util\MusicUtil.java(com.bird.util.MusicUtil.playFly)
+// 86:E:\Postgraduate_study\FlappyBird\src\com\bird\util\MusicUtil.java(com.bird.util.MusicUtil.playScore)
+digraph
+{
+	64 -> 65;
+	5 -> 85;
+	15 -> 53;
+	37 -> 15;
+	27 -> 29;
+	64 -> 72;
+	2 -> 51;
+	5 -> 12;
+	7 -> 81;
+	5 -> 13;
+	4 -> 84;
+	44 -> 46;
+	55 -> 11;
+	9 -> 2;
+	47 -> 52;
+	9 -> 4;
+	64 -> 66;
+	64 -> 67;
+	1 -> 49;
+	43 -> 38;
+	7 -> 78;
+	51 -> 50;
+	57 -> 58;
+	28 -> 68;
+	7 -> 80;
+	27 -> 28;
+	25 -> 73;
+	57 -> 60;
+	57 -> 61;
+	33 -> 32;
+	25 -> 79;
+	25 -> 75;
+	31 -> 83;
+	57 -> 59;
+	44 -> 6;
+	51 -> 54;
+	29 -> 49;
+	82 -> 79;
+	6 -> 7;
+	7 -> 50;
+	25 -> 69;
+	26 -> 79;
+	33 -> 17;
+	73 -> 74;
+	26 -> 75;
+	30 -> 76;
+	26 -> 73;
+	64 -> 11;
+	24 -> 69;
+	29 -> 11;
+	6 -> 8;
+	6 -> 9;
+	8 -> 50;
+	7 -> 48;
+	28 -> 10;
+	17 -> 11;
+	1 -> 83;
+	32 -> 82;
+	38 -> 41;
+	49 -> 47;
+	28 -> 11;
+	20 -> 11;
+	20 -> 21;
+	29 -> 26;
+	26 -> 69;
+	41 -> 43;
+	29 -> 25;
+	29 -> 24;
+	27 -> 71;
+	29 -> 23;
+	24 -> 75;
+	27 -> 76;
+	24 -> 73;
+	24 -> 79;
+	32 -> 79;
+	34 -> 5;
+	8 -> 81;
+	35 -> 14;
+	38 -> 39;
+	46 -> 78;
+	2 -> 83;
+	57 -> 11;
+	62 -> 74;
+	23 -> 69;
+	34 -> 3;
+	37 -> 30;
+	23 -> 79;
+	29 -> 79;
+	44 -> 20;
+	23 -> 75;
+	27 -> 64;
+	55 -> 86;
+	9 -> 43;
+	23 -> 73;
+	29 -> 73;
+	29 -> 70;
+	29 -> 75;
+	28 -> 4;
+	34 -> 37;
+	44 -> 27;
+	44 -> 33;
+	34 -> 43;
+	32 -> 18;
+	29 -> 82;
+	45 -> 83;
+	37 -> 43;
+}

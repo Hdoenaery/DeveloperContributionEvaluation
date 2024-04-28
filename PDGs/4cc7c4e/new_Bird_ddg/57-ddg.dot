@@ -1,0 +1,10 @@
+digraph "getBestScore" {  
+"1619" [label = <(METHOD,getBestScore)> ]
+"1623" [label = <(METHOD_RETURN,ANY)> ]
+"1620" [label = <(PARAM,p0)> ]
+"1621" [label = <(PARAM,p1)> ]
+  "1620" -> "1623"  [ label = "p0"] 
+  "1621" -> "1623"  [ label = "p1"] 
+  "1619" -> "1620" 
+  "1619" -> "1621" 
+}

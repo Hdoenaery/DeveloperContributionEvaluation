@@ -1,0 +1,14 @@
+digraph "&lt;clinit&gt;" {  
+"231" [label = <(METHOD,&lt;clinit&gt;)> ]
+"243" [label = <(METHOD_RETURN,void)> ]
+"233" [label = <(&lt;operator&gt;.assignment,GameScore GameScore.GAME_SCORE = new GameScore())<SUB>19</SUB>> ]
+"238" [label = <(&lt;init&gt;,new GameScore())<SUB>19</SUB>> ]
+"233" [label = <(&lt;operator&gt;.assignment,GameScore GameScore.GAME_SCORE = new GameScore())<SUB>19</SUB>> ]
+"233" [label = <(&lt;operator&gt;.assignment,GameScore GameScore.GAME_SCORE = new GameScore())<SUB>19</SUB>> ]
+"238" [label = <(&lt;init&gt;,new GameScore())<SUB>19</SUB>> ]
+  "233" -> "243"  [ label = "GameScore GameScore.GAME_SCORE = new GameScore()"] 
+  "238" -> "243"  [ label = "GameScore.GAME_SCORE"] 
+  "238" -> "243"  [ label = "new GameScore()"] 
+  "231" -> "233" 
+  "233" -> "238"  [ label = "GameScore.GAME_SCORE"] 
+}

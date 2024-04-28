@@ -1,0 +1,19 @@
+digraph "update" {  
+"935" [label = <(&lt;operator&gt;.equals,gameState == GAME_READY)<SUB>142</SUB>> ]
+"943" [label = <(draw,this.welcomeAnimation.draw(bufG))<SUB>143</SUB>> ]
+"944" [label = <(&lt;operator&gt;.fieldAccess,this.welcomeAnimation)<SUB>143</SUB>> ]
+"950" [label = <(draw,this.gameElement.draw(bufG, bird))<SUB>145</SUB>> ]
+"946" [label = <(FIELD_IDENTIFIER,welcomeAnimation,welcomeAnimation)<SUB>143</SUB>> ]
+"951" [label = <(&lt;operator&gt;.fieldAccess,this.gameElement)<SUB>145</SUB>> ]
+"955" [label = <(&lt;operator&gt;.fieldAccess,this.bird)<SUB>145</SUB>> ]
+"953" [label = <(FIELD_IDENTIFIER,gameElement,gameElement)<SUB>145</SUB>> ]
+"957" [label = <(FIELD_IDENTIFIER,bird,bird)<SUB>145</SUB>> ]
+  "935" -> "957" 
+  "935" -> "953" 
+  "935" -> "951" 
+  "935" -> "944" 
+  "935" -> "943" 
+  "935" -> "946" 
+  "935" -> "955" 
+  "935" -> "950" 
+}

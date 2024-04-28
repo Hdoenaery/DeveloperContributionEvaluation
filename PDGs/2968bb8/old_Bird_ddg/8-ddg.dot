@@ -1,0 +1,23 @@
+digraph "birdFall" {  
+"949" [label = <(METHOD,birdFall)<SUB>199</SUB>> ]
+"967" [label = <(METHOD_RETURN,void)<SUB>199</SUB>> ]
+"950" [label = <(PARAM,this)<SUB>199</SUB>> ]
+"952" [label = <(&lt;operator&gt;.assignment,this.state = STATE_FALL)<SUB>200</SUB>> ]
+"959" [label = <(playCrash,playCrash())<SUB>201</SUB>> ]
+"961" [label = <(endTiming,this.timing.endTiming())<SUB>203</SUB>> ]
+"952" [label = <(&lt;operator&gt;.assignment,this.state = STATE_FALL)<SUB>200</SUB>> ]
+"952" [label = <(&lt;operator&gt;.assignment,this.state = STATE_FALL)<SUB>200</SUB>> ]
+"959" [label = <(playCrash,playCrash())<SUB>201</SUB>> ]
+"961" [label = <(endTiming,this.timing.endTiming())<SUB>203</SUB>> ]
+  "950" -> "967"  [ label = "this"] 
+  "952" -> "967"  [ label = "this.state"] 
+  "952" -> "967"  [ label = "com.bird.main.Bird.STATE_FALL"] 
+  "952" -> "967"  [ label = "this.state = STATE_FALL"] 
+  "959" -> "967"  [ label = "playCrash()"] 
+  "961" -> "967"  [ label = "this.timing"] 
+  "961" -> "967"  [ label = "this.timing.endTiming()"] 
+  "959" -> "967"  [ label = "MusicUtil"] 
+  "949" -> "950" 
+  "949" -> "959" 
+  "950" -> "961"  [ label = "this"] 
+}
