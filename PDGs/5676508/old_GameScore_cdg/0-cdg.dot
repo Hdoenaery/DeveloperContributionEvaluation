@@ -1,5 +1,0 @@
-digraph "&lt;init&gt;" {  
-"51" [label = <(loadBestScore,this.loadBestScore())<SUB>27</SUB>> ]
-"54" [label = <(printStackTrace,e.printStackTrace())<SUB>29</SUB>> ]
-  "51" -> "54" 
-}

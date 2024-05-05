@@ -1,0 +1,833 @@
+===
+insert-tree
+---
+PackageDeclaration [0,35]
+    Name: game [8,34]
+        Name: flappybird [8,29]
+            Name: kingyu [8,18]
+                Name: com [8,11]
+to
+CompilationUnit [0,12]
+at 0
+===
+insert-tree
+---
+ImportDeclaration [37,100]
+    Name: FRAME_HEIGHT [51,99]
+        Name: Constant [51,86]
+            Name: util [51,77]
+                Name: flappybird [51,72]
+                    Name: kingyu [51,61]
+                        Name: com [51,54]
+to
+CompilationUnit [0,12]
+at 1
+===
+insert-tree
+---
+ImportDeclaration [101,163]
+    Name: FRAME_WIDTH [115,162]
+        Name: Constant [115,150]
+            Name: util [115,141]
+                Name: flappybird [115,136]
+                    Name: kingyu [115,125]
+                        Name: com [115,118]
+to
+CompilationUnit [0,12]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [164,222]
+    Name: FRAME_X [178,221]
+        Name: Constant [178,213]
+            Name: util [178,204]
+                Name: flappybird [178,199]
+                    Name: kingyu [178,188]
+                        Name: com [178,181]
+to
+CompilationUnit [0,12]
+at 3
+===
+insert-tree
+---
+ImportDeclaration [223,281]
+    Name: FRAME_Y [237,280]
+        Name: Constant [237,272]
+            Name: util [237,263]
+                Name: flappybird [237,258]
+                    Name: kingyu [237,247]
+                        Name: com [237,240]
+to
+CompilationUnit [0,12]
+at 4
+===
+insert-tree
+---
+ImportDeclaration [282,346]
+    Name: GAME_INTERVAL [296,345]
+        Name: Constant [296,331]
+            Name: util [296,322]
+                Name: flappybird [296,317]
+                    Name: kingyu [296,306]
+                        Name: com [296,299]
+to
+CompilationUnit [0,12]
+at 5
+===
+insert-tree
+---
+ImportDeclaration [347,408]
+    Name: GAME_TITLE [361,407]
+        Name: Constant [361,396]
+            Name: util [361,387]
+                Name: flappybird [361,382]
+                    Name: kingyu [361,371]
+                        Name: com [361,364]
+to
+CompilationUnit [0,12]
+at 6
+===
+insert-tree
+---
+ImportDeclaration [410,432]
+    Name: Frame [417,431]
+        Name: awt [417,425]
+            Name: java [417,421]
+to
+CompilationUnit [0,12]
+at 7
+===
+insert-tree
+---
+ImportDeclaration [433,458]
+    Name: Graphics [440,457]
+        Name: awt [440,448]
+            Name: java [440,444]
+to
+CompilationUnit [0,12]
+at 8
+===
+insert-tree
+---
+ImportDeclaration [459,490]
+    Name: KeyEvent [466,489]
+        Name: event [466,480]
+            Name: awt [466,474]
+                Name: java [466,470]
+to
+CompilationUnit [0,12]
+at 9
+===
+insert-tree
+---
+ImportDeclaration [491,525]
+    Name: KeyListener [498,524]
+        Name: event [498,512]
+            Name: awt [498,506]
+                Name: java [498,502]
+to
+CompilationUnit [0,12]
+at 10
+===
+insert-tree
+---
+ImportDeclaration [526,562]
+    Name: WindowAdapter [533,561]
+        Name: event [533,547]
+            Name: awt [533,541]
+                Name: java [533,537]
+to
+CompilationUnit [0,12]
+at 11
+===
+insert-tree
+---
+ImportDeclaration [563,597]
+    Name: WindowEvent [570,596]
+        Name: event [570,584]
+            Name: awt [570,578]
+                Name: java [570,574]
+to
+CompilationUnit [0,12]
+at 12
+===
+insert-tree
+---
+ImportDeclaration [598,634]
+    Name: BufferedImage [605,633]
+        Name: image [605,619]
+            Name: awt [605,613]
+                Name: java [605,609]
+to
+CompilationUnit [0,12]
+at 13
+===
+insert-node
+---
+JavadocComment [637,686]
+to
+CompilationUnit [0,12]
+at 15
+===
+insert-node
+---
+Modifier: public [688,694]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 0
+===
+insert-tree
+---
+FieldDeclaration [746,794]
+    Modifier: private [746,753]
+    Modifier: static [754,760]
+    Modifier: final [761,766]
+    VariableDeclarator [772,793]
+        PrimitiveType: long [767,771]
+        SimpleName: serialVersionUID [772,788]
+        LongLiteralExpr: 1L [791,793]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 2
+===
+insert-tree
+---
+FieldDeclaration [812,841]
+    Modifier: private [812,819]
+    Modifier: static [820,826]
+    VariableDeclarator [831,840]
+        PrimitiveType: int [827,830]
+        SimpleName: gameState [831,840]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 3
+===
+insert-tree
+---
+FieldDeclaration [854,893]
+    Modifier: public [854,860]
+    Modifier: static [861,867]
+    Modifier: final [868,873]
+    VariableDeclarator [878,892]
+        PrimitiveType: int [874,877]
+        SimpleName: GAME_READY [878,888]
+        IntegerLiteralExpr: 0 [891,892]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 4
+===
+insert-tree
+---
+FieldDeclaration [907,946]
+    Modifier: public [907,913]
+    Modifier: static [914,920]
+    Modifier: final [921,926]
+    VariableDeclarator [931,945]
+        PrimitiveType: int [927,930]
+        SimpleName: GAME_START [931,941]
+        IntegerLiteralExpr: 1 [944,945]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 5
+===
+insert-tree
+---
+FieldDeclaration [959,998]
+    Modifier: public [959,965]
+    Modifier: static [966,972]
+    Modifier: final [973,978]
+    VariableDeclarator [983,997]
+        PrimitiveType: int [979,982]
+        SimpleName: STATE_OVER [983,993]
+        IntegerLiteralExpr: 2 [996,997]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 6
+===
+insert-tree
+---
+FieldDeclaration [1012,1046]
+    Modifier: private [1012,1019]
+    VariableDeclarator [1035,1045]
+        ClassOrInterfaceType [1020,1034]
+            SimpleName: GameBackground [1020,1034]
+        SimpleName: background [1035,1045]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 7
+===
+insert-tree
+---
+FieldDeclaration [1061,1095]
+    Modifier: private [1061,1068]
+    VariableDeclarator [1084,1094]
+        ClassOrInterfaceType [1069,1083]
+            SimpleName: GameForeground [1069,1083]
+        SimpleName: foreground [1084,1094]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 8
+===
+insert-tree
+---
+FieldDeclaration [1110,1128]
+    Modifier: private [1110,1117]
+    VariableDeclarator [1123,1127]
+        ClassOrInterfaceType [1118,1122]
+            SimpleName: Bird [1118,1122]
+        SimpleName: bird [1123,1127]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 9
+===
+insert-tree
+---
+FieldDeclaration [1141,1178]
+    Modifier: private [1141,1148]
+    VariableDeclarator [1166,1177]
+        ClassOrInterfaceType [1149,1165]
+            SimpleName: GameElementLayer [1149,1165]
+        SimpleName: gameElement [1166,1177]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 10
+===
+insert-tree
+---
+FieldDeclaration [1193,1235]
+    Modifier: private [1193,1200]
+    VariableDeclarator [1218,1234]
+        ClassOrInterfaceType [1201,1217]
+            SimpleName: WelcomeAnimation [1201,1217]
+        SimpleName: welcomeAnimation [1218,1234]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 11
+===
+insert-tree
+---
+ConstructorDeclaration [1269,1397]
+    Modifier: public [1269,1275]
+    SimpleName: Game [1276,1280]
+    BlockStmt [1283,1397]
+        ExpressionStmt [1293,1305]
+            MethodCallExpr [1293,1304]
+                SimpleName: initFrame [1293,1302]
+        ExpressionStmt [1325,1342]
+            MethodCallExpr [1325,1341]
+                SimpleName: setVisible [1325,1335]
+                BooleanLiteralExpr: true [1336,1340]
+        ExpressionStmt [1369,1380]
+            MethodCallExpr [1369,1379]
+                SimpleName: initGame [1369,1377]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 12
+===
+insert-tree
+---
+MethodDeclaration [1418,1934]
+    Modifier: private [1418,1425]
+    SimpleName: initFrame [1431,1440]
+    VoidType [1426,1430]
+    BlockStmt [1443,1934]
+        ExpressionStmt [1453,1488]
+            MethodCallExpr [1453,1487]
+                SimpleName: setSize [1453,1460]
+                NameExpr [1461,1472]
+                    SimpleName: FRAME_WIDTH [1461,1472]
+                NameExpr [1474,1486]
+                    SimpleName: FRAME_HEIGHT [1474,1486]
+        ExpressionStmt [1507,1528]
+            MethodCallExpr [1507,1527]
+                SimpleName: setTitle [1507,1515]
+                NameExpr [1516,1526]
+                    SimpleName: GAME_TITLE [1516,1526]
+        ExpressionStmt [1547,1577]
+            MethodCallExpr [1547,1576]
+                SimpleName: setLocation [1547,1558]
+                NameExpr [1559,1566]
+                    SimpleName: FRAME_X [1559,1566]
+                NameExpr [1568,1575]
+                    SimpleName: FRAME_Y [1568,1575]
+        ExpressionStmt [1596,1616]
+            MethodCallExpr [1596,1615]
+                SimpleName: setResizable [1596,1608]
+                BooleanLiteralExpr: false [1609,1614]
+        ExpressionStmt [1689,1871]
+            MethodCallExpr [1689,1870]
+                SimpleName: addWindowListener [1689,1706]
+                ObjectCreationExpr [1707,1869]
+                    ClassOrInterfaceType [1711,1724]
+                        SimpleName: WindowAdapter [1711,1724]
+                    MethodDeclaration [1741,1859]
+                        MarkerAnnotationExpr [1741,1750]
+                            Name: Override [1742,1750]
+                        Modifier: public [1763,1769]
+                        SimpleName: windowClosing [1775,1788]
+                        Parameter [1789,1802]
+                            ClassOrInterfaceType [1789,1800]
+                                SimpleName: WindowEvent [1789,1800]
+                            SimpleName: e [1801,1802]
+                        VoidType [1770,1774]
+                        BlockStmt [1804,1859]
+                            ExpressionStmt [1822,1837]
+                                MethodCallExpr [1822,1836]
+                                    NameExpr [1822,1828]
+                                        SimpleName: System [1822,1828]
+                                    SimpleName: exit [1829,1833]
+                                    IntegerLiteralExpr: 0 [1834,1835]
+        ExpressionStmt [1880,1918]
+            MethodCallExpr [1880,1917]
+                SimpleName: addKeyListener [1880,1894]
+                ObjectCreationExpr [1895,1916]
+                    ClassOrInterfaceType [1899,1914]
+                        SimpleName: BirdKeyListener [1899,1914]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 13
+===
+insert-tree
+---
+ClassOrInterfaceDeclaration [1963,3451]
+    SimpleName: BirdKeyListener [1969,1984]
+    MethodDeclaration [2051,3008]
+        Modifier: public [2051,2057]
+        SimpleName: keyPressed [2063,2073]
+        Parameter [2074,2084]
+            ClassOrInterfaceType [2074,2082]
+                SimpleName: KeyEvent [2074,2082]
+            SimpleName: e [2083,2084]
+        VoidType [2058,2062]
+        BlockStmt [2086,3008]
+            ExpressionStmt [2100,2129]
+                VariableDeclarationExpr [2100,2128]
+                    VariableDeclarator [2104,2128]
+                        PrimitiveType: int [2100,2103]
+                        SimpleName: keycode [2104,2111]
+                        MethodCallExpr [2114,2128]
+                            NameExpr [2114,2115]
+                                SimpleName: e [2114,2115]
+                            SimpleName: getKeyChar [2116,2126]
+            SwitchStmt [2142,2998]
+                NameExpr [2150,2159]
+                    SimpleName: gameState [2150,2159]
+                SwitchEntry [2179,2496]
+                    NameExpr [2184,2194]
+                        SimpleName: GAME_READY [2184,2194]
+                    IfStmt [2216,2469]
+                        BinaryExpr [2220,2248]
+                            NameExpr [2220,2227]
+                                SimpleName: keycode [2220,2227]
+                            FieldAccessExpr [2231,2248]
+                                NameExpr [2231,2239]
+                                    SimpleName: KeyEvent [2231,2239]
+                                SimpleName: VK_SPACE [2240,2248]
+                        BlockStmt [2250,2469]
+                            ExpressionStmt [2330,2346]
+                                MethodCallExpr [2330,2345]
+                                    NameExpr [2330,2334]
+                                        SimpleName: bird [2330,2334]
+                                    SimpleName: birdFlap [2335,2343]
+                            ExpressionStmt [2371,2387]
+                                MethodCallExpr [2371,2386]
+                                    NameExpr [2371,2375]
+                                        SimpleName: bird [2371,2375]
+                                    SimpleName: birdFall [2376,2384]
+                            ExpressionStmt [2412,2437]
+                                MethodCallExpr [2412,2436]
+                                    SimpleName: setGameState [2412,2424]
+                                    NameExpr [2425,2435]
+                                        SimpleName: GAME_START [2425,2435]
+                    BreakStmt [2490,2496]
+                SwitchEntry [2513,2766]
+                    NameExpr [2518,2528]
+                        SimpleName: GAME_START [2518,2528]
+                    IfStmt [2550,2739]
+                        BinaryExpr [2554,2582]
+                            NameExpr [2554,2561]
+                                SimpleName: keycode [2554,2561]
+                            FieldAccessExpr [2565,2582]
+                                NameExpr [2565,2573]
+                                    SimpleName: KeyEvent [2565,2573]
+                                SimpleName: VK_SPACE [2574,2582]
+                        BlockStmt [2584,2739]
+                            ExpressionStmt [2660,2676]
+                                MethodCallExpr [2660,2675]
+                                    NameExpr [2660,2664]
+                                        SimpleName: bird [2660,2664]
+                                    SimpleName: birdFlap [2665,2673]
+                            ExpressionStmt [2701,2717]
+                                MethodCallExpr [2701,2716]
+                                    NameExpr [2701,2705]
+                                        SimpleName: bird [2701,2705]
+                                    SimpleName: birdFall [2706,2714]
+                    BreakStmt [2760,2766]
+                SwitchEntry [2783,2984]
+                    NameExpr [2788,2798]
+                        SimpleName: STATE_OVER [2788,2798]
+                    IfStmt [2820,2957]
+                        BinaryExpr [2824,2852]
+                            NameExpr [2824,2831]
+                                SimpleName: keycode [2824,2831]
+                            FieldAccessExpr [2835,2852]
+                                NameExpr [2835,2843]
+                                    SimpleName: KeyEvent [2835,2843]
+                                SimpleName: VK_SPACE [2844,2852]
+                        BlockStmt [2854,2957]
+                            ExpressionStmt [2923,2935]
+                                MethodCallExpr [2923,2934]
+                                    SimpleName: resetGame [2923,2932]
+                    BreakStmt [2978,2984]
+    MethodDeclaration [3036,3169]
+        Modifier: private [3036,3043]
+        SimpleName: resetGame [3049,3058]
+        VoidType [3044,3048]
+        BlockStmt [3061,3169]
+            ExpressionStmt [3075,3100]
+                MethodCallExpr [3075,3099]
+                    SimpleName: setGameState [3075,3087]
+                    NameExpr [3088,3098]
+                        SimpleName: GAME_READY [3088,3098]
+            ExpressionStmt [3113,3133]
+                MethodCallExpr [3113,3132]
+                    NameExpr [3113,3124]
+                        SimpleName: gameElement [3113,3124]
+                    SimpleName: reset [3125,3130]
+            ExpressionStmt [3146,3159]
+                MethodCallExpr [3146,3158]
+                    NameExpr [3146,3150]
+                        SimpleName: bird [3146,3150]
+                    SimpleName: reset [3151,3156]
+    MethodDeclaration [3204,3391]
+        Modifier: public [3204,3210]
+        SimpleName: keyReleased [3216,3227]
+        Parameter [3228,3238]
+            ClassOrInterfaceType [3228,3236]
+                SimpleName: KeyEvent [3228,3236]
+            SimpleName: e [3237,3238]
+        VoidType [3211,3215]
+        BlockStmt [3240,3391]
+            ExpressionStmt [3254,3283]
+                VariableDeclarationExpr [3254,3282]
+                    VariableDeclarator [3258,3282]
+                        PrimitiveType: int [3254,3257]
+                        SimpleName: keycode [3258,3265]
+                        MethodCallExpr [3268,3282]
+                            NameExpr [3268,3269]
+                                SimpleName: e [3268,3269]
+                            SimpleName: getKeyChar [3270,3280]
+            IfStmt [3296,3381]
+                BinaryExpr [3300,3328]
+                    NameExpr [3300,3307]
+                        SimpleName: keycode [3300,3307]
+                    FieldAccessExpr [3311,3328]
+                        NameExpr [3311,3319]
+                            SimpleName: KeyEvent [3311,3319]
+                        SimpleName: VK_SPACE [3320,3328]
+                BlockStmt [3330,3381]
+                    ExpressionStmt [3348,3367]
+                        MethodCallExpr [3348,3366]
+                            NameExpr [3348,3352]
+                                SimpleName: bird [3348,3352]
+                            SimpleName: keyReleased [3353,3364]
+    MethodDeclaration [3401,3445]
+        Modifier: public [3401,3407]
+        SimpleName: keyTyped [3413,3421]
+        Parameter [3422,3432]
+            ClassOrInterfaceType [3422,3430]
+                SimpleName: KeyEvent [3422,3430]
+            SimpleName: e [3431,3432]
+        VoidType [3408,3412]
+        BlockStmt [3434,3445]
+    ClassOrInterfaceType [1996,2007]
+        SimpleName: KeyListener [1996,2007]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 14
+===
+insert-tree
+---
+MethodDeclaration [3476,3809]
+    Modifier: private [3476,3483]
+    SimpleName: initGame [3489,3497]
+    VoidType [3484,3488]
+    BlockStmt [3500,3809]
+        ExpressionStmt [3510,3544]
+            AssignExpr [3510,3543]
+                NameExpr [3510,3520]
+                    SimpleName: background [3510,3520]
+                ObjectCreationExpr [3523,3543]
+                    ClassOrInterfaceType [3527,3541]
+                        SimpleName: GameBackground [3527,3541]
+        ExpressionStmt [3553,3590]
+            AssignExpr [3553,3589]
+                NameExpr [3553,3564]
+                    SimpleName: gameElement [3553,3564]
+                ObjectCreationExpr [3567,3589]
+                    ClassOrInterfaceType [3571,3587]
+                        SimpleName: GameElementLayer [3571,3587]
+        ExpressionStmt [3599,3633]
+            AssignExpr [3599,3632]
+                NameExpr [3599,3609]
+                    SimpleName: foreground [3599,3609]
+                ObjectCreationExpr [3612,3632]
+                    ClassOrInterfaceType [3616,3630]
+                        SimpleName: GameForeground [3616,3630]
+        ExpressionStmt [3642,3684]
+            AssignExpr [3642,3683]
+                NameExpr [3642,3658]
+                    SimpleName: welcomeAnimation [3642,3658]
+                ObjectCreationExpr [3661,3683]
+                    ClassOrInterfaceType [3665,3681]
+                        SimpleName: WelcomeAnimation [3665,3681]
+        ExpressionStmt [3693,3711]
+            AssignExpr [3693,3710]
+                NameExpr [3693,3697]
+                    SimpleName: bird [3693,3697]
+                ObjectCreationExpr [3700,3710]
+                    ClassOrInterfaceType [3704,3708]
+                        SimpleName: Bird [3704,3708]
+        ExpressionStmt [3720,3745]
+            MethodCallExpr [3720,3744]
+                SimpleName: setGameState [3720,3732]
+                NameExpr [3733,3743]
+                    SimpleName: GAME_READY [3733,3743]
+        ExpressionStmt [3778,3803]
+            MethodCallExpr [3778,3802]
+                ObjectCreationExpr [3778,3794]
+                    ClassOrInterfaceType [3782,3788]
+                        SimpleName: Thread [3782,3788]
+                    ThisExpr [3789,3793]
+                SimpleName: start [3795,3800]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 15
+===
+insert-tree
+---
+FieldDeclaration [3990,4103]
+    Modifier: private [3990,3997]
+    Modifier: final [3998,4003]
+    VariableDeclarator [4018,4102]
+        ClassOrInterfaceType [4004,4017]
+            SimpleName: BufferedImage [4004,4017]
+        SimpleName: bufImg [4018,4024]
+        ObjectCreationExpr [4027,4102]
+            ClassOrInterfaceType [4031,4044]
+                SimpleName: BufferedImage [4031,4044]
+            NameExpr [4045,4056]
+                SimpleName: FRAME_WIDTH [4045,4056]
+            NameExpr [4058,4070]
+                SimpleName: FRAME_HEIGHT [4058,4070]
+            FieldAccessExpr [4072,4101]
+                NameExpr [4072,4085]
+                    SimpleName: BufferedImage [4072,4085]
+                SimpleName: TYPE_4BYTE_ABGR [4086,4101]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 16
+===
+insert-tree
+---
+MethodDeclaration [4238,4728]
+    Modifier: public [4238,4244]
+    SimpleName: update [4250,4256]
+    Parameter [4257,4267]
+        ClassOrInterfaceType [4257,4265]
+            SimpleName: Graphics [4257,4265]
+        SimpleName: g [4266,4267]
+    VoidType [4245,4249]
+    BlockStmt [4269,4728]
+        ExpressionStmt [4279,4316]
+            VariableDeclarationExpr [4279,4315]
+                VariableDeclarator [4288,4315]
+                    ClassOrInterfaceType [4279,4287]
+                        SimpleName: Graphics [4279,4287]
+                    SimpleName: bufG [4288,4292]
+                    MethodCallExpr [4295,4315]
+                        NameExpr [4295,4301]
+                            SimpleName: bufImg [4295,4301]
+                        SimpleName: getGraphics [4302,4313]
+        ExpressionStmt [4367,4395]
+            MethodCallExpr [4367,4394]
+                NameExpr [4367,4377]
+                    SimpleName: background [4367,4377]
+                SimpleName: draw [4378,4382]
+                NameExpr [4383,4387]
+                    SimpleName: bufG [4383,4387]
+                NameExpr [4389,4393]
+                    SimpleName: bird [4389,4393]
+        ExpressionStmt [4411,4439]
+            MethodCallExpr [4411,4438]
+                NameExpr [4411,4421]
+                    SimpleName: foreground [4411,4421]
+                SimpleName: draw [4422,4426]
+                NameExpr [4427,4431]
+                    SimpleName: bufG [4427,4431]
+                NameExpr [4433,4437]
+                    SimpleName: bird [4433,4437]
+        IfStmt [4469,4635]
+            BinaryExpr [4473,4496]
+                NameExpr [4473,4482]
+                    SimpleName: gameState [4473,4482]
+                NameExpr [4486,4496]
+                    SimpleName: GAME_READY [4486,4496]
+            BlockStmt [4498,4559]
+                ExpressionStmt [4521,4549]
+                    MethodCallExpr [4521,4548]
+                        NameExpr [4521,4537]
+                            SimpleName: welcomeAnimation [4521,4537]
+                        SimpleName: draw [4538,4542]
+                        NameExpr [4543,4547]
+                            SimpleName: bufG [4543,4547]
+            BlockStmt [4565,4635]
+                ExpressionStmt [4587,4616]
+                    MethodCallExpr [4587,4615]
+                        NameExpr [4587,4598]
+                            SimpleName: gameElement [4587,4598]
+                        SimpleName: draw [4599,4603]
+                        NameExpr [4604,4608]
+                            SimpleName: bufG [4604,4608]
+                        NameExpr [4610,4614]
+                            SimpleName: bird [4610,4614]
+                LineComment [4567,4574]
+        ExpressionStmt [4644,4660]
+            MethodCallExpr [4644,4659]
+                NameExpr [4644,4648]
+                    SimpleName: bird [4644,4648]
+                SimpleName: draw [4649,4653]
+                NameExpr [4654,4658]
+                    SimpleName: bufG [4654,4658]
+        ExpressionStmt [4674,4706]
+            MethodCallExpr [4674,4705]
+                NameExpr [4674,4675]
+                    SimpleName: g [4674,4675]
+                SimpleName: drawImage [4676,4685]
+                NameExpr [4686,4692]
+                    SimpleName: bufImg [4686,4692]
+                IntegerLiteralExpr: 0 [4694,4695]
+                IntegerLiteralExpr: 0 [4697,4698]
+                NullLiteralExpr [4700,4704]
+        LineComment [4335,4357]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 17
+===
+insert-tree
+---
+MethodDeclaration [4734,5069]
+    SingleMemberAnnotationExpr [4734,4776]
+        Name: SuppressWarnings [4735,4751]
+        StringLiteralExpr: InfiniteLoopStatement [4752,4775]
+    MarkerAnnotationExpr [4781,4790]
+        Name: Override [4782,4790]
+    Modifier: public [4795,4801]
+    SimpleName: run [4807,4810]
+    VoidType [4802,4806]
+    BlockStmt [4813,5069]
+        WhileStmt [4823,5063]
+            BooleanLiteralExpr: true [4830,4834]
+            BlockStmt [4836,5063]
+                ExpressionStmt [4850,4860]
+                    MethodCallExpr [4850,4859]
+                        SimpleName: repaint [4850,4857]
+                TryStmt [4905,5053]
+                    BlockStmt [4909,4969]
+                        ExpressionStmt [4927,4955]
+                            MethodCallExpr [4927,4954]
+                                NameExpr [4927,4933]
+                                    SimpleName: Thread [4927,4933]
+                                SimpleName: sleep [4934,4939]
+                                NameExpr [4940,4953]
+                                    SimpleName: GAME_INTERVAL [4940,4953]
+                    CatchClause [4970,5053]
+                        Parameter [4977,4999]
+                            ClassOrInterfaceType [4977,4997]
+                                SimpleName: InterruptedException [4977,4997]
+                            SimpleName: e [4998,4999]
+                        BlockStmt [5001,5053]
+                            ExpressionStmt [5019,5039]
+                                MethodCallExpr [5019,5038]
+                                    NameExpr [5019,5020]
+                                        SimpleName: e [5019,5020]
+                                    SimpleName: printStackTrace [5021,5036]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 18
+===
+insert-tree
+---
+MethodDeclaration [5075,5127]
+    Modifier: public [5075,5081]
+    Modifier: static [5082,5088]
+    SimpleName: getGameState [5093,5105]
+    PrimitiveType: int [5089,5092]
+    BlockStmt [5107,5127]
+        ReturnStmt [5109,5126]
+            NameExpr [5116,5125]
+                SimpleName: gameState [5116,5125]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 19
+===
+insert-tree
+---
+MethodDeclaration [5134,5224]
+    Modifier: public [5134,5140]
+    Modifier: static [5141,5147]
+    SimpleName: setGameState [5153,5165]
+    Parameter [5166,5179]
+        PrimitiveType: int [5166,5169]
+        SimpleName: gameState [5170,5179]
+    VoidType [5148,5152]
+    BlockStmt [5181,5224]
+        ExpressionStmt [5191,5218]
+            AssignExpr [5191,5217]
+                FieldAccessExpr [5191,5205]
+                    NameExpr [5191,5195]
+                        SimpleName: Game [5191,5195]
+                    SimpleName: gameState [5196,5205]
+                NameExpr [5208,5217]
+                    SimpleName: gameState [5208,5217]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 20
+===
+insert-tree
+---
+ClassOrInterfaceType [714,719]
+    SimpleName: Frame [714,719]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 21
+===
+insert-tree
+---
+ClassOrInterfaceType [731,739]
+    SimpleName: Runnable [731,739]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 22
+===
+insert-node
+---
+LineComment [3815,3852]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 23
+===
+insert-node
+---
+LineComment [3857,3883]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 24
+===
+insert-node
+---
+LineComment [3888,3934]
+to
+ClassOrInterfaceDeclaration [0,12]
+at 25

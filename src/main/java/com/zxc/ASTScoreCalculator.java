@@ -4,10 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -96,6 +93,52 @@ class IntervalComparator implements Comparator<Interval> {
         }
     }
 }
+class ClassNameAndInterval {
+    private String className;
+    private int startPos;
+    private int endPos;
+
+    // Constructor
+    public ClassNameAndInterval(String className, int startPos, int endPos) {
+        this.className = className;
+        this.startPos = startPos;
+        this.endPos = endPos;
+    }
+
+    // Getters and Setters
+    public String getClassName() {
+        return className;
+    }
+
+    public void setClassName(String className) {
+        this.className = className;
+    }
+
+    public int getStartPos() {
+        return startPos;
+    }
+
+    public void setStartPos(int startPos) {
+        this.startPos = startPos;
+    }
+
+    public int getEndPos() {
+        return endPos;
+    }
+
+    public void setEndPos(int endPos) {
+        this.endPos = endPos;
+    }
+
+    @Override
+    public String toString() {
+        return "ClassNameAndInterval{" +
+                "className='" + className + '\'' +
+                ", startPos=" + startPos +
+                ", endPos=" + endPos +
+                '}';
+    }
+}
 
 public class ASTScoreCalculator {
 
@@ -137,21 +180,45 @@ public class ASTScoreCalculator {
         if (files != null) {
             for (File file : files) {
                 if (file.isFile()) { // 确保是文件而不是文件夹
-                    String className = file.getName().replace("editscript_", "").replace(".txt", "");
-//                    System.out.println("\n@@@className = " + className);
-                    String astFilePath = astFolder + className + "_AST.txt";
+                    String publicClassName = file.getName().replace("editscript_", "").replace(".txt", "");
+//                    System.out.println("\n@@@publicClassName = " + publicClassName);
+                    String astFilePath = astFolder + publicClassName + "_AST.txt";
                     TreeMap<Interval, String> intervalToMethodName = new TreeMap<>();//以method的区间来映射方法名
 
                     // 读取ast文件，提取出每个方法对应的位置
                     try (BufferedReader br = new BufferedReader(new FileReader(astFilePath))) {
                         String line;
                         // 匹配以MethodDeclaration或ConstructorDeclaration开头的行
+                        Pattern classPattern = Pattern.compile("(ClassOrInterfaceDeclaration) \\[(\\d+),(\\d+)\\]");
+                        // 匹配以MethodDeclaration或ConstructorDeclaration开头的行
                         Pattern declarationPattern = Pattern.compile("(MethodDeclaration|ConstructorDeclaration) \\[(\\d+),(\\d+)\\]");
                         // 匹配下下行的SimpleName
                         Pattern namePattern = Pattern.compile("SimpleName: (\\w+)");
 
+                        List<ClassNameAndInterval> className = new ArrayList<>();
                         String methodName = null;
                         while ((line = br.readLine()) != null) {
+                            Matcher classMatcher = classPattern.matcher(line);//先尝试匹配类名
+                            if (classMatcher.find()) {
+                                // 如果匹配到了声明行，提取[startPos, endPos]
+                                int classStartPos = Integer.parseInt(classMatcher.group(2));
+                                int classEndPos = Integer.parseInt(classMatcher.group(3));
+//                                System.out.println("Start Pos: " + startPos + ", End Pos: " + endPos);
+
+                                // 一直往下读直到找到类名
+                                while (true) {
+                                    line = br.readLine();
+                                    if (line == null) {
+                                        break; // 文件已经结束
+                                    }
+                                    Matcher nameMatcher = namePattern.matcher(line);
+                                    if (nameMatcher.find()) {
+                                        // 如果匹配到了SimpleName，提取methodName
+                                        className.add(new ClassNameAndInterval(nameMatcher.group(1), classStartPos, classEndPos));
+                                        break; // 找到SimpleName后结束循环
+                                    }
+                                }
+                            }
                             Matcher declarationMatcher = declarationPattern.matcher(line);
                             if (declarationMatcher.find()) {
                                 // 如果匹配到了声明行，提取[startPos, endPos]
@@ -169,7 +236,14 @@ public class ASTScoreCalculator {
                                     if (nameMatcher.find()) {
                                         // 如果匹配到了SimpleName，提取methodName
                                         methodName = nameMatcher.group(1);
-                                        intervalToMethodName.put(new Interval(startPos, endPos), className + "::" + methodName);
+                                        while (className.get(className.size() - 1).getEndPos() < startPos)
+                                            className.remove(className.size() - 1);
+                                        String completeName = "";
+                                        for(ClassNameAndInterval i:className) {
+                                            completeName += i.getClassName() + "::";
+                                        }
+//                                        System.out.println("completeName = " + completeName);
+                                        intervalToMethodName.put(new Interval(startPos, endPos), completeName + methodName);
                                         break; // 找到SimpleName后结束循环
                                     }
                                 }

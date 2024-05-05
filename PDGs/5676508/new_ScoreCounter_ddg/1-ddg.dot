@@ -1,7 +1,0 @@
-digraph "getInstance" {  
-"57" [label = <(METHOD,getInstance)<SUB>33</SUB>> ]
-"65" [label = <(METHOD_RETURN,com.kingyu.flappybird.game.ScoreCounter)<SUB>33</SUB>> ]
-"59" [label = <(RETURN,return scoreCounter;,return scoreCounter;)<SUB>34</SUB>> ]
-  "59" -> "65"  [ label = "&lt;RET&gt;"] 
-  "57" -> "59" 
-}

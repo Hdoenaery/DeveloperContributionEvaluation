@@ -58,16 +58,16 @@ def getChangedMethods(repo_path, old_commit, new_commit):
                     PCom[method.long_name] = calculate_percentage_of_comments(extracted_code)
 
                     # 将该方法内容保存到本地
-                    file_path = 'DeveloperContributionEvaluation/methodsContent/' + old_commit[0:6] + \
-                                '_to_' + new_commit[0:6] + '/' + str(method.name.replace("::", "_")) + '_new.java'
+                    file_path = 'DeveloperContributionEvaluation/changedMethodsContent/' + old_commit[0:7] + \
+                                '_to_' + new_commit[0:7] + '/' + str(method.name.replace("::", "_")) + '_new.java'
                     # 如果有方法重载，则会出现方法名重复，需要将方法参数也带上
                     if os.path.exists(file_path):
                         # 文件名中不允许出现的特殊字符
                         forbidden_chars = '/\\?*:|"<>'
 
                         # 删除不允许出现在文件名中的字符
-                        file_path = 'DeveloperContributionEvaluation/methodsContent/' + old_commit[0:6] + \
-                                    '_to_' + new_commit[0:6] + '/' + str(''.join(
+                        file_path = 'DeveloperContributionEvaluation/changedMethodsContent/' + old_commit[0:7] + \
+                                    '_to_' + new_commit[0:7] + '/' + str(''.join(
                             c for c in method.long_name.replace("::", "_") if c not in forbidden_chars)) + '_new.java'
 
                     save_to_file(extracted_code, file_path)

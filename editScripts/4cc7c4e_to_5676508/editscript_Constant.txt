@@ -1,437 +1,496 @@
 ===
-delete-tree
+insert-tree
 ---
-PackageDeclaration [0,22]
-    Name: util [8,21]
-        Name: bird [8,16]
-            Name: com [8,11]
+PackageDeclaration [0,35]
+    Name: util [8,34]
+        Name: flappybird [8,29]
+            Name: kingyu [8,18]
+                Name: com [8,11]
+to
+CompilationUnit [0,16]
+at 0
 ===
-delete-tree
+insert-tree
 ---
-ImportDeclaration [24,46]
-    Name: Color [31,45]
-        Name: awt [31,39]
-            Name: java [31,35]
+ImportDeclaration [37,59]
+    Name: Color [44,58]
+        Name: awt [44,52]
+            Name: java [44,48]
+to
+CompilationUnit [0,16]
+at 1
 ===
-delete-tree
+insert-tree
 ---
-ImportDeclaration [47,68]
-    Name: Font [54,67]
-        Name: awt [54,62]
-            Name: java [54,58]
+ImportDeclaration [60,81]
+    Name: Font [67,80]
+        Name: awt [67,75]
+            Name: java [67,71]
+to
+CompilationUnit [0,16]
+at 2
 ===
-delete-tree
+insert-node
 ---
-ImportDeclaration [70,108]
-    Name: GameElementLayer [77,107]
-        Name: main [77,90]
-            Name: bird [77,85]
-                Name: com [77,80]
+JavadocComment [83,139]
+to
+CompilationUnit [0,16]
+at 4
 ===
-delete-tree
+insert-node
 ---
-ImportDeclaration [109,135]
-    Name: Pipe [116,134]
-        Name: main [116,129]
-            Name: bird [116,124]
-                Name: com [116,119]
+Modifier: public [141,147]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 0
 ===
-delete-node
+insert-tree
 ---
-Modifier: public [195,201]
+FieldDeclaration [175,217]
+    Modifier: public [175,181]
+    Modifier: static [182,188]
+    Modifier: final [189,194]
+    VariableDeclarator [199,216]
+        PrimitiveType: int [195,198]
+        SimpleName: FRAME_WIDTH [199,210]
+        IntegerLiteralExpr: 420 [213,216]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 2
 ===
-===
-delete-tree
+insert-tree
 ---
-FieldDeclaration [229,271]
-    Modifier: public [229,235]
-    Modifier: static [236,242]
-    Modifier: final [243,248]
-    VariableDeclarator [253,270]
-        PrimitiveType: int [249,252]
-        SimpleName: FRAME_WIDTH [253,264]
-        IntegerLiteralExpr: 420 [267,270]
+FieldDeclaration [219,262]
+    Modifier: public [219,225]
+    Modifier: static [226,232]
+    Modifier: final [233,238]
+    VariableDeclarator [243,261]
+        PrimitiveType: int [239,242]
+        SimpleName: FRAME_HEIGHT [243,255]
+        IntegerLiteralExpr: 640 [258,261]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 3
 ===
-delete-tree
+insert-tree
 ---
-FieldDeclaration [273,316]
-    Modifier: public [273,279]
-    Modifier: static [280,286]
-    Modifier: final [287,292]
-    VariableDeclarator [297,315]
-        PrimitiveType: int [293,296]
-        SimpleName: FRAME_HEIGHT [297,309]
-        IntegerLiteralExpr: 640 [312,315]
+FieldDeclaration [274,346]
+    Modifier: public [274,280]
+    Modifier: static [281,287]
+    Modifier: final [288,293]
+    VariableDeclarator [301,345]
+        ClassOrInterfaceType [294,300]
+            SimpleName: String [294,300]
+        SimpleName: GAME_TITLE [301,311]
+        StringLiteralExpr: Flappy Bird written by Kingyu [314,345]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 4
 ===
-delete-tree
+insert-tree
 ---
-FieldDeclaration [328,400]
-    Modifier: public [328,334]
-    Modifier: static [335,341]
-    Modifier: final [342,347]
-    VariableDeclarator [355,399]
-        ClassOrInterfaceType [348,354]
-            SimpleName: String [348,354]
-        SimpleName: GAME_TITLE [355,365]
-        StringLiteralExpr: Flappy Bird written by Kingyu [368,399]
+FieldDeclaration [358,396]
+    Modifier: public [358,364]
+    Modifier: static [365,371]
+    Modifier: final [372,377]
+    VariableDeclarator [382,395]
+        PrimitiveType: int [378,381]
+        SimpleName: FRAME_X [382,389]
+        IntegerLiteralExpr: 600 [392,395]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 5
 ===
-delete-tree
+insert-tree
 ---
-FieldDeclaration [412,450]
-    Modifier: public [412,418]
-    Modifier: static [419,425]
-    Modifier: final [426,431]
-    VariableDeclarator [436,449]
-        PrimitiveType: int [432,435]
-        SimpleName: FRAME_X [436,443]
-        IntegerLiteralExpr: 600 [446,449]
+FieldDeclaration [398,436]
+    Modifier: public [398,404]
+    Modifier: static [405,411]
+    Modifier: final [412,417]
+    VariableDeclarator [422,435]
+        PrimitiveType: int [418,421]
+        SimpleName: FRAME_Y [422,429]
+        IntegerLiteralExpr: 100 [432,435]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 6
 ===
-delete-tree
+insert-tree
 ---
-FieldDeclaration [452,490]
-    Modifier: public [452,458]
-    Modifier: static [459,465]
-    Modifier: final [466,471]
-    VariableDeclarator [476,489]
-        PrimitiveType: int [472,475]
-        SimpleName: FRAME_Y [476,483]
-        IntegerLiteralExpr: 100 [486,489]
+FieldDeclaration [450,522]
+    Modifier: public [450,456]
+    Modifier: static [457,463]
+    Modifier: final [464,469]
+    VariableDeclarator [477,521]
+        ClassOrInterfaceType [470,476]
+            SimpleName: String [470,476]
+        SimpleName: BG_IMG_PATH [477,488]
+        StringLiteralExpr: resources/img/background.png [491,521]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 7
 ===
-delete-tree
+insert-tree
 ---
-FieldDeclaration [504,576]
-    Modifier: public [504,510]
-    Modifier: static [511,517]
-    Modifier: final [518,523]
-    VariableDeclarator [531,575]
-        ClassOrInterfaceType [524,530]
-            SimpleName: String [524,530]
-        SimpleName: BG_IMG_PATH [531,542]
-        StringLiteralExpr: resources/img/background.png [545,575]
+FieldDeclaration [542,1460]
+    Modifier: public [542,548]
+    Modifier: static [549,555]
+    Modifier: final [556,561]
+    VariableDeclarator [573,1459]
+        ArrayType [562,570]
+            ArrayType [562,572]
+                ClassOrInterfaceType [562,568]
+                    SimpleName: String [562,568]
+        SimpleName: BIRDS_IMG_PATH [573,587]
+        ArrayInitializerExpr [590,1459]
+            ArrayInitializerExpr [595,786]
+                StringLiteralExpr: resources/img/0.png [597,618]
+                StringLiteralExpr: resources/img/1.png [620,641]
+                StringLiteralExpr: resources/img/2.png [643,664]
+                StringLiteralExpr: resources/img/3.png [666,687]
+                StringLiteralExpr: resources/img/4.png [694,715]
+                StringLiteralExpr: resources/img/5.png [717,738]
+                StringLiteralExpr: resources/img/6.png [740,761]
+                StringLiteralExpr: resources/img/7.png [763,784]
+            ArrayInitializerExpr [791,990]
+                StringLiteralExpr: resources/img/up.png [793,815]
+                StringLiteralExpr: resources/img/up.png [817,839]
+                StringLiteralExpr: resources/img/up.png [841,863]
+                StringLiteralExpr: resources/img/up.png [865,887]
+                StringLiteralExpr: resources/img/up.png [894,916]
+                StringLiteralExpr: resources/img/up.png [918,940]
+                StringLiteralExpr: resources/img/up.png [942,964]
+                StringLiteralExpr: resources/img/up.png [966,988]
+            ArrayInitializerExpr [995,1231]
+                StringLiteralExpr: resources/img/down_0.png [997,1023]
+                StringLiteralExpr: resources/img/down_1.png [1025,1051]
+                StringLiteralExpr: resources/img/down_2.png [1053,1079]
+                StringLiteralExpr: resources/img/down_3.png [1086,1112]
+                StringLiteralExpr: resources/img/down_4.png [1114,1140]
+                StringLiteralExpr: resources/img/down_5.png [1142,1168]
+                StringLiteralExpr: resources/img/down_6.png [1175,1201]
+                StringLiteralExpr: resources/img/down_7.png [1203,1229]
+            ArrayInitializerExpr [1236,1457]
+                StringLiteralExpr: resources/img/dead.png [1238,1262]
+                StringLiteralExpr: resources/img/dead.png [1264,1288]
+                StringLiteralExpr: resources/img/dead.png [1290,1314]
+                StringLiteralExpr: resources/img/dead.png [1316,1340]
+                StringLiteralExpr: resources/img/dead.png [1347,1371]
+                StringLiteralExpr: resources/img/dead.png [1373,1397]
+                StringLiteralExpr: resources/img/dead.png [1399,1423]
+                StringLiteralExpr: resources/img/dead.png [1430,1454]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 8
 ===
-delete-tree
+insert-tree
 ---
-FieldDeclaration [596,1514]
-    Modifier: public [596,602]
-    Modifier: static [603,609]
-    Modifier: final [610,615]
-    VariableDeclarator [627,1513]
-        ArrayType [616,624]
-            ArrayType [616,626]
-                ClassOrInterfaceType [616,622]
-                    SimpleName: String [616,622]
-        SimpleName: BIRDS_IMG_PATH [627,641]
-        ArrayInitializerExpr [644,1513]
-            ArrayInitializerExpr [649,840]
-                StringLiteralExpr: resources/img/0.png [651,672]
-                StringLiteralExpr: resources/img/1.png [674,695]
-                StringLiteralExpr: resources/img/2.png [697,718]
-                StringLiteralExpr: resources/img/3.png [720,741]
-                StringLiteralExpr: resources/img/4.png [748,769]
-                StringLiteralExpr: resources/img/5.png [771,792]
-                StringLiteralExpr: resources/img/6.png [794,815]
-                StringLiteralExpr: resources/img/7.png [817,838]
-            ArrayInitializerExpr [845,1044]
-                StringLiteralExpr: resources/img/up.png [847,869]
-                StringLiteralExpr: resources/img/up.png [871,893]
-                StringLiteralExpr: resources/img/up.png [895,917]
-                StringLiteralExpr: resources/img/up.png [919,941]
-                StringLiteralExpr: resources/img/up.png [948,970]
-                StringLiteralExpr: resources/img/up.png [972,994]
-                StringLiteralExpr: resources/img/up.png [996,1018]
-                StringLiteralExpr: resources/img/up.png [1020,1042]
-            ArrayInitializerExpr [1049,1285]
-                StringLiteralExpr: resources/img/down_0.png [1051,1077]
-                StringLiteralExpr: resources/img/down_1.png [1079,1105]
-                StringLiteralExpr: resources/img/down_2.png [1107,1133]
-                StringLiteralExpr: resources/img/down_3.png [1140,1166]
-                StringLiteralExpr: resources/img/down_4.png [1168,1194]
-                StringLiteralExpr: resources/img/down_5.png [1196,1222]
-                StringLiteralExpr: resources/img/down_6.png [1229,1255]
-                StringLiteralExpr: resources/img/down_7.png [1257,1283]
-            ArrayInitializerExpr [1290,1511]
-                StringLiteralExpr: resources/img/dead.png [1292,1316]
-                StringLiteralExpr: resources/img/dead.png [1318,1342]
-                StringLiteralExpr: resources/img/dead.png [1344,1368]
-                StringLiteralExpr: resources/img/dead.png [1370,1394]
-                StringLiteralExpr: resources/img/dead.png [1401,1425]
-                StringLiteralExpr: resources/img/dead.png [1427,1451]
-                StringLiteralExpr: resources/img/dead.png [1453,1477]
-                StringLiteralExpr: resources/img/dead.png [1484,1508]
+FieldDeclaration [1472,1580]
+    Modifier: public [1472,1478]
+    Modifier: static [1479,1485]
+    Modifier: final [1486,1491]
+    VariableDeclarator [1501,1579]
+        ArrayType [1492,1500]
+            ClassOrInterfaceType [1492,1498]
+                SimpleName: String [1492,1498]
+        SimpleName: CLOUDS_IMG_PATH [1501,1516]
+        ArrayInitializerExpr [1519,1579]
+            StringLiteralExpr: resources/img/cloud_0.png [1521,1548]
+            StringLiteralExpr: resources/img/cloud_1.png [1550,1577]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 9
 ===
-delete-tree
+insert-tree
 ---
-FieldDeclaration [1526,1634]
-    Modifier: public [1526,1532]
-    Modifier: static [1533,1539]
-    Modifier: final [1540,1545]
-    VariableDeclarator [1555,1633]
-        ArrayType [1546,1554]
-            ClassOrInterfaceType [1546,1552]
-                SimpleName: String [1546,1552]
-        SimpleName: CLOUDS_IMG_PATH [1555,1570]
-        ArrayInitializerExpr [1573,1633]
-            StringLiteralExpr: resources/img/cloud_0.png [1575,1602]
-            StringLiteralExpr: resources/img/cloud_1.png [1604,1631]
+FieldDeclaration [1592,1732]
+    Modifier: public [1592,1598]
+    Modifier: static [1599,1605]
+    Modifier: final [1606,1611]
+    VariableDeclarator [1621,1731]
+        ArrayType [1612,1620]
+            ClassOrInterfaceType [1612,1618]
+                SimpleName: String [1612,1618]
+        SimpleName: PIPE_IMG_PATH [1621,1634]
+        ArrayInitializerExpr [1637,1731]
+            StringLiteralExpr: resources/img/pipe.png [1639,1663]
+            StringLiteralExpr: resources/img/pipe_top.png [1665,1693]
+            StringLiteralExpr: resources/img/pipe_bottom.png [1698,1729]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 10
 ===
-delete-tree
+insert-tree
 ---
-FieldDeclaration [1646,1786]
-    Modifier: public [1646,1652]
-    Modifier: static [1653,1659]
-    Modifier: final [1660,1665]
-    VariableDeclarator [1675,1785]
-        ArrayType [1666,1674]
-            ClassOrInterfaceType [1666,1672]
-                SimpleName: String [1666,1672]
-        SimpleName: PIPE_IMG_PATH [1675,1688]
-        ArrayInitializerExpr [1691,1785]
-            StringLiteralExpr: resources/img/pipe.png [1693,1717]
-            StringLiteralExpr: resources/img/pipe_top.png [1719,1747]
-            StringLiteralExpr: resources/img/pipe_bottom.png [1752,1783]
+FieldDeclaration [1735,1805]
+    Modifier: public [1735,1741]
+    Modifier: static [1742,1748]
+    Modifier: final [1749,1754]
+    VariableDeclarator [1762,1804]
+        ClassOrInterfaceType [1755,1761]
+            SimpleName: String [1755,1761]
+        SimpleName: TITLE_IMG_PATH [1762,1776]
+        StringLiteralExpr: resources/img/title.png [1779,1804]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 11
 ===
-delete-tree
+insert-tree
 ---
-FieldDeclaration [1789,1859]
-    Modifier: public [1789,1795]
-    Modifier: static [1796,1802]
-    Modifier: final [1803,1808]
-    VariableDeclarator [1816,1858]
-        ClassOrInterfaceType [1809,1815]
-            SimpleName: String [1809,1815]
-        SimpleName: TITLE_IMG_PATH [1816,1830]
-        StringLiteralExpr: resources/img/title.png [1833,1858]
+FieldDeclaration [1807,1878]
+    Modifier: public [1807,1813]
+    Modifier: static [1814,1820]
+    Modifier: final [1821,1826]
+    VariableDeclarator [1834,1877]
+        ClassOrInterfaceType [1827,1833]
+            SimpleName: String [1827,1833]
+        SimpleName: NOTICE_IMG_PATH [1834,1849]
+        StringLiteralExpr: resources/img/start.png [1852,1877]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 12
 ===
-delete-tree
+insert-tree
 ---
-FieldDeclaration [1861,1932]
-    Modifier: public [1861,1867]
-    Modifier: static [1868,1874]
-    Modifier: final [1875,1880]
-    VariableDeclarator [1888,1931]
-        ClassOrInterfaceType [1881,1887]
-            SimpleName: String [1881,1887]
-        SimpleName: NOTICE_IMG_PATH [1888,1903]
-        StringLiteralExpr: resources/img/start.png [1906,1931]
+FieldDeclaration [1880,1950]
+    Modifier: public [1880,1886]
+    Modifier: static [1887,1893]
+    Modifier: final [1894,1899]
+    VariableDeclarator [1907,1949]
+        ClassOrInterfaceType [1900,1906]
+            SimpleName: String [1900,1906]
+        SimpleName: SCORE_IMG_PATH [1907,1921]
+        StringLiteralExpr: resources/img/score.png [1924,1949]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 13
 ===
-delete-tree
+insert-tree
 ---
-FieldDeclaration [1934,2004]
-    Modifier: public [1934,1940]
-    Modifier: static [1941,1947]
-    Modifier: final [1948,1953]
-    VariableDeclarator [1961,2003]
-        ClassOrInterfaceType [1954,1960]
-            SimpleName: String [1954,1960]
-        SimpleName: SCORE_IMG_PATH [1961,1975]
-        StringLiteralExpr: resources/img/score.png [1978,2003]
+FieldDeclaration [1952,2020]
+    Modifier: public [1952,1958]
+    Modifier: static [1959,1965]
+    Modifier: final [1966,1971]
+    VariableDeclarator [1979,2019]
+        ClassOrInterfaceType [1972,1978]
+            SimpleName: String [1972,1978]
+        SimpleName: OVER_IMG_PATH [1979,1992]
+        StringLiteralExpr: resources/img/over.png [1995,2019]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 14
 ===
-delete-tree
+insert-tree
 ---
-FieldDeclaration [2006,2074]
-    Modifier: public [2006,2012]
-    Modifier: static [2013,2019]
-    Modifier: final [2020,2025]
-    VariableDeclarator [2033,2073]
-        ClassOrInterfaceType [2026,2032]
-            SimpleName: String [2026,2032]
-        SimpleName: OVER_IMG_PATH [2033,2046]
-        StringLiteralExpr: resources/img/over.png [2049,2073]
+FieldDeclaration [2022,2092]
+    Modifier: public [2022,2028]
+    Modifier: static [2029,2035]
+    Modifier: final [2036,2041]
+    VariableDeclarator [2049,2091]
+        ClassOrInterfaceType [2042,2048]
+            SimpleName: String [2042,2048]
+        SimpleName: AGAIN_IMG_PATH [2049,2063]
+        StringLiteralExpr: resources/img/again.png [2066,2091]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 15
 ===
-delete-tree
+insert-tree
 ---
-FieldDeclaration [2076,2146]
-    Modifier: public [2076,2082]
-    Modifier: static [2083,2089]
-    Modifier: final [2090,2095]
-    VariableDeclarator [2103,2145]
-        ClassOrInterfaceType [2096,2102]
-            SimpleName: String [2096,2102]
-        SimpleName: AGAIN_IMG_PATH [2103,2117]
-        StringLiteralExpr: resources/img/again.png [2120,2145]
+FieldDeclaration [2095,2158]
+    Modifier: public [2095,2101]
+    Modifier: static [2102,2108]
+    Modifier: final [2109,2114]
+    VariableDeclarator [2122,2157]
+        ClassOrInterfaceType [2115,2121]
+            SimpleName: String [2115,2121]
+        SimpleName: SCORE_FILE_PATH [2122,2137]
+        StringLiteralExpr: resources/score [2140,2157]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 16
 ===
-delete-tree
+insert-tree
 ---
-FieldDeclaration [2149,2212]
-    Modifier: public [2149,2155]
-    Modifier: static [2156,2162]
-    Modifier: final [2163,2168]
-    VariableDeclarator [2176,2211]
-        ClassOrInterfaceType [2169,2175]
-            SimpleName: String [2169,2175]
-        SimpleName: SCORE_FILE_PATH [2176,2191]
-        StringLiteralExpr: resources/score [2194,2211]
+FieldDeclaration [2193,2232]
+    Modifier: public [2193,2199]
+    Modifier: static [2200,2206]
+    Modifier: final [2207,2212]
+    VariableDeclarator [2217,2231]
+        PrimitiveType: int [2213,2216]
+        SimpleName: GAME_SPEED [2217,2227]
+        IntegerLiteralExpr: 4 [2230,2231]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 17
 ===
-delete-tree
+insert-tree
 ---
-FieldDeclaration [2235,2292]
-    Modifier: public [2235,2241]
-    Modifier: static [2242,2248]
-    Modifier: final [2249,2254]
-    VariableDeclarator [2261,2291]
-        ClassOrInterfaceType [2255,2260]
-            SimpleName: Color [2255,2260]
-        SimpleName: BG_COLOR [2261,2269]
-        ObjectCreationExpr [2272,2291]
-            ClassOrInterfaceType [2276,2281]
-                SimpleName: Color [2276,2281]
-            IntegerLiteralExpr: 0x4bc4cf [2282,2290]
+FieldDeclaration [2245,2302]
+    Modifier: public [2245,2251]
+    Modifier: static [2252,2258]
+    Modifier: final [2259,2264]
+    VariableDeclarator [2271,2301]
+        ClassOrInterfaceType [2265,2270]
+            SimpleName: Color [2265,2270]
+        SimpleName: BG_COLOR [2271,2279]
+        ObjectCreationExpr [2282,2301]
+            ClassOrInterfaceType [2286,2291]
+                SimpleName: Color [2286,2291]
+            IntegerLiteralExpr: 0x4bc4cf [2292,2300]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 18
 ===
-delete-tree
+insert-tree
 ---
-FieldDeclaration [2305,2355]
-    Modifier: public [2305,2311]
-    Modifier: static [2312,2318]
-    Modifier: final [2319,2324]
-    VariableDeclarator [2329,2354]
-        PrimitiveType: int [2325,2328]
-        SimpleName: GAME_INTERVAL [2329,2342]
-        BinaryExpr [2345,2354]
-            IntegerLiteralExpr: 1000 [2345,2349]
-            IntegerLiteralExpr: 60 [2352,2354]
+FieldDeclaration [2315,2365]
+    Modifier: public [2315,2321]
+    Modifier: static [2322,2328]
+    Modifier: final [2329,2334]
+    VariableDeclarator [2339,2364]
+        PrimitiveType: int [2335,2338]
+        SimpleName: GAME_INTERVAL [2339,2352]
+        BinaryExpr [2355,2364]
+            IntegerLiteralExpr: 1000 [2355,2359]
+            IntegerLiteralExpr: 30 [2362,2364]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 19
 ===
-delete-tree
+insert-tree
 ---
-FieldDeclaration [2368,2412]
-    Modifier: public [2368,2374]
-    Modifier: static [2375,2381]
-    Modifier: final [2382,2387]
-    VariableDeclarator [2392,2411]
-        PrimitiveType: int [2388,2391]
-        SimpleName: TOP_BAR_HEIGHT [2392,2406]
-        IntegerLiteralExpr: 20 [2409,2411]
+FieldDeclaration [2378,2422]
+    Modifier: public [2378,2384]
+    Modifier: static [2385,2391]
+    Modifier: final [2392,2397]
+    VariableDeclarator [2402,2421]
+        PrimitiveType: int [2398,2401]
+        SimpleName: TOP_BAR_HEIGHT [2402,2416]
+        IntegerLiteralExpr: 20 [2419,2421]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 20
 ===
-delete-tree
+insert-tree
 ---
-FieldDeclaration [2424,2467]
-    Modifier: public [2424,2430]
-    Modifier: static [2431,2437]
-    Modifier: final [2438,2443]
-    VariableDeclarator [2448,2466]
-        PrimitiveType: int [2444,2447]
-        SimpleName: GROUND_HEIGHT [2448,2461]
-        IntegerLiteralExpr: 35 [2464,2466]
+FieldDeclaration [2434,2477]
+    Modifier: public [2434,2440]
+    Modifier: static [2441,2447]
+    Modifier: final [2448,2453]
+    VariableDeclarator [2458,2476]
+        PrimitiveType: int [2454,2457]
+        SimpleName: GROUND_HEIGHT [2458,2471]
+        IntegerLiteralExpr: 35 [2474,2476]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 21
 ===
-delete-tree
+insert-tree
 ---
-FieldDeclaration [2481,2532]
-    Modifier: public [2481,2487]
-    Modifier: static [2488,2494]
-    Modifier: final [2495,2500]
-    VariableDeclarator [2505,2531]
-        PrimitiveType: int [2501,2504]
-        SimpleName: TOP_PIPE_LENGTHENING [2505,2525]
-        IntegerLiteralExpr: 100 [2528,2531]
+FieldDeclaration [2491,2542]
+    Modifier: public [2491,2497]
+    Modifier: static [2498,2504]
+    Modifier: final [2505,2510]
+    VariableDeclarator [2515,2541]
+        PrimitiveType: int [2511,2514]
+        SimpleName: TOP_PIPE_LENGTHENING [2515,2535]
+        IntegerLiteralExpr: 100 [2538,2541]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 22
 ===
-delete-tree
+insert-tree
 ---
-FieldDeclaration [2535,2582]
-    Modifier: public [2535,2541]
-    Modifier: static [2542,2548]
-    Modifier: final [2549,2554]
-    VariableDeclarator [2559,2581]
-        PrimitiveType: int [2555,2558]
-        SimpleName: CLOUD_BORN_PERCENT [2559,2577]
-        IntegerLiteralExpr: 6 [2580,2581]
+FieldDeclaration [2545,2592]
+    Modifier: public [2545,2551]
+    Modifier: static [2552,2558]
+    Modifier: final [2559,2564]
+    VariableDeclarator [2569,2591]
+        PrimitiveType: int [2565,2568]
+        SimpleName: CLOUD_BORN_PERCENT [2569,2587]
+        IntegerLiteralExpr: 6 [2590,2591]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 23
 ===
-delete-tree
+insert-tree
 ---
-FieldDeclaration [2602,2648]
-    Modifier: public [2602,2608]
-    Modifier: static [2609,2615]
-    Modifier: final [2616,2621]
-    VariableDeclarator [2626,2647]
-        PrimitiveType: int [2622,2625]
-        SimpleName: CLOUD_IMAGE_COUNT [2626,2643]
-        IntegerLiteralExpr: 2 [2646,2647]
+FieldDeclaration [2612,2658]
+    Modifier: public [2612,2618]
+    Modifier: static [2619,2625]
+    Modifier: final [2626,2631]
+    VariableDeclarator [2636,2657]
+        PrimitiveType: int [2632,2635]
+        SimpleName: CLOUD_IMAGE_COUNT [2636,2653]
+        IntegerLiteralExpr: 2 [2656,2657]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 24
 ===
-delete-tree
+insert-tree
 ---
-FieldDeclaration [2661,2705]
-    Modifier: public [2661,2667]
-    Modifier: static [2668,2674]
-    Modifier: final [2675,2680]
-    VariableDeclarator [2685,2704]
-        PrimitiveType: int [2681,2684]
-        SimpleName: MAX_CLOUD_COUNT [2685,2700]
-        IntegerLiteralExpr: 7 [2703,2704]
+FieldDeclaration [2671,2715]
+    Modifier: public [2671,2677]
+    Modifier: static [2678,2684]
+    Modifier: final [2685,2690]
+    VariableDeclarator [2695,2714]
+        PrimitiveType: int [2691,2694]
+        SimpleName: MAX_CLOUD_COUNT [2695,2710]
+        IntegerLiteralExpr: 7 [2713,2714]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 25
 ===
-delete-tree
+insert-tree
 ---
-FieldDeclaration [2719,2797]
-    Modifier: public [2719,2725]
-    Modifier: static [2726,2732]
-    Modifier: final [2733,2738]
-    VariableDeclarator [2744,2796]
-        ClassOrInterfaceType [2739,2743]
-            SimpleName: Font [2739,2743]
-        SimpleName: CURRENT_SCORE_FONT [2744,2762]
-        ObjectCreationExpr [2765,2796]
-            ClassOrInterfaceType [2769,2773]
-                SimpleName: Font [2769,2773]
-            StringLiteralExpr: 华文琥珀 [2774,2780]
-            FieldAccessExpr [2782,2791]
-                NameExpr [2782,2786]
-                    SimpleName: Font [2782,2786]
-                SimpleName: BOLD [2787,2791]
-            IntegerLiteralExpr: 32 [2793,2795]
+FieldDeclaration [2729,2807]
+    Modifier: public [2729,2735]
+    Modifier: static [2736,2742]
+    Modifier: final [2743,2748]
+    VariableDeclarator [2754,2806]
+        ClassOrInterfaceType [2749,2753]
+            SimpleName: Font [2749,2753]
+        SimpleName: CURRENT_SCORE_FONT [2754,2772]
+        ObjectCreationExpr [2775,2806]
+            ClassOrInterfaceType [2779,2783]
+                SimpleName: Font [2779,2783]
+            StringLiteralExpr: 华文琥珀 [2784,2790]
+            FieldAccessExpr [2792,2801]
+                NameExpr [2792,2796]
+                    SimpleName: Font [2792,2796]
+                SimpleName: BOLD [2797,2801]
+            IntegerLiteralExpr: 32 [2803,2805]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 26
 ===
-delete-tree
+insert-tree
 ---
-FieldDeclaration [2804,2874]
-    Modifier: public [2804,2810]
-    Modifier: static [2811,2817]
-    Modifier: final [2818,2823]
-    VariableDeclarator [2829,2873]
-        ClassOrInterfaceType [2824,2828]
-            SimpleName: Font [2824,2828]
-        SimpleName: SCORE_FONT [2829,2839]
-        ObjectCreationExpr [2842,2873]
-            ClassOrInterfaceType [2846,2850]
-                SimpleName: Font [2846,2850]
-            StringLiteralExpr: 华文琥珀 [2851,2857]
-            FieldAccessExpr [2859,2868]
-                NameExpr [2859,2863]
-                    SimpleName: Font [2859,2863]
-                SimpleName: BOLD [2864,2868]
-            IntegerLiteralExpr: 24 [2870,2872]
+FieldDeclaration [2814,2884]
+    Modifier: public [2814,2820]
+    Modifier: static [2821,2827]
+    Modifier: final [2828,2833]
+    VariableDeclarator [2839,2883]
+        ClassOrInterfaceType [2834,2838]
+            SimpleName: Font [2834,2838]
+        SimpleName: SCORE_FONT [2839,2849]
+        ObjectCreationExpr [2852,2883]
+            ClassOrInterfaceType [2856,2860]
+                SimpleName: Font [2856,2860]
+            StringLiteralExpr: 华文琥珀 [2861,2867]
+            FieldAccessExpr [2869,2878]
+                NameExpr [2869,2873]
+                    SimpleName: Font [2869,2873]
+                SimpleName: BOLD [2874,2878]
+            IntegerLiteralExpr: 24 [2880,2882]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 27
 ===
-delete-tree
+insert-node
 ---
-FieldDeclaration [2918,3052]
-    Modifier: public [2918,2924]
-    Modifier: static [2925,2931]
-    Modifier: final [2932,2937]
-    VariableDeclarator [2942,3051]
-        PrimitiveType: int [2938,2941]
-        SimpleName: FULL_PIPE [2942,2951]
-        BinaryExpr [2954,3051]
-            EnclosedExpr [2954,3047]
-                BinaryExpr [2955,3046]
-                    BinaryExpr [2955,3042]
-                        FieldAccessExpr [2955,2975]
-                            NameExpr [2955,2963]
-                                SimpleName: Constant [2955,2963]
-                            SimpleName: FRAME_WIDTH [2964,2975]
-                        EnclosedExpr [2981,3042]
-                            BinaryExpr [2982,3041]
-                                FieldAccessExpr [2982,3002]
-                                    NameExpr [2982,2986]
-                                        SimpleName: Pipe [2982,2986]
-                                    SimpleName: PIPE_HEAD_WIDTH [2987,3002]
-                                FieldAccessExpr [3005,3041]
-                                    NameExpr [3005,3021]
-                                        SimpleName: GameElementLayer [3005,3021]
-                                    SimpleName: HORIZONTAL_INTERVAL [3022,3041]
-                    IntegerLiteralExpr: 2 [3045,3046]
-            IntegerLiteralExpr: 2 [3050,3051]
-===
-delete-node
----
-LineComment [493,502]
-===
-===
-delete-node
----
-JavadocComment [137,193]
-===
+LineComment [439,448]
+to
+ClassOrInterfaceDeclaration [0,16]
+at 28
