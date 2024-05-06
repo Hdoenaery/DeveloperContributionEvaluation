@@ -1,0 +1,10 @@
+digraph "next" {  
+"1087" [label = <(METHOD,next)> ]
+"1091" [label = <(METHOD_RETURN,ANY)> ]
+"1088" [label = <(PARAM,p0)> ]
+"1089" [label = <(PARAM,p1)> ]
+  "1088" -> "1091"  [ label = "p0"] 
+  "1089" -> "1091"  [ label = "p1"] 
+  "1087" -> "1088" 
+  "1087" -> "1089" 
+}

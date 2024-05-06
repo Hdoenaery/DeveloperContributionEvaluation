@@ -1,0 +1,10 @@
+digraph "playFly" {  
+"1256" [label = <(METHOD,playFly)> ]
+"1260" [label = <(METHOD_RETURN,ANY)> ]
+"1257" [label = <(PARAM,p0)> ]
+"1258" [label = <(PARAM,p1)> ]
+  "1257" -> "1260"  [ label = "p0"] 
+  "1258" -> "1260"  [ label = "p1"] 
+  "1256" -> "1257" 
+  "1256" -> "1258" 
+}

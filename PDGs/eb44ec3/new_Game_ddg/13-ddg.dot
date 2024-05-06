@@ -1,0 +1,24 @@
+digraph "&lt;lambda&gt;0" {  
+"1040" [label = <(METHOD,&lt;lambda&gt;0)<SUB>124</SUB>> ]
+"1056" [label = <(METHOD_RETURN,void)<SUB>124</SUB>> ]
+"1041" [label = <(PARAM,this)<SUB>124</SUB>> ]
+"1044" [label = <(LITERAL,true,while (true))<SUB>125</SUB>> ]
+"1046" [label = <(repaint,this.repaint())<SUB>126</SUB>> ]
+"1046" [label = <(repaint,this.repaint())<SUB>126</SUB>> ]
+"1049" [label = <(sleep,sleep(FPS))<SUB>128</SUB>> ]
+"1053" [label = <(BLOCK,&lt;empty&gt;,&lt;empty&gt;)<SUB>129</SUB>> ]
+"1049" [label = <(sleep,sleep(FPS))<SUB>128</SUB>> ]
+"1049" [label = <(sleep,sleep(FPS))<SUB>128</SUB>> ]
+"1054" [label = <(printStackTrace,e.printStackTrace())<SUB>130</SUB>> ]
+"1054" [label = <(printStackTrace,e.printStackTrace())<SUB>130</SUB>> ]
+  "1041" -> "1056"  [ label = "this"] 
+  "1054" -> "1056"  [ label = "e"] 
+  "1049" -> "1056"  [ label = "Thread"] 
+  "1040" -> "1041" 
+  "1040" -> "1044" 
+  "1041" -> "1046"  [ label = "this"] 
+  "1040" -> "1046" 
+  "1040" -> "1053" 
+  "1040" -> "1049" 
+  "1040" -> "1054" 
+}

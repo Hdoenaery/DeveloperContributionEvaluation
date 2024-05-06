@@ -1,0 +1,10 @@
+digraph "getBirdCollisionRect" {  
+"1103" [label = <(METHOD,getBirdCollisionRect)> ]
+"1107" [label = <(METHOD_RETURN,ANY)> ]
+"1104" [label = <(PARAM,p0)> ]
+"1105" [label = <(PARAM,p1)> ]
+  "1104" -> "1107"  [ label = "p0"] 
+  "1105" -> "1107"  [ label = "p1"] 
+  "1103" -> "1104" 
+  "1103" -> "1105" 
+}

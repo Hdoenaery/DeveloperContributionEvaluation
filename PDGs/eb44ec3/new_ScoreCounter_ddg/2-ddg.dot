@@ -1,0 +1,7 @@
+digraph "getInstance" {  
+"63" [label = <(METHOD,getInstance)<SUB>24</SUB>> ]
+"71" [label = <(METHOD_RETURN,com.kingyu.flappybird.component.ScoreCounter)<SUB>24</SUB>> ]
+"65" [label = <(RETURN,return ScoreCounterHolder.scoreCounter;,return ScoreCounterHolder.scoreCounter;)<SUB>25</SUB>> ]
+  "65" -> "71"  [ label = "&lt;RET&gt;"] 
+  "63" -> "65" 
+}

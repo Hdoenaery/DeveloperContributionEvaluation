@@ -1,0 +1,15 @@
+digraph "getBestScore" {  
+"840" [label = <(METHOD,getBestScore)<SUB>202</SUB>> ]
+"850" [label = <(METHOD_RETURN,long)<SUB>202</SUB>> ]
+"841" [label = <(PARAM,this)<SUB>202</SUB>> ]
+"843" [label = <(RETURN,return counter.getBestScore();,return counter.getBestScore();)<SUB>203</SUB>> ]
+"844" [label = <(getBestScore,this.counter.getBestScore())<SUB>203</SUB>> ]
+"844" [label = <(getBestScore,this.counter.getBestScore())<SUB>203</SUB>> ]
+  "843" -> "850"  [ label = "&lt;RET&gt;"] 
+  "841" -> "850"  [ label = "this"] 
+  "844" -> "850"  [ label = "this.counter"] 
+  "844" -> "850"  [ label = "this.counter.getBestScore()"] 
+  "840" -> "841" 
+  "844" -> "843"  [ label = "this.counter.getBestScore()"] 
+  "841" -> "844"  [ label = "this"] 
+}

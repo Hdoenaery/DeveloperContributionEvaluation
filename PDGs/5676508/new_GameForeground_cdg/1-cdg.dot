@@ -1,0 +1,10 @@
+digraph "draw" {  
+"98" [label = <(hasNext,&lt;empty&gt;)<SUB>38</SUB>> ]
+"102" [label = <(&lt;operator&gt;.assignment,&lt;empty&gt;)<SUB>38</SUB>> ]
+"106" [label = <(draw,draw(g, bird))<SUB>39</SUB>> ]
+"104" [label = <(next,&lt;empty&gt;)<SUB>38</SUB>> ]
+  "98" -> "102" 
+  "98" -> "104" 
+  "98" -> "98" 
+  "98" -> "106" 
+}

@@ -1,0 +1,10 @@
+digraph "isInFrame" {  
+"1007" [label = <(METHOD,isInFrame)> ]
+"1011" [label = <(METHOD_RETURN,ANY)> ]
+"1008" [label = <(PARAM,p0)> ]
+"1009" [label = <(PARAM,p1)> ]
+  "1008" -> "1011"  [ label = "p0"] 
+  "1009" -> "1011"  [ label = "p1"] 
+  "1007" -> "1008" 
+  "1007" -> "1009" 
+}

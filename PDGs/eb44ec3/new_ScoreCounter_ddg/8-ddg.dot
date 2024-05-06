@@ -1,0 +1,9 @@
+digraph "getCurrentScore" {  
+"222" [label = <(METHOD,getCurrentScore)<SUB>73</SUB>> ]
+"231" [label = <(METHOD_RETURN,long)<SUB>73</SUB>> ]
+"223" [label = <(PARAM,this)<SUB>73</SUB>> ]
+"225" [label = <(RETURN,return score;,return score;)<SUB>74</SUB>> ]
+  "225" -> "231"  [ label = "&lt;RET&gt;"] 
+  "223" -> "231"  [ label = "this"] 
+  "222" -> "223" 
+}

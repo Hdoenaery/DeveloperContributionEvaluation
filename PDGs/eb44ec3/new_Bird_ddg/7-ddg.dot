@@ -1,0 +1,24 @@
+digraph "deadBirdFall" {  
+"637" [label = <(METHOD,deadBirdFall)<SUB>152</SUB>> ]
+"656" [label = <(METHOD_RETURN,void)<SUB>152</SUB>> ]
+"638" [label = <(PARAM,this)<SUB>152</SUB>> ]
+"640" [label = <(&lt;operator&gt;.assignment,this.state = BIRD_DEAD_FALL)<SUB>153</SUB>> ]
+"647" [label = <(playCrash,playCrash())<SUB>154</SUB>> ]
+"649" [label = <(&lt;operator&gt;.assignment,this.velocity = 0)<SUB>155</SUB>> ]
+"640" [label = <(&lt;operator&gt;.assignment,this.state = BIRD_DEAD_FALL)<SUB>153</SUB>> ]
+"640" [label = <(&lt;operator&gt;.assignment,this.state = BIRD_DEAD_FALL)<SUB>153</SUB>> ]
+"647" [label = <(playCrash,playCrash())<SUB>154</SUB>> ]
+"649" [label = <(&lt;operator&gt;.assignment,this.velocity = 0)<SUB>155</SUB>> ]
+"649" [label = <(&lt;operator&gt;.assignment,this.velocity = 0)<SUB>155</SUB>> ]
+  "638" -> "656"  [ label = "this"] 
+  "640" -> "656"  [ label = "this.state"] 
+  "640" -> "656"  [ label = "com.kingyu.flappybird.component.Bird.BIRD_DEAD_FALL"] 
+  "640" -> "656"  [ label = "this.state = BIRD_DEAD_FALL"] 
+  "647" -> "656"  [ label = "playCrash()"] 
+  "649" -> "656"  [ label = "this.velocity"] 
+  "649" -> "656"  [ label = "this.velocity = 0"] 
+  "647" -> "656"  [ label = "MusicUtil"] 
+  "637" -> "638" 
+  "637" -> "649" 
+  "637" -> "647" 
+}

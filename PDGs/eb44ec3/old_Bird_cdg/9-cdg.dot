@@ -1,5 +1,0 @@
-digraph "deadBirdFall" {  
-"787" [label = <(sleep,Thread.sleep(200))<SUB>194</SUB>> ]
-"792" [label = <(printStackTrace,e.printStackTrace())<SUB>196</SUB>> ]
-  "787" -> "792" 
-}

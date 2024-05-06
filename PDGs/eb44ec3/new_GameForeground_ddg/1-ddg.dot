@@ -1,0 +1,52 @@
+digraph "draw" {  
+"85" [label = <(METHOD,draw)<SUB>33</SUB>> ]
+"112" [label = <(METHOD_RETURN,void)<SUB>33</SUB>> ]
+"4" [label = <(PARAM,this)<SUB>33</SUB>> ]
+"86" [label = <(PARAM,Graphics g)<SUB>33</SUB>> ]
+"87" [label = <(PARAM,Bird bird)<SUB>33</SUB>> ]
+"89" [label = <(cloudBornLogic,this.cloudBornLogic())<SUB>34</SUB>> ]
+"91" [label = <(&lt;operator&gt;.assignment,)<SUB>35</SUB>> ]
+"89" [label = <(cloudBornLogic,this.cloudBornLogic())<SUB>34</SUB>> ]
+"91" [label = <(&lt;operator&gt;.assignment,)<SUB>35</SUB>> ]
+"91" [label = <(&lt;operator&gt;.assignment,)<SUB>35</SUB>> ]
+"98" [label = <(hasNext,&lt;empty&gt;)<SUB>35</SUB>> ]
+"93" [label = <(iterator,&lt;empty&gt;)<SUB>35</SUB>> ]
+"98" [label = <(hasNext,&lt;empty&gt;)<SUB>35</SUB>> ]
+"102" [label = <(&lt;operator&gt;.assignment,&lt;empty&gt;)<SUB>35</SUB>> ]
+"106" [label = <(draw,draw(g, bird))<SUB>36</SUB>> ]
+"102" [label = <(&lt;operator&gt;.assignment,&lt;empty&gt;)<SUB>35</SUB>> ]
+"102" [label = <(&lt;operator&gt;.assignment,&lt;empty&gt;)<SUB>35</SUB>> ]
+"106" [label = <(draw,draw(g, bird))<SUB>36</SUB>> ]
+"106" [label = <(draw,draw(g, bird))<SUB>36</SUB>> ]
+"106" [label = <(draw,draw(g, bird))<SUB>36</SUB>> ]
+"104" [label = <(next,&lt;empty&gt;)<SUB>35</SUB>> ]
+  "86" -> "112"  [ label = "g"] 
+  "87" -> "112"  [ label = "bird"] 
+  "89" -> "112"  [ label = "this"] 
+  "89" -> "112"  [ label = "this.cloudBornLogic()"] 
+  "93" -> "112"  [ label = "this.clouds"] 
+  "91" -> "112" 
+  "98" -> "112"  [ label = "$iterLocal0"] 
+  "98" -> "112"  [ label = "&lt;empty&gt;"] 
+  "106" -> "112"  [ label = "cloud"] 
+  "106" -> "112"  [ label = "g"] 
+  "106" -> "112"  [ label = "bird"] 
+  "106" -> "112"  [ label = "draw(g, bird)"] 
+  "85" -> "4" 
+  "85" -> "86" 
+  "85" -> "87" 
+  "93" -> "91"  [ label = "this.clouds"] 
+  "4" -> "89"  [ label = "this"] 
+  "85" -> "89" 
+  "89" -> "93"  [ label = "this"] 
+  "91" -> "98"  [ label = "$iterLocal0"] 
+  "104" -> "98"  [ label = "$iterLocal0"] 
+  "85" -> "98" 
+  "104" -> "102"  [ label = "$iterLocal0"] 
+  "102" -> "106"  [ label = "cloud"] 
+  "85" -> "106" 
+  "86" -> "106"  [ label = "g"] 
+  "87" -> "106"  [ label = "bird"] 
+  "98" -> "104"  [ label = "$iterLocal0"] 
+  "85" -> "104" 
+}

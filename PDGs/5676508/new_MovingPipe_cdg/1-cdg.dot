@@ -1,0 +1,13 @@
+digraph "setAttribute" {  
+"99" [label = <(&lt;operator&gt;.equals,type == TYPE_TOP_HARD)<SUB>46</SUB>> ]
+"103" [label = <(&lt;operator&gt;.assignment,this.dir = DIR_UP)<SUB>47</SUB>> ]
+"104" [label = <(&lt;operator&gt;.fieldAccess,this.dir)<SUB>47</SUB>> ]
+"107" [label = <(&lt;operator&gt;.fieldAccess,com.kingyu.flappybird.game.MovingPipe.DIR_UP)<SUB>47</SUB>> ]
+"106" [label = <(FIELD_IDENTIFIER,dir,dir)<SUB>47</SUB>> ]
+"109" [label = <(FIELD_IDENTIFIER,DIR_UP,DIR_UP)<SUB>47</SUB>> ]
+  "99" -> "107" 
+  "99" -> "103" 
+  "99" -> "104" 
+  "99" -> "109" 
+  "99" -> "106" 
+}

@@ -2,7 +2,7 @@
 nowCommitHash = b946853
 所有编辑脚本获取结束
 commitHash = b946853 , scoreOfCommit = 0.0
-本次commit计算的运行时间（秒）：2.891
+本次commit计算的运行时间（秒）：2.62
 
 nowCommitHash = d7b64a5
 DeveloperContributionEvaluation/editScripts/b946853_to_d7b64a5/editscript_GameApp.txt
@@ -10,7 +10,8 @@ DeveloperContributionEvaluation/editScripts/b946853_to_d7b64a5/editscript_Bird.t
 DeveloperContributionEvaluation/editScripts/b946853_to_d7b64a5/editscript_Cloud.txt
 DeveloperContributionEvaluation/editScripts/b946853_to_d7b64a5/editscript_GameBackground.txt
 DeveloperContributionEvaluation/editScripts/b946853_to_d7b64a5/editscript_GameElementLayer.txt
-DeveloperContributionEvaluation/editScripts/b946853_to_d7b64a5/editscript_GameForeground.txt
+DeveloperContributionEvaluation/edi
+tScripts/b946853_to_d7b64a5/editscript_GameForeground.txt
 DeveloperContributionEvaluation/editScripts/b946853_to_d7b64a5/editscript_GameFrame.txt
 DeveloperContributionEvaluation/editScripts/b946853_to_d7b64a5/editscript_GameReady.txt
 DeveloperContributionEvaluation/editScripts/b946853_to_d7b64a5/editscript_GameTime.txt
@@ -104,65 +105,23 @@ joern-export cdg执行成功  old_GameUtil.java
 joern-export cdg执行成功  old_MusicUtil.java
 joern-export cdg执行成功  old_Pipe.java
 joern-export cdg执行成功  old_PipePool.java
-GameReady::GameReady
-astScore = 6.0
-LOC = 4, CC = 1, HV = 46.50699332842308, PCom = 0.0, CM = 26.75349666421154
-weight = 0.052248761117667526
-DDG_impact = 0.8571428571428571 , CDG_impact = 0.0, IR = 1.9258200997725514
-
-GameFrame::GameFrame
-astScore = 13.0
-LOC = 5, CC = 1, HV = 55.350905898196764, PCom = 60.0, CM = 1.675452949098382
-weight = 0.07330774123763499
-DDG_impact = 0.875 , CDG_impact = 0.0, IR = 1.9354143466934852
-
-Pipe::setRectangle
-astScore = 25.0
-LOC = 5, CC = 1, HV = 66.56842503028857, PCom = 0.0, CM = 37.28421251514428
-weight = 0.03655798093397628
-DDG_impact = 0.8888888888888888 , CDG_impact = 0.0, IR = 1.9428090415820634
-
-GameTime::setStartTime
-astScore = 17.0
-LOC = 3, CC = 1, HV = 25.26619429851844, PCom = 0.0, CM = 15.63309714925922
-weight = 0.0
-DDG_impact = 0.8 , CDG_impact = 0.0, IR = 1.8944271909999157
-
-Bird::drawGameover
-astScore = 42.0
-LOC = 30, CC = 4, HV = 1305.946756958329, PCom = 22.857142857142858, CM = 659.544807050593
-weight = 0.09872346701844764
-DDG_impact = 0.9701492537313433 , CDG_impact = 1.0, IR = 2.9849615493669504
-
-GameTime::TimeToScore
-astScore = 26.0
-LOC = 13, CC = 5, HV = 260.05594662738457, PCom = 7.6923076923076925, CM = 136.18181946753845
-weight = 0.07292200565324071
-DDG_impact = 0.9090909090909091 , CDG_impact = 0.9354838709677419, IR = 2.920666740894944
-
-Pipe::isInFrame
-astScore = 32.0
-LOC = 3, CC = 1, HV = 33.219280948873624, PCom = 0.0, CM = 19.609640474436812
+Pipe::getX
+astScore = 38.0
+LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
 weight = 0.021443961480130908
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-GameElementLayer::draw
-astScore = 35.0
-LOC = 14, CC = 3, HV = 287.53046480343187, PCom = 12.5, CM = 147.01523240171593
-weight = 0.3259722950136917
-DDG_impact = 0.8947368421052632 , CDG_impact = 1.0, IR = 2.945905302926917
+Pipe::setAttribute
+astScore = 24.0
+LOC = 8, CC = 1, HV = 148.0175887256437, PCom = 0.0, CM = 79.50879436282185
+weight = 0.029000971207053597
+DDG_impact = 0.9285714285714286 , CDG_impact = 0.0, IR = 1.9636241116594315
 
-GameForeground::draw
-astScore = 9.0
-LOC = 6, CC = 2, HV = 108.41805003750011, PCom = 0.0, CM = 59.209025018750054
-weight = 0.08125683791979112
-DDG_impact = 0.6666666666666666 , CDG_impact = 1.0, IR = 2.8164965809277263
-
-GameForeground::cloudLogic
-astScore = 10.0
-LOC = 25, CC = 7, HV = 1563.8913884175995, PCom = 56.52173913043478, CM = 770.6848246435824
-weight = 0.08881363340766646
-DDG_impact = 0.8387096774193549 , CDG_impact = 1.0, IR = 2.915810939779251
+PipePool::get
+astScore = 7.0
+LOC = 8, CC = 2, HV = 131.76952268336282, PCom = 25.0, CM = 59.38476134168141
+weight = 0.021443961480130908
+DDG_impact = 0.9230769230769231 , CDG_impact = 1.0, IR = 2.960768922830523
 
 Cloud::isOutFrame
 astScore = 15.0
@@ -170,47 +129,59 @@ LOC = 13, CC = 5, HV = 160.5395382709427, PCom = 0.0, CM = 90.26976913547135
 weight = 0.028689396219210295
 DDG_impact = 0.3125 , CDG_impact = 1.0, IR = 2.5590169943749475
 
-Pipe::getX
-astScore = 38.0
-LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
-weight = 0.021443961480130908
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Pipe::setType
-astScore = 35.0
-LOC = 3, CC = 1, HV = 25.26619429851844, PCom = 0.0, CM = 15.63309714925922
-weight = 0.0
-DDG_impact = 0.8 , CDG_impact = 0.0, IR = 1.8944271909999157
-
 GameBackground::GameBackground
 astScore = 21.0
 LOC = 4, CC = 1, HV = 30.0, PCom = 0.0, CM = 18.5
 weight = 0.0
 DDG_impact = 0.8 , CDG_impact = 0.0, IR = 1.8944271909999157
 
-GameUtil::loadBUfferedImage
-astScore = 4.0
-LOC = 8, CC = 2, HV = 81.7492568250068, PCom = 0.0, CM = 46.8746284125034
-weight = 0.08616690855947004
-DDG_impact = 0.5 , CDG_impact = 1.0, IR = 2.7071067811865475
+GameForeground::GameForeground
+astScore = 8.0
+LOC = 9, CC = 2, HV = 275.0, PCom = 36.36363636363637, CM = 125.81818181818181
+weight = 0.052248761117667526
+DDG_impact = 0.9411764705882353 , CDG_impact = 1.0, IR = 2.970142500145332
 
-GameUtil::GameUtil
-astScore = 3.0
-LOC = 2, CC = 1, HV = 13.931568569324174, PCom = 50.0, CM = -15.534215715337915
+GameFrame::BirdKeyListener::keyPressed
+astScore = 0.0
+LOC = 24, CC = 7, HV = 238.41805003750017, PCom = 0.0, CM = 135.70902501875008
 weight = 0.0
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-Bird::BirdFall
-astScore = 35.0
-LOC = 5, CC = 1, HV = 59.207035490257475, PCom = 33.33333333333333, CM = 16.936851078462077
-weight = 0.09352149848364771
-DDG_impact = 0.3333333333333333 , CDG_impact = 0.0, IR = 1.5773502691896257
+PipePool::giveBack
+astScore = 8.0
+LOC = 5, CC = 2, HV = 50.18947501009619, PCom = 0.0, CM = 29.594737505048094
+weight = 0.04272270302899669
+DDG_impact = 0.0 , CDG_impact = 1.0, IR = 2.0
 
-GameElementLayer::reset
-astScore = 12.0
-LOC = 7, CC = 2, HV = 108.41805003750011, PCom = 0.0, CM = 59.709025018750054
-weight = 0.033564957569205474
-DDG_impact = 1.0 , CDG_impact = 1.0, IR = 3.0
+GameTime::setOverTime
+astScore = 18.0
+LOC = 3, CC = 1, HV = 25.26619429851844, PCom = 0.0, CM = 15.63309714925922
+weight = 0.0
+DDG_impact = 0.8 , CDG_impact = 0.0, IR = 1.8944271909999157
+
+Cloud::Cloud
+astScore = 13.0
+LOC = 11, CC = 1, HV = 312.4780699337442, PCom = 25.0, CM = 150.7390349668721
+weight = 0.0
+DDG_impact = 0.9583333333333334 , CDG_impact = 0.0, IR = 1.978945010372561
+
+Pipe::isInFrame
+astScore = 32.0
+LOC = 3, CC = 1, HV = 33.219280948873624, PCom = 0.0, CM = 19.609640474436812
+weight = 0.021443961480130908
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameTime::startTiming
+astScore = 22.0
+LOC = 4, CC = 1, HV = 31.699250014423125, PCom = 0.0, CM = 19.349625007211564
+weight = 0.027445511326188887
+DDG_impact = 0.8333333333333334 , CDG_impact = 0.0, IR = 1.912870929175277
+
+Pipe::isVisible
+astScore = 26.0
+LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
+weight = 0.021976572735994564
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
 Pipe::setHeight
 astScore = 36.0
@@ -224,221 +195,17 @@ LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
 weight = 0.023000635382263854
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-Pipe::isVisible
-astScore = 26.0
-LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
-weight = 0.021976572735994564
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameBackground::moveLogic
-astScore = 10.0
-LOC = 5, CC = 2, HV = 53.77443751081735, PCom = 0.0, CM = 31.387218755408675
-weight = 0.027445511326188887
-DDG_impact = 0.8571428571428571 , CDG_impact = 1.0, IR = 2.9258200997725514
-
-GameFrame::setGameState
-astScore = 141.0
-LOC = 3, CC = 1, HV = 30.0, PCom = 0.0, CM = 18.0
-weight = 0.0681393195815578
-DDG_impact = 1.0 , CDG_impact = 0.0, IR = 2.0
-
-GameReady::draw
-astScore = 7.0
-LOC = 13, CC = 3, HV = 388.4183471906009, PCom = 0.0, CM = 203.20917359530046
-weight = 0.021446818000762063
-DDG_impact = 0.9230769230769231 , CDG_impact = 1.0, IR = 2.960768922830523
-
-Bird::Bird
-astScore = 21.0
-LOC = 19, CC = 3, HV = 750.6328732400383, PCom = 22.727272727272727, CM = 375.9528002563828
-weight = 0.052248761117667526
-DDG_impact = 0.9302325581395349 , CDG_impact = 1.0, IR = 2.964485644340824
-
-Bird::BirdUp
-astScore = 33.0
-LOC = 11, CC = 5, HV = 189.98960215439456, PCom = 27.27272727272727, CM = 90.35843744083364
-weight = 0.047334227164502425
-DDG_impact = 0.6666666666666666 , CDG_impact = 1.0, IR = 2.8164965809277263
-
-Pipe::setY
-astScore = 34.0
-LOC = 3, CC = 1, HV = 25.26619429851844, PCom = 0.0, CM = 15.63309714925922
-weight = 0.0
-DDG_impact = 0.8 , CDG_impact = 0.0, IR = 1.8944271909999157
-
-Pipe::pipeLogic
-astScore = 31.0
-LOC = 7, CC = 2, HV = 102.1865710312585, PCom = 14.285714285714285, CM = 49.45042837277211
-weight = 0.02206663104098409
-DDG_impact = 0.7777777777777778 , CDG_impact = 1.0, IR = 2.8819171036881968
-
-GameFrame::run
-astScore = 19.0
-LOC = 10, CC = 3, HV = 77.66179398375645, PCom = 10.0, CM = 41.33089699187823
-weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Pipe::getPipeRect
-astScore = 39.0
-LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
-weight = 0.023000635382263854
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Pipe::drawBottomNormal
-astScore = 29.0
-LOC = 8, CC = 2, HV = 366.2973245700245, PCom = 27.27272727272727, CM = 175.51229864864862
-weight = 0.02206663104098409
-DDG_impact = 0.8181818181818182 , CDG_impact = 1.0, IR = 2.9045340337332908
-
-MusicUtil::load
-astScore = 6.0
-LOC = 9, CC = 2, HV = 215.22355371615927, PCom = 0.0, CM = 114.11177685807964
-weight = 0.03761404862433377
-DDG_impact = 0.7727272727272727 , CDG_impact = 0.0, IR = 1.8790490729915326
-
-GameTime::getTime
-astScore = 19.0
-LOC = 9, CC = 3, HV = 101.57915548582149, PCom = 0.0, CM = 57.789577742910744
-weight = 0.055414742862708706
-DDG_impact = 0.0 , CDG_impact = 1.0, IR = 2.0
-
-Bird::drawTime
-astScore = 120.0
-LOC = 7, CC = 1, HV = 260.0, PCom = 12.5, CM = 128.75
-weight = 0.0755291400611144
-DDG_impact = 0.9333333333333333 , CDG_impact = 0.0, IR = 1.9660917830792959
-
-Bird::Fly
-astScore = 32.0
-LOC = 37, CC = 10, HV = 1306.654857462961, PCom = 15.909090909090908, CM = 669.872883276935
-weight = 0.1747996091709744
-DDG_impact = 0.8611111111111112 , CDG_impact = 0.9897959183673469, IR = 2.92284560408006
-
-GameElementLayer::GameElementLayer
-astScore = 4.0
-LOC = 3, CC = 1, HV = 24.0, PCom = 0.0, CM = 15.0
-weight = 0.0
-DDG_impact = 0.8 , CDG_impact = 0.0, IR = 1.8944271909999157
-
-GameTime::startTiming
-astScore = 22.0
-LOC = 4, CC = 1, HV = 31.699250014423125, PCom = 0.0, CM = 19.349625007211564
-weight = 0.027445511326188887
-DDG_impact = 0.8333333333333334 , CDG_impact = 0.0, IR = 1.912870929175277
-
-Pipe::drawHoverNormal
-astScore = 30.0
-LOC = 9, CC = 2, HV = 457.8716557125306, PCom = 30.76923076923077, CM = 220.0512124716499
-weight = 0.02206663104098409
-DDG_impact = 0.8518518518518519 , CDG_impact = 1.0, IR = 2.9229582069908973
-
-PipePool::get
-astScore = 7.0
-LOC = 8, CC = 2, HV = 131.76952268336282, PCom = 25.0, CM = 59.38476134168141
-weight = 0.021443961480130908
-DDG_impact = 0.9230769230769231 , CDG_impact = 1.0, IR = 2.960768922830523
-
-GameTime::GameTime
-astScore = 13.0
-LOC = 9, CC = 2, HV = 60.91767875292166, PCom = 0.0, CM = 36.95883937646083
-weight = 0.02612112448810764
-DDG_impact = 0.75 , CDG_impact = 0.0, IR = 1.8660254037844386
-
-GameTime::getBestScore
-astScore = 16.0
-LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
-weight = 0.023194326957333238
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameFrame::getGameState
-astScore = 20.0
-LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
-weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameFrame::initGame
-astScore = 33.0
-LOC = 10, CC = 1, HV = 171.8226790216648, PCom = 18.181818181818183, CM = 83.32043041992331
-weight = 0.041493418369188954
-DDG_impact = 0.7894736842105263 , CDG_impact = 0.0, IR = 1.8885233166386386
-
-Pipe::setVisible
+Bird::isDead
 astScore = 37.0
-LOC = 3, CC = 1, HV = 25.26619429851844, PCom = 0.0, CM = 15.63309714925922
-weight = 0.0
-DDG_impact = 0.8 , CDG_impact = 0.0, IR = 1.8944271909999157
-
-Bird::keyReleased
-astScore = 30.0
-LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
-weight = 0.03391163530035027
-DDG_impact = 0.75 , CDG_impact = 0.0, IR = 1.8660254037844386
-
-GameElementLayer::isCollideBird
-astScore = 11.0
-LOC = 13, CC = 4, HV = 240.4376391848174, PCom = 18.75, CM = 120.34381959240869
-weight = 0.13225007612278444
-DDG_impact = 0.47619047619047616 , CDG_impact = 1.0, IR = 2.6900655593423544
-
-Bird::BirdDown
-astScore = 34.0
-LOC = 5, CC = 3, HV = 58.81033751683406, PCom = 0.0, CM = 34.405168758417034
-weight = 0.021446818000762063
-DDG_impact = 0.125 , CDG_impact = 1.0, IR = 2.353553390593274
-
-GameFrame::BirdKeyListener::keyPressed
-astScore = 0.0
-LOC = 24, CC = 7, HV = 238.41805003750017, PCom = 0.0, CM = 135.70902501875008
-weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Cloud::Cloud
-astScore = 13.0
-LOC = 11, CC = 1, HV = 312.4780699337442, PCom = 25.0, CM = 150.7390349668721
-weight = 0.0
-DDG_impact = 0.9583333333333334 , CDG_impact = 0.0, IR = 1.978945010372561
-
-GameTime::isReadyTiming
-astScore = 21.0
-LOC = 3, CC = 1, HV = 22.458839376460833, PCom = 0.0, CM = 14.229419688230417
-weight = 0.027445511326188887
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameTime::reset
-astScore = 28.0
-LOC = 5, CC = 1, HV = 38.03910001730775, PCom = 0.0, CM = 23.019550008653876
-weight = 0.039076743968867136
-DDG_impact = 0.8333333333333334 , CDG_impact = 0.0, IR = 1.912870929175277
-
-GameElementLayer::pipeBornLogic
-astScore = 10.0
-LOC = 30, CC = 4, HV = 963.3743123658446, PCom = 21.21212121212121, CM = 489.0810955768617
-weight = 0.10901003356107061
-DDG_impact = 0.8125 , CDG_impact = 1.0, IR = 2.9013878188659974
-
-Pipe::setAttribute
-astScore = 24.0
-LOC = 8, CC = 1, HV = 148.0175887256437, PCom = 0.0, CM = 79.50879436282185
-weight = 0.029000971207053597
-DDG_impact = 0.9285714285714286 , CDG_impact = 0.0, IR = 1.9636241116594315
-
-Pipe::draw
-astScore = 27.0
-LOC = 17, CC = 5, HV = 282.4860706840734, PCom = 15.0, CM = 145.7430353420367
-weight = 0.07460399755095182
+LOC = 3, CC = 2, HV = 41.20902501875006, PCom = 0.0, CM = 24.10451250937503
+weight = 0.03896489820197271
 DDG_impact = 0.0 , CDG_impact = 1.0, IR = 2.0
 
-Pipe::Pipe
-astScore = 23.0
-LOC = 6, CC = 1, HV = 62.26976913547136, PCom = 0.0, CM = 35.63488456773568
-weight = 0.0
-DDG_impact = 0.875 , CDG_impact = 0.0, IR = 1.9354143466934852
-
-GameUtil::getStringWidth
-astScore = 7.0
-LOC = 4, CC = 1, HV = 70.32403072095333, PCom = 0.0, CM = 38.662015360476666
-weight = 0.03292175352026969
-DDG_impact = 0.875 , CDG_impact = 0.0, IR = 1.9354143466934852
+MusicUtil::playScore
+astScore = 9.0
+LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
+weight = 0.03983372123822344
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
 GameFrame::BirdKeyListener::resetGame
 astScore = 0.0
@@ -446,44 +213,32 @@ LOC = 5, CC = 1, HV = 27.0, PCom = 0.0, CM = 17.5
 weight = 0.0
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-GameTime::endTiming
-astScore = 72.0
-LOC = 12, CC = 3, HV = 144.75398259382442, PCom = 7.6923076923076925, CM = 77.03083745075837
-weight = 0.07877870527153696
-DDG_impact = 0.8461538461538461 , CDG_impact = 0.75, IR = 2.785891614792239
-
-GameTime::setOverTime
-astScore = 18.0
-LOC = 3, CC = 1, HV = 25.26619429851844, PCom = 0.0, CM = 15.63309714925922
+Pipe::Pipe
+astScore = 23.0
+LOC = 6, CC = 1, HV = 62.26976913547136, PCom = 0.0, CM = 35.63488456773568
 weight = 0.0
-DDG_impact = 0.8 , CDG_impact = 0.0, IR = 1.8944271909999157
+DDG_impact = 0.875 , CDG_impact = 0.0, IR = 1.9354143466934852
 
-MusicUtil::playFly
-astScore = 7.0
-LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
-weight = 0.024407212109414263
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+Bird::drawGameover
+astScore = 42.0
+LOC = 30, CC = 4, HV = 1305.946756958329, PCom = 22.857142857142858, CM = 659.544807050593
+weight = 0.09872346701844764
+DDG_impact = 0.9701492537313433 , CDG_impact = 1.0, IR = 2.9849615493669504
 
-PipePool::giveBack
+MusicUtil::playCrash
 astScore = 8.0
-LOC = 5, CC = 2, HV = 50.18947501009619, PCom = 0.0, CM = 29.594737505048094
-weight = 0.04272270302899669
-DDG_impact = 0.0 , CDG_impact = 1.0, IR = 2.0
-
-GameFrame::BirdKeyListener::keyTyped
-astScore = 0.0
-LOC = 2, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.304820237218404
-weight = 0.0
+LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
+weight = 0.03086198790615914
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-GameApp::main
-astScore = 3.0
-LOC = 3, CC = 1, HV = 24.0, PCom = 0.0, CM = 15.0
-weight = 0.0
-DDG_impact = 0.5714285714285714 , CDG_impact = 0.0, IR = 1.7559289460184544
+Bird::reset
+astScore = 43.0
+LOC = 9, CC = 1, HV = 272.4807970712782, PCom = 55.55555555555556, CM = 114.46262075786132
+weight = 0.0317419780391407
+DDG_impact = 0.9375 , CDG_impact = 0.0, IR = 1.9682458365518543
 
-Cloud::setDir
-astScore = 16.0
+GameTime::setStartTime
+astScore = 17.0
 LOC = 3, CC = 1, HV = 25.26619429851844, PCom = 0.0, CM = 15.63309714925922
 weight = 0.0
 DDG_impact = 0.8 , CDG_impact = 0.0, IR = 1.8944271909999157
@@ -494,23 +249,41 @@ LOC = 7, CC = 3, HV = 221.13832641464978, PCom = 28.57142857142857, CM = 102.283
 weight = 0.0
 DDG_impact = 0.7142857142857143 , CDG_impact = 1.0, IR = 2.8451542547285165
 
+GameTime::reset
+astScore = 28.0
+LOC = 5, CC = 1, HV = 38.03910001730775, PCom = 0.0, CM = 23.019550008653876
+weight = 0.039076743968867136
+DDG_impact = 0.8333333333333334 , CDG_impact = 0.0, IR = 1.912870929175277
+
+GameUtil::getStringHeight
+astScore = 17.0
+LOC = 4, CC = 1, HV = 66.41714012534482, PCom = 0.0, CM = 36.70857006267241
+weight = 0.023194326957333238
+DDG_impact = 0.875 , CDG_impact = 0.0, IR = 1.9354143466934852
+
+GameElementLayer::GameElementLayer
+astScore = 4.0
+LOC = 3, CC = 1, HV = 24.0, PCom = 0.0, CM = 15.0
+weight = 0.0
+DDG_impact = 0.8 , CDG_impact = 0.0, IR = 1.8944271909999157
+
+GameElementLayer::isCollideBird
+astScore = 11.0
+LOC = 13, CC = 4, HV = 240.4376391848174, PCom = 18.75, CM = 120.34381959240869
+weight = 0.13225007612278444
+DDG_impact = 0.47619047619047616 , CDG_impact = 1.0, IR = 2.6900655593423544
+
 GameFrame::update
 astScore = 18.0
 LOC = 13, CC = 2, HV = 365.0, PCom = 71.42857142857143, CM = 155.28571428571428
 weight = 0.8012205900845772
 DDG_impact = 0.7857142857142857 , CDG_impact = 1.0, IR = 2.8864052604279182
 
-GameUtil::isInProbability
-astScore = 5.0
-LOC = 9, CC = 4, HV = 223.47971260168305, PCom = 18.181818181818183, CM = 110.14894720993243
-weight = 0.042439063514507616
-DDG_impact = 0.2777777777777778 , CDG_impact = 0.8461538461538461, IR = 2.4469124877025297
-
-GameTime::getTimeInSeconds
-astScore = 20.0
-LOC = 3, CC = 1, HV = 19.651484454403228, PCom = 0.0, CM = 12.825742227201614
-weight = 0.03687267826928686
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+Bird::Bird
+astScore = 21.0
+LOC = 19, CC = 3, HV = 750.6328732400383, PCom = 22.727272727272727, CM = 375.9528002563828
+weight = 0.052248761117667526
+DDG_impact = 0.9302325581395349 , CDG_impact = 1.0, IR = 2.964485644340824
 
 Bird::draw
 astScore = 175.0
@@ -524,23 +297,119 @@ LOC = 6, CC = 2, HV = 64.52932501298082, PCom = 0.0, CM = 37.26466250649041
 weight = 0.0
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-Bird::reset
-astScore = 43.0
-LOC = 9, CC = 1, HV = 272.4807970712782, PCom = 55.55555555555556, CM = 114.46262075786132
-weight = 0.0317419780391407
-DDG_impact = 0.9375 , CDG_impact = 0.0, IR = 1.9682458365518543
-
-Bird::keyIsReleased
-astScore = 31.0
-LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
-weight = 0.024407212109414263
+GameUtil::GameUtil
+astScore = 3.0
+LOC = 2, CC = 1, HV = 13.931568569324174, PCom = 50.0, CM = -15.534215715337915
+weight = 0.0
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-GameBackground::draw
+Cloud::setDir
+astScore = 16.0
+LOC = 3, CC = 1, HV = 25.26619429851844, PCom = 0.0, CM = 15.63309714925922
+weight = 0.0
+DDG_impact = 0.8 , CDG_impact = 0.0, IR = 1.8944271909999157
+
+GameUtil::loadBUfferedImage
+astScore = 4.0
+LOC = 8, CC = 2, HV = 81.7492568250068, PCom = 0.0, CM = 46.8746284125034
+weight = 0.08616690855947004
+DDG_impact = 0.5 , CDG_impact = 1.0, IR = 2.7071067811865475
+
+Pipe::setType
+astScore = 35.0
+LOC = 3, CC = 1, HV = 25.26619429851844, PCom = 0.0, CM = 15.63309714925922
+weight = 0.0
+DDG_impact = 0.8 , CDG_impact = 0.0, IR = 1.8944271909999157
+
+Bird::keyReleased
+astScore = 30.0
+LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
+weight = 0.03391163530035027
+DDG_impact = 0.75 , CDG_impact = 0.0, IR = 1.8660254037844386
+
+Pipe::setY
+astScore = 34.0
+LOC = 3, CC = 1, HV = 25.26619429851844, PCom = 0.0, CM = 15.63309714925922
+weight = 0.0
+DDG_impact = 0.8 , CDG_impact = 0.0, IR = 1.8944271909999157
+
+Pipe::setRectangle
+astScore = 25.0
+LOC = 5, CC = 1, HV = 66.56842503028857, PCom = 0.0, CM = 37.28421251514428
+weight = 0.03655798093397628
+DDG_impact = 0.8888888888888888 , CDG_impact = 0.0, IR = 1.9428090415820634
+
+Bird::startTiming
+astScore = 38.0
+LOC = 4, CC = 2, HV = 20.67970000576925, PCom = 0.0, CM = 14.339850002884624
+weight = 0.03816892032656992
+DDG_impact = 0.0 , CDG_impact = 1.0, IR = 2.0
+
+GameUtil::isInProbability
+astScore = 5.0
+LOC = 9, CC = 4, HV = 223.47971260168305, PCom = 18.181818181818183, CM = 110.14894720993243
+weight = 0.042439063514507616
+DDG_impact = 0.2777777777777778 , CDG_impact = 0.8461538461538461, IR = 2.4469124877025297
+
+Pipe::drawBottomNormal
+astScore = 29.0
+LOC = 8, CC = 2, HV = 366.2973245700245, PCom = 27.27272727272727, CM = 175.51229864864862
+weight = 0.02206663104098409
+DDG_impact = 0.8181818181818182 , CDG_impact = 1.0, IR = 2.9045340337332908
+
+GameFrame::initGame
+astScore = 33.0
+LOC = 10, CC = 1, HV = 171.8226790216648, PCom = 18.181818181818183, CM = 83.32043041992331
+weight = 0.041493418369188954
+DDG_impact = 0.7894736842105263 , CDG_impact = 0.0, IR = 1.8885233166386386
+
+Bird::BirdFall
+astScore = 35.0
+LOC = 5, CC = 1, HV = 59.207035490257475, PCom = 33.33333333333333, CM = 16.936851078462077
+weight = 0.09352149848364771
+DDG_impact = 0.3333333333333333 , CDG_impact = 0.0, IR = 1.5773502691896257
+
+Bird::Fly
+astScore = 32.0
+LOC = 37, CC = 10, HV = 1306.654857462961, PCom = 15.909090909090908, CM = 669.872883276935
+weight = 0.1747996091709744
+DDG_impact = 0.8611111111111112 , CDG_impact = 0.9897959183673469, IR = 2.92284560408006
+
+MusicUtil::load
+astScore = 6.0
+LOC = 9, CC = 2, HV = 215.22355371615927, PCom = 0.0, CM = 114.11177685807964
+weight = 0.03761404862433377
+DDG_impact = 0.7727272727272727 , CDG_impact = 0.0, IR = 1.8790490729915326
+
+GameForeground::draw
 astScore = 9.0
-LOC = 14, CC = 3, HV = 423.2466083648286, PCom = 25.0, CM = 208.6233041824143
-weight = 0.04392861376446183
-DDG_impact = 0.8333333333333334 , CDG_impact = 1.0, IR = 2.912870929175277
+LOC = 6, CC = 2, HV = 108.41805003750011, PCom = 0.0, CM = 59.209025018750054
+weight = 0.08125683791979112
+DDG_impact = 0.6666666666666666 , CDG_impact = 1.0, IR = 2.8164965809277263
+
+GameBackground::moveLogic
+astScore = 10.0
+LOC = 5, CC = 2, HV = 53.77443751081735, PCom = 0.0, CM = 31.387218755408675
+weight = 0.027445511326188887
+DDG_impact = 0.8571428571428571 , CDG_impact = 1.0, IR = 2.9258200997725514
+
+GameTime::getTimeInSeconds
+astScore = 20.0
+LOC = 3, CC = 1, HV = 19.651484454403228, PCom = 0.0, CM = 12.825742227201614
+weight = 0.03687267826928686
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Bird::BirdDown
+astScore = 34.0
+LOC = 5, CC = 3, HV = 58.81033751683406, PCom = 0.0, CM = 34.405168758417034
+weight = 0.021446818000762063
+DDG_impact = 0.125 , CDG_impact = 1.0, IR = 2.353553390593274
+
+GameFrame::BirdKeyListener::keyTyped
+astScore = 0.0
+LOC = 2, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.304820237218404
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
 GameTime::saveBestTime
 astScore = 15.0
@@ -548,23 +417,29 @@ LOC = 6, CC = 1, HV = 112.58797503894243, PCom = 0.0, CM = 60.793987519471216
 weight = 0.03144695853598265
 DDG_impact = 0.7692307692307693 , CDG_impact = 0.0, IR = 1.8770580193070292
 
-GameTime::loadBestTime
-astScore = 14.0
-LOC = 8, CC = 2, HV = 123.18989788986397, PCom = 0.0, CM = 67.59494894493199
-weight = 0.03391163530035027
-DDG_impact = 0.8571428571428571 , CDG_impact = 1.0, IR = 2.9258200997725514
+GameTime::getTime
+astScore = 19.0
+LOC = 9, CC = 3, HV = 101.57915548582149, PCom = 0.0, CM = 57.789577742910744
+weight = 0.055414742862708706
+DDG_impact = 0.0 , CDG_impact = 1.0, IR = 2.0
 
-Pipe::drawTopNormal
-astScore = 28.0
-LOC = 8, CC = 2, HV = 382.5744501067311, PCom = 45.45454545454545, CM = 174.55995232609283
-weight = 0.02206663104098409
-DDG_impact = 0.7 , CDG_impact = 1.0, IR = 2.8366600265340756
-
-MusicUtil::playCrash
-astScore = 8.0
-LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
-weight = 0.03086198790615914
+GameTime::getBestScore
+astScore = 16.0
+LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
+weight = 0.023194326957333238
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameElementLayer::draw
+astScore = 35.0
+LOC = 14, CC = 3, HV = 287.53046480343187, PCom = 12.5, CM = 147.01523240171593
+weight = 0.3259722950136917
+DDG_impact = 0.8947368421052632 , CDG_impact = 1.0, IR = 2.945905302926917
+
+Pipe::setVisible
+astScore = 37.0
+LOC = 3, CC = 1, HV = 25.26619429851844, PCom = 0.0, CM = 15.63309714925922
+weight = 0.0
+DDG_impact = 0.8 , CDG_impact = 0.0, IR = 1.8944271909999157
 
 GameTime::isTiming
 astScore = 27.0
@@ -572,11 +447,131 @@ LOC = 3, CC = 1, HV = 22.458839376460833, PCom = 0.0, CM = 14.229419688230417
 weight = 0.0
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
+Pipe::drawTopNormal
+astScore = 28.0
+LOC = 8, CC = 2, HV = 382.5744501067311, PCom = 45.45454545454545, CM = 174.55995232609283
+weight = 0.02206663104098409
+DDG_impact = 0.7 , CDG_impact = 1.0, IR = 2.8366600265340756
+
+GameFrame::run
+astScore = 19.0
+LOC = 10, CC = 3, HV = 77.66179398375645, PCom = 10.0, CM = 41.33089699187823
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Pipe::pipeLogic
+astScore = 31.0
+LOC = 7, CC = 2, HV = 102.1865710312585, PCom = 14.285714285714285, CM = 49.45042837277211
+weight = 0.02206663104098409
+DDG_impact = 0.7777777777777778 , CDG_impact = 1.0, IR = 2.8819171036881968
+
+GameTime::GameTime
+astScore = 13.0
+LOC = 9, CC = 2, HV = 60.91767875292166, PCom = 0.0, CM = 36.95883937646083
+weight = 0.02612112448810764
+DDG_impact = 0.75 , CDG_impact = 0.0, IR = 1.8660254037844386
+
+Pipe::drawHoverNormal
+astScore = 30.0
+LOC = 9, CC = 2, HV = 457.8716557125306, PCom = 30.76923076923077, CM = 220.0512124716499
+weight = 0.02206663104098409
+DDG_impact = 0.8518518518518519 , CDG_impact = 1.0, IR = 2.9229582069908973
+
+Bird::keyIsReleased
+astScore = 31.0
+LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
+weight = 0.024407212109414263
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameForeground::cloudLogic
+astScore = 10.0
+LOC = 25, CC = 7, HV = 1563.8913884175995, PCom = 56.52173913043478, CM = 770.6848246435824
+weight = 0.08881363340766646
+DDG_impact = 0.8387096774193549 , CDG_impact = 1.0, IR = 2.915810939779251
+
+GameReady::draw
+astScore = 7.0
+LOC = 13, CC = 3, HV = 388.4183471906009, PCom = 0.0, CM = 203.20917359530046
+weight = 0.021446818000762063
+DDG_impact = 0.9230769230769231 , CDG_impact = 1.0, IR = 2.960768922830523
+
+GameTime::isReadyTiming
+astScore = 21.0
+LOC = 3, CC = 1, HV = 22.458839376460833, PCom = 0.0, CM = 14.229419688230417
+weight = 0.027445511326188887
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameUtil::getRandomNumber
+astScore = 6.0
+LOC = 3, CC = 1, HV = 64.52932501298082, PCom = 0.0, CM = 35.26466250649041
+weight = 0.05618873080980494
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+MusicUtil::playFly
+astScore = 7.0
+LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
+weight = 0.024407212109414263
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameApp::main
+astScore = 3.0
+LOC = 3, CC = 1, HV = 24.0, PCom = 0.0, CM = 15.0
+weight = 0.0
+DDG_impact = 0.5714285714285714 , CDG_impact = 0.0, IR = 1.7559289460184544
+
+GameTime::TimeToScore
+astScore = 26.0
+LOC = 13, CC = 5, HV = 260.05594662738457, PCom = 7.6923076923076925, CM = 136.18181946753845
+weight = 0.07292200565324071
+DDG_impact = 0.9090909090909091 , CDG_impact = 0.9354838709677419, IR = 2.920666740894944
+
+Bird::BirdUp
+astScore = 33.0
+LOC = 11, CC = 5, HV = 189.98960215439456, PCom = 27.27272727272727, CM = 90.35843744083364
+weight = 0.047334227164502425
+DDG_impact = 0.6666666666666666 , CDG_impact = 1.0, IR = 2.8164965809277263
+
+GameTime::loadBestTime
+astScore = 14.0
+LOC = 8, CC = 2, HV = 123.18989788986397, PCom = 0.0, CM = 67.59494894493199
+weight = 0.03391163530035027
+DDG_impact = 0.8571428571428571 , CDG_impact = 1.0, IR = 2.9258200997725514
+
 Bird::keyPressed
 astScore = 29.0
 LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
 weight = 0.024407212109414263
 DDG_impact = 0.75 , CDG_impact = 0.0, IR = 1.8660254037844386
+
+GameElementLayer::reset
+astScore = 12.0
+LOC = 7, CC = 2, HV = 108.41805003750011, PCom = 0.0, CM = 59.709025018750054
+weight = 0.033564957569205474
+DDG_impact = 1.0 , CDG_impact = 1.0, IR = 3.0
+
+Pipe::draw
+astScore = 27.0
+LOC = 17, CC = 5, HV = 282.4860706840734, PCom = 15.0, CM = 145.7430353420367
+weight = 0.07460399755095182
+DDG_impact = 0.0 , CDG_impact = 1.0, IR = 2.0
+
+GameElementLayer::pipeBornLogic
+astScore = 10.0
+LOC = 30, CC = 4, HV = 963.3743123658446, PCom = 21.21212121212121, CM = 489.0810955768617
+weight = 0.10901003356107061
+DDG_impact = 0.8125 , CDG_impact = 1.0, IR = 2.9013878188659974
+
+Bird::drawTime
+astScore = 120.0
+LOC = 7, CC = 1, HV = 260.0, PCom = 12.5, CM = 128.75
+weight = 0.0755291400611144
+DDG_impact = 0.9333333333333333 , CDG_impact = 0.0, IR = 1.9660917830792959
+
+GameFrame::getGameState
+astScore = 20.0
+LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
 Bird::BirdDead
 astScore = 36.0
@@ -584,10 +579,46 @@ LOC = 8, CC = 2, HV = 135.93368043019473, PCom = 11.11111111111111, CM = 68.4112
 weight = 0.055491236638646343
 DDG_impact = 0.8181818181818182 , CDG_impact = 1.0, IR = 2.9045340337332908
 
-GameUtil::getStringHeight
-astScore = 17.0
-LOC = 4, CC = 1, HV = 66.41714012534482, PCom = 0.0, CM = 36.70857006267241
-weight = 0.023194326957333238
+GameUtil::getStringWidth
+astScore = 7.0
+LOC = 4, CC = 1, HV = 70.32403072095333, PCom = 0.0, CM = 38.662015360476666
+weight = 0.03292175352026969
+DDG_impact = 0.875 , CDG_impact = 0.0, IR = 1.9354143466934852
+
+GameTime::endTiming
+astScore = 72.0
+LOC = 12, CC = 3, HV = 144.75398259382442, PCom = 7.6923076923076925, CM = 77.03083745075837
+weight = 0.07877870527153696
+DDG_impact = 0.8461538461538461 , CDG_impact = 0.75, IR = 2.785891614792239
+
+GameFrame::setGameState
+astScore = 141.0
+LOC = 3, CC = 1, HV = 30.0, PCom = 0.0, CM = 18.0
+weight = 0.0681393195815578
+DDG_impact = 1.0 , CDG_impact = 0.0, IR = 2.0
+
+Pipe::getPipeRect
+astScore = 39.0
+LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
+weight = 0.023000635382263854
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameReady::GameReady
+astScore = 6.0
+LOC = 4, CC = 1, HV = 46.50699332842308, PCom = 0.0, CM = 26.75349666421154
+weight = 0.052248761117667526
+DDG_impact = 0.8571428571428571 , CDG_impact = 0.0, IR = 1.9258200997725514
+
+GameBackground::draw
+astScore = 9.0
+LOC = 14, CC = 3, HV = 423.2466083648286, PCom = 25.0, CM = 208.6233041824143
+weight = 0.04392861376446183
+DDG_impact = 0.8333333333333334 , CDG_impact = 1.0, IR = 2.912870929175277
+
+GameFrame::GameFrame
+astScore = 13.0
+LOC = 5, CC = 1, HV = 55.350905898196764, PCom = 60.0, CM = 1.675452949098382
+weight = 0.07330774123763499
 DDG_impact = 0.875 , CDG_impact = 0.0, IR = 1.9354143466934852
 
 GameFrame::initFrame
@@ -602,38 +633,8 @@ LOC = 3, CC = 1, HV = 25.26619429851844, PCom = 0.0, CM = 15.63309714925922
 weight = 0.0
 DDG_impact = 0.8 , CDG_impact = 0.0, IR = 1.8944271909999157
 
-GameForeground::GameForeground
-astScore = 8.0
-LOC = 9, CC = 2, HV = 275.0, PCom = 36.36363636363637, CM = 125.81818181818181
-weight = 0.052248761117667526
-DDG_impact = 0.9411764705882353 , CDG_impact = 1.0, IR = 2.970142500145332
-
-GameUtil::getRandomNumber
-astScore = 6.0
-LOC = 3, CC = 1, HV = 64.52932501298082, PCom = 0.0, CM = 35.26466250649041
-weight = 0.05618873080980494
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-MusicUtil::playScore
-astScore = 9.0
-LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
-weight = 0.03983372123822344
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Bird::isDead
-astScore = 37.0
-LOC = 3, CC = 2, HV = 41.20902501875006, PCom = 0.0, CM = 24.10451250937503
-weight = 0.03896489820197271
-DDG_impact = 0.0 , CDG_impact = 1.0, IR = 2.0
-
-Bird::startTiming
-astScore = 38.0
-LOC = 4, CC = 2, HV = 20.67970000576925, PCom = 0.0, CM = 14.339850002884624
-weight = 0.03816892032656992
-DDG_impact = 0.0 , CDG_impact = 1.0, IR = 2.0
-
-commitHash = d7b64a5 , scoreOfCommit = 715949.5500392887
-本次commit计算的运行时间（秒）：219.391
+commitHash = d7b64a5 , scoreOfCommit = 715949.5500392889
+本次commit计算的运行时间（秒）：216.249
 
 nowCommitHash = 5e5ba4b
 DeveloperContributionEvaluation/editScripts/d7b64a5_to_5e5ba4b/editscript_Bird.txt
@@ -700,101 +701,17 @@ joern-export cdg执行成功  old_MovingPipe.java
 joern-export cdg执行成功  old_MusicUtil.java
 joern-export cdg执行成功  old_Pipe.java
 joern-export cdg执行成功  old_PipePool.java
-PipePool::get
-astScore = 15.399999999999999
-LOC = 8, CC = 2, HV = 100.0, PCom = 62.5, CM = 24.75
-weight = 0.03140968800455313
-DDG_impact = 0.46153846153846156 , CDG_impact = 1.0, IR = 2.6793662204867577
-
-MovingPipe::pipeLogic
-astScore = 29.0
-LOC = 19, CC = 5, HV = 301.1948216979095, PCom = 10.0, CM = 158.59741084895475
-weight = 0.0181802460718281
-DDG_impact = 0.8333333333333334 , CDG_impact = 0.9259259259259259, IR = 2.8751213778246534
-
-PipePool::get
-astScore = 15.399999999999999
-LOC = 8, CC = 2, HV = 100.0, PCom = 62.5, CM = 24.75
-weight = 0.03140968800455313
-DDG_impact = 0.46153846153846156 , CDG_impact = 1.0, IR = 2.6793662204867577
-
-Pipe::pipeLogic
-astScore = 0.0
-LOC = 7, CC = 2, HV = 133.437600046154, PCom = 50.0, CM = 47.218800023076994
-weight = 0.018705655183303936
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameUtil::getStringWidth
-astScore = 41.16999999999998
-LOC = 6, CC = 1, HV = 135.93368043019473, PCom = 0.0, CM = 72.46684021509736
-weight = 0.02790743037467417
-DDG_impact = 1.0 , CDG_impact = 0.0, IR = 2.0
-
-MovingPipe::drawTopHard
-astScore = 12.0
-LOC = 8, CC = 2, HV = 379.5669432539275, PCom = 36.36363636363637, CM = 177.60165344514556
-weight = 0.0181802460718281
-DDG_impact = 0.5909090909090909 , CDG_impact = 1.0, IR = 2.7687061147858074
-
-MovingPipe::setAttribute
-astScore = 9.0
-LOC = 13, CC = 2, HV = 233.38411712391758, PCom = 0.0, CM = 125.19205856195879
-weight = 0.03549172479711033
-DDG_impact = 0.8888888888888888 , CDG_impact = 1.0, IR = 2.9428090415820636
-
-Bird::Bird
-astScore = 5.159999999999998
-LOC = 19, CC = 3, HV = 754.432570482209, PCom = 22.727272727272727, CM = 377.85264887746814
-weight = 0.06388108874216213
-DDG_impact = 0.09302325581395349 , CDG_impact = 0.0, IR = 1.3049971406652094
-
-GameElementLayer::addHoverPipe
-astScore = 12.0
-LOC = 13, CC = 1, HV = 690.4452445071266, PCom = 31.25, CM = 337.5976222535633
-weight = 0.0979444514234097
-DDG_impact = 0.9354838709677419 , CDG_impact = 0.0, IR = 1.9672041516493515
-
-GameElementLayer::addMovingNormalPipe
-astScore = 15.0
-LOC = 12, CC = 1, HV = 404.09041853515606, PCom = 16.666666666666664, CM = 201.2118759342447
-weight = 0.0979444514234097
-DDG_impact = 0.8260869565217391 , CDG_impact = 0.0, IR = 1.9088932591463856
-
-MovingPipe::draw
-astScore = 10.0
-LOC = 19, CC = 5, HV = 269.63553058626803, PCom = 9.523809523809524, CM = 143.05586053122926
-weight = 0.06136587857884983
-DDG_impact = 0.0 , CDG_impact = 1.0, IR = 2.0
-
 GameElementLayer::isCollideBird
 astScore = 0.0
 LOC = 13, CC = 4, HV = 240.4376391848174, PCom = 18.75, CM = 120.34381959240869
 weight = 0.11282800303445202
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-MovingPipe::drawBottomHard
-astScore = 13.0
-LOC = 7, CC = 2, HV = 356.1223988875238, PCom = 30.0, CM = 168.5611994437619
-weight = 0.0181802460718281
-DDG_impact = 0.7727272727272727 , CDG_impact = 1.0, IR = 2.8790490729915326
-
-GameTime::GameTime
-astScore = 7.02
-LOC = 9, CC = 2, HV = 60.91767875292166, PCom = 0.0, CM = 36.95883937646083
-weight = 0.04068406911457983
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-MovingPipe::drawHoverHard
-astScore = 11.0
-LOC = 9, CC = 2, HV = 492.41116962671674, PCom = 30.76923076923077, CM = 237.32096942874298
-weight = 0.0181802460718281
-DDG_impact = 0.6333333333333333 , CDG_impact = 1.0, IR = 2.7958224257542215
-
-GameUtil::getStringHeight
-astScore = 39.0
-LOC = 6, CC = 1, HV = 135.93368043019473, PCom = 0.0, CM = 72.46684021509736
-weight = 0.019661591362400282
-DDG_impact = 1.0 , CDG_impact = 0.0, IR = 2.0
+GameElementLayer::addMovingNormalPipe
+astScore = 15.0
+LOC = 12, CC = 1, HV = 404.09041853515606, PCom = 16.666666666666664, CM = 201.2118759342447
+weight = 0.0979444514234097
+DDG_impact = 0.8260869565217391 , CDG_impact = 0.0, IR = 1.9088932591463856
 
 GameTime::getInstance
 astScore = 14.01
@@ -808,17 +725,17 @@ LOC = 17, CC = 5, HV = 300.16030763377006, PCom = 19.047619047619047, CM = 152.5
 weight = 0.0639620177179069
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-GameElementLayer::addMovingHoverPipe
-astScore = 13.0
-LOC = 13, CC = 1, HV = 694.3236064597047, PCom = 31.25, CM = 339.53680322985235
-weight = 0.0979444514234097
-DDG_impact = 0.9354838709677419 , CDG_impact = 0.0, IR = 1.9672041516493515
+MovingPipe::MovingPipe
+astScore = 8.0
+LOC = 3, CC = 1, HV = 4.754887502163469, PCom = 0.0, CM = 5.377443751081735
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-PipePool::giveBack
-astScore = 16.0
-LOC = 11, CC = 4, HV = 146.94555522617034, PCom = 8.333333333333332, CM = 77.8061109464185
-weight = 0.036215594028596546
-DDG_impact = 0.0 , CDG_impact = 1.0, IR = 2.0
+PipePool::get
+astScore = 15.399999999999999
+LOC = 17, CC = 4, HV = 296.12770224288886, PCom = 23.52941176470588, CM = 147.7991452390915
+weight = 0.03140968800455313
+DDG_impact = 0.46153846153846156 , CDG_impact = 1.0, IR = 2.6793662204867577
 
 GameElementLayer::addNormalPipe
 astScore = 18.1
@@ -832,20 +749,104 @@ LOC = 47, CC = 11, HV = 1095.5989469217632, PCom = 20.0, CM = 567.7994734608816
 weight = 0.5212668300076286
 DDG_impact = 0.1956521739130435 , CDG_impact = 0.17567567567567569, IR = 1.861462690607146
 
+GameUtil::getStringWidth
+astScore = 41.16999999999998
+LOC = 6, CC = 1, HV = 135.93368043019473, PCom = 0.0, CM = 72.46684021509736
+weight = 0.02790743037467417
+DDG_impact = 1.0 , CDG_impact = 0.0, IR = 2.0
+
+Bird::Bird
+astScore = 5.159999999999998
+LOC = 19, CC = 3, HV = 754.432570482209, PCom = 22.727272727272727, CM = 377.85264887746814
+weight = 0.06388108874216213
+DDG_impact = 0.09302325581395349 , CDG_impact = 0.0, IR = 1.3049971406652094
+
+GameUtil::getStringHeight
+astScore = 39.0
+LOC = 6, CC = 1, HV = 135.93368043019473, PCom = 0.0, CM = 72.46684021509736
+weight = 0.019661591362400282
+DDG_impact = 1.0 , CDG_impact = 0.0, IR = 2.0
+
+GameElementLayer::addHoverPipe
+astScore = 12.0
+LOC = 13, CC = 1, HV = 690.4452445071266, PCom = 31.25, CM = 337.5976222535633
+weight = 0.0979444514234097
+DDG_impact = 0.9354838709677419 , CDG_impact = 0.0, IR = 1.9672041516493515
+
+PipePool::get
+astScore = 15.399999999999999
+LOC = 17, CC = 4, HV = 296.12770224288886, PCom = 23.52941176470588, CM = 147.7991452390915
+weight = 0.03140968800455313
+DDG_impact = 0.46153846153846156 , CDG_impact = 1.0, IR = 2.6793662204867577
+
+GameElementLayer::addMovingHoverPipe
+astScore = 13.0
+LOC = 13, CC = 1, HV = 694.3236064597047, PCom = 31.25, CM = 339.53680322985235
+weight = 0.0979444514234097
+DDG_impact = 0.9354838709677419 , CDG_impact = 0.0, IR = 1.9672041516493515
+
+PipePool::giveBack
+astScore = 16.0
+LOC = 11, CC = 4, HV = 146.94555522617034, PCom = 8.333333333333332, CM = 77.8061109464185
+weight = 0.036215594028596546
+DDG_impact = 0.0 , CDG_impact = 1.0, IR = 2.0
+
+Pipe::pipeLogic
+astScore = 0.0
+LOC = 7, CC = 2, HV = 133.437600046154, PCom = 50.0, CM = 47.218800023076994
+weight = 0.018705655183303936
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+MovingPipe::pipeLogic
+astScore = 29.0
+LOC = 19, CC = 5, HV = 301.1948216979095, PCom = 10.0, CM = 158.59741084895475
+weight = 0.0181802460718281
+DDG_impact = 0.8333333333333334 , CDG_impact = 0.9259259259259259, IR = 2.8751213778246534
+
+MovingPipe::drawBottomHard
+astScore = 13.0
+LOC = 7, CC = 2, HV = 356.1223988875238, PCom = 30.0, CM = 168.5611994437619
+weight = 0.0181802460718281
+DDG_impact = 0.7727272727272727 , CDG_impact = 1.0, IR = 2.8790490729915326
+
+MovingPipe::drawHoverHard
+astScore = 11.0
+LOC = 9, CC = 2, HV = 492.41116962671674, PCom = 30.76923076923077, CM = 237.32096942874298
+weight = 0.0181802460718281
+DDG_impact = 0.6333333333333333 , CDG_impact = 1.0, IR = 2.7958224257542215
+
+MovingPipe::setAttribute
+astScore = 9.0
+LOC = 13, CC = 2, HV = 233.38411712391758, PCom = 0.0, CM = 125.19205856195879
+weight = 0.03549172479711033
+DDG_impact = 0.8888888888888888 , CDG_impact = 1.0, IR = 2.9428090415820636
+
+MovingPipe::draw
+astScore = 10.0
+LOC = 19, CC = 5, HV = 269.63553058626803, PCom = 9.523809523809524, CM = 143.05586053122926
+weight = 0.06136587857884983
+DDG_impact = 0.0 , CDG_impact = 1.0, IR = 2.0
+
+GameTime::GameTime
+astScore = 7.02
+LOC = 9, CC = 2, HV = 60.91767875292166, PCom = 0.0, CM = 36.95883937646083
+weight = 0.04068406911457983
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+MovingPipe::drawTopHard
+astScore = 12.0
+LOC = 8, CC = 2, HV = 379.5669432539275, PCom = 36.36363636363637, CM = 177.60165344514556
+weight = 0.0181802460718281
+DDG_impact = 0.5909090909090909 , CDG_impact = 1.0, IR = 2.7687061147858074
+
 GameTime::reset
 astScore = 4.029999999999999
 LOC = 6, CC = 1, HV = 49.82892142331044, PCom = 0.0, CM = 29.41446071165522
 weight = 0.03312495219638577
 DDG_impact = 0.42857142857142855 , CDG_impact = 0.0, IR = 1.654653670707977
 
-MovingPipe::MovingPipe
-astScore = 8.0
-LOC = 3, CC = 1, HV = 4.754887502163469, PCom = 0.0, CM = 5.377443751081735
-weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-commitHash = 5e5ba4b , scoreOfCommit = 133873.68565489742
-本次commit计算的运行时间（秒）：159.591
+commitHash = 5e5ba4b , scoreOfCommit = 144347.2041009522
+本次commit计算的运行时间（秒）：153.251
 
 nowCommitHash = 4e8f8da
 DeveloperContributionEvaluation/editScripts/5e5ba4b_to_4e8f8da/editscript_Bird.txt
@@ -940,23 +941,11 @@ joern-export cdg执行成功  old_MovingPipe.java
 joern-export cdg执行成功  old_MusicUtil.java
 joern-export cdg执行成功  old_Pipe.java
 joern-export cdg执行成功  old_PipePool.java
-GameTime::GameTime
-astScore = 0.0
-LOC = 9, CC = 2, HV = 60.91767875292166, PCom = 0.0, CM = 36.95883937646083
-weight = 0.04063700963935586
+GameFrame::initGame
+astScore = 0.6000000000000001
+LOC = 10, CC = 1, HV = 155.88872502451935, PCom = 9.090909090909092, CM = 79.89890796680513
+weight = 0.03524367571002135
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Bird::birdDown
-astScore = 0.0
-LOC = 5, CC = 3, HV = 74.00879436282185, PCom = 20.0, CM = 32.00439718141092
-weight = 0.018159216886247543
-DDG_impact = 0.125 , CDG_impact = 1.0, IR = 2.353553390593274
-
-Bird::birdDead
-astScore = 0.01
-LOC = 8, CC = 2, HV = 135.93368043019473, PCom = 11.11111111111111, CM = 68.4112846595418
-weight = 0.04402390103367454
-DDG_impact = 0.8181818181818182 , CDG_impact = 1.0, IR = 2.9045340337332908
 
 Bird::birdFall
 astScore = 0.0
@@ -964,51 +953,27 @@ LOC = 5, CC = 1, HV = 59.207035490257475, PCom = 33.33333333333333, CM = 16.9368
 weight = 0.07821456264909735
 DDG_impact = 0.3333333333333333 , CDG_impact = 0.0, IR = 1.5773502691896257
 
-GameElementLayer::pipeBornLogic
+GameFrame::BirdKeyListener::resetGame
 astScore = 0.0
-LOC = 47, CC = 11, HV = 1095.5989469217632, PCom = 20.0, CM = 567.7994734608816
-weight = 0.5206638779429587
+LOC = 5, CC = 1, HV = 18.094737505048094, PCom = 20.0, CM = 3.047368752524047
+weight = 0.0
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-GameElementLayer::isCollideBird
-astScore = 0.03
-LOC = 13, CC = 4, HV = 257.61820814011753, PCom = 25.0, CM = 125.80910407005877
-weight = 0.11154432642697762
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+Bird::drawScore
+astScore = 0.0
+LOC = 7, CC = 1, HV = 206.0894050155578, PCom = 0.0, CM = 108.0447025077789
+weight = 0.06374082695324908
+DDG_impact = 0.9333333333333333 , CDG_impact = 0.0, IR = 1.9660917830792959
 
-GameElementLayer::addNormalPipe
-astScore = 0.02
-LOC = 12, CC = 1, HV = 463.73929835897343, PCom = 30.76923076923077, CM = 223.98503379487133
-weight = 0.0978311585649175
+GameForeground::cloudLogic
+astScore = 0.0
+LOC = 25, CC = 7, HV = 1563.8913884175995, PCom = 55.319148936170215, CM = 771.2861197407146
+weight = 0.08963806526783316
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
 GameUtil::GameUtil
 astScore = 0.0
 LOC = 2, CC = 1, HV = 13.931568569324174, PCom = 50.0, CM = -15.534215715337915
-weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameFrame::BirdKeyListener::keyPressed
-astScore = 0.0
-LOC = 24, CC = 7, HV = 353.10758835509176, PCom = 18.51851851851852, CM = 183.79453491828662
-weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Bird::BirdDown
-astScore = 0.0
-LOC = 5, CC = 3, HV = 6.339850002884625, PCom = 25.0, CM = -4.330074998557688
-weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameTime::endTiming
-astScore = 0.01
-LOC = 12, CC = 3, HV = 144.75398259382442, PCom = 7.6923076923076925, CM = 77.03083745075837
-weight = 0.06554948214805556
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Bird::Fly
-astScore = 0.0
-LOC = 37, CC = 10, HV = 1548.0647380819732, PCom = 16.27906976744186, CM = 790.3928341572657
 weight = 0.0
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
@@ -1018,28 +983,22 @@ LOC = 7, CC = 1, HV = 70.30835464468075, PCom = 28.57142857142857, CM = 25.86846
 weight = 0.0
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-GameFrame::BirdKeyListener::resetGame
+GameTime::TimeToScore
 astScore = 0.0
-LOC = 5, CC = 1, HV = 18.094737505048094, PCom = 20.0, CM = 3.047368752524047
+LOC = 13, CC = 5, HV = 277.32594337032447, PCom = 15.384615384615385, CM = 140.97066399285455
+weight = 0.058993700662602996
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Bird::Fly
+astScore = 0.0
+LOC = 37, CC = 10, HV = 1548.0647380819732, PCom = 16.27906976744186, CM = 790.3928341572657
 weight = 0.0
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-MovingPipe::pipeLogic
+Bird::BirdDown
 astScore = 0.0
-LOC = 19, CC = 5, HV = 318.9478887145537, PCom = 14.285714285714285, CM = 165.3310872144197
-weight = 0.018159216886247543
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Bird::BirdFall
-astScore = 0.0
-LOC = 5, CC = 1, HV = 75.28421251514429, PCom = 40.0, CM = 21.642106257572145
+LOC = 5, CC = 3, HV = 6.339850002884625, PCom = 25.0, CM = -4.330074998557688
 weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Bird::draw
-astScore = 0.03
-LOC = 15, CC = 5, HV = 585.4975673420433, PCom = 31.57894736842105, CM = 287.95930998681115
-weight = 0.26993668887673344
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
 Bird::BirdDead
@@ -1048,16 +1007,16 @@ LOC = 8, CC = 2, HV = 85.95159310338741, PCom = 37.5, CM = 30.225796551693705
 weight = 0.0
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-GameReady::draw
-astScore = 14.32
-LOC = 13, CC = 3, HV = 566.1933293917699, PCom = 56.25, CM = 263.97166469588495
-weight = 0.018159216886247543
-DDG_impact = 0.24 , CDG_impact = 0.16666666666666666, IR = 1.8981462390204986
+MovingPipe::draw
+astScore = 15.03
+LOC = 17, CC = 5, HV = 289.9853819512694, PCom = 19.047619047619047, CM = 147.46888145182518
+weight = 0.06129489634660446
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-Pipe::draw
-astScore = 0.0
-LOC = 17, CC = 5, HV = 300.16030763377006, PCom = 19.047619047619047, CM = 152.5563442930755
-weight = 0.06388803251796062
+Bird::draw
+astScore = 0.03
+LOC = 15, CC = 5, HV = 585.4975673420433, PCom = 31.57894736842105, CM = 287.95930998681115
+weight = 0.26993668887673344
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
 Bird::BirdUp
@@ -1066,46 +1025,16 @@ LOC = 11, CC = 5, HV = 196.21499122004107, PCom = 50.0, CM = 82.10749561002054
 weight = 0.0
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-Bird::birdUp
-astScore = 0.02
-LOC = 11, CC = 5, HV = 222.90509710918678, PCom = 45.45454545454545, CM = 97.72527582732067
-weight = 0.04007832290983993
-DDG_impact = 0.6 , CDG_impact = 1.0, IR = 2.7745966692414834
-
-GameForeground::cloudLogic
+Pipe::draw
 astScore = 0.0
-LOC = 25, CC = 7, HV = 1563.8913884175995, PCom = 55.319148936170215, CM = 771.2861197407146
-weight = 0.08963806526783316
+LOC = 17, CC = 5, HV = 300.16030763377006, PCom = 19.047619047619047, CM = 152.5563442930755
+weight = 0.06388803251796062
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-Bird::drawScore
+GameTime::GameTime
 astScore = 0.0
-LOC = 7, CC = 1, HV = 206.0894050155578, PCom = 0.0, CM = 108.0447025077789
-weight = 0.06374082695324908
-DDG_impact = 0.9333333333333333 , CDG_impact = 0.0, IR = 1.9660917830792959
-
-GameTime::saveBestScore
-astScore = 1.01
-LOC = 6, CC = 1, HV = 112.58797503894243, PCom = 0.0, CM = 60.793987519471216
-weight = 0.02669225525655925
-DDG_impact = 0.7692307692307693 , CDG_impact = 0.0, IR = 1.8770580193070292
-
-GameFrame::initGame
-astScore = 0.6000000000000001
-LOC = 10, CC = 1, HV = 155.88872502451935, PCom = 9.090909090909092, CM = 79.89890796680513
-weight = 0.03524367571002135
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-MovingPipe::draw
-astScore = 15.03
-LOC = 17, CC = 5, HV = 289.9853819512694, PCom = 19.047619047619047, CM = 147.46888145182518
-weight = 0.06129489634660446
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameTime::TimeToScore
-astScore = 0.0
-LOC = 13, CC = 5, HV = 277.32594337032447, PCom = 15.384615384615385, CM = 140.97066399285455
-weight = 0.058993700662602996
+LOC = 9, CC = 2, HV = 60.91767875292166, PCom = 0.0, CM = 36.95883937646083
+weight = 0.04063700963935586
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
 Bird::fly
@@ -1114,9 +1043,39 @@ LOC = 42, CC = 11, HV = 1717.7317704136578, PCom = 16.3265306122449, CM = 878.20
 weight = 0.14446195825100222
 DDG_impact = 0.8636363636363636 , CDG_impact = 0.9920634920634921, IR = 2.92534421839658
 
-GameTime::saveBestTime
+GameElementLayer::isCollideBird
+astScore = 0.03
+LOC = 13, CC = 4, HV = 257.61820814011753, PCom = 25.0, CM = 125.80910407005877
+weight = 0.11154432642697762
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Bird::birdUp
+astScore = 0.02
+LOC = 11, CC = 5, HV = 222.90509710918678, PCom = 45.45454545454545, CM = 97.72527582732067
+weight = 0.04007832290983993
+DDG_impact = 0.6 , CDG_impact = 1.0, IR = 2.7745966692414834
+
+GameTime::endTiming
+astScore = 0.01
+LOC = 12, CC = 3, HV = 144.75398259382442, PCom = 7.6923076923076925, CM = 77.03083745075837
+weight = 0.06554948214805556
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameTime::saveBestScore
+astScore = 1.01
+LOC = 6, CC = 1, HV = 112.58797503894243, PCom = 0.0, CM = 60.793987519471216
+weight = 0.02669225525655925
+DDG_impact = 0.7692307692307693 , CDG_impact = 0.0, IR = 1.8770580193070292
+
+Bird::BirdFall
 astScore = 0.0
-LOC = 6, CC = 1, HV = 71.69925001442313, PCom = 0.0, CM = 40.349625007211564
+LOC = 5, CC = 1, HV = 75.28421251514429, PCom = 40.0, CM = 21.642106257572145
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameFrame::BirdKeyListener::keyPressed
+astScore = 0.04
+LOC = 24, CC = 7, HV = 353.10758835509176, PCom = 18.51851851851852, CM = 183.79453491828662
 weight = 0.0
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
@@ -1126,8 +1085,50 @@ LOC = 13, CC = 2, HV = 378.329558951884, PCom = 66.66666666666666, CM = 164.3314
 weight = 1.0762677065851298
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-commitHash = 4e8f8da , scoreOfCommit = 29259.473025061357
-本次commit计算的运行时间（秒）：223.069
+GameElementLayer::pipeBornLogic
+astScore = 0.0
+LOC = 47, CC = 11, HV = 1095.5989469217632, PCom = 20.0, CM = 567.7994734608816
+weight = 0.5206638779429587
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+MovingPipe::pipeLogic
+astScore = 0.0
+LOC = 19, CC = 5, HV = 318.9478887145537, PCom = 14.285714285714285, CM = 165.3310872144197
+weight = 0.018159216886247543
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameTime::saveBestTime
+astScore = 0.0
+LOC = 6, CC = 1, HV = 71.69925001442313, PCom = 0.0, CM = 40.349625007211564
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Bird::birdDead
+astScore = 0.01
+LOC = 8, CC = 2, HV = 135.93368043019473, PCom = 11.11111111111111, CM = 68.4112846595418
+weight = 0.04402390103367454
+DDG_impact = 0.8181818181818182 , CDG_impact = 1.0, IR = 2.9045340337332908
+
+Bird::birdDown
+astScore = 0.0
+LOC = 5, CC = 3, HV = 74.00879436282185, PCom = 20.0, CM = 32.00439718141092
+weight = 0.018159216886247543
+DDG_impact = 0.125 , CDG_impact = 1.0, IR = 2.353553390593274
+
+GameElementLayer::addNormalPipe
+astScore = 0.02
+LOC = 12, CC = 1, HV = 463.73929835897343, PCom = 30.76923076923077, CM = 223.98503379487133
+weight = 0.0978311585649175
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameReady::draw
+astScore = 14.32
+LOC = 13, CC = 3, HV = 566.1933293917699, PCom = 56.25, CM = 263.97166469588495
+weight = 0.018159216886247543
+DDG_impact = 0.24 , CDG_impact = 0.16666666666666666, IR = 1.8981462390204986
+
+commitHash = 4e8f8da , scoreOfCommit = 29266.824806458088
+本次commit计算的运行时间（秒）：223.903
 
 nowCommitHash = e2cb276
 DeveloperContributionEvaluation/editScripts/4e8f8da_to_e2cb276/editscript_GameFrame.txt
@@ -1152,10 +1153,10 @@ joern-export cdg执行成功  new_MusicUtil.java
 joern-export cdg执行成功  old_Constant.java
 joern-export cdg执行成功  old_GameFrame.java
 joern-export cdg执行成功  old_MusicUtil.java
-MusicUtil::playFly
-astScore = 21.92000000000007
+MusicUtil::playScore
+astScore = 18.33
 LOC = 9, CC = 3, HV = 182.67948703818894, PCom = 10.0, CM = 93.33974351909447
-weight = 0.020370979226915834
+weight = 0.03200089853309298
 DDG_impact = 0.7777777777777778 , CDG_impact = 0.0, IR = 1.8819171036881968
 
 GameFrame::initGame
@@ -1164,16 +1165,16 @@ LOC = 10, CC = 1, HV = 162.84823041805248, PCom = 30.0, CM = 72.92411520902624
 weight = 0.023223666190408318
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-MusicUtil::playScore
-astScore = 18.33
-LOC = 9, CC = 3, HV = 182.67948703818894, PCom = 10.0, CM = 93.33974351909447
-weight = 0.03200089853309298
-DDG_impact = 0.7777777777777778 , CDG_impact = 0.0, IR = 1.8819171036881968
-
 MusicUtil::playCrash
 astScore = 45.339999999999996
 LOC = 9, CC = 3, HV = 182.67948703818894, PCom = 10.0, CM = 93.33974351909447
 weight = 0.025911005071722146
+DDG_impact = 0.7777777777777778 , CDG_impact = 0.0, IR = 1.8819171036881968
+
+MusicUtil::playFly
+astScore = 21.92000000000007
+LOC = 9, CC = 3, HV = 182.67948703818894, PCom = 10.0, CM = 93.33974351909447
+weight = 0.020370979226915834
 DDG_impact = 0.7777777777777778 , CDG_impact = 0.0, IR = 1.8819171036881968
 
 MusicUtil::load
@@ -1183,8 +1184,7 @@ weight = 0.0
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
 commitHash = e2cb276 , scoreOfCommit = 15423.122161694591
-本次commit计算的运行时间（秒）：56.957
-
+本次commit计算的运行时间（秒）：56.115
 
 nowCommitHash = 2968bb8
 DeveloperContributionEvaluation/editScripts/e2cb276_to_2968bb8/editscript_Bird.txt
@@ -1293,100 +1293,52 @@ joern-export cdg执行成功  old_MovingPipe.java
 joern-export cdg执行成功  old_MusicUtil.java
 joern-export cdg执行成功  old_Pipe.java
 joern-export cdg执行成功  old_PipePool.java
-Bird::drawScore
-astScore = 0.02
-LOC = 7, CC = 1, HV = 206.0894050155578, PCom = 0.0, CM = 108.0447025077789
-weight = 0.04386846706541042
-DDG_impact = 0.7333333333333333 , CDG_impact = 0.0, IR = 1.8563488385776752
-
-Bird::keyIsReleased
-astScore = 1.7200000000000002
-LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
-weight = 0.021088273803459404
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameElementLayer::reset
-astScore = 34.3
-LOC = 6, CC = 2, HV = 39.863137138648355, PCom = 0.0, CM = 24.931568569324178
-weight = 0.028915640012055113
-DDG_impact = 0.9 , CDG_impact = 1.0, IR = 2.948683298050514
-
-GameScore::GameScore
-astScore = 6.0
-LOC = 8, CC = 2, HV = 46.604512509375034, PCom = 0.0, CM = 29.302256254687517
-weight = 0.04109607829750629
-DDG_impact = 0.6666666666666666 , CDG_impact = 0.0, IR = 1.816496580927726
-
-GameFrame::BirdKeyListener::keyPressed
-astScore = 0.0
-LOC = 23, CC = 7, HV = 322.0227601751469, PCom = 15.384615384615385, CM = 169.31907239526578
-weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameFrame::GameFrame
-astScore = 0.0
-LOC = 5, CC = 1, HV = 55.350905898196764, PCom = 60.0, CM = 1.675452949098382
-weight = 0.06216925281037659
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Cloud::Cloud
-astScore = 20.250000000000007
-LOC = 11, CC = 1, HV = 223.47971260168305, PCom = 9.090909090909092, CM = 114.19440175538698
-weight = 0.0
-DDG_impact = 0.45454545454545453 , CDG_impact = 0.0, IR = 1.674199862463242
-
 GameForeground::GameForeground
 astScore = 0.04
 LOC = 8, CC = 2, HV = 230.75303625876498, PCom = 33.33333333333333, CM = 104.70985146271582
 weight = 0.0369667842304708
 DDG_impact = 0.42857142857142855 , CDG_impact = 0.0, IR = 1.654653670707977
 
-Pipe::pipeLogic
-astScore = 0.0
-LOC = 7, CC = 2, HV = 102.1865710312585, PCom = 14.285714285714285, CM = 49.45042837277211
-weight = 0.01889508809588876
+GameUtil::getStringHeight
+astScore = 3.2899999999999983
+LOC = 5, CC = 1, HV = 116.75790004038474, PCom = 0.0, CM = 62.37895002019237
+weight = 0.019248908062825087
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-Bird::birdFall
-astScore = 0.02
-LOC = 4, CC = 1, HV = 36.541209043760986, PCom = 25.0, CM = 9.270604521880493
-weight = 0.031543104040185975
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+GameElementLayer::pipeBornLogic
+astScore = 33.77999999999994
+LOC = 38, CC = 9, HV = 1083.8144521462832, PCom = 23.809523809523807, CM = 554.5024641683797
+weight = 0.5275958727587531
+DDG_impact = 0.16666666666666666 , CDG_impact = 0.1375, IR = 1.7790582148186462
 
-GameFrame::BirdKeyListener::keyTyped
-astScore = 0.0
-LOC = 2, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.304820237218404
-weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-MusicUtil::playFly
-astScore = 2.979999999999997
+MusicUtil::playCrash
+astScore = 2.7399999999999993
 LOC = 8, CC = 2, HV = 167.17882283189007, PCom = 11.11111111111111, CM = 84.03385586038948
-weight = 0.021088273803459404
+weight = 0.03746989701151036
 DDG_impact = 0.75 , CDG_impact = 0.0, IR = 1.8660254037844386
 
-GameUtil::drawTitle
-astScore = 58.0
-LOC = 5, CC = 1, HV = 157.89111045234063, PCom = 0.0, CM = 82.94555522617031
-weight = 0.03485861248648671
-DDG_impact = 0.9166666666666666 , CDG_impact = 0.0, IR = 1.957427107756338
-
-GameScore::loadBestScore
-astScore = 8.0
-LOC = 8, CC = 2, HV = 123.18989788986397, PCom = 0.0, CM = 67.59494894493199
-weight = 0.0462483057885074
-DDG_impact = 0.8571428571428571 , CDG_impact = 1.0, IR = 2.9258200997725514
-
-Bird::birdDead
-astScore = 3.0
-LOC = 9, CC = 2, HV = 164.99896988958, PCom = 20.0, CM = 78.99948494479
-weight = 0.0724165517331238
-DDG_impact = 0.6666666666666666 , CDG_impact = 0.0, IR = 1.816496580927726
-
-GameElementLayer::GameElementLayer
+Pipe::Pipe
 astScore = 0.0
-LOC = 3, CC = 1, HV = 24.0, PCom = 0.0, CM = 15.0
+LOC = 6, CC = 1, HV = 62.26976913547136, PCom = 0.0, CM = 35.63488456773568
 weight = 0.0
+DDG_impact = 0.25 , CDG_impact = 0.0, IR = 1.5
+
+GameForeground::draw
+astScore = 5.929999999999997
+LOC = 6, CC = 2, HV = 57.359400011538504, PCom = 0.0, CM = 33.67970000576925
+weight = 0.10971715308345933
+DDG_impact = 0.8333333333333334 , CDG_impact = 1.0, IR = 2.912870929175277
+
+GameScore::getBestScore
+astScore = 10.0
+LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
+weight = 0.019248908062825087
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameFrame::initGame
+astScore = 0.02
+LOC = 9, CC = 1, HV = 142.7018117963935, PCom = 10.0, CM = 72.35090589819676
+weight = 0.024049086839227407
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
 GameUtil::getRandomNumber
@@ -1395,142 +1347,10 @@ LOC = 3, CC = 1, HV = 64.52932501298082, PCom = 0.0, CM = 35.26466250649041
 weight = 0.058623782044617614
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-MusicUtil::playScore
-astScore = 2.759999999999999
-LOC = 8, CC = 2, HV = 167.17882283189007, PCom = 11.11111111111111, CM = 84.03385586038948
-weight = 0.022366846459243656
-DDG_impact = 0.75 , CDG_impact = 0.0, IR = 1.8660254037844386
-
-GameElementLayer::pipeBornLogic
-astScore = 33.77999999999994
-LOC = 38, CC = 9, HV = 1083.8144521462832, PCom = 23.809523809523807, CM = 554.5024641683797
-weight = 0.5275958727587531
-DDG_impact = 0.16666666666666666 , CDG_impact = 0.1375, IR = 1.7790582148186462
-
-Bird::drawGameover
-astScore = 0.0
-LOC = 30, CC = 4, HV = 1222.5406660447763, PCom = 37.5, CM = 610.5203330223882
-weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameScore::getScore
-astScore = 11.0
-LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
-weight = 0.03870657000751282
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Bird::birdUp
-astScore = 0.04
-LOC = 11, CC = 5, HV = 222.90509710918678, PCom = 45.45454545454545, CM = 97.72527582732067
-weight = 0.041148130470744525
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Bird::drawGameOver
-astScore = 19.540000000000024
-LOC = 27, CC = 4, HV = 1215.8011542003917, PCom = 28.125, CM = 610.3380771001958
-weight = 0.08054668137147886
-DDG_impact = 0.9666666666666667 , CDG_impact = 1.0, IR = 2.9831920802501752
-
-Pipe::draw
-astScore = 0.0
-LOC = 17, CC = 5, HV = 300.16030763377006, PCom = 19.047619047619047, CM = 152.5563442930755
-weight = 0.07793304658481202
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameUtil::loadBUfferedImage
-astScore = 0.0
-LOC = 8, CC = 2, HV = 50.18947501009619, PCom = 0.0, CM = 31.094737505048094
-weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameFrame::getGameState
-astScore = 0.0
-LOC = 3, CC = 1, HV = 0.0, PCom = 0.0, CM = 3.0
-weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Pipe::setVisible
-astScore = 0.0
-LOC = 3, CC = 1, HV = 45.0, PCom = 100.0, CM = -24.5
-weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Pipe::setType
-astScore = 0.0
-LOC = 3, CC = 1, HV = 45.0, PCom = 100.0, CM = -24.5
-weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Pipe::isVisible
+Pipe::getX
 astScore = 0.0
 LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
-weight = 0.01881797348771033
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameUtil::GameUtil
-astScore = 0.0
-LOC = 2, CC = 1, HV = 13.931568569324174, PCom = 50.0, CM = -15.534215715337915
-weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Cloud::isOutFrame
-astScore = 1.0
-LOC = 3, CC = 1, HV = 33.219280948873624, PCom = 0.0, CM = 19.609640474436812
-weight = 0.0223546166338405
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Bird::reset
-astScore = 0.0
-LOC = 9, CC = 1, HV = 272.4807970712782, PCom = 55.55555555555556, CM = 114.46262075786132
-weight = 0.027354669569688954
-DDG_impact = 0.4375 , CDG_impact = 0.0, IR = 1.6614378277661477
-
-GameElementLayer::draw
-astScore = 0.0
-LOC = 14, CC = 3, HV = 287.53046480343187, PCom = 12.5, CM = 147.01523240171593
-weight = 0.6928372989068284
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameScore::reset
-astScore = 3312.0
-LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
-weight = 0.0336210653359185
-DDG_impact = 0.75 , CDG_impact = 0.0, IR = 1.8660254037844386
-
-Pipe::setY
-astScore = 0.0
-LOC = 3, CC = 1, HV = 50.718800023077, PCom = 100.0, CM = -21.6405999884615
-weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameFrame::initFrame
-astScore = 0.0
-LOC = 13, CC = 1, HV = 270.8915750127054, PCom = 50.0, CM = 118.4457875063527
-weight = 0.048098173678454814
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameElementLayer::addMovingHoverPipe
-astScore = 0.7100000000000002
-LOC = 13, CC = 1, HV = 694.3236064597047, PCom = 31.25, CM = 339.53680322985235
-weight = 0.09689081708714684
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameElementLayer::addHoverPipe
-astScore = 0.0
-LOC = 13, CC = 1, HV = 690.4452445071266, PCom = 31.25, CM = 337.5976222535633
-weight = 0.09689081708714684
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Pipe::setAttribute
-astScore = 0.0
-LOC = 8, CC = 1, HV = 148.0175887256437, PCom = 0.0, CM = 79.50879436282185
-weight = 0.04386702218243872
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameElementLayer::addMovingNormalPipe
-astScore = 1.11
-LOC = 12, CC = 1, HV = 404.09041853515606, PCom = 16.666666666666664, CM = 201.2118759342447
-weight = 0.09689081708714685
+weight = 0.030273659028679366
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
 Bird::Bird
@@ -1539,10 +1359,58 @@ LOC = 17, CC = 3, HV = 701.838730514401, PCom = 25.0, CM = 349.4193652572005
 weight = 0.06009093712472449
 DDG_impact = 0.5609756097560976 , CDG_impact = 0.0, IR = 1.7489830503797115
 
-GameReady::draw
-astScore = 6.289999999999997
-LOC = 10, CC = 3, HV = 412.53150435559246, PCom = 58.333333333333336, CM = 184.59908551112957
-weight = 0.026611485315985485
+Pipe::draw
+astScore = 0.0
+LOC = 17, CC = 5, HV = 300.16030763377006, PCom = 19.047619047619047, CM = 152.5563442930755
+weight = 0.07793304658481202
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Bird::getBirdRect
+astScore = 0.0
+LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
+weight = 0.019694851969116446
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameElementLayer::reset
+astScore = 34.3
+LOC = 6, CC = 2, HV = 39.863137138648355, PCom = 0.0, CM = 24.931568569324178
+weight = 0.028915640012055113
+DDG_impact = 0.9 , CDG_impact = 1.0, IR = 2.948683298050514
+
+GameFrame::run
+astScore = 0.0
+LOC = 10, CC = 3, HV = 77.66179398375645, PCom = 10.0, CM = 41.33089699187823
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameScore::getInstance
+astScore = 7.0
+LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
+weight = 0.035034634190446154
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Bird::birdFall
+astScore = 0.02
+LOC = 4, CC = 1, HV = 36.541209043760986, PCom = 25.0, CM = 9.270604521880493
+weight = 0.031543104040185975
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameScore::saveBestScore
+astScore = 9.0
+LOC = 6, CC = 1, HV = 112.58797503894243, PCom = 0.0, CM = 60.793987519471216
+weight = 0.026271505898048022
+DDG_impact = 0.7692307692307693 , CDG_impact = 0.0, IR = 1.8770580193070292
+
+Bird::keyIsReleased
+astScore = 1.7200000000000002
+LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
+weight = 0.021088273803459404
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameElementLayer::addHoverPipe
+astScore = 0.0
+LOC = 13, CC = 1, HV = 690.4452445071266, PCom = 31.25, CM = 337.5976222535633
+weight = 0.09689081708714684
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
 GameScore::setScore
@@ -1551,51 +1419,111 @@ LOC = 6, CC = 2, HV = 85.83671966625714, PCom = 28.57142857142857, CM = 33.63264
 weight = 0.04976532318029016
 DDG_impact = 0.5 , CDG_impact = 1.0, IR = 2.7071067811865475
 
-MusicUtil::playCrash
-astScore = 2.7399999999999993
-LOC = 8, CC = 2, HV = 167.17882283189007, PCom = 11.11111111111111, CM = 84.03385586038948
-weight = 0.03746989701151036
-DDG_impact = 0.75 , CDG_impact = 0.0, IR = 1.8660254037844386
+GameReady::GameReady
+astScore = 0.01
+LOC = 4, CC = 1, HV = 46.50699332842308, PCom = 0.0, CM = 26.75349666421154
+weight = 0.0369667842304708
+DDG_impact = 0.875 , CDG_impact = 0.0, IR = 1.9354143466934852
 
-Cloud::draw
-astScore = 2.859999999999995
-LOC = 7, CC = 2, HV = 133.78294855911892, PCom = 0.0, CM = 72.39147427955946
-weight = 0.04248432605658374
-DDG_impact = 0.7 , CDG_impact = 1.0, IR = 2.8366600265340756
+Bird::keyPressed
+astScore = 0.01
+LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
+weight = 0.021088273803459404
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-Pipe::drawTopNormal
+Bird::fly
+astScore = 10.829999999999998
+LOC = 40, CC = 10, HV = 1751.3430175854755, PCom = 18.75, CM = 892.2965087927378
+weight = 0.1148414749321774
+DDG_impact = 0.4827586206896552 , CDG_impact = 0.0, IR = 1.6948083337796511
+
+GameUtil::drawTitle
+astScore = 58.0
+LOC = 5, CC = 1, HV = 157.89111045234063, PCom = 0.0, CM = 82.94555522617031
+weight = 0.03485861248648671
+DDG_impact = 0.9166666666666666 , CDG_impact = 0.0, IR = 1.957427107756338
+
+GameFrame::getGameState
 astScore = 0.0
-LOC = 8, CC = 2, HV = 382.5744501067311, PCom = 45.45454545454545, CM = 174.55995232609283
-weight = 0.01889508809588876
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameUtil::getStringWidth
-astScore = 3.149999999999999
-LOC = 5, CC = 1, HV = 116.75790004038474, PCom = 0.0, CM = 62.37895002019237
-weight = 0.028131096712442804
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameScore::getBestScore
-astScore = 10.0
-LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
-weight = 0.019248908062825087
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameForeground::draw
-astScore = 5.929999999999997
-LOC = 6, CC = 2, HV = 57.359400011538504, PCom = 0.0, CM = 33.67970000576925
-weight = 0.10971715308345933
-DDG_impact = 0.8333333333333334 , CDG_impact = 1.0, IR = 2.912870929175277
-
-Pipe::setHeight
-astScore = 0.0
-LOC = 3, CC = 1, HV = 45.0, PCom = 100.0, CM = -24.5
+LOC = 3, CC = 1, HV = 0.0, PCom = 0.0, CM = 3.0
 weight = 0.0
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-GameFrame::BirdKeyListener::resetGame
+GameReady::draw
+astScore = 6.289999999999997
+LOC = 10, CC = 3, HV = 412.53150435559246, PCom = 58.333333333333336, CM = 184.59908551112957
+weight = 0.026611485315985485
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Pipe::getPipeRect
 astScore = 0.0
-LOC = 5, CC = 1, HV = 27.0, PCom = 0.0, CM = 17.5
+LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
+weight = 0.019694851969116446
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Bird::birdDead
+astScore = 3.0
+LOC = 9, CC = 2, HV = 164.99896988958, PCom = 20.0, CM = 78.99948494479
+weight = 0.0724165517331238
+DDG_impact = 0.6666666666666666 , CDG_impact = 0.0, IR = 1.816496580927726
+
+Bird::reset
+astScore = 0.0
+LOC = 9, CC = 1, HV = 272.4807970712782, PCom = 55.55555555555556, CM = 114.46262075786132
+weight = 0.027354669569688954
+DDG_impact = 0.4375 , CDG_impact = 0.0, IR = 1.6614378277661477
+
+Pipe::setAttribute
+astScore = 0.0
+LOC = 8, CC = 1, HV = 148.0175887256437, PCom = 0.0, CM = 79.50879436282185
+weight = 0.04386702218243872
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameScore::isSaveScore
+astScore = 13.0
+LOC = 10, CC = 3, HV = 88.0, PCom = 0.0, CM = 51.5
+weight = 0.044930771241098094
+DDG_impact = 0.8 , CDG_impact = 0.75, IR = 2.760452594784354
+
+Cloud::Cloud
+astScore = 20.250000000000007
+LOC = 11, CC = 1, HV = 223.47971260168305, PCom = 9.090909090909092, CM = 114.19440175538698
+weight = 0.0
+DDG_impact = 0.45454545454545453 , CDG_impact = 0.0, IR = 1.674199862463242
+
+GameFrame::BirdKeyListener::keyTyped
+astScore = 0.0
+LOC = 2, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.304820237218404
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameUtil::loadBufferedImage
+astScore = 1.01
+LOC = 8, CC = 2, HV = 81.7492568250068, PCom = 0.0, CM = 46.8746284125034
+weight = 0.05823753585796359
+DDG_impact = 0.5 , CDG_impact = 1.0, IR = 2.7071067811865475
+
+Pipe::setRectangle
+astScore = 0.0
+LOC = 5, CC = 1, HV = 66.56842503028857, PCom = 0.0, CM = 37.28421251514428
+weight = 0.05600626920305683
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameElementLayer::addMovingHoverPipe
+astScore = 0.7100000000000002
+LOC = 13, CC = 1, HV = 694.3236064597047, PCom = 31.25, CM = 339.53680322985235
+weight = 0.09689081708714684
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Cloud::setDir
+astScore = 0.0
+LOC = 3, CC = 1, HV = 0.0, PCom = 0.0, CM = 3.0
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Bird::startTiming
+astScore = 0.0
+LOC = 4, CC = 2, HV = 31.699250014423125, PCom = 50.0, CM = -5.150374992788436
 weight = 0.0
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
@@ -1605,10 +1533,10 @@ LOC = 3, CC = 1, HV = 33.219280948873624, PCom = 0.0, CM = 19.609640474436812
 weight = 0.017150148736119256
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-GameUtil::getStringHeight
-astScore = 3.2899999999999983
-LOC = 5, CC = 1, HV = 116.75790004038474, PCom = 0.0, CM = 62.37895002019237
-weight = 0.019248908062825087
+Pipe::drawHoverNormal
+astScore = 0.05
+LOC = 9, CC = 2, HV = 457.8716557125306, PCom = 30.76923076923077, CM = 220.0512124716499
+weight = 0.01889508809588876
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
 Bird::keyReleased
@@ -1617,142 +1545,10 @@ LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
 weight = 0.029037660315509306
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-Pipe::setRectangle
+Pipe::drawTopNormal
 astScore = 0.0
-LOC = 5, CC = 1, HV = 66.56842503028857, PCom = 0.0, CM = 37.28421251514428
-weight = 0.05600626920305683
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Pipe::getX
-astScore = 0.0
-LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
-weight = 0.030273659028679366
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameElementLayer::addNormalPipe
-astScore = 0.0
-LOC = 12, CC = 1, HV = 463.73929835897343, PCom = 30.76923076923077, CM = 223.98503379487133
-weight = 0.09689081708714685
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Cloud::Cloud
-astScore = 20.250000000000007
-LOC = 11, CC = 1, HV = 223.47971260168305, PCom = 9.090909090909092, CM = 114.19440175538698
-weight = 0.0
-DDG_impact = 0.45454545454545453 , CDG_impact = 0.0, IR = 1.674199862463242
-
-GameElementLayer::isCollideBird
-astScore = 36.6
-LOC = 11, CC = 4, HV = 149.33879237447786, PCom = 28.57142857142857, CM = 68.88368190152465
-weight = 0.07857267086790612
-DDG_impact = 0.5625 , CDG_impact = 0.5714285714285714, IR = 2.5059289460184546
-
-Bird::fly
-astScore = 10.829999999999998
-LOC = 40, CC = 10, HV = 1751.3430175854755, PCom = 18.75, CM = 892.2965087927378
-weight = 0.1148414749321774
-DDG_impact = 0.4827586206896552 , CDG_impact = 0.0, IR = 1.6948083337796511
-
-GameScore::getInstance
-astScore = 7.0
-LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
-weight = 0.035034634190446154
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameFrame::update
-astScore = 0.0
-LOC = 12, CC = 2, HV = 350.0, PCom = 71.42857142857143, CM = 147.28571428571428
-weight = 1.0598594646988884
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameFrame::BirdKeyListener::keyReleased
-astScore = 0.0
-LOC = 6, CC = 2, HV = 64.52932501298082, PCom = 0.0, CM = 37.26466250649041
-weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameScore::isSaveScore
-astScore = 13.0
-LOC = 10, CC = 3, HV = 88.0, PCom = 0.0, CM = 51.5
-weight = 0.044930771241098094
-DDG_impact = 0.8 , CDG_impact = 0.75, IR = 2.760452594784354
-
-GameFrame::setGameState
-astScore = 0.0
-LOC = 3, CC = 1, HV = 30.0, PCom = 0.0, CM = 18.0
-weight = 0.05966338056823939
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameReady::GameReady
-astScore = 0.01
-LOC = 4, CC = 1, HV = 46.50699332842308, PCom = 0.0, CM = 26.75349666421154
-weight = 0.0369667842304708
-DDG_impact = 0.875 , CDG_impact = 0.0, IR = 1.9354143466934852
-
-GameScore::saveBestScore
-astScore = 9.0
-LOC = 6, CC = 1, HV = 112.58797503894243, PCom = 0.0, CM = 60.793987519471216
-weight = 0.026271505898048022
-DDG_impact = 0.7692307692307693 , CDG_impact = 0.0, IR = 1.8770580193070292
-
-Pipe::drawBottomNormal
-astScore = 0.0
-LOC = 8, CC = 2, HV = 366.2973245700245, PCom = 27.27272727272727, CM = 175.51229864864862
+LOC = 8, CC = 2, HV = 382.5744501067311, PCom = 45.45454545454545, CM = 174.55995232609283
 weight = 0.01889508809588876
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameUtil::loadBufferedImage
-astScore = 1.01
-LOC = 8, CC = 2, HV = 81.7492568250068, PCom = 0.0, CM = 46.8746284125034
-weight = 0.05823753585796359
-DDG_impact = 0.5 , CDG_impact = 1.0, IR = 2.7071067811865475
-
-GameUtil::isInProbability
-astScore = 0.0
-LOC = 9, CC = 4, HV = 223.47971260168305, PCom = 18.181818181818183, CM = 110.14894720993243
-weight = 0.041216257405799685
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameForeground::cloudLogic
-astScore = 0.09999999999999999
-LOC = 25, CC = 7, HV = 800.9555097489889, PCom = 37.5, CM = 398.72775487449445
-weight = 0.08155153276894227
-DDG_impact = 0.41935483870967744 , CDG_impact = 0.0, IR = 1.6475761258027333
-
-Bird::birdDown
-astScore = 0.0
-LOC = 5, CC = 3, HV = 74.00879436282185, PCom = 20.0, CM = 32.00439718141092
-weight = 0.01903143953111083
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameFrame::initGame
-astScore = 0.02
-LOC = 9, CC = 1, HV = 142.7018117963935, PCom = 10.0, CM = 72.35090589819676
-weight = 0.024049086839227407
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Bird::getBirdRect
-astScore = 0.0
-LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
-weight = 0.019694851969116446
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Bird::draw
-astScore = 5.079999999999998
-LOC = 14, CC = 4, HV = 578.3151139438664, PCom = 33.33333333333333, CM = 282.49089030526653
-weight = 0.217089901325511
-DDG_impact = 0.8181818181818182 , CDG_impact = 0.0, IR = 1.9045340337332908
-
-Pipe::Pipe
-astScore = 0.0
-LOC = 6, CC = 1, HV = 62.26976913547136, PCom = 0.0, CM = 35.63488456773568
-weight = 0.0
-DDG_impact = 0.25 , CDG_impact = 0.0, IR = 1.5
-
-Bird::startTiming
-astScore = 0.0
-LOC = 4, CC = 2, HV = 31.699250014423125, PCom = 50.0, CM = -5.150374992788436
-weight = 0.0
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
 Bird::isDead
@@ -1761,10 +1557,196 @@ LOC = 3, CC = 2, HV = 41.20902501875006, PCom = 0.0, CM = 24.10451250937503
 weight = 0.061467767298358664
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-Pipe::getPipeRect
+Pipe::setType
+astScore = 0.0
+LOC = 3, CC = 1, HV = 45.0, PCom = 100.0, CM = -24.5
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameFrame::setGameState
+astScore = 0.0
+LOC = 3, CC = 1, HV = 30.0, PCom = 0.0, CM = 18.0
+weight = 0.05966338056823939
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameForeground::cloudLogic
+astScore = 0.09999999999999999
+LOC = 25, CC = 7, HV = 800.9555097489889, PCom = 37.5, CM = 398.72775487449445
+weight = 0.08155153276894227
+DDG_impact = 0.41935483870967744 , CDG_impact = 0.0, IR = 1.6475761258027333
+
+GameElementLayer::isCollideBird
+astScore = 36.6
+LOC = 11, CC = 4, HV = 149.33879237447786, PCom = 28.57142857142857, CM = 68.88368190152465
+weight = 0.07857267086790612
+DDG_impact = 0.5625 , CDG_impact = 0.5714285714285714, IR = 2.5059289460184546
+
+GameScore::GameScore
+astScore = 6.0
+LOC = 8, CC = 2, HV = 46.604512509375034, PCom = 0.0, CM = 29.302256254687517
+weight = 0.04109607829750629
+DDG_impact = 0.6666666666666666 , CDG_impact = 0.0, IR = 1.816496580927726
+
+GameElementLayer::GameElementLayer
+astScore = 0.0
+LOC = 3, CC = 1, HV = 24.0, PCom = 0.0, CM = 15.0
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameElementLayer::addMovingNormalPipe
+astScore = 1.11
+LOC = 12, CC = 1, HV = 404.09041853515606, PCom = 16.666666666666664, CM = 201.2118759342447
+weight = 0.09689081708714685
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameFrame::initFrame
+astScore = 0.0
+LOC = 13, CC = 1, HV = 270.8915750127054, PCom = 50.0, CM = 118.4457875063527
+weight = 0.048098173678454814
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameElementLayer::addNormalPipe
+astScore = 0.0
+LOC = 12, CC = 1, HV = 463.73929835897343, PCom = 30.76923076923077, CM = 223.98503379487133
+weight = 0.09689081708714685
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Pipe::setY
+astScore = 0.0
+LOC = 3, CC = 1, HV = 50.718800023077, PCom = 100.0, CM = -21.6405999884615
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameFrame::BirdKeyListener::keyReleased
+astScore = 0.0
+LOC = 6, CC = 2, HV = 64.52932501298082, PCom = 0.0, CM = 37.26466250649041
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+MusicUtil::playFly
+astScore = 2.979999999999997
+LOC = 8, CC = 2, HV = 167.17882283189007, PCom = 11.11111111111111, CM = 84.03385586038948
+weight = 0.021088273803459404
+DDG_impact = 0.75 , CDG_impact = 0.0, IR = 1.8660254037844386
+
+GameUtil::GameUtil
+astScore = 0.0
+LOC = 2, CC = 1, HV = 13.931568569324174, PCom = 50.0, CM = -15.534215715337915
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameFrame::BirdKeyListener::resetGame
+astScore = 0.0
+LOC = 5, CC = 1, HV = 27.0, PCom = 0.0, CM = 17.5
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Pipe::pipeLogic
+astScore = 0.0
+LOC = 7, CC = 2, HV = 102.1865710312585, PCom = 14.285714285714285, CM = 49.45042837277211
+weight = 0.01889508809588876
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameScore::getScore
+astScore = 11.0
+LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
+weight = 0.03870657000751282
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Bird::drawScore
+astScore = 0.02
+LOC = 7, CC = 1, HV = 206.0894050155578, PCom = 0.0, CM = 108.0447025077789
+weight = 0.04386846706541042
+DDG_impact = 0.7333333333333333 , CDG_impact = 0.0, IR = 1.8563488385776752
+
+Pipe::isVisible
 astScore = 0.0
 LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
-weight = 0.019694851969116446
+weight = 0.01881797348771033
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameUtil::getStringWidth
+astScore = 3.149999999999999
+LOC = 5, CC = 1, HV = 116.75790004038474, PCom = 0.0, CM = 62.37895002019237
+weight = 0.028131096712442804
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Bird::draw
+astScore = 5.079999999999998
+LOC = 14, CC = 4, HV = 578.3151139438664, PCom = 33.33333333333333, CM = 282.49089030526653
+weight = 0.217089901325511
+DDG_impact = 0.8181818181818182 , CDG_impact = 0.0, IR = 1.9045340337332908
+
+GameScore::reset
+astScore = 3312.0
+LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
+weight = 0.0336210653359185
+DDG_impact = 0.75 , CDG_impact = 0.0, IR = 1.8660254037844386
+
+GameElementLayer::draw
+astScore = 0.0
+LOC = 14, CC = 3, HV = 287.53046480343187, PCom = 12.5, CM = 147.01523240171593
+weight = 0.6928372989068284
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameScore::loadBestScore
+astScore = 8.0
+LOC = 8, CC = 2, HV = 123.18989788986397, PCom = 0.0, CM = 67.59494894493199
+weight = 0.0462483057885074
+DDG_impact = 0.8571428571428571 , CDG_impact = 1.0, IR = 2.9258200997725514
+
+Bird::drawGameover
+astScore = 0.0
+LOC = 30, CC = 4, HV = 1222.5406660447763, PCom = 37.5, CM = 610.5203330223882
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Bird::drawGameOver
+astScore = 19.540000000000024
+LOC = 27, CC = 4, HV = 1215.8011542003917, PCom = 28.125, CM = 610.3380771001958
+weight = 0.08054668137147886
+DDG_impact = 0.9666666666666667 , CDG_impact = 1.0, IR = 2.9831920802501752
+
+GameFrame::BirdKeyListener::keyPressed
+astScore = 0.01
+LOC = 23, CC = 7, HV = 322.0227601751469, PCom = 15.384615384615385, CM = 169.31907239526578
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameUtil::loadBUfferedImage
+astScore = 0.0
+LOC = 8, CC = 2, HV = 50.18947501009619, PCom = 0.0, CM = 31.094737505048094
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Cloud::Cloud
+astScore = 20.250000000000007
+LOC = 11, CC = 1, HV = 223.47971260168305, PCom = 9.090909090909092, CM = 114.19440175538698
+weight = 0.0
+DDG_impact = 0.45454545454545453 , CDG_impact = 0.0, IR = 1.674199862463242
+
+GameUtil::isInProbability
+astScore = 0.0
+LOC = 9, CC = 4, HV = 223.47971260168305, PCom = 18.181818181818183, CM = 110.14894720993243
+weight = 0.041216257405799685
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameFrame::GameFrame
+astScore = 0.0
+LOC = 5, CC = 1, HV = 55.350905898196764, PCom = 60.0, CM = 1.675452949098382
+weight = 0.06216925281037659
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Pipe::setHeight
+astScore = 0.0
+LOC = 3, CC = 1, HV = 45.0, PCom = 100.0, CM = -24.5
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameFrame::update
+astScore = 0.0
+LOC = 12, CC = 2, HV = 350.0, PCom = 71.42857142857143, CM = 147.28571428571428
+weight = 1.0598594646988884
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
 Pipe::setX
@@ -1773,47 +1755,65 @@ LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
 weight = 0.0
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-Bird::keyPressed
-astScore = 0.01
-LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
-weight = 0.021088273803459404
+Bird::birdDown
+astScore = 0.0
+LOC = 5, CC = 3, HV = 74.00879436282185, PCom = 20.0, CM = 32.00439718141092
+weight = 0.01903143953111083
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-Pipe::drawHoverNormal
-astScore = 0.05
-LOC = 9, CC = 2, HV = 457.8716557125306, PCom = 30.76923076923077, CM = 220.0512124716499
+Cloud::isOutFrame
+astScore = 1.0
+LOC = 3, CC = 1, HV = 33.219280948873624, PCom = 0.0, CM = 19.609640474436812
+weight = 0.0223546166338405
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+MusicUtil::playScore
+astScore = 2.759999999999999
+LOC = 8, CC = 2, HV = 167.17882283189007, PCom = 11.11111111111111, CM = 84.03385586038948
+weight = 0.022366846459243656
+DDG_impact = 0.75 , CDG_impact = 0.0, IR = 1.8660254037844386
+
+Pipe::setVisible
+astScore = 0.0
+LOC = 3, CC = 1, HV = 45.0, PCom = 100.0, CM = -24.5
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Pipe::drawBottomNormal
+astScore = 0.0
+LOC = 8, CC = 2, HV = 366.2973245700245, PCom = 27.27272727272727, CM = 175.51229864864862
 weight = 0.01889508809588876
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-GameFrame::run
-astScore = 0.0
-LOC = 10, CC = 3, HV = 77.66179398375645, PCom = 10.0, CM = 41.33089699187823
-weight = 0.0
+Bird::birdUp
+astScore = 0.04
+LOC = 11, CC = 5, HV = 222.90509710918678, PCom = 45.45454545454545, CM = 97.72527582732067
+weight = 0.041148130470744525
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-Cloud::setDir
-astScore = 0.0
-LOC = 3, CC = 1, HV = 0.0, PCom = 0.0, CM = 3.0
-weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+Cloud::draw
+astScore = 2.859999999999995
+LOC = 7, CC = 2, HV = 133.78294855911892, PCom = 0.0, CM = 72.39147427955946
+weight = 0.04248432605658374
+DDG_impact = 0.7 , CDG_impact = 1.0, IR = 2.8366600265340756
 
-commitHash = 2968bb8 , scoreOfCommit = 219741.65509433922
-本次commit计算的运行时间（秒）：260.405
+commitHash = 2968bb8 , scoreOfCommit = 219743.34828506323
+本次commit计算的运行时间（秒）：260.482
 
 nowCommitHash = ba1ce8c
 所有编辑脚本获取结束
 commitHash = ba1ce8c , scoreOfCommit = 0.0
-本次commit计算的运行时间（秒）：4.037
+本次commit计算的运行时间（秒）：3.861
 
 nowCommitHash = b5792d6
 所有编辑脚本获取结束
 commitHash = b5792d6 , scoreOfCommit = 0.0
-本次commit计算的运行时间（秒）：6.839
+本次commit计算的运行时间（秒）：3.903
 
 nowCommitHash = aa7a828
 所有编辑脚本获取结束
 commitHash = aa7a828 , scoreOfCommit = 0.0
-本次commit计算的运行时间（秒）：9.481
+本次commit计算的运行时间（秒）：3.802
 
 nowCommitHash = 4cc7c4e
 DeveloperContributionEvaluation/editScripts/aa7a828_to_4cc7c4e/editscript_Bird.txt
@@ -1838,40 +1838,16 @@ joern-export cdg执行成功  new_GameUtil.java
 joern-export cdg执行成功  old_Bird.java
 joern-export cdg执行成功  old_GameReady.java
 joern-export cdg执行成功  old_GameUtil.java
-Bird::birdFall
-astScore = 101.64000000000001
-LOC = 10, CC = 2, HV = 135.7068586817104, PCom = 27.27272727272727, CM = 61.21706570449157
-weight = 0.02909971685564361
-DDG_impact = 0.3333333333333333 , CDG_impact = 0.0, IR = 1.5773502691896257
-
 Bird::fly
 astScore = 67.92000000000024
 LOC = 36, CC = 9, HV = 1120.9093567993855, PCom = 12.195121951219512, CM = 577.857117424083
 weight = 0.11557644637470152
 DDG_impact = 0.8214285714285714 , CDG_impact = 0.09375, IR = 2.212513185022863
 
-GameReady::draw
-astScore = 10.02
-LOC = 10, CC = 3, HV = 496.09320289564596, PCom = 58.333333333333336, CM = 226.37993478115632
-weight = 0.026678625281072194
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
 GameUtil::drawTitle
 astScore = 0.0
 LOC = 5, CC = 1, HV = 56.472777613085164, PCom = 0.0, CM = 32.23638880654258
 weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Bird::draw
-astScore = 0.42000000000000004
-LOC = 13, CC = 4, HV = 578.3151139438664, PCom = 35.294117647058826, CM = 281.0104981484038
-weight = 0.21808284242650042
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameUtil::drawImage
-astScore = 28.80000000000002
-LOC = 3, CC = 1, HV = 64.52932501298082, PCom = 0.0, CM = 35.26466250649041
-weight = 0.03494655970166556
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
 Bird::drawGameOver
@@ -1880,29 +1856,53 @@ LOC = 27, CC = 4, HV = 1304.7622142638352, PCom = 28.125, CM = 654.8186071319176
 weight = 0.08074989818974052
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
+Bird::birdFall
+astScore = 101.64000000000001
+LOC = 10, CC = 2, HV = 135.7068586817104, PCom = 27.27272727272727, CM = 61.21706570449157
+weight = 0.02909971685564361
+DDG_impact = 0.3333333333333333 , CDG_impact = 0.0, IR = 1.5773502691896257
+
+GameUtil::drawImage
+astScore = 28.80000000000002
+LOC = 3, CC = 1, HV = 64.52932501298082, PCom = 0.0, CM = 35.26466250649041
+weight = 0.03494655970166556
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameReady::draw
+astScore = 10.02
+LOC = 10, CC = 3, HV = 496.09320289564596, PCom = 58.333333333333336, CM = 226.37993478115632
+weight = 0.026678625281072194
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Bird::draw
+astScore = 0.42000000000000004
+LOC = 13, CC = 4, HV = 578.3151139438664, PCom = 35.294117647058826, CM = 281.0104981484038
+weight = 0.21808284242650042
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
 commitHash = 4cc7c4e , scoreOfCommit = 115740.9080078705
-本次commit计算的运行时间（秒）：65.497
+本次commit计算的运行时间（秒）：55.168
 
 nowCommitHash = 5676508
+DeveloperContributionEvaluation/editScripts/4cc7c4e_to_5676508/editscript_Bird.txt
+DeveloperContributionEvaluation/editScripts/4cc7c4e_to_5676508/editscript_GameReady.txt
+DeveloperContributionEvaluation/editScripts/4cc7c4e_to_5676508/editscript_GameScore.txt
 DeveloperContributionEvaluation/editScripts/4cc7c4e_to_5676508/editscript_GameApp.txt
 DeveloperContributionEvaluation/editScripts/4cc7c4e_to_5676508/editscript_Bird.txt
 DeveloperContributionEvaluation/editScripts/4cc7c4e_to_5676508/editscript_Cloud.txt
+DeveloperContributionEvaluation/editScripts/4cc7c4e_to_5676508/editscript_Game.txt
 DeveloperContributionEvaluation/editScripts/4cc7c4e_to_5676508/editscript_GameBackground.txt
 DeveloperContributionEvaluation/editScripts/4cc7c4e_to_5676508/editscript_GameElementLayer.txt
 DeveloperContributionEvaluation/editScripts/4cc7c4e_to_5676508/editscript_GameForeground.txt
-DeveloperContributionEvaluation/editScripts/4cc7c4e_to_5676508/editscript_GameFrame.txt
-DeveloperContributionEvaluation/editScripts/4cc7c4e_to_5676508/editscript_GameReady.txt
-DeveloperContributionEvaluation/editScripts/4cc7c4e_to_5676508/editscript_GameScore.txt
+DeveloperContributionEvaluation/editScripts/4cc7c4e_to_5676508/editscript_GameOverAnimation.txt
 DeveloperContributionEvaluation/editScripts/4cc7c4e_to_5676508/editscript_MovingPipe.txt
 DeveloperContributionEvaluation/editScripts/4cc7c4e_to_5676508/editscript_Pipe.txt
 DeveloperContributionEvaluation/editScripts/4cc7c4e_to_5676508/editscript_PipePool.txt
+DeveloperContributionEvaluation/editScripts/4cc7c4e_to_5676508/editscript_ScoreCounter.txt
+DeveloperContributionEvaluation/editScripts/4cc7c4e_to_5676508/editscript_WelcomeAnimation.txt
 DeveloperContributionEvaluation/editScripts/4cc7c4e_to_5676508/editscript_Constant.txt
 DeveloperContributionEvaluation/editScripts/4cc7c4e_to_5676508/editscript_GameUtil.txt
 DeveloperContributionEvaluation/editScripts/4cc7c4e_to_5676508/editscript_MusicUtil.txt
-DeveloperContributionEvaluation/editScripts/4cc7c4e_to_5676508/editscript_Bird.txt
-DeveloperContributionEvaluation/editScripts/4cc7c4e_to_5676508/editscript_GameOverAnimation.txt
-DeveloperContributionEvaluation/editScripts/4cc7c4e_to_5676508/editscript_ScoreCounter.txt
-DeveloperContributionEvaluation/editScripts/4cc7c4e_to_5676508/editscript_WelcomeAnimation.txt
 所有编辑脚本获取结束
 joern-parse ddg执行成功  new_Bird.bin
 joern-export ddg执行成功new_Bird.bin
@@ -1910,6 +1910,8 @@ joern-parse ddg执行成功  new_Cloud.bin
 joern-export ddg执行成功new_Cloud.bin
 joern-parse ddg执行成功  new_Constant.bin
 joern-export ddg执行成功new_Constant.bin
+joern-parse ddg执行成功  new_Game.bin
+joern-export ddg执行成功new_Game.bin
 joern-parse ddg执行成功  new_GameApp.bin
 joern-export ddg执行成功new_GameApp.bin
 joern-parse ddg执行成功  new_GameBackground.bin
@@ -1918,8 +1920,6 @@ joern-parse ddg执行成功  new_GameElementLayer.bin
 joern-export ddg执行成功new_GameElementLayer.bin
 joern-parse ddg执行成功  new_GameForeground.bin
 joern-export ddg执行成功new_GameForeground.bin
-joern-parse ddg执行成功  new_GameFrame.bin
-joern-export ddg执行成功new_GameFrame.bin
 joern-parse ddg执行成功  new_GameOverAnimation.bin
 joern-export ddg执行成功new_GameOverAnimation.bin
 joern-parse ddg执行成功  new_GameReady.bin
@@ -1946,6 +1946,8 @@ joern-parse ddg执行成功  old_Cloud.bin
 joern-export ddg执行成功old_Cloud.bin
 joern-parse ddg执行成功  old_Constant.bin
 joern-export ddg执行成功old_Constant.bin
+joern-parse ddg执行成功  old_Game.bin
+joern-export ddg执行成功old_Game.bin
 joern-parse ddg执行成功  old_GameApp.bin
 joern-export ddg执行成功old_GameApp.bin
 joern-parse ddg执行成功  old_GameBackground.bin
@@ -1954,8 +1956,6 @@ joern-parse ddg执行成功  old_GameElementLayer.bin
 joern-export ddg执行成功old_GameElementLayer.bin
 joern-parse ddg执行成功  old_GameForeground.bin
 joern-export ddg执行成功old_GameForeground.bin
-joern-parse ddg执行成功  old_GameFrame.bin
-joern-export ddg执行成功old_GameFrame.bin
 joern-parse ddg执行成功  old_GameOverAnimation.bin
 joern-export ddg执行成功old_GameOverAnimation.bin
 joern-parse ddg执行成功  old_GameReady.bin
@@ -1979,11 +1979,11 @@ joern-export ddg执行成功old_WelcomeAnimation.bin
 joern-export cdg执行成功  new_Bird.java
 joern-export cdg执行成功  new_Cloud.java
 joern-export cdg执行成功  new_Constant.java
+joern-export cdg执行成功  new_Game.java
 joern-export cdg执行成功  new_GameApp.java
 joern-export cdg执行成功  new_GameBackground.java
 joern-export cdg执行成功  new_GameElementLayer.java
 joern-export cdg执行成功  new_GameForeground.java
-joern-export cdg执行成功  new_GameFrame.java
 joern-export cdg执行成功  new_GameOverAnimation.java
 joern-export cdg执行成功  new_GameReady.java
 joern-export cdg执行成功  new_GameScore.java
@@ -1997,11 +1997,11 @@ joern-export cdg执行成功  new_WelcomeAnimation.java
 joern-export cdg执行成功  old_Bird.java
 joern-export cdg执行成功  old_Cloud.java
 joern-export cdg执行成功  old_Constant.java
+joern-export cdg执行成功  old_Game.java
 joern-export cdg执行成功  old_GameApp.java
 joern-export cdg执行成功  old_GameBackground.java
 joern-export cdg执行成功  old_GameElementLayer.java
 joern-export cdg执行成功  old_GameForeground.java
-joern-export cdg执行成功  old_GameFrame.java
 joern-export cdg执行成功  old_GameOverAnimation.java
 joern-export cdg执行成功  old_GameReady.java
 joern-export cdg执行成功  old_GameScore.java
@@ -2012,117 +2012,29 @@ joern-export cdg执行成功  old_Pipe.java
 joern-export cdg执行成功  old_PipePool.java
 joern-export cdg执行成功  old_ScoreCounter.java
 joern-export cdg执行成功  old_WelcomeAnimation.java
-getDDGfilePath,目录不存在或不是一个有效的目录：E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/5676508/old_Game_ddg
-getDDGfilePath,目录不存在或不是一个有效的目录：E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/5676508/new_Game_ddg
-getDDGfilePath,目录不存在或不是一个有效的目录：E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/5676508/old_Game_ddg
-getDDGfilePath,目录不存在或不是一个有效的目录：E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/5676508/new_Game_ddg
-getDDGfilePath,目录不存在或不是一个有效的目录：E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/5676508/old_Game_ddg
-getDDGfilePath,目录不存在或不是一个有效的目录：E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/5676508/new_Game_ddg
-getDDGfilePath,目录不存在或不是一个有效的目录：E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/5676508/old_Game_ddg
-getDDGfilePath,目录不存在或不是一个有效的目录：E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/5676508/new_Game_ddg
-getDDGfilePath,目录不存在或不是一个有效的目录：E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/5676508/old_Game_ddg
-getDDGfilePath,目录不存在或不是一个有效的目录：E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/5676508/new_Game_ddg
-getDDGfilePath,目录不存在或不是一个有效的目录：E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/5676508/old_Game_ddg
-getDDGfilePath,目录不存在或不是一个有效的目录：E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/5676508/new_Game_ddg
-getDDGfilePath,目录不存在或不是一个有效的目录：E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/5676508/old_Game_ddg
-getDDGfilePath,目录不存在或不是一个有效的目录：E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/5676508/new_Game_ddg
-getCDGfilePath,目录不存在或不是一个有效的目录：E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/5676508/old_Game_cdg
-getCDGfilePath,目录不存在或不是一个有效的目录：E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/5676508/new_Game_cdg
-getCDGfilePath,目录不存在或不是一个有效的目录：E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/5676508/old_Game_cdg
-getCDGfilePath,目录不存在或不是一个有效的目录：E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/5676508/new_Game_cdg
-getCDGfilePath,目录不存在或不是一个有效的目录：E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/5676508/old_Game_cdg
-getCDGfilePath,目录不存在或不是一个有效的目录：E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/5676508/new_Game_cdg
-getCDGfilePath,目录不存在或不是一个有效的目录：E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/5676508/old_Game_cdg
-getCDGfilePath,目录不存在或不是一个有效的目录：E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/5676508/new_Game_cdg
-getCDGfilePath,目录不存在或不是一个有效的目录：E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/5676508/old_Game_cdg
-getCDGfilePath,目录不存在或不是一个有效的目录：E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/5676508/new_Game_cdg
-getCDGfilePath,目录不存在或不是一个有效的目录：E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/5676508/old_Game_cdg
-getCDGfilePath,目录不存在或不是一个有效的目录：E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/5676508/new_Game_cdg
-getCDGfilePath,目录不存在或不是一个有效的目录：E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/5676508/old_Game_cdg
-getCDGfilePath,目录不存在或不是一个有效的目录：E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/5676508/new_Game_cdg
-Bird::keyReleased
-astScore = 30.0
-LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
-weight = 0.02567554277835276
-DDG_impact = 0.75 , CDG_impact = 0.0, IR = 1.8660254037844386
-
-GameFrame::update
-astScore = 0.0
-LOC = 12, CC = 2, HV = 350.0, PCom = 71.42857142857143, CM = 147.28571428571428
-weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-ScoreCounter::reset
-astScore = 13.0
-LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
-weight = 0.08240167844748977
-DDG_impact = 0.75 , CDG_impact = 0.0, IR = 1.8660254037844386
-
-Game::setGameState
+GameFrame::setGameState
 astScore = 0.0
 LOC = 3, CC = 1, HV = 30.0, PCom = 0.0, CM = 18.0
-weight = 0.0607345959699469
+weight = 0.0
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-ScoreCounter::getCurrentScore
-astScore = 12.0
-LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
-weight = 0.09498833890806319
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Bird::keyIsReleased
-astScore = 96.0
-LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
-weight = 0.018646573803783442
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameElementLayer::pipeBornLogic
-astScore = 0.0
-LOC = 41, CC = 9, HV = 1262.2578074066912, PCom = 24.444444444444443, CM = 644.9066814811234
-weight = 0.5013976304186232
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Bird::birdFall
-astScore = 36.0
-LOC = 5, CC = 3, HV = 74.00879436282185, PCom = 20.0, CM = 32.00439718141092
-weight = 0.01682788952365012
-DDG_impact = 0.125 , CDG_impact = 1.0, IR = 2.353553390593274
+GameApp::main
+astScore = 3.0
+LOC = 3, CC = 1, HV = 24.0, PCom = 0.0, CM = 15.0
+weight = 0.0
+DDG_impact = 0.5714285714285714 , CDG_impact = 0.0, IR = 1.7559289460184544
 
 GameElementLayer::isCollideBird
-astScore = 0.0
+astScore = 15.0
 LOC = 11, CC = 4, HV = 133.97977094150824, PCom = 21.428571428571427, CM = 64.77559975646841
 weight = 0.08505520492175736
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+DDG_impact = 0.5625 , CDG_impact = 1.0, IR = 2.75
 
-ScoreCounter::getInstance
-astScore = 7.0
-LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
-weight = 0.030807796577981494
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Cloud::Cloud
-astScore = 0.0
-LOC = 10, CC = 1, HV = 346.7937417270813, PCom = 33.33333333333333, CM = 163.23020419687398
-weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Game::getGameState
-astScore = 0.0
-LOC = 1, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 9.754887502163468
-weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameBackground::GameBackground
-astScore = 0.0
-LOC = 4, CC = 1, HV = 34.86917501586544, PCom = 0.0, CM = 20.93458750793272
-weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Bird::movement
-astScore = 34.0
-LOC = 31, CC = 10, HV = 582.3702816601061, PCom = 8.823529411764707, CM = 308.2733761241707
-weight = 0.14049995329438936
-DDG_impact = 0.8214285714285714 , CDG_impact = 1.0, IR = 2.906326967174966
+GameElementLayer::pipeBornLogic
+astScore = 10.0
+LOC = 41, CC = 9, HV = 1262.2578074066912, PCom = 24.444444444444443, CM = 644.9066814811234
+weight = 0.5013976304186232
+DDG_impact = 0.7543859649122807 , CDG_impact = 1.0, IR = 2.868553950490285
 
 ScoreCounter::ScoreCounter
 astScore = 6.0
@@ -2130,40 +2042,46 @@ LOC = 8, CC = 2, HV = 46.604512509375034, PCom = 0.0, CM = 29.302256254687517
 weight = 0.03618225363771174
 DDG_impact = 0.6666666666666666 , CDG_impact = 0.0, IR = 1.816496580927726
 
+Game::setGameState
+astScore = 141.0
+LOC = 3, CC = 1, HV = 30.0, PCom = 0.0, CM = 18.0
+weight = 0.0607345959699469
+DDG_impact = 1.0 , CDG_impact = 0.0, IR = 2.0
+
+Bird::birdFall
+astScore = 36.0
+LOC = 5, CC = 3, HV = 74.00879436282185, PCom = 20.0, CM = 32.00439718141092
+weight = 0.01682788952365012
+DDG_impact = 0.125 , CDG_impact = 1.0, IR = 2.353553390593274
+
+Bird::getCurrentScore
+astScore = 42.0
+LOC = 3, CC = 1, HV = 13.931568569324174, PCom = 0.0, CM = 9.965784284662087
+weight = 0.07604763795536668
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameFrame::update
+astScore = 0.0
+LOC = 12, CC = 2, HV = 350.0, PCom = 71.42857142857143, CM = 147.28571428571428
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Game::initGame
+astScore = 33.0
+LOC = 9, CC = 1, HV = 142.7018117963935, PCom = 10.0, CM = 72.35090589819676
+weight = 0.02338213144664988
+DDG_impact = 0.8333333333333334 , CDG_impact = 0.0, IR = 1.912870929175277
+
+Game::BirdKeyListener::keyPressed
+astScore = 0.0
+LOC = 23, CC = 7, HV = 322.0227601751469, PCom = 15.384615384615385, CM = 169.31907239526578
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
 Bird::getBirdRect
 astScore = 91.0
 LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
 weight = 0.017414488934436905
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Game::initGame
-astScore = 0.0
-LOC = 9, CC = 1, HV = 142.7018117963935, PCom = 10.0, CM = 72.35090589819676
-weight = 0.02338213144664988
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Bird::reset
-astScore = 41.0
-LOC = 8, CC = 1, HV = 255.15831097164298, PCom = 62.5, CM = 101.8291554858215
-weight = 0.07686083559673224
-DDG_impact = 0.9333333333333333 , CDG_impact = 0.0, IR = 1.9660917830792959
-
-Bird::Bird
-astScore = 22.0
-LOC = 19, CC = 3, HV = 761.8134204569055, PCom = 22.727272727272727, CM = 381.5430738648164
-weight = 0.05489846710229662
-DDG_impact = 0.9183673469387755 , CDG_impact = 1.0, IR = 2.95831484749991
-
-GameFrame::initGame
-astScore = 0.0
-LOC = 9, CC = 1, HV = 142.7018117963935, PCom = 10.0, CM = 72.35090589819676
-weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameFrame::setGameState
-astScore = 0.0
-LOC = 3, CC = 1, HV = 30.0, PCom = 0.0, CM = 18.0
-weight = 0.0
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
 ScoreCounter::getBestScore
@@ -2172,23 +2090,41 @@ LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
 weight = 0.02834582351497705
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
+WelcomeAnimation::draw
+astScore = 7.0
+LOC = 10, CC = 3, HV = 379.5669432539275, PCom = 18.181818181818183, CM = 188.19256253605465
+weight = 0.023530281785862524
+DDG_impact = 0.6956521739130435 , CDG_impact = 1.0, IR = 2.834057656228299
+
+GameOverAnimation::GameOverAnimation
+astScore = 21.0
+LOC = 5, CC = 1, HV = 71.69925001442313, PCom = 0.0, CM = 39.849625007211564
+weight = 0.0345231960330554
+DDG_impact = 0.9 , CDG_impact = 0.0, IR = 1.9486832980505138
+
+GameBackground::GameBackground
+astScore = 8.0
+LOC = 4, CC = 1, HV = 34.86917501586544, PCom = 0.0, CM = 20.93458750793272
+weight = 0.0
+DDG_impact = 0.8 , CDG_impact = 0.0, IR = 1.8944271909999157
+
+Bird::keyReleased
+astScore = 30.0
+LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
+weight = 0.02567554277835276
+DDG_impact = 0.75 , CDG_impact = 0.0, IR = 1.8660254037844386
+
+ScoreCounter::saveScore
+astScore = 9.0
+LOC = 11, CC = 2, HV = 158.32466846199546, PCom = 0.0, CM = 86.66233423099773
+weight = 0.07853871930604281
+DDG_impact = 0.8235294117647058 , CDG_impact = 0.0, IR = 1.9074852129730302
+
 GameOverAnimation::draw
 astScore = 9.0
 LOC = 27, CC = 4, HV = 1298.8314769262722, PCom = 25.806451612903224, CM = 653.0125126566845
 weight = 0.12730850694105175
 DDG_impact = 0.9242424242424242 , CDG_impact = 1.0, IR = 2.9613752775282003
-
-Bird::getBestScore
-astScore = 43.0
-LOC = 3, CC = 1, HV = 13.931568569324174, PCom = 0.0, CM = 9.965784284662087
-weight = 0.022683001018014688
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Bird::isDead
-astScore = 39.0
-LOC = 3, CC = 2, HV = 41.20902501875006, PCom = 0.0, CM = 24.10451250937503
-weight = 0.08472546043912092
-DDG_impact = 0.0 , CDG_impact = 1.0, IR = 2.0
 
 Bird::deadBirdFall
 astScore = 38.0
@@ -2196,46 +2132,46 @@ LOC = 10, CC = 2, HV = 135.7068586817104, PCom = 27.27272727272727, CM = 61.2170
 weight = 0.025665660441203553
 DDG_impact = 0.4444444444444444 , CDG_impact = 0.0, IR = 1.6666666666666665
 
-Bird::getCurrentScore
-astScore = 42.0
-LOC = 3, CC = 1, HV = 13.931568569324174, PCom = 0.0, CM = 9.965784284662087
-weight = 0.07604763795536668
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+ScoreCounter::score
+astScore = 10.0
+LOC = 6, CC = 2, HV = 55.506595772116384, PCom = 0.0, CM = 32.75329788605819
+weight = 0.11044456655187293
+DDG_impact = 0.5 , CDG_impact = 1.0, IR = 2.7071067811865475
 
-Game::BirdKeyListener::keyPressed
-astScore = 0.0
-LOC = 23, CC = 7, HV = 322.0227601751469, PCom = 15.384615384615385, CM = 169.31907239526578
-weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+ScoreCounter::reset
+astScore = 13.0
+LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
+weight = 0.08240167844748977
+DDG_impact = 0.75 , CDG_impact = 0.0, IR = 1.8660254037844386
 
-Game::BirdKeyListener::resetGame
-astScore = 0.0
-LOC = 5, CC = 1, HV = 27.0, PCom = 0.0, CM = 17.5
-weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+Bird::isDead
+astScore = 39.0
+LOC = 3, CC = 2, HV = 41.20902501875006, PCom = 0.0, CM = 24.10451250937503
+weight = 0.08472546043912092
+DDG_impact = 0.0 , CDG_impact = 1.0, IR = 2.0
 
-Bird::drawScore
-astScore = 40.0
-LOC = 7, CC = 1, HV = 206.0894050155578, PCom = 0.0, CM = 108.0447025077789
-weight = 0.08921424712384285
-DDG_impact = 0.9333333333333333 , CDG_impact = 0.0, IR = 1.9660917830792959
+Bird::die
+astScore = 37.0
+LOC = 5, CC = 1, HV = 41.51317942364757, PCom = 0.0, CM = 24.756589711823786
+weight = 0.10047693831833981
+DDG_impact = 0.3333333333333333 , CDG_impact = 0.0, IR = 1.5773502691896257
 
 Game::Game
-astScore = 0.0
+astScore = 13.0
 LOC = 5, CC = 1, HV = 55.350905898196764, PCom = 60.0, CM = 1.675452949098382
 weight = 0.06207106217749363
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+DDG_impact = 0.875 , CDG_impact = 0.0, IR = 1.9354143466934852
 
-GameApp::main
+GameFrame::initGame
 astScore = 0.0
-LOC = 3, CC = 1, HV = 24.0, PCom = 0.0, CM = 15.0
+LOC = 9, CC = 1, HV = 142.7018117963935, PCom = 10.0, CM = 72.35090589819676
 weight = 0.0
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-GameFrame::BirdKeyListener::resetGame
-astScore = 0.0
-LOC = 5, CC = 1, HV = 27.0, PCom = 0.0, CM = 17.5
-weight = 0.0
+Bird::getBirdX
+astScore = 44.0
+LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
+weight = 0.014966615514345444
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
 Bird::keyPressed
@@ -2244,11 +2180,41 @@ LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
 weight = 0.018646573803783442
 DDG_impact = 0.75 , CDG_impact = 0.0, IR = 1.8660254037844386
 
-Bird::birdFlap
-astScore = 35.0
-LOC = 13, CC = 6, HV = 257.47299274176135, PCom = 38.46153846153847, CM = 120.00572714011145
-weight = 0.036383805467500224
-DDG_impact = 0.5625 , CDG_impact = 1.0, IR = 2.75
+Bird::getBestScore
+astScore = 43.0
+LOC = 3, CC = 1, HV = 13.931568569324174, PCom = 0.0, CM = 9.965784284662087
+weight = 0.022683001018014688
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Bird::reset
+astScore = 41.0
+LOC = 8, CC = 1, HV = 255.15831097164298, PCom = 62.5, CM = 101.8291554858215
+weight = 0.07686083559673224
+DDG_impact = 0.9333333333333333 , CDG_impact = 0.0, IR = 1.9660917830792959
+
+Game::getGameState
+astScore = 20.0
+LOC = 1, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 9.754887502163468
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Bird::draw
+astScore = 153.0
+LOC = 13, CC = 4, HV = 592.6048999263461, PCom = 35.294117647058826, CM = 288.15539113964365
+weight = 0.3374225531491603
+DDG_impact = 0.8181818181818182 , CDG_impact = 1.0, IR = 2.9045340337332908
+
+ScoreCounter::getInstance
+astScore = 7.0
+LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
+weight = 0.030807796577981494
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Pipe::Pipe
+astScore = 21.0
+LOC = 6, CC = 1, HV = 68.11428751370197, PCom = 0.0, CM = 38.557143756850984
+weight = 0.0
+DDG_impact = 0.875 , CDG_impact = 0.0, IR = 1.9354143466934852
 
 WelcomeAnimation::WelcomeAnimation
 astScore = 6.0
@@ -2256,34 +2222,58 @@ LOC = 4, CC = 1, HV = 46.50699332842308, PCom = 0.0, CM = 26.75349666421154
 weight = 0.0345231960330554
 DDG_impact = 0.875 , CDG_impact = 0.0, IR = 1.9354143466934852
 
+ScoreCounter::getCurrentScore
+astScore = 12.0
+LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
+weight = 0.09498833890806319
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Bird::drawScore
+astScore = 40.0
+LOC = 7, CC = 1, HV = 206.0894050155578, PCom = 0.0, CM = 108.0447025077789
+weight = 0.08921424712384285
+DDG_impact = 0.9333333333333333 , CDG_impact = 0.0, IR = 1.9660917830792959
+
+Bird::birdFlap
+astScore = 35.0
+LOC = 13, CC = 6, HV = 257.47299274176135, PCom = 38.46153846153847, CM = 120.00572714011145
+weight = 0.036383805467500224
+DDG_impact = 0.5625 , CDG_impact = 1.0, IR = 2.75
+
+Game::BirdKeyListener::resetGame
+astScore = 0.0
+LOC = 5, CC = 1, HV = 27.0, PCom = 0.0, CM = 17.5
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Cloud::Cloud
+astScore = 9.0
+LOC = 10, CC = 1, HV = 346.7937417270813, PCom = 33.33333333333333, CM = 163.23020419687398
+weight = 0.0
+DDG_impact = 0.8695652173913043 , CDG_impact = 0.0, IR = 1.9325048082403138
+
+Bird::movement
+astScore = 34.0
+LOC = 31, CC = 10, HV = 582.3702816601061, PCom = 8.823529411764707, CM = 308.2733761241707
+weight = 0.14049995329438936
+DDG_impact = 0.8214285714285714 , CDG_impact = 1.0, IR = 2.906326967174966
+
+GameFrame::BirdKeyListener::resetGame
+astScore = 0.0
+LOC = 5, CC = 1, HV = 27.0, PCom = 0.0, CM = 17.5
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
 GameFrame::GameFrame
 astScore = 0.0
 LOC = 5, CC = 1, HV = 55.350905898196764, PCom = 60.0, CM = 1.675452949098382
 weight = 0.0
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-ScoreCounter::saveScore
-astScore = 9.0
-LOC = 11, CC = 2, HV = 158.32466846199546, PCom = 0.0, CM = 86.66233423099773
-weight = 0.07853871930604281
-DDG_impact = 0.8235294117647058 , CDG_impact = 0.0, IR = 1.9074852129730302
-
-Bird::getBirdX
-astScore = 44.0
+Bird::keyIsReleased
+astScore = 96.0
 LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
-weight = 0.014966615514345444
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-ScoreCounter::score
-astScore = 10.0
-LOC = 6, CC = 2, HV = 55.506595772116384, PCom = 0.0, CM = 32.75329788605819
-weight = 0.11044456655187293
-DDG_impact = 0.5 , CDG_impact = 1.0, IR = 2.7071067811865475
-
-Game::update
-astScore = 0.0
-LOC = 12, CC = 2, HV = 350.0, PCom = 71.42857142857143, CM = 147.28571428571428
-weight = 1.1781096251535534
+weight = 0.018646573803783442
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
 GameFrame::BirdKeyListener::keyPressed
@@ -2292,17 +2282,17 @@ LOC = 23, CC = 7, HV = 322.0227601751469, PCom = 15.384615384615385, CM = 169.31
 weight = 0.0
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-Bird::die
-astScore = 37.0
-LOC = 5, CC = 1, HV = 41.51317942364757, PCom = 0.0, CM = 24.756589711823786
-weight = 0.10047693831833981
-DDG_impact = 0.3333333333333333 , CDG_impact = 0.0, IR = 1.5773502691896257
+Game::update
+astScore = 18.0
+LOC = 12, CC = 2, HV = 350.0, PCom = 71.42857142857143, CM = 147.28571428571428
+weight = 1.1781096251535534
+DDG_impact = 0.7692307692307693 , CDG_impact = 1.0, IR = 2.877058019307029
 
-WelcomeAnimation::draw
-astScore = 7.0
-LOC = 10, CC = 3, HV = 379.5669432539275, PCom = 18.181818181818183, CM = 188.19256253605465
-weight = 0.023530281785862524
-DDG_impact = 0.6956521739130435 , CDG_impact = 1.0, IR = 2.834057656228299
+Bird::Bird
+astScore = 22.0
+LOC = 19, CC = 3, HV = 761.8134204569055, PCom = 22.727272727272727, CM = 381.5430738648164
+weight = 0.05489846710229662
+DDG_impact = 0.9183673469387755 , CDG_impact = 1.0, IR = 2.95831484749991
 
 ScoreCounter::loadBestScore
 astScore = 8.0
@@ -2310,33 +2300,14 @@ LOC = 8, CC = 2, HV = 123.18989788986397, PCom = 0.0, CM = 67.59494894493199
 weight = 0.04075054213848245
 DDG_impact = 0.8571428571428571 , CDG_impact = 1.0, IR = 2.9258200997725514
 
-Pipe::Pipe
-astScore = 0.0
-LOC = 6, CC = 1, HV = 68.11428751370197, PCom = 0.0, CM = 38.557143756850984
-weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameOverAnimation::GameOverAnimation
-astScore = 21.0
-LOC = 5, CC = 1, HV = 71.69925001442313, PCom = 0.0, CM = 39.849625007211564
-weight = 0.0345231960330554
-DDG_impact = 0.9 , CDG_impact = 0.0, IR = 1.9486832980505138
-
-Bird::draw
-astScore = 153.0
-LOC = 13, CC = 4, HV = 592.6048999263461, PCom = 35.294117647058826, CM = 288.15539113964365
-weight = 0.3374225531491603
-DDG_impact = 0.8181818181818182 , CDG_impact = 1.0, IR = 2.9045340337332908
-
-commitHash = 5676508 , scoreOfCommit = 307388.9211037395
-本次commit计算的运行时间（秒）：279.449
+commitHash = 5676508 , scoreOfCommit = 369777.25679018605
+本次commit计算的运行时间（秒）：283.546
 
 nowCommitHash = eb44ec3
-DeveloperContributionEvaluation/editScripts/5676508_to_eb44ec3/editscript_GameApp.txt
-DeveloperContributionEvaluation/editScripts/5676508_to_eb44ec3/editscript_MovingPipe.txt
+DeveloperContributionEvaluation/editScripts/5676508_to_eb44ec3/editscript_App.txt
+DeveloperContributionEvaluation/editScripts/5676508_to_eb44ec3/editscript_Game.txt
 DeveloperContributionEvaluation/editScripts/5676508_to_eb44ec3/editscript_Bird.txt
 DeveloperContributionEvaluation/editScripts/5676508_to_eb44ec3/editscript_Cloud.txt
-DeveloperContributionEvaluation/editScripts/5676508_to_eb44ec3/editscript_Game.txt
 DeveloperContributionEvaluation/editScripts/5676508_to_eb44ec3/editscript_GameBackground.txt
 DeveloperContributionEvaluation/editScripts/5676508_to_eb44ec3/editscript_GameElementLayer.txt
 DeveloperContributionEvaluation/editScripts/5676508_to_eb44ec3/editscript_GameForeground.txt
@@ -2346,8 +2317,11 @@ DeveloperContributionEvaluation/editScripts/5676508_to_eb44ec3/editscript_Pipe.t
 DeveloperContributionEvaluation/editScripts/5676508_to_eb44ec3/editscript_PipePool.txt
 DeveloperContributionEvaluation/editScripts/5676508_to_eb44ec3/editscript_ScoreCounter.txt
 DeveloperContributionEvaluation/editScripts/5676508_to_eb44ec3/editscript_WelcomeAnimation.txt
+DeveloperContributionEvaluation/editScripts/5676508_to_eb44ec3/editscript_MovingPipe.txt
 DeveloperContributionEvaluation/editScripts/5676508_to_eb44ec3/editscript_Constant.txt
 所有编辑脚本获取结束
+joern-parse ddg执行成功  new_App.bin
+joern-export ddg执行成功new_App.bin
 joern-parse ddg执行成功  new_Bird.bin
 joern-export ddg执行成功new_Bird.bin
 joern-parse ddg执行成功  new_Cloud.bin
@@ -2356,8 +2330,6 @@ joern-parse ddg执行成功  new_Constant.bin
 joern-export ddg执行成功new_Constant.bin
 joern-parse ddg执行成功  new_Game.bin
 joern-export ddg执行成功new_Game.bin
-joern-parse ddg执行成功  new_GameApp.bin
-joern-export ddg执行成功new_GameApp.bin
 joern-parse ddg执行成功  new_GameBackground.bin
 joern-export ddg执行成功new_GameBackground.bin
 joern-parse ddg执行成功  new_GameElementLayer.bin
@@ -2376,6 +2348,8 @@ joern-parse ddg执行成功  new_ScoreCounter.bin
 joern-export ddg执行成功new_ScoreCounter.bin
 joern-parse ddg执行成功  new_WelcomeAnimation.bin
 joern-export ddg执行成功new_WelcomeAnimation.bin
+joern-parse ddg执行成功  old_App.bin
+joern-export ddg执行成功old_App.bin
 joern-parse ddg执行成功  old_Bird.bin
 joern-export ddg执行成功old_Bird.bin
 joern-parse ddg执行成功  old_Cloud.bin
@@ -2384,8 +2358,6 @@ joern-parse ddg执行成功  old_Constant.bin
 joern-export ddg执行成功old_Constant.bin
 joern-parse ddg执行成功  old_Game.bin
 joern-export ddg执行成功old_Game.bin
-joern-parse ddg执行成功  old_GameApp.bin
-joern-export ddg执行成功old_GameApp.bin
 joern-parse ddg执行成功  old_GameBackground.bin
 joern-export ddg执行成功old_GameBackground.bin
 joern-parse ddg执行成功  old_GameElementLayer.bin
@@ -2404,11 +2376,11 @@ joern-parse ddg执行成功  old_ScoreCounter.bin
 joern-export ddg执行成功old_ScoreCounter.bin
 joern-parse ddg执行成功  old_WelcomeAnimation.bin
 joern-export ddg执行成功old_WelcomeAnimation.bin
+joern-export cdg执行成功  new_App.java
 joern-export cdg执行成功  new_Bird.java
 joern-export cdg执行成功  new_Cloud.java
 joern-export cdg执行成功  new_Constant.java
 joern-export cdg执行成功  new_Game.java
-joern-export cdg执行成功  new_GameApp.java
 joern-export cdg执行成功  new_GameBackground.java
 joern-export cdg执行成功  new_GameElementLayer.java
 joern-export cdg执行成功  new_GameForeground.java
@@ -2418,11 +2390,11 @@ joern-export cdg执行成功  new_Pipe.java
 joern-export cdg执行成功  new_PipePool.java
 joern-export cdg执行成功  new_ScoreCounter.java
 joern-export cdg执行成功  new_WelcomeAnimation.java
+joern-export cdg执行成功  old_App.java
 joern-export cdg执行成功  old_Bird.java
 joern-export cdg执行成功  old_Cloud.java
 joern-export cdg执行成功  old_Constant.java
 joern-export cdg执行成功  old_Game.java
-joern-export cdg执行成功  old_GameApp.java
 joern-export cdg执行成功  old_GameBackground.java
 joern-export cdg执行成功  old_GameElementLayer.java
 joern-export cdg执行成功  old_GameForeground.java
@@ -2432,93 +2404,39 @@ joern-export cdg执行成功  old_Pipe.java
 joern-export cdg执行成功  old_PipePool.java
 joern-export cdg执行成功  old_ScoreCounter.java
 joern-export cdg执行成功  old_WelcomeAnimation.java
-MovingPipe::movement
+Game::run
 astScore = 0.0
-LOC = 19, CC = 5, HV = 318.9478887145537, PCom = 14.285714285714285, CM = 165.3310872144197
-weight = 0.016045438772534986
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Bird::Bird
-astScore = 0.0
-LOC = 19, CC = 3, HV = 761.8134204569055, PCom = 22.727272727272727, CM = 381.5430738648164
-weight = 0.0542472902245962
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Bird::keyIsReleased
-astScore = 0.0
-LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
-weight = 0.017247560988265773
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Bird::getBirdRect
-astScore = 0.0
-LOC = 3, CC = 1, HV = 0.0, PCom = 0.0, CM = 3.0
+LOC = 10, CC = 3, HV = 147.1612434150308, PCom = 33.33333333333333, CM = 64.41395504084875
 weight = 0.0
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-GameBackground::movement
-astScore = 0.0
-LOC = 5, CC = 2, HV = 53.77443751081735, PCom = 0.0, CM = 31.387218755408675
-weight = 0.020533361711263257
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+Bird::birdFall
+astScore = 33.0
+LOC = 5, CC = 2, HV = 28.529325012980813, PCom = 0.0, CM = 18.764662506490406
+weight = 0.05900816553241094
+DDG_impact = 0.16666666666666666 , CDG_impact = 1.0, IR = 2.408248290463863
 
-MovingPipe::draw
-astScore = 0.0
-LOC = 17, CC = 5, HV = 289.9853819512694, PCom = 19.047619047619047, CM = 147.46888145182518
-weight = 0.08964192524023148
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Bird::movement
-astScore = 0.0
-LOC = 13, CC = 5, HV = 223.46712577586834, PCom = 7.142857142857142, CM = 118.1621343165056
-weight = 0.13265768722541427
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Bird::keyPressed
-astScore = 0.0
-LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
-weight = 0.017247560988265773
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameForeground::draw
-astScore = 0.0
-LOC = 6, CC = 2, HV = 57.359400011538504, PCom = 0.0, CM = 33.67970000576925
-weight = 0.11917610501554321
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+Pipe::movement
+astScore = 29.0
+LOC = 7, CC = 2, HV = 102.1865710312585, PCom = 14.285714285714285, CM = 49.45042837277211
+weight = 0.01650915195306125
+DDG_impact = 0.7777777777777778 , CDG_impact = 1.0, IR = 2.8819171036881968
 
 Bird::draw
-astScore = 0.0
+astScore = 153.0
 LOC = 13, CC = 4, HV = 592.6048999263461, PCom = 35.294117647058826, CM = 288.15539113964365
 weight = 0.3449120480653322
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+DDG_impact = 0.8181818181818182 , CDG_impact = 1.0, IR = 2.9045340337332908
 
-GameForeground::GameForeground
-astScore = 0.0
-LOC = 8, CC = 2, HV = 230.62385799360038, PCom = 33.33333333333333, CM = 104.64526233013353
-weight = 0.03411369995442802
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+GameBackground::draw
+astScore = 9.0
+LOC = 14, CC = 3, HV = 423.2466083648286, PCom = 25.0, CM = 208.6233041824143
+weight = 0.06898342282059268
+DDG_impact = 0.8333333333333334 , CDG_impact = 1.0, IR = 2.912870929175277
 
-MovingPipe::drawTopHard
+Pipe::pipeLogic
 astScore = 0.0
-LOC = 8, CC = 2, HV = 379.5669432539275, PCom = 36.36363636363637, CM = 177.60165344514556
-weight = 0.016045438772534986
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Bird::die
-astScore = 0.0
-LOC = 5, CC = 1, HV = 41.51317942364757, PCom = 0.0, CM = 24.756589711823786
-weight = 0.1067702941614914
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Bird::reset
-astScore = 0.0
-LOC = 8, CC = 1, HV = 255.15831097164298, PCom = 62.5, CM = 101.8291554858215
-weight = 0.08478292948946323
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Game::getGameState
-astScore = 0.0
-LOC = 1, CC = 1, HV = 0.0, PCom = 0.0, CM = 2.0
+LOC = 7, CC = 2, HV = 102.1865710312585, PCom = 14.285714285714285, CM = 49.45042837277211
 weight = 0.0
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
@@ -2528,41 +2446,17 @@ LOC = 8, CC = 2, HV = 144.4295354570819, PCom = 0.0, CM = 78.21476772854095
 weight = 0.030296172385786958
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-Game::update
-astScore = 0.0
-LOC = 12, CC = 2, HV = 317.06856386476005, PCom = 61.53846153846154, CM = 135.76505116314925
-weight = 1.2154248610468714
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+GameForeground::GameForeground
+astScore = 7.0
+LOC = 8, CC = 2, HV = 230.62385799360038, PCom = 33.33333333333333, CM = 104.64526233013353
+weight = 0.03411369995442802
+DDG_impact = 0.9285714285714286 , CDG_impact = 1.0, IR = 2.9636241116594313
 
-GameForeground::cloudLogic
-astScore = 0.0
-LOC = 25, CC = 7, HV = 705.7796917139339, PCom = 36.666666666666664, CM = 351.5565125236336
-weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Pipe::movement
-astScore = 0.0
-LOC = 7, CC = 2, HV = 102.1865710312585, PCom = 14.285714285714285, CM = 49.45042837277211
-weight = 0.01650915195306125
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Bird::keyReleased
-astScore = 0.0
-LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
-weight = 0.02537099293093139
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-Bird::getBirdCollisionRect
-astScore = 0.0
-LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
-weight = 0.017207927383092587
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-GameElementLayer::pipeBornLogic
-astScore = 0.0
-LOC = 42, CC = 10, HV = 1349.5155984874405, PCom = 23.91304347826087, CM = 689.8012775045898
-weight = 0.4999127375822715
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+GameForeground::cloudBornLogic
+astScore = 9.0
+LOC = 25, CC = 7, HV = 800.9555097489889, PCom = 37.5, CM = 398.72775487449445
+weight = 0.07072604390621379
+DDG_impact = 0.8387096774193549 , CDG_impact = 1.0, IR = 2.915810939779251
 
 MovingPipe::drawBottomHard
 astScore = 0.0
@@ -2570,46 +2464,64 @@ LOC = 7, CC = 2, HV = 356.1223988875238, PCom = 30.0, CM = 168.5611994437619
 weight = 0.016045438772534986
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-Bird::birdFall
-astScore = 0.0
-LOC = 5, CC = 2, HV = 28.529325012980813, PCom = 0.0, CM = 18.764662506490406
-weight = 0.05900816553241094
+ScoreCounter::getInstance
+astScore = 15.0
+LOC = 3, CC = 1, HV = 19.651484454403228, PCom = 0.0, CM = 12.825742227201614
+weight = 0.03044237062269757
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-Bird::freeFall
-astScore = 0.0
-LOC = 6, CC = 2, HV = 101.57915548582149, PCom = 0.0, CM = 55.789577742910744
-weight = 0.018887789967062894
+Bird::movement
+astScore = 29.0
+LOC = 13, CC = 5, HV = 223.46712577586834, PCom = 7.142857142857142, CM = 118.1621343165056
+weight = 0.13265768722541427
+DDG_impact = 0.375 , CDG_impact = 1.0, IR = 2.6123724356957947
+
+Bird::keyIsReleased
+astScore = 41.0
+LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
+weight = 0.017247560988265773
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-GameBackground::draw
-astScore = 0.0
-LOC = 14, CC = 3, HV = 423.2466083648286, PCom = 25.0, CM = 208.6233041824143
-weight = 0.06898342282059268
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+GameElementLayer::pipeBornLogic
+astScore = 10.0
+LOC = 42, CC = 10, HV = 1349.5155984874405, PCom = 23.91304347826087, CM = 689.8012775045898
+weight = 0.4999127375822715
+DDG_impact = 0.7419354838709677 , CDG_impact = 1.0, IR = 2.861356769214109
 
-Game::run
+Game::update
+astScore = 18.0
+LOC = 12, CC = 2, HV = 317.06856386476005, PCom = 61.53846153846154, CM = 135.76505116314925
+weight = 1.2154248610468714
+DDG_impact = 0.7692307692307693 , CDG_impact = 1.0, IR = 2.877058019307029
+
+Bird::die
+astScore = 31.0
+LOC = 5, CC = 1, HV = 41.51317942364757, PCom = 0.0, CM = 24.756589711823786
+weight = 0.1067702941614914
+DDG_impact = 0.3333333333333333 , CDG_impact = 0.0, IR = 1.5773502691896257
+
+Bird::getBirdRect
 astScore = 0.0
-LOC = 10, CC = 3, HV = 147.1612434150308, PCom = 33.33333333333333, CM = 64.41395504084875
+LOC = 3, CC = 1, HV = 0.0, PCom = 0.0, CM = 3.0
 weight = 0.0
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-Pipe::draw
-astScore = 0.0
-LOC = 17, CC = 5, HV = 300.16030763377006, PCom = 19.047619047619047, CM = 152.5563442930755
-weight = 0.09193321389694949
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+Bird::Bird
+astScore = 22.0
+LOC = 19, CC = 3, HV = 761.8134204569055, PCom = 22.727272727272727, CM = 381.5430738648164
+weight = 0.0542472902245962
+DDG_impact = 0.9166666666666666 , CDG_impact = 1.0, IR = 2.957427107756338
 
-Pipe::pipeLogic
+GameForeground::draw
+astScore = 8.0
+LOC = 6, CC = 2, HV = 57.359400011538504, PCom = 0.0, CM = 33.67970000576925
+weight = 0.11917610501554321
+DDG_impact = 0.8333333333333334 , CDG_impact = 1.0, IR = 2.912870929175277
+
+Game::getGameState
 astScore = 0.0
-LOC = 7, CC = 2, HV = 102.1865710312585, PCom = 14.285714285714285, CM = 49.45042837277211
+LOC = 1, CC = 1, HV = 0.0, PCom = 0.0, CM = 2.0
 weight = 0.0
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-MovingPipe::drawHoverHard
-astScore = 0.0
-LOC = 9, CC = 2, HV = 492.41116962671674, PCom = 30.76923076923077, CM = 237.32096942874298
-weight = 0.016045438772534986
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
 GameBackground::moveLogic
@@ -2618,17 +2530,17 @@ LOC = 5, CC = 2, HV = 53.77443751081735, PCom = 0.0, CM = 31.387218755408675
 weight = 0.0
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-GameForeground::cloudBornLogic
-astScore = 0.0
-LOC = 25, CC = 7, HV = 800.9555097489889, PCom = 37.5, CM = 398.72775487449445
-weight = 0.07072604390621379
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+Game::initGame
+astScore = 33.0
+LOC = 18, CC = 3, HV = 251.33486783030335, PCom = 10.526315789473683, CM = 131.9042760204148
+weight = 0.021756168641851273
+DDG_impact = 0.8333333333333334 , CDG_impact = 0.0, IR = 1.912870929175277
 
-Bird::deadBirdFall
-astScore = 0.0
-LOC = 10, CC = 2, HV = 48.43204266092217, PCom = 0.0, CM = 31.216021330461086
-weight = 0.025361227812892087
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+Bird::freeFall
+astScore = 30.0
+LOC = 6, CC = 2, HV = 101.57915548582149, PCom = 0.0, CM = 55.789577742910744
+weight = 0.018887789967062894
+DDG_impact = 1.0 , CDG_impact = 1.0, IR = 3.0
 
 MovingPipe::MovingPipe
 astScore = 0.0
@@ -2636,32 +2548,92 @@ LOC = 3, CC = 1, HV = 4.754887502163469, PCom = 0.0, CM = 5.377443751081735
 weight = 0.0
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-Bird::birdFlap
+MovingPipe::drawTopHard
 astScore = 0.0
-LOC = 13, CC = 4, HV = 164.51539013493823, PCom = 23.076923076923077, CM = 80.21923352900758
-weight = 0.0848795070148096
+LOC = 8, CC = 2, HV = 379.5669432539275, PCom = 36.36363636363637, CM = 177.60165344514556
+weight = 0.016045438772534986
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-Game::initGame
-astScore = 0.0
-LOC = 18, CC = 3, HV = 251.33486783030335, PCom = 10.526315789473683, CM = 131.9042760204148
-weight = 0.021756168641851273
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
-
-ScoreCounter::getInstance
-astScore = 0.0
-LOC = 3, CC = 1, HV = 19.651484454403228, PCom = 0.0, CM = 12.825742227201614
-weight = 0.03044237062269757
-DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+Bird::deadBirdFall
+astScore = 34.0
+LOC = 10, CC = 2, HV = 48.43204266092217, PCom = 0.0, CM = 31.216021330461086
+weight = 0.025361227812892087
+DDG_impact = 0.6666666666666666 , CDG_impact = 0.0, IR = 1.816496580927726
 
 GameElementLayer::isCollideBird
-astScore = 0.0
+astScore = 15.0
 LOC = 11, CC = 4, HV = 133.97977094150824, PCom = 21.428571428571427, CM = 64.77559975646841
 weight = 0.09288010149526536
+DDG_impact = 0.5625 , CDG_impact = 1.0, IR = 2.75
+
+Pipe::draw
+astScore = 25.0
+LOC = 17, CC = 5, HV = 300.16030763377006, PCom = 19.047619047619047, CM = 152.5563442930755
+weight = 0.09193321389694949
+DDG_impact = 0.0 , CDG_impact = 1.0, IR = 2.0
+
+MovingPipe::movement
+astScore = 0.0
+LOC = 19, CC = 5, HV = 318.9478887145537, PCom = 14.285714285714285, CM = 165.3310872144197
+weight = 0.016045438772534986
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-commitHash = eb44ec3 , scoreOfCommit = 0.0
-本次commit计算的运行时间（秒）：220.187
+GameBackground::movement
+astScore = 10.0
+LOC = 5, CC = 2, HV = 53.77443751081735, PCom = 0.0, CM = 31.387218755408675
+weight = 0.020533361711263257
+DDG_impact = 0.8571428571428571 , CDG_impact = 1.0, IR = 2.9258200997725514
+
+MovingPipe::drawHoverHard
+astScore = 0.0
+LOC = 9, CC = 2, HV = 492.41116962671674, PCom = 30.76923076923077, CM = 237.32096942874298
+weight = 0.016045438772534986
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Bird::getBirdCollisionRect
+astScore = 91.0
+LOC = 3, CC = 1, HV = 11.60964047443681, PCom = 0.0, CM = 8.804820237218404
+weight = 0.017207927383092587
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Bird::reset
+astScore = 75.0
+LOC = 8, CC = 1, HV = 255.15831097164298, PCom = 62.5, CM = 101.8291554858215
+weight = 0.08478292948946323
+DDG_impact = 0.9333333333333333 , CDG_impact = 0.0, IR = 1.9660917830792959
+
+Bird::keyReleased
+astScore = 40.0
+LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
+weight = 0.02537099293093139
+DDG_impact = 0.75 , CDG_impact = 0.0, IR = 1.8660254037844386
+
+Bird::birdFlap
+astScore = 32.0
+LOC = 13, CC = 4, HV = 164.51539013493823, PCom = 23.076923076923077, CM = 80.21923352900758
+weight = 0.0848795070148096
+DDG_impact = 0.4166666666666667 , CDG_impact = 0.96, IR = 2.6252931214811737
+
+Bird::keyPressed
+astScore = 39.0
+LOC = 3, CC = 1, HV = 15.509775004326936, PCom = 0.0, CM = 10.754887502163468
+weight = 0.017247560988265773
+DDG_impact = 0.75 , CDG_impact = 0.0, IR = 1.8660254037844386
+
+MovingPipe::draw
+astScore = 0.0
+LOC = 17, CC = 5, HV = 289.9853819512694, PCom = 19.047619047619047, CM = 147.46888145182518
+weight = 0.08964192524023148
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+GameForeground::cloudLogic
+astScore = 0.0
+LOC = 25, CC = 7, HV = 705.7796917139339, PCom = 36.666666666666664, CM = 351.5565125236336
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+commitHash = eb44ec3 , scoreOfCommit = 335393.3585287687
+本次commit计算的运行时间（秒）：226.185
 
 nowCommitHash = de7e208
 DeveloperContributionEvaluation/editScripts/eb44ec3_to_de7e208/editscript_Game.txt
@@ -2673,16 +2645,16 @@ joern-export ddg执行成功old_Game.bin
 joern-export cdg执行成功  new_Game.java
 joern-export cdg执行成功  old_Game.java
 Game::BirdKeyListener::keyPressed
-astScore = 0.0
+astScore = 0.01
 LOC = 23, CC = 7, HV = 322.0227601751469, PCom = 15.384615384615385, CM = 169.31907239526578
 weight = 0.0
 DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
 
-commitHash = de7e208 , scoreOfCommit = 0.0
-本次commit计算的运行时间（秒）：25.057
+commitHash = de7e208 , scoreOfCommit = 1.6931907239526578
+本次commit计算的运行时间（秒）：24.943
 
 nowCommitHash = 3df72ae
 所有编辑脚本获取结束
 commitHash = 3df72ae , scoreOfCommit = 0.0
-本次commit计算的运行时间（秒）：3.686
-程序总运行时间（秒）：874.638
+本次commit计算的运行时间（秒）：3.621
+程序总运行时间（秒）：1517.649

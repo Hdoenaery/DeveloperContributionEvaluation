@@ -1,0 +1,5 @@
+digraph "&lt;lambda&gt;0" {  
+"1049" [label = <(sleep,sleep(FPS))<SUB>128</SUB>> ]
+"1054" [label = <(printStackTrace,e.printStackTrace())<SUB>130</SUB>> ]
+  "1049" -> "1054" 
+}

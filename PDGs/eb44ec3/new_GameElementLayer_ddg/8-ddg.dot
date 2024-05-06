@@ -1,0 +1,42 @@
+digraph "reset" {  
+"764" [label = <(METHOD,reset)<SUB>223</SUB>> ]
+"792" [label = <(METHOD_RETURN,void)<SUB>223</SUB>> ]
+"765" [label = <(PARAM,this)<SUB>223</SUB>> ]
+"768" [label = <(&lt;operator&gt;.assignment,)<SUB>224</SUB>> ]
+"786" [label = <(clear,this.pipes.clear())<SUB>227</SUB>> ]
+"768" [label = <(&lt;operator&gt;.assignment,)<SUB>224</SUB>> ]
+"768" [label = <(&lt;operator&gt;.assignment,)<SUB>224</SUB>> ]
+"775" [label = <(hasNext,&lt;empty&gt;)<SUB>224</SUB>> ]
+"786" [label = <(clear,this.pipes.clear())<SUB>227</SUB>> ]
+"770" [label = <(iterator,&lt;empty&gt;)<SUB>224</SUB>> ]
+"775" [label = <(hasNext,&lt;empty&gt;)<SUB>224</SUB>> ]
+"779" [label = <(&lt;operator&gt;.assignment,&lt;empty&gt;)<SUB>224</SUB>> ]
+"783" [label = <(giveBack,giveBack(pipe))<SUB>225</SUB>> ]
+"779" [label = <(&lt;operator&gt;.assignment,&lt;empty&gt;)<SUB>224</SUB>> ]
+"779" [label = <(&lt;operator&gt;.assignment,&lt;empty&gt;)<SUB>224</SUB>> ]
+"783" [label = <(giveBack,giveBack(pipe))<SUB>225</SUB>> ]
+"783" [label = <(giveBack,giveBack(pipe))<SUB>225</SUB>> ]
+"781" [label = <(next,&lt;empty&gt;)<SUB>224</SUB>> ]
+  "765" -> "792"  [ label = "this"] 
+  "768" -> "792" 
+  "775" -> "792"  [ label = "$iterLocal1"] 
+  "775" -> "792"  [ label = "&lt;empty&gt;"] 
+  "786" -> "792"  [ label = "this.pipes"] 
+  "786" -> "792"  [ label = "this.pipes.clear()"] 
+  "783" -> "792"  [ label = "pipe"] 
+  "783" -> "792"  [ label = "giveBack(pipe)"] 
+  "783" -> "792"  [ label = "PipePool"] 
+  "764" -> "765" 
+  "770" -> "768"  [ label = "this.pipes"] 
+  "765" -> "786"  [ label = "this"] 
+  "770" -> "786"  [ label = "this.pipes"] 
+  "765" -> "770"  [ label = "this"] 
+  "768" -> "775"  [ label = "$iterLocal1"] 
+  "781" -> "775"  [ label = "$iterLocal1"] 
+  "764" -> "775" 
+  "781" -> "779"  [ label = "$iterLocal1"] 
+  "764" -> "783" 
+  "779" -> "783"  [ label = "pipe"] 
+  "775" -> "781"  [ label = "$iterLocal1"] 
+  "764" -> "781" 
+}

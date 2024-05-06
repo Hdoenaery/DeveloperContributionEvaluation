@@ -1,0 +1,13 @@
+digraph "max" {  
+"350" [label = <(METHOD,max)> ]
+"355" [label = <(METHOD_RETURN,ANY)> ]
+"351" [label = <(PARAM,p1)> ]
+"352" [label = <(PARAM,p2)> ]
+"353" [label = <(PARAM,p3)> ]
+  "351" -> "355"  [ label = "p1"] 
+  "352" -> "355"  [ label = "p2"] 
+  "353" -> "355"  [ label = "p3"] 
+  "350" -> "351" 
+  "350" -> "352" 
+  "350" -> "353" 
+}

@@ -1,0 +1,10 @@
+digraph "reset" {  
+"763" [label = <(hasNext,&lt;empty&gt;)<SUB>223</SUB>> ]
+"767" [label = <(&lt;operator&gt;.assignment,&lt;empty&gt;)<SUB>223</SUB>> ]
+"771" [label = <(giveBack,giveBack(pipe))<SUB>224</SUB>> ]
+"769" [label = <(next,&lt;empty&gt;)<SUB>223</SUB>> ]
+  "763" -> "763" 
+  "763" -> "771" 
+  "763" -> "769" 
+  "763" -> "767" 
+}

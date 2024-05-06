@@ -1,0 +1,30 @@
+digraph "score" {  
+"160" [label = <(METHOD,score)<SUB>59</SUB>> ]
+"178" [label = <(METHOD_RETURN,void)<SUB>59</SUB>> ]
+"161" [label = <(PARAM,this)<SUB>59</SUB>> ]
+"162" [label = <(PARAM,Bird bird)<SUB>59</SUB>> ]
+"165" [label = <(&lt;operator&gt;.logicalNot,!bird.isDead())<SUB>60</SUB>> ]
+"165" [label = <(&lt;operator&gt;.logicalNot,!bird.isDead())<SUB>60</SUB>> ]
+"169" [label = <(playScore,playScore())<SUB>61</SUB>> ]
+"171" [label = <(&lt;operator&gt;.assignmentPlus,this.score += 1)<SUB>62</SUB>> ]
+"166" [label = <(isDead,isDead())<SUB>60</SUB>> ]
+"169" [label = <(playScore,playScore())<SUB>61</SUB>> ]
+"171" [label = <(&lt;operator&gt;.assignmentPlus,this.score += 1)<SUB>62</SUB>> ]
+"171" [label = <(&lt;operator&gt;.assignmentPlus,this.score += 1)<SUB>62</SUB>> ]
+  "161" -> "178"  [ label = "this"] 
+  "166" -> "178"  [ label = "bird"] 
+  "165" -> "178"  [ label = "isDead()"] 
+  "165" -> "178"  [ label = "!bird.isDead()"] 
+  "169" -> "178"  [ label = "playScore()"] 
+  "171" -> "178"  [ label = "this.score"] 
+  "171" -> "178"  [ label = "this.score += 1"] 
+  "169" -> "178"  [ label = "MusicUtil"] 
+  "160" -> "161" 
+  "160" -> "162" 
+  "166" -> "165"  [ label = "bird"] 
+  "160" -> "171" 
+  "162" -> "166"  [ label = "bird"] 
+  "160" -> "166" 
+  "160" -> "169" 
+  "161" -> "171"  [ label = "this"] 
+}

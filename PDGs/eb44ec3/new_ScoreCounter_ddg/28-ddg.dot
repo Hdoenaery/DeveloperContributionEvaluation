@@ -1,0 +1,10 @@
+digraph "playScore" {  
+"386" [label = <(METHOD,playScore)> ]
+"390" [label = <(METHOD_RETURN,ANY)> ]
+"387" [label = <(PARAM,p0)> ]
+"388" [label = <(PARAM,p1)> ]
+  "387" -> "390"  [ label = "p0"] 
+  "388" -> "390"  [ label = "p1"] 
+  "386" -> "387" 
+  "386" -> "388" 
+}

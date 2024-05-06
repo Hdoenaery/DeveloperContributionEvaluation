@@ -1,0 +1,13 @@
+digraph "reset" {  
+"232" [label = <(METHOD,reset)<SUB>77</SUB>> ]
+"242" [label = <(METHOD_RETURN,void)<SUB>77</SUB>> ]
+"233" [label = <(PARAM,this)<SUB>77</SUB>> ]
+"235" [label = <(&lt;operator&gt;.assignment,this.score = 0)<SUB>78</SUB>> ]
+"235" [label = <(&lt;operator&gt;.assignment,this.score = 0)<SUB>78</SUB>> ]
+"235" [label = <(&lt;operator&gt;.assignment,this.score = 0)<SUB>78</SUB>> ]
+  "233" -> "242"  [ label = "this"] 
+  "235" -> "242"  [ label = "this.score"] 
+  "235" -> "242"  [ label = "this.score = 0"] 
+  "232" -> "233" 
+  "232" -> "235" 
+}

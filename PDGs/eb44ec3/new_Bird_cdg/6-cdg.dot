@@ -1,0 +1,15 @@
+digraph "birdFall" {  
+"627" [label = <(&lt;operator&gt;.assignment,this.state = BIRD_FALL)<SUB>148</SUB>> ]
+"625" [label = <(isDead,this.isDead())<SUB>146</SUB>> ]
+"626" [label = <(RETURN,return;,return;)<SUB>147</SUB>> ]
+"628" [label = <(&lt;operator&gt;.fieldAccess,this.state)<SUB>148</SUB>> ]
+"631" [label = <(&lt;operator&gt;.fieldAccess,com.kingyu.flappybird.component.Bird.BIRD_FALL)<SUB>148</SUB>> ]
+"630" [label = <(FIELD_IDENTIFIER,state,state)<SUB>148</SUB>> ]
+"633" [label = <(FIELD_IDENTIFIER,BIRD_FALL,BIRD_FALL)<SUB>148</SUB>> ]
+  "625" -> "627" 
+  "625" -> "630" 
+  "625" -> "631" 
+  "625" -> "626" 
+  "625" -> "633" 
+  "625" -> "628" 
+}

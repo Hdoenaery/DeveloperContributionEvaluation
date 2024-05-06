@@ -1,0 +1,51 @@
+digraph "birdFlap" {  
+"581" [label = <(keyIsReleased,this.keyIsReleased())<SUB>131</SUB>> ]
+"586" [label = <(playFly,playFly())<SUB>134</SUB>> ]
+"588" [label = <(&lt;operator&gt;.assignment,this.state = BIRD_UP)<SUB>135</SUB>> ]
+"618" [label = <(keyPressed,this.keyPressed())<SUB>140</SUB>> ]
+"584" [label = <(isDead,this.isDead())<SUB>132</SUB>> ]
+"585" [label = <(RETURN,return;,return;)<SUB>133</SUB>> ]
+"589" [label = <(&lt;operator&gt;.fieldAccess,this.state)<SUB>135</SUB>> ]
+"592" [label = <(&lt;operator&gt;.fieldAccess,com.kingyu.flappybird.component.Bird.BIRD_UP)<SUB>135</SUB>> ]
+"596" [label = <(&lt;operator&gt;.greaterThan,birdCollisionRect.y &gt; Constant.TOP_BAR_HEIGHT)<SUB>136</SUB>> ]
+"591" [label = <(FIELD_IDENTIFIER,state,state)<SUB>135</SUB>> ]
+"594" [label = <(FIELD_IDENTIFIER,BIRD_UP,BIRD_UP)<SUB>135</SUB>> ]
+"597" [label = <(&lt;operator&gt;.fieldAccess,birdCollisionRect.y)<SUB>136</SUB>> ]
+"602" [label = <(&lt;operator&gt;.fieldAccess,Constant.TOP_BAR_HEIGHT)<SUB>136</SUB>> ]
+"606" [label = <(&lt;operator&gt;.assignment,this.velocity = ACC_FLAP)<SUB>137</SUB>> ]
+"613" [label = <(&lt;operator&gt;.assignment,this.wingState = 0)<SUB>138</SUB>> ]
+"598" [label = <(&lt;operator&gt;.fieldAccess,this.birdCollisionRect)<SUB>136</SUB>> ]
+"601" [label = <(FIELD_IDENTIFIER,y,y)<SUB>136</SUB>> ]
+"604" [label = <(FIELD_IDENTIFIER,TOP_BAR_HEIGHT,TOP_BAR_HEIGHT)<SUB>136</SUB>> ]
+"607" [label = <(&lt;operator&gt;.fieldAccess,this.velocity)<SUB>137</SUB>> ]
+"610" [label = <(&lt;operator&gt;.fieldAccess,com.kingyu.flappybird.component.Bird.ACC_FLAP)<SUB>137</SUB>> ]
+"614" [label = <(&lt;operator&gt;.fieldAccess,this.wingState)<SUB>138</SUB>> ]
+"600" [label = <(FIELD_IDENTIFIER,birdCollisionRect,birdCollisionRect)<SUB>136</SUB>> ]
+"609" [label = <(FIELD_IDENTIFIER,velocity,velocity)<SUB>137</SUB>> ]
+"612" [label = <(FIELD_IDENTIFIER,ACC_FLAP,ACC_FLAP)<SUB>137</SUB>> ]
+"616" [label = <(FIELD_IDENTIFIER,wingState,wingState)<SUB>138</SUB>> ]
+  "581" -> "584" 
+  "584" -> "618" 
+  "584" -> "602" 
+  "584" -> "592" 
+  "584" -> "588" 
+  "584" -> "586" 
+  "584" -> "596" 
+  "584" -> "591" 
+  "584" -> "585" 
+  "584" -> "600" 
+  "584" -> "589" 
+  "584" -> "604" 
+  "584" -> "594" 
+  "584" -> "597" 
+  "584" -> "601" 
+  "584" -> "598" 
+  "596" -> "606" 
+  "596" -> "607" 
+  "596" -> "616" 
+  "596" -> "609" 
+  "596" -> "612" 
+  "596" -> "610" 
+  "596" -> "614" 
+  "596" -> "613" 
+}

@@ -1,0 +1,11 @@
+digraph "score" {  
+"165" [label = <(&lt;operator&gt;.logicalNot,!bird.isDead())<SUB>60</SUB>> ]
+"169" [label = <(playScore,playScore())<SUB>61</SUB>> ]
+"171" [label = <(&lt;operator&gt;.assignmentPlus,this.score += 1)<SUB>62</SUB>> ]
+"172" [label = <(&lt;operator&gt;.fieldAccess,this.score)<SUB>62</SUB>> ]
+"174" [label = <(FIELD_IDENTIFIER,score,score)<SUB>62</SUB>> ]
+  "165" -> "174" 
+  "165" -> "171" 
+  "165" -> "169" 
+  "165" -> "172" 
+}

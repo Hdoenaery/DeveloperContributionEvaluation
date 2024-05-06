@@ -1,0 +1,13 @@
+digraph "setColor" {  
+"1159" [label = <(METHOD,setColor)> ]
+"1164" [label = <(METHOD_RETURN,ANY)> ]
+"1160" [label = <(PARAM,p0)> ]
+"1161" [label = <(PARAM,p1)> ]
+"1162" [label = <(PARAM,p2)> ]
+  "1160" -> "1164"  [ label = "p0"] 
+  "1161" -> "1164"  [ label = "p1"] 
+  "1162" -> "1164"  [ label = "p2"] 
+  "1159" -> "1160" 
+  "1159" -> "1161" 
+  "1159" -> "1162" 
+}

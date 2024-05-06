@@ -1,0 +1,9 @@
+digraph "movement" {  
+"141" [label = <(&lt;operator&gt;.greaterThan,layerX &gt; BackgroundImg.getWidth())<SUB>60</SUB>> ]
+"149" [label = <(&lt;operator&gt;.assignment,this.layerX = 0)<SUB>61</SUB>> ]
+"150" [label = <(&lt;operator&gt;.fieldAccess,this.layerX)<SUB>61</SUB>> ]
+"152" [label = <(FIELD_IDENTIFIER,layerX,layerX)<SUB>61</SUB>> ]
+  "141" -> "149" 
+  "141" -> "150" 
+  "141" -> "152" 
+}

@@ -1,0 +1,14 @@
+digraph "&lt;clinit&gt;" {  
+"49" [label = <(METHOD,&lt;clinit&gt;)> ]
+"61" [label = <(METHOD_RETURN,void)> ]
+"51" [label = <(&lt;operator&gt;.assignment,ScoreCounter ScoreCounter$ScoreCounterHolder.sc...)<SUB>21</SUB>> ]
+"56" [label = <(&lt;init&gt;,new ScoreCounter())<SUB>21</SUB>> ]
+"51" [label = <(&lt;operator&gt;.assignment,ScoreCounter ScoreCounter$ScoreCounterHolder.sc...)<SUB>21</SUB>> ]
+"51" [label = <(&lt;operator&gt;.assignment,ScoreCounter ScoreCounter$ScoreCounterHolder.sc...)<SUB>21</SUB>> ]
+"56" [label = <(&lt;init&gt;,new ScoreCounter())<SUB>21</SUB>> ]
+  "51" -> "61"  [ label = "ScoreCounter ScoreCounter$ScoreCounterHolder.scoreCounter = new ScoreCounter()"] 
+  "56" -> "61"  [ label = "ScoreCounter$ScoreCounterHolder.scoreCounter"] 
+  "56" -> "61"  [ label = "new ScoreCounter()"] 
+  "49" -> "51" 
+  "51" -> "56"  [ label = "ScoreCounter$ScoreCounterHolder.scoreCounter"] 
+}

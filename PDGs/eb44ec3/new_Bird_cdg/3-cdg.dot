@@ -1,0 +1,13 @@
+digraph "freeFall" {  
+"508" [label = <(&lt;operator&gt;.lessThan,velocity &lt; MAX_VEL_Y)<SUB>117</SUB>> ]
+"515" [label = <(&lt;operator&gt;.assignmentMinus,this.velocity -= ACC_Y)<SUB>118</SUB>> ]
+"516" [label = <(&lt;operator&gt;.fieldAccess,this.velocity)<SUB>118</SUB>> ]
+"519" [label = <(&lt;operator&gt;.fieldAccess,com.kingyu.flappybird.component.Bird.ACC_Y)<SUB>118</SUB>> ]
+"518" [label = <(FIELD_IDENTIFIER,velocity,velocity)<SUB>118</SUB>> ]
+"521" [label = <(FIELD_IDENTIFIER,ACC_Y,ACC_Y)<SUB>118</SUB>> ]
+  "508" -> "518" 
+  "508" -> "519" 
+  "508" -> "521" 
+  "508" -> "516" 
+  "508" -> "515" 
+}

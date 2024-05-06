@@ -1,7 +1,110 @@
-digraph "&lt;init&gt;" {  
-"17" [label = <(METHOD,&lt;init&gt;)> ]
-"22" [label = <(METHOD_RETURN,void)> ]
-"18" [label = <(PARAM,this)> ]
-  "18" -> "22"  [ label = "this"] 
-  "17" -> "18" 
+digraph "get" {  
+"29" [label = <(METHOD,get)<SUB>36</SUB>> ]
+"103" [label = <(METHOD_RETURN,ANY)<SUB>36</SUB>> ]
+"30" [label = <(PARAM,String className)<SUB>36</SUB>> ]
+"33" [label = <(equals,this.equals(className))<SUB>37</SUB>> ]
+"33" [label = <(equals,this.equals(className))<SUB>37</SUB>> ]
+"33" [label = <(equals,this.equals(className))<SUB>37</SUB>> ]
+"38" [label = <(&lt;operator&gt;.assignment,int size = pool.size())<SUB>38</SUB>> ]
+"38" [label = <(&lt;operator&gt;.assignment,int size = pool.size())<SUB>38</SUB>> ]
+"38" [label = <(&lt;operator&gt;.assignment,int size = pool.size())<SUB>38</SUB>> ]
+"45" [label = <(&lt;operator&gt;.greaterThan,size &gt; 0)<SUB>39</SUB>> ]
+"71" [label = <(&lt;operator&gt;.assignment,int size = movingPool.size())<SUB>45</SUB>> ]
+"40" [label = <(size,com.kingyu.flappybird.component.PipePool.pool.s...)<SUB>38</SUB>> ]
+"45" [label = <(&lt;operator&gt;.greaterThan,size &gt; 0)<SUB>39</SUB>> ]
+"45" [label = <(&lt;operator&gt;.greaterThan,size &gt; 0)<SUB>39</SUB>> ]
+"49" [label = <(RETURN,// 移除并返回最后一个
+return pool.remove(size - 1);,// 移除并返回最后一个
+return pool.remove(size - 1);)<SUB>40</SUB>> ]
+"71" [label = <(&lt;operator&gt;.assignment,int size = movingPool.size())<SUB>45</SUB>> ]
+"71" [label = <(&lt;operator&gt;.assignment,int size = movingPool.size())<SUB>45</SUB>> ]
+"78" [label = <(&lt;operator&gt;.greaterThan,size &gt; 0)<SUB>46</SUB>> ]
+"50" [label = <(remove,com.kingyu.flappybird.component.PipePool.pool.r...)<SUB>40</SUB>> ]
+"59" [label = <(RETURN,// 空对象池，返回一个新对象
+return new Pipe();,// 空对象池，返回一个新对象
+return new Pipe();)<SUB>42</SUB>> ]
+"73" [label = <(size,com.kingyu.flappybird.component.PipePool.moving...)<SUB>45</SUB>> ]
+"78" [label = <(&lt;operator&gt;.greaterThan,size &gt; 0)<SUB>46</SUB>> ]
+"78" [label = <(&lt;operator&gt;.greaterThan,size &gt; 0)<SUB>46</SUB>> ]
+"82" [label = <(RETURN,// 移除并返回最后一个
+return movingPool.remove(size - 1);,// 移除并返回最后一个
+return movingPool.remove(size - 1);)<SUB>47</SUB>> ]
+"50" [label = <(remove,com.kingyu.flappybird.component.PipePool.pool.r...)<SUB>40</SUB>> ]
+"50" [label = <(remove,com.kingyu.flappybird.component.PipePool.pool.r...)<SUB>40</SUB>> ]
+"60" [label = <(BLOCK,&lt;empty&gt;,&lt;empty&gt;)<SUB>42</SUB>> ]
+"83" [label = <(remove,com.kingyu.flappybird.component.PipePool.moving...)<SUB>47</SUB>> ]
+"92" [label = <(RETURN,// 空对象池，返回一个新对象
+return new MovingPipe();,// 空对象池，返回一个新对象
+return new MovingPipe();)<SUB>49</SUB>> ]
+"54" [label = <(&lt;operator&gt;.subtraction,size - 1)<SUB>40</SUB>> ]
+"54" [label = <(&lt;operator&gt;.subtraction,size - 1)<SUB>40</SUB>> ]
+"62" [label = <(&lt;operator&gt;.assignment,$obj0 = new Pipe())<SUB>42</SUB>> ]
+"65" [label = <(&lt;init&gt;,new Pipe())<SUB>42</SUB>> ]
+"67" [label = <(IDENTIFIER,$obj0,&lt;empty&gt;)<SUB>42</SUB>> ]
+"83" [label = <(remove,com.kingyu.flappybird.component.PipePool.moving...)<SUB>47</SUB>> ]
+"83" [label = <(remove,com.kingyu.flappybird.component.PipePool.moving...)<SUB>47</SUB>> ]
+"93" [label = <(BLOCK,&lt;empty&gt;,&lt;empty&gt;)<SUB>49</SUB>> ]
+"62" [label = <(&lt;operator&gt;.assignment,$obj0 = new Pipe())<SUB>42</SUB>> ]
+"62" [label = <(&lt;operator&gt;.assignment,$obj0 = new Pipe())<SUB>42</SUB>> ]
+"65" [label = <(&lt;init&gt;,new Pipe())<SUB>42</SUB>> ]
+"87" [label = <(&lt;operator&gt;.subtraction,size - 1)<SUB>47</SUB>> ]
+"87" [label = <(&lt;operator&gt;.subtraction,size - 1)<SUB>47</SUB>> ]
+"95" [label = <(&lt;operator&gt;.assignment,$obj1 = new MovingPipe())<SUB>49</SUB>> ]
+"98" [label = <(&lt;init&gt;,new MovingPipe())<SUB>49</SUB>> ]
+"100" [label = <(IDENTIFIER,$obj1,&lt;empty&gt;)<SUB>49</SUB>> ]
+"95" [label = <(&lt;operator&gt;.assignment,$obj1 = new MovingPipe())<SUB>49</SUB>> ]
+"95" [label = <(&lt;operator&gt;.assignment,$obj1 = new MovingPipe())<SUB>49</SUB>> ]
+"98" [label = <(&lt;init&gt;,new MovingPipe())<SUB>49</SUB>> ]
+  "92" -> "103"  [ label = "&lt;RET&gt;"] 
+  "49" -> "103"  [ label = "&lt;RET&gt;"] 
+  "59" -> "103"  [ label = "&lt;RET&gt;"] 
+  "82" -> "103"  [ label = "&lt;RET&gt;"] 
+  "33" -> "103"  [ label = "className"] 
+  "33" -> "103"  [ label = "this.equals(className)"] 
+  "38" -> "103"  [ label = "com.kingyu.flappybird.component.PipePool.pool.size()"] 
+  "38" -> "103"  [ label = "int size = pool.size()"] 
+  "45" -> "103"  [ label = "size &gt; 0"] 
+  "50" -> "103"  [ label = "com.kingyu.flappybird.component.PipePool.pool"] 
+  "54" -> "103"  [ label = "size"] 
+  "50" -> "103"  [ label = "size - 1"] 
+  "50" -> "103"  [ label = "com.kingyu.flappybird.component.PipePool.pool.remove(size - 1)"] 
+  "29" -> "30" 
+  "29" -> "33" 
+  "30" -> "33"  [ label = "className"] 
+  "40" -> "38"  [ label = "com.kingyu.flappybird.component.PipePool.pool"] 
+  "73" -> "71"  [ label = "com.kingyu.flappybird.component.PipePool.movingPool"] 
+  "38" -> "45"  [ label = "size"] 
+  "29" -> "45" 
+  "50" -> "49"  [ label = "com.kingyu.flappybird.component.PipePool.pool.remove(size - 1)"] 
+  "60" -> "59" 
+  "60" -> "59"  [ label = "&lt;empty&gt;"] 
+  "29" -> "59" 
+  "71" -> "78"  [ label = "size"] 
+  "29" -> "78" 
+  "83" -> "82"  [ label = "com.kingyu.flappybird.component.PipePool.movingPool.remove(size - 1)"] 
+  "40" -> "50"  [ label = "com.kingyu.flappybird.component.PipePool.pool"] 
+  "54" -> "50"  [ label = "size"] 
+  "54" -> "50"  [ label = "1"] 
+  "65" -> "60"  [ label = "$obj0"] 
+  "29" -> "60" 
+  "93" -> "92" 
+  "93" -> "92"  [ label = "&lt;empty&gt;"] 
+  "29" -> "92" 
+  "45" -> "54"  [ label = "size"] 
+  "29" -> "54" 
+  "29" -> "62" 
+  "29" -> "67" 
+  "73" -> "83"  [ label = "com.kingyu.flappybird.component.PipePool.movingPool"] 
+  "87" -> "83"  [ label = "size"] 
+  "87" -> "83"  [ label = "1"] 
+  "98" -> "93"  [ label = "$obj1"] 
+  "29" -> "93" 
+  "62" -> "65"  [ label = "$obj0"] 
+  "29" -> "65" 
+  "78" -> "87"  [ label = "size"] 
+  "29" -> "87" 
+  "29" -> "95" 
+  "29" -> "100" 
+  "95" -> "98"  [ label = "$obj1"] 
+  "29" -> "98" 
 }

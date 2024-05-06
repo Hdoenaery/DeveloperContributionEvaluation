@@ -23,18 +23,18 @@ public class Main {
         long startTime = System.currentTimeMillis();
         long lastTime = startTime;
 
-//        // 创建文件输出流
-//        FileOutputStream fileOutputStream = null;
-//        try {
-//            fileOutputStream = new FileOutputStream("DeveloperContributionEvaluation/output.log", true);
-//        } catch (FileNotFoundException e) {
-//            e.printStackTrace();
-//            return;
-//        }
-//        // 创建打印流，指向文件输出流
-//        PrintStream filePrintStream = new PrintStream(fileOutputStream);
-//        // 将System.out重新定向到文件打印流
-//        System.setOut(filePrintStream);
+        // 创建文件输出流
+        FileOutputStream fileOutputStream = null;
+        try {
+            fileOutputStream = new FileOutputStream("DeveloperContributionEvaluation/output.log", true);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            return;
+        }
+        // 创建打印流，指向文件输出流
+        PrintStream filePrintStream = new PrintStream(fileOutputStream);
+        // 将System.out重新定向到文件打印流
+        System.setOut(filePrintStream);
 
         String gitDirectory = "E:/Postgraduate_study/FlappyBird";
         String projectName = "FlappyBird";
@@ -52,10 +52,10 @@ public class Main {
 //        gumtreeSpoonASTDiff(file, file2);
 //        readEditScriptFile();
 
-//        String oldCommit = "e2cb276d982a199bae9d8ab5dce196f2aeb18936";
-//        for(String newCommit : commits) {
-        String oldCommit = "eb44ec32e3a6fd5fa13da512fe03e598aaf18d20";
-        String newCommit = "de7e20890d9aed4ad03df75d27bcf98d7e9d990f";
+        String oldCommit = "0000000";
+        for(String newCommit : commits) {
+//        String oldCommit = "5676508a17ede2cbb30ee2d6ff23bf7db071f625";
+//        String newCommit = "eb44ec32e3a6fd5fa13da512fe03e598aaf18d20";
 
             System.out.println("\nnowCommitHash = " + newCommit.substring(0, 7));
             tool.executeGitCommand(gitDirectory, new String[]{"git", "checkout", newCommit});//切换到当前版本
@@ -133,10 +133,10 @@ public class Main {
 //        ------------------------------------------------------------------------------------------------------------------------------------
             DDG ddg = new DDG();
             CDG cdg = new CDG();
-//            ddg.getDDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
-//                    , newCommit);
-//            cdg.getCDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
-//                    , newCommit);
+            ddg.getDDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
+                    , newCommit);
+            cdg.getCDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
+                    , newCommit);
 
             Map<String, Double> DDG_impact = new HashMap<>();
             for(String method:changedMethods) {
@@ -201,25 +201,25 @@ public class Main {
 
 //            if(newCommit.equals("5e5ba4bf131b5998c33474ebe34ac7e9d86187ad"))
 //                break;
-//        }
-//
-//        // 记录程序结束时间
-//        long endTime = System.currentTimeMillis();
-//
-//        // 计算总运行时间（毫秒）
-//        long totalTimeInMillis = endTime - startTime;
-//
-//        // 将毫秒转换为秒
-//        double totalTimeInSeconds = totalTimeInMillis / 1000.0;
-//
-//        System.out.println("程序总运行时间（秒）：" + totalTimeInSeconds);
+        }
 
-//        // 关闭文件输出流
-//        try {
-//            fileOutputStream.close();
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
+        // 记录程序结束时间
+        long endTime = System.currentTimeMillis();
+
+        // 计算总运行时间（毫秒）
+        long totalTimeInMillis = endTime - startTime;
+
+        // 将毫秒转换为秒
+        double totalTimeInSeconds = totalTimeInMillis / 1000.0;
+
+        System.out.println("程序总运行时间（秒）：" + totalTimeInSeconds);
+
+        // 关闭文件输出流
+        try {
+            fileOutputStream.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         tool.executeGitCommand(gitDirectory, new String[]{"git", "checkout", "3df72aeaf881c90be38e716e3193df1e9323371e"});//切换到当前版本
     }
 
@@ -237,7 +237,7 @@ public class Main {
 
         int cnt = 0;
         for(String fileNameLong:changedJavaFiles){
-            System.out.println(fileNameLong);
+//            System.out.println(fileNameLong);
             // 获取两个版本中文件的内容
             String fileContentAtNewCommit = getFileContentAtCommit(gitDirectory, fileNameLong, newCommit);
             String fileContentAtOldCommit = getFileContentAtCommit(gitDirectory, fileNameLong, oldCommit);

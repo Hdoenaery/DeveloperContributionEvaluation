@@ -1,0 +1,33 @@
+digraph "draw" {  
+"126" [label = <(movement,this.movement())<SUB>54</SUB>> ]
+"97" [label = <(&lt;operator&gt;.lessThan,i &lt; count)<SUB>47</SUB>> ]
+"100" [label = <(&lt;operator&gt;.postIncrement,i++)<SUB>47</SUB>> ]
+"122" [label = <(isDead,isDead())<SUB>51</SUB>> ]
+"103" [label = <(drawImage,drawImage(BackgroundImg, imgWidth * i - layerX,...)<SUB>48</SUB>> ]
+"125" [label = <(RETURN,//小鸟死亡则不再绘制
+return;,//小鸟死亡则不再绘制
+return;)<SUB>52</SUB>> ]
+"105" [label = <(&lt;operator&gt;.fieldAccess,com.kingyu.flappybird.component.GameBackground....)<SUB>48</SUB>> ]
+"108" [label = <(&lt;operator&gt;.subtraction,imgWidth * i - layerX)<SUB>48</SUB>> ]
+"115" [label = <(&lt;operator&gt;.subtraction,Constant.FRAME_HEIGHT - imgHeight)<SUB>48</SUB>> ]
+"107" [label = <(FIELD_IDENTIFIER,BackgroundImg,BackgroundImg)<SUB>48</SUB>> ]
+"109" [label = <(&lt;operator&gt;.multiplication,imgWidth * i)<SUB>48</SUB>> ]
+"112" [label = <(&lt;operator&gt;.fieldAccess,this.layerX)<SUB>48</SUB>> ]
+"116" [label = <(&lt;operator&gt;.fieldAccess,Constant.FRAME_HEIGHT)<SUB>48</SUB>> ]
+"114" [label = <(FIELD_IDENTIFIER,layerX,layerX)<SUB>48</SUB>> ]
+"118" [label = <(FIELD_IDENTIFIER,FRAME_HEIGHT,FRAME_HEIGHT)<SUB>48</SUB>> ]
+  "97" -> "107" 
+  "97" -> "115" 
+  "97" -> "105" 
+  "97" -> "116" 
+  "97" -> "118" 
+  "97" -> "100" 
+  "97" -> "114" 
+  "97" -> "103" 
+  "97" -> "97" 
+  "97" -> "112" 
+  "97" -> "108" 
+  "97" -> "109" 
+  "122" -> "125" 
+  "122" -> "126" 
+}

@@ -1,0 +1,10 @@
+digraph "getX" {  
+"999" [label = <(METHOD,getX)> ]
+"1003" [label = <(METHOD_RETURN,ANY)> ]
+"1000" [label = <(PARAM,p0)> ]
+"1001" [label = <(PARAM,p1)> ]
+  "1000" -> "1003"  [ label = "p0"] 
+  "1001" -> "1003"  [ label = "p1"] 
+  "999" -> "1000" 
+  "999" -> "1001" 
+}
