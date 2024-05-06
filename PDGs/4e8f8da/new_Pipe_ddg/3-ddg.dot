@@ -1,9 +1,0 @@
-digraph "isVisible" {  
-"211" [label = <(METHOD,isVisible)<SUB>93</SUB>> ]
-"220" [label = <(METHOD_RETURN,boolean)<SUB>93</SUB>> ]
-"212" [label = <(PARAM,this)<SUB>93</SUB>> ]
-"214" [label = <(RETURN,return visible;,return visible;)<SUB>94</SUB>> ]
-  "214" -> "220"  [ label = "&lt;RET&gt;"] 
-  "212" -> "220"  [ label = "this"] 
-  "211" -> "212" 
-}

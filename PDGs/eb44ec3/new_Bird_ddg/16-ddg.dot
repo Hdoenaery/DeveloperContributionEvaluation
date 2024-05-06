@@ -1,9 +1,0 @@
-digraph "getBirdX" {  
-"851" [label = <(METHOD,getBirdX)<SUB>206</SUB>> ]
-"860" [label = <(METHOD_RETURN,int)<SUB>206</SUB>> ]
-"852" [label = <(PARAM,this)<SUB>206</SUB>> ]
-"854" [label = <(RETURN,return x;,return x;)<SUB>207</SUB>> ]
-  "854" -> "860"  [ label = "&lt;RET&gt;"] 
-  "852" -> "860"  [ label = "this"] 
-  "851" -> "852" 
-}

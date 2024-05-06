@@ -1,7 +1,0 @@
-digraph "currentTimeMillis" {  
-"337" [label = <(METHOD,currentTimeMillis)> ]
-"340" [label = <(METHOD_RETURN,ANY)> ]
-"338" [label = <(PARAM,p1)> ]
-  "338" -> "340"  [ label = "p1"] 
-  "337" -> "338" 
-}

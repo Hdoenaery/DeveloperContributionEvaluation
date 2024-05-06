@@ -1,9 +1,0 @@
-digraph "moveLogic" {  
-"136" [label = <(&lt;operator&gt;.greaterThan,layerX &gt; BackgroundImg.getWidth())<SUB>56</SUB>> ]
-"144" [label = <(&lt;operator&gt;.assignment,this.layerX = 0)<SUB>57</SUB>> ]
-"145" [label = <(&lt;operator&gt;.fieldAccess,this.layerX)<SUB>57</SUB>> ]
-"147" [label = <(FIELD_IDENTIFIER,layerX,layerX)<SUB>57</SUB>> ]
-  "136" -> "147" 
-  "136" -> "144" 
-  "136" -> "145" 
-}

@@ -1,9 +1,0 @@
-digraph "getBestScore" {  
-"212" [label = <(METHOD,getBestScore)<SUB>69</SUB>> ]
-"221" [label = <(METHOD_RETURN,long)<SUB>69</SUB>> ]
-"213" [label = <(PARAM,this)<SUB>69</SUB>> ]
-"215" [label = <(RETURN,return bestScore;,return bestScore;)<SUB>70</SUB>> ]
-  "215" -> "221"  [ label = "&lt;RET&gt;"] 
-  "213" -> "221"  [ label = "this"] 
-  "212" -> "213" 
-}

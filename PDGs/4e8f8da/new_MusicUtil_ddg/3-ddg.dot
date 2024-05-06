@@ -1,8 +1,0 @@
-digraph "playScore" {  
-"107" [label = <(METHOD,playScore)<SUB>41</SUB>> ]
-"115" [label = <(METHOD_RETURN,void)<SUB>41</SUB>> ]
-"109" [label = <(play,com.bird.util.MusicUtil.score.play())<SUB>42</SUB>> ]
-"109" [label = <(play,com.bird.util.MusicUtil.score.play())<SUB>42</SUB>> ]
-  "109" -> "115"  [ label = "com.bird.util.MusicUtil.score"] 
-  "109" -> "115"  [ label = "com.bird.util.MusicUtil.score.play()"] 
-}

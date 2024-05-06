@@ -1,7 +1,0 @@
-digraph "random" {  
-"294" [label = <(METHOD,random)> ]
-"297" [label = <(METHOD_RETURN,ANY)> ]
-"295" [label = <(PARAM,p1)> ]
-  "295" -> "297"  [ label = "p1"] 
-  "294" -> "295" 
-}

@@ -23,22 +23,196 @@ public class Main {
         long startTime = System.currentTimeMillis();
         long lastTime = startTime;
 
-        // 创建文件输出流
-        FileOutputStream fileOutputStream = null;
-        try {
-            fileOutputStream = new FileOutputStream("DeveloperContributionEvaluation/output.log", true);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-            return;
-        }
-        // 创建打印流，指向文件输出流
-        PrintStream filePrintStream = new PrintStream(fileOutputStream);
-        // 将System.out重新定向到文件打印流
-        System.setOut(filePrintStream);
+//        // 创建文件输出流
+//        FileOutputStream fileOutputStream = null;
+//        try {
+//            fileOutputStream = new FileOutputStream("DeveloperContributionEvaluation/output.log", true);
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//            return;
+//        }
+//        // 创建打印流，指向文件输出流
+//        PrintStream filePrintStream = new PrintStream(fileOutputStream);
+//        // 将System.out重新定向到文件打印流
+//        System.setOut(filePrintStream);
+//----------------------------------------------------------------------------------------------------------------------
 
+        Tool tool = new Tool();
         String gitDirectory = "E:/Postgraduate_study/FlappyBird";
         String projectName = "FlappyBird";
+        traverseAllCommits(gitDirectory, projectName);
+//        String gitDirectory = "E:/Postgraduate_study/fastjson";
+//        String projectName = "fastjson";
+//        String newCommit = "240edb5c42aa9295bc674c93d25ffe801c13a5c4";
+//        String oldCommit = tool.executeGitCommand(gitDirectory, new String[]{"git", "log", "--format=%H", "--skip=1", "-n", "1", newCommit})replace("\n", "");//获取当前版本的上一个版本
+//        System.out.println(oldCommit);
+//        calculateCommitScore(gitDirectory, projectName, newCommit, oldCommit);
+
+
+//----------------------------------------------------------------------------------------------------------------------
+        // 记录程序结束时间
+        long endTime = System.currentTimeMillis();
+
+        // 计算总运行时间（毫秒）
+        long totalTimeInMillis = endTime - startTime;
+
+        // 将毫秒转换为秒
+        double totalTimeInSeconds = totalTimeInMillis / 1000.0;
+
+        System.out.println("程序总运行时间（秒）：" + totalTimeInSeconds);
+
+//        // 关闭文件输出流
+//        try {
+//            fileOutputStream.close();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+    }
+
+    public static double calculateCommitScore(String gitDirectory, String projectName, String newCommit, String oldCommit) throws Exception {
         Tool tool = new Tool();
+        System.out.println("\nnowCommitHash = " + newCommit.substring(0, 7));
+        tool.executeGitCommand(gitDirectory, new String[]{"git", "checkout", newCommit});//切换到当前版本
+
+        getEditScriptsBetweenCommits(gitDirectory, newCommit, oldCommit); //获取两个commit之间所有发生更改的.java文件的编辑脚本
+        String editscriptsPath = "DeveloperContributionEvaluation/editScripts/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"; //这些编辑脚本的保存路径
+        String astFolder = "DeveloperContributionEvaluation/ASTfiles/" + newCommit.substring(0,7) + "/";
+
+        ASTScoreCalculator astScoreCalculator = new ASTScoreCalculator();
+
+//            double score = 0;
+        Map<String, Double> astScore= astScoreCalculator.calculateTotalASTScore(editscriptsPath, astFolder); //计算每个变更方法的ast得分
+//            for (Map.Entry<String, Double> entry : astScore.entrySet()) {
+//                System.out.println("methodName = " + entry.getKey() + "   ; astScore = " + entry.getValue());
+//                score+=entry.getValue();
+//            }
+//            System.out.println("Total AST Score: " + String.format("%.2f", score));
+
+//        以上计算AST编辑脚本分数
+//        ------------------------------------------------------------------------------------------------------------------------------------
+
+        CallGraph callGraph = new CallGraph();
+        String analyzedDirectory = "E:/Postgraduate_study/FlappyBird/src";
+        String outputFormat = "dot";
+        String granularity = "method";
+        callGraph.getCallGraph(analyzedDirectory, outputFormat, granularity, projectName, newCommit); //获取该项目的调用图
+
+        String callGraphName = projectName + "_" + newCommit.substring(0, 7) + "-" + granularity + "." + outputFormat;
+        String callGraphPath = "DeveloperContributionEvaluation/CallGraphs/" + callGraphName;
+
+
+        Map<Integer, List<Integer>> graphC = callGraph.buildGraph(callGraphPath);//根据调用图生成邻接表
+
+        Map<Integer, Double> mapPr = callGraph.getPageRank(graphC);
+        double sum = 0;
+        for(Double i:mapPr.values()) {
+            sum += i;
+        }
+
+        Map<Integer, Double> nodeWeight = callGraph.measureInterFunctionInteraction(graphC, mapPr, 1);
+
+//            for (Map.Entry<Integer, Double> entry : nodeWeight.entrySet()) {
+//                System.out.println("Node " + entry.getKey() + ": weight = " + entry.getValue());
+//            }
+
+        //获取项目中每个函数在调用图中所对应的节点编号
+        Map<String, Integer> methodToNodeMap = callGraph.getNodeMapping("DeveloperContributionEvaluation/CallGraphs/" + callGraphName);
+//            for (String key : methodToNodeMap.keySet()) {
+//                System.out.println("methodName: " + key + "\nNode: " + methodToNodeMap.get(key)); //输出键值对验证是否正确
+//            }
+
+//        以上计算调用图中各节点的权重
+//        ------------------------------------------------------------------------------------------------------------------------------------
+
+        ComplexityCalculator complexityCalculator = new ComplexityCalculator();
+//            System.out.println("\nMethods is below:");
+
+        complexityCalculator.getChangedMethods_LOC_CC(gitDirectory, oldCommit, newCommit);
+        List<String> changedMethods = complexityCalculator.getChangedMethods();
+        Map<String, Integer> LOC = complexityCalculator.getLOC();
+        Map<String, Integer> CC = complexityCalculator.getCC();
+        Map<String, Double> HV = complexityCalculator.getHV();
+        Map<String, Double> PCom = complexityCalculator.getPCom();
+        Map<String, Double> CM = new HashMap<>();
+
+//            for (String method : changedMethods) {
+//                CM.put(method, (LOC.get(method) + CC.get(method) + HV.get(method) - PCom.get(method)) / 2 + 1);
+//                System.out.println(method);
+//                System.out.println("LOC = " + LOC.get(method) + ", CC = " + CC.get(method) +
+//                        ", HV = " + HV.get(method) + ", PCom = " + PCom.get(method) + ", CM = " + CM.get(method));
+//
+//            }
+
+//        以上计算各修改函数的复杂性度量(提取了各修改函数的内容)
+//        ------------------------------------------------------------------------------------------------------------------------------------
+        DDG ddg = new DDG();
+        CDG cdg = new CDG();
+        ddg.getDDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
+                , newCommit);
+        cdg.getCDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
+                , newCommit);
+
+        Map<String, Double> DDG_impact = new HashMap<>();
+        for(String method:changedMethods) {
+//                System.out.println(method);
+            String[] tmp = method.split(":");
+            DDG_impact.put(method,
+                    ddg.getDDGimpact("E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/" + newCommit.substring(0, 7), tmp[0], tmp[2]));
+        }
+//            for(String method:changedMethods) {
+//                System.out.println("DDG_impact " + method + "   " + DDG_impact.get(method));
+//            }
+
+        Map<String, Double> CDG_impact = new HashMap<>();
+        for(String method:changedMethods) {
+//                System.out.println(method);
+            String[] tmp = method.split(":");
+            CDG_impact.put(method,
+                    cdg.getCDGimpact("E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/" + newCommit.substring(0, 7), tmp[0], tmp[2]));
+        }
+//            for(String method:changedMethods) {
+//                System.out.println("CDG_impact " + method + "   " + CDG_impact.get(method));
+//            }
+
+        double scoreOfCommit = 0.0;
+        for (String method : changedMethods) {
+            CM.put(method, (LOC.get(method) + CC.get(method) + HV.get(method) - PCom.get(method)) / 2 + 1);
+            System.out.println(method);
+            if(!astScore.containsKey(method))
+                astScore.put(method, 0.0);
+            System.out.println("astScore = " + astScore.get(method));
+            System.out.println("LOC = " + LOC.get(method) + ", CC = " + CC.get(method) +
+                    ", HV = " + HV.get(method) + ", PCom = " + PCom.get(method) + ", CM = " + CM.get(method));
+
+            double weight = 0.0;
+            if(methodToNodeMap.containsKey(method) && nodeWeight.containsKey(methodToNodeMap.get(method)))
+                weight = nodeWeight.get(methodToNodeMap.get(method));
+
+            System.out.println("weight = " + weight);
+
+            double IR = 1 + Math.sqrt(DDG_impact.get(method)) + Math.sqrt(CDG_impact.get(method));
+            System.out.println("DDG_impact = " + DDG_impact.get(method) + " , CDG_impact = " + CDG_impact.get(method) + ", IR = " + IR);
+
+            scoreOfCommit += astScore.get(method) * CM.get(method) * (weight + 1) * IR;
+
+            System.out.println();
+        }
+        System.out.println("commitHash = " + newCommit.substring(0,7) + " , scoreOfCommit = " + scoreOfCommit);
+        return scoreOfCommit;
+    }
+
+    // 遍历一个项目的所有commit
+    public static void traverseAllCommits(String gitDirectory, String projectName) throws Exception {
+        // 记录程序开始时间
+        long startTime = System.currentTimeMillis();
+        long lastTime = startTime;
+
+//        String gitDirectory = "E:/Postgraduate_study/FlappyBird";
+//        String projectName = "FlappyBird";
+        Tool tool = new Tool();
+        String latestCommit = tool.executeGitCommand(gitDirectory, new String[]{"git", "log", "--format=%H", "-n", "1", "origin"}).replace("\n", "");
+//        System.out.println(latestCommit);
+        tool.executeGitCommand(gitDirectory, new String[]{"git", "checkout", latestCommit});//切换到最新的版本
 
         List<String> commits = getAllCommitHashes(gitDirectory);//传入 Git 项目的目录路径，获取该项目所有的commit版本
         Collections.reverse(commits);
@@ -54,136 +228,10 @@ public class Main {
 
         String oldCommit = "0000000";
         for(String newCommit : commits) {
-//        String oldCommit = "5676508a17ede2cbb30ee2d6ff23bf7db071f625";
-//        String newCommit = "eb44ec32e3a6fd5fa13da512fe03e598aaf18d20";
+//            String oldCommit = "5676508a17ede2cbb30ee2d6ff23bf7db071f625";
+//            String newCommit = "eb44ec32e3a6fd5fa13da512fe03e598aaf18d20";
 
-            System.out.println("\nnowCommitHash = " + newCommit.substring(0, 7));
-            tool.executeGitCommand(gitDirectory, new String[]{"git", "checkout", newCommit});//切换到当前版本
-
-            getEditScriptsBetweenCommits(gitDirectory, newCommit, oldCommit); //获取两个commit之间所有发生更改的.java文件的编辑脚本
-            String editscriptsPath = "DeveloperContributionEvaluation/editScripts/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"; //这些编辑脚本的保存路径
-            String astFolder = "DeveloperContributionEvaluation/ASTfiles/" + newCommit.substring(0,7) + "/";
-
-            ASTScoreCalculator astScoreCalculator = new ASTScoreCalculator();
-
-//            double score = 0;
-            Map<String, Double> astScore= astScoreCalculator.calculateTotalASTScore(editscriptsPath, astFolder); //计算每个变更方法的ast得分
-//            for (Map.Entry<String, Double> entry : astScore.entrySet()) {
-//                System.out.println("methodName = " + entry.getKey() + "   ; astScore = " + entry.getValue());
-//                score+=entry.getValue();
-//            }
-//            System.out.println("Total AST Score: " + String.format("%.2f", score));
-
-//        以上计算AST编辑脚本分数
-//        ------------------------------------------------------------------------------------------------------------------------------------
-
-            CallGraph callGraph = new CallGraph();
-            String analyzedDirectory = "E:/Postgraduate_study/FlappyBird/src";
-            String outputFormat = "dot";
-            String granularity = "method";
-            callGraph.getCallGraph(analyzedDirectory, outputFormat, granularity, projectName, newCommit); //获取该项目的调用图
-
-            String callGraphName = projectName + "_" + newCommit.substring(0, 7) + "-" + granularity + "." + outputFormat;
-            String callGraphPath = "DeveloperContributionEvaluation/CallGraphs/" + callGraphName;
-
-
-            Map<Integer, List<Integer>> graphC = callGraph.buildGraph(callGraphPath);//根据调用图生成邻接表
-
-            Map<Integer, Double> mapPr = callGraph.getPageRank(graphC);
-            double sum = 0;
-            for(Double i:mapPr.values()) {
-                sum += i;
-            }
-
-            Map<Integer, Double> nodeWeight = callGraph.measureInterFunctionInteraction(graphC, mapPr, 1);
-
-//            for (Map.Entry<Integer, Double> entry : nodeWeight.entrySet()) {
-//                System.out.println("Node " + entry.getKey() + ": weight = " + entry.getValue());
-//            }
-
-            //获取项目中每个函数在调用图中所对应的节点编号
-            Map<String, Integer> methodToNodeMap = callGraph.getNodeMapping("DeveloperContributionEvaluation/CallGraphs/" + callGraphName);
-//            for (String key : methodToNodeMap.keySet()) {
-//                System.out.println("methodName: " + key + "\nNode: " + methodToNodeMap.get(key)); //输出键值对验证是否正确
-//            }
-
-//        以上计算调用图中各节点的权重
-//        ------------------------------------------------------------------------------------------------------------------------------------
-
-            ComplexityCalculator complexityCalculator = new ComplexityCalculator();
-//            System.out.println("\nMethods is below:");
-
-            complexityCalculator.getChangedMethods_LOC_CC(gitDirectory, oldCommit, newCommit);
-            List<String> changedMethods = complexityCalculator.getChangedMethods();
-            Map<String, Integer> LOC = complexityCalculator.getLOC();
-            Map<String, Integer> CC = complexityCalculator.getCC();
-            Map<String, Double> HV = complexityCalculator.getHV();
-            Map<String, Double> PCom = complexityCalculator.getPCom();
-            Map<String, Double> CM = new HashMap<>();
-
-//            for (String method : changedMethods) {
-//                CM.put(method, (LOC.get(method) + CC.get(method) + HV.get(method) - PCom.get(method)) / 2 + 1);
-//                System.out.println(method);
-//                System.out.println("LOC = " + LOC.get(method) + ", CC = " + CC.get(method) +
-//                        ", HV = " + HV.get(method) + ", PCom = " + PCom.get(method) + ", CM = " + CM.get(method));
-//
-//            }
-
-//        以上计算各修改函数的复杂性度量(提取了各修改函数的内容)
-//        ------------------------------------------------------------------------------------------------------------------------------------
-            DDG ddg = new DDG();
-            CDG cdg = new CDG();
-            ddg.getDDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
-                    , newCommit);
-            cdg.getCDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
-                    , newCommit);
-
-            Map<String, Double> DDG_impact = new HashMap<>();
-            for(String method:changedMethods) {
-//                System.out.println(method);
-                String[] tmp = method.split(":");
-                DDG_impact.put(method,
-                        ddg.getDDGimpact("E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/" + newCommit.substring(0, 7), tmp[0], tmp[2]));
-            }
-//            for(String method:changedMethods) {
-//                System.out.println("DDG_impact " + method + "   " + DDG_impact.get(method));
-//            }
-
-            Map<String, Double> CDG_impact = new HashMap<>();
-            for(String method:changedMethods) {
-//                System.out.println(method);
-                String[] tmp = method.split(":");
-                CDG_impact.put(method,
-                        cdg.getCDGimpact("E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/" + newCommit.substring(0, 7), tmp[0], tmp[2]));
-            }
-//            for(String method:changedMethods) {
-//                System.out.println("CDG_impact " + method + "   " + CDG_impact.get(method));
-//            }
-
-            double scoreOfCommit = 0.0;
-            for (String method : changedMethods) {
-                CM.put(method, (LOC.get(method) + CC.get(method) + HV.get(method) - PCom.get(method)) / 2 + 1);
-                System.out.println(method);
-                if(!astScore.containsKey(method))
-                    astScore.put(method, 0.0);
-                System.out.println("astScore = " + astScore.get(method));
-                System.out.println("LOC = " + LOC.get(method) + ", CC = " + CC.get(method) +
-                        ", HV = " + HV.get(method) + ", PCom = " + PCom.get(method) + ", CM = " + CM.get(method));
-
-                double weight = 0.0;
-                if(methodToNodeMap.containsKey(method) && nodeWeight.containsKey(methodToNodeMap.get(method)))
-                    weight = nodeWeight.get(methodToNodeMap.get(method));
-
-                System.out.println("weight = " + weight);
-
-                double IR = 1 + Math.sqrt(DDG_impact.get(method)) + Math.sqrt(CDG_impact.get(method));
-                System.out.println("DDG_impact = " + DDG_impact.get(method) + " , CDG_impact = " + CDG_impact.get(method) + ", IR = " + IR);
-
-                scoreOfCommit += astScore.get(method) * CM.get(method) * (weight + 1) * IR;
-
-                System.out.println();
-            }
-            System.out.println("commitHash = " + newCommit.substring(0,7) + " , scoreOfCommit = " + scoreOfCommit);
+            double scoreOfCommit = calculateCommitScore(gitDirectory, projectName, newCommit, oldCommit);
             oldCommit = newCommit;
 
             // 记录程序结束时间
@@ -202,27 +250,8 @@ public class Main {
 //            if(newCommit.equals("5e5ba4bf131b5998c33474ebe34ac7e9d86187ad"))
 //                break;
         }
-
-        // 记录程序结束时间
-        long endTime = System.currentTimeMillis();
-
-        // 计算总运行时间（毫秒）
-        long totalTimeInMillis = endTime - startTime;
-
-        // 将毫秒转换为秒
-        double totalTimeInSeconds = totalTimeInMillis / 1000.0;
-
-        System.out.println("程序总运行时间（秒）：" + totalTimeInSeconds);
-
-        // 关闭文件输出流
-        try {
-            fileOutputStream.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        tool.executeGitCommand(gitDirectory, new String[]{"git", "checkout", "3df72aeaf881c90be38e716e3193df1e9323371e"});//切换到当前版本
+        tool.executeGitCommand(gitDirectory, new String[]{"git", "checkout", latestCommit});//切换到最新的版本
     }
-
     //生成两个commit之间有变化的.java文件之间的编辑脚本
     public static void getEditScriptsBetweenCommits(String gitDirectory, String newCommit, String oldCommit) throws Exception {
         List<String> changedJavaFiles = getChangedJavaFiles(gitDirectory, newCommit, oldCommit);
@@ -324,7 +353,7 @@ public class Main {
             // 等待命令执行完成
             int exitCode = process.waitFor();
             if (exitCode != 0) {
-                System.err.println("命令执行失败，返回码：" + exitCode);
+                System.err.println("getAllCommitHashes命令执行失败，返回码：" + exitCode);
             }
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
@@ -365,7 +394,7 @@ public class Main {
             // 等待命令执行完成
             int exitCode = process.waitFor();
             if (exitCode != 0) {
-                System.err.println("命令执行失败，返回码：" + exitCode);
+                System.err.println("getChangedJavaFiles命令执行失败，返回码：" + exitCode);
             }
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();

@@ -1,9 +1,0 @@
-digraph "movement" {  
-"560" [label = <(&lt;operator&gt;.lessThan,x &lt; -1 * PIPE_HEAD_WIDTH)<SUB>161</SUB>> ]
-"571" [label = <(&lt;operator&gt;.assignment,this.visible = false)<SUB>162</SUB>> ]
-"572" [label = <(&lt;operator&gt;.fieldAccess,this.visible)<SUB>162</SUB>> ]
-"574" [label = <(FIELD_IDENTIFIER,visible,visible)<SUB>162</SUB>> ]
-  "560" -> "571" 
-  "560" -> "572" 
-  "560" -> "574" 
-}

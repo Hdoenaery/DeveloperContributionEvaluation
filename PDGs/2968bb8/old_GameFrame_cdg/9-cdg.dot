@@ -1,5 +1,0 @@
-digraph "run" {  
-"993" [label = <(sleep,sleep(GAME_INTERVAL))<SUB>159</SUB>> ]
-"998" [label = <(printStackTrace,e.printStackTrace())<SUB>161</SUB>> ]
-  "993" -> "998" 
-}

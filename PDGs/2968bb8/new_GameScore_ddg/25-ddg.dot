@@ -1,7 +1,0 @@
-digraph "&lt;operator&gt;.logicalNot" {  
-"369" [label = <(METHOD,&lt;operator&gt;.logicalNot)> ]
-"372" [label = <(METHOD_RETURN,ANY)> ]
-"370" [label = <(PARAM,p1)> ]
-  "370" -> "372"  [ label = "p1"] 
-  "369" -> "370" 
-}

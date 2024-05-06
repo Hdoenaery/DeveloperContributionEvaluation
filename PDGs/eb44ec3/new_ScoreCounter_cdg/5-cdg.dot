@@ -1,5 +1,0 @@
-digraph "saveScore" {  
-"184" [label = <(close,dos.close())<SUB>56</SUB>> ]
-"188" [label = <(printStackTrace,e.printStackTrace())<SUB>58</SUB>> ]
-  "184" -> "188" 
-}

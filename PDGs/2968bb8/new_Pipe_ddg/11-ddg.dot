@@ -1,9 +1,0 @@
-digraph "getPipeRect" {  
-"610" [label = <(METHOD,getPipeRect)<SUB>183</SUB>> ]
-"619" [label = <(METHOD_RETURN,java.awt.Rectangle)<SUB>183</SUB>> ]
-"611" [label = <(PARAM,this)<SUB>183</SUB>> ]
-"613" [label = <(RETURN,return pipeRect;,return pipeRect;)<SUB>184</SUB>> ]
-  "613" -> "619"  [ label = "&lt;RET&gt;"] 
-  "611" -> "619"  [ label = "this"] 
-  "610" -> "611" 
-}

@@ -1,5 +1,0 @@
-===
-update-node
----
-StringLiteralExpr: Flappy Bird [300,313]
-replace Flappy Bird by Flappy Bird written by Kingyu

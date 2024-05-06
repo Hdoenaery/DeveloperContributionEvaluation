@@ -1,9 +1,0 @@
-digraph "startTiming" {  
-"965" [label = <(isReadyTiming,this.timing.isReadyTiming())<SUB>216</SUB>> ]
-"969" [label = <(startTiming,this.timing.startTiming())<SUB>217</SUB>> ]
-"970" [label = <(&lt;operator&gt;.fieldAccess,this.timing)<SUB>217</SUB>> ]
-"972" [label = <(FIELD_IDENTIFIER,timing,timing)<SUB>217</SUB>> ]
-  "965" -> "972" 
-  "965" -> "969" 
-  "965" -> "970" 
-}

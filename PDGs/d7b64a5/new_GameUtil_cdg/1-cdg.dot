@@ -1,9 +1,0 @@
-digraph "loadBUfferedImage" {  
-"44" [label = <(RETURN,return null;,return null;)<SUB>36</SUB>> ]
-"28" [label = <(RETURN,return ImageIO.read(new FileInputStream(imgPath));,return ImageIO.read(new FileInputStream(imgPath));)<SUB>32</SUB>> ]
-"29" [label = <(read,ImageIO.read(new FileInputStream(imgPath)))<SUB>32</SUB>> ]
-"42" [label = <(printStackTrace,e.printStackTrace())<SUB>34</SUB>> ]
-  "29" -> "42" 
-  "29" -> "28" 
-  "29" -> "44" 
-}

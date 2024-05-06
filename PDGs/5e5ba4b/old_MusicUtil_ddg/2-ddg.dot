@@ -1,8 +1,0 @@
-digraph "playCrash" {  
-"94" [label = <(METHOD,playCrash)<SUB>36</SUB>> ]
-"102" [label = <(METHOD_RETURN,void)<SUB>36</SUB>> ]
-"96" [label = <(play,com.bird.util.MusicUtil.crash.play())<SUB>37</SUB>> ]
-"96" [label = <(play,com.bird.util.MusicUtil.crash.play())<SUB>37</SUB>> ]
-  "96" -> "102"  [ label = "com.bird.util.MusicUtil.crash"] 
-  "96" -> "102"  [ label = "com.bird.util.MusicUtil.crash.play()"] 
-}

@@ -1,7 +1,0 @@
-digraph "&lt;operator&gt;.postIncrement" {  
-"465" [label = <(METHOD,&lt;operator&gt;.postIncrement)> ]
-"468" [label = <(METHOD_RETURN,ANY)> ]
-"466" [label = <(PARAM,p1)> ]
-  "466" -> "468"  [ label = "p1"] 
-  "465" -> "466" 
-}

@@ -1,9 +1,0 @@
-digraph "pipeLogic" {  
-"581" [label = <(&lt;operator&gt;.lessThan,x &lt; -1 * PIPE_HEAD_WIDTH)<SUB>169</SUB>> ]
-"592" [label = <(&lt;operator&gt;.assignment,this.visible = false)<SUB>170</SUB>> ]
-"593" [label = <(&lt;operator&gt;.fieldAccess,this.visible)<SUB>170</SUB>> ]
-"595" [label = <(FIELD_IDENTIFIER,visible,visible)<SUB>170</SUB>> ]
-  "581" -> "595" 
-  "581" -> "592" 
-  "581" -> "593" 
-}

@@ -1,9 +1,0 @@
-===
-insert-tree
----
-SingleMemberAnnotationExpr [368,400]
-    Name: SuppressWarnings [369,385]
-    StringLiteralExpr: deprecation [386,399]
-to
-MethodDeclaration [368,693]
-at 0

@@ -1,9 +1,0 @@
-digraph "giveBack" {  
-"66" [label = <(&lt;operator&gt;.lessThan,pool.size() &lt; MAX_PIPE_COUNT)<SUB>47</SUB>> ]
-"75" [label = <(add,com.bird.main.PipePool.pool.add(pipe))<SUB>48</SUB>> ]
-"76" [label = <(&lt;operator&gt;.fieldAccess,com.bird.main.PipePool.pool)<SUB>48</SUB>> ]
-"78" [label = <(FIELD_IDENTIFIER,pool,pool)<SUB>48</SUB>> ]
-  "66" -> "76" 
-  "66" -> "78" 
-  "66" -> "75" 
-}

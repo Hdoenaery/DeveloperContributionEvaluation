@@ -1,9 +1,0 @@
-digraph "getBirdCollisionRect" {  
-"861" [label = <(METHOD,getBirdCollisionRect)<SUB>211</SUB>> ]
-"870" [label = <(METHOD_RETURN,java.awt.Rectangle)<SUB>211</SUB>> ]
-"862" [label = <(PARAM,this)<SUB>211</SUB>> ]
-"864" [label = <(RETURN,return birdCollisionRect;,return birdCollisionRect;)<SUB>212</SUB>> ]
-  "864" -> "870"  [ label = "&lt;RET&gt;"] 
-  "862" -> "870"  [ label = "this"] 
-  "861" -> "862" 
-}

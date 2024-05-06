@@ -1,9 +1,0 @@
-digraph "getX" {  
-"668" [label = <(METHOD,getX)<SUB>203</SUB>> ]
-"677" [label = <(METHOD_RETURN,int)<SUB>203</SUB>> ]
-"669" [label = <(PARAM,this)<SUB>203</SUB>> ]
-"671" [label = <(RETURN,return x;,return x;)<SUB>204</SUB>> ]
-  "671" -> "677"  [ label = "&lt;RET&gt;"] 
-  "669" -> "677"  [ label = "this"] 
-  "668" -> "669" 
-}
