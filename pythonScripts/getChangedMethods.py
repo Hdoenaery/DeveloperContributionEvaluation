@@ -24,9 +24,12 @@ def find_method_interval(lines, method_name):
     """
     在 Java 代码中查找方法的起始行和结束行。
     """
+    # print(f"in find_method_interval   :{method_name}")
     # 方法定义的正则表达式模式
-    method_pattern = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+(?:\w+\s+)*' + re.escape(
+    method_pattern = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+.*?' + re.escape(
         method_name) + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*{'
+
+
     method_regex = re.compile(method_pattern)
     # lines = extracted_code.split('\n')
     start_line = None
@@ -72,7 +75,9 @@ def getChangedMethods(repo_path, old_commit, new_commit):
             if modified_file.new_path.endswith('.java'):
                 # print(modified_file.new_path)
                 for method in modified_file.changed_methods:
-                    # print(method.name)
+                    # print(method.long_name)
+                    # print(method.parameters)
+
                     # 过滤误报内容，pydriller工具可能会把一个for循环识别为一个方法
                     if is_java_keyword(method.name.split("::")[-1]):
                         continue
@@ -86,17 +91,18 @@ def getChangedMethods(repo_path, old_commit, new_commit):
                     # 提取该方法内容
                     old_lines = modified_file.source_code_before.split('\n')
                     new_lines = modified_file.source_code.split('\n')
-                    start_line, end_line = find_method_interval(old_lines, method.name.split("::")[1])
+                    start_line, end_line = find_method_interval(old_lines, method.name.split("::")[-1])
+                    # print(f"start = {start_line} , end = {end_line}");
                     extracted_code = ""
                     if start_line == None or end_line == None:
-                        start_line, end_line = find_method_interval(new_lines, method.name.split("::")[1])
+                        start_line, end_line = find_method_interval(new_lines, method.name.split("::")[-1])
                         extracted_code = '\n'.join(
                             new_lines[start_line - 1:end_line])  # 将start_line和end_line之间的列表用换行符连接成一个字符串
                     else:
                         extracted_code = '\n'.join(
                             old_lines[start_line - 1:end_line])  # 将start_line和end_line之间的列表用换行符连接成一个字符串
 
-                    # print(f"start = {start_line} , end = {end_line}");
+
 
                     # print(extracted_code)
                     # 获取方法行数和圈复杂度
@@ -227,8 +233,8 @@ if __name__ == "__main__":
 
 # repo_path = 'E:/Postgraduate_study/fastjson'
 #
-# old_commit = "7abc84fc2c208f148970ca854f2f6a59466e47ae"
-# new_commit = "16a43f59be6130dd7d8346401e1575a2f1a2e435"
+# old_commit = "d91c05993b17a5aff28a33810fc263402824f508"
+# new_commit = "097bff1a792e39f4e0b2807faa53af0e89fbe5e0"
 #
 # # changedMethods, LOC, CC, Halstead_Volume, PCom = getChangedMethods(repo_path, old_commit, new_commit)
 # changedMethods, LOC, Halstead_Volume, PCom = getChangedMethods(repo_path, old_commit, new_commit)
@@ -239,7 +245,7 @@ if __name__ == "__main__":
 #     # print(CC[method.long_name])
 #     print(Halstead_Volume[method.long_name])
 #     print(PCom[method.long_name])
-#
+
 #
 # java_code = """
 # // 这是单行注释

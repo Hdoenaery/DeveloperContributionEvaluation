@@ -9,8 +9,53 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class CallGraph {
+    Map<Integer, List<Integer>> forwardAdjacencyList = new HashMap<>();
+    Map<Integer, List<Integer>> backwardAdjacencyList = new HashMap<>();
+
+    //解析调用图.dot文件，构建邻接表存图
+    public Map<Integer, List<Integer>> buildGraph(String callGraphPath) {
+
+        try (BufferedReader br = new BufferedReader(new FileReader(callGraphPath))) {
+            String line;
+            boolean isInsideGraph = false;
+
+            int cnt = 0;
+            while ((line = br.readLine()) != null) {
+                if (line.startsWith("//") || line.startsWith("digraph") || line.startsWith("{") || line.startsWith("}")) {
+                    continue;
+                }
 
 
+                line = line.replace(";", "");//去除行尾分号
+//                System.out.println(line);
+                //\\s* 表示零个或多个空白字符，包括空格、制表符等。split("\\s*->\\s*") 将会以箭头符号 -> 作为分隔符来拆分字符串，且忽略箭头两边的任何空白字符。
+                String[] parts = line.trim().split("\\s*->\\s*");
+                if (parts.length == 2) {
+                    int father = Integer.parseInt(parts[0].trim());
+                    int son = Integer.parseInt(parts[1].trim());
+                    // 向邻接表中插入节点
+                    this.forwardAdjacencyList.computeIfAbsent(father, k -> new ArrayList<>()).add(son);
+                    this.backwardAdjacencyList.computeIfAbsent(son, k -> new ArrayList<>()).add(father);
+                    //computeIfAbsent(source, k -> new ArrayList<>()) 是一个 Map 接口中的方法。
+                    //它的作用是根据指定的键 source（源节点）在 Map 中查找对应的值，如果找到了则返回该值；
+                    //如果未找到，则使用提供的 Lambda 表达式 k -> new ArrayList<>() 创建一个新的空列表，并将其放入 Map 中，然后返回这个新创建的列表。
+                    if(!this.forwardAdjacencyList.containsKey(son)) {
+                        this.forwardAdjacencyList.put(son, new ArrayList<>());
+                    }
+                    if(!this.backwardAdjacencyList.containsKey(father)) {
+                        this.backwardAdjacencyList.put(father, new ArrayList<>());
+                    }
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return this.forwardAdjacencyList;
+    }
+    public Map<Integer, List<Integer>> buildBackwardGraph(){
+        return backwardAdjacencyList;
+    }
     //衡量函数间影响
     public Map<Integer, Double> measureInterFunctionInteraction (Map<Integer, List<Integer>> graphC, Map<Integer, Double> mapPr, double decay) {
         Map<Integer, Double> mapOut = new HashMap<>();
@@ -49,8 +94,9 @@ public class CallGraph {
 
 
     // 传入有向图，获取每个节点的PageRank值
-    public static Map<Integer, Double> getPageRank(Map<Integer, List<Integer>> graphC) {
+    public static Map<Integer, Double> getPageRank(Map<Integer, List<Integer>> graphC, Map<Integer, List<Integer>> backwardGraphC) {
         // 初始化每个节点的PageRank值为1.0
+//        System.out.println(graphC.size());
         Map<Integer, Double> pageRank = new HashMap<>();
         for (Integer node : graphC.keySet()) {
             pageRank.put(node, 1.0);
@@ -64,18 +110,23 @@ public class CallGraph {
 
         // 开始迭代计算PageRank值
         for (int i = 0; i < iterations; i++) {
+//            System.out.println("PageRank迭代次数 = " + i);
             Map<Integer, Double> newPageRank = new HashMap<>();
             sum = 0;
             // 遍历每个节点
             for (Integer node : graphC.keySet()) {
                 double rank = (1 - dampingFactor); // 初始化PageRank值
 
-                // 遍历所有指向node的节点
-                for (Integer incomingNode : graphC.keySet()) {
-                    if (graphC.get(incomingNode).contains(node)) {
-                        int outgoingLinks = graphC.get(incomingNode).size();//求指向node
-                        rank += dampingFactor * (pageRank.get(incomingNode) / outgoingLinks);
-                    }
+//                // 遍历所有指向node的节点
+//                for (Integer incomingNode : graphC.keySet()) {
+//                    if (graphC.get(incomingNode).contains(node)) {
+//                        int outgoingLinks = graphC.get(incomingNode).size();//求指向node
+//                        rank += dampingFactor * (pageRank.get(incomingNode) / outgoingLinks);
+//                    }
+//                }
+                for (Integer incomingNode : backwardGraphC.get(node)) {
+                    int outgoingLinks = graphC.get(incomingNode).size();//求入链结点的出边数
+                    rank += dampingFactor * (pageRank.get(incomingNode) / outgoingLinks);
                 }
                 newPageRank.put(node, rank);
                 sum += rank;
@@ -86,50 +137,12 @@ public class CallGraph {
         }
 
 //        System.out.println(sum);
-        for(Integer node : pageRank.keySet()){
-//            System.out.println(pageRank.get(node) / sum);
+        for(Integer node :
+                pageRank.keySet()){
+//            System.out.println("node = " + node + "   pagerank = " + pageRank.get(node));
             pageRank.replace(node, pageRank.get(node) / sum);
         }
         return pageRank;
-    }
-
-    //解析调用图.dot文件，构建邻接表存图
-    public static Map<Integer, List<Integer>> buildGraph(String callGraphPath) {
-        Map<Integer, List<Integer>> adjacencyList = new HashMap<>();
-
-        try (BufferedReader br = new BufferedReader(new FileReader(callGraphPath))) {
-            String line;
-            boolean isInsideGraph = false;
-
-            int cnt = 0;
-            while ((line = br.readLine()) != null) {
-                if (line.startsWith("//") || line.startsWith("digraph") || line.startsWith("{") || line.startsWith("}")) {
-                    continue;
-                }
-
-
-                line = line.replace(";", "");//去除行尾分号
-//                System.out.println(line);
-                //\\s* 表示零个或多个空白字符，包括空格、制表符等。split("\\s*->\\s*") 将会以箭头符号 -> 作为分隔符来拆分字符串，且忽略箭头两边的任何空白字符。
-                String[] parts = line.trim().split("\\s*->\\s*");
-                if (parts.length == 2) {
-                    int father = Integer.parseInt(parts[0].trim());
-                    int son = Integer.parseInt(parts[1].trim());
-                    // 向邻接表中插入节点
-                    adjacencyList.computeIfAbsent(father, k -> new ArrayList<>()).add(son);
-                    //computeIfAbsent(source, k -> new ArrayList<>()) 是一个 Map 接口中的方法。
-                    //它的作用是根据指定的键 source（源节点）在 Map 中查找对应的值，如果找到了则返回该值；
-                    //如果未找到，则使用提供的 Lambda 表达式 k -> new ArrayList<>() 创建一个新的空列表，并将其放入 Map 中，然后返回这个新创建的列表。
-                    if(!adjacencyList.containsKey(son)) {
-                        adjacencyList.put(son, new ArrayList<>());
-                    }
-                }
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        return adjacencyList;
     }
 
     //传入调用图以获得每个函数与它所对应的节点编号的映射Map
@@ -185,13 +198,13 @@ public class CallGraph {
     //传入项目源代码路径以获取该项目的调用图
     public static void getCallGraph(String src, String outputFormat, String granularity, String projectName, String newCommit){
 
-        String outputDirectory = "E:\\IDEA\\maven-project\\DeveloperContributionEvaluation\\CallGraphs";
+        String outputDirectory = "E:/IDEA/maven-project/DeveloperContributionEvaluation/CallGraphs";
 
         String command = "depends -f " + outputFormat + " -g " + granularity + " -d " + outputDirectory +
                 " java " + src + " " + projectName + "_" + newCommit.substring(0, 7);
-//        System.out.println(command);
+        System.out.println(command);
         executeCmdCommand("E:/Postgraduate_study/depends-0.9.7", command);
-
+        System.out.println("执行depends命令结束");
     }
 
 

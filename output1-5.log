@@ -1,0 +1,354 @@
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = 240edb5c42aa9295bc674c93d25ffe801c13a5c4
+@@@oldCommitHash = 679140e0ad6c0bb1cd3b8397f32c5fe55fc7f3b1
+DeveloperContributionEvaluation/editScripts/679140e_to_240edb5/editscript_Bug_for_Exception.txt
+所有编辑脚本获取结束
+E:/Postgraduate_study/fastjson/src/
+depends -f dot -g method -d E:/IDEA/maven-project/DeveloperContributionEvaluation/CallGraphs java E:/Postgraduate_study/fastjson/src/ fastjson_240edb5
+执行depends命令结束
+调用depends完成
+build完成！
+getPageRank完成
+joern-parse ddg执行成功  new_Bug_for_Exception.bin
+joern-export ddg执行成功new_Bug_for_Exception.bin
+joern-parse ddg执行成功  old_Bug_for_Exception.bin
+joern-export ddg执行成功old_Bug_for_Exception.bin
+joern-export cdg执行成功  new_Bug_for_Exception.java
+joern-export cdg执行成功  old_Bug_for_Exception.java
+Bug_for_Exception::test_exception
+astScore = 186.07999999999993
+HV = 281.7628977173992, CC = 1, LOC = 9, PCom = 11.11111111111111, CM = 141.32589330314406
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+commitHash = 240edb5 , scoreOfCommit = 26297.922225849037
+本次commit计算的运行时间（秒）：177.258
+程序总运行时间（秒）：177.355
+
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = 679140e0ad6c0bb1cd3b8397f32c5fe55fc7f3b1
+@@@oldCommitHash = 16a43f59be6130dd7d8346401e1575a2f1a2e435
+DeveloperContributionEvaluation/editScripts/16a43f5_to_679140e/editscript_ColorTest2.txt
+DeveloperContributionEvaluation/editScripts/16a43f5_to_679140e/editscript_Bug_for_Exception.txt
+DeveloperContributionEvaluation/editScripts/16a43f5_to_679140e/editscript_Issue3314.txt
+所有编辑脚本获取结束
+E:/Postgraduate_study/fastjson/src/
+depends -f dot -g method -d E:/IDEA/maven-project/DeveloperContributionEvaluation/CallGraphs java E:/Postgraduate_study/fastjson/src/ fastjson_679140e
+执行depends命令结束
+调用depends完成
+build完成！
+getPageRank完成
+joern-parse ddg执行成功  new_Bug_for_Exception.bin
+joern-export ddg执行成功new_Bug_for_Exception.bin
+joern-parse ddg执行成功  new_ColorTest2.bin
+joern-export ddg执行成功new_ColorTest2.bin
+joern-parse ddg执行成功  new_Issue3314.bin
+joern-export ddg执行成功new_Issue3314.bin
+joern-parse ddg执行成功  old_Bug_for_Exception.bin
+joern-export ddg执行成功old_Bug_for_Exception.bin
+joern-parse ddg执行成功  old_ColorTest2.bin
+joern-export ddg执行成功old_ColorTest2.bin
+joern-parse ddg执行成功  old_Issue3314.bin
+joern-export ddg执行成功old_Issue3314.bin
+joern-export cdg执行成功  new_Bug_for_Exception.java
+joern-export cdg执行成功  new_ColorTest2.java
+joern-export cdg执行成功  new_Issue3314.java
+joern-export cdg执行成功  old_Bug_for_Exception.java
+joern-export cdg执行成功  old_ColorTest2.java
+joern-export cdg执行成功  old_Issue3314.java
+Bug_for_Exception::test_exception
+astScore = 9.01
+HV = 269.2118756352258, CC = 1, LOC = 9, PCom = 0.0, CM = 140.6059378176129
+weight = 4.37063566209463
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+commitHash = 679140e , scoreOfCommit = 6803.840808149242
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = 16a43f59be6130dd7d8346401e1575a2f1a2e435
+@@@oldCommitHash = 7abc84fc2c208f148970ca854f2f6a59466e47ae
+DeveloperContributionEvaluation/editScripts/7abc84f_to_16a43f5/editscript_JSONArray.txt
+DeveloperContributionEvaluation/editScripts/7abc84f_to_16a43f5/editscript_JSONObject.txt
+DeveloperContributionEvaluation/editScripts/7abc84f_to_16a43f5/editscript_Issue1240.txt
+DeveloperContributionEvaluation/editScripts/7abc84f_to_16a43f5/editscript_DurationTest.txt
+DeveloperContributionEvaluation/editScripts/7abc84f_to_16a43f5/editscript_AutoTypeCheckHandlerTest.txt
+DeveloperContributionEvaluation/editScripts/7abc84f_to_16a43f5/editscript_AutoTypeTest7.txt
+DeveloperContributionEvaluation/editScripts/7abc84f_to_16a43f5/editscript_ExceptionTest.txt
+DeveloperContributionEvaluation/editScripts/7abc84f_to_16a43f5/editscript_DefaultOAuth2AccessTokenTest.txt
+DeveloperContributionEvaluation/editScripts/7abc84f_to_16a43f5/editscript_DefaultSavedRequestTest.txt
+DeveloperContributionEvaluation/editScripts/7abc84f_to_16a43f5/editscript_AntiCollisionHashMapTest_writeClassName.txt
+DeveloperContributionEvaluation/editScripts/7abc84f_to_16a43f5/editscript_LazyLoadingTest.txt
+所有编辑脚本获取结束
+E:/Postgraduate_study/fastjson/src/
+depends -f dot -g method -d E:/IDEA/maven-project/DeveloperContributionEvaluation/CallGraphs java E:/Postgraduate_study/fastjson/src/ fastjson_16a43f5
+执行depends命令结束
+调用depends完成
+build完成！
+getPageRank完成
+joern-parse ddg执行成功  new_AntiCollisionHashMapTest_writeClassName.bin
+joern-export ddg执行成功new_AntiCollisionHashMapTest_writeClassName.bin
+joern-parse ddg执行成功  new_AutoTypeCheckHandlerTest.bin
+joern-export ddg执行成功new_AutoTypeCheckHandlerTest.bin
+joern-parse ddg执行成功  new_AutoTypeTest7.bin
+joern-export ddg执行成功new_AutoTypeTest7.bin
+joern-parse ddg执行成功  new_DefaultOAuth2AccessTokenTest.bin
+joern-export ddg执行成功new_DefaultOAuth2AccessTokenTest.bin
+joern-parse ddg执行成功  new_DefaultSavedRequestTest.bin
+joern-export ddg执行成功new_DefaultSavedRequestTest.bin
+joern-parse ddg执行成功  new_DurationTest.bin
+joern-export ddg执行成功new_DurationTest.bin
+joern-parse ddg执行成功  new_ExceptionTest.bin
+joern-export ddg执行成功new_ExceptionTest.bin
+joern-parse ddg执行成功  new_Issue1240.bin
+joern-export ddg执行成功new_Issue1240.bin
+joern-parse ddg执行成功  new_JSONArray.bin
+joern-export ddg执行成功new_JSONArray.bin
+joern-parse ddg执行成功  new_JSONObject.bin
+joern-export ddg执行成功new_JSONObject.bin
+joern-parse ddg执行成功  new_LazyLoadingTest.bin
+joern-export ddg执行成功new_LazyLoadingTest.bin
+joern-parse ddg执行成功  old_AntiCollisionHashMapTest_writeClassName.bin
+joern-export ddg执行成功old_AntiCollisionHashMapTest_writeClassName.bin
+joern-parse ddg执行成功  old_AutoTypeCheckHandlerTest.bin
+joern-export ddg执行成功old_AutoTypeCheckHandlerTest.bin
+joern-parse ddg执行成功  old_AutoTypeTest7.bin
+joern-export ddg执行成功old_AutoTypeTest7.bin
+joern-parse ddg执行成功  old_DefaultOAuth2AccessTokenTest.bin
+joern-export ddg执行成功old_DefaultOAuth2AccessTokenTest.bin
+joern-parse ddg执行成功  old_DefaultSavedRequestTest.bin
+joern-export ddg执行成功old_DefaultSavedRequestTest.bin
+joern-parse ddg执行成功  old_DurationTest.bin
+joern-export ddg执行成功old_DurationTest.bin
+joern-parse ddg执行成功  old_ExceptionTest.bin
+joern-export ddg执行成功old_ExceptionTest.bin
+joern-parse ddg执行成功  old_Issue1240.bin
+joern-export ddg执行成功old_Issue1240.bin
+joern-parse ddg执行成功  old_JSONArray.bin
+joern-export ddg执行成功old_JSONArray.bin
+joern-parse ddg执行成功  old_JSONObject.bin
+joern-export ddg执行成功old_JSONObject.bin
+joern-parse ddg执行成功  old_LazyLoadingTest.bin
+joern-export ddg执行成功old_LazyLoadingTest.bin
+joern-export cdg执行成功  new_AntiCollisionHashMapTest_writeClassName.java
+joern-export cdg执行成功  new_AutoTypeCheckHandlerTest.java
+joern-export cdg执行成功  new_AutoTypeTest7.java
+joern-export cdg执行成功  new_DefaultOAuth2AccessTokenTest.java
+joern-export cdg执行成功  new_DefaultSavedRequestTest.java
+joern-export cdg执行成功  new_DurationTest.java
+joern-export cdg执行成功  new_ExceptionTest.java
+joern-export cdg执行成功  new_Issue1240.java
+joern-export cdg执行成功  new_JSONArray.java
+joern-export cdg执行成功  new_JSONObject.java
+joern-export cdg执行成功  new_LazyLoadingTest.java
+joern-export cdg执行成功  old_AntiCollisionHashMapTest_writeClassName.java
+joern-export cdg执行成功  old_AutoTypeCheckHandlerTest.java
+joern-export cdg执行成功  old_AutoTypeTest7.java
+joern-export cdg执行成功  old_DefaultOAuth2AccessTokenTest.java
+joern-export cdg执行成功  old_DefaultSavedRequestTest.java
+joern-export cdg执行成功  old_DurationTest.java
+joern-export cdg执行成功  old_ExceptionTest.java
+joern-export cdg执行成功  old_Issue1240.java
+joern-export cdg执行成功  old_JSONArray.java
+joern-export cdg执行成功  old_JSONObject.java
+joern-export cdg执行成功  old_LazyLoadingTest.java
+DefaultSavedRequestTest::test_for_issue
+astScore = 0.0
+HV = 240.0, CC = 1, LOC = 10, PCom = 10.0, CM = 121.5
+weight = 5.445823197551646
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+JSONArray::readObject
+astScore = 0.0
+HV = 408.74358474821895, CC = 1, LOC = 20, PCom = 5.0, CM = 213.37179237410948
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+ExceptionTest::test_exception
+astScore = 32.0
+HV = 88.0, CC = 1, LOC = 3, PCom = 0.0, CM = 47.0
+weight = 6.691941807476256
+DDG_impact = 0.75 , CDG_impact = 0.0, IR = 1.8660254037844386
+
+DefaultSavedRequestTest::test_User
+astScore = 6.0
+HV = 245.1751010249378, CC = 1, LOC = 7, PCom = 0.0, CM = 127.5875505124689
+weight = 5.297874685705171
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+JSONObject::SecureObjectInputStream::readStreamHeader
+astScore = 0.0
+HV = 215.90318620677482, CC = 1, LOC = 10, PCom = 0.0, CM = 114.45159310338741
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+Issue1240::test_for_issue
+astScore = 9.0
+HV = 199.7052750908657, CC = 1, LOC = 6, PCom = 0.0, CM = 104.35263754543286
+weight = 5.450789261740167
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+JSONObject::SecureObjectInputStream::resolveClass
+astScore = 0.0
+HV = 215.90318620677482, CC = 1, LOC = 10, PCom = 0.0, CM = 114.45159310338741
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+DefaultSavedRequestTest::test_SecurityContextImpl
+astScore = 5.0
+HV = 112.37013046707143, CC = 1, LOC = 3, PCom = 0.0, CM = 59.18506523353572
+weight = 5.297874685705171
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+DefaultSavedRequestTest::setUp
+astScore = 41.0
+HV = 134.671829503467, CC = 1, LOC = 4, PCom = 0.0, CM = 70.8359147517335
+weight = 0.004752760404781859
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+DefaultSavedRequestTest::test_SimpleGrantedAuthority
+astScore = 5.0
+HV = 235.02198590705464, CC = 1, LOC = 6, PCom = 0.0, CM = 122.01099295352732
+weight = 5.445823197551646
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+AntiCollisionHashMapTest_writeClassName::test_for_bug
+astScore = 8.0
+HV = 109.80793556946902, CC = 1, LOC = 2, PCom = 0.0, CM = 57.40396778473451
+weight = 5.302808395391069
+DDG_impact = 0.9090909090909091 , CDG_impact = 0.0, IR = 1.9534625892455924
+
+AutoTypeTest7::test_2
+astScore = 0.0
+HV = 87.56842503028855, CC = 1, LOC = 2, PCom = 0.0, CM = 46.284212515144276
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+DefaultSavedRequestTest::test_SecurityContextImpl_x
+astScore = 6.0
+HV = 547.242212941545, CC = 1, LOC = 2, PCom = 0.0, CM = 276.1211064707725
+weight = 5.297874685705171
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+JSONObject::SecureObjectInputStream::resolveProxyClass
+astScore = 0.0
+HV = 215.90318620677482, CC = 1, LOC = 10, PCom = 0.0, CM = 114.45159310338741
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+AutoTypeTest7::test_3
+astScore = 89.33000000000001
+HV = 103.72627427729671, CC = 1, LOC = 2, PCom = 0.0, CM = 54.363137138648355
+weight = 5.302579513219417
+DDG_impact = 0.9090909090909091 , CDG_impact = 0.0, IR = 1.9534625892455924
+
+AutoTypeCheckHandlerTest::test_for_issue
+astScore = 0.01
+HV = 425.8356662537092, CC = 1, LOC = 19, PCom = 0.0, CM = 223.9178331268546
+weight = 1.2462348471841602
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+DurationTest::test_for_issue_1
+astScore = 4.0
+HV = 145.71363126237387, CC = 1, LOC = 3, PCom = 0.0, CM = 75.85681563118693
+weight = 5.297874685705171
+DDG_impact = 0.875 , CDG_impact = 0.0, IR = 1.9354143466934852
+
+JSONObject::readObject
+astScore = 0.0
+HV = 422.87268841738495, CC = 1, LOC = 21, PCom = 4.761904761904762, CM = 221.0553918277401
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+JSONObject::SecureObjectInputStream::ensureFields
+astScore = 0.0
+HV = 215.90318620677482, CC = 1, LOC = 10, PCom = 0.0, CM = 114.45159310338741
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+DefaultSavedRequestTest::test_UsernamePasswordAuthenticationToken
+astScore = 5.0
+HV = 199.68581616031315, CC = 1, LOC = 5, PCom = 0.0, CM = 103.84290808015658
+weight = 5.297874685705171
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+JSONObject::SecureObjectInputStream::SecureObjectInputStream
+astScore = 0.0
+HV = 215.90318620677482, CC = 1, LOC = 10, PCom = 0.0, CM = 114.45159310338741
+weight = 0.0
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+DefaultOAuth2AccessTokenTest::test_0
+astScore = 15.0
+HV = 180.94247824228052, CC = 1, LOC = 6, PCom = 0.0, CM = 94.97123912114026
+weight = 1.3988198821758673
+DDG_impact = 0.5 , CDG_impact = 0.0, IR = 1.7071067811865475
+
+commitHash = 16a43f5 , scoreOfCommit = 129865.85320888623
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = 7abc84fc2c208f148970ca854f2f6a59466e47ae
+@@@oldCommitHash = 19bd016801b2fe99c673479e69bced84ecff83e7
+DeveloperContributionEvaluation/editScripts/19bd016_to_7abc84f/editscript_RectangleTest.txt
+DeveloperContributionEvaluation/editScripts/19bd016_to_7abc84f/editscript_MaximumLevelTest.txt
+所有编辑脚本获取结束
+E:/Postgraduate_study/fastjson/src/
+depends -f dot -g method -d E:/IDEA/maven-project/DeveloperContributionEvaluation/CallGraphs java E:/Postgraduate_study/fastjson/src/ fastjson_7abc84f
+执行depends命令结束
+调用depends完成
+build完成！
+getPageRank完成
+joern-parse ddg执行成功  new_MaximumLevelTest.bin
+joern-export ddg执行成功new_MaximumLevelTest.bin
+joern-parse ddg执行成功  new_RectangleTest.bin
+joern-export ddg执行成功new_RectangleTest.bin
+joern-parse ddg执行成功  old_MaximumLevelTest.bin
+joern-export ddg执行成功old_MaximumLevelTest.bin
+joern-parse ddg执行成功  old_RectangleTest.bin
+joern-export ddg执行成功old_RectangleTest.bin
+joern-export cdg执行成功  new_MaximumLevelTest.java
+joern-export cdg执行成功  new_RectangleTest.java
+joern-export cdg执行成功  old_MaximumLevelTest.java
+joern-export cdg执行成功  old_RectangleTest.java
+MaximumLevelTest::test_for_maximum
+astScore = 1.0
+HV = 265.0, CC = 1, LOC = 14, PCom = 0.0, CM = 141.0
+weight = 4.270939152166732
+DDG_impact = 0.0 , CDG_impact = 0.25, IR = 1.5
+
+RectangleTest::test_color
+astScore = 4.0
+HV = 255.0, CC = 1, LOC = 7, PCom = 0.0, CM = 132.5
+weight = 1.0035813008521872
+DDG_impact = 0.7647058823529411 , CDG_impact = 0.0, IR = 1.8744746321952062
+
+commitHash = 7abc84f , scoreOfCommit = 3105.304661336955
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = 19bd016801b2fe99c673479e69bced84ecff83e7
+@@@oldCommitHash = eca459eeff0f896228749132706d36e414b77c35
+DeveloperContributionEvaluation/editScripts/eca459e_to_19bd016/editscript_Bug_for_Exception.txt
+所有编辑脚本获取结束
+E:/Postgraduate_study/fastjson/src/
+depends -f dot -g method -d E:/IDEA/maven-project/DeveloperContributionEvaluation/CallGraphs java E:/Postgraduate_study/fastjson/src/ fastjson_19bd016
+执行depends命令结束
+调用depends完成
+build完成！
+getPageRank完成
+joern-parse ddg执行成功  new_Bug_for_Exception.bin
+joern-export ddg执行成功new_Bug_for_Exception.bin
+joern-parse ddg执行成功  old_Bug_for_Exception.bin
+joern-export ddg执行成功old_Bug_for_Exception.bin
+joern-export cdg执行成功  new_Bug_for_Exception.java
+joern-export cdg执行成功  old_Bug_for_Exception.java
+Bug_for_Exception::test_exception
+astScore = 37.87
+HV = 190.19550008653877, CC = 1, LOC = 6, PCom = 0.0, CM = 99.59775004326939
+weight = 5.268639212327544
+DDG_impact = 0.8 , CDG_impact = 0.0, IR = 1.8944271909999157
+
+commitHash = 19bd016 , scoreOfCommit = 44791.54329496605
+程序总运行时间（秒）：926.015
+-------------------------------------------------------------------------------------------
+

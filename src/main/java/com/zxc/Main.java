@@ -26,7 +26,7 @@ public class Main {
         // 创建文件输出流
         FileOutputStream fileOutputStream = null;
         try {
-            fileOutputStream = new FileOutputStream("DeveloperContributionEvaluation/output.log", true);
+            fileOutputStream = new FileOutputStream("DeveloperContributionEvaluation/output1-5.log", true);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
             return;
@@ -41,13 +41,22 @@ public class Main {
 //        String gitDirectory = "E:/Postgraduate_study/FlappyBird";
 //        String projectName = "FlappyBird";
 //        traverseAllCommits(gitDirectory, projectName);
-        String gitDirectory = "E:/Postgraduate_study/fastjson";
+        String gitDirectory = "E:/Postgraduate_study/fastjson/";
         String projectName = "fastjson";
-        String[] commits = {"240edb5c42aa9295bc674c93d25ffe801c13a5c4",
-                "679140e0ad6c0bb1cd3b8397f32c5fe55fc7f3b1",
-                "16a43f59be6130dd7d8346401e1575a2f1a2e435",
-                "7abc84fc2c208f148970ca854f2f6a59466e47ae",
-                "19bd016801b2fe99c673479e69bced84ecff83e7"};
+        String[] commits = {
+//                "240edb5c42aa9295bc674c93d25ffe801c13a5c4"
+//                ,
+//                "679140e0ad6c0bb1cd3b8397f32c5fe55fc7f3b1",
+//                "16a43f59be6130dd7d8346401e1575a2f1a2e435",
+//                "7abc84fc2c208f148970ca854f2f6a59466e47ae",
+//                "19bd016801b2fe99c673479e69bced84ecff83e7",
+                "097bff1a792e39f4e0b2807faa53af0e89fbe5e0",
+                "d91c05993b17a5aff28a33810fc263402824f508",
+                "560782c9ee12120304284ba98b61dc61e30324b3",
+                "dd3de5f84bcbf0c13ad60df0c3feb9d564727447",
+                "0814909139735ea4c7648e755630fd49da7be059",
+
+        };
 //        String newCommit = "19bd016801b2fe99c673479e69bced84ecff83e7";
         for(String newCommit:commits) {
             String oldCommit = tool.executeGitCommand(gitDirectory, new String[]{"git", "log", "--format=%H", "--skip=1", "-n", "1", newCommit}).replace("\n", "");//获取当前版本的上一个版本
@@ -76,6 +85,9 @@ public class Main {
     }
 
     public static double calculateCommitScore(String gitDirectory, String projectName, String newCommit, String oldCommit) throws Exception {
+        // 记录程序开始时间
+        long startTime = System.currentTimeMillis();
+
         Tool tool = new Tool();
         System.out.println("-------------------------------------------------------------------------------------------");
         System.out.println("\n@@@nowCommitHash = " + newCommit);
@@ -100,22 +112,28 @@ public class Main {
 //        ------------------------------------------------------------------------------------------------------------------------------------
 
         CallGraph callGraph = new CallGraph();
-        String analyzedDirectory = "E:/Postgraduate_study/FlappyBird/src";
+        String analyzedDirectory = gitDirectory + "src/";
         String outputFormat = "dot";
         String granularity = "method";
+        System.out.println(analyzedDirectory);
         callGraph.getCallGraph(analyzedDirectory, outputFormat, granularity, projectName, newCommit); //获取该项目的调用图
-
+        System.out.println("调用depends完成");
         String callGraphName = projectName + "_" + newCommit.substring(0, 7) + "-" + granularity + "." + outputFormat;
         String callGraphPath = "DeveloperContributionEvaluation/CallGraphs/" + callGraphName;
 
 
-        Map<Integer, List<Integer>> graphC = callGraph.buildGraph(callGraphPath);//根据调用图生成邻接表
+        Map<Integer, List<Integer>> graphC = callGraph.buildGraph(callGraphPath);//根据调用图生成正向邻接表
+        Map<Integer, List<Integer>> backwardGraphC = callGraph.buildBackwardGraph();//根据调用图生成反向邻接表
+        System.out.println("build完成！");
+        Map<Integer, Double> mapPr = callGraph.getPageRank(graphC, backwardGraphC);
+        System.out.println("getPageRank完成");
 
-        Map<Integer, Double> mapPr = callGraph.getPageRank(graphC);
-        double sum = 0;
-        for(Double i:mapPr.values()) {
-            sum += i;
-        }
+//        double sum = 0;
+//        for(Double i:mapPr.values()) {
+//            System.out.println(i);
+//            sum += i;
+//        }
+//        System.out.println("sum = " + sum);
 
         Map<Integer, Double> nodeWeight = callGraph.measureInterFunctionInteraction(graphC, mapPr, 1);
 
@@ -155,10 +173,10 @@ public class Main {
 //        ------------------------------------------------------------------------------------------------------------------------------------
         DDG ddg = new DDG();
         CDG cdg = new CDG();
-//        ddg.getDDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
-//                , newCommit);
-//        cdg.getCDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
-//                , newCommit);
+        ddg.getDDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
+                , newCommit);
+        cdg.getCDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
+                , newCommit);
 
         Map<String, Double> DDG_impact = new HashMap<>();
         for(String method:changedMethods) {
@@ -206,14 +224,23 @@ public class Main {
             System.out.println();
         }
         System.out.println("commitHash = " + newCommit.substring(0,7) + " , scoreOfCommit = " + scoreOfCommit);
+
+        // 记录程序结束时间
+        long nowTime = System.currentTimeMillis();
+        // 计算总运行时间（毫秒）
+        long totalTimeInMillis = nowTime - startTime;
+        // 将毫秒转换为秒
+        double totalTimeInSeconds = totalTimeInMillis / 1000.0;
+
+        System.out.println("本次commit计算的运行时间（秒）：" + totalTimeInSeconds);
         return scoreOfCommit;
     }
 
     // 遍历一个项目的所有commit
     public static void traverseAllCommits(String gitDirectory, String projectName) throws Exception {
-        // 记录程序开始时间
-        long startTime = System.currentTimeMillis();
-        long lastTime = startTime;
+//        // 记录程序开始时间
+//        long startTime = System.currentTimeMillis();
+//        long lastTime = startTime;
 
 //        String gitDirectory = "E:/Postgraduate_study/FlappyBird";
 //        String projectName = "FlappyBird";
@@ -242,17 +269,14 @@ public class Main {
             double scoreOfCommit = calculateCommitScore(gitDirectory, projectName, newCommit, oldCommit);
             oldCommit = newCommit;
 
-            // 记录程序结束时间
-            long nowTime = System.currentTimeMillis();
-
-            // 计算总运行时间（毫秒）
-            long totalTimeInMillis = nowTime - lastTime;
-
-            // 将毫秒转换为秒
-            double totalTimeInSeconds = totalTimeInMillis / 1000.0;
-
-            System.out.println("本次commit计算的运行时间（秒）：" + totalTimeInSeconds);
-            lastTime = nowTime;
+//            // 记录程序结束时间
+//            long nowTime = System.currentTimeMillis();
+//            // 计算总运行时间（毫秒）
+//            long totalTimeInMillis = nowTime - lastTime;
+//            // 将毫秒转换为秒
+//            double totalTimeInSeconds = totalTimeInMillis / 1000.0;
+//            System.out.println("本次commit计算的运行时间（秒）：" + totalTimeInSeconds);
+//            lastTime = nowTime;
 
 
 //            if(newCommit.equals("5e5ba4bf131b5998c33474ebe34ac7e9d86187ad"))
