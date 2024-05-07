@@ -1,0 +1,13 @@
+digraph "castToBigDecimal" {  
+"1916" [label = <(METHOD,castToBigDecimal)> ]
+"1921" [label = <(METHOD_RETURN,ANY)> ]
+"1917" [label = <(PARAM,p0)> ]
+"1918" [label = <(PARAM,p1)> ]
+"1919" [label = <(PARAM,p2)> ]
+  "1917" -> "1921"  [ label = "p0"] 
+  "1918" -> "1921"  [ label = "p1"] 
+  "1919" -> "1921"  [ label = "p2"] 
+  "1916" -> "1917" 
+  "1916" -> "1918" 
+  "1916" -> "1919" 
+}

@@ -1,0 +1,16 @@
+digraph "assertEquals" {  
+"143" [label = <(METHOD,assertEquals)> ]
+"149" [label = <(METHOD_RETURN,ANY)> ]
+"144" [label = <(PARAM,p0)> ]
+"145" [label = <(PARAM,p1)> ]
+"146" [label = <(PARAM,p2)> ]
+"147" [label = <(PARAM,p3)> ]
+  "144" -> "149"  [ label = "p0"] 
+  "145" -> "149"  [ label = "p1"] 
+  "146" -> "149"  [ label = "p2"] 
+  "147" -> "149"  [ label = "p3"] 
+  "143" -> "144" 
+  "143" -> "145" 
+  "143" -> "146" 
+  "143" -> "147" 
+}

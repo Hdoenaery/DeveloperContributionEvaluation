@@ -1,0 +1,21 @@
+digraph "remove" {  
+"653" [label = <(METHOD,remove)<SUB>210</SUB>> ]
+"665" [label = <(METHOD_RETURN,java.lang.Object)<SUB>210</SUB>> ]
+"654" [label = <(PARAM,this)<SUB>210</SUB>> ]
+"655" [label = <(PARAM,int index)<SUB>210</SUB>> ]
+"657" [label = <(RETURN,return list.remove(index);,return list.remove(index);)<SUB>211</SUB>> ]
+"658" [label = <(remove,this.list.remove(index))<SUB>211</SUB>> ]
+"658" [label = <(remove,this.list.remove(index))<SUB>211</SUB>> ]
+"658" [label = <(remove,this.list.remove(index))<SUB>211</SUB>> ]
+  "657" -> "665"  [ label = "&lt;RET&gt;"] 
+  "654" -> "665"  [ label = "this"] 
+  "658" -> "665"  [ label = "this.list"] 
+  "658" -> "665"  [ label = "index"] 
+  "658" -> "665"  [ label = "this.list.remove(index)"] 
+  "653" -> "654" 
+  "653" -> "655" 
+  "658" -> "657"  [ label = "this.list.remove(index)"] 
+  "654" -> "658"  [ label = "this"] 
+  "655" -> "658"  [ label = "index"] 
+  "653" -> "658" 
+}

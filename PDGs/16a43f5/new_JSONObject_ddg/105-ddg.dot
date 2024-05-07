@@ -1,0 +1,13 @@
+digraph "putAll" {  
+"2122" [label = <(METHOD,putAll)> ]
+"2127" [label = <(METHOD_RETURN,ANY)> ]
+"2123" [label = <(PARAM,p0)> ]
+"2124" [label = <(PARAM,p1)> ]
+"2125" [label = <(PARAM,p2)> ]
+  "2123" -> "2127"  [ label = "p0"] 
+  "2124" -> "2127"  [ label = "p1"] 
+  "2125" -> "2127"  [ label = "p2"] 
+  "2122" -> "2123" 
+  "2122" -> "2124" 
+  "2122" -> "2125" 
+}

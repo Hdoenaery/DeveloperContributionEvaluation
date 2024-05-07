@@ -1,0 +1,55 @@
+digraph "getBooleanValue" {  
+"661" [label = <(METHOD,getBooleanValue)<SUB>204</SUB>> ]
+"686" [label = <(METHOD_RETURN,boolean)<SUB>204</SUB>> ]
+"16" [label = <(PARAM,this)<SUB>204</SUB>> ]
+"662" [label = <(PARAM,String key)<SUB>204</SUB>> ]
+"665" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>205</SUB>> ]
+"670" [label = <(&lt;operator&gt;.assignment,Boolean booleanVal = castToBoolean(value))<SUB>207</SUB>> ]
+"681" [label = <(RETURN,return booleanVal.booleanValue();,return booleanVal.booleanValue();)<SUB>212</SUB>> ]
+"665" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>205</SUB>> ]
+"665" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>205</SUB>> ]
+"670" [label = <(&lt;operator&gt;.assignment,Boolean booleanVal = castToBoolean(value))<SUB>207</SUB>> ]
+"670" [label = <(&lt;operator&gt;.assignment,Boolean booleanVal = castToBoolean(value))<SUB>207</SUB>> ]
+"675" [label = <(&lt;operator&gt;.equals,booleanVal == null)<SUB>208</SUB>> ]
+"682" [label = <(booleanValue,booleanVal.booleanValue())<SUB>212</SUB>> ]
+"667" [label = <(get,this.get(key))<SUB>205</SUB>> ]
+"667" [label = <(get,this.get(key))<SUB>205</SUB>> ]
+"672" [label = <(castToBoolean,castToBoolean(value))<SUB>207</SUB>> ]
+"672" [label = <(castToBoolean,castToBoolean(value))<SUB>207</SUB>> ]
+"675" [label = <(&lt;operator&gt;.equals,booleanVal == null)<SUB>208</SUB>> ]
+"675" [label = <(&lt;operator&gt;.equals,booleanVal == null)<SUB>208</SUB>> ]
+"679" [label = <(RETURN,return false;,return false;)<SUB>209</SUB>> ]
+"682" [label = <(booleanValue,booleanVal.booleanValue())<SUB>212</SUB>> ]
+"680" [label = <(LITERAL,false,return false;)<SUB>209</SUB>> ]
+  "679" -> "686"  [ label = "&lt;RET&gt;"] 
+  "681" -> "686"  [ label = "&lt;RET&gt;"] 
+  "667" -> "686"  [ label = "key"] 
+  "665" -> "686"  [ label = "this.get(key)"] 
+  "665" -> "686"  [ label = "Object value = get(key)"] 
+  "672" -> "686"  [ label = "this"] 
+  "672" -> "686"  [ label = "value"] 
+  "670" -> "686"  [ label = "castToBoolean(value)"] 
+  "670" -> "686"  [ label = "Boolean booleanVal = castToBoolean(value)"] 
+  "675" -> "686"  [ label = "booleanVal"] 
+  "675" -> "686"  [ label = "booleanVal == null"] 
+  "661" -> "16" 
+  "661" -> "662" 
+  "667" -> "665"  [ label = "this"] 
+  "667" -> "665"  [ label = "key"] 
+  "672" -> "670"  [ label = "this"] 
+  "672" -> "670"  [ label = "value"] 
+  "682" -> "681"  [ label = "booleanVal.booleanValue()"] 
+  "16" -> "667"  [ label = "this"] 
+  "661" -> "667" 
+  "662" -> "667"  [ label = "key"] 
+  "667" -> "672"  [ label = "this"] 
+  "661" -> "672" 
+  "665" -> "672"  [ label = "value"] 
+  "670" -> "675"  [ label = "booleanVal"] 
+  "661" -> "675" 
+  "680" -> "679"  [ label = "false"] 
+  "661" -> "679" 
+  "675" -> "682"  [ label = "booleanVal"] 
+  "661" -> "682" 
+  "661" -> "680" 
+}

@@ -1,0 +1,13 @@
+digraph "castToShort" {  
+"1801" [label = <(METHOD,castToShort)> ]
+"1806" [label = <(METHOD_RETURN,ANY)> ]
+"1802" [label = <(PARAM,p0)> ]
+"1803" [label = <(PARAM,p1)> ]
+"1804" [label = <(PARAM,p2)> ]
+  "1802" -> "1806"  [ label = "p0"] 
+  "1803" -> "1806"  [ label = "p1"] 
+  "1804" -> "1806"  [ label = "p2"] 
+  "1801" -> "1802" 
+  "1801" -> "1803" 
+  "1801" -> "1804" 
+}

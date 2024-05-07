@@ -1,0 +1,13 @@
+digraph "castToByte" {  
+"2019" [label = <(METHOD,castToByte)> ]
+"2024" [label = <(METHOD_RETURN,ANY)> ]
+"2020" [label = <(PARAM,p0)> ]
+"2021" [label = <(PARAM,p1)> ]
+"2022" [label = <(PARAM,p2)> ]
+  "2020" -> "2024"  [ label = "p0"] 
+  "2021" -> "2024"  [ label = "p1"] 
+  "2022" -> "2024"  [ label = "p2"] 
+  "2019" -> "2020" 
+  "2019" -> "2021" 
+  "2019" -> "2022" 
+}

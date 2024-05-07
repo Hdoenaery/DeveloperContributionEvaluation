@@ -1,0 +1,22 @@
+===
+insert-tree
+---
+ImportDeclaration [59,102]
+    Name: Feature [66,101]
+        Name: parser [66,93]
+            Name: fastjson [66,86]
+                Name: alibaba [66,77]
+                    Name: com [66,69]
+to
+CompilationUnit [0,852]
+at 2
+===
+insert-tree
+---
+FieldAccessExpr [850,873]
+    NameExpr [850,857]
+        SimpleName: Feature [850,857]
+    SimpleName: SupportAutoType [858,873]
+to
+MethodCallExpr [789,805]
+at 3

@@ -1,0 +1,13 @@
+digraph "setAutoTypeSupport" {  
+"116" [label = <(METHOD,setAutoTypeSupport)> ]
+"121" [label = <(METHOD_RETURN,ANY)> ]
+"117" [label = <(PARAM,p0)> ]
+"118" [label = <(PARAM,p1)> ]
+"119" [label = <(PARAM,p2)> ]
+  "117" -> "121"  [ label = "p0"] 
+  "118" -> "121"  [ label = "p1"] 
+  "119" -> "121"  [ label = "p2"] 
+  "116" -> "117" 
+  "116" -> "118" 
+  "116" -> "119" 
+}

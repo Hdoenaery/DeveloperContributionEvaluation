@@ -1,0 +1,21 @@
+digraph "retainAll" {  
+"508" [label = <(METHOD,retainAll)<SUB>161</SUB>> ]
+"520" [label = <(METHOD_RETURN,boolean)<SUB>161</SUB>> ]
+"509" [label = <(PARAM,this)<SUB>161</SUB>> ]
+"510" [label = <(PARAM,Collection&lt;?&gt; c)<SUB>161</SUB>> ]
+"512" [label = <(RETURN,return list.retainAll(c);,return list.retainAll(c);)<SUB>162</SUB>> ]
+"513" [label = <(retainAll,this.list.retainAll(c))<SUB>162</SUB>> ]
+"513" [label = <(retainAll,this.list.retainAll(c))<SUB>162</SUB>> ]
+"513" [label = <(retainAll,this.list.retainAll(c))<SUB>162</SUB>> ]
+  "512" -> "520"  [ label = "&lt;RET&gt;"] 
+  "509" -> "520"  [ label = "this"] 
+  "513" -> "520"  [ label = "this.list"] 
+  "513" -> "520"  [ label = "c"] 
+  "513" -> "520"  [ label = "this.list.retainAll(c)"] 
+  "508" -> "509" 
+  "508" -> "510" 
+  "513" -> "512"  [ label = "this.list.retainAll(c)"] 
+  "509" -> "513"  [ label = "this"] 
+  "510" -> "513"  [ label = "c"] 
+  "508" -> "513" 
+}

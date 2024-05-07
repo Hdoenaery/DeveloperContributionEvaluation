@@ -1,0 +1,13 @@
+digraph "addAutoTypeCheckHandler" {  
+"184" [label = <(METHOD,addAutoTypeCheckHandler)> ]
+"189" [label = <(METHOD_RETURN,ANY)> ]
+"185" [label = <(PARAM,p0)> ]
+"186" [label = <(PARAM,p1)> ]
+"187" [label = <(PARAM,p2)> ]
+  "185" -> "189"  [ label = "p0"] 
+  "186" -> "189"  [ label = "p1"] 
+  "187" -> "189"  [ label = "p2"] 
+  "184" -> "185" 
+  "184" -> "186" 
+  "184" -> "187" 
+}

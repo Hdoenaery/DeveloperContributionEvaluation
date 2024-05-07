@@ -1,0 +1,10 @@
+digraph "ofHours" {  
+"175" [label = <(METHOD,ofHours)> ]
+"179" [label = <(METHOD_RETURN,ANY)> ]
+"176" [label = <(PARAM,p1)> ]
+"177" [label = <(PARAM,p2)> ]
+  "176" -> "179"  [ label = "p1"] 
+  "177" -> "179"  [ label = "p2"] 
+  "175" -> "176" 
+  "175" -> "177" 
+}

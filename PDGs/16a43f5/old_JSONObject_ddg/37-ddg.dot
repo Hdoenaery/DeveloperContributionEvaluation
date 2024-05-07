@@ -1,0 +1,26 @@
+digraph "put" {  
+"1109" [label = <(METHOD,put)<SUB>357</SUB>> ]
+"1123" [label = <(METHOD_RETURN,java.lang.Object)<SUB>357</SUB>> ]
+"1110" [label = <(PARAM,this)<SUB>357</SUB>> ]
+"1111" [label = <(PARAM,String key)<SUB>357</SUB>> ]
+"1112" [label = <(PARAM,Object value)<SUB>357</SUB>> ]
+"1114" [label = <(RETURN,return map.put(key, value);,return map.put(key, value);)<SUB>358</SUB>> ]
+"1115" [label = <(put,this.map.put(key, value))<SUB>358</SUB>> ]
+"1115" [label = <(put,this.map.put(key, value))<SUB>358</SUB>> ]
+"1115" [label = <(put,this.map.put(key, value))<SUB>358</SUB>> ]
+"1115" [label = <(put,this.map.put(key, value))<SUB>358</SUB>> ]
+  "1114" -> "1123"  [ label = "&lt;RET&gt;"] 
+  "1110" -> "1123"  [ label = "this"] 
+  "1115" -> "1123"  [ label = "this.map"] 
+  "1115" -> "1123"  [ label = "key"] 
+  "1115" -> "1123"  [ label = "value"] 
+  "1115" -> "1123"  [ label = "this.map.put(key, value)"] 
+  "1109" -> "1110" 
+  "1109" -> "1111" 
+  "1109" -> "1112" 
+  "1115" -> "1114"  [ label = "this.map.put(key, value)"] 
+  "1110" -> "1115"  [ label = "this"] 
+  "1111" -> "1115"  [ label = "key"] 
+  "1109" -> "1115" 
+  "1112" -> "1115"  [ label = "value"] 
+}

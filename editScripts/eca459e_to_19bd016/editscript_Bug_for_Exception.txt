@@ -1,0 +1,180 @@
+===
+insert-tree
+---
+ImportDeclaration [35,74]
+    Name: JSONObject [42,73]
+        Name: fastjson [42,62]
+            Name: alibaba [42,53]
+                Name: com [42,45]
+to
+CompilationUnit [0,505]
+at 1
+===
+insert-node
+---
+ExpressionStmt [538,597]
+to
+BlockStmt [224,502]
+at 6
+===
+insert-tree
+---
+ExpressionStmt [601,632]
+    VariableDeclarationExpr [601,631]
+        VariableDeclarator [608,631]
+            ClassOrInterfaceType [601,607]
+                SimpleName: Object [601,607]
+            SimpleName: obj2 [608,612]
+            MethodCallExpr [615,631]
+                NameExpr [615,619]
+                    SimpleName: JSON [615,619]
+                SimpleName: parse [620,625]
+                NameExpr [626,630]
+                    SimpleName: text [626,630]
+to
+BlockStmt [224,502]
+at 7
+===
+insert-tree
+---
+ExpressionStmt [635,683]
+    MethodCallExpr [635,682]
+        SimpleName: assertEquals [635,647]
+        ClassExpr [648,664]
+            ClassOrInterfaceType [648,658]
+                SimpleName: JSONObject [648,658]
+        MethodCallExpr [666,681]
+            NameExpr [666,670]
+                SimpleName: obj2 [666,670]
+            SimpleName: getClass [671,679]
+to
+BlockStmt [224,502]
+at 8
+===
+insert-node
+---
+MethodCallExpr [538,596]
+to
+ExpressionStmt [538,597]
+at 0
+===
+update-node
+---
+SimpleName: assertTrue [382,392]
+replace assertTrue by assertEquals
+===
+insert-tree
+---
+ClassExpr [435,451]
+    ClassOrInterfaceType [435,445]
+        SimpleName: JSONObject [435,445]
+to
+MethodCallExpr [382,412]
+at 1
+===
+insert-node
+---
+MethodCallExpr [453,467]
+to
+MethodCallExpr [382,412]
+at 2
+===
+insert-node
+---
+SimpleName: assertEquals [538,550]
+to
+MethodCallExpr [538,596]
+at 0
+===
+insert-node
+---
+ClassExpr [551,573]
+to
+MethodCallExpr [538,596]
+at 1
+===
+insert-tree
+---
+MethodCallExpr [575,595]
+    NameExpr [575,584]
+        SimpleName: throwable [575,584]
+    SimpleName: getClass [585,593]
+to
+MethodCallExpr [538,596]
+at 2
+===
+move-tree
+---
+NameExpr [393,396]
+    SimpleName: obj [393,396]
+to
+MethodCallExpr [453,467]
+at 0
+===
+update-node
+---
+SimpleName: Map [408,411]
+replace Map by getClass
+===
+move-tree
+---
+SimpleName: Map [408,411]
+to
+MethodCallExpr [453,467]
+at 1
+===
+insert-tree
+---
+ClassOrInterfaceType [473,482]
+    SimpleName: Throwable [473,482]
+to
+VariableDeclarator [434,498]
+at 0
+===
+update-node
+---
+SimpleName: ex2 [434,437]
+replace ex2 by throwable
+===
+move-tree
+---
+MethodCallExpr [459,498]
+    NameExpr [459,463]
+        SimpleName: JSON [459,463]
+    SimpleName: parseObject [464,475]
+    NameExpr [476,480]
+        SimpleName: text [476,480]
+    ClassExpr [482,497]
+        ClassOrInterfaceType [482,491]
+            SimpleName: Throwable [482,491]
+to
+VariableDeclarator [434,498]
+at 3
+===
+move-tree
+---
+ClassOrInterfaceType [417,433]
+    SimpleName: RuntimeException [417,433]
+to
+ClassExpr [551,573]
+at 0
+===
+delete-node
+---
+ClassOrInterfaceType [408,411]
+===
+===
+delete-node
+---
+InstanceOfExpr [393,411]
+===
+===
+delete-tree
+---
+ClassOrInterfaceType [441,457]
+    SimpleName: RuntimeException [441,457]
+===
+delete-node
+---
+CastExpr [440,498]
+===

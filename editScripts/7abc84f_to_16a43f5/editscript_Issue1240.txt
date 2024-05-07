@@ -1,0 +1,34 @@
+===
+insert-tree
+---
+ImportDeclaration [76,119]
+    Name: Feature [83,118]
+        Name: parser [83,110]
+            Name: fastjson [83,103]
+                Name: alibaba [83,94]
+                    Name: com [83,86]
+to
+CompilationUnit [0,809]
+at 2
+===
+insert-tree
+---
+ExpressionStmt [517,588]
+    MethodCallExpr [517,587]
+        NameExpr [517,529]
+            SimpleName: parserConfig [517,529]
+        SimpleName: addAccept [530,539]
+        StringLiteralExpr: org.springframework.util.LinkedMultiValueMap [540,586]
+to
+BlockStmt [407,806]
+at 1
+===
+insert-tree
+---
+FieldAccessExpr [924,947]
+    NameExpr [924,931]
+        SimpleName: Feature [924,931]
+    SimpleName: SupportAutoType [932,947]
+to
+MethodCallExpr [720,799]
+at 6

@@ -1,0 +1,44 @@
+digraph "getBoolean" {  
+"912" [label = <(METHOD,getBoolean)<SUB>286</SUB>> ]
+"932" [label = <(METHOD_RETURN,java.lang.Boolean)<SUB>286</SUB>> ]
+"33" [label = <(PARAM,this)<SUB>286</SUB>> ]
+"913" [label = <(PARAM,int index)<SUB>286</SUB>> ]
+"916" [label = <(&lt;operator&gt;.assignment,Object value = get(index))<SUB>287</SUB>> ]
+"927" [label = <(RETURN,return castToBoolean(value);,return castToBoolean(value);)<SUB>293</SUB>> ]
+"916" [label = <(&lt;operator&gt;.assignment,Object value = get(index))<SUB>287</SUB>> ]
+"916" [label = <(&lt;operator&gt;.assignment,Object value = get(index))<SUB>287</SUB>> ]
+"921" [label = <(&lt;operator&gt;.equals,value == null)<SUB>289</SUB>> ]
+"928" [label = <(castToBoolean,castToBoolean(value))<SUB>293</SUB>> ]
+"918" [label = <(get,this.get(index))<SUB>287</SUB>> ]
+"918" [label = <(get,this.get(index))<SUB>287</SUB>> ]
+"921" [label = <(&lt;operator&gt;.equals,value == null)<SUB>289</SUB>> ]
+"921" [label = <(&lt;operator&gt;.equals,value == null)<SUB>289</SUB>> ]
+"925" [label = <(RETURN,return null;,return null;)<SUB>290</SUB>> ]
+"928" [label = <(castToBoolean,castToBoolean(value))<SUB>293</SUB>> ]
+"928" [label = <(castToBoolean,castToBoolean(value))<SUB>293</SUB>> ]
+"926" [label = <(LITERAL,null,return null;)<SUB>290</SUB>> ]
+  "925" -> "932"  [ label = "&lt;RET&gt;"] 
+  "927" -> "932"  [ label = "&lt;RET&gt;"] 
+  "918" -> "932"  [ label = "this"] 
+  "918" -> "932"  [ label = "index"] 
+  "916" -> "932"  [ label = "this.get(index)"] 
+  "916" -> "932"  [ label = "Object value = get(index)"] 
+  "921" -> "932"  [ label = "value"] 
+  "921" -> "932"  [ label = "value == null"] 
+  "912" -> "33" 
+  "912" -> "913" 
+  "918" -> "916"  [ label = "this"] 
+  "918" -> "916"  [ label = "index"] 
+  "928" -> "927"  [ label = "castToBoolean(value)"] 
+  "33" -> "918"  [ label = "this"] 
+  "912" -> "918" 
+  "913" -> "918"  [ label = "index"] 
+  "916" -> "921"  [ label = "value"] 
+  "912" -> "921" 
+  "926" -> "925"  [ label = "null"] 
+  "912" -> "925" 
+  "918" -> "928"  [ label = "this"] 
+  "912" -> "928" 
+  "921" -> "928"  [ label = "value"] 
+  "912" -> "926" 
+}

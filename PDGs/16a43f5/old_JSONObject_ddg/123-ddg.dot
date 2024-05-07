@@ -1,0 +1,13 @@
+digraph "equals" {  
+"2665" [label = <(METHOD,equals)> ]
+"2670" [label = <(METHOD_RETURN,ANY)> ]
+"2666" [label = <(PARAM,p0)> ]
+"2667" [label = <(PARAM,p1)> ]
+"2668" [label = <(PARAM,p2)> ]
+  "2666" -> "2670"  [ label = "p0"] 
+  "2667" -> "2670"  [ label = "p1"] 
+  "2668" -> "2670"  [ label = "p2"] 
+  "2665" -> "2666" 
+  "2665" -> "2667" 
+  "2665" -> "2668" 
+}

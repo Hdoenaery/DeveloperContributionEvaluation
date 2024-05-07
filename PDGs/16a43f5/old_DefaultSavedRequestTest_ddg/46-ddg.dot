@@ -1,0 +1,10 @@
+digraph "getPrincipal" {  
+"771" [label = <(METHOD,getPrincipal)> ]
+"775" [label = <(METHOD_RETURN,ANY)> ]
+"772" [label = <(PARAM,p0)> ]
+"773" [label = <(PARAM,p1)> ]
+  "772" -> "775"  [ label = "p0"] 
+  "773" -> "775"  [ label = "p1"] 
+  "771" -> "772" 
+  "771" -> "773" 
+}

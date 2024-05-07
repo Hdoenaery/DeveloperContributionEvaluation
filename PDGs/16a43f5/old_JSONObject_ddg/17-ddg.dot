@@ -1,0 +1,44 @@
+digraph "getBytes" {  
+"731" [label = <(METHOD,getBytes)<SUB>194</SUB>> ]
+"751" [label = <(METHOD_RETURN,byte[])<SUB>194</SUB>> ]
+"13" [label = <(PARAM,this)<SUB>194</SUB>> ]
+"732" [label = <(PARAM,String key)<SUB>194</SUB>> ]
+"735" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>195</SUB>> ]
+"746" [label = <(RETURN,return castToBytes(value);,return castToBytes(value);)<SUB>201</SUB>> ]
+"735" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>195</SUB>> ]
+"735" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>195</SUB>> ]
+"740" [label = <(&lt;operator&gt;.equals,value == null)<SUB>197</SUB>> ]
+"747" [label = <(castToBytes,castToBytes(value))<SUB>201</SUB>> ]
+"737" [label = <(get,this.get(key))<SUB>195</SUB>> ]
+"737" [label = <(get,this.get(key))<SUB>195</SUB>> ]
+"740" [label = <(&lt;operator&gt;.equals,value == null)<SUB>197</SUB>> ]
+"740" [label = <(&lt;operator&gt;.equals,value == null)<SUB>197</SUB>> ]
+"744" [label = <(RETURN,return null;,return null;)<SUB>198</SUB>> ]
+"747" [label = <(castToBytes,castToBytes(value))<SUB>201</SUB>> ]
+"747" [label = <(castToBytes,castToBytes(value))<SUB>201</SUB>> ]
+"745" [label = <(LITERAL,null,return null;)<SUB>198</SUB>> ]
+  "744" -> "751"  [ label = "&lt;RET&gt;"] 
+  "746" -> "751"  [ label = "&lt;RET&gt;"] 
+  "737" -> "751"  [ label = "this"] 
+  "737" -> "751"  [ label = "key"] 
+  "735" -> "751"  [ label = "this.get(key)"] 
+  "735" -> "751"  [ label = "Object value = get(key)"] 
+  "740" -> "751"  [ label = "value"] 
+  "740" -> "751"  [ label = "value == null"] 
+  "731" -> "13" 
+  "731" -> "732" 
+  "737" -> "735"  [ label = "this"] 
+  "737" -> "735"  [ label = "key"] 
+  "747" -> "746"  [ label = "castToBytes(value)"] 
+  "13" -> "737"  [ label = "this"] 
+  "731" -> "737" 
+  "732" -> "737"  [ label = "key"] 
+  "735" -> "740"  [ label = "value"] 
+  "731" -> "740" 
+  "745" -> "744"  [ label = "null"] 
+  "731" -> "744" 
+  "737" -> "747"  [ label = "this"] 
+  "731" -> "747" 
+  "740" -> "747"  [ label = "value"] 
+  "731" -> "745" 
+}

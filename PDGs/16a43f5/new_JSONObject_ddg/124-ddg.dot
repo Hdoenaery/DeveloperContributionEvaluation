@@ -1,0 +1,13 @@
+digraph "substring" {  
+"2224" [label = <(METHOD,substring)> ]
+"2229" [label = <(METHOD_RETURN,ANY)> ]
+"2225" [label = <(PARAM,p0)> ]
+"2226" [label = <(PARAM,p1)> ]
+"2227" [label = <(PARAM,p2)> ]
+  "2225" -> "2229"  [ label = "p0"] 
+  "2226" -> "2229"  [ label = "p1"] 
+  "2227" -> "2229"  [ label = "p2"] 
+  "2224" -> "2225" 
+  "2224" -> "2226" 
+  "2224" -> "2227" 
+}

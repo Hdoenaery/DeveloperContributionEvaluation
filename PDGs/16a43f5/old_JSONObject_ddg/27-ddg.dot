@@ -1,0 +1,33 @@
+digraph "getFloat" {  
+"938" [label = <(METHOD,getFloat)<SUB>283</SUB>> ]
+"951" [label = <(METHOD_RETURN,java.lang.Float)<SUB>283</SUB>> ]
+"43" [label = <(PARAM,this)<SUB>283</SUB>> ]
+"939" [label = <(PARAM,String key)<SUB>283</SUB>> ]
+"942" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>284</SUB>> ]
+"946" [label = <(RETURN,return castToFloat(value);,return castToFloat(value);)<SUB>286</SUB>> ]
+"942" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>284</SUB>> ]
+"942" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>284</SUB>> ]
+"947" [label = <(castToFloat,castToFloat(value))<SUB>286</SUB>> ]
+"944" [label = <(get,this.get(key))<SUB>284</SUB>> ]
+"944" [label = <(get,this.get(key))<SUB>284</SUB>> ]
+"947" [label = <(castToFloat,castToFloat(value))<SUB>286</SUB>> ]
+"947" [label = <(castToFloat,castToFloat(value))<SUB>286</SUB>> ]
+  "946" -> "951"  [ label = "&lt;RET&gt;"] 
+  "944" -> "951"  [ label = "key"] 
+  "942" -> "951"  [ label = "this.get(key)"] 
+  "942" -> "951"  [ label = "Object value = get(key)"] 
+  "947" -> "951"  [ label = "this"] 
+  "947" -> "951"  [ label = "value"] 
+  "947" -> "951"  [ label = "castToFloat(value)"] 
+  "938" -> "43" 
+  "938" -> "939" 
+  "944" -> "942"  [ label = "this"] 
+  "944" -> "942"  [ label = "key"] 
+  "947" -> "946"  [ label = "castToFloat(value)"] 
+  "43" -> "944"  [ label = "this"] 
+  "938" -> "944" 
+  "939" -> "944"  [ label = "key"] 
+  "944" -> "947"  [ label = "this"] 
+  "938" -> "947" 
+  "942" -> "947"  [ label = "value"] 
+}

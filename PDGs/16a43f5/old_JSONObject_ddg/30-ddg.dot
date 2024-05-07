@@ -1,0 +1,55 @@
+digraph "getDoubleValue" {  
+"992" [label = <(METHOD,getDoubleValue)<SUB>306</SUB>> ]
+"1017" [label = <(METHOD_RETURN,double)<SUB>306</SUB>> ]
+"52" [label = <(PARAM,this)<SUB>306</SUB>> ]
+"993" [label = <(PARAM,String key)<SUB>306</SUB>> ]
+"996" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>307</SUB>> ]
+"1001" [label = <(&lt;operator&gt;.assignment,Double doubleValue = castToDouble(value))<SUB>309</SUB>> ]
+"1012" [label = <(RETURN,return doubleValue.doubleValue();,return doubleValue.doubleValue();)<SUB>314</SUB>> ]
+"996" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>307</SUB>> ]
+"996" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>307</SUB>> ]
+"1001" [label = <(&lt;operator&gt;.assignment,Double doubleValue = castToDouble(value))<SUB>309</SUB>> ]
+"1001" [label = <(&lt;operator&gt;.assignment,Double doubleValue = castToDouble(value))<SUB>309</SUB>> ]
+"1006" [label = <(&lt;operator&gt;.equals,doubleValue == null)<SUB>310</SUB>> ]
+"1013" [label = <(doubleValue,doubleValue.doubleValue())<SUB>314</SUB>> ]
+"998" [label = <(get,this.get(key))<SUB>307</SUB>> ]
+"998" [label = <(get,this.get(key))<SUB>307</SUB>> ]
+"1003" [label = <(castToDouble,castToDouble(value))<SUB>309</SUB>> ]
+"1003" [label = <(castToDouble,castToDouble(value))<SUB>309</SUB>> ]
+"1006" [label = <(&lt;operator&gt;.equals,doubleValue == null)<SUB>310</SUB>> ]
+"1006" [label = <(&lt;operator&gt;.equals,doubleValue == null)<SUB>310</SUB>> ]
+"1010" [label = <(RETURN,return 0D;,return 0D;)<SUB>311</SUB>> ]
+"1013" [label = <(doubleValue,doubleValue.doubleValue())<SUB>314</SUB>> ]
+"1011" [label = <(LITERAL,0D,return 0D;)<SUB>311</SUB>> ]
+  "1012" -> "1017"  [ label = "&lt;RET&gt;"] 
+  "1010" -> "1017"  [ label = "&lt;RET&gt;"] 
+  "998" -> "1017"  [ label = "key"] 
+  "996" -> "1017"  [ label = "this.get(key)"] 
+  "996" -> "1017"  [ label = "Object value = get(key)"] 
+  "1003" -> "1017"  [ label = "this"] 
+  "1003" -> "1017"  [ label = "value"] 
+  "1001" -> "1017"  [ label = "castToDouble(value)"] 
+  "1001" -> "1017"  [ label = "Double doubleValue = castToDouble(value)"] 
+  "1006" -> "1017"  [ label = "doubleValue"] 
+  "1006" -> "1017"  [ label = "doubleValue == null"] 
+  "992" -> "52" 
+  "992" -> "993" 
+  "998" -> "996"  [ label = "this"] 
+  "998" -> "996"  [ label = "key"] 
+  "1003" -> "1001"  [ label = "this"] 
+  "1003" -> "1001"  [ label = "value"] 
+  "1013" -> "1012"  [ label = "doubleValue.doubleValue()"] 
+  "52" -> "998"  [ label = "this"] 
+  "992" -> "998" 
+  "993" -> "998"  [ label = "key"] 
+  "998" -> "1003"  [ label = "this"] 
+  "992" -> "1003" 
+  "996" -> "1003"  [ label = "value"] 
+  "1001" -> "1006"  [ label = "doubleValue"] 
+  "992" -> "1006" 
+  "1011" -> "1010"  [ label = "0D"] 
+  "992" -> "1010" 
+  "1006" -> "1013"  [ label = "doubleValue"] 
+  "992" -> "1013" 
+  "992" -> "1011" 
+}

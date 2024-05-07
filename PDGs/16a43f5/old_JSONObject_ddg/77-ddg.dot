@@ -1,0 +1,10 @@
+digraph "toString" {  
+"2406" [label = <(METHOD,toString)> ]
+"2410" [label = <(METHOD_RETURN,ANY)> ]
+"2407" [label = <(PARAM,p0)> ]
+"2408" [label = <(PARAM,p1)> ]
+  "2407" -> "2410"  [ label = "p0"] 
+  "2408" -> "2410"  [ label = "p1"] 
+  "2406" -> "2407" 
+  "2406" -> "2408" 
+}

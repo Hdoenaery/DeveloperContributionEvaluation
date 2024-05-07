@@ -1,0 +1,15 @@
+digraph "values" {  
+"1127" [label = <(METHOD,values)<SUB>397</SUB>> ]
+"1137" [label = <(METHOD_RETURN,java.util.Collection)<SUB>397</SUB>> ]
+"1128" [label = <(PARAM,this)<SUB>397</SUB>> ]
+"1130" [label = <(RETURN,return map.values();,return map.values();)<SUB>398</SUB>> ]
+"1131" [label = <(values,this.map.values())<SUB>398</SUB>> ]
+"1131" [label = <(values,this.map.values())<SUB>398</SUB>> ]
+  "1130" -> "1137"  [ label = "&lt;RET&gt;"] 
+  "1128" -> "1137"  [ label = "this"] 
+  "1131" -> "1137"  [ label = "this.map"] 
+  "1131" -> "1137"  [ label = "this.map.values()"] 
+  "1127" -> "1128" 
+  "1131" -> "1130"  [ label = "this.map.values()"] 
+  "1128" -> "1131"  [ label = "this"] 
+}

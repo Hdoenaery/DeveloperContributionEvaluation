@@ -1,0 +1,19 @@
+digraph "castToJavaBean" {  
+"2913" [label = <(METHOD,castToJavaBean)> ]
+"2920" [label = <(METHOD_RETURN,ANY)> ]
+"2914" [label = <(PARAM,p0)> ]
+"2915" [label = <(PARAM,p1)> ]
+"2916" [label = <(PARAM,p2)> ]
+"2917" [label = <(PARAM,p3)> ]
+"2918" [label = <(PARAM,p4)> ]
+  "2914" -> "2920"  [ label = "p0"] 
+  "2915" -> "2920"  [ label = "p1"] 
+  "2916" -> "2920"  [ label = "p2"] 
+  "2917" -> "2920"  [ label = "p3"] 
+  "2918" -> "2920"  [ label = "p4"] 
+  "2913" -> "2914" 
+  "2913" -> "2915" 
+  "2913" -> "2916" 
+  "2913" -> "2917" 
+  "2913" -> "2918" 
+}

@@ -1,0 +1,198 @@
+===
+insert-node
+---
+LineComment [320,360]
+to
+BlockStmt [264,688]
+at 9
+===
+insert-node
+---
+LineComment [361,390]
+to
+BlockStmt [264,688]
+at 10
+===
+insert-node
+---
+LineComment [391,393]
+to
+BlockStmt [264,688]
+at 11
+===
+insert-node
+---
+LineComment [394,396]
+to
+BlockStmt [264,688]
+at 12
+===
+insert-node
+---
+LineComment [397,431]
+to
+BlockStmt [264,688]
+at 13
+===
+insert-node
+---
+LineComment [432,483]
+to
+BlockStmt [264,688]
+at 14
+===
+insert-node
+---
+LineComment [484,486]
+to
+BlockStmt [264,688]
+at 15
+===
+insert-node
+---
+LineComment [487,553]
+to
+BlockStmt [264,688]
+at 16
+===
+insert-node
+---
+LineComment [554,617]
+to
+BlockStmt [264,688]
+at 17
+===
+insert-node
+---
+LineComment [618,620]
+to
+BlockStmt [264,688]
+at 18
+===
+insert-node
+---
+LineComment [621,656]
+to
+BlockStmt [264,688]
+at 19
+===
+insert-node
+---
+LineComment [657,709]
+to
+BlockStmt [264,688]
+at 20
+===
+delete-tree
+---
+ExpressionStmt [268,317]
+    VariableDeclarationExpr [268,316]
+        VariableDeclarator [285,316]
+            ClassOrInterfaceType [268,284]
+                SimpleName: RuntimeException [268,284]
+            SimpleName: ex [285,287]
+            ObjectCreationExpr [290,316]
+                ClassOrInterfaceType [294,310]
+                    SimpleName: RuntimeException [294,310]
+                StringLiteralExpr: e1 [311,315]
+===
+delete-tree
+---
+ExpressionStmt [320,356]
+    VariableDeclarationExpr [320,355]
+        VariableDeclarator [327,355]
+            ClassOrInterfaceType [320,326]
+                SimpleName: String [320,326]
+            SimpleName: text [327,331]
+            MethodCallExpr [334,355]
+                NameExpr [334,338]
+                    SimpleName: JSON [334,338]
+                SimpleName: toJSONString [339,351]
+                NameExpr [352,354]
+                    SimpleName: ex [352,354]
+===
+delete-tree
+---
+ExpressionStmt [359,384]
+    MethodCallExpr [359,383]
+        FieldAccessExpr [359,369]
+            NameExpr [359,365]
+                SimpleName: System [359,365]
+            SimpleName: out [366,369]
+        SimpleName: println [370,377]
+        NameExpr [378,382]
+            SimpleName: text [378,382]
+===
+delete-tree
+---
+ExpressionStmt [389,419]
+    VariableDeclarationExpr [389,418]
+        VariableDeclarator [396,418]
+            ClassOrInterfaceType [389,395]
+                SimpleName: Object [389,395]
+            SimpleName: obj [396,399]
+            MethodCallExpr [402,418]
+                NameExpr [402,406]
+                    SimpleName: JSON [402,406]
+                SimpleName: parse [407,412]
+                NameExpr [413,417]
+                    SimpleName: text [413,417]
+===
+delete-tree
+---
+ExpressionStmt [422,469]
+    MethodCallExpr [422,468]
+        SimpleName: assertEquals [422,434]
+        ClassExpr [435,451]
+            ClassOrInterfaceType [435,445]
+                SimpleName: JSONObject [435,445]
+        MethodCallExpr [453,467]
+            NameExpr [453,456]
+                SimpleName: obj [453,456]
+            SimpleName: getClass [457,465]
+===
+delete-tree
+---
+ExpressionStmt [473,535]
+    VariableDeclarationExpr [473,534]
+        VariableDeclarator [483,534]
+            ClassOrInterfaceType [473,482]
+                SimpleName: Throwable [473,482]
+            SimpleName: throwable [483,492]
+            MethodCallExpr [495,534]
+                NameExpr [495,499]
+                    SimpleName: JSON [495,499]
+                SimpleName: parseObject [500,511]
+                NameExpr [512,516]
+                    SimpleName: text [512,516]
+                ClassExpr [518,533]
+                    ClassOrInterfaceType [518,527]
+                        SimpleName: Throwable [518,527]
+===
+delete-tree
+---
+ExpressionStmt [538,597]
+    MethodCallExpr [538,596]
+        SimpleName: assertEquals [538,550]
+        ClassExpr [551,573]
+            ClassOrInterfaceType [551,567]
+                SimpleName: RuntimeException [551,567]
+        MethodCallExpr [575,595]
+            NameExpr [575,584]
+                SimpleName: throwable [575,584]
+            SimpleName: getClass [585,593]
+===
+delete-tree
+---
+ExpressionStmt [601,632]
+    VariableDeclarationExpr [601,631]
+        VariableDeclarator [608,631]
+            ClassOrInterfaceType [601,607]
+                SimpleName: Object [601,607]
+            SimpleName: obj2 [608,612]
+            MethodCallExpr [615,631]
+                NameExpr [615,619]
+                    SimpleName: JSON [615,619]
+                SimpleName: parse [620,625]
+                NameExpr [626,630]
+                    SimpleName: text [626,630]

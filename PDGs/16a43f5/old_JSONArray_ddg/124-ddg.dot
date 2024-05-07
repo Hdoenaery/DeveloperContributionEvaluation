@@ -1,0 +1,13 @@
+digraph "castToSqlDate" {  
+"1940" [label = <(METHOD,castToSqlDate)> ]
+"1945" [label = <(METHOD_RETURN,ANY)> ]
+"1941" [label = <(PARAM,p0)> ]
+"1942" [label = <(PARAM,p1)> ]
+"1943" [label = <(PARAM,p2)> ]
+  "1941" -> "1945"  [ label = "p0"] 
+  "1942" -> "1945"  [ label = "p1"] 
+  "1943" -> "1945"  [ label = "p2"] 
+  "1940" -> "1941" 
+  "1940" -> "1942" 
+  "1940" -> "1943" 
+}

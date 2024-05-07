@@ -1,0 +1,63 @@
+digraph "resolveClass" {  
+"1911" [label = <(&lt;operator&gt;.greaterThan,name.length() &gt; 2)<SUB>587</SUB>> ]
+"1917" [label = <(&lt;operator&gt;.assignment,int index = name.lastIndexOf('['))<SUB>588</SUB>> ]
+"1919" [label = <(lastIndexOf,name.lastIndexOf('['))<SUB>588</SUB>> ]
+"1923" [label = <(&lt;operator&gt;.notEquals,index != -1)<SUB>589</SUB>> ]
+"1936" [label = <(&lt;operator&gt;.logicalAnd,name.length() &gt; 2 &amp;&amp; name.charAt(0) == 'L' &amp;&amp; n...)<SUB>592</SUB>> ]
+"1966" [label = <(&lt;operator&gt;.equals,TypeUtils.getClassFromMapping(name) == null)<SUB>596</SUB>> ]
+"1925" [label = <(&lt;operator&gt;.minus,-1)<SUB>589</SUB>> ]
+"1928" [label = <(&lt;operator&gt;.assignment,name = name.substring(index + 1))<SUB>590</SUB>> ]
+"1937" [label = <(&lt;operator&gt;.logicalAnd,name.length() &gt; 2 &amp;&amp; name.charAt(0) == 'L')<SUB>592</SUB>> ]
+"1947" [label = <(&lt;operator&gt;.equals,name.charAt(name.length() - 1) == ';')<SUB>592</SUB>> ]
+"1956" [label = <(&lt;operator&gt;.assignment,name = name.substring(1, name.length() - 1))<SUB>593</SUB>> ]
+"1967" [label = <(getClassFromMapping,getClassFromMapping(name))<SUB>596</SUB>> ]
+"1972" [label = <(checkAutoType,ParserConfig.global.checkAutoType(name, null, F...)<SUB>597</SUB>> ]
+"1930" [label = <(substring,name.substring(index + 1))<SUB>590</SUB>> ]
+"1938" [label = <(&lt;operator&gt;.greaterThan,name.length() &gt; 2)<SUB>592</SUB>> ]
+"1942" [label = <(&lt;operator&gt;.equals,name.charAt(0) == 'L')<SUB>592</SUB>> ]
+"1948" [label = <(charAt,name.charAt(name.length() - 1))<SUB>592</SUB>> ]
+"1958" [label = <(substring,name.substring(1, name.length() - 1))<SUB>593</SUB>> ]
+"1973" [label = <(&lt;operator&gt;.fieldAccess,ParserConfig.global)<SUB>597</SUB>> ]
+"1978" [label = <(&lt;operator&gt;.fieldAccess,Feature.SupportAutoType.mask)<SUB>597</SUB>> ]
+"1932" [label = <(&lt;operator&gt;.addition,index + 1)<SUB>590</SUB>> ]
+"1939" [label = <(length,name.length())<SUB>592</SUB>> ]
+"1943" [label = <(charAt,name.charAt(0))<SUB>592</SUB>> ]
+"1950" [label = <(&lt;operator&gt;.subtraction,name.length() - 1)<SUB>592</SUB>> ]
+"1961" [label = <(&lt;operator&gt;.subtraction,name.length() - 1)<SUB>593</SUB>> ]
+"1975" [label = <(FIELD_IDENTIFIER,global,global)<SUB>597</SUB>> ]
+"1979" [label = <(&lt;operator&gt;.fieldAccess,Feature.SupportAutoType)<SUB>597</SUB>> ]
+"1982" [label = <(FIELD_IDENTIFIER,mask,mask)<SUB>597</SUB>> ]
+"1951" [label = <(length,name.length())<SUB>592</SUB>> ]
+"1962" [label = <(length,name.length())<SUB>593</SUB>> ]
+"1981" [label = <(FIELD_IDENTIFIER,SupportAutoType,SupportAutoType)<SUB>597</SUB>> ]
+  "1911" -> "1937" 
+  "1911" -> "1925" 
+  "1911" -> "1936" 
+  "1911" -> "1917" 
+  "1911" -> "1923" 
+  "1911" -> "1966" 
+  "1911" -> "1919" 
+  "1911" -> "1967" 
+  "1911" -> "1939" 
+  "1911" -> "1938" 
+  "1923" -> "1932" 
+  "1923" -> "1928" 
+  "1923" -> "1930" 
+  "1936" -> "1956" 
+  "1936" -> "1958" 
+  "1936" -> "1962" 
+  "1936" -> "1961" 
+  "1966" -> "1975" 
+  "1966" -> "1979" 
+  "1966" -> "1972" 
+  "1966" -> "1973" 
+  "1966" -> "1981" 
+  "1966" -> "1978" 
+  "1966" -> "1982" 
+  "1937" -> "1948" 
+  "1937" -> "1951" 
+  "1937" -> "1950" 
+  "1937" -> "1947" 
+  "1938" -> "1942" 
+  "1938" -> "1943" 
+}

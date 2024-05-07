@@ -1,0 +1,10 @@
+digraph "&lt;operator&gt;.lessThan" {  
+"130" [label = <(METHOD,&lt;operator&gt;.lessThan)> ]
+"134" [label = <(METHOD_RETURN,ANY)> ]
+"131" [label = <(PARAM,p1)> ]
+"132" [label = <(PARAM,p2)> ]
+  "131" -> "134"  [ label = "p1"] 
+  "132" -> "134"  [ label = "p2"] 
+  "130" -> "131" 
+  "130" -> "132" 
+}

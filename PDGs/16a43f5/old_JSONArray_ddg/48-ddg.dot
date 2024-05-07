@@ -1,0 +1,33 @@
+digraph "getShort" {  
+"995" [label = <(METHOD,getShort)<SUB>323</SUB>> ]
+"1008" [label = <(METHOD_RETURN,java.lang.Short)<SUB>323</SUB>> ]
+"45" [label = <(PARAM,this)<SUB>323</SUB>> ]
+"996" [label = <(PARAM,int index)<SUB>323</SUB>> ]
+"999" [label = <(&lt;operator&gt;.assignment,Object value = get(index))<SUB>324</SUB>> ]
+"1003" [label = <(RETURN,return castToShort(value);,return castToShort(value);)<SUB>326</SUB>> ]
+"999" [label = <(&lt;operator&gt;.assignment,Object value = get(index))<SUB>324</SUB>> ]
+"999" [label = <(&lt;operator&gt;.assignment,Object value = get(index))<SUB>324</SUB>> ]
+"1004" [label = <(castToShort,castToShort(value))<SUB>326</SUB>> ]
+"1001" [label = <(get,this.get(index))<SUB>324</SUB>> ]
+"1001" [label = <(get,this.get(index))<SUB>324</SUB>> ]
+"1004" [label = <(castToShort,castToShort(value))<SUB>326</SUB>> ]
+"1004" [label = <(castToShort,castToShort(value))<SUB>326</SUB>> ]
+  "1003" -> "1008"  [ label = "&lt;RET&gt;"] 
+  "1001" -> "1008"  [ label = "index"] 
+  "999" -> "1008"  [ label = "this.get(index)"] 
+  "999" -> "1008"  [ label = "Object value = get(index)"] 
+  "1004" -> "1008"  [ label = "this"] 
+  "1004" -> "1008"  [ label = "value"] 
+  "1004" -> "1008"  [ label = "castToShort(value)"] 
+  "995" -> "45" 
+  "995" -> "996" 
+  "1001" -> "999"  [ label = "this"] 
+  "1001" -> "999"  [ label = "index"] 
+  "1004" -> "1003"  [ label = "castToShort(value)"] 
+  "45" -> "1001"  [ label = "this"] 
+  "995" -> "1001" 
+  "996" -> "1001"  [ label = "index"] 
+  "1001" -> "1004"  [ label = "this"] 
+  "995" -> "1004" 
+  "999" -> "1004"  [ label = "value"] 
+}

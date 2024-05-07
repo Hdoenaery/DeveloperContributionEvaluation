@@ -1,0 +1,18 @@
+digraph "&lt;init&gt;" {  
+"202" [label = <(METHOD,&lt;init&gt;)<SUB>53</SUB>> ]
+"214" [label = <(METHOD_RETURN,void)<SUB>55</SUB>> ]
+"102" [label = <(PARAM,this)<SUB>53</SUB>> ]
+"204" [label = <(&lt;operator&gt;.assignment,this.list = new ArrayList&lt;Object&gt;())<SUB>54</SUB>> ]
+"208" [label = <(&lt;init&gt;,new ArrayList&lt;Object&gt;())<SUB>54</SUB>> ]
+"204" [label = <(&lt;operator&gt;.assignment,this.list = new ArrayList&lt;Object&gt;())<SUB>54</SUB>> ]
+"204" [label = <(&lt;operator&gt;.assignment,this.list = new ArrayList&lt;Object&gt;())<SUB>54</SUB>> ]
+"208" [label = <(&lt;init&gt;,new ArrayList&lt;Object&gt;())<SUB>54</SUB>> ]
+  "102" -> "214"  [ label = "this"] 
+  "204" -> "214"  [ label = "this.list = new ArrayList&lt;Object&gt;()"] 
+  "208" -> "214"  [ label = "this.list"] 
+  "208" -> "214"  [ label = "new ArrayList&lt;Object&gt;()"] 
+  "202" -> "102" 
+  "202" -> "204" 
+  "102" -> "208"  [ label = "this"] 
+  "204" -> "208"  [ label = "this.list"] 
+}

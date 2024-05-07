@@ -1,0 +1,10 @@
+digraph "defaultReadObject" {  
+"2761" [label = <(METHOD,defaultReadObject)> ]
+"2765" [label = <(METHOD_RETURN,ANY)> ]
+"2762" [label = <(PARAM,p0)> ]
+"2763" [label = <(PARAM,p1)> ]
+  "2762" -> "2765"  [ label = "p0"] 
+  "2763" -> "2765"  [ label = "p1"] 
+  "2761" -> "2762" 
+  "2761" -> "2763" 
+}

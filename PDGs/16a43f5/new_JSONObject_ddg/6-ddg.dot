@@ -1,0 +1,15 @@
+digraph "isEmpty" {  
+"293" [label = <(METHOD,isEmpty)<SUB>87</SUB>> ]
+"303" [label = <(METHOD_RETURN,boolean)<SUB>87</SUB>> ]
+"294" [label = <(PARAM,this)<SUB>87</SUB>> ]
+"296" [label = <(RETURN,return map.isEmpty();,return map.isEmpty();)<SUB>88</SUB>> ]
+"297" [label = <(isEmpty,this.map.isEmpty())<SUB>88</SUB>> ]
+"297" [label = <(isEmpty,this.map.isEmpty())<SUB>88</SUB>> ]
+  "296" -> "303"  [ label = "&lt;RET&gt;"] 
+  "294" -> "303"  [ label = "this"] 
+  "297" -> "303"  [ label = "this.map"] 
+  "297" -> "303"  [ label = "this.map.isEmpty()"] 
+  "293" -> "294" 
+  "297" -> "296"  [ label = "this.map.isEmpty()"] 
+  "294" -> "297"  [ label = "this"] 
+}

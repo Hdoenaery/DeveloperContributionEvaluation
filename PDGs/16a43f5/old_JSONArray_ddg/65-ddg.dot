@@ -1,0 +1,46 @@
+digraph "clone" {  
+"1327" [label = <(METHOD,clone)<SUB>460</SUB>> ]
+"1353" [label = <(METHOD_RETURN,java.lang.Object)<SUB>461</SUB>> ]
+"1328" [label = <(PARAM,this)<SUB>460</SUB>> ]
+"1330" [label = <(RETURN,return new JSONArray(new ArrayList&lt;Object&gt;(list));,return new JSONArray(new ArrayList&lt;Object&gt;(list));)<SUB>462</SUB>> ]
+"1331" [label = <(BLOCK,&lt;empty&gt;,&lt;empty&gt;)<SUB>462</SUB>> ]
+"1333" [label = <(&lt;operator&gt;.assignment,$obj2 = new JSONArray(new ArrayList&lt;Object&gt;(list)))<SUB>462</SUB>> ]
+"1336" [label = <(&lt;init&gt;,new JSONArray(new ArrayList&lt;Object&gt;(list)))<SUB>462</SUB>> ]
+"1349" [label = <(IDENTIFIER,$obj2,&lt;empty&gt;)<SUB>462</SUB>> ]
+"1333" [label = <(&lt;operator&gt;.assignment,$obj2 = new JSONArray(new ArrayList&lt;Object&gt;(list)))<SUB>462</SUB>> ]
+"1333" [label = <(&lt;operator&gt;.assignment,$obj2 = new JSONArray(new ArrayList&lt;Object&gt;(list)))<SUB>462</SUB>> ]
+"1336" [label = <(&lt;init&gt;,new JSONArray(new ArrayList&lt;Object&gt;(list)))<SUB>462</SUB>> ]
+"1336" [label = <(&lt;init&gt;,new JSONArray(new ArrayList&lt;Object&gt;(list)))<SUB>462</SUB>> ]
+"1340" [label = <(&lt;operator&gt;.assignment,$obj3 = new ArrayList&lt;Object&gt;(list))<SUB>462</SUB>> ]
+"1343" [label = <(&lt;init&gt;,new ArrayList&lt;Object&gt;(list))<SUB>462</SUB>> ]
+"1348" [label = <(IDENTIFIER,$obj3,&lt;empty&gt;)<SUB>462</SUB>> ]
+"1340" [label = <(&lt;operator&gt;.assignment,$obj3 = new ArrayList&lt;Object&gt;(list))<SUB>462</SUB>> ]
+"1340" [label = <(&lt;operator&gt;.assignment,$obj3 = new ArrayList&lt;Object&gt;(list))<SUB>462</SUB>> ]
+"1343" [label = <(&lt;init&gt;,new ArrayList&lt;Object&gt;(list))<SUB>462</SUB>> ]
+"1343" [label = <(&lt;init&gt;,new ArrayList&lt;Object&gt;(list))<SUB>462</SUB>> ]
+  "1330" -> "1353"  [ label = "&lt;RET&gt;"] 
+  "1328" -> "1353"  [ label = "this"] 
+  "1333" -> "1353"  [ label = "$obj2 = new JSONArray(new ArrayList&lt;Object&gt;(list))"] 
+  "1336" -> "1353"  [ label = "$obj2"] 
+  "1340" -> "1353"  [ label = "$obj3 = new ArrayList&lt;Object&gt;(list)"] 
+  "1343" -> "1353"  [ label = "$obj3"] 
+  "1343" -> "1353"  [ label = "this.list"] 
+  "1343" -> "1353"  [ label = "new ArrayList&lt;Object&gt;(list)"] 
+  "1336" -> "1353"  [ label = "new JSONArray(new ArrayList&lt;Object&gt;(list))"] 
+  "1327" -> "1328" 
+  "1331" -> "1330" 
+  "1331" -> "1330"  [ label = "&lt;empty&gt;"] 
+  "1327" -> "1330" 
+  "1336" -> "1331"  [ label = "$obj2"] 
+  "1327" -> "1331" 
+  "1327" -> "1333" 
+  "1327" -> "1349" 
+  "1333" -> "1336"  [ label = "$obj2"] 
+  "1327" -> "1336" 
+  "1343" -> "1336"  [ label = "$obj3"] 
+  "1327" -> "1340" 
+  "1327" -> "1348" 
+  "1340" -> "1343"  [ label = "$obj3"] 
+  "1327" -> "1343" 
+  "1328" -> "1343"  [ label = "this"] 
+}

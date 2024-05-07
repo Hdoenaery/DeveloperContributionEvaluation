@@ -1,0 +1,51 @@
+digraph "test_exception" {  
+"9" [label = <(METHOD,test_exception)<SUB>10</SUB>> ]
+"31" [label = <(METHOD_RETURN,void)<SUB>10</SUB>> ]
+"4" [label = <(PARAM,this)<SUB>10</SUB>> ]
+"12" [label = <(&lt;operator&gt;.assignment,IllegalAccessError ex = new IllegalAccessError())<SUB>11</SUB>> ]
+"15" [label = <(&lt;init&gt;,new IllegalAccessError())<SUB>11</SUB>> ]
+"18" [label = <(&lt;operator&gt;.assignment,String text = JSON.toJSONString(ex))<SUB>13</SUB>> ]
+"23" [label = <(assertTrue,assertTrue(JSON.parse(text) instanceof IllegalA...)<SUB>14</SUB>> ]
+"12" [label = <(&lt;operator&gt;.assignment,IllegalAccessError ex = new IllegalAccessError())<SUB>11</SUB>> ]
+"12" [label = <(&lt;operator&gt;.assignment,IllegalAccessError ex = new IllegalAccessError())<SUB>11</SUB>> ]
+"15" [label = <(&lt;init&gt;,new IllegalAccessError())<SUB>11</SUB>> ]
+"18" [label = <(&lt;operator&gt;.assignment,String text = JSON.toJSONString(ex))<SUB>13</SUB>> ]
+"18" [label = <(&lt;operator&gt;.assignment,String text = JSON.toJSONString(ex))<SUB>13</SUB>> ]
+"23" [label = <(assertTrue,assertTrue(JSON.parse(text) instanceof IllegalA...)<SUB>14</SUB>> ]
+"23" [label = <(assertTrue,assertTrue(JSON.parse(text) instanceof IllegalA...)<SUB>14</SUB>> ]
+"20" [label = <(toJSONString,toJSONString(ex))<SUB>13</SUB>> ]
+"20" [label = <(toJSONString,toJSONString(ex))<SUB>13</SUB>> ]
+"24" [label = <(&lt;operator&gt;.instanceOf,JSON.parse(text) instanceof IllegalAccessError)<SUB>14</SUB>> ]
+"24" [label = <(&lt;operator&gt;.instanceOf,JSON.parse(text) instanceof IllegalAccessError)<SUB>14</SUB>> ]
+"25" [label = <(parse,parse(text))<SUB>14</SUB>> ]
+"25" [label = <(parse,parse(text))<SUB>14</SUB>> ]
+  "12" -> "31"  [ label = "IllegalAccessError ex = new IllegalAccessError()"] 
+  "15" -> "31"  [ label = "new IllegalAccessError()"] 
+  "20" -> "31"  [ label = "ex"] 
+  "18" -> "31"  [ label = "toJSONString(ex)"] 
+  "18" -> "31"  [ label = "String text = JSON.toJSONString(ex)"] 
+  "23" -> "31"  [ label = "this"] 
+  "25" -> "31"  [ label = "JSON"] 
+  "25" -> "31"  [ label = "text"] 
+  "24" -> "31"  [ label = "parse(text)"] 
+  "23" -> "31"  [ label = "JSON.parse(text) instanceof IllegalAccessError"] 
+  "23" -> "31"  [ label = "assertTrue(JSON.parse(text) instanceof IllegalAccessError)"] 
+  "9" -> "4" 
+  "9" -> "12" 
+  "20" -> "18"  [ label = "JSON"] 
+  "20" -> "18"  [ label = "ex"] 
+  "12" -> "15"  [ label = "ex"] 
+  "9" -> "15" 
+  "4" -> "23"  [ label = "this"] 
+  "9" -> "23" 
+  "24" -> "23"  [ label = "parse(text)"] 
+  "24" -> "23"  [ label = "IllegalAccessError"] 
+  "9" -> "20" 
+  "15" -> "20"  [ label = "ex"] 
+  "25" -> "24"  [ label = "JSON"] 
+  "25" -> "24"  [ label = "text"] 
+  "9" -> "24" 
+  "20" -> "25"  [ label = "JSON"] 
+  "9" -> "25" 
+  "18" -> "25"  [ label = "text"] 
+}

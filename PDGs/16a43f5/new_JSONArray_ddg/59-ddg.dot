@@ -1,0 +1,33 @@
+digraph "getBigInteger" {  
+"1203" [label = <(METHOD,getBigInteger)<SUB>414</SUB>> ]
+"1216" [label = <(METHOD_RETURN,java.math.BigInteger)<SUB>414</SUB>> ]
+"78" [label = <(PARAM,this)<SUB>414</SUB>> ]
+"1204" [label = <(PARAM,int index)<SUB>414</SUB>> ]
+"1207" [label = <(&lt;operator&gt;.assignment,Object value = get(index))<SUB>415</SUB>> ]
+"1211" [label = <(RETURN,return castToBigInteger(value);,return castToBigInteger(value);)<SUB>417</SUB>> ]
+"1207" [label = <(&lt;operator&gt;.assignment,Object value = get(index))<SUB>415</SUB>> ]
+"1207" [label = <(&lt;operator&gt;.assignment,Object value = get(index))<SUB>415</SUB>> ]
+"1212" [label = <(castToBigInteger,castToBigInteger(value))<SUB>417</SUB>> ]
+"1209" [label = <(get,this.get(index))<SUB>415</SUB>> ]
+"1209" [label = <(get,this.get(index))<SUB>415</SUB>> ]
+"1212" [label = <(castToBigInteger,castToBigInteger(value))<SUB>417</SUB>> ]
+"1212" [label = <(castToBigInteger,castToBigInteger(value))<SUB>417</SUB>> ]
+  "1211" -> "1216"  [ label = "&lt;RET&gt;"] 
+  "1209" -> "1216"  [ label = "index"] 
+  "1207" -> "1216"  [ label = "this.get(index)"] 
+  "1207" -> "1216"  [ label = "Object value = get(index)"] 
+  "1212" -> "1216"  [ label = "this"] 
+  "1212" -> "1216"  [ label = "value"] 
+  "1212" -> "1216"  [ label = "castToBigInteger(value)"] 
+  "1203" -> "78" 
+  "1203" -> "1204" 
+  "1209" -> "1207"  [ label = "this"] 
+  "1209" -> "1207"  [ label = "index"] 
+  "1212" -> "1211"  [ label = "castToBigInteger(value)"] 
+  "78" -> "1209"  [ label = "this"] 
+  "1203" -> "1209" 
+  "1204" -> "1209"  [ label = "index"] 
+  "1209" -> "1212"  [ label = "this"] 
+  "1203" -> "1212" 
+  "1207" -> "1212"  [ label = "value"] 
+}

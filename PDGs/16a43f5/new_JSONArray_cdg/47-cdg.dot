@@ -1,0 +1,7 @@
+digraph "getByteValue" {  
+"989" [label = <(RETURN,return byteVal;,return byteVal;)<SUB>320</SUB>> ]
+"983" [label = <(&lt;operator&gt;.equals,byteVal == null)<SUB>316</SUB>> ]
+"987" [label = <(RETURN,return 0;,return 0;)<SUB>317</SUB>> ]
+  "983" -> "989" 
+  "983" -> "987" 
+}

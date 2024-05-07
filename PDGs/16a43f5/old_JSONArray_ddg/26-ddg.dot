@@ -1,0 +1,12 @@
+digraph "clear" {  
+"533" [label = <(METHOD,clear)<SUB>170</SUB>> ]
+"542" [label = <(METHOD_RETURN,void)<SUB>170</SUB>> ]
+"534" [label = <(PARAM,this)<SUB>170</SUB>> ]
+"536" [label = <(clear,this.list.clear())<SUB>171</SUB>> ]
+"536" [label = <(clear,this.list.clear())<SUB>171</SUB>> ]
+  "534" -> "542"  [ label = "this"] 
+  "536" -> "542"  [ label = "this.list"] 
+  "536" -> "542"  [ label = "this.list.clear()"] 
+  "533" -> "534" 
+  "534" -> "536"  [ label = "this"] 
+}

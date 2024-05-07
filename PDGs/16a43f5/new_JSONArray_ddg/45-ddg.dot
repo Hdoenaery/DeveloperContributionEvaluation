@@ -1,0 +1,47 @@
+digraph "getBooleanValue" {  
+"933" [label = <(METHOD,getBooleanValue)<SUB>296</SUB>> ]
+"954" [label = <(METHOD_RETURN,boolean)<SUB>296</SUB>> ]
+"36" [label = <(PARAM,this)<SUB>296</SUB>> ]
+"934" [label = <(PARAM,int index)<SUB>296</SUB>> ]
+"937" [label = <(&lt;operator&gt;.assignment,Object value = get(index))<SUB>297</SUB>> ]
+"948" [label = <(RETURN,return castToBoolean(value).booleanValue();,return castToBoolean(value).booleanValue();)<SUB>303</SUB>> ]
+"937" [label = <(&lt;operator&gt;.assignment,Object value = get(index))<SUB>297</SUB>> ]
+"937" [label = <(&lt;operator&gt;.assignment,Object value = get(index))<SUB>297</SUB>> ]
+"942" [label = <(&lt;operator&gt;.equals,value == null)<SUB>299</SUB>> ]
+"949" [label = <(booleanValue,castToBoolean(value).booleanValue())<SUB>303</SUB>> ]
+"939" [label = <(get,this.get(index))<SUB>297</SUB>> ]
+"939" [label = <(get,this.get(index))<SUB>297</SUB>> ]
+"942" [label = <(&lt;operator&gt;.equals,value == null)<SUB>299</SUB>> ]
+"942" [label = <(&lt;operator&gt;.equals,value == null)<SUB>299</SUB>> ]
+"946" [label = <(RETURN,return false;,return false;)<SUB>300</SUB>> ]
+"949" [label = <(booleanValue,castToBoolean(value).booleanValue())<SUB>303</SUB>> ]
+"947" [label = <(LITERAL,false,return false;)<SUB>300</SUB>> ]
+"950" [label = <(castToBoolean,castToBoolean(value))<SUB>303</SUB>> ]
+"950" [label = <(castToBoolean,castToBoolean(value))<SUB>303</SUB>> ]
+  "948" -> "954"  [ label = "&lt;RET&gt;"] 
+  "946" -> "954"  [ label = "&lt;RET&gt;"] 
+  "939" -> "954"  [ label = "this"] 
+  "939" -> "954"  [ label = "index"] 
+  "937" -> "954"  [ label = "this.get(index)"] 
+  "937" -> "954"  [ label = "Object value = get(index)"] 
+  "942" -> "954"  [ label = "value"] 
+  "942" -> "954"  [ label = "value == null"] 
+  "933" -> "36" 
+  "933" -> "934" 
+  "939" -> "937"  [ label = "this"] 
+  "939" -> "937"  [ label = "index"] 
+  "949" -> "948"  [ label = "castToBoolean(value).booleanValue()"] 
+  "36" -> "939"  [ label = "this"] 
+  "933" -> "939" 
+  "934" -> "939"  [ label = "index"] 
+  "937" -> "942"  [ label = "value"] 
+  "933" -> "942" 
+  "947" -> "946"  [ label = "false"] 
+  "933" -> "946" 
+  "950" -> "949"  [ label = "this"] 
+  "950" -> "949"  [ label = "value"] 
+  "933" -> "947" 
+  "939" -> "950"  [ label = "this"] 
+  "933" -> "950" 
+  "942" -> "950"  [ label = "value"] 
+}

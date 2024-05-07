@@ -1,0 +1,117 @@
+digraph "test_for_issue" {  
+"113" [label = <(METHOD,test_for_issue)<SUB>44</SUB>> ]
+"160" [label = <(METHOD_RETURN,void)<SUB>44</SUB>> ]
+"40" [label = <(PARAM,this)<SUB>44</SUB>> ]
+"116" [label = <(&lt;operator&gt;.assignment,MockHttpServletRequest mockReq = new MockHttpSe...)<SUB>45</SUB>> ]
+"119" [label = <(&lt;init&gt;,new MockHttpServletRequest())<SUB>45</SUB>> ]
+"122" [label = <(&lt;operator&gt;.assignment,DefaultSavedRequest request = new DefaultSavedR...)<SUB>46</SUB>> ]
+"125" [label = <(&lt;init&gt;,new DefaultSavedRequest(mockReq, new PortResolv...)<SUB>46</SUB>> ]
+"135" [label = <(&lt;operator&gt;.assignment,String str = JSON.toJSONString(request, Seriali...)<SUB>53</SUB>> ]
+"143" [label = <(parseObject,parseObject(str, Object.class, config, Feature....)<SUB>57</SUB>> ]
+"155" [label = <(parseObject,parseObject(str))<SUB>59</SUB>> ]
+"116" [label = <(&lt;operator&gt;.assignment,MockHttpServletRequest mockReq = new MockHttpSe...)<SUB>45</SUB>> ]
+"116" [label = <(&lt;operator&gt;.assignment,MockHttpServletRequest mockReq = new MockHttpSe...)<SUB>45</SUB>> ]
+"119" [label = <(&lt;init&gt;,new MockHttpServletRequest())<SUB>45</SUB>> ]
+"122" [label = <(&lt;operator&gt;.assignment,DefaultSavedRequest request = new DefaultSavedR...)<SUB>46</SUB>> ]
+"122" [label = <(&lt;operator&gt;.assignment,DefaultSavedRequest request = new DefaultSavedR...)<SUB>46</SUB>> ]
+"125" [label = <(&lt;init&gt;,new DefaultSavedRequest(mockReq, new PortResolv...)<SUB>46</SUB>> ]
+"125" [label = <(&lt;init&gt;,new DefaultSavedRequest(mockReq, new PortResolv...)<SUB>46</SUB>> ]
+"125" [label = <(&lt;init&gt;,new DefaultSavedRequest(mockReq, new PortResolv...)<SUB>46</SUB>> ]
+"135" [label = <(&lt;operator&gt;.assignment,String str = JSON.toJSONString(request, Seriali...)<SUB>53</SUB>> ]
+"135" [label = <(&lt;operator&gt;.assignment,String str = JSON.toJSONString(request, Seriali...)<SUB>53</SUB>> ]
+"143" [label = <(parseObject,parseObject(str, Object.class, config, Feature....)<SUB>57</SUB>> ]
+"143" [label = <(parseObject,parseObject(str, Object.class, config, Feature....)<SUB>57</SUB>> ]
+"143" [label = <(parseObject,parseObject(str, Object.class, config, Feature....)<SUB>57</SUB>> ]
+"143" [label = <(parseObject,parseObject(str, Object.class, config, Feature....)<SUB>57</SUB>> ]
+"143" [label = <(parseObject,parseObject(str, Object.class, config, Feature....)<SUB>57</SUB>> ]
+"155" [label = <(parseObject,parseObject(str))<SUB>59</SUB>> ]
+"155" [label = <(parseObject,parseObject(str))<SUB>59</SUB>> ]
+"130" [label = <(&lt;operator&gt;.assignment,$obj0 = new PortResolver() {
+
+    public int ...)<SUB>46</SUB>> ]
+"37" [label = <(&lt;init&gt;,new PortResolver() {
+
+    public int getServe...)<SUB>46</SUB>> ]
+"133" [label = <(IDENTIFIER,$obj0,&lt;empty&gt;)<SUB>46</SUB>> ]
+"137" [label = <(toJSONString,toJSONString(request, SerializerFeature.WriteCl...)<SUB>53</SUB>> ]
+"137" [label = <(toJSONString,toJSONString(request, SerializerFeature.WriteCl...)<SUB>53</SUB>> ]
+"137" [label = <(toJSONString,toJSONString(request, SerializerFeature.WriteCl...)<SUB>53</SUB>> ]
+"130" [label = <(&lt;operator&gt;.assignment,$obj0 = new PortResolver() {
+
+    public int ...)<SUB>46</SUB>> ]
+"130" [label = <(&lt;operator&gt;.assignment,$obj0 = new PortResolver() {
+
+    public int ...)<SUB>46</SUB>> ]
+"37" [label = <(&lt;init&gt;,new PortResolver() {
+
+    public int getServe...)<SUB>46</SUB>> ]
+"37" [label = <(&lt;init&gt;,new PortResolver() {
+
+    public int getServe...)<SUB>46</SUB>> ]
+  "116" -> "160"  [ label = "MockHttpServletRequest mockReq = new MockHttpServletRequest()"] 
+  "119" -> "160"  [ label = "new MockHttpServletRequest()"] 
+  "122" -> "160"  [ label = "DefaultSavedRequest request = new DefaultSavedRequest(mockReq, new PortResolver() {
+
+    public int getServerPort(ServletRequest servletRequest) {
+        return 0;
+    }
+})"] 
+  "125" -> "160"  [ label = "mockReq"] 
+  "130" -> "160"  [ label = "$obj0 = new PortResolver() {
+
+    public int getServerPort(ServletRequest servletRequest) {
+        return 0;
+    }
+}"] 
+  "37" -> "160"  [ label = "$obj0"] 
+  "37" -> "160"  [ label = "this"] 
+  "37" -> "160"  [ label = "new PortResolver() {
+
+    public int getServerPort(ServletRequest servletRequest) {
+        return 0;
+    }
+}"] 
+  "125" -> "160"  [ label = "new DefaultSavedRequest(mockReq, new PortResolver() {
+
+    public int getServerPort(ServletRequest servletRequest) {
+        return 0;
+    }
+})"] 
+  "137" -> "160"  [ label = "request"] 
+  "137" -> "160"  [ label = "SerializerFeature.WriteClassName"] 
+  "135" -> "160"  [ label = "toJSONString(request, SerializerFeature.WriteClassName)"] 
+  "135" -> "160"  [ label = "String str = JSON.toJSONString(request, SerializerFeature.WriteClassName)"] 
+  "143" -> "160"  [ label = "Object.class"] 
+  "143" -> "160"  [ label = "this.config"] 
+  "143" -> "160"  [ label = "Feature.SupportAutoType"] 
+  "143" -> "160"  [ label = "parseObject(str, Object.class, config, Feature.SupportAutoType)"] 
+  "155" -> "160"  [ label = "JSON"] 
+  "155" -> "160"  [ label = "str"] 
+  "155" -> "160"  [ label = "parseObject(str)"] 
+  "113" -> "40" 
+  "113" -> "116" 
+  "113" -> "122" 
+  "137" -> "135"  [ label = "JSON"] 
+  "137" -> "135"  [ label = "request"] 
+  "137" -> "135"  [ label = "SerializerFeature.WriteClassName"] 
+  "116" -> "119"  [ label = "mockReq"] 
+  "113" -> "119" 
+  "122" -> "125"  [ label = "request"] 
+  "113" -> "125" 
+  "119" -> "125"  [ label = "mockReq"] 
+  "37" -> "125"  [ label = "$obj0"] 
+  "137" -> "143"  [ label = "JSON"] 
+  "113" -> "143" 
+  "135" -> "143"  [ label = "str"] 
+  "37" -> "143"  [ label = "this"] 
+  "143" -> "155"  [ label = "JSON"] 
+  "113" -> "155" 
+  "143" -> "155"  [ label = "str"] 
+  "113" -> "130" 
+  "113" -> "133" 
+  "113" -> "137" 
+  "125" -> "137"  [ label = "request"] 
+  "130" -> "37"  [ label = "$obj0"] 
+  "113" -> "37" 
+  "40" -> "37"  [ label = "this"] 
+}

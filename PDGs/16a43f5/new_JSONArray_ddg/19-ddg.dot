@@ -1,0 +1,25 @@
+digraph "fluentAddAll" {  
+"441" [label = <(METHOD,fluentAddAll)<SUB>138</SUB>> ]
+"452" [label = <(METHOD_RETURN,com.alibaba.fastjson.JSONArray)<SUB>138</SUB>> ]
+"12" [label = <(PARAM,this)<SUB>138</SUB>> ]
+"442" [label = <(PARAM,Collection&lt;?&gt; c)<SUB>138</SUB>> ]
+"444" [label = <(addAll,this.list.addAll(c))<SUB>139</SUB>> ]
+"449" [label = <(RETURN,return this;,return this;)<SUB>140</SUB>> ]
+"444" [label = <(addAll,this.list.addAll(c))<SUB>139</SUB>> ]
+"444" [label = <(addAll,this.list.addAll(c))<SUB>139</SUB>> ]
+"11" [label = <(IDENTIFIER,this,return this;)<SUB>140</SUB>> ]
+  "449" -> "452"  [ label = "&lt;RET&gt;"] 
+  "12" -> "452"  [ label = "this"] 
+  "444" -> "452"  [ label = "this.list"] 
+  "444" -> "452"  [ label = "c"] 
+  "444" -> "452"  [ label = "this.list.addAll(c)"] 
+  "441" -> "12" 
+  "441" -> "442" 
+  "11" -> "449"  [ label = "this"] 
+  "12" -> "444"  [ label = "this"] 
+  "442" -> "444"  [ label = "c"] 
+  "441" -> "444" 
+  "12" -> "11"  [ label = "this"] 
+  "444" -> "11"  [ label = "this.list"] 
+  "441" -> "11" 
+}

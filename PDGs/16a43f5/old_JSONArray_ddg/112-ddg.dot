@@ -1,0 +1,13 @@
+digraph "castToBoolean" {  
+"1869" [label = <(METHOD,castToBoolean)> ]
+"1874" [label = <(METHOD_RETURN,ANY)> ]
+"1870" [label = <(PARAM,p0)> ]
+"1871" [label = <(PARAM,p1)> ]
+"1872" [label = <(PARAM,p2)> ]
+  "1870" -> "1874"  [ label = "p0"] 
+  "1871" -> "1874"  [ label = "p1"] 
+  "1872" -> "1874"  [ label = "p2"] 
+  "1869" -> "1870" 
+  "1869" -> "1871" 
+  "1869" -> "1872" 
+}

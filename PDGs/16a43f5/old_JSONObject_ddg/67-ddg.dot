@@ -1,0 +1,7 @@
+digraph "&lt;operator&gt;.alloc" {  
+"2357" [label = <(METHOD,&lt;operator&gt;.alloc)> ]
+"2360" [label = <(METHOD_RETURN,ANY)> ]
+"2358" [label = <(PARAM,p1)> ]
+  "2358" -> "2360"  [ label = "p1"] 
+  "2357" -> "2358" 
+}

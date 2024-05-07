@@ -1,0 +1,33 @@
+digraph "getJSONObject" {  
+"793" [label = <(RETURN,return (JSONObject) toJSON(value);,return (JSONObject) toJSON(value);)<SUB>254</SUB>> ]
+"768" [label = <(&lt;operator&gt;.instanceOf,value instanceof JSONObject)<SUB>246</SUB>> ]
+"777" [label = <(&lt;operator&gt;.instanceOf,value instanceof Map)<SUB>250</SUB>> ]
+"794" [label = <(&lt;operator&gt;.cast,(JSONObject) toJSON(value))<SUB>254</SUB>> ]
+"772" [label = <(RETURN,return (JSONObject) value;,return (JSONObject) value;)<SUB>247</SUB>> ]
+"779" [label = <(TYPE_REF,Map,Map)<SUB>250</SUB>> ]
+"781" [label = <(RETURN,return new JSONObject((Map) value);,return new JSONObject((Map) value);)<SUB>251</SUB>> ]
+"795" [label = <(TYPE_REF,JSONObject,JSONObject)<SUB>254</SUB>> ]
+"796" [label = <(toJSON,toJSON(value))<SUB>254</SUB>> ]
+"773" [label = <(&lt;operator&gt;.cast,(JSONObject) value)<SUB>247</SUB>> ]
+"774" [label = <(TYPE_REF,JSONObject,JSONObject)<SUB>247</SUB>> ]
+"784" [label = <(&lt;operator&gt;.assignment,$obj0 = new JSONObject((Map) value))<SUB>251</SUB>> ]
+"787" [label = <(&lt;init&gt;,new JSONObject((Map) value))<SUB>251</SUB>> ]
+"786" [label = <(&lt;operator&gt;.alloc,new JSONObject((Map) value))<SUB>251</SUB>> ]
+"789" [label = <(&lt;operator&gt;.cast,(Map) value)<SUB>251</SUB>> ]
+"790" [label = <(TYPE_REF,Map,Map)<SUB>251</SUB>> ]
+  "768" -> "774" 
+  "768" -> "772" 
+  "768" -> "779" 
+  "768" -> "777" 
+  "768" -> "773" 
+  "777" -> "793" 
+  "777" -> "789" 
+  "777" -> "786" 
+  "777" -> "790" 
+  "777" -> "784" 
+  "777" -> "795" 
+  "777" -> "787" 
+  "777" -> "794" 
+  "777" -> "781" 
+  "777" -> "796" 
+}

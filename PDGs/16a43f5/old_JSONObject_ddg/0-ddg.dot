@@ -1,0 +1,15 @@
+digraph "&lt;init&gt;" {  
+"300" [label = <(METHOD,&lt;init&gt;)<SUB>56</SUB>> ]
+"304" [label = <(METHOD_RETURN,void)<SUB>58</SUB>> ]
+"192" [label = <(PARAM,this)<SUB>56</SUB>> ]
+"199" [label = <(&lt;init&gt;,this(DEFAULT_INITIAL_CAPACITY, false);)<SUB>57</SUB>> ]
+"199" [label = <(&lt;init&gt;,this(DEFAULT_INITIAL_CAPACITY, false);)<SUB>57</SUB>> ]
+"199" [label = <(&lt;init&gt;,this(DEFAULT_INITIAL_CAPACITY, false);)<SUB>57</SUB>> ]
+"199" [label = <(&lt;init&gt;,this(DEFAULT_INITIAL_CAPACITY, false);)<SUB>57</SUB>> ]
+  "199" -> "304"  [ label = "this"] 
+  "199" -> "304"  [ label = "com.alibaba.fastjson.JSONObject.DEFAULT_INITIAL_CAPACITY"] 
+  "199" -> "304"  [ label = "this(DEFAULT_INITIAL_CAPACITY, false);"] 
+  "300" -> "192" 
+  "192" -> "199"  [ label = "this"] 
+  "300" -> "199" 
+}

@@ -23,30 +23,36 @@ public class Main {
         long startTime = System.currentTimeMillis();
         long lastTime = startTime;
 
-//        // 创建文件输出流
-//        FileOutputStream fileOutputStream = null;
-//        try {
-//            fileOutputStream = new FileOutputStream("DeveloperContributionEvaluation/output.log", true);
-//        } catch (FileNotFoundException e) {
-//            e.printStackTrace();
-//            return;
-//        }
-//        // 创建打印流，指向文件输出流
-//        PrintStream filePrintStream = new PrintStream(fileOutputStream);
-//        // 将System.out重新定向到文件打印流
-//        System.setOut(filePrintStream);
+        // 创建文件输出流
+        FileOutputStream fileOutputStream = null;
+        try {
+            fileOutputStream = new FileOutputStream("DeveloperContributionEvaluation/output.log", true);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            return;
+        }
+        // 创建打印流，指向文件输出流
+        PrintStream filePrintStream = new PrintStream(fileOutputStream);
+        // 将System.out重新定向到文件打印流
+        System.setOut(filePrintStream);
 //----------------------------------------------------------------------------------------------------------------------
 
         Tool tool = new Tool();
-        String gitDirectory = "E:/Postgraduate_study/FlappyBird";
-        String projectName = "FlappyBird";
-        traverseAllCommits(gitDirectory, projectName);
-//        String gitDirectory = "E:/Postgraduate_study/fastjson";
-//        String projectName = "fastjson";
-//        String newCommit = "240edb5c42aa9295bc674c93d25ffe801c13a5c4";
-//        String oldCommit = tool.executeGitCommand(gitDirectory, new String[]{"git", "log", "--format=%H", "--skip=1", "-n", "1", newCommit})replace("\n", "");//获取当前版本的上一个版本
-//        System.out.println(oldCommit);
-//        calculateCommitScore(gitDirectory, projectName, newCommit, oldCommit);
+//        String gitDirectory = "E:/Postgraduate_study/FlappyBird";
+//        String projectName = "FlappyBird";
+//        traverseAllCommits(gitDirectory, projectName);
+        String gitDirectory = "E:/Postgraduate_study/fastjson";
+        String projectName = "fastjson";
+        String[] commits = {"240edb5c42aa9295bc674c93d25ffe801c13a5c4",
+                "679140e0ad6c0bb1cd3b8397f32c5fe55fc7f3b1",
+                "16a43f59be6130dd7d8346401e1575a2f1a2e435",
+                "7abc84fc2c208f148970ca854f2f6a59466e47ae",
+                "19bd016801b2fe99c673479e69bced84ecff83e7"};
+//        String newCommit = "19bd016801b2fe99c673479e69bced84ecff83e7";
+        for(String newCommit:commits) {
+            String oldCommit = tool.executeGitCommand(gitDirectory, new String[]{"git", "log", "--format=%H", "--skip=1", "-n", "1", newCommit}).replace("\n", "");//获取当前版本的上一个版本
+            calculateCommitScore(gitDirectory, projectName, newCommit, oldCommit);
+        }
 
 
 //----------------------------------------------------------------------------------------------------------------------
@@ -61,17 +67,19 @@ public class Main {
 
         System.out.println("程序总运行时间（秒）：" + totalTimeInSeconds);
 
-//        // 关闭文件输出流
-//        try {
-//            fileOutputStream.close();
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
+        // 关闭文件输出流
+        try {
+            fileOutputStream.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public static double calculateCommitScore(String gitDirectory, String projectName, String newCommit, String oldCommit) throws Exception {
         Tool tool = new Tool();
-        System.out.println("\nnowCommitHash = " + newCommit.substring(0, 7));
+        System.out.println("-------------------------------------------------------------------------------------------");
+        System.out.println("\n@@@nowCommitHash = " + newCommit);
+        System.out.println("@@@oldCommitHash = " + oldCommit);
         tool.executeGitCommand(gitDirectory, new String[]{"git", "checkout", newCommit});//切换到当前版本
 
         getEditScriptsBetweenCommits(gitDirectory, newCommit, oldCommit); //获取两个commit之间所有发生更改的.java文件的编辑脚本
@@ -127,7 +135,7 @@ public class Main {
         ComplexityCalculator complexityCalculator = new ComplexityCalculator();
 //            System.out.println("\nMethods is below:");
 
-        complexityCalculator.getChangedMethods_LOC_CC(gitDirectory, oldCommit, newCommit);
+        complexityCalculator.getChangedMethods_LOC_CC_HV_PCom(gitDirectory, oldCommit, newCommit);
         List<String> changedMethods = complexityCalculator.getChangedMethods();
         Map<String, Integer> LOC = complexityCalculator.getLOC();
         Map<String, Integer> CC = complexityCalculator.getCC();
@@ -147,10 +155,10 @@ public class Main {
 //        ------------------------------------------------------------------------------------------------------------------------------------
         DDG ddg = new DDG();
         CDG cdg = new CDG();
-        ddg.getDDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
-                , newCommit);
-        cdg.getCDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
-                , newCommit);
+//        ddg.getDDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
+//                , newCommit);
+//        cdg.getCDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
+//                , newCommit);
 
         Map<String, Double> DDG_impact = new HashMap<>();
         for(String method:changedMethods) {
@@ -181,8 +189,8 @@ public class Main {
             if(!astScore.containsKey(method))
                 astScore.put(method, 0.0);
             System.out.println("astScore = " + astScore.get(method));
-            System.out.println("LOC = " + LOC.get(method) + ", CC = " + CC.get(method) +
-                    ", HV = " + HV.get(method) + ", PCom = " + PCom.get(method) + ", CM = " + CM.get(method));
+            System.out.println("HV = " + HV.get(method) + ", CC = " + CC.get(method) + ", LOC = " + LOC.get(method)
+                    + ", PCom = " + PCom.get(method) + ", CM = " + CM.get(method));
 
             double weight = 0.0;
             if(methodToNodeMap.containsKey(method) && nodeWeight.containsKey(methodToNodeMap.get(method)))

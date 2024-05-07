@@ -1,0 +1,10 @@
+digraph "&lt;operator&gt;.addition" {  
+"2720" [label = <(METHOD,&lt;operator&gt;.addition)> ]
+"2724" [label = <(METHOD_RETURN,ANY)> ]
+"2721" [label = <(PARAM,p1)> ]
+"2722" [label = <(PARAM,p2)> ]
+  "2721" -> "2724"  [ label = "p1"] 
+  "2722" -> "2724"  [ label = "p2"] 
+  "2720" -> "2721" 
+  "2720" -> "2722" 
+}

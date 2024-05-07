@@ -1,0 +1,15 @@
+digraph "size" {  
+"295" [label = <(METHOD,size)<SUB>88</SUB>> ]
+"305" [label = <(METHOD_RETURN,int)<SUB>88</SUB>> ]
+"296" [label = <(PARAM,this)<SUB>88</SUB>> ]
+"298" [label = <(RETURN,return list.size();,return list.size();)<SUB>89</SUB>> ]
+"299" [label = <(size,this.list.size())<SUB>89</SUB>> ]
+"299" [label = <(size,this.list.size())<SUB>89</SUB>> ]
+  "298" -> "305"  [ label = "&lt;RET&gt;"] 
+  "296" -> "305"  [ label = "this"] 
+  "299" -> "305"  [ label = "this.list"] 
+  "299" -> "305"  [ label = "this.list.size()"] 
+  "295" -> "296" 
+  "299" -> "298"  [ label = "this.list.size()"] 
+  "296" -> "299"  [ label = "this"] 
+}

@@ -1,0 +1,11 @@
+digraph "&lt;init&gt;" {  
+"219" [label = <(&lt;operator&gt;.equals,list == null)<SUB>58</SUB>> ]
+"223" [label = <(&lt;operator&gt;.throw,throw new IllegalArgumentException(&quot;list is nul...)<SUB>59</SUB>> ]
+"226" [label = <(&lt;operator&gt;.assignment,$obj4 = new IllegalArgumentException(&quot;list is n...)<SUB>59</SUB>> ]
+"229" [label = <(&lt;init&gt;,new IllegalArgumentException(&quot;list is null.&quot;))<SUB>59</SUB>> ]
+"228" [label = <(&lt;operator&gt;.alloc,new IllegalArgumentException(&quot;list is null.&quot;))<SUB>59</SUB>> ]
+  "219" -> "228" 
+  "219" -> "229" 
+  "219" -> "223" 
+  "219" -> "226" 
+}

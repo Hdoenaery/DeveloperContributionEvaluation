@@ -1,0 +1,21 @@
+digraph "remove" {  
+"1182" [label = <(METHOD,remove)<SUB>384</SUB>> ]
+"1194" [label = <(METHOD_RETURN,java.lang.Object)<SUB>384</SUB>> ]
+"1183" [label = <(PARAM,this)<SUB>384</SUB>> ]
+"1184" [label = <(PARAM,Object key)<SUB>384</SUB>> ]
+"1186" [label = <(RETURN,return map.remove(key);,return map.remove(key);)<SUB>385</SUB>> ]
+"1187" [label = <(remove,this.map.remove(key))<SUB>385</SUB>> ]
+"1187" [label = <(remove,this.map.remove(key))<SUB>385</SUB>> ]
+"1187" [label = <(remove,this.map.remove(key))<SUB>385</SUB>> ]
+  "1186" -> "1194"  [ label = "&lt;RET&gt;"] 
+  "1183" -> "1194"  [ label = "this"] 
+  "1187" -> "1194"  [ label = "this.map"] 
+  "1187" -> "1194"  [ label = "key"] 
+  "1187" -> "1194"  [ label = "this.map.remove(key)"] 
+  "1182" -> "1183" 
+  "1182" -> "1184" 
+  "1187" -> "1186"  [ label = "this.map.remove(key)"] 
+  "1183" -> "1187"  [ label = "this"] 
+  "1184" -> "1187"  [ label = "key"] 
+  "1182" -> "1187" 
+}

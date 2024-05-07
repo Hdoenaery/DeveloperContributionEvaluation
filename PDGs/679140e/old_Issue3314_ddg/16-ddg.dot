@@ -1,0 +1,10 @@
+digraph "flush" {  
+"248" [label = <(METHOD,flush)> ]
+"252" [label = <(METHOD_RETURN,ANY)> ]
+"249" [label = <(PARAM,p0)> ]
+"250" [label = <(PARAM,p1)> ]
+  "249" -> "252"  [ label = "p0"] 
+  "250" -> "252"  [ label = "p1"] 
+  "248" -> "249" 
+  "248" -> "250" 
+}

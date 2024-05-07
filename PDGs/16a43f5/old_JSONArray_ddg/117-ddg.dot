@@ -1,0 +1,13 @@
+digraph "castToLong" {  
+"1898" [label = <(METHOD,castToLong)> ]
+"1903" [label = <(METHOD_RETURN,ANY)> ]
+"1899" [label = <(PARAM,p0)> ]
+"1900" [label = <(PARAM,p1)> ]
+"1901" [label = <(PARAM,p2)> ]
+  "1899" -> "1903"  [ label = "p0"] 
+  "1900" -> "1903"  [ label = "p1"] 
+  "1901" -> "1903"  [ label = "p2"] 
+  "1898" -> "1899" 
+  "1898" -> "1900" 
+  "1898" -> "1901" 
+}

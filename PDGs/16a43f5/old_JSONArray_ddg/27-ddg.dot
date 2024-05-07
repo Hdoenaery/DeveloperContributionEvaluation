@@ -1,0 +1,19 @@
+digraph "fluentClear" {  
+"543" [label = <(METHOD,fluentClear)<SUB>174</SUB>> ]
+"552" [label = <(METHOD_RETURN,com.alibaba.fastjson.JSONArray)<SUB>174</SUB>> ]
+"20" [label = <(PARAM,this)<SUB>174</SUB>> ]
+"545" [label = <(clear,this.list.clear())<SUB>175</SUB>> ]
+"549" [label = <(RETURN,return this;,return this;)<SUB>176</SUB>> ]
+"545" [label = <(clear,this.list.clear())<SUB>175</SUB>> ]
+"19" [label = <(IDENTIFIER,this,return this;)<SUB>176</SUB>> ]
+  "549" -> "552"  [ label = "&lt;RET&gt;"] 
+  "20" -> "552"  [ label = "this"] 
+  "545" -> "552"  [ label = "this.list"] 
+  "545" -> "552"  [ label = "this.list.clear()"] 
+  "543" -> "20" 
+  "19" -> "549"  [ label = "this"] 
+  "20" -> "545"  [ label = "this"] 
+  "20" -> "19"  [ label = "this"] 
+  "545" -> "19"  [ label = "this.list"] 
+  "543" -> "19" 
+}

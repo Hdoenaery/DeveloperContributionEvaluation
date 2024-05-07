@@ -1,0 +1,33 @@
+digraph "getInteger" {  
+"1034" [label = <(METHOD,getInteger)<SUB>340</SUB>> ]
+"1047" [label = <(METHOD_RETURN,java.lang.Integer)<SUB>340</SUB>> ]
+"51" [label = <(PARAM,this)<SUB>340</SUB>> ]
+"1035" [label = <(PARAM,int index)<SUB>340</SUB>> ]
+"1038" [label = <(&lt;operator&gt;.assignment,Object value = get(index))<SUB>341</SUB>> ]
+"1042" [label = <(RETURN,return castToInt(value);,return castToInt(value);)<SUB>343</SUB>> ]
+"1038" [label = <(&lt;operator&gt;.assignment,Object value = get(index))<SUB>341</SUB>> ]
+"1038" [label = <(&lt;operator&gt;.assignment,Object value = get(index))<SUB>341</SUB>> ]
+"1043" [label = <(castToInt,castToInt(value))<SUB>343</SUB>> ]
+"1040" [label = <(get,this.get(index))<SUB>341</SUB>> ]
+"1040" [label = <(get,this.get(index))<SUB>341</SUB>> ]
+"1043" [label = <(castToInt,castToInt(value))<SUB>343</SUB>> ]
+"1043" [label = <(castToInt,castToInt(value))<SUB>343</SUB>> ]
+  "1042" -> "1047"  [ label = "&lt;RET&gt;"] 
+  "1040" -> "1047"  [ label = "index"] 
+  "1038" -> "1047"  [ label = "this.get(index)"] 
+  "1038" -> "1047"  [ label = "Object value = get(index)"] 
+  "1043" -> "1047"  [ label = "this"] 
+  "1043" -> "1047"  [ label = "value"] 
+  "1043" -> "1047"  [ label = "castToInt(value)"] 
+  "1034" -> "51" 
+  "1034" -> "1035" 
+  "1040" -> "1038"  [ label = "this"] 
+  "1040" -> "1038"  [ label = "index"] 
+  "1043" -> "1042"  [ label = "castToInt(value)"] 
+  "51" -> "1040"  [ label = "this"] 
+  "1034" -> "1040" 
+  "1035" -> "1040"  [ label = "index"] 
+  "1040" -> "1043"  [ label = "this"] 
+  "1034" -> "1043" 
+  "1038" -> "1043"  [ label = "value"] 
+}

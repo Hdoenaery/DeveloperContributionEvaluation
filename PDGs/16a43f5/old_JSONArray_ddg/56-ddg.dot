@@ -1,0 +1,33 @@
+digraph "getDouble" {  
+"1151" [label = <(METHOD,getDouble)<SUB>391</SUB>> ]
+"1164" [label = <(METHOD_RETURN,java.lang.Double)<SUB>391</SUB>> ]
+"69" [label = <(PARAM,this)<SUB>391</SUB>> ]
+"1152" [label = <(PARAM,int index)<SUB>391</SUB>> ]
+"1155" [label = <(&lt;operator&gt;.assignment,Object value = get(index))<SUB>392</SUB>> ]
+"1159" [label = <(RETURN,return castToDouble(value);,return castToDouble(value);)<SUB>394</SUB>> ]
+"1155" [label = <(&lt;operator&gt;.assignment,Object value = get(index))<SUB>392</SUB>> ]
+"1155" [label = <(&lt;operator&gt;.assignment,Object value = get(index))<SUB>392</SUB>> ]
+"1160" [label = <(castToDouble,castToDouble(value))<SUB>394</SUB>> ]
+"1157" [label = <(get,this.get(index))<SUB>392</SUB>> ]
+"1157" [label = <(get,this.get(index))<SUB>392</SUB>> ]
+"1160" [label = <(castToDouble,castToDouble(value))<SUB>394</SUB>> ]
+"1160" [label = <(castToDouble,castToDouble(value))<SUB>394</SUB>> ]
+  "1159" -> "1164"  [ label = "&lt;RET&gt;"] 
+  "1157" -> "1164"  [ label = "index"] 
+  "1155" -> "1164"  [ label = "this.get(index)"] 
+  "1155" -> "1164"  [ label = "Object value = get(index)"] 
+  "1160" -> "1164"  [ label = "this"] 
+  "1160" -> "1164"  [ label = "value"] 
+  "1160" -> "1164"  [ label = "castToDouble(value)"] 
+  "1151" -> "69" 
+  "1151" -> "1152" 
+  "1157" -> "1155"  [ label = "this"] 
+  "1157" -> "1155"  [ label = "index"] 
+  "1160" -> "1159"  [ label = "castToDouble(value)"] 
+  "69" -> "1157"  [ label = "this"] 
+  "1151" -> "1157" 
+  "1152" -> "1157"  [ label = "index"] 
+  "1157" -> "1160"  [ label = "this"] 
+  "1151" -> "1160" 
+  "1155" -> "1160"  [ label = "value"] 
+}

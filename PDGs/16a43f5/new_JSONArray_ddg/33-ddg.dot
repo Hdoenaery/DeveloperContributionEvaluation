@@ -1,0 +1,25 @@
+digraph "fluentRemove" {  
+"666" [label = <(METHOD,fluentRemove)<SUB>214</SUB>> ]
+"677" [label = <(METHOD_RETURN,com.alibaba.fastjson.JSONArray)<SUB>214</SUB>> ]
+"27" [label = <(PARAM,this)<SUB>214</SUB>> ]
+"667" [label = <(PARAM,int index)<SUB>214</SUB>> ]
+"669" [label = <(remove,this.list.remove(index))<SUB>215</SUB>> ]
+"674" [label = <(RETURN,return this;,return this;)<SUB>216</SUB>> ]
+"669" [label = <(remove,this.list.remove(index))<SUB>215</SUB>> ]
+"669" [label = <(remove,this.list.remove(index))<SUB>215</SUB>> ]
+"26" [label = <(IDENTIFIER,this,return this;)<SUB>216</SUB>> ]
+  "674" -> "677"  [ label = "&lt;RET&gt;"] 
+  "27" -> "677"  [ label = "this"] 
+  "669" -> "677"  [ label = "this.list"] 
+  "669" -> "677"  [ label = "index"] 
+  "669" -> "677"  [ label = "this.list.remove(index)"] 
+  "666" -> "27" 
+  "666" -> "667" 
+  "26" -> "674"  [ label = "this"] 
+  "27" -> "669"  [ label = "this"] 
+  "667" -> "669"  [ label = "index"] 
+  "666" -> "669" 
+  "27" -> "26"  [ label = "this"] 
+  "669" -> "26"  [ label = "this.list"] 
+  "666" -> "26" 
+}

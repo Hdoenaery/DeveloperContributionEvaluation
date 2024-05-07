@@ -1,0 +1,33 @@
+digraph "equals" {  
+"1307" [label = <(RETURN,return this.map.equals(obj);,return this.map.equals(obj);)<SUB>423</SUB>> ]
+"1288" [label = <(&lt;operator&gt;.equals,this == obj)<SUB>415</SUB>> ]
+"1294" [label = <(&lt;operator&gt;.instanceOf,obj instanceof JSONObject)<SUB>419</SUB>> ]
+"1308" [label = <(equals,this.map.equals(obj))<SUB>423</SUB>> ]
+"1291" [label = <(RETURN,return true;,return true;)<SUB>416</SUB>> ]
+"1296" [label = <(TYPE_REF,JSONObject,JSONObject)<SUB>419</SUB>> ]
+"1298" [label = <(RETURN,return this.map.equals(((JSONObject) obj).map);,return this.map.equals(((JSONObject) obj).map);)<SUB>420</SUB>> ]
+"1309" [label = <(&lt;operator&gt;.fieldAccess,this.map)<SUB>423</SUB>> ]
+"1299" [label = <(equals,this.map.equals(((JSONObject) obj).map))<SUB>420</SUB>> ]
+"1310" [label = <(FIELD_IDENTIFIER,map,map)<SUB>423</SUB>> ]
+"1300" [label = <(&lt;operator&gt;.fieldAccess,this.map)<SUB>420</SUB>> ]
+"1302" [label = <(&lt;operator&gt;.fieldAccess,((JSONObject) obj).map)<SUB>420</SUB>> ]
+"1301" [label = <(FIELD_IDENTIFIER,map,map)<SUB>420</SUB>> ]
+"1303" [label = <(&lt;operator&gt;.cast,(JSONObject) obj)<SUB>420</SUB>> ]
+"1306" [label = <(FIELD_IDENTIFIER,map,map)<SUB>420</SUB>> ]
+"1304" [label = <(TYPE_REF,JSONObject,JSONObject)<SUB>420</SUB>> ]
+  "1288" -> "1296" 
+  "1288" -> "1294" 
+  "1288" -> "1291" 
+  "1294" -> "1300" 
+  "1294" -> "1310" 
+  "1294" -> "1302" 
+  "1294" -> "1301" 
+  "1294" -> "1298" 
+  "1294" -> "1309" 
+  "1294" -> "1307" 
+  "1294" -> "1299" 
+  "1294" -> "1303" 
+  "1294" -> "1308" 
+  "1294" -> "1306" 
+  "1294" -> "1304" 
+}

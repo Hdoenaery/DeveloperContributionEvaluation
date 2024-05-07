@@ -1,0 +1,24 @@
+digraph "&lt;init&gt;" {  
+"241" [label = <(METHOD,&lt;init&gt;)<SUB>64</SUB>> ]
+"255" [label = <(METHOD_RETURN,void)<SUB>66</SUB>> ]
+"106" [label = <(PARAM,this)<SUB>64</SUB>> ]
+"242" [label = <(PARAM,int initialCapacity)<SUB>64</SUB>> ]
+"244" [label = <(&lt;operator&gt;.assignment,this.list = new ArrayList&lt;Object&gt;(initialCapacity))<SUB>65</SUB>> ]
+"248" [label = <(&lt;init&gt;,new ArrayList&lt;Object&gt;(initialCapacity))<SUB>65</SUB>> ]
+"244" [label = <(&lt;operator&gt;.assignment,this.list = new ArrayList&lt;Object&gt;(initialCapacity))<SUB>65</SUB>> ]
+"244" [label = <(&lt;operator&gt;.assignment,this.list = new ArrayList&lt;Object&gt;(initialCapacity))<SUB>65</SUB>> ]
+"248" [label = <(&lt;init&gt;,new ArrayList&lt;Object&gt;(initialCapacity))<SUB>65</SUB>> ]
+"248" [label = <(&lt;init&gt;,new ArrayList&lt;Object&gt;(initialCapacity))<SUB>65</SUB>> ]
+  "106" -> "255"  [ label = "this"] 
+  "244" -> "255"  [ label = "this.list = new ArrayList&lt;Object&gt;(initialCapacity)"] 
+  "248" -> "255"  [ label = "this.list"] 
+  "248" -> "255"  [ label = "initialCapacity"] 
+  "248" -> "255"  [ label = "new ArrayList&lt;Object&gt;(initialCapacity)"] 
+  "241" -> "106" 
+  "241" -> "242" 
+  "241" -> "244" 
+  "106" -> "248"  [ label = "this"] 
+  "244" -> "248"  [ label = "this.list"] 
+  "242" -> "248"  [ label = "initialCapacity"] 
+  "241" -> "248" 
+}

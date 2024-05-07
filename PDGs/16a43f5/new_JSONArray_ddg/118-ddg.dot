@@ -1,0 +1,13 @@
+digraph "castToDouble" {  
+"1825" [label = <(METHOD,castToDouble)> ]
+"1830" [label = <(METHOD_RETURN,ANY)> ]
+"1826" [label = <(PARAM,p0)> ]
+"1827" [label = <(PARAM,p1)> ]
+"1828" [label = <(PARAM,p2)> ]
+  "1826" -> "1830"  [ label = "p0"] 
+  "1827" -> "1830"  [ label = "p1"] 
+  "1828" -> "1830"  [ label = "p2"] 
+  "1825" -> "1826" 
+  "1825" -> "1827" 
+  "1825" -> "1828" 
+}

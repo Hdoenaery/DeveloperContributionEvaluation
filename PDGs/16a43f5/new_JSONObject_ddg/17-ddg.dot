@@ -1,0 +1,44 @@
+digraph "getBytes" {  
+"640" [label = <(METHOD,getBytes)<SUB>194</SUB>> ]
+"660" [label = <(METHOD_RETURN,byte[])<SUB>194</SUB>> ]
+"13" [label = <(PARAM,this)<SUB>194</SUB>> ]
+"641" [label = <(PARAM,String key)<SUB>194</SUB>> ]
+"644" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>195</SUB>> ]
+"655" [label = <(RETURN,return castToBytes(value);,return castToBytes(value);)<SUB>201</SUB>> ]
+"644" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>195</SUB>> ]
+"644" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>195</SUB>> ]
+"649" [label = <(&lt;operator&gt;.equals,value == null)<SUB>197</SUB>> ]
+"656" [label = <(castToBytes,castToBytes(value))<SUB>201</SUB>> ]
+"646" [label = <(get,this.get(key))<SUB>195</SUB>> ]
+"646" [label = <(get,this.get(key))<SUB>195</SUB>> ]
+"649" [label = <(&lt;operator&gt;.equals,value == null)<SUB>197</SUB>> ]
+"649" [label = <(&lt;operator&gt;.equals,value == null)<SUB>197</SUB>> ]
+"653" [label = <(RETURN,return null;,return null;)<SUB>198</SUB>> ]
+"656" [label = <(castToBytes,castToBytes(value))<SUB>201</SUB>> ]
+"656" [label = <(castToBytes,castToBytes(value))<SUB>201</SUB>> ]
+"654" [label = <(LITERAL,null,return null;)<SUB>198</SUB>> ]
+  "653" -> "660"  [ label = "&lt;RET&gt;"] 
+  "655" -> "660"  [ label = "&lt;RET&gt;"] 
+  "646" -> "660"  [ label = "this"] 
+  "646" -> "660"  [ label = "key"] 
+  "644" -> "660"  [ label = "this.get(key)"] 
+  "644" -> "660"  [ label = "Object value = get(key)"] 
+  "649" -> "660"  [ label = "value"] 
+  "649" -> "660"  [ label = "value == null"] 
+  "640" -> "13" 
+  "640" -> "641" 
+  "646" -> "644"  [ label = "this"] 
+  "646" -> "644"  [ label = "key"] 
+  "656" -> "655"  [ label = "castToBytes(value)"] 
+  "13" -> "646"  [ label = "this"] 
+  "640" -> "646" 
+  "641" -> "646"  [ label = "key"] 
+  "644" -> "649"  [ label = "value"] 
+  "640" -> "649" 
+  "654" -> "653"  [ label = "null"] 
+  "640" -> "653" 
+  "646" -> "656"  [ label = "this"] 
+  "640" -> "656" 
+  "649" -> "656"  [ label = "value"] 
+  "640" -> "654" 
+}

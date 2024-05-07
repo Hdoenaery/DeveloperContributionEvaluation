@@ -1,0 +1,13 @@
+digraph "remove" {  
+"2618" [label = <(METHOD,remove)> ]
+"2623" [label = <(METHOD_RETURN,ANY)> ]
+"2619" [label = <(PARAM,p0)> ]
+"2620" [label = <(PARAM,p1)> ]
+"2621" [label = <(PARAM,p2)> ]
+  "2619" -> "2623"  [ label = "p0"] 
+  "2620" -> "2623"  [ label = "p1"] 
+  "2621" -> "2623"  [ label = "p2"] 
+  "2618" -> "2619" 
+  "2618" -> "2620" 
+  "2618" -> "2621" 
+}

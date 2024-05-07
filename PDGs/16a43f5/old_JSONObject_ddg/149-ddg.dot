@@ -1,0 +1,10 @@
+digraph "getDeclaredFields" {  
+"2802" [label = <(METHOD,getDeclaredFields)> ]
+"2806" [label = <(METHOD_RETURN,ANY)> ]
+"2803" [label = <(PARAM,p0)> ]
+"2804" [label = <(PARAM,p1)> ]
+  "2803" -> "2806"  [ label = "p0"] 
+  "2804" -> "2806"  [ label = "p1"] 
+  "2802" -> "2803" 
+  "2802" -> "2804" 
+}

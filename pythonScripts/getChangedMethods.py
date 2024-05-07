@@ -3,6 +3,7 @@ import os
 import re
 import sys
 
+
 from pydriller import Repository
 
 java_keywords = [
@@ -19,11 +20,47 @@ java_keywords = [
 def is_java_keyword(string):
     return string in java_keywords
 
+def find_method_interval(lines, method_name):
+    """
+    在 Java 代码中查找方法的起始行和结束行。
+    """
+    # 方法定义的正则表达式模式
+    method_pattern = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+(?:\w+\s+)*' + re.escape(
+        method_name) + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*{'
+    method_regex = re.compile(method_pattern)
+    # lines = extracted_code.split('\n')
+    start_line = None
+    end_line = None
+    in_method = False
+    bracket_cnt = 0
+    for i, line in enumerate(lines):
+        # 搜索方法定义
+        if method_regex.search(line):
+            start_line = i + 1
+            in_method = True
+            # print(f"start_line = {start_line}")
+        if in_method:
+            # 处理方法内部的代码行
+            if '{' in line:
+                # 增加括号计数器
+                bracket_cnt += line.count('{')
+            if '}' in line:
+                # 减少括号计数器
+                bracket_cnt -= line.count('}')
+                if bracket_cnt > 0:
+                    # 如果计数器仍大于0，继续搜索方法的结束
+                    continue
+                else:
+                    # 如果计数器为0，表示找到了方法的结束
+                    end_line = i + 1
+                    break
+
+    return start_line, end_line
 
 def getChangedMethods(repo_path, old_commit, new_commit):
     changed_methods = set()
     LOC = {}  # 代码行数
-    CC = {}  # 圈复杂度
+    # CC = {}  # 圈复杂度
     Halstead_Volume = {}  # 代码容量
     PCom = {}  # 注释百分比
 
@@ -33,6 +70,7 @@ def getChangedMethods(repo_path, old_commit, new_commit):
             if modified_file.new_path == None:
                 continue
             if modified_file.new_path.endswith('.java'):
+                # print(modified_file.new_path)
                 for method in modified_file.changed_methods:
                     # print(method.name)
                     # 过滤误报内容，pydriller工具可能会把一个for循环识别为一个方法
@@ -41,15 +79,29 @@ def getChangedMethods(repo_path, old_commit, new_commit):
 
                     # 将发生变化的方法名称添加到集合中
                     changed_methods.add(method)
-                    # 获取方法行数和圈复杂度
-                    LOC[method.long_name] = method.nloc
-                    CC[method.long_name] = method.complexity
+                    # # 获取方法行数和圈复杂度
+                    # LOC[method.long_name] = method.nloc
+                    # CC[method.long_name] = method.complexity
 
                     # 提取该方法内容
-                    lines = modified_file.source_code.split('\n')
-                    extracted_code = '\n'.join(
-                        lines[method.start_line - 1:method.end_line])  # 将start_line和end_line之间的列表用换行符连接成一个字符串
+                    old_lines = modified_file.source_code_before.split('\n')
+                    new_lines = modified_file.source_code.split('\n')
+                    start_line, end_line = find_method_interval(old_lines, method.name.split("::")[1])
+                    extracted_code = ""
+                    if start_line == None or end_line == None:
+                        start_line, end_line = find_method_interval(new_lines, method.name.split("::")[1])
+                        extracted_code = '\n'.join(
+                            new_lines[start_line - 1:end_line])  # 将start_line和end_line之间的列表用换行符连接成一个字符串
+                    else:
+                        extracted_code = '\n'.join(
+                            old_lines[start_line - 1:end_line])  # 将start_line和end_line之间的列表用换行符连接成一个字符串
+
+                    # print(f"start = {start_line} , end = {end_line}");
+
                     # print(extracted_code)
+                    # 获取方法行数和圈复杂度
+                    LOC[method.long_name] = calculate_method_loc(extracted_code)
+                    # CC[method.long_name] = method.complexity
 
                     # 计算该方法的代码容量
                     Halstead_Volume[method.long_name] = calculate_method_halstead_volume(extracted_code)
@@ -59,25 +111,37 @@ def getChangedMethods(repo_path, old_commit, new_commit):
 
                     # 将该方法内容保存到本地
                     file_path = 'DeveloperContributionEvaluation/changedMethodsContent/' + old_commit[0:7] + \
-                                '_to_' + new_commit[0:7] + '/' + str(method.name.replace("::", "_")) + '_new.java'
-                    # 如果有方法重载，则会出现方法名重复，需要将方法参数也带上
-                    if os.path.exists(file_path):
-                        # 文件名中不允许出现的特殊字符
-                        forbidden_chars = '/\\?*:|"<>'
-
-                        # 删除不允许出现在文件名中的字符
-                        file_path = 'DeveloperContributionEvaluation/changedMethodsContent/' + old_commit[0:7] + \
-                                    '_to_' + new_commit[0:7] + '/' + str(''.join(
-                            c for c in method.long_name.replace("::", "_") if c not in forbidden_chars)) + '_new.java'
+                                '_to_' + new_commit[0:7] + '/' + str(method.name.replace("::", "#")) + '_new.java'
+                    # # 如果有方法重载，则会出现方法名重复，需要将方法参数也带上
+                    # if os.path.exists(file_path):
+                    #     # 文件名中不允许出现的特殊字符
+                    #     forbidden_chars = '/\\?*:|"<>'
+                    # 
+                    #     # 删除不允许出现在文件名中的字符
+                    #     file_path = 'DeveloperContributionEvaluation/changedMethodsContent/' + old_commit[0:7] + \
+                    #                 '_to_' + new_commit[0:7] + '/' + str(''.join(
+                    #         c for c in method.long_name.replace("::", "#") if c not in forbidden_chars)) + '_new.java'
 
                     save_to_file(extracted_code, file_path)
 
-    return changed_methods, LOC, CC, Halstead_Volume, PCom
+    # return changed_methods, LOC, CC, Halstead_Volume, PCom
+    return changed_methods, LOC, Halstead_Volume, PCom
 
+# 计算代码行数
+def calculate_method_loc(file_content):
+    loc = 0;
+    lines = file_content.split("\n")
+    for line in lines:
+        # print(line)
+        if(line.strip() == ""):
+            continue
+        loc += 1
+    return loc-2
 
 # 计算代码注释百分比（若字符串内部出现"//"或"/**/"会被误识别为注释，但考虑到一般很少有这种情况）
 def calculate_percentage_of_comments(file_content):
     lines = file_content.split('\n')
+    lines = lines[1:-1]
     total_lines = len([line for line in lines if line.strip() != ''])  # 忽略空行
     # comment_lines = len(re.findall(r'//.*?(?=\n)|/\*.*?\*/|//.*', file_content))  #多行注释无法识别
     comment_lines = 0
@@ -151,31 +215,32 @@ def save_to_file(code, file_path):
 if __name__ == "__main__":
     # 从命令行参数中获取 Git 项目路径、旧提交和新提交
     repo_path, old_commit, new_commit = sys.argv[1], sys.argv[2], sys.argv[3]
-    changedMethods, LOC, CC, Halstead_Volume, PCom = getChangedMethods(repo_path, old_commit, new_commit)
+    # changedMethods, LOC, CC, Halstead_Volume, PCom = getChangedMethods(repo_path, old_commit, new_commit)
+    changedMethods, LOC, Halstead_Volume, PCom = getChangedMethods(repo_path, old_commit, new_commit)
 
     for method in changedMethods:
         print(method.name)
         print(LOC[method.long_name])
-        print(CC[method.long_name])
+        # print(CC[method.long_name])
         print(Halstead_Volume[method.long_name])
         print(PCom[method.long_name])
 
-# repo_path = 'E:/Postgraduate_study/FlappyBird'
-# old_commit = 'd7b64a56e687ca6e3a3b295342fe07f0fdcb87a2'
-# new_commit = '5e5ba4bf131b5998c33474ebe34ac7e9d86187ad'
-# old_commit = "e2cb276d982a199bae9d8ab5dce196f2aeb18936"
-# new_commit = "2968bb8ebc7d9c606595625e26b83d1aae14e968"
+# repo_path = 'E:/Postgraduate_study/fastjson'
 #
-# changedMethods, LOC, CC, Halstead_Volume, PCom = getChangedMethods(repo_path, old_commit, new_commit)
+# old_commit = "7abc84fc2c208f148970ca854f2f6a59466e47ae"
+# new_commit = "16a43f59be6130dd7d8346401e1575a2f1a2e435"
+#
+# # changedMethods, LOC, CC, Halstead_Volume, PCom = getChangedMethods(repo_path, old_commit, new_commit)
+# changedMethods, LOC, Halstead_Volume, PCom = getChangedMethods(repo_path, old_commit, new_commit)
 #
 # for method in changedMethods:
-#     print(method.long_name)
+#     print(method.name)
 #     print(LOC[method.long_name])
-#     print(CC[method.long_name])
+#     # print(CC[method.long_name])
 #     print(Halstead_Volume[method.long_name])
 #     print(PCom[method.long_name])
-
-
+#
+#
 # java_code = """
 # // 这是单行注释
 # public class Example {

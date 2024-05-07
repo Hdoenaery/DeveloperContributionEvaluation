@@ -1,12 +1,14 @@
 package com.zxc;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import com.github.javaparser.JavaParser;
+import com.github.javaparser.ParseException;
+import com.github.javaparser.ParseResult;
+import com.github.javaparser.ast.CompilationUnit;
+import com.github.javaparser.ast.body.MethodDeclaration;
+import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
+
+import java.io.*;
+import java.util.*;
 
 public class ComplexityCalculator {
     private List<String> changedMethods;
@@ -55,7 +57,7 @@ public class ComplexityCalculator {
     }
 
     //获取两次commit之间发生变化的方法，以及这些方法的代码行数LOC和圈复杂度CC，并存入私有变量中
-    public void getChangedMethods_LOC_CC(String gitDirectory, String oldCommit, String newCommit) {
+    public void getChangedMethods_LOC_CC_HV_PCom(String gitDirectory, String oldCommit, String newCommit) {
         List<String> changedMethods = new ArrayList<>();
         Map<String, Integer> LOC = new HashMap<>();
         Map<String, Integer> CC = new HashMap<>();
@@ -78,14 +80,14 @@ public class ComplexityCalculator {
             String methodName = new String();
             while ((line = reader.readLine()) != null) {
                 cnt++;
-                if(cnt % 5 == 1) {
+                if(cnt % 4 == 1) {
                     changedMethods.add(line);
                     methodName = line;
-                } else if(cnt % 5 == 2) {
+                } else if(cnt % 4 == 2) {
                     LOC.put(methodName, Integer.parseInt(line));
-                } else if(cnt % 5 == 3){
-                    CC.put(methodName, Integer.parseInt(line));
-                } else if(cnt % 5 == 4){
+//                } else if(cnt % 5 == 3){
+//                    CC.put(methodName, Integer.parseInt(line));
+                } else if(cnt % 4 == 3){
                     HV.put(methodName, Double.parseDouble(line));
                 } else {
                     PCom.put(methodName, Double.parseDouble(line));
@@ -98,6 +100,22 @@ public class ComplexityCalculator {
             if (exitCode != 0) {
                 System.err.println("Python process exited with error code " + exitCode);
             }
+
+            String directoryPath = "DeveloperContributionEvaluation/changedMethodsContent/" + oldCommit.substring(0, 7) +
+                    "_to_" + newCommit.substring(0, 7) + "/";
+            File directory = new File(directoryPath);
+            File[] files = directory.listFiles();
+
+            if (files != null) {
+                for (File file : files) {
+                    methodName = file.getName().replace("#", "::").replace("_new.java", "");
+//                    System.out.println(methodName);
+                    // 则调用 calculateCC 函数
+                    int complexity = calculateCC(file.getAbsolutePath());
+                    CC.put(methodName, complexity);
+//                    System.out.println("File: " + file.getName() + ", Cyclomatic Complexity: " + complexity);
+                }
+            }
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
@@ -106,5 +124,38 @@ public class ComplexityCalculator {
         this.setCC(CC);
         this.setHV(HV);
         this.setPCom(PCom);
+    }
+
+    public static int calculateCC(String filePath) {
+        try (FileInputStream fileInputStream = new FileInputStream(filePath)) {
+            JavaParser javaParser = new JavaParser();
+            ParseResult<CompilationUnit> result = javaParser.parse(fileInputStream);
+            CompilationUnit cu = result.getResult().orElseThrow(() -> new ParseException("Unable to parse file"));
+
+            ComplexityCalculator.CyclomaticComplexityVisitor visitor = new ComplexityCalculator.CyclomaticComplexityVisitor();
+            visitor.visit(cu, null);
+
+            int complexity = visitor.getCyclomaticComplexity();
+//            System.out.println("Cyclomatic Complexity: " + complexity);
+            return complexity;
+        } catch (ParseException | IOException e) {
+            e.printStackTrace();
+        }
+        return 0;
+    }
+    static class CyclomaticComplexityVisitor extends VoidVisitorAdapter<Void> {
+        private int complexity = 1;
+
+        @Override
+        public void visit(MethodDeclaration md, Void arg) {
+            super.visit(md, arg);
+            Set<Integer> linesOfCode = new HashSet<>();
+            md.getBody().ifPresent(body -> body.getStatements().forEach(statement -> linesOfCode.add(statement.getBegin().get().line)));
+            complexity += linesOfCode.size();
+        }
+
+        public int getCyclomaticComplexity() {
+            return complexity;
+        }
     }
 }

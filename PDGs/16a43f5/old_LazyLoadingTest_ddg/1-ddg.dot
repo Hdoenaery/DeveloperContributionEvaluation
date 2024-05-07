@@ -1,0 +1,19 @@
+digraph "tearDown" {  
+"25" [label = <(METHOD,tearDown)<SUB>25</SUB>> ]
+"41" [label = <(METHOD_RETURN,void)<SUB>25</SUB>> ]
+"26" [label = <(PARAM,this)<SUB>25</SUB>> ]
+"29" [label = <(&lt;operator&gt;.notEquals,emf != null)<SUB>26</SUB>> ]
+"29" [label = <(&lt;operator&gt;.notEquals,emf != null)<SUB>26</SUB>> ]
+"29" [label = <(&lt;operator&gt;.notEquals,emf != null)<SUB>26</SUB>> ]
+"35" [label = <(close,this.emf.close())<SUB>27</SUB>> ]
+"35" [label = <(close,this.emf.close())<SUB>27</SUB>> ]
+  "26" -> "41"  [ label = "this"] 
+  "29" -> "41"  [ label = "emf != null"] 
+  "35" -> "41"  [ label = "this.emf"] 
+  "35" -> "41"  [ label = "this.emf.close()"] 
+  "25" -> "26" 
+  "26" -> "29"  [ label = "this"] 
+  "25" -> "29" 
+  "26" -> "35"  [ label = "this"] 
+  "29" -> "35"  [ label = "this.emf"] 
+}

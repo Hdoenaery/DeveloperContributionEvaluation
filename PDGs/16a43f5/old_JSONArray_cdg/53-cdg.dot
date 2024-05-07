@@ -1,0 +1,7 @@
+digraph "getLongValue" {  
+"1107" [label = <(RETURN,return longVal;,return longVal;)<SUB>371</SUB>> ]
+"1101" [label = <(&lt;operator&gt;.equals,longVal == null)<SUB>367</SUB>> ]
+"1105" [label = <(RETURN,return 0L;,return 0L;)<SUB>368</SUB>> ]
+  "1101" -> "1107" 
+  "1101" -> "1105" 
+}

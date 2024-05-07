@@ -1,0 +1,7 @@
+digraph "&lt;operator&gt;.throw" {  
+"2348" [label = <(METHOD,&lt;operator&gt;.throw)> ]
+"2351" [label = <(METHOD_RETURN,ANY)> ]
+"2349" [label = <(PARAM,p1)> ]
+  "2349" -> "2351"  [ label = "p1"] 
+  "2348" -> "2349" 
+}

@@ -1,0 +1,10 @@
+digraph "&lt;clinit&gt;" {  
+"1393" [label = <(METHOD,&lt;clinit&gt;)> ]
+"1401" [label = <(METHOD_RETURN,void)> ]
+"1395" [label = <(&lt;operator&gt;.assignment,long JSONArray.serialVersionUID = 1L)<SUB>48</SUB>> ]
+"1395" [label = <(&lt;operator&gt;.assignment,long JSONArray.serialVersionUID = 1L)<SUB>48</SUB>> ]
+"1395" [label = <(&lt;operator&gt;.assignment,long JSONArray.serialVersionUID = 1L)<SUB>48</SUB>> ]
+  "1395" -> "1401"  [ label = "JSONArray.serialVersionUID"] 
+  "1395" -> "1401"  [ label = "long JSONArray.serialVersionUID = 1L"] 
+  "1393" -> "1395" 
+}

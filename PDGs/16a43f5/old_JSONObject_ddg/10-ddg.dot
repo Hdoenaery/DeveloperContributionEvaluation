@@ -1,0 +1,43 @@
+digraph "getOrDefault" {  
+"501" [label = <(METHOD,getOrDefault)<SUB>125</SUB>> ]
+"518" [label = <(METHOD_RETURN,java.lang.Object)<SUB>125</SUB>> ]
+"4" [label = <(PARAM,this)<SUB>125</SUB>> ]
+"502" [label = <(PARAM,Object key)<SUB>125</SUB>> ]
+"503" [label = <(PARAM,Object defaultValue)<SUB>125</SUB>> ]
+"506" [label = <(RETURN,return ((v = get(key)) != null) ? v : defaultVa...,return ((v = get(key)) != null) ? v : defaultVa...)<SUB>127</SUB>> ]
+"507" [label = <(&lt;operator&gt;.conditional,((v = get(key)) != null) ? v : defaultValue)<SUB>127</SUB>> ]
+"507" [label = <(&lt;operator&gt;.conditional,((v = get(key)) != null) ? v : defaultValue)<SUB>127</SUB>> ]
+"507" [label = <(&lt;operator&gt;.conditional,((v = get(key)) != null) ? v : defaultValue)<SUB>127</SUB>> ]
+"507" [label = <(&lt;operator&gt;.conditional,((v = get(key)) != null) ? v : defaultValue)<SUB>127</SUB>> ]
+"508" [label = <(&lt;operator&gt;.notEquals,(v = get(key)) != null)<SUB>127</SUB>> ]
+"508" [label = <(&lt;operator&gt;.notEquals,(v = get(key)) != null)<SUB>127</SUB>> ]
+"509" [label = <(&lt;operator&gt;.assignment,v = get(key))<SUB>127</SUB>> ]
+"509" [label = <(&lt;operator&gt;.assignment,v = get(key))<SUB>127</SUB>> ]
+"511" [label = <(get,this.get(key))<SUB>127</SUB>> ]
+"511" [label = <(get,this.get(key))<SUB>127</SUB>> ]
+  "506" -> "518"  [ label = "&lt;RET&gt;"] 
+  "511" -> "518"  [ label = "this"] 
+  "511" -> "518"  [ label = "key"] 
+  "509" -> "518"  [ label = "this.get(key)"] 
+  "508" -> "518"  [ label = "v = get(key)"] 
+  "507" -> "518"  [ label = "(v = get(key)) != null"] 
+  "507" -> "518"  [ label = "defaultValue"] 
+  "507" -> "518"  [ label = "v"] 
+  "507" -> "518"  [ label = "((v = get(key)) != null) ? v : defaultValue"] 
+  "501" -> "4" 
+  "501" -> "502" 
+  "501" -> "503" 
+  "507" -> "506"  [ label = "((v = get(key)) != null) ? v : defaultValue"] 
+  "509" -> "507"  [ label = "v"] 
+  "501" -> "507" 
+  "503" -> "507"  [ label = "defaultValue"] 
+  "509" -> "508"  [ label = "v"] 
+  "511" -> "508"  [ label = "this"] 
+  "511" -> "508"  [ label = "key"] 
+  "501" -> "508" 
+  "511" -> "509"  [ label = "this"] 
+  "511" -> "509"  [ label = "key"] 
+  "4" -> "511"  [ label = "this"] 
+  "501" -> "511" 
+  "502" -> "511"  [ label = "key"] 
+}

@@ -1,0 +1,31 @@
+digraph "&lt;init&gt;" {  
+"346" [label = <(IDENTIFIER,ordered,if (ordered))<SUB>76</SUB>> ]
+"348" [label = <(&lt;operator&gt;.assignment,this.map = new LinkedHashMap&lt;String, Object&gt;(in...)<SUB>77</SUB>> ]
+"353" [label = <(&lt;init&gt;,new LinkedHashMap&lt;String, Object&gt;(initialCapacity))<SUB>77</SUB>> ]
+"349" [label = <(&lt;operator&gt;.fieldAccess,this.map)<SUB>77</SUB>> ]
+"352" [label = <(&lt;operator&gt;.alloc,new LinkedHashMap&lt;String, Object&gt;(initialCapacity))<SUB>77</SUB>> ]
+"354" [label = <(&lt;operator&gt;.fieldAccess,this.map)<SUB>77</SUB>> ]
+"360" [label = <(&lt;operator&gt;.assignment,this.map = new HashMap&lt;String, Object&gt;(initialC...)<SUB>79</SUB>> ]
+"365" [label = <(&lt;init&gt;,new HashMap&lt;String, Object&gt;(initialCapacity))<SUB>79</SUB>> ]
+"351" [label = <(FIELD_IDENTIFIER,map,map)<SUB>77</SUB>> ]
+"356" [label = <(FIELD_IDENTIFIER,map,map)<SUB>77</SUB>> ]
+"361" [label = <(&lt;operator&gt;.fieldAccess,this.map)<SUB>79</SUB>> ]
+"364" [label = <(&lt;operator&gt;.alloc,new HashMap&lt;String, Object&gt;(initialCapacity))<SUB>79</SUB>> ]
+"366" [label = <(&lt;operator&gt;.fieldAccess,this.map)<SUB>79</SUB>> ]
+"363" [label = <(FIELD_IDENTIFIER,map,map)<SUB>79</SUB>> ]
+"368" [label = <(FIELD_IDENTIFIER,map,map)<SUB>79</SUB>> ]
+  "346" -> "348" 
+  "346" -> "364" 
+  "346" -> "360" 
+  "346" -> "356" 
+  "346" -> "366" 
+  "346" -> "361" 
+  "346" -> "365" 
+  "346" -> "368" 
+  "346" -> "363" 
+  "346" -> "349" 
+  "346" -> "352" 
+  "346" -> "351" 
+  "346" -> "354" 
+  "346" -> "353" 
+}

@@ -1,0 +1,33 @@
+digraph "getShort" {  
+"818" [label = <(METHOD,getShort)<SUB>232</SUB>> ]
+"831" [label = <(METHOD_RETURN,java.lang.Short)<SUB>232</SUB>> ]
+"25" [label = <(PARAM,this)<SUB>232</SUB>> ]
+"819" [label = <(PARAM,String key)<SUB>232</SUB>> ]
+"822" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>233</SUB>> ]
+"826" [label = <(RETURN,return castToShort(value);,return castToShort(value);)<SUB>235</SUB>> ]
+"822" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>233</SUB>> ]
+"822" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>233</SUB>> ]
+"827" [label = <(castToShort,castToShort(value))<SUB>235</SUB>> ]
+"824" [label = <(get,this.get(key))<SUB>233</SUB>> ]
+"824" [label = <(get,this.get(key))<SUB>233</SUB>> ]
+"827" [label = <(castToShort,castToShort(value))<SUB>235</SUB>> ]
+"827" [label = <(castToShort,castToShort(value))<SUB>235</SUB>> ]
+  "826" -> "831"  [ label = "&lt;RET&gt;"] 
+  "824" -> "831"  [ label = "key"] 
+  "822" -> "831"  [ label = "this.get(key)"] 
+  "822" -> "831"  [ label = "Object value = get(key)"] 
+  "827" -> "831"  [ label = "this"] 
+  "827" -> "831"  [ label = "value"] 
+  "827" -> "831"  [ label = "castToShort(value)"] 
+  "818" -> "25" 
+  "818" -> "819" 
+  "824" -> "822"  [ label = "this"] 
+  "824" -> "822"  [ label = "key"] 
+  "827" -> "826"  [ label = "castToShort(value)"] 
+  "25" -> "824"  [ label = "this"] 
+  "818" -> "824" 
+  "819" -> "824"  [ label = "key"] 
+  "824" -> "827"  [ label = "this"] 
+  "818" -> "827" 
+  "822" -> "827"  [ label = "value"] 
+}

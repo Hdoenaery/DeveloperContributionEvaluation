@@ -1,0 +1,17 @@
+digraph "getObject" {  
+"608" [label = <(RETURN,return TypeUtils.cast(obj, typeReference.getTyp...,return TypeUtils.cast(obj, typeReference.getTyp...)<SUB>181</SUB>> ]
+"600" [label = <(&lt;operator&gt;.equals,typeReference == null)<SUB>178</SUB>> ]
+"609" [label = <(cast,cast(obj, typeReference.getType(), ParserConfig...)<SUB>181</SUB>> ]
+"604" [label = <(RETURN,return (T) obj;,return (T) obj;)<SUB>179</SUB>> ]
+"612" [label = <(getType,getType())<SUB>181</SUB>> ]
+"614" [label = <(getGlobalInstance,getGlobalInstance())<SUB>181</SUB>> ]
+"605" [label = <(&lt;operator&gt;.cast,(T) obj)<SUB>179</SUB>> ]
+"606" [label = <(TYPE_REF,T,T)<SUB>179</SUB>> ]
+  "600" -> "604" 
+  "600" -> "608" 
+  "600" -> "606" 
+  "600" -> "609" 
+  "600" -> "612" 
+  "600" -> "614" 
+  "600" -> "605" 
+}

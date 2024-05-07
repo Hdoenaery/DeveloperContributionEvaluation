@@ -1,0 +1,10 @@
+digraph "getGlobalInstance" {  
+"1867" [label = <(METHOD,getGlobalInstance)> ]
+"1871" [label = <(METHOD_RETURN,ANY)> ]
+"1868" [label = <(PARAM,p0)> ]
+"1869" [label = <(PARAM,p1)> ]
+  "1868" -> "1871"  [ label = "p0"] 
+  "1869" -> "1871"  [ label = "p1"] 
+  "1867" -> "1868" 
+  "1867" -> "1869" 
+}

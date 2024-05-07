@@ -1,0 +1,10 @@
+digraph "intValue" {  
+"2532" [label = <(METHOD,intValue)> ]
+"2536" [label = <(METHOD_RETURN,ANY)> ]
+"2533" [label = <(PARAM,p0)> ]
+"2534" [label = <(PARAM,p1)> ]
+  "2533" -> "2536"  [ label = "p0"] 
+  "2534" -> "2536"  [ label = "p1"] 
+  "2532" -> "2533" 
+  "2532" -> "2534" 
+}

@@ -1,0 +1,3 @@
+CompilationUnit [0,17]
+    ClassOrInterfaceDeclaration [0,17]
+        SimpleName: Issue3314 [6,15]

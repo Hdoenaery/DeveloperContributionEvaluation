@@ -1,0 +1,13 @@
+digraph "castToByte" {  
+"1880" [label = <(METHOD,castToByte)> ]
+"1885" [label = <(METHOD_RETURN,ANY)> ]
+"1881" [label = <(PARAM,p0)> ]
+"1882" [label = <(PARAM,p1)> ]
+"1883" [label = <(PARAM,p2)> ]
+  "1881" -> "1885"  [ label = "p0"] 
+  "1882" -> "1885"  [ label = "p1"] 
+  "1883" -> "1885"  [ label = "p2"] 
+  "1880" -> "1881" 
+  "1880" -> "1882" 
+  "1880" -> "1883" 
+}

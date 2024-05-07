@@ -1,0 +1,13 @@
+digraph "equals" {  
+"1895" [label = <(METHOD,equals)> ]
+"1900" [label = <(METHOD_RETURN,ANY)> ]
+"1896" [label = <(PARAM,p0)> ]
+"1897" [label = <(PARAM,p1)> ]
+"1898" [label = <(PARAM,p2)> ]
+  "1896" -> "1900"  [ label = "p0"] 
+  "1897" -> "1900"  [ label = "p1"] 
+  "1898" -> "1900"  [ label = "p2"] 
+  "1895" -> "1896" 
+  "1895" -> "1897" 
+  "1895" -> "1898" 
+}

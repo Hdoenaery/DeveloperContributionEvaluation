@@ -1,0 +1,10 @@
+digraph "booleanValue" {  
+"1875" [label = <(METHOD,booleanValue)> ]
+"1879" [label = <(METHOD_RETURN,ANY)> ]
+"1876" [label = <(PARAM,p0)> ]
+"1877" [label = <(PARAM,p1)> ]
+  "1876" -> "1879"  [ label = "p0"] 
+  "1877" -> "1879"  [ label = "p1"] 
+  "1875" -> "1876" 
+  "1875" -> "1877" 
+}

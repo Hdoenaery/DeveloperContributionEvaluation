@@ -1,0 +1,13 @@
+digraph "add" {  
+"1706" [label = <(METHOD,add)> ]
+"1711" [label = <(METHOD_RETURN,ANY)> ]
+"1707" [label = <(PARAM,p0)> ]
+"1708" [label = <(PARAM,p1)> ]
+"1709" [label = <(PARAM,p2)> ]
+  "1707" -> "1711"  [ label = "p0"] 
+  "1708" -> "1711"  [ label = "p1"] 
+  "1709" -> "1711"  [ label = "p2"] 
+  "1706" -> "1707" 
+  "1706" -> "1708" 
+  "1706" -> "1709" 
+}

@@ -1,0 +1,10 @@
+digraph "resolveProxyClass" {  
+"2908" [label = <(METHOD,resolveProxyClass)> ]
+"2912" [label = <(METHOD_RETURN,ANY)> ]
+"2909" [label = <(PARAM,p1)> ]
+"2910" [label = <(PARAM,p2)> ]
+  "2909" -> "2912"  [ label = "p1"] 
+  "2910" -> "2912"  [ label = "p2"] 
+  "2908" -> "2909" 
+  "2908" -> "2910" 
+}

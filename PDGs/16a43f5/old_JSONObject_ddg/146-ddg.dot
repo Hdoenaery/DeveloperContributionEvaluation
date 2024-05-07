@@ -1,0 +1,13 @@
+digraph "checkAutoType" {  
+"2786" [label = <(METHOD,checkAutoType)> ]
+"2791" [label = <(METHOD_RETURN,ANY)> ]
+"2787" [label = <(PARAM,p0)> ]
+"2788" [label = <(PARAM,p1)> ]
+"2789" [label = <(PARAM,p2)> ]
+  "2787" -> "2791"  [ label = "p0"] 
+  "2788" -> "2791"  [ label = "p1"] 
+  "2789" -> "2791"  [ label = "p2"] 
+  "2786" -> "2787" 
+  "2786" -> "2788" 
+  "2786" -> "2789" 
+}

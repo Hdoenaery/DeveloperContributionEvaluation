@@ -1,0 +1,55 @@
+digraph "getDoubleValue" {  
+"901" [label = <(METHOD,getDoubleValue)<SUB>306</SUB>> ]
+"926" [label = <(METHOD_RETURN,double)<SUB>306</SUB>> ]
+"52" [label = <(PARAM,this)<SUB>306</SUB>> ]
+"902" [label = <(PARAM,String key)<SUB>306</SUB>> ]
+"905" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>307</SUB>> ]
+"910" [label = <(&lt;operator&gt;.assignment,Double doubleValue = castToDouble(value))<SUB>309</SUB>> ]
+"921" [label = <(RETURN,return doubleValue.doubleValue();,return doubleValue.doubleValue();)<SUB>314</SUB>> ]
+"905" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>307</SUB>> ]
+"905" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>307</SUB>> ]
+"910" [label = <(&lt;operator&gt;.assignment,Double doubleValue = castToDouble(value))<SUB>309</SUB>> ]
+"910" [label = <(&lt;operator&gt;.assignment,Double doubleValue = castToDouble(value))<SUB>309</SUB>> ]
+"915" [label = <(&lt;operator&gt;.equals,doubleValue == null)<SUB>310</SUB>> ]
+"922" [label = <(doubleValue,doubleValue.doubleValue())<SUB>314</SUB>> ]
+"907" [label = <(get,this.get(key))<SUB>307</SUB>> ]
+"907" [label = <(get,this.get(key))<SUB>307</SUB>> ]
+"912" [label = <(castToDouble,castToDouble(value))<SUB>309</SUB>> ]
+"912" [label = <(castToDouble,castToDouble(value))<SUB>309</SUB>> ]
+"915" [label = <(&lt;operator&gt;.equals,doubleValue == null)<SUB>310</SUB>> ]
+"915" [label = <(&lt;operator&gt;.equals,doubleValue == null)<SUB>310</SUB>> ]
+"919" [label = <(RETURN,return 0D;,return 0D;)<SUB>311</SUB>> ]
+"922" [label = <(doubleValue,doubleValue.doubleValue())<SUB>314</SUB>> ]
+"920" [label = <(LITERAL,0D,return 0D;)<SUB>311</SUB>> ]
+  "919" -> "926"  [ label = "&lt;RET&gt;"] 
+  "921" -> "926"  [ label = "&lt;RET&gt;"] 
+  "907" -> "926"  [ label = "key"] 
+  "905" -> "926"  [ label = "this.get(key)"] 
+  "905" -> "926"  [ label = "Object value = get(key)"] 
+  "912" -> "926"  [ label = "this"] 
+  "912" -> "926"  [ label = "value"] 
+  "910" -> "926"  [ label = "castToDouble(value)"] 
+  "910" -> "926"  [ label = "Double doubleValue = castToDouble(value)"] 
+  "915" -> "926"  [ label = "doubleValue"] 
+  "915" -> "926"  [ label = "doubleValue == null"] 
+  "901" -> "52" 
+  "901" -> "902" 
+  "907" -> "905"  [ label = "this"] 
+  "907" -> "905"  [ label = "key"] 
+  "912" -> "910"  [ label = "this"] 
+  "912" -> "910"  [ label = "value"] 
+  "922" -> "921"  [ label = "doubleValue.doubleValue()"] 
+  "52" -> "907"  [ label = "this"] 
+  "901" -> "907" 
+  "902" -> "907"  [ label = "key"] 
+  "907" -> "912"  [ label = "this"] 
+  "901" -> "912" 
+  "905" -> "912"  [ label = "value"] 
+  "910" -> "915"  [ label = "doubleValue"] 
+  "901" -> "915" 
+  "920" -> "919"  [ label = "0D"] 
+  "901" -> "919" 
+  "915" -> "922"  [ label = "doubleValue"] 
+  "901" -> "922" 
+  "901" -> "920" 
+}

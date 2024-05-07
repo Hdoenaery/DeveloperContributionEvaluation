@@ -1,0 +1,11 @@
+digraph "getBooleanValue" {  
+"948" [label = <(RETURN,return castToBoolean(value).booleanValue();,return castToBoolean(value).booleanValue();)<SUB>303</SUB>> ]
+"942" [label = <(&lt;operator&gt;.equals,value == null)<SUB>299</SUB>> ]
+"949" [label = <(booleanValue,castToBoolean(value).booleanValue())<SUB>303</SUB>> ]
+"946" [label = <(RETURN,return false;,return false;)<SUB>300</SUB>> ]
+"950" [label = <(castToBoolean,castToBoolean(value))<SUB>303</SUB>> ]
+  "942" -> "946" 
+  "942" -> "950" 
+  "942" -> "948" 
+  "942" -> "949" 
+}

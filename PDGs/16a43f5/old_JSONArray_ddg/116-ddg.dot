@@ -1,0 +1,13 @@
+digraph "castToInt" {  
+"1892" [label = <(METHOD,castToInt)> ]
+"1897" [label = <(METHOD_RETURN,ANY)> ]
+"1893" [label = <(PARAM,p0)> ]
+"1894" [label = <(PARAM,p1)> ]
+"1895" [label = <(PARAM,p2)> ]
+  "1893" -> "1897"  [ label = "p0"] 
+  "1894" -> "1897"  [ label = "p1"] 
+  "1895" -> "1897"  [ label = "p2"] 
+  "1892" -> "1893" 
+  "1892" -> "1894" 
+  "1892" -> "1895" 
+}

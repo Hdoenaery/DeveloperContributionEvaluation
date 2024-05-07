@@ -1,0 +1,10 @@
+digraph "&lt;operator&gt;.logicalAnd" {  
+"1996" [label = <(METHOD,&lt;operator&gt;.logicalAnd)> ]
+"2000" [label = <(METHOD_RETURN,ANY)> ]
+"1997" [label = <(PARAM,p1)> ]
+"1998" [label = <(PARAM,p2)> ]
+  "1997" -> "2000"  [ label = "p1"] 
+  "1998" -> "2000"  [ label = "p2"] 
+  "1996" -> "1997" 
+  "1996" -> "1998" 
+}

@@ -1,0 +1,17 @@
+digraph "setRelatedArray" {  
+"266" [label = <(METHOD,setRelatedArray)<SUB>76</SUB>> ]
+"275" [label = <(METHOD_RETURN,void)<SUB>76</SUB>> ]
+"4" [label = <(PARAM,this)<SUB>76</SUB>> ]
+"267" [label = <(PARAM,Object relatedArray)<SUB>76</SUB>> ]
+"269" [label = <(&lt;operator&gt;.assignment,this.relatedArray = relatedArray)<SUB>77</SUB>> ]
+"269" [label = <(&lt;operator&gt;.assignment,this.relatedArray = relatedArray)<SUB>77</SUB>> ]
+"269" [label = <(&lt;operator&gt;.assignment,this.relatedArray = relatedArray)<SUB>77</SUB>> ]
+  "4" -> "275"  [ label = "this"] 
+  "269" -> "275"  [ label = "this.relatedArray"] 
+  "269" -> "275"  [ label = "relatedArray"] 
+  "269" -> "275"  [ label = "this.relatedArray = relatedArray"] 
+  "266" -> "4" 
+  "266" -> "267" 
+  "267" -> "269"  [ label = "relatedArray"] 
+  "266" -> "269" 
+}

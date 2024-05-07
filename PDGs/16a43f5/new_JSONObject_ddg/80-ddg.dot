@@ -1,0 +1,16 @@
+digraph "castToJavaBean" {  
+"1977" [label = <(METHOD,castToJavaBean)> ]
+"1983" [label = <(METHOD_RETURN,ANY)> ]
+"1978" [label = <(PARAM,p0)> ]
+"1979" [label = <(PARAM,p1)> ]
+"1980" [label = <(PARAM,p2)> ]
+"1981" [label = <(PARAM,p3)> ]
+  "1978" -> "1983"  [ label = "p0"] 
+  "1979" -> "1983"  [ label = "p1"] 
+  "1980" -> "1983"  [ label = "p2"] 
+  "1981" -> "1983"  [ label = "p3"] 
+  "1977" -> "1978" 
+  "1977" -> "1979" 
+  "1977" -> "1980" 
+  "1977" -> "1981" 
+}

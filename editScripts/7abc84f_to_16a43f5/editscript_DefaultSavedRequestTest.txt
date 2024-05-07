@@ -1,0 +1,145 @@
+===
+insert-tree
+---
+ImportDeclaration [89,132]
+    Name: Feature [96,131]
+        Name: parser [96,123]
+            Name: fastjson [96,116]
+                Name: alibaba [96,107]
+                    Name: com [96,99]
+to
+CompilationUnit [0,7681]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [383,445]
+    Name: JavaBeanSerializerTest [390,444]
+        Name: serializer [390,421]
+            Name: bvt [390,410]
+                Name: json [390,406]
+                    Name: alibaba [390,401]
+                        Name: com [390,393]
+to
+CompilationUnit [0,7681]
+at 7
+===
+insert-tree
+---
+ExpressionStmt [1833,1915]
+    MethodCallExpr [1833,1914]
+        NameExpr [1833,1839]
+            SimpleName: config [1833,1839]
+        SimpleName: addAccept [1840,1849]
+        StringLiteralExpr: org.springframework.security.core.context.SecurityContextImpl [1850,1913]
+to
+BlockStmt [1438,1723]
+at 4
+===
+insert-tree
+---
+ExpressionStmt [1924,1995]
+    MethodCallExpr [1924,1994]
+        NameExpr [1924,1930]
+            SimpleName: config [1924,1930]
+        SimpleName: addAccept [1931,1940]
+        StringLiteralExpr: org.springframework.security.core.userdetails.User [1941,1993]
+to
+BlockStmt [1438,1723]
+at 5
+===
+insert-tree
+---
+ExpressionStmt [2004,2104]
+    MethodCallExpr [2004,2103]
+        NameExpr [2004,2010]
+            SimpleName: config [2004,2010]
+        SimpleName: addAccept [2011,2020]
+        StringLiteralExpr: org.springframework.security.authentication.UsernamePasswordAuthenticationToken [2021,2102]
+to
+BlockStmt [1438,1723]
+at 6
+===
+insert-tree
+---
+ExpressionStmt [2113,2200]
+    MethodCallExpr [2113,2199]
+        NameExpr [2113,2119]
+            SimpleName: config [2113,2119]
+        SimpleName: addAccept [2120,2129]
+        StringLiteralExpr: org.springframework.security.core.authority.SimpleGrantedAuthority [2130,2198]
+to
+BlockStmt [1438,1723]
+at 7
+===
+insert-tree
+---
+ExpressionStmt [2209,2302]
+    MethodCallExpr [2209,2301]
+        NameExpr [2209,2215]
+            SimpleName: config [2209,2215]
+        SimpleName: addAccept [2216,2225]
+        StringLiteralExpr: org.springframework.security.web.authentication.WebAuthenticationDetails [2226,2300]
+to
+BlockStmt [1438,1723]
+at 8
+===
+insert-tree
+---
+FieldAccessExpr [2820,2843]
+    NameExpr [2820,2827]
+        SimpleName: Feature [2820,2827]
+    SimpleName: SupportAutoType [2828,2843]
+to
+MethodCallExpr [2191,2234]
+at 5
+===
+insert-tree
+---
+FieldAccessExpr [5480,5503]
+    NameExpr [5480,5487]
+        SimpleName: Feature [5480,5487]
+    SimpleName: SupportAutoType [5488,5503]
+to
+MethodCallExpr [4833,4869]
+at 4
+===
+insert-tree
+---
+FieldAccessExpr [5914,5937]
+    NameExpr [5914,5921]
+        SimpleName: Feature [5914,5921]
+    SimpleName: SupportAutoType [5922,5937]
+to
+MethodCallExpr [5242,5278]
+at 4
+===
+insert-tree
+---
+FieldAccessExpr [6482,6505]
+    NameExpr [6482,6489]
+        SimpleName: Feature [6482,6489]
+    SimpleName: SupportAutoType [6490,6505]
+to
+MethodCallExpr [5785,5821]
+at 4
+===
+insert-tree
+---
+FieldAccessExpr [7123,7146]
+    NameExpr [7123,7130]
+        SimpleName: Feature [7123,7130]
+    SimpleName: SupportAutoType [7131,7146]
+to
+MethodCallExpr [6392,6436]
+at 5
+===
+insert-tree
+---
+FieldAccessExpr [8376,8399]
+    NameExpr [8376,8383]
+        SimpleName: Feature [8376,8383]
+    SimpleName: SupportAutoType [8384,8399]
+to
+MethodCallExpr [7619,7663]
+at 5

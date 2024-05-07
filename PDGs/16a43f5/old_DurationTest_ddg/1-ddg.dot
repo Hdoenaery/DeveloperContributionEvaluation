@@ -1,0 +1,9 @@
+digraph "getDate" {  
+"69" [label = <(METHOD,getDate)<SUB>29</SUB>> ]
+"78" [label = <(METHOD_RETURN,java.time.Duration)<SUB>29</SUB>> ]
+"70" [label = <(PARAM,this)<SUB>29</SUB>> ]
+"72" [label = <(RETURN,return date;,return date;)<SUB>30</SUB>> ]
+  "72" -> "78"  [ label = "&lt;RET&gt;"] 
+  "70" -> "78"  [ label = "this"] 
+  "69" -> "70" 
+}

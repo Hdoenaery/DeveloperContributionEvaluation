@@ -1,0 +1,83 @@
+digraph "getJSONObject" {  
+"757" [label = <(METHOD,getJSONObject)<SUB>243</SUB>> ]
+"801" [label = <(METHOD_RETURN,java.util.JSONObject)<SUB>243</SUB>> ]
+"29" [label = <(PARAM,this)<SUB>243</SUB>> ]
+"758" [label = <(PARAM,int index)<SUB>243</SUB>> ]
+"761" [label = <(&lt;operator&gt;.assignment,Object value = list.get(index))<SUB>244</SUB>> ]
+"794" [label = <(RETURN,return (JSONObject) toJSON(value);,return (JSONObject) toJSON(value);)<SUB>254</SUB>> ]
+"761" [label = <(&lt;operator&gt;.assignment,Object value = list.get(index))<SUB>244</SUB>> ]
+"761" [label = <(&lt;operator&gt;.assignment,Object value = list.get(index))<SUB>244</SUB>> ]
+"769" [label = <(&lt;operator&gt;.instanceOf,value instanceof JSONObject)<SUB>246</SUB>> ]
+"778" [label = <(&lt;operator&gt;.instanceOf,value instanceof Map)<SUB>250</SUB>> ]
+"795" [label = <(&lt;operator&gt;.cast,(JSONObject) toJSON(value))<SUB>254</SUB>> ]
+"763" [label = <(get,this.list.get(index))<SUB>244</SUB>> ]
+"763" [label = <(get,this.list.get(index))<SUB>244</SUB>> ]
+"769" [label = <(&lt;operator&gt;.instanceOf,value instanceof JSONObject)<SUB>246</SUB>> ]
+"769" [label = <(&lt;operator&gt;.instanceOf,value instanceof JSONObject)<SUB>246</SUB>> ]
+"773" [label = <(RETURN,return (JSONObject) value;,return (JSONObject) value;)<SUB>247</SUB>> ]
+"778" [label = <(&lt;operator&gt;.instanceOf,value instanceof Map)<SUB>250</SUB>> ]
+"778" [label = <(&lt;operator&gt;.instanceOf,value instanceof Map)<SUB>250</SUB>> ]
+"782" [label = <(RETURN,return new JSONObject((Map) value);,return new JSONObject((Map) value);)<SUB>251</SUB>> ]
+"795" [label = <(&lt;operator&gt;.cast,(JSONObject) toJSON(value))<SUB>254</SUB>> ]
+"795" [label = <(&lt;operator&gt;.cast,(JSONObject) toJSON(value))<SUB>254</SUB>> ]
+"774" [label = <(&lt;operator&gt;.cast,(JSONObject) value)<SUB>247</SUB>> ]
+"783" [label = <(BLOCK,&lt;empty&gt;,&lt;empty&gt;)<SUB>251</SUB>> ]
+"797" [label = <(toJSON,toJSON(value))<SUB>254</SUB>> ]
+"797" [label = <(toJSON,toJSON(value))<SUB>254</SUB>> ]
+"774" [label = <(&lt;operator&gt;.cast,(JSONObject) value)<SUB>247</SUB>> ]
+"774" [label = <(&lt;operator&gt;.cast,(JSONObject) value)<SUB>247</SUB>> ]
+"785" [label = <(&lt;operator&gt;.assignment,$obj0 = new JSONObject((Map) value))<SUB>251</SUB>> ]
+"788" [label = <(&lt;init&gt;,new JSONObject((Map) value))<SUB>251</SUB>> ]
+"793" [label = <(IDENTIFIER,$obj0,&lt;empty&gt;)<SUB>251</SUB>> ]
+"785" [label = <(&lt;operator&gt;.assignment,$obj0 = new JSONObject((Map) value))<SUB>251</SUB>> ]
+"785" [label = <(&lt;operator&gt;.assignment,$obj0 = new JSONObject((Map) value))<SUB>251</SUB>> ]
+"788" [label = <(&lt;init&gt;,new JSONObject((Map) value))<SUB>251</SUB>> ]
+"788" [label = <(&lt;init&gt;,new JSONObject((Map) value))<SUB>251</SUB>> ]
+"790" [label = <(&lt;operator&gt;.cast,(Map) value)<SUB>251</SUB>> ]
+"790" [label = <(&lt;operator&gt;.cast,(Map) value)<SUB>251</SUB>> ]
+  "782" -> "801"  [ label = "&lt;RET&gt;"] 
+  "794" -> "801"  [ label = "&lt;RET&gt;"] 
+  "773" -> "801"  [ label = "&lt;RET&gt;"] 
+  "29" -> "801"  [ label = "this"] 
+  "763" -> "801"  [ label = "this.list"] 
+  "763" -> "801"  [ label = "index"] 
+  "761" -> "801"  [ label = "this.list.get(index)"] 
+  "761" -> "801"  [ label = "Object value = list.get(index)"] 
+  "769" -> "801"  [ label = "value instanceof JSONObject"] 
+  "774" -> "801"  [ label = "value"] 
+  "774" -> "801"  [ label = "(JSONObject) value"] 
+  "757" -> "29" 
+  "757" -> "758" 
+  "763" -> "761"  [ label = "this.list"] 
+  "763" -> "761"  [ label = "index"] 
+  "795" -> "794"  [ label = "(JSONObject) toJSON(value)"] 
+  "757" -> "795" 
+  "797" -> "795"  [ label = "this"] 
+  "797" -> "795"  [ label = "value"] 
+  "29" -> "763"  [ label = "this"] 
+  "758" -> "763"  [ label = "index"] 
+  "757" -> "763" 
+  "761" -> "769"  [ label = "value"] 
+  "757" -> "769" 
+  "774" -> "773"  [ label = "(JSONObject) value"] 
+  "769" -> "778"  [ label = "value"] 
+  "757" -> "778" 
+  "783" -> "782" 
+  "783" -> "782"  [ label = "&lt;empty&gt;"] 
+  "757" -> "782" 
+  "757" -> "774" 
+  "769" -> "774"  [ label = "value"] 
+  "788" -> "783"  [ label = "$obj0"] 
+  "757" -> "783" 
+  "29" -> "797"  [ label = "this"] 
+  "763" -> "797"  [ label = "this.list"] 
+  "757" -> "797" 
+  "778" -> "797"  [ label = "value"] 
+  "757" -> "785" 
+  "757" -> "793" 
+  "785" -> "788"  [ label = "$obj0"] 
+  "757" -> "788" 
+  "778" -> "788"  [ label = "value"] 
+  "757" -> "790" 
+  "778" -> "790"  [ label = "value"] 
+}

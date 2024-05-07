@@ -1,0 +1,16 @@
+digraph "&lt;clinit&gt;" {  
+"2128" [label = <(METHOD,&lt;clinit&gt;)> ]
+"2141" [label = <(METHOD_RETURN,void)> ]
+"2130" [label = <(&lt;operator&gt;.assignment,long JSONObject.serialVersionUID = 1L)<SUB>51</SUB>> ]
+"2135" [label = <(&lt;operator&gt;.assignment,int JSONObject.DEFAULT_INITIAL_CAPACITY = 16)<SUB>52</SUB>> ]
+"2130" [label = <(&lt;operator&gt;.assignment,long JSONObject.serialVersionUID = 1L)<SUB>51</SUB>> ]
+"2130" [label = <(&lt;operator&gt;.assignment,long JSONObject.serialVersionUID = 1L)<SUB>51</SUB>> ]
+"2135" [label = <(&lt;operator&gt;.assignment,int JSONObject.DEFAULT_INITIAL_CAPACITY = 16)<SUB>52</SUB>> ]
+"2135" [label = <(&lt;operator&gt;.assignment,int JSONObject.DEFAULT_INITIAL_CAPACITY = 16)<SUB>52</SUB>> ]
+  "2130" -> "2141"  [ label = "JSONObject.serialVersionUID"] 
+  "2130" -> "2141"  [ label = "long JSONObject.serialVersionUID = 1L"] 
+  "2135" -> "2141"  [ label = "JSONObject.DEFAULT_INITIAL_CAPACITY"] 
+  "2135" -> "2141"  [ label = "int JSONObject.DEFAULT_INITIAL_CAPACITY = 16"] 
+  "2128" -> "2130" 
+  "2128" -> "2135" 
+}

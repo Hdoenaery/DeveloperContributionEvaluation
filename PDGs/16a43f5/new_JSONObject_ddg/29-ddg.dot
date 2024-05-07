@@ -1,0 +1,33 @@
+digraph "getDouble" {  
+"887" [label = <(METHOD,getDouble)<SUB>300</SUB>> ]
+"900" [label = <(METHOD_RETURN,java.lang.Double)<SUB>300</SUB>> ]
+"49" [label = <(PARAM,this)<SUB>300</SUB>> ]
+"888" [label = <(PARAM,String key)<SUB>300</SUB>> ]
+"891" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>301</SUB>> ]
+"895" [label = <(RETURN,return castToDouble(value);,return castToDouble(value);)<SUB>303</SUB>> ]
+"891" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>301</SUB>> ]
+"891" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>301</SUB>> ]
+"896" [label = <(castToDouble,castToDouble(value))<SUB>303</SUB>> ]
+"893" [label = <(get,this.get(key))<SUB>301</SUB>> ]
+"893" [label = <(get,this.get(key))<SUB>301</SUB>> ]
+"896" [label = <(castToDouble,castToDouble(value))<SUB>303</SUB>> ]
+"896" [label = <(castToDouble,castToDouble(value))<SUB>303</SUB>> ]
+  "895" -> "900"  [ label = "&lt;RET&gt;"] 
+  "893" -> "900"  [ label = "key"] 
+  "891" -> "900"  [ label = "this.get(key)"] 
+  "891" -> "900"  [ label = "Object value = get(key)"] 
+  "896" -> "900"  [ label = "this"] 
+  "896" -> "900"  [ label = "value"] 
+  "896" -> "900"  [ label = "castToDouble(value)"] 
+  "887" -> "49" 
+  "887" -> "888" 
+  "893" -> "891"  [ label = "this"] 
+  "893" -> "891"  [ label = "key"] 
+  "896" -> "895"  [ label = "castToDouble(value)"] 
+  "49" -> "893"  [ label = "this"] 
+  "887" -> "893" 
+  "888" -> "893"  [ label = "key"] 
+  "893" -> "896"  [ label = "this"] 
+  "887" -> "896" 
+  "891" -> "896"  [ label = "value"] 
+}

@@ -1,0 +1,55 @@
+digraph "getByteValue" {  
+"792" [label = <(METHOD,getByteValue)<SUB>221</SUB>> ]
+"817" [label = <(METHOD_RETURN,byte)<SUB>221</SUB>> ]
+"22" [label = <(PARAM,this)<SUB>221</SUB>> ]
+"793" [label = <(PARAM,String key)<SUB>221</SUB>> ]
+"796" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>222</SUB>> ]
+"801" [label = <(&lt;operator&gt;.assignment,Byte byteVal = castToByte(value))<SUB>224</SUB>> ]
+"812" [label = <(RETURN,return byteVal.byteValue();,return byteVal.byteValue();)<SUB>229</SUB>> ]
+"796" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>222</SUB>> ]
+"796" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>222</SUB>> ]
+"801" [label = <(&lt;operator&gt;.assignment,Byte byteVal = castToByte(value))<SUB>224</SUB>> ]
+"801" [label = <(&lt;operator&gt;.assignment,Byte byteVal = castToByte(value))<SUB>224</SUB>> ]
+"806" [label = <(&lt;operator&gt;.equals,byteVal == null)<SUB>225</SUB>> ]
+"813" [label = <(byteValue,byteVal.byteValue())<SUB>229</SUB>> ]
+"798" [label = <(get,this.get(key))<SUB>222</SUB>> ]
+"798" [label = <(get,this.get(key))<SUB>222</SUB>> ]
+"803" [label = <(castToByte,castToByte(value))<SUB>224</SUB>> ]
+"803" [label = <(castToByte,castToByte(value))<SUB>224</SUB>> ]
+"806" [label = <(&lt;operator&gt;.equals,byteVal == null)<SUB>225</SUB>> ]
+"806" [label = <(&lt;operator&gt;.equals,byteVal == null)<SUB>225</SUB>> ]
+"810" [label = <(RETURN,return 0;,return 0;)<SUB>226</SUB>> ]
+"813" [label = <(byteValue,byteVal.byteValue())<SUB>229</SUB>> ]
+"811" [label = <(LITERAL,0,return 0;)<SUB>226</SUB>> ]
+  "810" -> "817"  [ label = "&lt;RET&gt;"] 
+  "812" -> "817"  [ label = "&lt;RET&gt;"] 
+  "798" -> "817"  [ label = "key"] 
+  "796" -> "817"  [ label = "this.get(key)"] 
+  "796" -> "817"  [ label = "Object value = get(key)"] 
+  "803" -> "817"  [ label = "this"] 
+  "803" -> "817"  [ label = "value"] 
+  "801" -> "817"  [ label = "castToByte(value)"] 
+  "801" -> "817"  [ label = "Byte byteVal = castToByte(value)"] 
+  "806" -> "817"  [ label = "byteVal"] 
+  "806" -> "817"  [ label = "byteVal == null"] 
+  "792" -> "22" 
+  "792" -> "793" 
+  "798" -> "796"  [ label = "this"] 
+  "798" -> "796"  [ label = "key"] 
+  "803" -> "801"  [ label = "this"] 
+  "803" -> "801"  [ label = "value"] 
+  "813" -> "812"  [ label = "byteVal.byteValue()"] 
+  "22" -> "798"  [ label = "this"] 
+  "792" -> "798" 
+  "793" -> "798"  [ label = "key"] 
+  "798" -> "803"  [ label = "this"] 
+  "792" -> "803" 
+  "796" -> "803"  [ label = "value"] 
+  "801" -> "806"  [ label = "byteVal"] 
+  "792" -> "806" 
+  "811" -> "810"  [ label = "0"] 
+  "792" -> "810" 
+  "806" -> "813"  [ label = "byteVal"] 
+  "792" -> "813" 
+  "792" -> "811" 
+}

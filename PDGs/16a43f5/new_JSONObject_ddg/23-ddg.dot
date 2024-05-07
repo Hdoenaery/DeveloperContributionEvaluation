@@ -1,0 +1,33 @@
+digraph "getInteger" {  
+"767" [label = <(METHOD,getInteger)<SUB>249</SUB>> ]
+"780" [label = <(METHOD_RETURN,java.lang.Integer)<SUB>249</SUB>> ]
+"31" [label = <(PARAM,this)<SUB>249</SUB>> ]
+"768" [label = <(PARAM,String key)<SUB>249</SUB>> ]
+"771" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>250</SUB>> ]
+"775" [label = <(RETURN,return castToInt(value);,return castToInt(value);)<SUB>252</SUB>> ]
+"771" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>250</SUB>> ]
+"771" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>250</SUB>> ]
+"776" [label = <(castToInt,castToInt(value))<SUB>252</SUB>> ]
+"773" [label = <(get,this.get(key))<SUB>250</SUB>> ]
+"773" [label = <(get,this.get(key))<SUB>250</SUB>> ]
+"776" [label = <(castToInt,castToInt(value))<SUB>252</SUB>> ]
+"776" [label = <(castToInt,castToInt(value))<SUB>252</SUB>> ]
+  "775" -> "780"  [ label = "&lt;RET&gt;"] 
+  "773" -> "780"  [ label = "key"] 
+  "771" -> "780"  [ label = "this.get(key)"] 
+  "771" -> "780"  [ label = "Object value = get(key)"] 
+  "776" -> "780"  [ label = "this"] 
+  "776" -> "780"  [ label = "value"] 
+  "776" -> "780"  [ label = "castToInt(value)"] 
+  "767" -> "31" 
+  "767" -> "768" 
+  "773" -> "771"  [ label = "this"] 
+  "773" -> "771"  [ label = "key"] 
+  "776" -> "775"  [ label = "castToInt(value)"] 
+  "31" -> "773"  [ label = "this"] 
+  "767" -> "773" 
+  "768" -> "773"  [ label = "key"] 
+  "773" -> "776"  [ label = "this"] 
+  "767" -> "776" 
+  "771" -> "776"  [ label = "value"] 
+}

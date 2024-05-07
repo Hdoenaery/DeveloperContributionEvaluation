@@ -1,0 +1,25 @@
+digraph "fluentRemove" {  
+"404" [label = <(METHOD,fluentRemove)<SUB>125</SUB>> ]
+"415" [label = <(METHOD_RETURN,com.alibaba.fastjson.JSONArray)<SUB>125</SUB>> ]
+"10" [label = <(PARAM,this)<SUB>125</SUB>> ]
+"405" [label = <(PARAM,Object o)<SUB>125</SUB>> ]
+"407" [label = <(remove,this.list.remove(o))<SUB>126</SUB>> ]
+"412" [label = <(RETURN,return this;,return this;)<SUB>127</SUB>> ]
+"407" [label = <(remove,this.list.remove(o))<SUB>126</SUB>> ]
+"407" [label = <(remove,this.list.remove(o))<SUB>126</SUB>> ]
+"9" [label = <(IDENTIFIER,this,return this;)<SUB>127</SUB>> ]
+  "412" -> "415"  [ label = "&lt;RET&gt;"] 
+  "10" -> "415"  [ label = "this"] 
+  "407" -> "415"  [ label = "this.list"] 
+  "407" -> "415"  [ label = "o"] 
+  "407" -> "415"  [ label = "this.list.remove(o)"] 
+  "404" -> "10" 
+  "404" -> "405" 
+  "9" -> "412"  [ label = "this"] 
+  "10" -> "407"  [ label = "this"] 
+  "405" -> "407"  [ label = "o"] 
+  "404" -> "407" 
+  "407" -> "9"  [ label = "this.list"] 
+  "10" -> "9"  [ label = "this"] 
+  "404" -> "9" 
+}

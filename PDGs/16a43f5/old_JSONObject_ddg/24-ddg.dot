@@ -1,0 +1,55 @@
+digraph "getIntValue" {  
+"872" [label = <(METHOD,getIntValue)<SUB>255</SUB>> ]
+"897" [label = <(METHOD_RETURN,int)<SUB>255</SUB>> ]
+"34" [label = <(PARAM,this)<SUB>255</SUB>> ]
+"873" [label = <(PARAM,String key)<SUB>255</SUB>> ]
+"876" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>256</SUB>> ]
+"881" [label = <(&lt;operator&gt;.assignment,Integer intVal = castToInt(value))<SUB>258</SUB>> ]
+"892" [label = <(RETURN,return intVal.intValue();,return intVal.intValue();)<SUB>263</SUB>> ]
+"876" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>256</SUB>> ]
+"876" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>256</SUB>> ]
+"881" [label = <(&lt;operator&gt;.assignment,Integer intVal = castToInt(value))<SUB>258</SUB>> ]
+"881" [label = <(&lt;operator&gt;.assignment,Integer intVal = castToInt(value))<SUB>258</SUB>> ]
+"886" [label = <(&lt;operator&gt;.equals,intVal == null)<SUB>259</SUB>> ]
+"893" [label = <(intValue,intVal.intValue())<SUB>263</SUB>> ]
+"878" [label = <(get,this.get(key))<SUB>256</SUB>> ]
+"878" [label = <(get,this.get(key))<SUB>256</SUB>> ]
+"883" [label = <(castToInt,castToInt(value))<SUB>258</SUB>> ]
+"883" [label = <(castToInt,castToInt(value))<SUB>258</SUB>> ]
+"886" [label = <(&lt;operator&gt;.equals,intVal == null)<SUB>259</SUB>> ]
+"886" [label = <(&lt;operator&gt;.equals,intVal == null)<SUB>259</SUB>> ]
+"890" [label = <(RETURN,return 0;,return 0;)<SUB>260</SUB>> ]
+"893" [label = <(intValue,intVal.intValue())<SUB>263</SUB>> ]
+"891" [label = <(LITERAL,0,return 0;)<SUB>260</SUB>> ]
+  "890" -> "897"  [ label = "&lt;RET&gt;"] 
+  "892" -> "897"  [ label = "&lt;RET&gt;"] 
+  "878" -> "897"  [ label = "key"] 
+  "876" -> "897"  [ label = "this.get(key)"] 
+  "876" -> "897"  [ label = "Object value = get(key)"] 
+  "883" -> "897"  [ label = "this"] 
+  "883" -> "897"  [ label = "value"] 
+  "881" -> "897"  [ label = "castToInt(value)"] 
+  "881" -> "897"  [ label = "Integer intVal = castToInt(value)"] 
+  "886" -> "897"  [ label = "intVal"] 
+  "886" -> "897"  [ label = "intVal == null"] 
+  "872" -> "34" 
+  "872" -> "873" 
+  "878" -> "876"  [ label = "this"] 
+  "878" -> "876"  [ label = "key"] 
+  "883" -> "881"  [ label = "this"] 
+  "883" -> "881"  [ label = "value"] 
+  "893" -> "892"  [ label = "intVal.intValue()"] 
+  "34" -> "878"  [ label = "this"] 
+  "872" -> "878" 
+  "873" -> "878"  [ label = "key"] 
+  "878" -> "883"  [ label = "this"] 
+  "872" -> "883" 
+  "876" -> "883"  [ label = "value"] 
+  "881" -> "886"  [ label = "intVal"] 
+  "872" -> "886" 
+  "891" -> "890"  [ label = "0"] 
+  "872" -> "890" 
+  "886" -> "893"  [ label = "intVal"] 
+  "872" -> "893" 
+  "872" -> "891" 
+}

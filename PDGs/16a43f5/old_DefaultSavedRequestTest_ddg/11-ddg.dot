@@ -1,0 +1,42 @@
+digraph "test_SecurityContextImpl_x" {  
+"464" [label = <(METHOD,test_SecurityContextImpl_x)<SUB>141</SUB>> ]
+"487" [label = <(METHOD_RETURN,void)<SUB>141</SUB>> ]
+"465" [label = <(PARAM,this)<SUB>141</SUB>> ]
+"468" [label = <(&lt;operator&gt;.assignment,String json = &quot;{\&quot;@type\&quot;:\&quot;org.springframework...)<SUB>142</SUB>> ]
+"472" [label = <(&lt;operator&gt;.assignment,SecurityContextImpl context = (SecurityContextI...)<SUB>143</SUB>> ]
+"468" [label = <(&lt;operator&gt;.assignment,String json = &quot;{\&quot;@type\&quot;:\&quot;org.springframework...)<SUB>142</SUB>> ]
+"468" [label = <(&lt;operator&gt;.assignment,String json = &quot;{\&quot;@type\&quot;:\&quot;org.springframework...)<SUB>142</SUB>> ]
+"472" [label = <(&lt;operator&gt;.assignment,SecurityContextImpl context = (SecurityContextI...)<SUB>143</SUB>> ]
+"472" [label = <(&lt;operator&gt;.assignment,SecurityContextImpl context = (SecurityContextI...)<SUB>143</SUB>> ]
+"474" [label = <(&lt;operator&gt;.cast,(SecurityContextImpl) JSON.parseObject(json, Ob...)<SUB>143</SUB>> ]
+"474" [label = <(&lt;operator&gt;.cast,(SecurityContextImpl) JSON.parseObject(json, Ob...)<SUB>143</SUB>> ]
+"476" [label = <(parseObject,parseObject(json, Object.class, config))<SUB>143</SUB>> ]
+"476" [label = <(parseObject,parseObject(json, Object.class, config))<SUB>143</SUB>> ]
+"476" [label = <(parseObject,parseObject(json, Object.class, config))<SUB>143</SUB>> ]
+"476" [label = <(parseObject,parseObject(json, Object.class, config))<SUB>143</SUB>> ]
+  "465" -> "487"  [ label = "this"] 
+  "468" -> "487"  [ label = "String json = &quot;{\&quot;@type\&quot;:\&quot;org.springframework.security.core.context.SecurityContextImpl\&quot;,\&quot;authentication\&quot;:{\&quot;@type\&quot;:\&quot;org.springframework.security.authentication.UsernamePasswordAuthenticationToken\&quot;,\&quot;authenticated\&quot;:true,\&quot;authorities\&quot;:[{\&quot;@type\&quot;:\&quot;org.springframework.security.core.authority.SimpleGrantedAuthority\&quot;,\&quot;authority\&quot;:\&quot;ROLE_ADMIN\&quot;}],\&quot;details\&quot;:{\&quot;@type\&quot;:\&quot;org.springframework.security.web.authentication.WebAuthenticationDetails\&quot;,\&quot;remoteAddress\&quot;:\&quot;0:0:0:0:0:0:0:1\&quot;,\&quot;sessionId\&quot;:\&quot;35dbb2c4-971c-4624-bd89-2e002180a2ca\&quot;},\&quot;name\&quot;:\&quot;admin\&quot;,\&quot;principal\&quot;:{\&quot;@type\&quot;:\&quot;org.springframework.security.core.userdetails.User\&quot;,\&quot;accountNonExpired\&quot;:true,\&quot;accountNonLocked\&quot;:true,\&quot;authorities\&quot;:[{\&quot;$ref\&quot;:\&quot;$.authentication.authorities[0]\&quot;}],\&quot;credentialsNonExpired\&quot;:true,\&quot;enabled\&quot;:true,\&quot;username\&quot;:\&quot;admin\&quot;}}}&quot;"] 
+  "472" -> "487"  [ label = "context"] 
+  "476" -> "487"  [ label = "json"] 
+  "476" -> "487"  [ label = "Object.class"] 
+  "476" -> "487"  [ label = "this.config"] 
+  "474" -> "487"  [ label = "parseObject(json, Object.class, config)"] 
+  "472" -> "487"  [ label = "(SecurityContextImpl) JSON.parseObject(json, Object.class, config)"] 
+  "472" -> "487"  [ label = "SecurityContextImpl context = (SecurityContextImpl) JSON.parseObject(json, Object.class, config)"] 
+  "476" -> "487"  [ label = "JSON"] 
+  "464" -> "465" 
+  "464" -> "468" 
+  "464" -> "472" 
+  "476" -> "472"  [ label = "JSON"] 
+  "476" -> "472"  [ label = "json"] 
+  "476" -> "472"  [ label = "Object.class"] 
+  "476" -> "472"  [ label = "this.config"] 
+  "464" -> "474" 
+  "476" -> "474"  [ label = "JSON"] 
+  "476" -> "474"  [ label = "json"] 
+  "476" -> "474"  [ label = "Object.class"] 
+  "476" -> "474"  [ label = "this.config"] 
+  "464" -> "476" 
+  "468" -> "476"  [ label = "json"] 
+  "465" -> "476"  [ label = "this"] 
+}

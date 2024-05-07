@@ -1,0 +1,54 @@
+digraph "getDoubleValue" {  
+"1165" [label = <(METHOD,getDoubleValue)<SUB>397</SUB>> ]
+"1189" [label = <(METHOD_RETURN,double)<SUB>397</SUB>> ]
+"72" [label = <(PARAM,this)<SUB>397</SUB>> ]
+"1166" [label = <(PARAM,int index)<SUB>397</SUB>> ]
+"1169" [label = <(&lt;operator&gt;.assignment,Object value = get(index))<SUB>398</SUB>> ]
+"1174" [label = <(&lt;operator&gt;.assignment,Double doubleValue = castToDouble(value))<SUB>400</SUB>> ]
+"1185" [label = <(RETURN,return doubleValue;,return doubleValue;)<SUB>405</SUB>> ]
+"1169" [label = <(&lt;operator&gt;.assignment,Object value = get(index))<SUB>398</SUB>> ]
+"1169" [label = <(&lt;operator&gt;.assignment,Object value = get(index))<SUB>398</SUB>> ]
+"1174" [label = <(&lt;operator&gt;.assignment,Double doubleValue = castToDouble(value))<SUB>400</SUB>> ]
+"1174" [label = <(&lt;operator&gt;.assignment,Double doubleValue = castToDouble(value))<SUB>400</SUB>> ]
+"1179" [label = <(&lt;operator&gt;.equals,doubleValue == null)<SUB>401</SUB>> ]
+"1186" [label = <(IDENTIFIER,doubleValue,return doubleValue;)<SUB>405</SUB>> ]
+"1171" [label = <(get,this.get(index))<SUB>398</SUB>> ]
+"1171" [label = <(get,this.get(index))<SUB>398</SUB>> ]
+"1176" [label = <(castToDouble,castToDouble(value))<SUB>400</SUB>> ]
+"1176" [label = <(castToDouble,castToDouble(value))<SUB>400</SUB>> ]
+"1179" [label = <(&lt;operator&gt;.equals,doubleValue == null)<SUB>401</SUB>> ]
+"1179" [label = <(&lt;operator&gt;.equals,doubleValue == null)<SUB>401</SUB>> ]
+"1183" [label = <(RETURN,return 0D;,return 0D;)<SUB>402</SUB>> ]
+"1184" [label = <(LITERAL,0D,return 0D;)<SUB>402</SUB>> ]
+  "1185" -> "1189"  [ label = "&lt;RET&gt;"] 
+  "1183" -> "1189"  [ label = "&lt;RET&gt;"] 
+  "1171" -> "1189"  [ label = "index"] 
+  "1169" -> "1189"  [ label = "this.get(index)"] 
+  "1169" -> "1189"  [ label = "Object value = get(index)"] 
+  "1176" -> "1189"  [ label = "this"] 
+  "1176" -> "1189"  [ label = "value"] 
+  "1174" -> "1189"  [ label = "castToDouble(value)"] 
+  "1174" -> "1189"  [ label = "Double doubleValue = castToDouble(value)"] 
+  "1179" -> "1189"  [ label = "doubleValue"] 
+  "1179" -> "1189"  [ label = "doubleValue == null"] 
+  "1165" -> "72" 
+  "1165" -> "1166" 
+  "1171" -> "1169"  [ label = "this"] 
+  "1171" -> "1169"  [ label = "index"] 
+  "1176" -> "1174"  [ label = "this"] 
+  "1176" -> "1174"  [ label = "value"] 
+  "1186" -> "1185"  [ label = "doubleValue"] 
+  "1179" -> "1186"  [ label = "doubleValue"] 
+  "1165" -> "1186" 
+  "72" -> "1171"  [ label = "this"] 
+  "1165" -> "1171" 
+  "1166" -> "1171"  [ label = "index"] 
+  "1171" -> "1176"  [ label = "this"] 
+  "1165" -> "1176" 
+  "1169" -> "1176"  [ label = "value"] 
+  "1174" -> "1179"  [ label = "doubleValue"] 
+  "1165" -> "1179" 
+  "1184" -> "1183"  [ label = "0D"] 
+  "1165" -> "1183" 
+  "1165" -> "1184" 
+}

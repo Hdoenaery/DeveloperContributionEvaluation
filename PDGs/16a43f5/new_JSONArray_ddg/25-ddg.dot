@@ -1,0 +1,25 @@
+digraph "fluentRetainAll" {  
+"520" [label = <(METHOD,fluentRetainAll)<SUB>165</SUB>> ]
+"531" [label = <(METHOD_RETURN,com.alibaba.fastjson.JSONArray)<SUB>165</SUB>> ]
+"18" [label = <(PARAM,this)<SUB>165</SUB>> ]
+"521" [label = <(PARAM,Collection&lt;?&gt; c)<SUB>165</SUB>> ]
+"523" [label = <(retainAll,this.list.retainAll(c))<SUB>166</SUB>> ]
+"528" [label = <(RETURN,return this;,return this;)<SUB>167</SUB>> ]
+"523" [label = <(retainAll,this.list.retainAll(c))<SUB>166</SUB>> ]
+"523" [label = <(retainAll,this.list.retainAll(c))<SUB>166</SUB>> ]
+"17" [label = <(IDENTIFIER,this,return this;)<SUB>167</SUB>> ]
+  "528" -> "531"  [ label = "&lt;RET&gt;"] 
+  "18" -> "531"  [ label = "this"] 
+  "523" -> "531"  [ label = "this.list"] 
+  "523" -> "531"  [ label = "c"] 
+  "523" -> "531"  [ label = "this.list.retainAll(c)"] 
+  "520" -> "18" 
+  "520" -> "521" 
+  "17" -> "528"  [ label = "this"] 
+  "18" -> "523"  [ label = "this"] 
+  "521" -> "523"  [ label = "c"] 
+  "520" -> "523" 
+  "523" -> "17"  [ label = "this.list"] 
+  "18" -> "17"  [ label = "this"] 
+  "520" -> "17" 
+}

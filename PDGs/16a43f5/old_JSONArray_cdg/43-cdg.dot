@@ -1,0 +1,27 @@
+digraph "getObject" {  
+"882" [label = <(&lt;operator&gt;.instanceOf,type instanceof Class)<SUB>278</SUB>> ]
+"886" [label = <(RETURN,return (T) TypeUtils.castToJavaBean(obj, (Class...,return (T) TypeUtils.castToJavaBean(obj, (Class...)<SUB>279</SUB>> ]
+"887" [label = <(&lt;operator&gt;.cast,(T) TypeUtils.castToJavaBean(obj, (Class) type))<SUB>279</SUB>> ]
+"898" [label = <(&lt;operator&gt;.assignment,String json = JSON.toJSONString(obj))<SUB>281</SUB>> ]
+"903" [label = <(RETURN,return (T) JSON.parseObject(json, type);,return (T) JSON.parseObject(json, type);)<SUB>282</SUB>> ]
+"888" [label = <(TYPE_REF,T,T)<SUB>279</SUB>> ]
+"889" [label = <(castToJavaBean,castToJavaBean(obj, (Class) type))<SUB>279</SUB>> ]
+"900" [label = <(toJSONString,toJSONString(obj))<SUB>281</SUB>> ]
+"904" [label = <(&lt;operator&gt;.cast,(T) JSON.parseObject(json, type))<SUB>282</SUB>> ]
+"892" [label = <(&lt;operator&gt;.cast,(Class) type)<SUB>279</SUB>> ]
+"905" [label = <(TYPE_REF,T,T)<SUB>282</SUB>> ]
+"906" [label = <(parseObject,parseObject(json, type))<SUB>282</SUB>> ]
+"893" [label = <(TYPE_REF,Class,Class)<SUB>279</SUB>> ]
+  "882" -> "900" 
+  "882" -> "898" 
+  "882" -> "906" 
+  "882" -> "903" 
+  "882" -> "887" 
+  "882" -> "892" 
+  "882" -> "886" 
+  "882" -> "889" 
+  "882" -> "893" 
+  "882" -> "888" 
+  "882" -> "905" 
+  "882" -> "904" 
+}

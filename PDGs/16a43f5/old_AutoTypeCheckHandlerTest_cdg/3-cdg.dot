@@ -1,0 +1,11 @@
+digraph "handler" {  
+"103" [label = <(RETURN,return null;,return null;)<SUB>27</SUB>> ]
+"95" [label = <(equals,equals(typeName))<SUB>24</SUB>> ]
+"99" [label = <(RETURN,return Model.class;,return Model.class;)<SUB>25</SUB>> ]
+"100" [label = <(&lt;operator&gt;.fieldAccess,Model.class)<SUB>25</SUB>> ]
+"102" [label = <(FIELD_IDENTIFIER,class,class)<SUB>25</SUB>> ]
+  "95" -> "102" 
+  "95" -> "103" 
+  "95" -> "99" 
+  "95" -> "100" 
+}

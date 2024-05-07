@@ -1,0 +1,42 @@
+digraph "test_3" {  
+"50" [label = <(METHOD,test_3)<SUB>21</SUB>> ]
+"69" [label = <(METHOD_RETURN,void)<SUB>21</SUB>> ]
+"6" [label = <(PARAM,this)<SUB>21</SUB>> ]
+"53" [label = <(&lt;operator&gt;.assignment,Exception ex = (Exception) JSON.parseObject(&quot;{\...)<SUB>22</SUB>> ]
+"63" [label = <(assertEquals,assertEquals(&quot;xxx&quot;, ex.getMessage()))<SUB>23</SUB>> ]
+"53" [label = <(&lt;operator&gt;.assignment,Exception ex = (Exception) JSON.parseObject(&quot;{\...)<SUB>22</SUB>> ]
+"53" [label = <(&lt;operator&gt;.assignment,Exception ex = (Exception) JSON.parseObject(&quot;{\...)<SUB>22</SUB>> ]
+"63" [label = <(assertEquals,assertEquals(&quot;xxx&quot;, ex.getMessage()))<SUB>23</SUB>> ]
+"63" [label = <(assertEquals,assertEquals(&quot;xxx&quot;, ex.getMessage()))<SUB>23</SUB>> ]
+"63" [label = <(assertEquals,assertEquals(&quot;xxx&quot;, ex.getMessage()))<SUB>23</SUB>> ]
+"55" [label = <(&lt;operator&gt;.cast,(Exception) JSON.parseObject(&quot;{\&quot;@type\&quot;:\&quot;org....)<SUB>22</SUB>> ]
+"55" [label = <(&lt;operator&gt;.cast,(Exception) JSON.parseObject(&quot;{\&quot;@type\&quot;:\&quot;org....)<SUB>22</SUB>> ]
+"65" [label = <(getMessage,ex.getMessage())<SUB>23</SUB>> ]
+"57" [label = <(parseObject,parseObject(&quot;{\&quot;@type\&quot;:\&quot;org.springframework.d...)<SUB>22</SUB>> ]
+"57" [label = <(parseObject,parseObject(&quot;{\&quot;@type\&quot;:\&quot;org.springframework.d...)<SUB>22</SUB>> ]
+"57" [label = <(parseObject,parseObject(&quot;{\&quot;@type\&quot;:\&quot;org.springframework.d...)<SUB>22</SUB>> ]
+  "57" -> "69"  [ label = "Object.class"] 
+  "55" -> "69"  [ label = "parseObject(&quot;{\&quot;@type\&quot;:\&quot;org.springframework.dao.CannotAcquireLockException\&quot;,\&quot;message\&quot;:\&quot;xxx\&quot;}&quot;, Object.class)"] 
+  "53" -> "69"  [ label = "(Exception) JSON.parseObject(&quot;{\&quot;@type\&quot;:\&quot;org.springframework.dao.CannotAcquireLockException\&quot;,\&quot;message\&quot;:\&quot;xxx\&quot;}&quot;, Object.class)"] 
+  "53" -> "69"  [ label = "Exception ex = (Exception) JSON.parseObject(&quot;{\&quot;@type\&quot;:\&quot;org.springframework.dao.CannotAcquireLockException\&quot;,\&quot;message\&quot;:\&quot;xxx\&quot;}&quot;, Object.class)"] 
+  "63" -> "69"  [ label = "this"] 
+  "65" -> "69"  [ label = "ex"] 
+  "63" -> "69"  [ label = "ex.getMessage()"] 
+  "63" -> "69"  [ label = "assertEquals(&quot;xxx&quot;, ex.getMessage())"] 
+  "57" -> "69"  [ label = "JSON"] 
+  "50" -> "6" 
+  "50" -> "53" 
+  "57" -> "53"  [ label = "JSON"] 
+  "57" -> "53"  [ label = "&quot;{\&quot;@type\&quot;:\&quot;org.springframework.dao.CannotAcquireLockException\&quot;,\&quot;message\&quot;:\&quot;xxx\&quot;}&quot;"] 
+  "57" -> "53"  [ label = "Object.class"] 
+  "6" -> "63"  [ label = "this"] 
+  "50" -> "63" 
+  "65" -> "63"  [ label = "ex"] 
+  "50" -> "55" 
+  "57" -> "55"  [ label = "JSON"] 
+  "57" -> "55"  [ label = "&quot;{\&quot;@type\&quot;:\&quot;org.springframework.dao.CannotAcquireLockException\&quot;,\&quot;message\&quot;:\&quot;xxx\&quot;}&quot;"] 
+  "57" -> "55"  [ label = "Object.class"] 
+  "53" -> "65"  [ label = "ex"] 
+  "50" -> "65" 
+  "50" -> "57" 
+}

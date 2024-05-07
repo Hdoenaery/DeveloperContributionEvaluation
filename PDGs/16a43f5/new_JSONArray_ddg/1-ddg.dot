@@ -1,0 +1,42 @@
+digraph "&lt;init&gt;" {  
+"215" [label = <(METHOD,&lt;init&gt;)<SUB>57</SUB>> ]
+"239" [label = <(METHOD_RETURN,void)<SUB>62</SUB>> ]
+"104" [label = <(PARAM,this)<SUB>57</SUB>> ]
+"216" [label = <(PARAM,List&lt;Object&gt; list)<SUB>57</SUB>> ]
+"233" [label = <(&lt;operator&gt;.assignment,this.list = list)<SUB>61</SUB>> ]
+"219" [label = <(&lt;operator&gt;.equals,list == null)<SUB>58</SUB>> ]
+"233" [label = <(&lt;operator&gt;.assignment,this.list = list)<SUB>61</SUB>> ]
+"233" [label = <(&lt;operator&gt;.assignment,this.list = list)<SUB>61</SUB>> ]
+"219" [label = <(&lt;operator&gt;.equals,list == null)<SUB>58</SUB>> ]
+"219" [label = <(&lt;operator&gt;.equals,list == null)<SUB>58</SUB>> ]
+"223" [label = <(&lt;operator&gt;.throw,throw new IllegalArgumentException(&quot;list is nul...)<SUB>59</SUB>> ]
+"223" [label = <(&lt;operator&gt;.throw,throw new IllegalArgumentException(&quot;list is nul...)<SUB>59</SUB>> ]
+"226" [label = <(&lt;operator&gt;.assignment,$obj4 = new IllegalArgumentException(&quot;list is n...)<SUB>59</SUB>> ]
+"229" [label = <(&lt;init&gt;,new IllegalArgumentException(&quot;list is null.&quot;))<SUB>59</SUB>> ]
+"232" [label = <(IDENTIFIER,$obj4,&lt;empty&gt;)<SUB>59</SUB>> ]
+"226" [label = <(&lt;operator&gt;.assignment,$obj4 = new IllegalArgumentException(&quot;list is n...)<SUB>59</SUB>> ]
+"226" [label = <(&lt;operator&gt;.assignment,$obj4 = new IllegalArgumentException(&quot;list is n...)<SUB>59</SUB>> ]
+"229" [label = <(&lt;init&gt;,new IllegalArgumentException(&quot;list is null.&quot;))<SUB>59</SUB>> ]
+"229" [label = <(&lt;init&gt;,new IllegalArgumentException(&quot;list is null.&quot;))<SUB>59</SUB>> ]
+  "104" -> "239"  [ label = "this"] 
+  "219" -> "239"  [ label = "list == null"] 
+  "226" -> "239"  [ label = "$obj4 = new IllegalArgumentException(&quot;list is null.&quot;)"] 
+  "229" -> "239"  [ label = "$obj4"] 
+  "229" -> "239"  [ label = "new IllegalArgumentException(&quot;list is null.&quot;)"] 
+  "223" -> "239"  [ label = "throw new IllegalArgumentException(&quot;list is null.&quot;);"] 
+  "233" -> "239"  [ label = "this.list"] 
+  "233" -> "239"  [ label = "list"] 
+  "233" -> "239"  [ label = "this.list = list"] 
+  "215" -> "104" 
+  "215" -> "216" 
+  "219" -> "233"  [ label = "list"] 
+  "215" -> "233" 
+  "216" -> "219"  [ label = "list"] 
+  "215" -> "219" 
+  "229" -> "223"  [ label = "$obj4"] 
+  "215" -> "223" 
+  "215" -> "226" 
+  "215" -> "232" 
+  "226" -> "229"  [ label = "$obj4"] 
+  "215" -> "229" 
+}

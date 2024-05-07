@@ -1,0 +1,10 @@
+digraph "getType" {  
+"1997" [label = <(METHOD,getType)> ]
+"2001" [label = <(METHOD_RETURN,ANY)> ]
+"1998" [label = <(PARAM,p0)> ]
+"1999" [label = <(PARAM,p1)> ]
+  "1998" -> "2001"  [ label = "p0"] 
+  "1999" -> "2001"  [ label = "p1"] 
+  "1997" -> "1998" 
+  "1997" -> "1999" 
+}

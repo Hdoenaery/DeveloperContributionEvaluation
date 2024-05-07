@@ -1,0 +1,27 @@
+digraph "clone" {  
+"1252" [label = <(&lt;operator&gt;.instanceOf,//
+map instanceof LinkedHashMap)<SUB>407</SUB>> ]
+"1259" [label = <(&lt;operator&gt;.assignment,$obj3 = //
+new LinkedHashMap&lt;String, Object&gt;(map))<SUB>408</SUB>> ]
+"1262" [label = <(&lt;init&gt;,//
+new LinkedHashMap&lt;String, Object&gt;(map))<SUB>408</SUB>> ]
+"1270" [label = <(&lt;operator&gt;.assignment,$obj4 = new HashMap&lt;String, Object&gt;(map))<SUB>409</SUB>> ]
+"1273" [label = <(&lt;init&gt;,new HashMap&lt;String, Object&gt;(map))<SUB>409</SUB>> ]
+"1261" [label = <(&lt;operator&gt;.alloc,//
+new LinkedHashMap&lt;String, Object&gt;(map))<SUB>408</SUB>> ]
+"1264" [label = <(&lt;operator&gt;.fieldAccess,this.map)<SUB>408</SUB>> ]
+"1272" [label = <(&lt;operator&gt;.alloc,new HashMap&lt;String, Object&gt;(map))<SUB>409</SUB>> ]
+"1275" [label = <(&lt;operator&gt;.fieldAccess,this.map)<SUB>409</SUB>> ]
+"1266" [label = <(FIELD_IDENTIFIER,map,map)<SUB>408</SUB>> ]
+"1277" [label = <(FIELD_IDENTIFIER,map,map)<SUB>409</SUB>> ]
+  "1252" -> "1272" 
+  "1252" -> "1261" 
+  "1252" -> "1270" 
+  "1252" -> "1277" 
+  "1252" -> "1262" 
+  "1252" -> "1259" 
+  "1252" -> "1264" 
+  "1252" -> "1273" 
+  "1252" -> "1275" 
+  "1252" -> "1266" 
+}

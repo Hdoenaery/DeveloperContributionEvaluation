@@ -1,0 +1,107 @@
+digraph "clone" {  
+"1149" [label = <(METHOD,clone)<SUB>405</SUB>> ]
+"1192" [label = <(METHOD_RETURN,com.alibaba.fastjson.JSONObject)<SUB>406</SUB>> ]
+"1150" [label = <(PARAM,this)<SUB>405</SUB>> ]
+"1152" [label = <(RETURN,return new JSONObject(//
+map instanceof Linked...,return new JSONObject(//
+map instanceof Linked...)<SUB>407</SUB>> ]
+"1153" [label = <(BLOCK,&lt;empty&gt;,&lt;empty&gt;)<SUB>407</SUB>> ]
+"1155" [label = <(&lt;operator&gt;.assignment,$obj2 = new JSONObject(//
+map instanceof Linke...)<SUB>407</SUB>> ]
+"1158" [label = <(&lt;init&gt;,new JSONObject(//
+map instanceof LinkedHashMap...)<SUB>407</SUB>> ]
+"1188" [label = <(IDENTIFIER,$obj2,&lt;empty&gt;)<SUB>407</SUB>> ]
+"1155" [label = <(&lt;operator&gt;.assignment,$obj2 = new JSONObject(//
+map instanceof Linke...)<SUB>407</SUB>> ]
+"1155" [label = <(&lt;operator&gt;.assignment,$obj2 = new JSONObject(//
+map instanceof Linke...)<SUB>407</SUB>> ]
+"1158" [label = <(&lt;init&gt;,new JSONObject(//
+map instanceof LinkedHashMap...)<SUB>407</SUB>> ]
+"1158" [label = <(&lt;init&gt;,new JSONObject(//
+map instanceof LinkedHashMap...)<SUB>407</SUB>> ]
+"1160" [label = <(&lt;operator&gt;.conditional,//
+map instanceof LinkedHashMap ? //
+new Link...)<SUB>407</SUB>> ]
+"1160" [label = <(&lt;operator&gt;.conditional,//
+map instanceof LinkedHashMap ? //
+new Link...)<SUB>407</SUB>> ]
+"1160" [label = <(&lt;operator&gt;.conditional,//
+map instanceof LinkedHashMap ? //
+new Link...)<SUB>407</SUB>> ]
+"1161" [label = <(&lt;operator&gt;.instanceOf,//
+map instanceof LinkedHashMap)<SUB>407</SUB>> ]
+"1161" [label = <(&lt;operator&gt;.instanceOf,//
+map instanceof LinkedHashMap)<SUB>407</SUB>> ]
+"1168" [label = <(&lt;operator&gt;.assignment,$obj3 = //
+new LinkedHashMap&lt;String, Object&gt;(map))<SUB>408</SUB>> ]
+"1171" [label = <(&lt;init&gt;,//
+new LinkedHashMap&lt;String, Object&gt;(map))<SUB>408</SUB>> ]
+"1176" [label = <(IDENTIFIER,$obj3,&lt;empty&gt;)<SUB>408</SUB>> ]
+"1179" [label = <(&lt;operator&gt;.assignment,$obj4 = new HashMap&lt;String, Object&gt;(map))<SUB>409</SUB>> ]
+"1182" [label = <(&lt;init&gt;,new HashMap&lt;String, Object&gt;(map))<SUB>409</SUB>> ]
+"1187" [label = <(IDENTIFIER,$obj4,&lt;empty&gt;)<SUB>409</SUB>> ]
+"1168" [label = <(&lt;operator&gt;.assignment,$obj3 = //
+new LinkedHashMap&lt;String, Object&gt;(map))<SUB>408</SUB>> ]
+"1168" [label = <(&lt;operator&gt;.assignment,$obj3 = //
+new LinkedHashMap&lt;String, Object&gt;(map))<SUB>408</SUB>> ]
+"1171" [label = <(&lt;init&gt;,//
+new LinkedHashMap&lt;String, Object&gt;(map))<SUB>408</SUB>> ]
+"1171" [label = <(&lt;init&gt;,//
+new LinkedHashMap&lt;String, Object&gt;(map))<SUB>408</SUB>> ]
+"1179" [label = <(&lt;operator&gt;.assignment,$obj4 = new HashMap&lt;String, Object&gt;(map))<SUB>409</SUB>> ]
+"1179" [label = <(&lt;operator&gt;.assignment,$obj4 = new HashMap&lt;String, Object&gt;(map))<SUB>409</SUB>> ]
+"1182" [label = <(&lt;init&gt;,new HashMap&lt;String, Object&gt;(map))<SUB>409</SUB>> ]
+"1182" [label = <(&lt;init&gt;,new HashMap&lt;String, Object&gt;(map))<SUB>409</SUB>> ]
+  "1152" -> "1192"  [ label = "&lt;RET&gt;"] 
+  "1150" -> "1192"  [ label = "this"] 
+  "1155" -> "1192"  [ label = "$obj2 = new JSONObject(//
+map instanceof LinkedHashMap ? //
+new LinkedHashMap&lt;String, Object&gt;(map) : new HashMap&lt;String, Object&gt;(map))"] 
+  "1158" -> "1192"  [ label = "$obj2"] 
+  "1160" -> "1192"  [ label = "//
+map instanceof LinkedHashMap"] 
+  "1179" -> "1192"  [ label = "$obj4 = new HashMap&lt;String, Object&gt;(map)"] 
+  "1182" -> "1192"  [ label = "$obj4"] 
+  "1182" -> "1192"  [ label = "this.map"] 
+  "1182" -> "1192"  [ label = "new HashMap&lt;String, Object&gt;(map)"] 
+  "1168" -> "1192"  [ label = "$obj3 = //
+new LinkedHashMap&lt;String, Object&gt;(map)"] 
+  "1171" -> "1192"  [ label = "$obj3"] 
+  "1171" -> "1192"  [ label = "this.map"] 
+  "1171" -> "1192"  [ label = "//
+new LinkedHashMap&lt;String, Object&gt;(map)"] 
+  "1158" -> "1192"  [ label = "//
+map instanceof LinkedHashMap ? //
+new LinkedHashMap&lt;String, Object&gt;(map) : new HashMap&lt;String, Object&gt;(map)"] 
+  "1158" -> "1192"  [ label = "new JSONObject(//
+map instanceof LinkedHashMap ? //
+new LinkedHashMap&lt;String, Object&gt;(map) : new HashMap&lt;String, Object&gt;(map))"] 
+  "1149" -> "1150" 
+  "1153" -> "1152" 
+  "1153" -> "1152"  [ label = "&lt;empty&gt;"] 
+  "1149" -> "1152" 
+  "1158" -> "1153"  [ label = "$obj2"] 
+  "1149" -> "1153" 
+  "1149" -> "1155" 
+  "1149" -> "1188" 
+  "1155" -> "1158"  [ label = "$obj2"] 
+  "1149" -> "1158" 
+  "1171" -> "1158"  [ label = "$obj3"] 
+  "1182" -> "1158"  [ label = "$obj4"] 
+  "1171" -> "1160"  [ label = "$obj3"] 
+  "1182" -> "1160"  [ label = "$obj4"] 
+  "1150" -> "1161"  [ label = "this"] 
+  "1149" -> "1161" 
+  "1149" -> "1168" 
+  "1149" -> "1176" 
+  "1149" -> "1179" 
+  "1149" -> "1187" 
+  "1168" -> "1171"  [ label = "$obj3"] 
+  "1149" -> "1171" 
+  "1150" -> "1171"  [ label = "this"] 
+  "1161" -> "1171"  [ label = "this.map"] 
+  "1179" -> "1182"  [ label = "$obj4"] 
+  "1149" -> "1182" 
+  "1150" -> "1182"  [ label = "this"] 
+  "1161" -> "1182"  [ label = "this.map"] 
+}

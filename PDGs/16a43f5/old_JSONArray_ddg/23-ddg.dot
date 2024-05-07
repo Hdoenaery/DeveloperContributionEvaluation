@@ -1,0 +1,25 @@
+digraph "fluentRemoveAll" {  
+"496" [label = <(METHOD,fluentRemoveAll)<SUB>156</SUB>> ]
+"507" [label = <(METHOD_RETURN,com.alibaba.fastjson.JSONArray)<SUB>156</SUB>> ]
+"16" [label = <(PARAM,this)<SUB>156</SUB>> ]
+"497" [label = <(PARAM,Collection&lt;?&gt; c)<SUB>156</SUB>> ]
+"499" [label = <(removeAll,this.list.removeAll(c))<SUB>157</SUB>> ]
+"504" [label = <(RETURN,return this;,return this;)<SUB>158</SUB>> ]
+"499" [label = <(removeAll,this.list.removeAll(c))<SUB>157</SUB>> ]
+"499" [label = <(removeAll,this.list.removeAll(c))<SUB>157</SUB>> ]
+"15" [label = <(IDENTIFIER,this,return this;)<SUB>158</SUB>> ]
+  "504" -> "507"  [ label = "&lt;RET&gt;"] 
+  "16" -> "507"  [ label = "this"] 
+  "499" -> "507"  [ label = "this.list"] 
+  "499" -> "507"  [ label = "c"] 
+  "499" -> "507"  [ label = "this.list.removeAll(c)"] 
+  "496" -> "16" 
+  "496" -> "497" 
+  "15" -> "504"  [ label = "this"] 
+  "16" -> "499"  [ label = "this"] 
+  "497" -> "499"  [ label = "c"] 
+  "496" -> "499" 
+  "16" -> "15"  [ label = "this"] 
+  "499" -> "15"  [ label = "this.list"] 
+  "496" -> "15" 
+}

@@ -1,0 +1,33 @@
+digraph "getJSONArray" {  
+"838" [label = <(RETURN,return (JSONArray) toJSON(value);,return (JSONArray) toJSON(value);)<SUB>268</SUB>> ]
+"813" [label = <(&lt;operator&gt;.instanceOf,value instanceof JSONArray)<SUB>260</SUB>> ]
+"822" [label = <(&lt;operator&gt;.instanceOf,value instanceof List)<SUB>264</SUB>> ]
+"839" [label = <(&lt;operator&gt;.cast,(JSONArray) toJSON(value))<SUB>268</SUB>> ]
+"817" [label = <(RETURN,return (JSONArray) value;,return (JSONArray) value;)<SUB>261</SUB>> ]
+"824" [label = <(TYPE_REF,List,List)<SUB>264</SUB>> ]
+"826" [label = <(RETURN,return new JSONArray((List) value);,return new JSONArray((List) value);)<SUB>265</SUB>> ]
+"840" [label = <(TYPE_REF,JSONArray,JSONArray)<SUB>268</SUB>> ]
+"841" [label = <(toJSON,toJSON(value))<SUB>268</SUB>> ]
+"818" [label = <(&lt;operator&gt;.cast,(JSONArray) value)<SUB>261</SUB>> ]
+"819" [label = <(TYPE_REF,JSONArray,JSONArray)<SUB>261</SUB>> ]
+"829" [label = <(&lt;operator&gt;.assignment,$obj1 = new JSONArray((List) value))<SUB>265</SUB>> ]
+"832" [label = <(&lt;init&gt;,new JSONArray((List) value))<SUB>265</SUB>> ]
+"831" [label = <(&lt;operator&gt;.alloc,new JSONArray((List) value))<SUB>265</SUB>> ]
+"834" [label = <(&lt;operator&gt;.cast,(List) value)<SUB>265</SUB>> ]
+"835" [label = <(TYPE_REF,List,List)<SUB>265</SUB>> ]
+  "813" -> "819" 
+  "813" -> "817" 
+  "813" -> "818" 
+  "813" -> "822" 
+  "813" -> "824" 
+  "822" -> "832" 
+  "822" -> "838" 
+  "822" -> "831" 
+  "822" -> "826" 
+  "822" -> "840" 
+  "822" -> "834" 
+  "822" -> "841" 
+  "822" -> "835" 
+  "822" -> "839" 
+  "822" -> "829" 
+}

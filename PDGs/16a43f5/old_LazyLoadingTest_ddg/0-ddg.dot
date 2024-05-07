@@ -1,0 +1,19 @@
+digraph "setUp" {  
+"12" [label = <(METHOD,setUp)<SUB>21</SUB>> ]
+"24" [label = <(METHOD_RETURN,void)<SUB>21</SUB>> ]
+"13" [label = <(PARAM,this)<SUB>21</SUB>> ]
+"15" [label = <(&lt;operator&gt;.assignment,this.emf = Persistence.createEntityManagerFacto...)<SUB>22</SUB>> ]
+"15" [label = <(&lt;operator&gt;.assignment,this.emf = Persistence.createEntityManagerFacto...)<SUB>22</SUB>> ]
+"15" [label = <(&lt;operator&gt;.assignment,this.emf = Persistence.createEntityManagerFacto...)<SUB>22</SUB>> ]
+"19" [label = <(createEntityManagerFactory,createEntityManagerFactory(&quot;persistenceUnit&quot;))<SUB>22</SUB>> ]
+"19" [label = <(createEntityManagerFactory,createEntityManagerFactory(&quot;persistenceUnit&quot;))<SUB>22</SUB>> ]
+  "13" -> "24"  [ label = "this"] 
+  "15" -> "24"  [ label = "this.emf"] 
+  "15" -> "24"  [ label = "createEntityManagerFactory(&quot;persistenceUnit&quot;)"] 
+  "15" -> "24"  [ label = "this.emf = Persistence.createEntityManagerFactory(&quot;persistenceUnit&quot;)"] 
+  "19" -> "24"  [ label = "Persistence"] 
+  "12" -> "13" 
+  "19" -> "15"  [ label = "Persistence"] 
+  "19" -> "15"  [ label = "&quot;persistenceUnit&quot;"] 
+  "12" -> "19" 
+}

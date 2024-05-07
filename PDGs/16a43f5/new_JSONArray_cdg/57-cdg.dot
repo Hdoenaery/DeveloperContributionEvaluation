@@ -1,0 +1,7 @@
+digraph "getDoubleValue" {  
+"1184" [label = <(RETURN,return doubleValue;,return doubleValue;)<SUB>405</SUB>> ]
+"1178" [label = <(&lt;operator&gt;.equals,doubleValue == null)<SUB>401</SUB>> ]
+"1182" [label = <(RETURN,return 0D;,return 0D;)<SUB>402</SUB>> ]
+  "1178" -> "1184" 
+  "1178" -> "1182" 
+}

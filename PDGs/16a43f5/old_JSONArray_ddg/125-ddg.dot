@@ -1,0 +1,13 @@
+digraph "castToTimestamp" {  
+"1946" [label = <(METHOD,castToTimestamp)> ]
+"1951" [label = <(METHOD_RETURN,ANY)> ]
+"1947" [label = <(PARAM,p0)> ]
+"1948" [label = <(PARAM,p1)> ]
+"1949" [label = <(PARAM,p2)> ]
+  "1947" -> "1951"  [ label = "p0"] 
+  "1948" -> "1951"  [ label = "p1"] 
+  "1949" -> "1951"  [ label = "p2"] 
+  "1946" -> "1947" 
+  "1946" -> "1948" 
+  "1946" -> "1949" 
+}

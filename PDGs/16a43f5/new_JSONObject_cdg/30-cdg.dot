@@ -1,0 +1,9 @@
+digraph "getDoubleValue" {  
+"921" [label = <(RETURN,return doubleValue.doubleValue();,return doubleValue.doubleValue();)<SUB>314</SUB>> ]
+"915" [label = <(&lt;operator&gt;.equals,doubleValue == null)<SUB>310</SUB>> ]
+"922" [label = <(doubleValue,doubleValue.doubleValue())<SUB>314</SUB>> ]
+"919" [label = <(RETURN,return 0D;,return 0D;)<SUB>311</SUB>> ]
+  "915" -> "919" 
+  "915" -> "922" 
+  "915" -> "921" 
+}

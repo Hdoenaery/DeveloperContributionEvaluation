@@ -1,0 +1,33 @@
+digraph "getByte" {  
+"955" [label = <(METHOD,getByte)<SUB>306</SUB>> ]
+"968" [label = <(METHOD_RETURN,java.lang.Byte)<SUB>306</SUB>> ]
+"39" [label = <(PARAM,this)<SUB>306</SUB>> ]
+"956" [label = <(PARAM,int index)<SUB>306</SUB>> ]
+"959" [label = <(&lt;operator&gt;.assignment,Object value = get(index))<SUB>307</SUB>> ]
+"963" [label = <(RETURN,return castToByte(value);,return castToByte(value);)<SUB>309</SUB>> ]
+"959" [label = <(&lt;operator&gt;.assignment,Object value = get(index))<SUB>307</SUB>> ]
+"959" [label = <(&lt;operator&gt;.assignment,Object value = get(index))<SUB>307</SUB>> ]
+"964" [label = <(castToByte,castToByte(value))<SUB>309</SUB>> ]
+"961" [label = <(get,this.get(index))<SUB>307</SUB>> ]
+"961" [label = <(get,this.get(index))<SUB>307</SUB>> ]
+"964" [label = <(castToByte,castToByte(value))<SUB>309</SUB>> ]
+"964" [label = <(castToByte,castToByte(value))<SUB>309</SUB>> ]
+  "963" -> "968"  [ label = "&lt;RET&gt;"] 
+  "961" -> "968"  [ label = "index"] 
+  "959" -> "968"  [ label = "this.get(index)"] 
+  "959" -> "968"  [ label = "Object value = get(index)"] 
+  "964" -> "968"  [ label = "this"] 
+  "964" -> "968"  [ label = "value"] 
+  "964" -> "968"  [ label = "castToByte(value)"] 
+  "955" -> "39" 
+  "955" -> "956" 
+  "961" -> "959"  [ label = "this"] 
+  "961" -> "959"  [ label = "index"] 
+  "964" -> "963"  [ label = "castToByte(value)"] 
+  "39" -> "961"  [ label = "this"] 
+  "955" -> "961" 
+  "956" -> "961"  [ label = "index"] 
+  "961" -> "964"  [ label = "this"] 
+  "955" -> "964" 
+  "959" -> "964"  [ label = "value"] 
+}

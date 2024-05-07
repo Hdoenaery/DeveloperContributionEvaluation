@@ -1,0 +1,10 @@
+digraph "shortValue" {  
+"2521" [label = <(METHOD,shortValue)> ]
+"2525" [label = <(METHOD_RETURN,ANY)> ]
+"2522" [label = <(PARAM,p0)> ]
+"2523" [label = <(PARAM,p1)> ]
+  "2522" -> "2525"  [ label = "p0"] 
+  "2523" -> "2525"  [ label = "p1"] 
+  "2521" -> "2522" 
+  "2521" -> "2523" 
+}

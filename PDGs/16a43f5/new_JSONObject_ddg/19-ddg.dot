@@ -1,0 +1,33 @@
+digraph "getByte" {  
+"687" [label = <(METHOD,getByte)<SUB>215</SUB>> ]
+"700" [label = <(METHOD_RETURN,java.lang.Byte)<SUB>215</SUB>> ]
+"19" [label = <(PARAM,this)<SUB>215</SUB>> ]
+"688" [label = <(PARAM,String key)<SUB>215</SUB>> ]
+"691" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>216</SUB>> ]
+"695" [label = <(RETURN,return castToByte(value);,return castToByte(value);)<SUB>218</SUB>> ]
+"691" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>216</SUB>> ]
+"691" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>216</SUB>> ]
+"696" [label = <(castToByte,castToByte(value))<SUB>218</SUB>> ]
+"693" [label = <(get,this.get(key))<SUB>216</SUB>> ]
+"693" [label = <(get,this.get(key))<SUB>216</SUB>> ]
+"696" [label = <(castToByte,castToByte(value))<SUB>218</SUB>> ]
+"696" [label = <(castToByte,castToByte(value))<SUB>218</SUB>> ]
+  "695" -> "700"  [ label = "&lt;RET&gt;"] 
+  "693" -> "700"  [ label = "key"] 
+  "691" -> "700"  [ label = "this.get(key)"] 
+  "691" -> "700"  [ label = "Object value = get(key)"] 
+  "696" -> "700"  [ label = "this"] 
+  "696" -> "700"  [ label = "value"] 
+  "696" -> "700"  [ label = "castToByte(value)"] 
+  "687" -> "19" 
+  "687" -> "688" 
+  "693" -> "691"  [ label = "this"] 
+  "693" -> "691"  [ label = "key"] 
+  "696" -> "695"  [ label = "castToByte(value)"] 
+  "19" -> "693"  [ label = "this"] 
+  "687" -> "693" 
+  "688" -> "693"  [ label = "key"] 
+  "693" -> "696"  [ label = "this"] 
+  "687" -> "696" 
+  "691" -> "696"  [ label = "value"] 
+}

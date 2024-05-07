@@ -1,0 +1,40 @@
+digraph "&lt;init&gt;" {  
+"249" [label = <(METHOD,&lt;init&gt;)<SUB>75</SUB>> ]
+"281" [label = <(METHOD_RETURN,void)<SUB>81</SUB>> ]
+"250" [label = <(PARAM,this)<SUB>75</SUB>> ]
+"251" [label = <(PARAM,int initialCapacity)<SUB>75</SUB>> ]
+"252" [label = <(PARAM,boolean ordered)<SUB>75</SUB>> ]
+"255" [label = <(IDENTIFIER,ordered,if (ordered))<SUB>76</SUB>> ]
+"257" [label = <(&lt;operator&gt;.assignment,this.map = new LinkedHashMap&lt;String, Object&gt;(in...)<SUB>77</SUB>> ]
+"262" [label = <(&lt;init&gt;,new LinkedHashMap&lt;String, Object&gt;(initialCapacity))<SUB>77</SUB>> ]
+"257" [label = <(&lt;operator&gt;.assignment,this.map = new LinkedHashMap&lt;String, Object&gt;(in...)<SUB>77</SUB>> ]
+"257" [label = <(&lt;operator&gt;.assignment,this.map = new LinkedHashMap&lt;String, Object&gt;(in...)<SUB>77</SUB>> ]
+"262" [label = <(&lt;init&gt;,new LinkedHashMap&lt;String, Object&gt;(initialCapacity))<SUB>77</SUB>> ]
+"262" [label = <(&lt;init&gt;,new LinkedHashMap&lt;String, Object&gt;(initialCapacity))<SUB>77</SUB>> ]
+"269" [label = <(&lt;operator&gt;.assignment,this.map = new HashMap&lt;String, Object&gt;(initialC...)<SUB>79</SUB>> ]
+"274" [label = <(&lt;init&gt;,new HashMap&lt;String, Object&gt;(initialCapacity))<SUB>79</SUB>> ]
+"269" [label = <(&lt;operator&gt;.assignment,this.map = new HashMap&lt;String, Object&gt;(initialC...)<SUB>79</SUB>> ]
+"269" [label = <(&lt;operator&gt;.assignment,this.map = new HashMap&lt;String, Object&gt;(initialC...)<SUB>79</SUB>> ]
+"274" [label = <(&lt;init&gt;,new HashMap&lt;String, Object&gt;(initialCapacity))<SUB>79</SUB>> ]
+"274" [label = <(&lt;init&gt;,new HashMap&lt;String, Object&gt;(initialCapacity))<SUB>79</SUB>> ]
+  "250" -> "281"  [ label = "this"] 
+  "252" -> "281"  [ label = "ordered"] 
+  "257" -> "281"  [ label = "this.map = new LinkedHashMap&lt;String, Object&gt;(initialCapacity)"] 
+  "262" -> "281"  [ label = "this.map"] 
+  "262" -> "281"  [ label = "initialCapacity"] 
+  "262" -> "281"  [ label = "new LinkedHashMap&lt;String, Object&gt;(initialCapacity)"] 
+  "249" -> "250" 
+  "249" -> "251" 
+  "249" -> "252" 
+  "249" -> "255" 
+  "249" -> "257" 
+  "250" -> "262"  [ label = "this"] 
+  "257" -> "262"  [ label = "this.map"] 
+  "251" -> "262"  [ label = "initialCapacity"] 
+  "249" -> "262" 
+  "249" -> "269" 
+  "250" -> "274"  [ label = "this"] 
+  "269" -> "274"  [ label = "this.map"] 
+  "251" -> "274"  [ label = "initialCapacity"] 
+  "249" -> "274" 
+}

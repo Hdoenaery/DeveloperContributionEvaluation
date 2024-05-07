@@ -1,0 +1,7 @@
+digraph "&lt;operator&gt;.logicalNot" {  
+"2006" [label = <(METHOD,&lt;operator&gt;.logicalNot)> ]
+"2009" [label = <(METHOD_RETURN,ANY)> ]
+"2007" [label = <(PARAM,p1)> ]
+  "2007" -> "2009"  [ label = "p1"] 
+  "2006" -> "2007" 
+}

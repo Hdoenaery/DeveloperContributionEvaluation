@@ -1,0 +1,33 @@
+digraph "getBigInteger" {  
+"941" [label = <(METHOD,getBigInteger)<SUB>323</SUB>> ]
+"954" [label = <(METHOD_RETURN,java.math.BigInteger)<SUB>323</SUB>> ]
+"58" [label = <(PARAM,this)<SUB>323</SUB>> ]
+"942" [label = <(PARAM,String key)<SUB>323</SUB>> ]
+"945" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>324</SUB>> ]
+"949" [label = <(RETURN,return castToBigInteger(value);,return castToBigInteger(value);)<SUB>326</SUB>> ]
+"945" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>324</SUB>> ]
+"945" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>324</SUB>> ]
+"950" [label = <(castToBigInteger,castToBigInteger(value))<SUB>326</SUB>> ]
+"947" [label = <(get,this.get(key))<SUB>324</SUB>> ]
+"947" [label = <(get,this.get(key))<SUB>324</SUB>> ]
+"950" [label = <(castToBigInteger,castToBigInteger(value))<SUB>326</SUB>> ]
+"950" [label = <(castToBigInteger,castToBigInteger(value))<SUB>326</SUB>> ]
+  "949" -> "954"  [ label = "&lt;RET&gt;"] 
+  "947" -> "954"  [ label = "key"] 
+  "945" -> "954"  [ label = "this.get(key)"] 
+  "945" -> "954"  [ label = "Object value = get(key)"] 
+  "950" -> "954"  [ label = "this"] 
+  "950" -> "954"  [ label = "value"] 
+  "950" -> "954"  [ label = "castToBigInteger(value)"] 
+  "941" -> "58" 
+  "941" -> "942" 
+  "947" -> "945"  [ label = "this"] 
+  "947" -> "945"  [ label = "key"] 
+  "950" -> "949"  [ label = "castToBigInteger(value)"] 
+  "58" -> "947"  [ label = "this"] 
+  "941" -> "947" 
+  "942" -> "947"  [ label = "key"] 
+  "947" -> "950"  [ label = "this"] 
+  "941" -> "950" 
+  "945" -> "950"  [ label = "value"] 
+}

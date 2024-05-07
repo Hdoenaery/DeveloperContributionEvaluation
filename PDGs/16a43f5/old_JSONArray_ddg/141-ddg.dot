@@ -1,0 +1,13 @@
+digraph "getClassFromMapping" {  
+"2030" [label = <(METHOD,getClassFromMapping)> ]
+"2035" [label = <(METHOD_RETURN,ANY)> ]
+"2031" [label = <(PARAM,p0)> ]
+"2032" [label = <(PARAM,p1)> ]
+"2033" [label = <(PARAM,p2)> ]
+  "2031" -> "2035"  [ label = "p0"] 
+  "2032" -> "2035"  [ label = "p1"] 
+  "2033" -> "2035"  [ label = "p2"] 
+  "2030" -> "2031" 
+  "2030" -> "2032" 
+  "2030" -> "2033" 
+}

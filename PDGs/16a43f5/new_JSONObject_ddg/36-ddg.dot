@@ -1,0 +1,33 @@
+digraph "getTimestamp" {  
+"1004" [label = <(METHOD,getTimestamp)<SUB>351</SUB>> ]
+"1017" [label = <(METHOD_RETURN,java.lang.Object)<SUB>351</SUB>> ]
+"69" [label = <(PARAM,this)<SUB>351</SUB>> ]
+"1005" [label = <(PARAM,String key)<SUB>351</SUB>> ]
+"1008" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>352</SUB>> ]
+"1012" [label = <(RETURN,return castToTimestamp(value);,return castToTimestamp(value);)<SUB>354</SUB>> ]
+"1008" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>352</SUB>> ]
+"1008" [label = <(&lt;operator&gt;.assignment,Object value = get(key))<SUB>352</SUB>> ]
+"1013" [label = <(castToTimestamp,castToTimestamp(value))<SUB>354</SUB>> ]
+"1010" [label = <(get,this.get(key))<SUB>352</SUB>> ]
+"1010" [label = <(get,this.get(key))<SUB>352</SUB>> ]
+"1013" [label = <(castToTimestamp,castToTimestamp(value))<SUB>354</SUB>> ]
+"1013" [label = <(castToTimestamp,castToTimestamp(value))<SUB>354</SUB>> ]
+  "1012" -> "1017"  [ label = "&lt;RET&gt;"] 
+  "1010" -> "1017"  [ label = "key"] 
+  "1008" -> "1017"  [ label = "this.get(key)"] 
+  "1008" -> "1017"  [ label = "Object value = get(key)"] 
+  "1013" -> "1017"  [ label = "this"] 
+  "1013" -> "1017"  [ label = "value"] 
+  "1013" -> "1017"  [ label = "castToTimestamp(value)"] 
+  "1004" -> "69" 
+  "1004" -> "1005" 
+  "1010" -> "1008"  [ label = "this"] 
+  "1010" -> "1008"  [ label = "key"] 
+  "1013" -> "1012"  [ label = "castToTimestamp(value)"] 
+  "69" -> "1010"  [ label = "this"] 
+  "1004" -> "1010" 
+  "1005" -> "1010"  [ label = "key"] 
+  "1010" -> "1013"  [ label = "this"] 
+  "1004" -> "1013" 
+  "1008" -> "1013"  [ label = "value"] 
+}

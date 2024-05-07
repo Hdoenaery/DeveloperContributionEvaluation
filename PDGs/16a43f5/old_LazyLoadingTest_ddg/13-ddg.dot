@@ -1,0 +1,10 @@
+digraph "getPayments" {  
+"187" [label = <(METHOD,getPayments)> ]
+"191" [label = <(METHOD_RETURN,ANY)> ]
+"188" [label = <(PARAM,p0)> ]
+"189" [label = <(PARAM,p1)> ]
+  "188" -> "191"  [ label = "p0"] 
+  "189" -> "191"  [ label = "p1"] 
+  "187" -> "188" 
+  "187" -> "189" 
+}
