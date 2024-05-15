@@ -1,0 +1,13 @@
+digraph "add" {  
+"6202" [label = <(METHOD,add)> ]
+"6207" [label = <(METHOD_RETURN,ANY)> ]
+"6203" [label = <(PARAM,p0)> ]
+"6204" [label = <(PARAM,p1)> ]
+"6205" [label = <(PARAM,p2)> ]
+  "6203" -> "6207"  [ label = "p0"] 
+  "6204" -> "6207"  [ label = "p1"] 
+  "6205" -> "6207"  [ label = "p2"] 
+  "6202" -> "6203" 
+  "6202" -> "6204" 
+  "6202" -> "6205" 
+}

@@ -1,0 +1,10 @@
+digraph "getModifiers" {  
+"5772" [label = <(METHOD,getModifiers)> ]
+"5776" [label = <(METHOD_RETURN,ANY)> ]
+"5773" [label = <(PARAM,p0)> ]
+"5774" [label = <(PARAM,p1)> ]
+  "5773" -> "5776"  [ label = "p0"] 
+  "5774" -> "5776"  [ label = "p1"] 
+  "5772" -> "5773" 
+  "5772" -> "5774" 
+}

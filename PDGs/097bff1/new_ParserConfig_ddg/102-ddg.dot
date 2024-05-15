@@ -1,0 +1,10 @@
+digraph "isEnum" {  
+"5663" [label = <(METHOD,isEnum)> ]
+"5667" [label = <(METHOD_RETURN,ANY)> ]
+"5664" [label = <(PARAM,p0)> ]
+"5665" [label = <(PARAM,p1)> ]
+  "5664" -> "5667"  [ label = "p0"] 
+  "5665" -> "5667"  [ label = "p1"] 
+  "5663" -> "5664" 
+  "5663" -> "5665" 
+}

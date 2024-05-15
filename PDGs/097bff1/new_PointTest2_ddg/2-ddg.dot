@@ -1,0 +1,9 @@
+digraph "getValue" {  
+"144" [label = <(METHOD,getValue)<SUB>47</SUB>> ]
+"153" [label = <(METHOD_RETURN,java.awt.Point)<SUB>47</SUB>> ]
+"145" [label = <(PARAM,this)<SUB>47</SUB>> ]
+"147" [label = <(RETURN,return value;,return value;)<SUB>48</SUB>> ]
+  "147" -> "153"  [ label = "&lt;RET&gt;"] 
+  "145" -> "153"  [ label = "this"] 
+  "144" -> "145" 
+}

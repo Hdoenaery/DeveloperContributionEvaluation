@@ -1,0 +1,16 @@
+digraph "put" {  
+"5929" [label = <(METHOD,put)> ]
+"5935" [label = <(METHOD_RETURN,ANY)> ]
+"5930" [label = <(PARAM,p0)> ]
+"5931" [label = <(PARAM,p1)> ]
+"5932" [label = <(PARAM,p2)> ]
+"5933" [label = <(PARAM,p3)> ]
+  "5930" -> "5935"  [ label = "p0"] 
+  "5931" -> "5935"  [ label = "p1"] 
+  "5932" -> "5935"  [ label = "p2"] 
+  "5933" -> "5935"  [ label = "p3"] 
+  "5929" -> "5930" 
+  "5929" -> "5931" 
+  "5929" -> "5932" 
+  "5929" -> "5933" 
+}

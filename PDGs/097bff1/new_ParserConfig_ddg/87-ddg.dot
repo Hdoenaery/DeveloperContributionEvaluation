@@ -1,0 +1,10 @@
+digraph "hasNext" {  
+"5583" [label = <(METHOD,hasNext)> ]
+"5587" [label = <(METHOD_RETURN,ANY)> ]
+"5584" [label = <(PARAM,p0)> ]
+"5585" [label = <(PARAM,p1)> ]
+  "5584" -> "5587"  [ label = "p0"] 
+  "5585" -> "5587"  [ label = "p1"] 
+  "5583" -> "5584" 
+  "5583" -> "5585" 
+}

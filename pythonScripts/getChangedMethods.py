@@ -89,8 +89,13 @@ def getChangedMethods(repo_path, old_commit, new_commit):
                     # CC[method.long_name] = method.complexity
 
                     # 提取该方法内容
-                    old_lines = modified_file.source_code_before.split('\n')
-                    new_lines = modified_file.source_code.split('\n')
+                    old_lines = ""
+                    if modified_file.source_code_before != None:
+                        old_lines = modified_file.source_code_before.split('\n')
+
+                    new_lines = ""
+                    if modified_file.source_code != None:
+                        new_lines = modified_file.source_code.split('\n')
                     start_line, end_line = find_method_interval(old_lines, method.name.split("::")[-1])
                     # print(f"start = {start_line} , end = {end_line}");
                     extracted_code = ""
@@ -233,8 +238,8 @@ if __name__ == "__main__":
 
 # repo_path = 'E:/Postgraduate_study/fastjson'
 #
-# old_commit = "d91c05993b17a5aff28a33810fc263402824f508"
-# new_commit = "097bff1a792e39f4e0b2807faa53af0e89fbe5e0"
+# old_commit = "e14b1e4a2c8d55ccc6b7d3c57dd172b4176988d2"
+# new_commit = "39bc3cb12a982d0225521e6f1d10bd01bd9a2575"
 #
 # # changedMethods, LOC, CC, Halstead_Volume, PCom = getChangedMethods(repo_path, old_commit, new_commit)
 # changedMethods, LOC, Halstead_Volume, PCom = getChangedMethods(repo_path, old_commit, new_commit)

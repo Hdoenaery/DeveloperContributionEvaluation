@@ -1,0 +1,10 @@
+digraph "isStatic" {  
+"5754" [label = <(METHOD,isStatic)> ]
+"5758" [label = <(METHOD_RETURN,ANY)> ]
+"5755" [label = <(PARAM,p1)> ]
+"5756" [label = <(PARAM,p2)> ]
+  "5755" -> "5758"  [ label = "p1"] 
+  "5756" -> "5758"  [ label = "p2"] 
+  "5754" -> "5755" 
+  "5754" -> "5756" 
+}

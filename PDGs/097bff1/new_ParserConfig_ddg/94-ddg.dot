@@ -1,0 +1,7 @@
+digraph "&lt;operator&gt;.arrayInitializer" {  
+"5624" [label = <(METHOD,&lt;operator&gt;.arrayInitializer)> ]
+"5627" [label = <(METHOD_RETURN,ANY)> ]
+"5625" [label = <(PARAM,p1)> ]
+  "5625" -> "5627"  [ label = "p1"] 
+  "5624" -> "5625" 
+}

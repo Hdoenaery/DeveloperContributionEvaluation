@@ -1,0 +1,17 @@
+digraph "setJacksonCompatible" {  
+"4843" [label = <(METHOD,setJacksonCompatible)<SUB>1606</SUB>> ]
+"4852" [label = <(METHOD_RETURN,void)<SUB>1606</SUB>> ]
+"106" [label = <(PARAM,this)<SUB>1606</SUB>> ]
+"4844" [label = <(PARAM,boolean jacksonCompatible)<SUB>1606</SUB>> ]
+"4846" [label = <(&lt;operator&gt;.assignment,this.jacksonCompatible = jacksonCompatible)<SUB>1607</SUB>> ]
+"4846" [label = <(&lt;operator&gt;.assignment,this.jacksonCompatible = jacksonCompatible)<SUB>1607</SUB>> ]
+"4846" [label = <(&lt;operator&gt;.assignment,this.jacksonCompatible = jacksonCompatible)<SUB>1607</SUB>> ]
+  "106" -> "4852"  [ label = "this"] 
+  "4846" -> "4852"  [ label = "this.jacksonCompatible"] 
+  "4846" -> "4852"  [ label = "jacksonCompatible"] 
+  "4846" -> "4852"  [ label = "this.jacksonCompatible = jacksonCompatible"] 
+  "4843" -> "106" 
+  "4843" -> "4844" 
+  "4844" -> "4846"  [ label = "jacksonCompatible"] 
+  "4843" -> "4846" 
+}

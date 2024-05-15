@@ -1,0 +1,10 @@
+digraph "getSuperclass" {  
+"5807" [label = <(METHOD,getSuperclass)> ]
+"5811" [label = <(METHOD_RETURN,ANY)> ]
+"5808" [label = <(PARAM,p0)> ]
+"5809" [label = <(PARAM,p1)> ]
+  "5808" -> "5811"  [ label = "p0"] 
+  "5809" -> "5811"  [ label = "p1"] 
+  "5807" -> "5808" 
+  "5807" -> "5809" 
+}

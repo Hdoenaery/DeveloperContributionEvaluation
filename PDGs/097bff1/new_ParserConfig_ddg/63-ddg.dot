@@ -1,0 +1,10 @@
+digraph "&lt;operator&gt;.logicalAnd" {  
+"5454" [label = <(METHOD,&lt;operator&gt;.logicalAnd)> ]
+"5458" [label = <(METHOD_RETURN,ANY)> ]
+"5455" [label = <(PARAM,p1)> ]
+"5456" [label = <(PARAM,p2)> ]
+  "5455" -> "5458"  [ label = "p1"] 
+  "5456" -> "5458"  [ label = "p2"] 
+  "5454" -> "5455" 
+  "5454" -> "5456" 
+}

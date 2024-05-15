@@ -1,0 +1,10 @@
+digraph "isPrimitive" {  
+"5978" [label = <(METHOD,isPrimitive)> ]
+"5982" [label = <(METHOD_RETURN,ANY)> ]
+"5979" [label = <(PARAM,p0)> ]
+"5980" [label = <(PARAM,p1)> ]
+  "5979" -> "5982"  [ label = "p0"] 
+  "5980" -> "5982"  [ label = "p1"] 
+  "5978" -> "5979" 
+  "5978" -> "5980" 
+}

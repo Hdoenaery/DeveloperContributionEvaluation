@@ -1,0 +1,7 @@
+digraph "getGlobalInstance" {  
+"261" [label = <(METHOD,getGlobalInstance)<SUB>170</SUB>> ]
+"269" [label = <(METHOD_RETURN,com.alibaba.fastjson.parser.ParserConfig)<SUB>170</SUB>> ]
+"263" [label = <(RETURN,return global;,return global;)<SUB>171</SUB>> ]
+  "263" -> "269"  [ label = "&lt;RET&gt;"] 
+  "261" -> "263" 
+}

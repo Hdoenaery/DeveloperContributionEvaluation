@@ -1,0 +1,9 @@
+digraph "isSafeMode" {  
+"1381" [label = <(METHOD,isSafeMode)<SUB>539</SUB>> ]
+"1390" [label = <(METHOD_RETURN,boolean)<SUB>539</SUB>> ]
+"1382" [label = <(PARAM,this)<SUB>539</SUB>> ]
+"1384" [label = <(RETURN,return safeMode;,return safeMode;)<SUB>540</SUB>> ]
+  "1384" -> "1390"  [ label = "&lt;RET&gt;"] 
+  "1382" -> "1390"  [ label = "this"] 
+  "1381" -> "1382" 
+}

@@ -1,0 +1,17 @@
+digraph "configFromPropety" {  
+"1261" [label = <(equals,this.equals(property))<SUB>495</SUB>> ]
+"1265" [label = <(&lt;operator&gt;.assignment,this.autoTypeSupport = true)<SUB>496</SUB>> ]
+"1266" [label = <(&lt;operator&gt;.fieldAccess,this.autoTypeSupport)<SUB>496</SUB>> ]
+"1271" [label = <(equals,this.equals(property))<SUB>497</SUB>> ]
+"1267" [label = <(FIELD_IDENTIFIER,autoTypeSupport,autoTypeSupport)<SUB>496</SUB>> ]
+"1275" [label = <(&lt;operator&gt;.assignment,this.autoTypeSupport = false)<SUB>498</SUB>> ]
+"1276" [label = <(&lt;operator&gt;.fieldAccess,this.autoTypeSupport)<SUB>498</SUB>> ]
+"1277" [label = <(FIELD_IDENTIFIER,autoTypeSupport,autoTypeSupport)<SUB>498</SUB>> ]
+  "1261" -> "1271" 
+  "1261" -> "1265" 
+  "1261" -> "1267" 
+  "1261" -> "1266" 
+  "1271" -> "1277" 
+  "1271" -> "1276" 
+  "1271" -> "1275" 
+}

@@ -1,0 +1,10 @@
+digraph "getSimpleName" {  
+"5829" [label = <(METHOD,getSimpleName)> ]
+"5833" [label = <(METHOD_RETURN,ANY)> ]
+"5830" [label = <(PARAM,p0)> ]
+"5831" [label = <(PARAM,p1)> ]
+  "5830" -> "5833"  [ label = "p0"] 
+  "5831" -> "5833"  [ label = "p1"] 
+  "5829" -> "5830" 
+  "5829" -> "5831" 
+}

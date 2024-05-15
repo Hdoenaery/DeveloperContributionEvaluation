@@ -352,3 +352,46 @@ commitHash = 19bd016 , scoreOfCommit = 44791.54329496605
 程序总运行时间（秒）：926.015
 -------------------------------------------------------------------------------------------
 
+@@@nowCommitHash = 097bff1a792e39f4e0b2807faa53af0e89fbe5e0
+@@@oldCommitHash = d91c05993b17a5aff28a33810fc263402824f508
+DeveloperContributionEvaluation/editScripts/d91c059_to_097bff1/editscript_ParserConfig.txt
+DeveloperContributionEvaluation/editScripts/d91c059_to_097bff1/editscript_PointTest2.txt
+所有编辑脚本获取结束
+E:/Postgraduate_study/fastjson/src/
+depends -f dot -g method -d E:/IDEA/maven-project/DeveloperContributionEvaluation/CallGraphs java E:/Postgraduate_study/fastjson/src/ fastjson_097bff1
+调用depends完成
+new_ParserConfig.java
+启动joern-parse
+joern-parse ddg执行成功  new_ParserConfig.bin
+joern-export ddg执行成功new_ParserConfig.bin
+new_PointTest2.java
+启动joern-parse
+joern-parse ddg执行成功  new_PointTest2.bin
+joern-export ddg执行成功new_PointTest2.bin
+old_ParserConfig.java
+启动joern-parse
+joern-parse ddg执行成功  old_ParserConfig.bin
+joern-export ddg执行成功old_ParserConfig.bin
+old_PointTest2.java
+启动joern-parse
+joern-parse ddg执行成功  old_PointTest2.bin
+joern-export ddg执行成功old_PointTest2.bin
+joern-export cdg执行成功  new_ParserConfig.java
+joern-export cdg执行成功  new_PointTest2.java
+joern-export cdg执行成功  old_ParserConfig.java
+joern-export cdg执行成功  old_PointTest2.java
+PointTest2::test_point
+astScore = 4.0
+HV = 335.7725475225224, CC = 1, LOC = 10, PCom = 0.0, CM = 174.3862737612612
+weight = 5.274472543950277
+DDG_impact = 0.5909090909090909 , CDG_impact = 0.0, IR = 1.7687061147858074
+
+ParserConfig::checkAutoType
+astScore = 41.68999999999998
+HV = 79.95445336320968, CC = 1, LOC = 4, PCom = 0.0, CM = 43.47722668160484
+weight = 0.04645264448977331
+DDG_impact = 0.0 , CDG_impact = 0.0, IR = 1.0
+
+commitHash = 097bff1 , scoreOfCommit = 9637.908820053495
+本次commit计算的运行时间（秒）：205.788
+程序总运行时间（秒）：205.885

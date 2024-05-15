@@ -1,0 +1,13 @@
+digraph "getObjectWriter" {  
+"252" [label = <(METHOD,getObjectWriter)> ]
+"257" [label = <(METHOD_RETURN,ANY)> ]
+"253" [label = <(PARAM,p0)> ]
+"254" [label = <(PARAM,p1)> ]
+"255" [label = <(PARAM,p2)> ]
+  "253" -> "257"  [ label = "p0"] 
+  "254" -> "257"  [ label = "p1"] 
+  "255" -> "257"  [ label = "p2"] 
+  "252" -> "253" 
+  "252" -> "254" 
+  "252" -> "255" 
+}

@@ -1,0 +1,16 @@
+digraph "handler" {  
+"4944" [label = <(METHOD,handler)<SUB>1590</SUB>> ]
+"4953" [label = <(METHOD_RETURN,java.lang.Class)<SUB>1590</SUB>> ]
+"4945" [label = <(PARAM,this)<SUB>1590</SUB>> ]
+"4946" [label = <(PARAM,String typeName)<SUB>1590</SUB>> ]
+"4947" [label = <(PARAM,Class&lt;?&gt; expectClass)<SUB>1590</SUB>> ]
+"4948" [label = <(PARAM,int features)<SUB>1590</SUB>> ]
+  "4945" -> "4953"  [ label = "this"] 
+  "4946" -> "4953"  [ label = "typeName"] 
+  "4947" -> "4953"  [ label = "expectClass"] 
+  "4948" -> "4953"  [ label = "features"] 
+  "4944" -> "4945" 
+  "4944" -> "4946" 
+  "4944" -> "4947" 
+  "4944" -> "4948" 
+}

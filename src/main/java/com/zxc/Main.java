@@ -44,20 +44,39 @@ public class Main {
         String gitDirectory = "E:/Postgraduate_study/fastjson/";
         String projectName = "fastjson";
         String[] commits = {
-//                "240edb5c42aa9295bc674c93d25ffe801c13a5c4"
-//                ,
+//                "240edb5c42aa9295bc674c93d25ffe801c13a5c4",
 //                "679140e0ad6c0bb1cd3b8397f32c5fe55fc7f3b1",
 //                "16a43f59be6130dd7d8346401e1575a2f1a2e435",
 //                "7abc84fc2c208f148970ca854f2f6a59466e47ae",
 //                "19bd016801b2fe99c673479e69bced84ecff83e7",
                 "097bff1a792e39f4e0b2807faa53af0e89fbe5e0",
-                "d91c05993b17a5aff28a33810fc263402824f508",
-                "560782c9ee12120304284ba98b61dc61e30324b3",
-                "dd3de5f84bcbf0c13ad60df0c3feb9d564727447",
-                "0814909139735ea4c7648e755630fd49da7be059",
-
+//                "d91c05993b17a5aff28a33810fc263402824f508",
+//                "560782c9ee12120304284ba98b61dc61e30324b3",
+//                "dd3de5f84bcbf0c13ad60df0c3feb9d564727447",
+//                "0814909139735ea4c7648e755630fd49da7be059",
+//                "c04ceb9bc71295fec691f99f7baaee31ba1aece7",
+//                "aa71e753d8473830da9f5ff9460ebdf4b4e0ee5b",
+//                "39bc3cb12a982d0225521e6f1d10bd01bd9a2575",
+//                "6841ca79104f6b78179e44b56ae9a033b8131c70",
+//                "9130f8e78ed0d8bdf4b56058ae540c50f0b413ce",
+//                "f33474b4c618ee86cde67d5f589e447409183837",
+//                "b1b7a681989c5f7fd86d6c618c9fb5e806ccb99f",
+//                "869746101f6dd73b70d8a9c2b6dc59de4352519e",
+//                "751291fc5e275d0222ddaf75053fac5be9b487db",
+//                "8b02d16b8dc49f39a624dffaab0da46ed7ef064e",
+//                "f10d080d456643bbcb07301e4080ec5291fa85cc",
+//                "84835dd3cfb46939eb595742ea8d7d74918034bd",
+//                "b1838616943188618bd9d0323df65858e7e662b1",
+//                "960fa3152d0b2e983522456937c9d47e8d24a7d9",
+//                "5271d86fc4a796c14b9713df973cfeec3f583e95",
+//                "02f5b0afeb2ac71ef7fea5834743566ba9c6947b",
+//                "bd2531617cd614c71cc768d7fea002813224abb7",
+//                "25398e4e20efa1a8c7dc2c4947d83c1233083f09",
+//                "11405d48f8bfebb1568e7a7c32ccfb46399799f0",
+//                "91ef13b5a1235626c8452f2ce2c6d87a76daf695",
+//                "4dbbfcfb4c1c06ac6f85e3ad2ed6a2c4b7ba5484",
         };
-//        String newCommit = "19bd016801b2fe99c673479e69bced84ecff83e7";
+
         for(String newCommit:commits) {
             String oldCommit = tool.executeGitCommand(gitDirectory, new String[]{"git", "log", "--format=%H", "--skip=1", "-n", "1", newCommit}).replace("\n", "");//获取当前版本的上一个版本
             calculateCommitScore(gitDirectory, projectName, newCommit, oldCommit);
@@ -124,9 +143,9 @@ public class Main {
 
         Map<Integer, List<Integer>> graphC = callGraph.buildGraph(callGraphPath);//根据调用图生成正向邻接表
         Map<Integer, List<Integer>> backwardGraphC = callGraph.buildBackwardGraph();//根据调用图生成反向邻接表
-        System.out.println("build完成！");
+//        System.out.println("build完成！");
         Map<Integer, Double> mapPr = callGraph.getPageRank(graphC, backwardGraphC);
-        System.out.println("getPageRank完成");
+//        System.out.println("getPageRank完成");
 
 //        double sum = 0;
 //        for(Double i:mapPr.values()) {

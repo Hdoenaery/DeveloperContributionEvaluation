@@ -1,0 +1,10 @@
+digraph "length" {  
+"5492" [label = <(METHOD,length)> ]
+"5496" [label = <(METHOD_RETURN,ANY)> ]
+"5493" [label = <(PARAM,p0)> ]
+"5494" [label = <(PARAM,p1)> ]
+  "5493" -> "5496"  [ label = "p0"] 
+  "5494" -> "5496"  [ label = "p1"] 
+  "5492" -> "5493" 
+  "5492" -> "5494" 
+}

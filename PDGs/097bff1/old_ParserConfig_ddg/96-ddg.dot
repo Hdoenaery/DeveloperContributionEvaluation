@@ -1,0 +1,10 @@
+digraph "forName" {  
+"5602" [label = <(METHOD,forName)> ]
+"5606" [label = <(METHOD_RETURN,ANY)> ]
+"5603" [label = <(PARAM,p1)> ]
+"5604" [label = <(PARAM,p2)> ]
+  "5603" -> "5606"  [ label = "p1"] 
+  "5604" -> "5606"  [ label = "p2"] 
+  "5602" -> "5603" 
+  "5602" -> "5604" 
+}

@@ -1,0 +1,19 @@
+digraph "checkAutoType" {  
+"6083" [label = <(METHOD,checkAutoType)> ]
+"6090" [label = <(METHOD_RETURN,ANY)> ]
+"6084" [label = <(PARAM,p0)> ]
+"6085" [label = <(PARAM,p1)> ]
+"6086" [label = <(PARAM,p2)> ]
+"6087" [label = <(PARAM,p3)> ]
+"6088" [label = <(PARAM,p4)> ]
+  "6084" -> "6090"  [ label = "p0"] 
+  "6085" -> "6090"  [ label = "p1"] 
+  "6086" -> "6090"  [ label = "p2"] 
+  "6087" -> "6090"  [ label = "p3"] 
+  "6088" -> "6090"  [ label = "p4"] 
+  "6083" -> "6084" 
+  "6083" -> "6085" 
+  "6083" -> "6086" 
+  "6083" -> "6087" 
+  "6083" -> "6088" 
+}

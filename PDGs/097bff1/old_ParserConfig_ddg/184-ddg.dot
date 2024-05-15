@@ -1,0 +1,10 @@
+digraph "&lt;operator&gt;.xor" {  
+"6096" [label = <(METHOD,&lt;operator&gt;.xor)> ]
+"6100" [label = <(METHOD_RETURN,ANY)> ]
+"6097" [label = <(PARAM,p1)> ]
+"6098" [label = <(PARAM,p2)> ]
+  "6097" -> "6100"  [ label = "p1"] 
+  "6098" -> "6100"  [ label = "p2"] 
+  "6096" -> "6097" 
+  "6096" -> "6098" 
+}

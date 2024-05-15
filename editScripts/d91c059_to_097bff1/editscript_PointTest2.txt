@@ -1,0 +1,34 @@
+===
+insert-tree
+---
+ImportDeclaration [55,98]
+    Name: Feature [62,97]
+        Name: parser [62,89]
+            Name: fastjson [62,82]
+                Name: alibaba [62,73]
+                    Name: com [62,65]
+to
+CompilationUnit [0,1539]
+at 2
+===
+insert-tree
+---
+ImportDeclaration [99,147]
+    Name: ParserConfig [106,146]
+        Name: parser [106,133]
+            Name: fastjson [106,126]
+                Name: alibaba [106,117]
+                    Name: com [106,109]
+to
+CompilationUnit [0,1539]
+at 3
+===
+insert-tree
+---
+FieldAccessExpr [854,877]
+    NameExpr [854,861]
+        SimpleName: Feature [854,861]
+    SimpleName: SupportAutoType [862,877]
+to
+MethodCallExpr [744,760]
+at 3

@@ -1,0 +1,88 @@
+digraph "getFieldFromCache" {  
+"3479" [label = <(&lt;operator&gt;.equals,field == null)<SUB>1254</SUB>> ]
+"3491" [label = <(&lt;operator&gt;.equals,field == null)<SUB>1258</SUB>> ]
+"3503" [label = <(&lt;operator&gt;.equals,field == null)<SUB>1262</SUB>> ]
+"3483" [label = <(&lt;operator&gt;.assignment,field = fieldCacheMap.get(&quot;_&quot; + fieldName))<SUB>1255</SUB>> ]
+"3495" [label = <(&lt;operator&gt;.assignment,field = fieldCacheMap.get(&quot;m_&quot; + fieldName))<SUB>1259</SUB>> ]
+"3508" [label = <(&lt;operator&gt;.assignment,char c0 = fieldName.charAt(0))<SUB>1263</SUB>> ]
+"3485" [label = <(get,fieldCacheMap.get(&quot;_&quot; + fieldName))<SUB>1255</SUB>> ]
+"3497" [label = <(get,fieldCacheMap.get(&quot;m_&quot; + fieldName))<SUB>1259</SUB>> ]
+"3510" [label = <(charAt,fieldName.charAt(0))<SUB>1263</SUB>> ]
+"3514" [label = <(&lt;operator&gt;.logicalAnd,c0 &gt;= 'a' &amp;&amp; c0 &lt;= 'z')<SUB>1264</SUB>> ]
+"3545" [label = <(&lt;operator&gt;.greaterThan,fieldName.length() &gt; 2)<SUB>1271</SUB>> ]
+"3487" [label = <(&lt;operator&gt;.addition,&quot;_&quot; + fieldName)<SUB>1255</SUB>> ]
+"3499" [label = <(&lt;operator&gt;.addition,&quot;m_&quot; + fieldName)<SUB>1259</SUB>> ]
+"3515" [label = <(&lt;operator&gt;.greaterEqualsThan,c0 &gt;= 'a')<SUB>1264</SUB>> ]
+"3518" [label = <(&lt;operator&gt;.lessEqualsThan,c0 &lt;= 'z')<SUB>1264</SUB>> ]
+"3523" [label = <(&lt;operator&gt;.assignment,char[] chars = fieldName.toCharArray())<SUB>1265</SUB>> ]
+"3527" [label = <(&lt;operator&gt;.assignmentMinus,chars[0] -= 32)<SUB>1266</SUB>> ]
+"3533" [label = <(&lt;operator&gt;.assignment,String fieldNameX = new String(chars))<SUB>1267</SUB>> ]
+"3536" [label = <(&lt;init&gt;,new String(chars))<SUB>1267</SUB>> ]
+"3539" [label = <(&lt;operator&gt;.assignment,field = fieldCacheMap.get(fieldNameX))<SUB>1268</SUB>> ]
+"3546" [label = <(length,fieldName.length())<SUB>1271</SUB>> ]
+"3551" [label = <(&lt;operator&gt;.assignment,char c1 = fieldName.charAt(1))<SUB>1272</SUB>> ]
+"3525" [label = <(toCharArray,fieldName.toCharArray())<SUB>1265</SUB>> ]
+"3528" [label = <(&lt;operator&gt;.indexAccess,chars[0])<SUB>1266</SUB>> ]
+"3535" [label = <(&lt;operator&gt;.alloc,new String(chars))<SUB>1267</SUB>> ]
+"3541" [label = <(get,fieldCacheMap.get(fieldNameX))<SUB>1268</SUB>> ]
+"3553" [label = <(charAt,fieldName.charAt(1))<SUB>1272</SUB>> ]
+"3557" [label = <(&lt;operator&gt;.logicalAnd,c0 &gt;= 'a' &amp;&amp; c0 &lt;= 'z' &amp;&amp; c1 &gt;= 'A' &amp;&amp; c1 &lt;= 'Z')<SUB>1273</SUB>> ]
+"3558" [label = <(&lt;operator&gt;.logicalAnd,c0 &gt;= 'a' &amp;&amp; c0 &lt;= 'z' &amp;&amp; c1 &gt;= 'A')<SUB>1273</SUB>> ]
+"3569" [label = <(&lt;operator&gt;.lessEqualsThan,c1 &lt;= 'Z')<SUB>1274</SUB>> ]
+"3574" [label = <(&lt;operator&gt;.assignment,)<SUB>1275</SUB>> ]
+"3559" [label = <(&lt;operator&gt;.logicalAnd,c0 &gt;= 'a' &amp;&amp; c0 &lt;= 'z')<SUB>1273</SUB>> ]
+"3566" [label = <(&lt;operator&gt;.greaterEqualsThan,c1 &gt;= 'A')<SUB>1274</SUB>> ]
+"3576" [label = <(iterator,&lt;empty&gt;)<SUB>1275</SUB>> ]
+"3580" [label = <(hasNext,&lt;empty&gt;)<SUB>1275</SUB>> ]
+"3560" [label = <(&lt;operator&gt;.greaterEqualsThan,c0 &gt;= 'a')<SUB>1273</SUB>> ]
+"3563" [label = <(&lt;operator&gt;.lessEqualsThan,c0 &lt;= 'z')<SUB>1273</SUB>> ]
+"3577" [label = <(entrySet,fieldCacheMap.entrySet())<SUB>1275</SUB>> ]
+"3584" [label = <(&lt;operator&gt;.assignment,&lt;empty&gt;)<SUB>1275</SUB>> ]
+"3586" [label = <(next,&lt;empty&gt;)<SUB>1275</SUB>> ]
+"3589" [label = <(equalsIgnoreCase,fieldName.equalsIgnoreCase(entry.getKey()))<SUB>1276</SUB>> ]
+"3591" [label = <(getKey,entry.getKey())<SUB>1276</SUB>> ]
+"3594" [label = <(&lt;operator&gt;.assignment,field = entry.getValue())<SUB>1277</SUB>> ]
+"3596" [label = <(getValue,entry.getValue())<SUB>1277</SUB>> ]
+  "3479" -> "3485" 
+  "3479" -> "3487" 
+  "3479" -> "3483" 
+  "3491" -> "3499" 
+  "3491" -> "3497" 
+  "3491" -> "3495" 
+  "3503" -> "3545" 
+  "3503" -> "3546" 
+  "3503" -> "3515" 
+  "3503" -> "3510" 
+  "3503" -> "3514" 
+  "3503" -> "3508" 
+  "3514" -> "3533" 
+  "3514" -> "3527" 
+  "3514" -> "3523" 
+  "3514" -> "3536" 
+  "3514" -> "3528" 
+  "3514" -> "3535" 
+  "3514" -> "3525" 
+  "3514" -> "3541" 
+  "3514" -> "3539" 
+  "3545" -> "3558" 
+  "3545" -> "3553" 
+  "3545" -> "3559" 
+  "3545" -> "3551" 
+  "3545" -> "3557" 
+  "3545" -> "3560" 
+  "3515" -> "3518" 
+  "3557" -> "3580" 
+  "3557" -> "3574" 
+  "3557" -> "3577" 
+  "3557" -> "3576" 
+  "3558" -> "3569" 
+  "3559" -> "3566" 
+  "3580" -> "3589" 
+  "3580" -> "3584" 
+  "3580" -> "3591" 
+  "3580" -> "3586" 
+  "3560" -> "3563" 
+  "3589" -> "3580" 
+  "3589" -> "3596" 
+  "3589" -> "3594" 
+}

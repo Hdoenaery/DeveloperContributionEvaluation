@@ -1,0 +1,10 @@
+digraph "getValue" {  
+"6071" [label = <(METHOD,getValue)> ]
+"6075" [label = <(METHOD_RETURN,ANY)> ]
+"6072" [label = <(PARAM,p0)> ]
+"6073" [label = <(PARAM,p1)> ]
+  "6072" -> "6075"  [ label = "p0"] 
+  "6073" -> "6075"  [ label = "p1"] 
+  "6071" -> "6072" 
+  "6071" -> "6073" 
+}

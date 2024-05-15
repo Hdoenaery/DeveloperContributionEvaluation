@@ -1,0 +1,13 @@
+digraph "getClassFromMapping" {  
+"6149" [label = <(METHOD,getClassFromMapping)> ]
+"6154" [label = <(METHOD_RETURN,ANY)> ]
+"6150" [label = <(PARAM,p0)> ]
+"6151" [label = <(PARAM,p1)> ]
+"6152" [label = <(PARAM,p2)> ]
+  "6150" -> "6154"  [ label = "p0"] 
+  "6151" -> "6154"  [ label = "p1"] 
+  "6152" -> "6154"  [ label = "p2"] 
+  "6149" -> "6150" 
+  "6149" -> "6151" 
+  "6149" -> "6152" 
+}

@@ -1,0 +1,7 @@
+digraph "currentThread" {  
+"5642" [label = <(METHOD,currentThread)> ]
+"5645" [label = <(METHOD_RETURN,ANY)> ]
+"5643" [label = <(PARAM,p1)> ]
+  "5643" -> "5645"  [ label = "p1"] 
+  "5642" -> "5643" 
+}

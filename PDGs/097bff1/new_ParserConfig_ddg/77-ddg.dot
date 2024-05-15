@@ -1,0 +1,10 @@
+digraph "&lt;operator&gt;.instanceOf" {  
+"5529" [label = <(METHOD,&lt;operator&gt;.instanceOf)> ]
+"5533" [label = <(METHOD_RETURN,ANY)> ]
+"5530" [label = <(PARAM,p1)> ]
+"5531" [label = <(PARAM,p2)> ]
+  "5530" -> "5533"  [ label = "p1"] 
+  "5531" -> "5533"  [ label = "p2"] 
+  "5529" -> "5530" 
+  "5529" -> "5531" 
+}

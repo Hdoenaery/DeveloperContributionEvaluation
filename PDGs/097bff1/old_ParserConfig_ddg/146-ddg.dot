@@ -1,0 +1,13 @@
+digraph "isXmlField" {  
+"5875" [label = <(METHOD,isXmlField)> ]
+"5880" [label = <(METHOD_RETURN,ANY)> ]
+"5876" [label = <(PARAM,p0)> ]
+"5877" [label = <(PARAM,p1)> ]
+"5878" [label = <(PARAM,p2)> ]
+  "5876" -> "5880"  [ label = "p0"] 
+  "5877" -> "5880"  [ label = "p1"] 
+  "5878" -> "5880"  [ label = "p2"] 
+  "5875" -> "5876" 
+  "5875" -> "5877" 
+  "5875" -> "5878" 
+}

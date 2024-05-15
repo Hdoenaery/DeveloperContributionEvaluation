@@ -1,0 +1,10 @@
+digraph "isInterface" {  
+"5834" [label = <(METHOD,isInterface)> ]
+"5838" [label = <(METHOD_RETURN,ANY)> ]
+"5835" [label = <(PARAM,p0)> ]
+"5836" [label = <(PARAM,p1)> ]
+  "5835" -> "5838"  [ label = "p0"] 
+  "5836" -> "5838"  [ label = "p1"] 
+  "5834" -> "5835" 
+  "5834" -> "5836" 
+}

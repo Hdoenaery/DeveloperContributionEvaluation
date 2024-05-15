@@ -1,0 +1,10 @@
+digraph "isMemberClass" {  
+"5820" [label = <(METHOD,isMemberClass)> ]
+"5824" [label = <(METHOD_RETURN,ANY)> ]
+"5821" [label = <(PARAM,p0)> ]
+"5822" [label = <(PARAM,p1)> ]
+  "5821" -> "5824"  [ label = "p0"] 
+  "5822" -> "5824"  [ label = "p1"] 
+  "5820" -> "5821" 
+  "5820" -> "5822" 
+}

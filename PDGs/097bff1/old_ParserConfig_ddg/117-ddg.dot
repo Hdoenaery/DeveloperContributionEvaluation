@@ -1,0 +1,13 @@
+digraph "isAssignableFrom" {  
+"5718" [label = <(METHOD,isAssignableFrom)> ]
+"5723" [label = <(METHOD_RETURN,ANY)> ]
+"5719" [label = <(PARAM,p0)> ]
+"5720" [label = <(PARAM,p1)> ]
+"5721" [label = <(PARAM,p2)> ]
+  "5719" -> "5723"  [ label = "p0"] 
+  "5720" -> "5723"  [ label = "p1"] 
+  "5721" -> "5723"  [ label = "p2"] 
+  "5718" -> "5719" 
+  "5718" -> "5720" 
+  "5718" -> "5721" 
+}

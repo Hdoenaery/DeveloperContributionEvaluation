@@ -1,0 +1,10 @@
+digraph "iterator" {  
+"5616" [label = <(METHOD,iterator)> ]
+"5620" [label = <(METHOD_RETURN,ANY)> ]
+"5617" [label = <(PARAM,p0)> ]
+"5618" [label = <(PARAM,p1)> ]
+  "5617" -> "5620"  [ label = "p0"] 
+  "5618" -> "5620"  [ label = "p1"] 
+  "5616" -> "5617" 
+  "5616" -> "5618" 
+}

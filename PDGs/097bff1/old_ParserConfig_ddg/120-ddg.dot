@@ -1,0 +1,10 @@
+digraph "getReturnType" {  
+"5734" [label = <(METHOD,getReturnType)> ]
+"5738" [label = <(METHOD_RETURN,ANY)> ]
+"5735" [label = <(PARAM,p0)> ]
+"5736" [label = <(PARAM,p1)> ]
+  "5735" -> "5738"  [ label = "p0"] 
+  "5736" -> "5738"  [ label = "p1"] 
+  "5734" -> "5735" 
+  "5734" -> "5736" 
+}

@@ -1,0 +1,10 @@
+digraph "&lt;operator&gt;.greaterEqualsThan" {  
+"5995" [label = <(METHOD,&lt;operator&gt;.greaterEqualsThan)> ]
+"5999" [label = <(METHOD_RETURN,ANY)> ]
+"5996" [label = <(PARAM,p1)> ]
+"5997" [label = <(PARAM,p2)> ]
+  "5996" -> "5999"  [ label = "p1"] 
+  "5997" -> "5999"  [ label = "p2"] 
+  "5995" -> "5996" 
+  "5995" -> "5997" 
+}

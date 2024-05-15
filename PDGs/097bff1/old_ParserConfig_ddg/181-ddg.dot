@@ -1,0 +1,13 @@
+digraph "get" {  
+"6077" [label = <(METHOD,get)> ]
+"6082" [label = <(METHOD_RETURN,ANY)> ]
+"6078" [label = <(PARAM,p0)> ]
+"6079" [label = <(PARAM,p1)> ]
+"6080" [label = <(PARAM,p2)> ]
+  "6078" -> "6082"  [ label = "p0"] 
+  "6079" -> "6082"  [ label = "p1"] 
+  "6080" -> "6082"  [ label = "p2"] 
+  "6077" -> "6078" 
+  "6077" -> "6079" 
+  "6077" -> "6080" 
+}

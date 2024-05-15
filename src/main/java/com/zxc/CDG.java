@@ -301,6 +301,8 @@ public class CDG {
         for (File file : files) {
             // 构建命令
             List<String> command = new ArrayList<>();
+//            command.add("powershell.exe");
+//            command.add("-Command");
             command.add("cmd");
             command.add("/c");
             command.add("E:/Postgraduate_study/joern-cli/joern-export");
@@ -309,7 +311,7 @@ public class CDG {
             command.add("cdg");
             command.add("--out");
             command.add(file.getName().replace(".java", "") + "_cdg");
-
+//            System.out.println(command);
             // 创建 ProcessBuilder
             ProcessBuilder pb = new ProcessBuilder(command);
             pb.directory(new File(folderPath));
@@ -317,6 +319,9 @@ public class CDG {
             try {
                 // 启动进程
                 Process process = pb.start();
+
+                //处理标准输出（STDOUT）和标准错误输出（STDERR），否则程序会卡住
+                handleProcessOutput(process);
 
                 // 等待进程结束
                 int exitCode = process.waitFor();
@@ -331,5 +336,31 @@ public class CDG {
                 e.printStackTrace();
             }
         }
+    }
+
+    public static void handleProcessOutput(Process process) {
+        // 创建独立的线程处理标准输出
+        new Thread(() -> {
+            try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {
+                String line;
+                while ((line = reader.readLine()) != null) {
+//                    System.out.println(line);
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }).start();
+
+        // 创建独立的线程处理错误输出
+        new Thread(() -> {
+            try (BufferedReader errorReader = new BufferedReader(new InputStreamReader(process.getErrorStream()))) {
+                String errorLine;
+                while ((errorLine = errorReader.readLine()) != null) {
+//                    System.out.println("Error: " + errorLine);
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }).start();
     }
 }

@@ -1,0 +1,903 @@
+digraph "checkAutoType" {  
+"3934" [label = <(&lt;operator&gt;.assignment,int safeModeMask = Feature.SafeMode.mask)<SUB>1378</SUB>> ]
+"3941" [label = <(&lt;operator&gt;.assignment,boolean this.safeMode = this.safeMode || (featu...)<SUB>1379</SUB>> ]
+"4069" [label = <(&lt;operator&gt;.assignment,String className = typeName.replace('$', '.'))<SUB>1412</SUB>> ]
+"4077" [label = <(&lt;operator&gt;.assignment,long h1 = (fnv1a_64_magic_hashcode ^ className....)<SUB>1415</SUB>> ]
+"4130" [label = <(&lt;operator&gt;.assignment,long h3 = (((((fnv1a_64_magic_hashcode ^ classN...)<SUB>1424</SUB>> ]
+"4152" [label = <(&lt;operator&gt;.assignment,long fullHash = TypeUtils.fnv1a_64(className))<SUB>1431</SUB>> ]
+"4158" [label = <(&lt;operator&gt;.assignment,boolean internalWhite = Arrays.binarySearch(INT...)<SUB>1432</SUB>> ]
+"4320" [label = <(&lt;operator&gt;.assignment,clazz = TypeUtils.getClassFromMapping(typeName))<SUB>1466</SUB>> ]
+"4541" [label = <(&lt;operator&gt;.assignment,boolean jsonType = false)<SUB>1523</SUB>> ]
+"4545" [label = <(&lt;operator&gt;.assignment,InputStream is = null)<SUB>1524</SUB>> ]
+"4619" [label = <(&lt;operator&gt;.assignment,int mask = Feature.SupportAutoType.mask)<SUB>1544</SUB>> ]
+"4626" [label = <(&lt;operator&gt;.assignment,boolean this.autoTypeSupport = this.autoTypeSup...)<SUB>1545</SUB>> ]
+"4819" [label = <(RETURN,return clazz;,return clazz;)<SUB>1594</SUB>> ]
+"3889" [label = <(&lt;operator&gt;.equals,typeName == null)<SUB>1365</SUB>> ]
+"3896" [label = <(&lt;operator&gt;.notEquals,autoTypeCheckHandlers != null)<SUB>1369</SUB>> ]
+"3936" [label = <(&lt;operator&gt;.fieldAccess,Feature.SafeMode.mask)<SUB>1378</SUB>> ]
+"3942" [label = <(&lt;operator&gt;.fieldAccess,this.safeMode)<SUB>1379</SUB>> ]
+"3945" [label = <(&lt;operator&gt;.logicalOr,this.safeMode || (features &amp; safeModeMask) != 0...)<SUB>1379</SUB>> ]
+"3962" [label = <(&lt;operator&gt;.fieldAccess,this.safeMode)<SUB>1382</SUB>> ]
+"3979" [label = <(&lt;operator&gt;.logicalOr,typeName.length() &gt;= 192 || typeName.length() &lt; 3)<SUB>1386</SUB>> ]
+"4003" [label = <(&lt;operator&gt;.equals,expectClass == null)<SUB>1391</SUB>> ]
+"4071" [label = <(replace,typeName.replace('$', '.'))<SUB>1412</SUB>> ]
+"4079" [label = <(&lt;operator&gt;.multiplication,(fnv1a_64_magic_hashcode ^ className.charAt(0))...)<SUB>1415</SUB>> ]
+"4087" [label = <(&lt;operator&gt;.equals,h1 == 0xaf64164c86024f1aL)<SUB>1416</SUB>> ]
+"4104" [label = <(&lt;operator&gt;.equals,(h1 ^ className.charAt(className.length() - 1))...)<SUB>1420</SUB>> ]
+"4132" [label = <(&lt;operator&gt;.multiplication,(((((fnv1a_64_magic_hashcode ^ className.charAt...)<SUB>1424</SUB>> ]
+"4154" [label = <(fnv1a_64,fnv1a_64(className))<SUB>1431</SUB>> ]
+"4160" [label = <(&lt;operator&gt;.greaterEqualsThan,Arrays.binarySearch(INTERNAL_WHITELIST_HASHCODE...)<SUB>1432</SUB>> ]
+"4169" [label = <(&lt;operator&gt;.notEquals,internalDenyHashCodes != null)<SUB>1434</SUB>> ]
+"4222" [label = <(&lt;operator&gt;.logicalAnd,(!internalWhite) &amp;&amp; (autoTypeSupport || expectC...)<SUB>1445</SUB>> ]
+"4322" [label = <(getClassFromMapping,getClassFromMapping(typeName))<SUB>1466</SUB>> ]
+"4326" [label = <(&lt;operator&gt;.equals,clazz == null)<SUB>1468</SUB>> ]
+"4338" [label = <(&lt;operator&gt;.logicalAnd,expectClass == null &amp;&amp; clazz != null &amp;&amp; Throwab...)<SUB>1472</SUB>> ]
+"4361" [label = <(&lt;operator&gt;.equals,clazz == null)<SUB>1476</SUB>> ]
+"4373" [label = <(IDENTIFIER,internalWhite,if (internalWhite))<SUB>1480</SUB>> ]
+"4385" [label = <(&lt;operator&gt;.notEquals,clazz != null)<SUB>1484</SUB>> ]
+"4431" [label = <(&lt;operator&gt;.logicalNot,!autoTypeSupport)<SUB>1495</SUB>> ]
+"4621" [label = <(&lt;operator&gt;.fieldAccess,Feature.SupportAutoType.mask)<SUB>1544</SUB>> ]
+"4627" [label = <(&lt;operator&gt;.fieldAccess,this.autoTypeSupport)<SUB>1545</SUB>> ]
+"4630" [label = <(&lt;operator&gt;.logicalOr,this.autoTypeSupport || (features &amp; mask) != 0 ...)<SUB>1545</SUB>> ]
+"4647" [label = <(&lt;operator&gt;.logicalOr,autoTypeSupport || jsonType || expectClassFlag)<SUB>1549</SUB>> ]
+"4673" [label = <(&lt;operator&gt;.notEquals,clazz != null)<SUB>1554</SUB>> ]
+"4786" [label = <(&lt;operator&gt;.logicalNot,!autoTypeSupport)<SUB>1582</SUB>> ]
+"4811" [label = <(&lt;operator&gt;.notEquals,clazz != null)<SUB>1590</SUB>> ]
+"3893" [label = <(RETURN,return null;,return null;)<SUB>1366</SUB>> ]
+"3897" [label = <(&lt;operator&gt;.fieldAccess,this.autoTypeCheckHandlers)<SUB>1369</SUB>> ]
+"3903" [label = <(&lt;operator&gt;.assignment,)<SUB>1370</SUB>> ]
+"3937" [label = <(&lt;operator&gt;.fieldAccess,Feature.SafeMode)<SUB>1378</SUB>> ]
+"3940" [label = <(FIELD_IDENTIFIER,mask,mask)<SUB>1378</SUB>> ]
+"3944" [label = <(FIELD_IDENTIFIER,safeMode,safeMode)<SUB>1379</SUB>> ]
+"3946" [label = <(&lt;operator&gt;.logicalOr,this.safeMode || (features &amp; safeModeMask) != 0)<SUB>1379</SUB>> ]
+"3954" [label = <(&lt;operator&gt;.notEquals,(JSON.DEFAULT_PARSER_FEATURE &amp; safeModeMask) != 0)<SUB>1381</SUB>> ]
+"3964" [label = <(FIELD_IDENTIFIER,safeMode,safeMode)<SUB>1382</SUB>> ]
+"3966" [label = <(&lt;operator&gt;.throw,throw new JSONException(&quot;safeMode not support a...)<SUB>1383</SUB>> ]
+"3980" [label = <(&lt;operator&gt;.greaterEqualsThan,typeName.length() &gt;= 192)<SUB>1386</SUB>> ]
+"3984" [label = <(&lt;operator&gt;.lessThan,typeName.length() &lt; 3)<SUB>1386</SUB>> ]
+"3989" [label = <(&lt;operator&gt;.throw,throw new JSONException(&quot;autoType is not suppor...)<SUB>1387</SUB>> ]
+"4007" [label = <(&lt;operator&gt;.assignment,expectClassFlag = false)<SUB>1392</SUB>> ]
+"4080" [label = <(&lt;operator&gt;.xor,fnv1a_64_magic_hashcode ^ className.charAt(0))<SUB>1415</SUB>> ]
+"4091" [label = <(&lt;operator&gt;.throw,// [
+throw new JSONException(&quot;autoType is not ...)<SUB>1417</SUB>> ]
+"4105" [label = <(&lt;operator&gt;.multiplication,(h1 ^ className.charAt(className.length() - 1))...)<SUB>1420</SUB>> ]
+"4117" [label = <(&lt;operator&gt;.throw,throw new JSONException(&quot;autoType is not suppor...)<SUB>1421</SUB>> ]
+"4133" [label = <(&lt;operator&gt;.xor,((((fnv1a_64_magic_hashcode ^ className.charAt(...)<SUB>1424</SUB>> ]
+"4161" [label = <(binarySearch,Arrays.binarySearch(INTERNAL_WHITELIST_HASHCODE...)<SUB>1432</SUB>> ]
+"4170" [label = <(&lt;operator&gt;.fieldAccess,this.internalDenyHashCodes)<SUB>1434</SUB>> ]
+"4176" [label = <(&lt;operator&gt;.assignment,long hash = h3)<SUB>1435</SUB>> ]
+"4223" [label = <(&lt;operator&gt;.logicalNot,!internalWhite)<SUB>1445</SUB>> ]
+"4225" [label = <(&lt;operator&gt;.logicalOr,autoTypeSupport || expectClassFlag)<SUB>1445</SUB>> ]
+"4232" [label = <(&lt;operator&gt;.assignment,long hash = h3)<SUB>1446</SUB>> ]
+"4330" [label = <(&lt;operator&gt;.assignment,clazz = deserializers.findClass(typeName))<SUB>1469</SUB>> ]
+"4339" [label = <(&lt;operator&gt;.logicalAnd,expectClass == null &amp;&amp; clazz != null &amp;&amp; Throwab...)<SUB>1472</SUB>> ]
+"4352" [label = <(&lt;operator&gt;.logicalNot,!autoTypeSupport)<SUB>1472</SUB>> ]
+"4357" [label = <(&lt;operator&gt;.assignment,clazz = null)<SUB>1473</SUB>> ]
+"4365" [label = <(&lt;operator&gt;.assignment,clazz = typeMapping.get(typeName))<SUB>1477</SUB>> ]
+"4375" [label = <(&lt;operator&gt;.assignment,clazz = TypeUtils.loadClass(typeName, defaultCl...)<SUB>1481</SUB>> ]
+"4428" [label = <(RETURN,return clazz;,return clazz;)<SUB>1492</SUB>> ]
+"4432" [label = <(&lt;operator&gt;.fieldAccess,this.autoTypeSupport)<SUB>1495</SUB>> ]
+"4437" [label = <(&lt;operator&gt;.assignment,long hash = h3)<SUB>1496</SUB>> ]
+"4551" [label = <(&lt;operator&gt;.assignment,String resource = typeName.replace('.', '/') + ...)<SUB>1526</SUB>> ]
+"4615" [label = <(close,close(is))<SUB>1541</SUB>> ]
+"4622" [label = <(&lt;operator&gt;.fieldAccess,Feature.SupportAutoType)<SUB>1544</SUB>> ]
+"4625" [label = <(FIELD_IDENTIFIER,mask,mask)<SUB>1544</SUB>> ]
+"4629" [label = <(FIELD_IDENTIFIER,autoTypeSupport,autoTypeSupport)<SUB>1545</SUB>> ]
+"4631" [label = <(&lt;operator&gt;.logicalOr,this.autoTypeSupport || (features &amp; mask) != 0)<SUB>1545</SUB>> ]
+"4639" [label = <(&lt;operator&gt;.notEquals,(JSON.DEFAULT_PARSER_FEATURE &amp; mask) != 0)<SUB>1547</SUB>> ]
+"4648" [label = <(&lt;operator&gt;.logicalOr,autoTypeSupport || jsonType)<SUB>1549</SUB>> ]
+"4656" [label = <(&lt;operator&gt;.assignment,boolean cacheClass = autoTypeSupport || jsonType)<SUB>1550</SUB>> ]
+"4663" [label = <(&lt;operator&gt;.assignment,clazz = TypeUtils.loadClass(typeName, defaultCl...)<SUB>1551</SUB>> ]
+"4753" [label = <(&lt;operator&gt;.assignment,JavaBeanInfo beanInfo = JavaBeanInfo.build(claz...)<SUB>1576</SUB>> ]
+"4787" [label = <(&lt;operator&gt;.fieldAccess,this.autoTypeSupport)<SUB>1582</SUB>> ]
+"4798" [label = <(&lt;operator&gt;.throw,throw new JSONException(&quot;autoType is not suppor...)<SUB>1587</SUB>> ]
+"4815" [label = <(addMapping,addMapping(typeName, clazz))<SUB>1591</SUB>> ]
+"3899" [label = <(FIELD_IDENTIFIER,autoTypeCheckHandlers,autoTypeCheckHandlers)<SUB>1369</SUB>> ]
+"3905" [label = <(iterator,&lt;empty&gt;)<SUB>1370</SUB>> ]
+"3910" [label = <(hasNext,&lt;empty&gt;)<SUB>1370</SUB>> ]
+"3939" [label = <(FIELD_IDENTIFIER,SafeMode,SafeMode)<SUB>1378</SUB>> ]
+"3947" [label = <(&lt;operator&gt;.fieldAccess,this.safeMode)<SUB>1379</SUB>> ]
+"3949" [label = <(&lt;operator&gt;.notEquals,(features &amp; safeModeMask) != 0)<SUB>1380</SUB>> ]
+"3955" [label = <(&lt;operator&gt;.and,JSON.DEFAULT_PARSER_FEATURE &amp; safeModeMask)<SUB>1381</SUB>> ]
+"3981" [label = <(length,typeName.length())<SUB>1386</SUB>> ]
+"3985" [label = <(length,typeName.length())<SUB>1386</SUB>> ]
+"4013" [label = <(&lt;operator&gt;.assignment,long expectHash = TypeUtils.fnv1a_64(expectClas...)<SUB>1394</SUB>> ]
+"4082" [label = <(charAt,className.charAt(0))<SUB>1415</SUB>> ]
+"4106" [label = <(&lt;operator&gt;.xor,h1 ^ className.charAt(className.length() - 1))<SUB>1420</SUB>> ]
+"4134" [label = <(&lt;operator&gt;.multiplication,(((fnv1a_64_magic_hashcode ^ className.charAt(0...)<SUB>1424</SUB>> ]
+"4147" [label = <(charAt,className.charAt(2))<SUB>1428</SUB>> ]
+"4163" [label = <(&lt;operator&gt;.fieldAccess,com.alibaba.fastjson.parser.ParserConfig.INTERN...)<SUB>1432</SUB>> ]
+"4172" [label = <(FIELD_IDENTIFIER,internalDenyHashCodes,internalDenyHashCodes)<SUB>1434</SUB>> ]
+"4181" [label = <(&lt;operator&gt;.assignment,int i = 3)<SUB>1436</SUB>> ]
+"4184" [label = <(&lt;operator&gt;.lessThan,i &lt; className.length())<SUB>1436</SUB>> ]
+"4188" [label = <(&lt;operator&gt;.preIncrement,++i)<SUB>1436</SUB>> ]
+"4226" [label = <(&lt;operator&gt;.fieldAccess,this.autoTypeSupport)<SUB>1445</SUB>> ]
+"4237" [label = <(&lt;operator&gt;.assignment,int i = 3)<SUB>1447</SUB>> ]
+"4240" [label = <(&lt;operator&gt;.lessThan,i &lt; className.length())<SUB>1447</SUB>> ]
+"4244" [label = <(&lt;operator&gt;.preIncrement,++i)<SUB>1447</SUB>> ]
+"4332" [label = <(findClass,this.deserializers.findClass(typeName))<SUB>1469</SUB>> ]
+"4340" [label = <(&lt;operator&gt;.logicalAnd,expectClass == null &amp;&amp; clazz != null)<SUB>1472</SUB>> ]
+"4347" [label = <(isAssignableFrom,Throwable.class.isAssignableFrom(clazz))<SUB>1472</SUB>> ]
+"4353" [label = <(&lt;operator&gt;.fieldAccess,this.autoTypeSupport)<SUB>1472</SUB>> ]
+"4367" [label = <(get,this.typeMapping.get(typeName))<SUB>1477</SUB>> ]
+"4377" [label = <(loadClass,loadClass(typeName, defaultClassLoader, true))<SUB>1481</SUB>> ]
+"4390" [label = <(&lt;operator&gt;.logicalAnd,expectClass != null &amp;&amp; clazz != java.util.HashM...)<SUB>1485</SUB>> ]
+"4434" [label = <(FIELD_IDENTIFIER,autoTypeSupport,autoTypeSupport)<SUB>1495</SUB>> ]
+"4442" [label = <(&lt;operator&gt;.assignment,int i = 3)<SUB>1497</SUB>> ]
+"4445" [label = <(&lt;operator&gt;.lessThan,i &lt; className.length())<SUB>1497</SUB>> ]
+"4449" [label = <(&lt;operator&gt;.preIncrement,++i)<SUB>1497</SUB>> ]
+"4553" [label = <(&lt;operator&gt;.addition,typeName.replace('.', '/') + &quot;.class&quot;)<SUB>1526</SUB>> ]
+"4560" [label = <(&lt;operator&gt;.notEquals,defaultClassLoader != null)<SUB>1527</SUB>> ]
+"4584" [label = <(&lt;operator&gt;.notEquals,is != null)<SUB>1532</SUB>> ]
+"4624" [label = <(FIELD_IDENTIFIER,SupportAutoType,SupportAutoType)<SUB>1544</SUB>> ]
+"4632" [label = <(&lt;operator&gt;.fieldAccess,this.autoTypeSupport)<SUB>1545</SUB>> ]
+"4634" [label = <(&lt;operator&gt;.notEquals,(features &amp; mask) != 0)<SUB>1546</SUB>> ]
+"4640" [label = <(&lt;operator&gt;.and,JSON.DEFAULT_PARSER_FEATURE &amp; mask)<SUB>1547</SUB>> ]
+"4649" [label = <(&lt;operator&gt;.fieldAccess,this.autoTypeSupport)<SUB>1549</SUB>> ]
+"4658" [label = <(&lt;operator&gt;.logicalOr,autoTypeSupport || jsonType)<SUB>1550</SUB>> ]
+"4665" [label = <(loadClass,loadClass(typeName, defaultClassLoader, cacheCl...)<SUB>1551</SUB>> ]
+"4678" [label = <(IDENTIFIER,jsonType,if (jsonType))<SUB>1555</SUB>> ]
+"4687" [label = <(&lt;operator&gt;.logicalOr,// classloader is danger
+ClassLoader.class.isA...)<SUB>1560</SUB>> ]
+"4718" [label = <(&lt;operator&gt;.notEquals,expectClass != null)<SUB>1567</SUB>> ]
+"4755" [label = <(build,build(clazz, clazz, propertyNamingStrategy))<SUB>1576</SUB>> ]
+"4763" [label = <(&lt;operator&gt;.logicalAnd,beanInfo.creatorConstructor != null &amp;&amp; autoType...)<SUB>1577</SUB>> ]
+"4789" [label = <(FIELD_IDENTIFIER,autoTypeSupport,autoTypeSupport)<SUB>1582</SUB>> ]
+"4792" [label = <(endsWith,typeName.endsWith(&quot;Exception&quot;))<SUB>1583</SUB>> ]
+"3906" [label = <(&lt;operator&gt;.fieldAccess,this.autoTypeCheckHandlers)<SUB>1370</SUB>> ]
+"3914" [label = <(&lt;operator&gt;.assignment,&lt;empty&gt;)<SUB>1370</SUB>> ]
+"3919" [label = <(&lt;operator&gt;.assignment,Class&lt;?&gt; type = h.handler(typeName, expectClass...)<SUB>1371</SUB>> ]
+"3948" [label = <(FIELD_IDENTIFIER,safeMode,safeMode)<SUB>1379</SUB>> ]
+"3950" [label = <(&lt;operator&gt;.and,features &amp; safeModeMask)<SUB>1380</SUB>> ]
+"3956" [label = <(&lt;operator&gt;.fieldAccess,JSON.DEFAULT_PARSER_FEATURE)<SUB>1381</SUB>> ]
+"3969" [label = <(&lt;operator&gt;.assignment,$obj9 = new JSONException(&quot;safeMode not support...)<SUB>1383</SUB>> ]
+"3972" [label = <(&lt;init&gt;,new JSONException(&quot;safeMode not support autoTyp...)<SUB>1383</SUB>> ]
+"3992" [label = <(&lt;operator&gt;.assignment,$obj10 = new JSONException(&quot;autoType is not sup...)<SUB>1387</SUB>> ]
+"3995" [label = <(&lt;init&gt;,new JSONException(&quot;autoType is not support. &quot; +...)<SUB>1387</SUB>> ]
+"4015" [label = <(fnv1a_64,fnv1a_64(expectClass.getName()))<SUB>1394</SUB>> ]
+"4020" [label = <(&lt;operator&gt;.logicalOr,expectHash == 0x90a25f5baa21529eL || expectHash...)<SUB>1395</SUB>> ]
+"4094" [label = <(&lt;operator&gt;.assignment,$obj11 = new JSONException(&quot;autoType is not sup...)<SUB>1417</SUB>> ]
+"4097" [label = <(&lt;init&gt;,new JSONException(&quot;autoType is not support. &quot; +...)<SUB>1417</SUB>> ]
+"4108" [label = <(charAt,className.charAt(className.length() - 1))<SUB>1420</SUB>> ]
+"4120" [label = <(&lt;operator&gt;.assignment,$obj12 = new JSONException(&quot;autoType is not sup...)<SUB>1421</SUB>> ]
+"4123" [label = <(&lt;init&gt;,new JSONException(&quot;autoType is not support. &quot; +...)<SUB>1421</SUB>> ]
+"4135" [label = <(&lt;operator&gt;.xor,((fnv1a_64_magic_hashcode ^ className.charAt(0)...)<SUB>1424</SUB>> ]
+"4165" [label = <(FIELD_IDENTIFIER,INTERNAL_WHITELIST_HASHCODES,INTERNAL_WHITELIST_HASHCODES)<SUB>1432</SUB>> ]
+"4186" [label = <(length,className.length())<SUB>1436</SUB>> ]
+"4191" [label = <(&lt;operators&gt;.assignmentXor,hash ^= className.charAt(i))<SUB>1437</SUB>> ]
+"4196" [label = <(&lt;operator&gt;.assignmentMultiplication,hash *= fnv1a_64_magic_prime)<SUB>1438</SUB>> ]
+"4228" [label = <(FIELD_IDENTIFIER,autoTypeSupport,autoTypeSupport)<SUB>1445</SUB>> ]
+"4242" [label = <(length,className.length())<SUB>1447</SUB>> ]
+"4247" [label = <(&lt;operators&gt;.assignmentXor,hash ^= className.charAt(i))<SUB>1448</SUB>> ]
+"4252" [label = <(&lt;operator&gt;.assignmentMultiplication,hash *= fnv1a_64_magic_prime)<SUB>1449</SUB>> ]
+"4333" [label = <(&lt;operator&gt;.fieldAccess,this.deserializers)<SUB>1469</SUB>> ]
+"4341" [label = <(&lt;operator&gt;.equals,expectClass == null)<SUB>1472</SUB>> ]
+"4344" [label = <(&lt;operator&gt;.notEquals,clazz != null)<SUB>1472</SUB>> ]
+"4348" [label = <(&lt;operator&gt;.fieldAccess,Throwable.class)<SUB>1472</SUB>> ]
+"4355" [label = <(FIELD_IDENTIFIER,autoTypeSupport,autoTypeSupport)<SUB>1472</SUB>> ]
+"4368" [label = <(&lt;operator&gt;.fieldAccess,this.typeMapping)<SUB>1477</SUB>> ]
+"4380" [label = <(&lt;operator&gt;.fieldAccess,this.defaultClassLoader)<SUB>1481</SUB>> ]
+"4391" [label = <(&lt;operator&gt;.logicalAnd,expectClass != null &amp;&amp; clazz != java.util.HashM...)<SUB>1485</SUB>> ]
+"4406" [label = <(&lt;operator&gt;.logicalNot,!expectClass.isAssignableFrom(clazz))<SUB>1488</SUB>> ]
+"4411" [label = <(&lt;operator&gt;.throw,throw new JSONException(&quot;type not match. &quot; + ty...)<SUB>1489</SUB>> ]
+"4447" [label = <(length,className.length())<SUB>1497</SUB>> ]
+"4453" [label = <(&lt;operator&gt;.assignment,char c = className.charAt(i))<SUB>1498</SUB>> ]
+"4458" [label = <(&lt;operators&gt;.assignmentXor,hash ^= c)<SUB>1499</SUB>> ]
+"4461" [label = <(&lt;operator&gt;.assignmentMultiplication,hash *= fnv1a_64_magic_prime)<SUB>1500</SUB>> ]
+"4554" [label = <(replace,typeName.replace('.', '/'))<SUB>1526</SUB>> ]
+"4561" [label = <(&lt;operator&gt;.fieldAccess,this.defaultClassLoader)<SUB>1527</SUB>> ]
+"4566" [label = <(&lt;operator&gt;.assignment,is = defaultClassLoader.getResourceAsStream(res...)<SUB>1528</SUB>> ]
+"4589" [label = <(&lt;operator&gt;.assignment,ClassReader classReader = new ClassReader(is, t...)<SUB>1533</SUB>> ]
+"4592" [label = <(&lt;init&gt;,new ClassReader(is, true))<SUB>1533</SUB>> ]
+"4597" [label = <(&lt;operator&gt;.assignment,TypeCollector visitor = new TypeCollector(&quot;&lt;cli...)<SUB>1534</SUB>> ]
+"4600" [label = <(&lt;init&gt;,new TypeCollector(&quot;&lt;clinit&gt;&quot;, new Class[0]))<SUB>1534</SUB>> ]
+"4605" [label = <(accept,accept(visitor))<SUB>1535</SUB>> ]
+"4608" [label = <(&lt;operator&gt;.assignment,jsonType = visitor.hasJsonType())<SUB>1536</SUB>> ]
+"4633" [label = <(FIELD_IDENTIFIER,autoTypeSupport,autoTypeSupport)<SUB>1545</SUB>> ]
+"4635" [label = <(&lt;operator&gt;.and,features &amp; mask)<SUB>1546</SUB>> ]
+"4641" [label = <(&lt;operator&gt;.fieldAccess,JSON.DEFAULT_PARSER_FEATURE)<SUB>1547</SUB>> ]
+"4651" [label = <(FIELD_IDENTIFIER,autoTypeSupport,autoTypeSupport)<SUB>1549</SUB>> ]
+"4659" [label = <(&lt;operator&gt;.fieldAccess,this.autoTypeSupport)<SUB>1550</SUB>> ]
+"4668" [label = <(&lt;operator&gt;.fieldAccess,this.defaultClassLoader)<SUB>1551</SUB>> ]
+"4680" [label = <(addMapping,addMapping(typeName, clazz))<SUB>1556</SUB>> ]
+"4684" [label = <(RETURN,return clazz;,return clazz;)<SUB>1557</SUB>> ]
+"4688" [label = <(&lt;operator&gt;.logicalOr,// classloader is danger
+ClassLoader.class.isA...)<SUB>1560</SUB>> ]
+"4699" [label = <(isAssignableFrom,javax.sql.RowSet.class.isAssignableFrom(clazz))<SUB>1562</SUB>> ]
+"4705" [label = <(&lt;operator&gt;.throw,throw new JSONException(&quot;autoType is not suppor...)<SUB>1564</SUB>> ]
+"4759" [label = <(&lt;operator&gt;.fieldAccess,this.propertyNamingStrategy)<SUB>1576</SUB>> ]
+"4764" [label = <(&lt;operator&gt;.notEquals,beanInfo.creatorConstructor != null)<SUB>1577</SUB>> ]
+"4769" [label = <(&lt;operator&gt;.fieldAccess,this.autoTypeSupport)<SUB>1577</SUB>> ]
+"4773" [label = <(&lt;operator&gt;.throw,throw new JSONException(&quot;autoType is not suppor...)<SUB>1578</SUB>> ]
+"4796" [label = <(RETURN,return null;,return null;)<SUB>1584</SUB>> ]
+"4801" [label = <(&lt;operator&gt;.assignment,$obj21 = new JSONException(&quot;autoType is not sup...)<SUB>1587</SUB>> ]
+"4804" [label = <(&lt;init&gt;,new JSONException(&quot;autoType is not support. &quot; +...)<SUB>1587</SUB>> ]
+"3908" [label = <(FIELD_IDENTIFIER,autoTypeCheckHandlers,autoTypeCheckHandlers)<SUB>1370</SUB>> ]
+"3916" [label = <(next,&lt;empty&gt;)<SUB>1370</SUB>> ]
+"3921" [label = <(handler,h.handler(typeName, expectClass, features))<SUB>1371</SUB>> ]
+"3927" [label = <(&lt;operator&gt;.notEquals,type != null)<SUB>1372</SUB>> ]
+"3958" [label = <(FIELD_IDENTIFIER,DEFAULT_PARSER_FEATURE,DEFAULT_PARSER_FEATURE)<SUB>1381</SUB>> ]
+"3971" [label = <(&lt;operator&gt;.alloc,new JSONException(&quot;safeMode not support autoTyp...)<SUB>1383</SUB>> ]
+"3974" [label = <(&lt;operator&gt;.addition,&quot;safeMode not support autoType : &quot; + typeName)<SUB>1383</SUB>> ]
+"3994" [label = <(&lt;operator&gt;.alloc,new JSONException(&quot;autoType is not support. &quot; +...)<SUB>1387</SUB>> ]
+"3997" [label = <(&lt;operator&gt;.addition,&quot;autoType is not support. &quot; + typeName)<SUB>1387</SUB>> ]
+"4017" [label = <(getName,expectClass.getName())<SUB>1394</SUB>> ]
+"4021" [label = <(&lt;operator&gt;.logicalOr,expectHash == 0x90a25f5baa21529eL || expectHash...)<SUB>1395</SUB>> ]
+"4056" [label = <(&lt;operator&gt;.equals,expectHash == 0xd734ceb4c3e9d1daL)<SUB>1404</SUB>> ]
+"4060" [label = <(&lt;operator&gt;.assignment,expectClassFlag = false)<SUB>1406</SUB>> ]
+"4096" [label = <(&lt;operator&gt;.alloc,new JSONException(&quot;autoType is not support. &quot; +...)<SUB>1417</SUB>> ]
+"4099" [label = <(&lt;operator&gt;.addition,&quot;autoType is not support. &quot; + typeName)<SUB>1417</SUB>> ]
+"4110" [label = <(&lt;operator&gt;.subtraction,className.length() - 1)<SUB>1420</SUB>> ]
+"4122" [label = <(&lt;operator&gt;.alloc,new JSONException(&quot;autoType is not support. &quot; +...)<SUB>1421</SUB>> ]
+"4125" [label = <(&lt;operator&gt;.addition,&quot;autoType is not support. &quot; + typeName)<SUB>1421</SUB>> ]
+"4136" [label = <(&lt;operator&gt;.multiplication,(fnv1a_64_magic_hashcode ^ className.charAt(0))...)<SUB>1424</SUB>> ]
+"4143" [label = <(charAt,className.charAt(1))<SUB>1426</SUB>> ]
+"4193" [label = <(charAt,className.charAt(i))<SUB>1437</SUB>> ]
+"4200" [label = <(&lt;operator&gt;.greaterEqualsThan,Arrays.binarySearch(internalDenyHashCodes, hash...)<SUB>1439</SUB>> ]
+"4249" [label = <(charAt,className.charAt(i))<SUB>1448</SUB>> ]
+"4256" [label = <(&lt;operator&gt;.greaterEqualsThan,Arrays.binarySearch(acceptHashCodes, hash) &gt;= 0)<SUB>1450</SUB>> ]
+"4282" [label = <(&lt;operator&gt;.logicalAnd,Arrays.binarySearch(denyHashCodes, hash) &gt;= 0 &amp;...)<SUB>1456</SUB>> ]
+"4335" [label = <(FIELD_IDENTIFIER,deserializers,deserializers)<SUB>1469</SUB>> ]
+"4350" [label = <(FIELD_IDENTIFIER,class,class)<SUB>1472</SUB>> ]
+"4370" [label = <(FIELD_IDENTIFIER,typeMapping,typeMapping)<SUB>1477</SUB>> ]
+"4382" [label = <(FIELD_IDENTIFIER,defaultClassLoader,defaultClassLoader)<SUB>1481</SUB>> ]
+"4392" [label = <(&lt;operator&gt;.logicalAnd,expectClass != null &amp;&amp; clazz != java.util.HashM...)<SUB>1485</SUB>> ]
+"4401" [label = <(&lt;operator&gt;.notEquals,clazz != java.util.LinkedHashMap.class)<SUB>1487</SUB>> ]
+"4407" [label = <(isAssignableFrom,expectClass.isAssignableFrom(clazz))<SUB>1488</SUB>> ]
+"4455" [label = <(charAt,className.charAt(i))<SUB>1498</SUB>> ]
+"4465" [label = <(&lt;operator&gt;.greaterEqualsThan,Arrays.binarySearch(denyHashCodes, hash) &gt;= 0)<SUB>1502</SUB>> ]
+"4487" [label = <(&lt;operator&gt;.greaterEqualsThan,Arrays.binarySearch(acceptHashCodes, hash) &gt;= 0)<SUB>1507</SUB>> ]
+"4563" [label = <(FIELD_IDENTIFIER,defaultClassLoader,defaultClassLoader)<SUB>1527</SUB>> ]
+"4568" [label = <(getResourceAsStream,this.defaultClassLoader.getResourceAsStream(res...)<SUB>1528</SUB>> ]
+"4575" [label = <(&lt;operator&gt;.assignment,is = ParserConfig.class.getClassLoader().getRes...)<SUB>1530</SUB>> ]
+"4591" [label = <(&lt;operator&gt;.alloc,new ClassReader(is, true))<SUB>1533</SUB>> ]
+"4599" [label = <(&lt;operator&gt;.alloc,new TypeCollector(&quot;&lt;clinit&gt;&quot;, new Class[0]))<SUB>1534</SUB>> ]
+"4603" [label = <(&lt;operator&gt;.alloc,new Class[0])> ]
+"4610" [label = <(hasJsonType,hasJsonType())<SUB>1536</SUB>> ]
+"4643" [label = <(FIELD_IDENTIFIER,DEFAULT_PARSER_FEATURE,DEFAULT_PARSER_FEATURE)<SUB>1547</SUB>> ]
+"4661" [label = <(FIELD_IDENTIFIER,autoTypeSupport,autoTypeSupport)<SUB>1550</SUB>> ]
+"4670" [label = <(FIELD_IDENTIFIER,defaultClassLoader,defaultClassLoader)<SUB>1551</SUB>> ]
+"4689" [label = <(isAssignableFrom,ClassLoader.class.isAssignableFrom(clazz))<SUB>1560</SUB>> ]
+"4694" [label = <(isAssignableFrom,javax.sql.DataSource.class.isAssignableFrom(clazz))<SUB>1561</SUB>> ]
+"4700" [label = <(&lt;operator&gt;.fieldAccess,javax.sql.RowSet.class)<SUB>1562</SUB>> ]
+"4723" [label = <(isAssignableFrom,expectClass.isAssignableFrom(clazz))<SUB>1568</SUB>> ]
+"4761" [label = <(FIELD_IDENTIFIER,propertyNamingStrategy,propertyNamingStrategy)<SUB>1576</SUB>> ]
+"4765" [label = <(&lt;operator&gt;.fieldAccess,beanInfo.creatorConstructor)<SUB>1577</SUB>> ]
+"4771" [label = <(FIELD_IDENTIFIER,autoTypeSupport,autoTypeSupport)<SUB>1577</SUB>> ]
+"4803" [label = <(&lt;operator&gt;.alloc,new JSONException(&quot;autoType is not support. &quot; +...)<SUB>1587</SUB>> ]
+"4806" [label = <(&lt;operator&gt;.addition,&quot;autoType is not support. &quot; + typeName)<SUB>1587</SUB>> ]
+"3931" [label = <(RETURN,return type;,return type;)<SUB>1373</SUB>> ]
+"4022" [label = <(&lt;operator&gt;.logicalOr,expectHash == 0x90a25f5baa21529eL || expectHash...)<SUB>1395</SUB>> ]
+"4053" [label = <(&lt;operator&gt;.equals,expectHash == 0xe2a8ddba03e69e0dL)<SUB>1403</SUB>> ]
+"4065" [label = <(&lt;operator&gt;.assignment,expectClassFlag = true)<SUB>1408</SUB>> ]
+"4111" [label = <(length,className.length())<SUB>1420</SUB>> ]
+"4137" [label = <(&lt;operator&gt;.xor,fnv1a_64_magic_hashcode ^ className.charAt(0))<SUB>1424</SUB>> ]
+"4201" [label = <(binarySearch,Arrays.binarySearch(internalDenyHashCodes, hash))<SUB>1439</SUB>> ]
+"4209" [label = <(&lt;operator&gt;.throw,throw new JSONException(&quot;autoType is not suppor...)<SUB>1440</SUB>> ]
+"4257" [label = <(binarySearch,Arrays.binarySearch(acceptHashCodes, hash))<SUB>1450</SUB>> ]
+"4265" [label = <(&lt;operator&gt;.assignment,clazz = TypeUtils.loadClass(typeName, defaultCl...)<SUB>1451</SUB>> ]
+"4283" [label = <(&lt;operator&gt;.greaterEqualsThan,Arrays.binarySearch(denyHashCodes, hash) &gt;= 0)<SUB>1456</SUB>> ]
+"4291" [label = <(&lt;operator&gt;.equals,TypeUtils.getClassFromMapping(typeName) == null)<SUB>1456</SUB>> ]
+"4308" [label = <(&lt;operator&gt;.throw,throw new JSONException(&quot;autoType is not suppor...)<SUB>1461</SUB>> ]
+"4393" [label = <(&lt;operator&gt;.notEquals,expectClass != null)<SUB>1485</SUB>> ]
+"4396" [label = <(&lt;operator&gt;.notEquals,clazz != java.util.HashMap.class)<SUB>1486</SUB>> ]
+"4403" [label = <(&lt;operator&gt;.fieldAccess,java.util.LinkedHashMap.class)<SUB>1487</SUB>> ]
+"4414" [label = <(&lt;operator&gt;.assignment,$obj15 = new JSONException(&quot;type not match. &quot; +...)<SUB>1489</SUB>> ]
+"4417" [label = <(&lt;init&gt;,new JSONException(&quot;type not match. &quot; + typeName...)<SUB>1489</SUB>> ]
+"4466" [label = <(binarySearch,Arrays.binarySearch(denyHashCodes, hash))<SUB>1502</SUB>> ]
+"4474" [label = <(&lt;operator&gt;.throw,throw new JSONException(&quot;autoType is not suppor...)<SUB>1503</SUB>> ]
+"4488" [label = <(binarySearch,Arrays.binarySearch(acceptHashCodes, hash))<SUB>1507</SUB>> ]
+"4496" [label = <(&lt;operator&gt;.assignment,clazz = TypeUtils.loadClass(typeName, defaultCl...)<SUB>1508</SUB>> ]
+"4538" [label = <(RETURN,return clazz;,return clazz;)<SUB>1518</SUB>> ]
+"4569" [label = <(&lt;operator&gt;.fieldAccess,this.defaultClassLoader)<SUB>1528</SUB>> ]
+"4577" [label = <(getResourceAsStream,ParserConfig.class.getClassLoader().getResource...)<SUB>1530</SUB>> ]
+"4690" [label = <(&lt;operator&gt;.fieldAccess,ClassLoader.class)<SUB>1560</SUB>> ]
+"4695" [label = <(&lt;operator&gt;.fieldAccess,javax.sql.DataSource.class)<SUB>1561</SUB>> ]
+"4702" [label = <(FIELD_IDENTIFIER,class,class)<SUB>1562</SUB>> ]
+"4708" [label = <(&lt;operator&gt;.assignment,$obj18 = new JSONException(&quot;autoType is not sup...)<SUB>1564</SUB>> ]
+"4711" [label = <(&lt;init&gt;,new JSONException(&quot;autoType is not support. &quot; +...)<SUB>1564</SUB>> ]
+"4727" [label = <(addMapping,addMapping(typeName, clazz))<SUB>1569</SUB>> ]
+"4731" [label = <(RETURN,return clazz;,return clazz;)<SUB>1570</SUB>> ]
+"4767" [label = <(FIELD_IDENTIFIER,creatorConstructor,creatorConstructor)<SUB>1577</SUB>> ]
+"4776" [label = <(&lt;operator&gt;.assignment,$obj20 = new JSONException(&quot;autoType is not sup...)<SUB>1578</SUB>> ]
+"4779" [label = <(&lt;init&gt;,new JSONException(&quot;autoType is not support. &quot; +...)<SUB>1578</SUB>> ]
+"4023" [label = <(&lt;operator&gt;.logicalOr,expectHash == 0x90a25f5baa21529eL || expectHash...)<SUB>1395</SUB>> ]
+"4050" [label = <(&lt;operator&gt;.equals,expectHash == 0xe3dd9875a2dc5283L)<SUB>1402</SUB>> ]
+"4139" [label = <(charAt,className.charAt(0))<SUB>1424</SUB>> ]
+"4203" [label = <(&lt;operator&gt;.fieldAccess,this.internalDenyHashCodes)<SUB>1439</SUB>> ]
+"4259" [label = <(&lt;operator&gt;.fieldAccess,this.acceptHashCodes)<SUB>1450</SUB>> ]
+"4267" [label = <(loadClass,loadClass(typeName, defaultClassLoader, true))<SUB>1451</SUB>> ]
+"4275" [label = <(&lt;operator&gt;.notEquals,clazz != null)<SUB>1452</SUB>> ]
+"4284" [label = <(binarySearch,Arrays.binarySearch(denyHashCodes, hash))<SUB>1456</SUB>> ]
+"4292" [label = <(getClassFromMapping,getClassFromMapping(typeName))<SUB>1456</SUB>> ]
+"4298" [label = <(&lt;operator&gt;.greaterEqualsThan,Arrays.binarySearch(acceptHashCodes, fullHash) ...)<SUB>1457</SUB>> ]
+"4398" [label = <(&lt;operator&gt;.fieldAccess,java.util.HashMap.class)<SUB>1486</SUB>> ]
+"4405" [label = <(FIELD_IDENTIFIER,class,class)<SUB>1487</SUB>> ]
+"4416" [label = <(&lt;operator&gt;.alloc,new JSONException(&quot;type not match. &quot; + typeName...)<SUB>1489</SUB>> ]
+"4419" [label = <(&lt;operator&gt;.addition,&quot;type not match. &quot; + typeName + &quot; -&gt; &quot; + expect...)<SUB>1489</SUB>> ]
+"4468" [label = <(&lt;operator&gt;.fieldAccess,this.denyHashCodes)<SUB>1502</SUB>> ]
+"4490" [label = <(&lt;operator&gt;.fieldAccess,this.acceptHashCodes)<SUB>1507</SUB>> ]
+"4498" [label = <(loadClass,loadClass(typeName, defaultClassLoader, true))<SUB>1508</SUB>> ]
+"4506" [label = <(&lt;operator&gt;.equals,clazz == null)<SUB>1510</SUB>> ]
+"4513" [label = <(&lt;operator&gt;.logicalAnd,expectClass != null &amp;&amp; expectClass.isAssignable...)<SUB>1514</SUB>> ]
+"4571" [label = <(FIELD_IDENTIFIER,defaultClassLoader,defaultClassLoader)<SUB>1528</SUB>> ]
+"4578" [label = <(getClassLoader,ParserConfig.class.getClassLoader())<SUB>1530</SUB>> ]
+"4692" [label = <(FIELD_IDENTIFIER,class,class)<SUB>1560</SUB>> ]
+"4697" [label = <(FIELD_IDENTIFIER,class,class)<SUB>1561</SUB>> ]
+"4710" [label = <(&lt;operator&gt;.alloc,new JSONException(&quot;autoType is not support. &quot; +...)<SUB>1564</SUB>> ]
+"4713" [label = <(&lt;operator&gt;.addition,&quot;autoType is not support. &quot; + typeName)<SUB>1564</SUB>> ]
+"4735" [label = <(&lt;operator&gt;.throw,throw new JSONException(&quot;type not match. &quot; + ty...)<SUB>1572</SUB>> ]
+"4778" [label = <(&lt;operator&gt;.alloc,new JSONException(&quot;autoType is not support. &quot; +...)<SUB>1578</SUB>> ]
+"4781" [label = <(&lt;operator&gt;.addition,&quot;autoType is not support. &quot; + typeName)<SUB>1578</SUB>> ]
+"4024" [label = <(&lt;operator&gt;.logicalOr,expectHash == 0x90a25f5baa21529eL || expectHash...)<SUB>1395</SUB>> ]
+"4047" [label = <(&lt;operator&gt;.equals,expectHash == 0x6439c4dff712ae8bL)<SUB>1401</SUB>> ]
+"4205" [label = <(FIELD_IDENTIFIER,internalDenyHashCodes,internalDenyHashCodes)<SUB>1439</SUB>> ]
+"4212" [label = <(&lt;operator&gt;.assignment,$obj13 = new JSONException(&quot;autoType is not sup...)<SUB>1440</SUB>> ]
+"4215" [label = <(&lt;init&gt;,new JSONException(&quot;autoType is not support. &quot; +...)<SUB>1440</SUB>> ]
+"4261" [label = <(FIELD_IDENTIFIER,acceptHashCodes,acceptHashCodes)<SUB>1450</SUB>> ]
+"4270" [label = <(&lt;operator&gt;.fieldAccess,this.defaultClassLoader)<SUB>1451</SUB>> ]
+"4279" [label = <(RETURN,return clazz;,return clazz;)<SUB>1453</SUB>> ]
+"4286" [label = <(&lt;operator&gt;.fieldAccess,this.denyHashCodes)<SUB>1456</SUB>> ]
+"4299" [label = <(binarySearch,Arrays.binarySearch(acceptHashCodes, fullHash))<SUB>1457</SUB>> ]
+"4311" [label = <(&lt;operator&gt;.assignment,$obj14 = new JSONException(&quot;autoType is not sup...)<SUB>1461</SUB>> ]
+"4314" [label = <(&lt;init&gt;,new JSONException(&quot;autoType is not support. &quot; +...)<SUB>1461</SUB>> ]
+"4400" [label = <(FIELD_IDENTIFIER,class,class)<SUB>1486</SUB>> ]
+"4420" [label = <(&lt;operator&gt;.addition,&quot;type not match. &quot; + typeName + &quot; -&gt; &quot;)<SUB>1489</SUB>> ]
+"4425" [label = <(getName,expectClass.getName())<SUB>1489</SUB>> ]
+"4470" [label = <(FIELD_IDENTIFIER,denyHashCodes,denyHashCodes)<SUB>1502</SUB>> ]
+"4477" [label = <(&lt;operator&gt;.assignment,$obj16 = new JSONException(&quot;autoType is not sup...)<SUB>1503</SUB>> ]
+"4480" [label = <(&lt;init&gt;,new JSONException(&quot;autoType is not support. &quot; +...)<SUB>1503</SUB>> ]
+"4492" [label = <(FIELD_IDENTIFIER,acceptHashCodes,acceptHashCodes)<SUB>1507</SUB>> ]
+"4501" [label = <(&lt;operator&gt;.fieldAccess,this.defaultClassLoader)<SUB>1508</SUB>> ]
+"4510" [label = <(RETURN,return expectClass;,return expectClass;)<SUB>1511</SUB>> ]
+"4514" [label = <(&lt;operator&gt;.notEquals,expectClass != null)<SUB>1514</SUB>> ]
+"4517" [label = <(isAssignableFrom,expectClass.isAssignableFrom(clazz))<SUB>1514</SUB>> ]
+"4521" [label = <(&lt;operator&gt;.throw,throw new JSONException(&quot;type not match. &quot; + ty...)<SUB>1515</SUB>> ]
+"4579" [label = <(&lt;operator&gt;.fieldAccess,ParserConfig.class)<SUB>1530</SUB>> ]
+"4025" [label = <(&lt;operator&gt;.logicalOr,expectHash == 0x90a25f5baa21529eL || expectHash...)<SUB>1395</SUB>> ]
+"4044" [label = <(&lt;operator&gt;.equals,expectHash == 0x47ef269aadc650b4L)<SUB>1400</SUB>> ]
+"4214" [label = <(&lt;operator&gt;.alloc,new JSONException(&quot;autoType is not support. &quot; +...)<SUB>1440</SUB>> ]
+"4217" [label = <(&lt;operator&gt;.addition,&quot;autoType is not support. &quot; + typeName)<SUB>1440</SUB>> ]
+"4272" [label = <(FIELD_IDENTIFIER,defaultClassLoader,defaultClassLoader)<SUB>1451</SUB>> ]
+"4288" [label = <(FIELD_IDENTIFIER,denyHashCodes,denyHashCodes)<SUB>1456</SUB>> ]
+"4301" [label = <(&lt;operator&gt;.fieldAccess,this.acceptHashCodes)<SUB>1457</SUB>> ]
+"4313" [label = <(&lt;operator&gt;.alloc,new JSONException(&quot;autoType is not support. &quot; +...)<SUB>1461</SUB>> ]
+"4316" [label = <(&lt;operator&gt;.addition,&quot;autoType is not support. &quot; + typeName)<SUB>1461</SUB>> ]
+"4421" [label = <(&lt;operator&gt;.addition,&quot;type not match. &quot; + typeName)<SUB>1489</SUB>> ]
+"4479" [label = <(&lt;operator&gt;.alloc,new JSONException(&quot;autoType is not support. &quot; +...)<SUB>1503</SUB>> ]
+"4482" [label = <(&lt;operator&gt;.addition,&quot;autoType is not support. &quot; + typeName)<SUB>1503</SUB>> ]
+"4503" [label = <(FIELD_IDENTIFIER,defaultClassLoader,defaultClassLoader)<SUB>1508</SUB>> ]
+"4581" [label = <(FIELD_IDENTIFIER,class,class)<SUB>1530</SUB>> ]
+"4738" [label = <(&lt;operator&gt;.assignment,$obj19 = new JSONException(&quot;type not match. &quot; +...)<SUB>1572</SUB>> ]
+"4741" [label = <(&lt;init&gt;,new JSONException(&quot;type not match. &quot; + typeName...)<SUB>1572</SUB>> ]
+"4026" [label = <(&lt;operator&gt;.logicalOr,expectHash == 0x90a25f5baa21529eL || expectHash...)<SUB>1395</SUB>> ]
+"4041" [label = <(&lt;operator&gt;.equals,expectHash == 0x295c4605fd1eaa95L)<SUB>1399</SUB>> ]
+"4303" [label = <(FIELD_IDENTIFIER,acceptHashCodes,acceptHashCodes)<SUB>1457</SUB>> ]
+"4524" [label = <(&lt;operator&gt;.assignment,$obj17 = new JSONException(&quot;type not match. &quot; +...)<SUB>1515</SUB>> ]
+"4527" [label = <(&lt;init&gt;,new JSONException(&quot;type not match. &quot; + typeName...)<SUB>1515</SUB>> ]
+"4740" [label = <(&lt;operator&gt;.alloc,new JSONException(&quot;type not match. &quot; + typeName...)<SUB>1572</SUB>> ]
+"4743" [label = <(&lt;operator&gt;.addition,&quot;type not match. &quot; + typeName + &quot; -&gt; &quot; + expect...)<SUB>1572</SUB>> ]
+"4027" [label = <(&lt;operator&gt;.logicalOr,expectHash == 0x90a25f5baa21529eL || expectHash...)<SUB>1395</SUB>> ]
+"4038" [label = <(&lt;operator&gt;.equals,expectHash == 0xed007300a7b227c6L)<SUB>1398</SUB>> ]
+"4526" [label = <(&lt;operator&gt;.alloc,new JSONException(&quot;type not match. &quot; + typeName...)<SUB>1515</SUB>> ]
+"4529" [label = <(&lt;operator&gt;.addition,&quot;type not match. &quot; + typeName + &quot; -&gt; &quot; + expect...)<SUB>1515</SUB>> ]
+"4744" [label = <(&lt;operator&gt;.addition,&quot;type not match. &quot; + typeName + &quot; -&gt; &quot;)<SUB>1572</SUB>> ]
+"4749" [label = <(getName,expectClass.getName())<SUB>1572</SUB>> ]
+"4028" [label = <(&lt;operator&gt;.logicalOr,expectHash == 0x90a25f5baa21529eL || expectHash...)<SUB>1395</SUB>> ]
+"4035" [label = <(&lt;operator&gt;.equals,expectHash == 0xaf586a571e302c6bL)<SUB>1397</SUB>> ]
+"4530" [label = <(&lt;operator&gt;.addition,&quot;type not match. &quot; + typeName + &quot; -&gt; &quot;)<SUB>1515</SUB>> ]
+"4535" [label = <(getName,expectClass.getName())<SUB>1515</SUB>> ]
+"4745" [label = <(&lt;operator&gt;.addition,&quot;type not match. &quot; + typeName)<SUB>1572</SUB>> ]
+"4029" [label = <(&lt;operator&gt;.equals,expectHash == 0x90a25f5baa21529eL)<SUB>1395</SUB>> ]
+"4032" [label = <(&lt;operator&gt;.equals,expectHash == 0x2d10a5801b9d6136L)<SUB>1396</SUB>> ]
+"4531" [label = <(&lt;operator&gt;.addition,&quot;type not match. &quot; + typeName)<SUB>1515</SUB>> ]
+  "3889" -> "3897" 
+  "3889" -> "3896" 
+  "3889" -> "3899" 
+  "3889" -> "3893" 
+  "3896" -> "3939" 
+  "3896" -> "4105" 
+  "3896" -> "3934" 
+  "3896" -> "3910" 
+  "3896" -> "3905" 
+  "3896" -> "3962" 
+  "3896" -> "4169" 
+  "3896" -> "4170" 
+  "3896" -> "4160" 
+  "3896" -> "4069" 
+  "3896" -> "3945" 
+  "3896" -> "3903" 
+  "3896" -> "4104" 
+  "3896" -> "4172" 
+  "3896" -> "4130" 
+  "3896" -> "4135" 
+  "3896" -> "4111" 
+  "3896" -> "4154" 
+  "3896" -> "4080" 
+  "3896" -> "3906" 
+  "3896" -> "4134" 
+  "3896" -> "4139" 
+  "3896" -> "4161" 
+  "3896" -> "4082" 
+  "3896" -> "3936" 
+  "3896" -> "4077" 
+  "3896" -> "4087" 
+  "3896" -> "4137" 
+  "3896" -> "4079" 
+  "3896" -> "4223" 
+  "3896" -> "4222" 
+  "3896" -> "4143" 
+  "3896" -> "4110" 
+  "3896" -> "4136" 
+  "3896" -> "3942" 
+  "3896" -> "4158" 
+  "3896" -> "4147" 
+  "3896" -> "3940" 
+  "3896" -> "4071" 
+  "3896" -> "4152" 
+  "3896" -> "3964" 
+  "3896" -> "3941" 
+  "3896" -> "4133" 
+  "3896" -> "4003" 
+  "3896" -> "3937" 
+  "3896" -> "3948" 
+  "3896" -> "4132" 
+  "3896" -> "3980" 
+  "3896" -> "3947" 
+  "3896" -> "4163" 
+  "3896" -> "3979" 
+  "3896" -> "3944" 
+  "3896" -> "3946" 
+  "3896" -> "4165" 
+  "3896" -> "3981" 
+  "3896" -> "4106" 
+  "3896" -> "4108" 
+  "3896" -> "3908" 
+  "3962" -> "3969" 
+  "3962" -> "3966" 
+  "3962" -> "3974" 
+  "3962" -> "3972" 
+  "3962" -> "3971" 
+  "3979" -> "3995" 
+  "3979" -> "3994" 
+  "3979" -> "3989" 
+  "3979" -> "3997" 
+  "3979" -> "3992" 
+  "4003" -> "4026" 
+  "4003" -> "4024" 
+  "4003" -> "4020" 
+  "4003" -> "4013" 
+  "4003" -> "4027" 
+  "4003" -> "4023" 
+  "4003" -> "4029" 
+  "4003" -> "4022" 
+  "4003" -> "4007" 
+  "4003" -> "4021" 
+  "4003" -> "4015" 
+  "4003" -> "4028" 
+  "4003" -> "4017" 
+  "4003" -> "4025" 
+  "4087" -> "4097" 
+  "4087" -> "4091" 
+  "4087" -> "4096" 
+  "4087" -> "4094" 
+  "4087" -> "4099" 
+  "4104" -> "4122" 
+  "4104" -> "4120" 
+  "4104" -> "4125" 
+  "4104" -> "4117" 
+  "4104" -> "4123" 
+  "4169" -> "4186" 
+  "4169" -> "4176" 
+  "4169" -> "4181" 
+  "4169" -> "4184" 
+  "4222" -> "4361" 
+  "4222" -> "4341" 
+  "4222" -> "4232" 
+  "4222" -> "4338" 
+  "4222" -> "4320" 
+  "4222" -> "4322" 
+  "4222" -> "4339" 
+  "4222" -> "4326" 
+  "4222" -> "4237" 
+  "4222" -> "4373" 
+  "4222" -> "4242" 
+  "4222" -> "4340" 
+  "4222" -> "4240" 
+  "4222" -> "4385" 
+  "4326" -> "4330" 
+  "4326" -> "4333" 
+  "4326" -> "4335" 
+  "4326" -> "4332" 
+  "4338" -> "4357" 
+  "4361" -> "4368" 
+  "4361" -> "4370" 
+  "4361" -> "4365" 
+  "4361" -> "4367" 
+  "4373" -> "4377" 
+  "4373" -> "4380" 
+  "4373" -> "4382" 
+  "4373" -> "4375" 
+  "4385" -> "4432" 
+  "4385" -> "4434" 
+  "4385" -> "4390" 
+  "4385" -> "4391" 
+  "4385" -> "4392" 
+  "4385" -> "4393" 
+  "4385" -> "4428" 
+  "4385" -> "4431" 
+  "4431" -> "4629" 
+  "4431" -> "4561" 
+  "4431" -> "4554" 
+  "4431" -> "4648" 
+  "4431" -> "4649" 
+  "4431" -> "4621" 
+  "4431" -> "4626" 
+  "4431" -> "4447" 
+  "4431" -> "4633" 
+  "4431" -> "4619" 
+  "4431" -> "4545" 
+  "4431" -> "4563" 
+  "4431" -> "4673" 
+  "4431" -> "4631" 
+  "4431" -> "4553" 
+  "4431" -> "4560" 
+  "4431" -> "4651" 
+  "4431" -> "4615" 
+  "4431" -> "4624" 
+  "4431" -> "4627" 
+  "4431" -> "4584" 
+  "4431" -> "4622" 
+  "4431" -> "4630" 
+  "4431" -> "4437" 
+  "4431" -> "4445" 
+  "4431" -> "4647" 
+  "4431" -> "4632" 
+  "4431" -> "4442" 
+  "4431" -> "4625" 
+  "4431" -> "4551" 
+  "4431" -> "4541" 
+  "4647" -> "4656" 
+  "4647" -> "4658" 
+  "4647" -> "4668" 
+  "4647" -> "4665" 
+  "4647" -> "4661" 
+  "4647" -> "4663" 
+  "4647" -> "4659" 
+  "4647" -> "4670" 
+  "4673" -> "4789" 
+  "4673" -> "4786" 
+  "4673" -> "4787" 
+  "4673" -> "4678" 
+  "4786" -> "4792" 
+  "4786" -> "4819" 
+  "4786" -> "4811" 
+  "4811" -> "4815" 
+  "3946" -> "3954" 
+  "3946" -> "3956" 
+  "3946" -> "3955" 
+  "3946" -> "3958" 
+  "3980" -> "3985" 
+  "3980" -> "3984" 
+  "4223" -> "4225" 
+  "4223" -> "4226" 
+  "4223" -> "4228" 
+  "4339" -> "4352" 
+  "4339" -> "4353" 
+  "4339" -> "4355" 
+  "4631" -> "4640" 
+  "4631" -> "4641" 
+  "4631" -> "4643" 
+  "4631" -> "4639" 
+  "3910" -> "3939" 
+  "3910" -> "4105" 
+  "3910" -> "3934" 
+  "3910" -> "3962" 
+  "3910" -> "4169" 
+  "3910" -> "3914" 
+  "3910" -> "4170" 
+  "3910" -> "4160" 
+  "3910" -> "4069" 
+  "3910" -> "3945" 
+  "3910" -> "4104" 
+  "3910" -> "3916" 
+  "3910" -> "4172" 
+  "3910" -> "4130" 
+  "3910" -> "4135" 
+  "3910" -> "4111" 
+  "3910" -> "4154" 
+  "3910" -> "4080" 
+  "3910" -> "4134" 
+  "3910" -> "4139" 
+  "3910" -> "3919" 
+  "3910" -> "4161" 
+  "3910" -> "4082" 
+  "3910" -> "3936" 
+  "3910" -> "4077" 
+  "3910" -> "4087" 
+  "3910" -> "4137" 
+  "3910" -> "4079" 
+  "3910" -> "4223" 
+  "3910" -> "4222" 
+  "3910" -> "4143" 
+  "3910" -> "4110" 
+  "3910" -> "4136" 
+  "3910" -> "3942" 
+  "3910" -> "4158" 
+  "3910" -> "4147" 
+  "3910" -> "3940" 
+  "3910" -> "4071" 
+  "3910" -> "3921" 
+  "3910" -> "4152" 
+  "3910" -> "3964" 
+  "3910" -> "3941" 
+  "3910" -> "4133" 
+  "3910" -> "4003" 
+  "3910" -> "3927" 
+  "3910" -> "3937" 
+  "3910" -> "3948" 
+  "3910" -> "4132" 
+  "3910" -> "3980" 
+  "3910" -> "3947" 
+  "3910" -> "4163" 
+  "3910" -> "3979" 
+  "3910" -> "3944" 
+  "3910" -> "3946" 
+  "3910" -> "4165" 
+  "3910" -> "3981" 
+  "3910" -> "4106" 
+  "3910" -> "4108" 
+  "3947" -> "3949" 
+  "3947" -> "3950" 
+  "4184" -> "4205" 
+  "4184" -> "4186" 
+  "4184" -> "4191" 
+  "4184" -> "4201" 
+  "4184" -> "4196" 
+  "4184" -> "4193" 
+  "4184" -> "4188" 
+  "4184" -> "4203" 
+  "4184" -> "4200" 
+  "4184" -> "4184" 
+  "4240" -> "4361" 
+  "4240" -> "4341" 
+  "4240" -> "4338" 
+  "4240" -> "4259" 
+  "4240" -> "4257" 
+  "4240" -> "4320" 
+  "4240" -> "4322" 
+  "4240" -> "4249" 
+  "4240" -> "4339" 
+  "4240" -> "4326" 
+  "4240" -> "4373" 
+  "4240" -> "4261" 
+  "4240" -> "4340" 
+  "4240" -> "4252" 
+  "4240" -> "4247" 
+  "4240" -> "4256" 
+  "4240" -> "4385" 
+  "4340" -> "4348" 
+  "4340" -> "4347" 
+  "4340" -> "4350" 
+  "4390" -> "4425" 
+  "4390" -> "4417" 
+  "4390" -> "4414" 
+  "4390" -> "4411" 
+  "4390" -> "4419" 
+  "4390" -> "4416" 
+  "4390" -> "4420" 
+  "4390" -> "4421" 
+  "4445" -> "4629" 
+  "4445" -> "4466" 
+  "4445" -> "4561" 
+  "4445" -> "4554" 
+  "4445" -> "4648" 
+  "4445" -> "4455" 
+  "4445" -> "4465" 
+  "4445" -> "4649" 
+  "4445" -> "4490" 
+  "4445" -> "4488" 
+  "4445" -> "4621" 
+  "4445" -> "4626" 
+  "4445" -> "4633" 
+  "4445" -> "4619" 
+  "4445" -> "4545" 
+  "4445" -> "4563" 
+  "4445" -> "4673" 
+  "4445" -> "4631" 
+  "4445" -> "4487" 
+  "4445" -> "4553" 
+  "4445" -> "4560" 
+  "4445" -> "4651" 
+  "4445" -> "4615" 
+  "4445" -> "4468" 
+  "4445" -> "4624" 
+  "4445" -> "4453" 
+  "4445" -> "4627" 
+  "4445" -> "4584" 
+  "4445" -> "4470" 
+  "4445" -> "4622" 
+  "4445" -> "4630" 
+  "4445" -> "4492" 
+  "4445" -> "4647" 
+  "4445" -> "4632" 
+  "4445" -> "4461" 
+  "4445" -> "4625" 
+  "4445" -> "4551" 
+  "4445" -> "4458" 
+  "4445" -> "4541" 
+  "4560" -> "4569" 
+  "4560" -> "4578" 
+  "4560" -> "4571" 
+  "4560" -> "4577" 
+  "4560" -> "4566" 
+  "4560" -> "4581" 
+  "4560" -> "4568" 
+  "4560" -> "4575" 
+  "4560" -> "4579" 
+  "4584" -> "4599" 
+  "4584" -> "4592" 
+  "4584" -> "4610" 
+  "4584" -> "4591" 
+  "4584" -> "4605" 
+  "4584" -> "4600" 
+  "4584" -> "4597" 
+  "4584" -> "4608" 
+  "4584" -> "4603" 
+  "4584" -> "4589" 
+  "4632" -> "4635" 
+  "4632" -> "4634" 
+  "4678" -> "4690" 
+  "4678" -> "4718" 
+  "4678" -> "4687" 
+  "4678" -> "4688" 
+  "4678" -> "4684" 
+  "4678" -> "4692" 
+  "4678" -> "4689" 
+  "4678" -> "4680" 
+  "4687" -> "4713" 
+  "4687" -> "4711" 
+  "4687" -> "4705" 
+  "4687" -> "4708" 
+  "4687" -> "4710" 
+  "4718" -> "4789" 
+  "4718" -> "4786" 
+  "4718" -> "4764" 
+  "4718" -> "4761" 
+  "4718" -> "4765" 
+  "4718" -> "4763" 
+  "4718" -> "4759" 
+  "4718" -> "4767" 
+  "4718" -> "4755" 
+  "4718" -> "4723" 
+  "4718" -> "4787" 
+  "4718" -> "4753" 
+  "4763" -> "4778" 
+  "4763" -> "4776" 
+  "4763" -> "4779" 
+  "4763" -> "4781" 
+  "4763" -> "4773" 
+  "4792" -> "4803" 
+  "4792" -> "4819" 
+  "4792" -> "4811" 
+  "4792" -> "4806" 
+  "4792" -> "4801" 
+  "4792" -> "4796" 
+  "4792" -> "4804" 
+  "4792" -> "4798" 
+  "4020" -> "4065" 
+  "4020" -> "4060" 
+  "4341" -> "4344" 
+  "4391" -> "4406" 
+  "4391" -> "4407" 
+  "4688" -> "4702" 
+  "4688" -> "4700" 
+  "4688" -> "4699" 
+  "4764" -> "4771" 
+  "4764" -> "4769" 
+  "3927" -> "3910" 
+  "3927" -> "3931" 
+  "4021" -> "4056" 
+  "4200" -> "4209" 
+  "4200" -> "4215" 
+  "4200" -> "4214" 
+  "4200" -> "4217" 
+  "4200" -> "4212" 
+  "4256" -> "4284" 
+  "4256" -> "4267" 
+  "4256" -> "4282" 
+  "4256" -> "4286" 
+  "4256" -> "4244" 
+  "4256" -> "4272" 
+  "4256" -> "4242" 
+  "4256" -> "4288" 
+  "4256" -> "4240" 
+  "4256" -> "4283" 
+  "4256" -> "4270" 
+  "4256" -> "4265" 
+  "4256" -> "4275" 
+  "4282" -> "4298" 
+  "4282" -> "4299" 
+  "4282" -> "4301" 
+  "4282" -> "4303" 
+  "4392" -> "4401" 
+  "4392" -> "4405" 
+  "4392" -> "4403" 
+  "4465" -> "4474" 
+  "4465" -> "4482" 
+  "4465" -> "4480" 
+  "4465" -> "4479" 
+  "4465" -> "4477" 
+  "4487" -> "4498" 
+  "4487" -> "4447" 
+  "4487" -> "4506" 
+  "4487" -> "4503" 
+  "4487" -> "4449" 
+  "4487" -> "4496" 
+  "4487" -> "4501" 
+  "4487" -> "4445" 
+  "4689" -> "4697" 
+  "4689" -> "4695" 
+  "4689" -> "4694" 
+  "4723" -> "4738" 
+  "4723" -> "4789" 
+  "4723" -> "4786" 
+  "4723" -> "4764" 
+  "4723" -> "4743" 
+  "4723" -> "4745" 
+  "4723" -> "4740" 
+  "4723" -> "4761" 
+  "4723" -> "4765" 
+  "4723" -> "4763" 
+  "4723" -> "4749" 
+  "4723" -> "4759" 
+  "4723" -> "4741" 
+  "4723" -> "4744" 
+  "4723" -> "4767" 
+  "4723" -> "4755" 
+  "4723" -> "4787" 
+  "4723" -> "4727" 
+  "4723" -> "4731" 
+  "4723" -> "4735" 
+  "4723" -> "4753" 
+  "4022" -> "4053" 
+  "4283" -> "4291" 
+  "4283" -> "4292" 
+  "4393" -> "4398" 
+  "4393" -> "4400" 
+  "4393" -> "4396" 
+  "4023" -> "4050" 
+  "4275" -> "4284" 
+  "4275" -> "4282" 
+  "4275" -> "4286" 
+  "4275" -> "4244" 
+  "4275" -> "4242" 
+  "4275" -> "4288" 
+  "4275" -> "4279" 
+  "4275" -> "4240" 
+  "4275" -> "4283" 
+  "4298" -> "4314" 
+  "4298" -> "4308" 
+  "4298" -> "4316" 
+  "4298" -> "4313" 
+  "4298" -> "4311" 
+  "4506" -> "4514" 
+  "4506" -> "4510" 
+  "4506" -> "4538" 
+  "4506" -> "4513" 
+  "4513" -> "4535" 
+  "4513" -> "4531" 
+  "4513" -> "4526" 
+  "4513" -> "4521" 
+  "4513" -> "4527" 
+  "4513" -> "4524" 
+  "4513" -> "4529" 
+  "4513" -> "4530" 
+  "4024" -> "4047" 
+  "4514" -> "4517" 
+  "4025" -> "4044" 
+  "4026" -> "4041" 
+  "4027" -> "4038" 
+  "4028" -> "4035" 
+  "4029" -> "4032" 
+}

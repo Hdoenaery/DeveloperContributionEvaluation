@@ -1,0 +1,9 @@
+digraph "isAutoTypeSupport" {  
+"1401" [label = <(METHOD,isAutoTypeSupport)<SUB>603</SUB>> ]
+"1410" [label = <(METHOD_RETURN,boolean)<SUB>603</SUB>> ]
+"1402" [label = <(PARAM,this)<SUB>603</SUB>> ]
+"1404" [label = <(RETURN,return autoTypeSupport;,return autoTypeSupport;)<SUB>604</SUB>> ]
+  "1404" -> "1410"  [ label = "&lt;RET&gt;"] 
+  "1402" -> "1410"  [ label = "this"] 
+  "1401" -> "1402" 
+}

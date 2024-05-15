@@ -1,0 +1,86 @@
+digraph "addDenyInternal" {  
+"3639" [label = <(&lt;operator&gt;.assignment,long hash = TypeUtils.fnv1a_64(name))<SUB>1248</SUB>> ]
+"3668" [label = <(&lt;operator&gt;.assignment,long[] hashCodes = new long[this.internalDenyHa...)<SUB>1258</SUB>> ]
+"3677" [label = <(&lt;operator&gt;.assignment,hashCodes[hashCodes.length - 1] = hash)<SUB>1259</SUB>> ]
+"3686" [label = <(arraycopy,System.arraycopy(this.internalDenyHashCodes, 0,...)<SUB>1260</SUB>> ]
+"3697" [label = <(sort,Arrays.sort(hashCodes))<SUB>1261</SUB>> ]
+"3700" [label = <(&lt;operator&gt;.assignment,this.internalDenyHashCodes = hashCodes)<SUB>1262</SUB>> ]
+"3628" [label = <(&lt;operator&gt;.logicalOr,name == null || name.length() == 0)<SUB>1244</SUB>> ]
+"3641" [label = <(fnv1a_64,fnv1a_64(name))<SUB>1248</SUB>> ]
+"3645" [label = <(&lt;operator&gt;.equals,internalDenyHashCodes == null)<SUB>1249</SUB>> ]
+"3658" [label = <(&lt;operator&gt;.greaterEqualsThan,Arrays.binarySearch(this.internalDenyHashCodes,...)<SUB>1254</SUB>> ]
+"3670" [label = <(&lt;operator&gt;.alloc,new long[this.internalDenyHashCodes.length + 1])> ]
+"3678" [label = <(&lt;operator&gt;.indexAccess,hashCodes[hashCodes.length - 1])<SUB>1259</SUB>> ]
+"3688" [label = <(&lt;operator&gt;.fieldAccess,this.internalDenyHashCodes)<SUB>1260</SUB>> ]
+"3693" [label = <(&lt;operator&gt;.fieldAccess,this.internalDenyHashCodes.length)<SUB>1260</SUB>> ]
+"3701" [label = <(&lt;operator&gt;.fieldAccess,this.internalDenyHashCodes)<SUB>1262</SUB>> ]
+"3629" [label = <(&lt;operator&gt;.equals,name == null)<SUB>1244</SUB>> ]
+"3632" [label = <(&lt;operator&gt;.equals,name.length() == 0)<SUB>1244</SUB>> ]
+"3637" [label = <(RETURN,return;,return;)<SUB>1245</SUB>> ]
+"3646" [label = <(&lt;operator&gt;.fieldAccess,this.internalDenyHashCodes)<SUB>1249</SUB>> ]
+"3651" [label = <(&lt;operator&gt;.assignment,this.internalDenyHashCodes = new long[] { hash })<SUB>1250</SUB>> ]
+"3656" [label = <(RETURN,return;,return;)<SUB>1251</SUB>> ]
+"3659" [label = <(binarySearch,Arrays.binarySearch(this.internalDenyHashCodes,...)<SUB>1254</SUB>> ]
+"3666" [label = <(RETURN,return;,return;)<SUB>1255</SUB>> ]
+"3671" [label = <(&lt;operator&gt;.addition,this.internalDenyHashCodes.length + 1)<SUB>1258</SUB>> ]
+"3680" [label = <(&lt;operator&gt;.subtraction,hashCodes.length - 1)<SUB>1259</SUB>> ]
+"3689" [label = <(FIELD_IDENTIFIER,internalDenyHashCodes,internalDenyHashCodes)<SUB>1260</SUB>> ]
+"3694" [label = <(&lt;operator&gt;.fieldAccess,this.internalDenyHashCodes)<SUB>1260</SUB>> ]
+"3696" [label = <(FIELD_IDENTIFIER,length,length)<SUB>1260</SUB>> ]
+"3702" [label = <(FIELD_IDENTIFIER,internalDenyHashCodes,internalDenyHashCodes)<SUB>1262</SUB>> ]
+"3633" [label = <(length,name.length())<SUB>1244</SUB>> ]
+"3648" [label = <(FIELD_IDENTIFIER,internalDenyHashCodes,internalDenyHashCodes)<SUB>1249</SUB>> ]
+"3652" [label = <(&lt;operator&gt;.fieldAccess,this.internalDenyHashCodes)<SUB>1250</SUB>> ]
+"3654" [label = <(&lt;operator&gt;.arrayInitializer,new long[] { hash })<SUB>1250</SUB>> ]
+"3661" [label = <(&lt;operator&gt;.fieldAccess,this.internalDenyHashCodes)<SUB>1254</SUB>> ]
+"3672" [label = <(&lt;operator&gt;.fieldAccess,this.internalDenyHashCodes.length)<SUB>1258</SUB>> ]
+"3681" [label = <(&lt;operator&gt;.fieldAccess,hashCodes.length)<SUB>1259</SUB>> ]
+"3695" [label = <(FIELD_IDENTIFIER,internalDenyHashCodes,internalDenyHashCodes)<SUB>1260</SUB>> ]
+"3653" [label = <(FIELD_IDENTIFIER,internalDenyHashCodes,internalDenyHashCodes)<SUB>1250</SUB>> ]
+"3662" [label = <(FIELD_IDENTIFIER,internalDenyHashCodes,internalDenyHashCodes)<SUB>1254</SUB>> ]
+"3673" [label = <(&lt;operator&gt;.fieldAccess,this.internalDenyHashCodes)<SUB>1258</SUB>> ]
+"3675" [label = <(FIELD_IDENTIFIER,length,length)<SUB>1258</SUB>> ]
+"3683" [label = <(FIELD_IDENTIFIER,length,length)<SUB>1259</SUB>> ]
+"3674" [label = <(FIELD_IDENTIFIER,internalDenyHashCodes,internalDenyHashCodes)<SUB>1258</SUB>> ]
+  "3628" -> "3648" 
+  "3628" -> "3639" 
+  "3628" -> "3645" 
+  "3628" -> "3637" 
+  "3628" -> "3646" 
+  "3628" -> "3641" 
+  "3645" -> "3656" 
+  "3645" -> "3652" 
+  "3645" -> "3662" 
+  "3645" -> "3653" 
+  "3645" -> "3661" 
+  "3645" -> "3658" 
+  "3645" -> "3659" 
+  "3645" -> "3651" 
+  "3645" -> "3654" 
+  "3658" -> "3694" 
+  "3658" -> "3674" 
+  "3658" -> "3686" 
+  "3658" -> "3683" 
+  "3658" -> "3677" 
+  "3658" -> "3681" 
+  "3658" -> "3673" 
+  "3658" -> "3693" 
+  "3658" -> "3675" 
+  "3658" -> "3678" 
+  "3658" -> "3700" 
+  "3658" -> "3671" 
+  "3658" -> "3689" 
+  "3658" -> "3701" 
+  "3658" -> "3668" 
+  "3658" -> "3672" 
+  "3658" -> "3670" 
+  "3658" -> "3697" 
+  "3658" -> "3666" 
+  "3658" -> "3702" 
+  "3658" -> "3696" 
+  "3658" -> "3688" 
+  "3658" -> "3695" 
+  "3658" -> "3680" 
+  "3629" -> "3632" 
+  "3629" -> "3633" 
+}

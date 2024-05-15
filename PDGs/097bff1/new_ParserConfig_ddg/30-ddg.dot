@@ -1,0 +1,18 @@
+digraph "isPrimitive" {  
+"3287" [label = <(METHOD,isPrimitive)<SUB>1142</SUB>> ]
+"3296" [label = <(METHOD_RETURN,boolean)<SUB>1142</SUB>> ]
+"3288" [label = <(PARAM,this)<SUB>1142</SUB>> ]
+"3289" [label = <(PARAM,Class&lt;?&gt; clazz)<SUB>1142</SUB>> ]
+"3291" [label = <(RETURN,return isPrimitive2(clazz);,return isPrimitive2(clazz);)<SUB>1143</SUB>> ]
+"3292" [label = <(isPrimitive2,isPrimitive2(clazz))<SUB>1143</SUB>> ]
+"3292" [label = <(isPrimitive2,isPrimitive2(clazz))<SUB>1143</SUB>> ]
+  "3291" -> "3296"  [ label = "&lt;RET&gt;"] 
+  "3288" -> "3296"  [ label = "this"] 
+  "3292" -> "3296"  [ label = "clazz"] 
+  "3292" -> "3296"  [ label = "isPrimitive2(clazz)"] 
+  "3287" -> "3288" 
+  "3287" -> "3289" 
+  "3292" -> "3291"  [ label = "isPrimitive2(clazz)"] 
+  "3289" -> "3292"  [ label = "clazz"] 
+  "3287" -> "3292" 
+}

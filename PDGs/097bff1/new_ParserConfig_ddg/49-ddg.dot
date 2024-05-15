@@ -1,0 +1,96 @@
+digraph "&lt;clinit&gt;" {  
+"4956" [label = <(METHOD,&lt;clinit&gt;)> ]
+"5018" [label = <(METHOD_RETURN,void)> ]
+"4958" [label = <(&lt;operator&gt;.assignment,String ParserConfig.DENY_PROPERTY_INTERNAL = &quot;f...)<SUB>70</SUB>> ]
+"4963" [label = <(&lt;operator&gt;.assignment,String ParserConfig.DENY_PROPERTY = &quot;fastjson.p...)<SUB>71</SUB>> ]
+"4968" [label = <(&lt;operator&gt;.assignment,String ParserConfig.AUTOTYPE_ACCEPT = &quot;fastjson...)<SUB>72</SUB>> ]
+"4973" [label = <(&lt;operator&gt;.assignment,String ParserConfig.AUTOTYPE_SUPPORT_PROPERTY =...)<SUB>73</SUB>> ]
+"4978" [label = <(&lt;operator&gt;.assignment,String ParserConfig.SAFE_MODE_PROPERTY = &quot;fastj...)<SUB>74</SUB>> ]
+"4983" [label = <(&lt;operator&gt;.assignment,ParserConfig ParserConfig.global = new ParserCo...)<SUB>120</SUB>> ]
+"4988" [label = <(&lt;init&gt;,new ParserConfig())<SUB>120</SUB>> ]
+"4992" [label = <(&lt;operator&gt;.assignment,boolean ParserConfig.awtError = false)<SUB>136</SUB>> ]
+"4997" [label = <(&lt;operator&gt;.assignment,boolean ParserConfig.jdk8Error = false)<SUB>137</SUB>> ]
+"5002" [label = <(&lt;operator&gt;.assignment,boolean ParserConfig.jodaError = false)<SUB>138</SUB>> ]
+"5007" [label = <(&lt;operator&gt;.assignment,boolean ParserConfig.guavaError = false)<SUB>139</SUB>> ]
+"5012" [label = <(&lt;operator&gt;.assignment,Function&lt;Class&lt;?&gt;,Boolean&gt; ParserConfig.isPrimi...)<SUB>1146</SUB>> ]
+"148" [label = <(&lt;init&gt;,new Function&lt;Class&lt;?&gt;, Boolean&gt;() {
+
+    publ...)<SUB>1146</SUB>> ]
+"4958" [label = <(&lt;operator&gt;.assignment,String ParserConfig.DENY_PROPERTY_INTERNAL = &quot;f...)<SUB>70</SUB>> ]
+"4958" [label = <(&lt;operator&gt;.assignment,String ParserConfig.DENY_PROPERTY_INTERNAL = &quot;f...)<SUB>70</SUB>> ]
+"4963" [label = <(&lt;operator&gt;.assignment,String ParserConfig.DENY_PROPERTY = &quot;fastjson.p...)<SUB>71</SUB>> ]
+"4963" [label = <(&lt;operator&gt;.assignment,String ParserConfig.DENY_PROPERTY = &quot;fastjson.p...)<SUB>71</SUB>> ]
+"4968" [label = <(&lt;operator&gt;.assignment,String ParserConfig.AUTOTYPE_ACCEPT = &quot;fastjson...)<SUB>72</SUB>> ]
+"4968" [label = <(&lt;operator&gt;.assignment,String ParserConfig.AUTOTYPE_ACCEPT = &quot;fastjson...)<SUB>72</SUB>> ]
+"4973" [label = <(&lt;operator&gt;.assignment,String ParserConfig.AUTOTYPE_SUPPORT_PROPERTY =...)<SUB>73</SUB>> ]
+"4973" [label = <(&lt;operator&gt;.assignment,String ParserConfig.AUTOTYPE_SUPPORT_PROPERTY =...)<SUB>73</SUB>> ]
+"4978" [label = <(&lt;operator&gt;.assignment,String ParserConfig.SAFE_MODE_PROPERTY = &quot;fastj...)<SUB>74</SUB>> ]
+"4978" [label = <(&lt;operator&gt;.assignment,String ParserConfig.SAFE_MODE_PROPERTY = &quot;fastj...)<SUB>74</SUB>> ]
+"4983" [label = <(&lt;operator&gt;.assignment,ParserConfig ParserConfig.global = new ParserCo...)<SUB>120</SUB>> ]
+"4983" [label = <(&lt;operator&gt;.assignment,ParserConfig ParserConfig.global = new ParserCo...)<SUB>120</SUB>> ]
+"4988" [label = <(&lt;init&gt;,new ParserConfig())<SUB>120</SUB>> ]
+"4992" [label = <(&lt;operator&gt;.assignment,boolean ParserConfig.awtError = false)<SUB>136</SUB>> ]
+"4992" [label = <(&lt;operator&gt;.assignment,boolean ParserConfig.awtError = false)<SUB>136</SUB>> ]
+"4997" [label = <(&lt;operator&gt;.assignment,boolean ParserConfig.jdk8Error = false)<SUB>137</SUB>> ]
+"4997" [label = <(&lt;operator&gt;.assignment,boolean ParserConfig.jdk8Error = false)<SUB>137</SUB>> ]
+"5002" [label = <(&lt;operator&gt;.assignment,boolean ParserConfig.jodaError = false)<SUB>138</SUB>> ]
+"5002" [label = <(&lt;operator&gt;.assignment,boolean ParserConfig.jodaError = false)<SUB>138</SUB>> ]
+"5007" [label = <(&lt;operator&gt;.assignment,boolean ParserConfig.guavaError = false)<SUB>139</SUB>> ]
+"5007" [label = <(&lt;operator&gt;.assignment,boolean ParserConfig.guavaError = false)<SUB>139</SUB>> ]
+"5012" [label = <(&lt;operator&gt;.assignment,Function&lt;Class&lt;?&gt;,Boolean&gt; ParserConfig.isPrimi...)<SUB>1146</SUB>> ]
+"5012" [label = <(&lt;operator&gt;.assignment,Function&lt;Class&lt;?&gt;,Boolean&gt; ParserConfig.isPrimi...)<SUB>1146</SUB>> ]
+"148" [label = <(&lt;init&gt;,new Function&lt;Class&lt;?&gt;, Boolean&gt;() {
+
+    publ...)<SUB>1146</SUB>> ]
+  "4958" -> "5018"  [ label = "ParserConfig.DENY_PROPERTY_INTERNAL"] 
+  "4958" -> "5018"  [ label = "String ParserConfig.DENY_PROPERTY_INTERNAL = &quot;fastjson.parser.deny.internal&quot;"] 
+  "4963" -> "5018"  [ label = "ParserConfig.DENY_PROPERTY"] 
+  "4963" -> "5018"  [ label = "String ParserConfig.DENY_PROPERTY = &quot;fastjson.parser.deny&quot;"] 
+  "4968" -> "5018"  [ label = "ParserConfig.AUTOTYPE_ACCEPT"] 
+  "4968" -> "5018"  [ label = "String ParserConfig.AUTOTYPE_ACCEPT = &quot;fastjson.parser.autoTypeAccept&quot;"] 
+  "4973" -> "5018"  [ label = "ParserConfig.AUTOTYPE_SUPPORT_PROPERTY"] 
+  "4973" -> "5018"  [ label = "String ParserConfig.AUTOTYPE_SUPPORT_PROPERTY = &quot;fastjson.parser.autoTypeSupport&quot;"] 
+  "4978" -> "5018"  [ label = "ParserConfig.SAFE_MODE_PROPERTY"] 
+  "4978" -> "5018"  [ label = "String ParserConfig.SAFE_MODE_PROPERTY = &quot;fastjson.parser.safeMode&quot;"] 
+  "4983" -> "5018"  [ label = "ParserConfig ParserConfig.global = new ParserConfig()"] 
+  "4988" -> "5018"  [ label = "ParserConfig.global"] 
+  "4988" -> "5018"  [ label = "new ParserConfig()"] 
+  "4992" -> "5018"  [ label = "ParserConfig.awtError"] 
+  "4992" -> "5018"  [ label = "boolean ParserConfig.awtError = false"] 
+  "4997" -> "5018"  [ label = "ParserConfig.jdk8Error"] 
+  "4997" -> "5018"  [ label = "boolean ParserConfig.jdk8Error = false"] 
+  "5002" -> "5018"  [ label = "ParserConfig.jodaError"] 
+  "5002" -> "5018"  [ label = "boolean ParserConfig.jodaError = false"] 
+  "5007" -> "5018"  [ label = "ParserConfig.guavaError"] 
+  "5007" -> "5018"  [ label = "boolean ParserConfig.guavaError = false"] 
+  "5012" -> "5018"  [ label = "Function&lt;Class&lt;?&gt;,Boolean&gt; ParserConfig.isPrimitiveFuncation = new Function&lt;Class&lt;?&gt;, Boolean&gt;() {
+
+    public Boolean apply(Class&lt;?&gt; clazz) {
+        return //
+        clazz == java.sql.Date.class || //
+        clazz == java.sql.Time.class || clazz == java.sql.Timestamp.class;
+    }
+}"] 
+  "148" -> "5018"  [ label = "ParserConfig.isPrimitiveFuncation"] 
+  "148" -> "5018"  [ label = "new Function&lt;Class&lt;?&gt;, Boolean&gt;() {
+
+    public Boolean apply(Class&lt;?&gt; clazz) {
+        return //
+        clazz == java.sql.Date.class || //
+        clazz == java.sql.Time.class || clazz == java.sql.Timestamp.class;
+    }
+}"] 
+  "4956" -> "4958" 
+  "4956" -> "4963" 
+  "4956" -> "4968" 
+  "4956" -> "4973" 
+  "4956" -> "4978" 
+  "4956" -> "4983" 
+  "4956" -> "4992" 
+  "4956" -> "4997" 
+  "4956" -> "5002" 
+  "4956" -> "5007" 
+  "4956" -> "5012" 
+  "4983" -> "4988"  [ label = "ParserConfig.global"] 
+  "5012" -> "148"  [ label = "ParserConfig.isPrimitiveFuncation"] 
+}

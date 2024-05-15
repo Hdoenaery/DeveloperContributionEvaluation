@@ -1,0 +1,24 @@
+digraph "addItemsToAccept" {  
+"1352" [label = <(&lt;operator&gt;.equals,items == null)<SUB>579</SUB>> ]
+"1359" [label = <(&lt;operator&gt;.assignment,int i = 0)<SUB>583</SUB>> ]
+"1362" [label = <(&lt;operator&gt;.lessThan,i &lt; items.length)<SUB>583</SUB>> ]
+"1367" [label = <(&lt;operator&gt;.preIncrement,++i)<SUB>583</SUB>> ]
+"1356" [label = <(RETURN,return;,return;)<SUB>580</SUB>> ]
+"1364" [label = <(&lt;operator&gt;.fieldAccess,items.length)<SUB>583</SUB>> ]
+"1371" [label = <(&lt;operator&gt;.assignment,String item = items[i])<SUB>584</SUB>> ]
+"1376" [label = <(addAccept,this.addAccept(item))<SUB>585</SUB>> ]
+"1366" [label = <(FIELD_IDENTIFIER,length,length)<SUB>583</SUB>> ]
+"1373" [label = <(&lt;operator&gt;.indexAccess,items[i])<SUB>584</SUB>> ]
+  "1352" -> "1364" 
+  "1352" -> "1366" 
+  "1352" -> "1356" 
+  "1352" -> "1362" 
+  "1352" -> "1359" 
+  "1362" -> "1373" 
+  "1362" -> "1364" 
+  "1362" -> "1366" 
+  "1362" -> "1362" 
+  "1362" -> "1371" 
+  "1362" -> "1376" 
+  "1362" -> "1367" 
+}

@@ -1,0 +1,10 @@
+digraph "sort" {  
+"6102" [label = <(METHOD,sort)> ]
+"6106" [label = <(METHOD_RETURN,ANY)> ]
+"6103" [label = <(PARAM,p1)> ]
+"6104" [label = <(PARAM,p2)> ]
+  "6103" -> "6106"  [ label = "p1"] 
+  "6104" -> "6106"  [ label = "p2"] 
+  "6102" -> "6103" 
+  "6102" -> "6104" 
+}

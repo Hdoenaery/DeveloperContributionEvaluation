@@ -1,0 +1,10 @@
+digraph "isArray" {  
+"5731" [label = <(METHOD,isArray)> ]
+"5735" [label = <(METHOD_RETURN,ANY)> ]
+"5732" [label = <(PARAM,p0)> ]
+"5733" [label = <(PARAM,p1)> ]
+  "5732" -> "5735"  [ label = "p0"] 
+  "5733" -> "5735"  [ label = "p1"] 
+  "5731" -> "5732" 
+  "5731" -> "5733" 
+}

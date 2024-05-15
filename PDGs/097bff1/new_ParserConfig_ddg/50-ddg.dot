@@ -1,0 +1,77 @@
+digraph "apply" {  
+"5020" [label = <(METHOD,apply)<SUB>1147</SUB>> ]
+"5044" [label = <(METHOD_RETURN,ANY)<SUB>1147</SUB>> ]
+"5021" [label = <(PARAM,this)<SUB>1147</SUB>> ]
+"5022" [label = <(PARAM,Class&lt;?&gt; clazz)<SUB>1147</SUB>> ]
+"5024" [label = <(RETURN,return //
+clazz == java.sql.Date.class || //
+...,return //
+clazz == java.sql.Date.class || //
+...)<SUB>1148</SUB>> ]
+"5025" [label = <(&lt;operator&gt;.logicalOr,//
+clazz == java.sql.Date.class || //
+clazz =...)<SUB>1148</SUB>> ]
+"5025" [label = <(&lt;operator&gt;.logicalOr,//
+clazz == java.sql.Date.class || //
+clazz =...)<SUB>1148</SUB>> ]
+"5025" [label = <(&lt;operator&gt;.logicalOr,//
+clazz == java.sql.Date.class || //
+clazz =...)<SUB>1148</SUB>> ]
+"5026" [label = <(&lt;operator&gt;.logicalOr,//
+clazz == java.sql.Date.class || //
+clazz =...)<SUB>1148</SUB>> ]
+"5026" [label = <(&lt;operator&gt;.logicalOr,//
+clazz == java.sql.Date.class || //
+clazz =...)<SUB>1148</SUB>> ]
+"5037" [label = <(&lt;operator&gt;.equals,clazz == java.sql.Timestamp.class)<SUB>1150</SUB>> ]
+"5037" [label = <(&lt;operator&gt;.equals,clazz == java.sql.Timestamp.class)<SUB>1150</SUB>> ]
+"5027" [label = <(&lt;operator&gt;.equals,//
+clazz == java.sql.Date.class)<SUB>1148</SUB>> ]
+"5027" [label = <(&lt;operator&gt;.equals,//
+clazz == java.sql.Date.class)<SUB>1148</SUB>> ]
+"5032" [label = <(&lt;operator&gt;.equals,//
+clazz == java.sql.Time.class)<SUB>1149</SUB>> ]
+"5032" [label = <(&lt;operator&gt;.equals,//
+clazz == java.sql.Time.class)<SUB>1149</SUB>> ]
+  "5024" -> "5044"  [ label = "&lt;RET&gt;"] 
+  "5021" -> "5044"  [ label = "this"] 
+  "5027" -> "5044"  [ label = "clazz"] 
+  "5027" -> "5044"  [ label = "java.sql.Date.class"] 
+  "5026" -> "5044"  [ label = "//
+clazz == java.sql.Date.class"] 
+  "5032" -> "5044"  [ label = "clazz"] 
+  "5032" -> "5044"  [ label = "java.sql.Time.class"] 
+  "5026" -> "5044"  [ label = "//
+clazz == java.sql.Time.class"] 
+  "5025" -> "5044"  [ label = "//
+clazz == java.sql.Date.class || //
+clazz == java.sql.Time.class"] 
+  "5037" -> "5044"  [ label = "clazz"] 
+  "5037" -> "5044"  [ label = "java.sql.Timestamp.class"] 
+  "5025" -> "5044"  [ label = "clazz == java.sql.Timestamp.class"] 
+  "5025" -> "5044"  [ label = "//
+clazz == java.sql.Date.class || //
+clazz == java.sql.Time.class || clazz == java.sql.Timestamp.class"] 
+  "5020" -> "5021" 
+  "5020" -> "5022" 
+  "5025" -> "5024"  [ label = "//
+clazz == java.sql.Date.class || //
+clazz == java.sql.Time.class || clazz == java.sql.Timestamp.class"] 
+  "5026" -> "5025"  [ label = "//
+clazz == java.sql.Date.class"] 
+  "5026" -> "5025"  [ label = "//
+clazz == java.sql.Time.class"] 
+  "5037" -> "5025"  [ label = "clazz"] 
+  "5037" -> "5025"  [ label = "java.sql.Timestamp.class"] 
+  "5027" -> "5026"  [ label = "clazz"] 
+  "5027" -> "5026"  [ label = "java.sql.Date.class"] 
+  "5032" -> "5026"  [ label = "clazz"] 
+  "5032" -> "5026"  [ label = "java.sql.Time.class"] 
+  "5027" -> "5037"  [ label = "clazz"] 
+  "5032" -> "5037"  [ label = "clazz"] 
+  "5020" -> "5037" 
+  "5022" -> "5027"  [ label = "clazz"] 
+  "5020" -> "5027" 
+  "5027" -> "5032"  [ label = "clazz"] 
+  "5020" -> "5032" 
+}

@@ -1,0 +1,20 @@
+digraph "apply" {  
+"4996" [label = <(&lt;operator&gt;.logicalOr,//
+clazz == java.sql.Date.class || //
+clazz =...)<SUB>1201</SUB>> ]
+"5007" [label = <(&lt;operator&gt;.equals,clazz == java.sql.Timestamp.class)<SUB>1203</SUB>> ]
+"4997" [label = <(&lt;operator&gt;.equals,//
+clazz == java.sql.Date.class)<SUB>1201</SUB>> ]
+"5002" [label = <(&lt;operator&gt;.equals,//
+clazz == java.sql.Time.class)<SUB>1202</SUB>> ]
+"5009" [label = <(&lt;operator&gt;.fieldAccess,java.sql.Timestamp.class)<SUB>1203</SUB>> ]
+"5004" [label = <(&lt;operator&gt;.fieldAccess,java.sql.Time.class)<SUB>1202</SUB>> ]
+"5011" [label = <(FIELD_IDENTIFIER,class,class)<SUB>1203</SUB>> ]
+"5006" [label = <(FIELD_IDENTIFIER,class,class)<SUB>1202</SUB>> ]
+  "4996" -> "5007" 
+  "4996" -> "5011" 
+  "4996" -> "5009" 
+  "4997" -> "5006" 
+  "4997" -> "5002" 
+  "4997" -> "5004" 
+}

@@ -1,0 +1,13 @@
+digraph "getResourceAsStream" {  
+"6173" [label = <(METHOD,getResourceAsStream)> ]
+"6178" [label = <(METHOD_RETURN,ANY)> ]
+"6174" [label = <(PARAM,p0)> ]
+"6175" [label = <(PARAM,p1)> ]
+"6176" [label = <(PARAM,p2)> ]
+  "6174" -> "6178"  [ label = "p0"] 
+  "6175" -> "6178"  [ label = "p1"] 
+  "6176" -> "6178"  [ label = "p2"] 
+  "6173" -> "6174" 
+  "6173" -> "6175" 
+  "6173" -> "6176" 
+}

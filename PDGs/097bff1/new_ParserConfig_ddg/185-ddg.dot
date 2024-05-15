@@ -1,0 +1,10 @@
+digraph "&lt;operators&gt;.assignmentXor" {  
+"6131" [label = <(METHOD,&lt;operators&gt;.assignmentXor)> ]
+"6135" [label = <(METHOD_RETURN,ANY)> ]
+"6132" [label = <(PARAM,p1)> ]
+"6133" [label = <(PARAM,p2)> ]
+  "6132" -> "6135"  [ label = "p1"] 
+  "6133" -> "6135"  [ label = "p2"] 
+  "6131" -> "6132" 
+  "6131" -> "6133" 
+}

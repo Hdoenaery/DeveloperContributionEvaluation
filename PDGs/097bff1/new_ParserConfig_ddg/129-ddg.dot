@@ -1,0 +1,10 @@
+digraph "getTypeParameters" {  
+"5812" [label = <(METHOD,getTypeParameters)> ]
+"5816" [label = <(METHOD_RETURN,ANY)> ]
+"5813" [label = <(PARAM,p0)> ]
+"5814" [label = <(PARAM,p1)> ]
+  "5813" -> "5816"  [ label = "p0"] 
+  "5814" -> "5816"  [ label = "p1"] 
+  "5812" -> "5813" 
+  "5812" -> "5814" 
+}

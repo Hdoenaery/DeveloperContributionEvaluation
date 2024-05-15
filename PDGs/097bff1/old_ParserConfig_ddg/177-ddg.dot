@@ -1,0 +1,13 @@
+digraph "binarySearch" {  
+"6052" [label = <(METHOD,binarySearch)> ]
+"6057" [label = <(METHOD_RETURN,ANY)> ]
+"6053" [label = <(PARAM,p1)> ]
+"6054" [label = <(PARAM,p2)> ]
+"6055" [label = <(PARAM,p3)> ]
+  "6053" -> "6057"  [ label = "p1"] 
+  "6054" -> "6057"  [ label = "p2"] 
+  "6055" -> "6057"  [ label = "p3"] 
+  "6052" -> "6053" 
+  "6052" -> "6054" 
+  "6052" -> "6055" 
+}

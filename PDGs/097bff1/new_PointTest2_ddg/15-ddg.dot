@@ -1,0 +1,13 @@
+digraph "println" {  
+"280" [label = <(METHOD,println)> ]
+"285" [label = <(METHOD_RETURN,ANY)> ]
+"281" [label = <(PARAM,p0)> ]
+"282" [label = <(PARAM,p1)> ]
+"283" [label = <(PARAM,p2)> ]
+  "281" -> "285"  [ label = "p0"] 
+  "282" -> "285"  [ label = "p1"] 
+  "283" -> "285"  [ label = "p2"] 
+  "280" -> "281" 
+  "280" -> "282" 
+  "280" -> "283" 
+}

@@ -1,0 +1,23 @@
+digraph "addAutoTypeCheckHandler" {  
+"4917" [label = <(&lt;operator&gt;.equals,autoTypeCheckHandlers == null)<SUB>1577</SUB>> ]
+"4923" [label = <(&lt;operator&gt;.assignment,this.autoTypeCheckHandlers = autoTypeCheckHandl...)<SUB>1578</SUB>> ]
+"4931" [label = <(&lt;init&gt;,new CopyOnWriteArrayList())<SUB>1580</SUB>> ]
+"4924" [label = <(&lt;operator&gt;.fieldAccess,this.autoTypeCheckHandlers)<SUB>1578</SUB>> ]
+"4926" [label = <(&lt;operator&gt;.assignment,this.autoTypeCheckHandlers = new CopyOnWriteArr...)<SUB>1579</SUB>> ]
+"4932" [label = <(&lt;operator&gt;.fieldAccess,this.autoTypeCheckHandlers)<SUB>1579</SUB>> ]
+"4925" [label = <(FIELD_IDENTIFIER,autoTypeCheckHandlers,autoTypeCheckHandlers)<SUB>1578</SUB>> ]
+"4927" [label = <(&lt;operator&gt;.fieldAccess,this.autoTypeCheckHandlers)<SUB>1579</SUB>> ]
+"4930" [label = <(&lt;operator&gt;.alloc,new CopyOnWriteArrayList())<SUB>1580</SUB>> ]
+"4934" [label = <(FIELD_IDENTIFIER,autoTypeCheckHandlers,autoTypeCheckHandlers)<SUB>1579</SUB>> ]
+"4929" [label = <(FIELD_IDENTIFIER,autoTypeCheckHandlers,autoTypeCheckHandlers)<SUB>1579</SUB>> ]
+  "4917" -> "4926" 
+  "4917" -> "4932" 
+  "4917" -> "4934" 
+  "4917" -> "4924" 
+  "4917" -> "4931" 
+  "4917" -> "4925" 
+  "4917" -> "4923" 
+  "4917" -> "4930" 
+  "4917" -> "4929" 
+  "4917" -> "4927" 
+}

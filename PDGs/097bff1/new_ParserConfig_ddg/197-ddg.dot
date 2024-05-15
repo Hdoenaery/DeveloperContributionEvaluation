@@ -1,0 +1,10 @@
+digraph "hasJsonType" {  
+"6202" [label = <(METHOD,hasJsonType)> ]
+"6206" [label = <(METHOD_RETURN,ANY)> ]
+"6203" [label = <(PARAM,p0)> ]
+"6204" [label = <(PARAM,p1)> ]
+  "6203" -> "6206"  [ label = "p0"] 
+  "6204" -> "6206"  [ label = "p1"] 
+  "6202" -> "6203" 
+  "6202" -> "6204" 
+}

@@ -1,0 +1,18 @@
+digraph "register" {  
+"4867" [label = <(METHOD,register)<SUB>1614</SUB>> ]
+"4876" [label = <(METHOD_RETURN,void)<SUB>1614</SUB>> ]
+"108" [label = <(PARAM,this)<SUB>1614</SUB>> ]
+"4868" [label = <(PARAM,Module module)<SUB>1614</SUB>> ]
+"4870" [label = <(add,this.modules.add(module))<SUB>1615</SUB>> ]
+"4870" [label = <(add,this.modules.add(module))<SUB>1615</SUB>> ]
+"4870" [label = <(add,this.modules.add(module))<SUB>1615</SUB>> ]
+  "108" -> "4876"  [ label = "this"] 
+  "4870" -> "4876"  [ label = "this.modules"] 
+  "4870" -> "4876"  [ label = "module"] 
+  "4870" -> "4876"  [ label = "this.modules.add(module)"] 
+  "4867" -> "108" 
+  "4867" -> "4868" 
+  "108" -> "4870"  [ label = "this"] 
+  "4868" -> "4870"  [ label = "module"] 
+  "4867" -> "4870" 
+}

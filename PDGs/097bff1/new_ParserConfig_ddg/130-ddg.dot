@@ -1,0 +1,13 @@
+digraph "isExternalClass" {  
+"5817" [label = <(METHOD,isExternalClass)> ]
+"5822" [label = <(METHOD_RETURN,ANY)> ]
+"5818" [label = <(PARAM,p0)> ]
+"5819" [label = <(PARAM,p1)> ]
+"5820" [label = <(PARAM,p2)> ]
+  "5818" -> "5822"  [ label = "p0"] 
+  "5819" -> "5822"  [ label = "p1"] 
+  "5820" -> "5822"  [ label = "p2"] 
+  "5817" -> "5818" 
+  "5817" -> "5819" 
+  "5817" -> "5820" 
+}

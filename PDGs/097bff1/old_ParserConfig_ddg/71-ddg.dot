@@ -1,0 +1,13 @@
+digraph "split" {  
+"5467" [label = <(METHOD,split)> ]
+"5472" [label = <(METHOD_RETURN,ANY)> ]
+"5468" [label = <(PARAM,p0)> ]
+"5469" [label = <(PARAM,p1)> ]
+"5470" [label = <(PARAM,p2)> ]
+  "5468" -> "5472"  [ label = "p0"] 
+  "5469" -> "5472"  [ label = "p1"] 
+  "5470" -> "5472"  [ label = "p2"] 
+  "5467" -> "5468" 
+  "5467" -> "5469" 
+  "5467" -> "5470" 
+}

@@ -1,0 +1,635 @@
+digraph "isPrimitive2" {  
+"3300" [label = <(METHOD,isPrimitive2)<SUB>1157</SUB>> ]
+"3404" [label = <(METHOD_RETURN,boolean)<SUB>1157</SUB>> ]
+"3301" [label = <(PARAM,final Class&lt;?&gt; clazz)<SUB>1157</SUB>> ]
+"3304" [label = <(&lt;operator&gt;.assignment,Boolean primitive = //
+clazz.isPrimitive() || ...)<SUB>1158</SUB>> ]
+"3395" [label = <(RETURN,return primitive != null ? primitive : false;,return primitive != null ? primitive : false;)<SUB>1176</SUB>> ]
+"3304" [label = <(&lt;operator&gt;.assignment,Boolean primitive = //
+clazz.isPrimitive() || ...)<SUB>1158</SUB>> ]
+"3304" [label = <(&lt;operator&gt;.assignment,Boolean primitive = //
+clazz.isPrimitive() || ...)<SUB>1158</SUB>> ]
+"3384" [label = <(&lt;operator&gt;.logicalNot,!primitive)<SUB>1173</SUB>> ]
+"3396" [label = <(&lt;operator&gt;.conditional,primitive != null ? primitive : false)<SUB>1176</SUB>> ]
+"3306" [label = <(&lt;operator&gt;.logicalOr,//
+clazz.isPrimitive() || //
+clazz == Boolean...)<SUB>1158</SUB>> ]
+"3306" [label = <(&lt;operator&gt;.logicalOr,//
+clazz.isPrimitive() || //
+clazz == Boolean...)<SUB>1158</SUB>> ]
+"3384" [label = <(&lt;operator&gt;.logicalNot,!primitive)<SUB>1173</SUB>> ]
+"3387" [label = <(&lt;operator&gt;.assignment,primitive = ModuleUtil.callWhenHasJavaSql(isPri...)<SUB>1174</SUB>> ]
+"3396" [label = <(&lt;operator&gt;.conditional,primitive != null ? primitive : false)<SUB>1176</SUB>> ]
+"3396" [label = <(&lt;operator&gt;.conditional,primitive != null ? primitive : false)<SUB>1176</SUB>> ]
+"3396" [label = <(&lt;operator&gt;.conditional,primitive != null ? primitive : false)<SUB>1176</SUB>> ]
+"3307" [label = <(&lt;operator&gt;.logicalOr,//
+clazz.isPrimitive() || //
+clazz == Boolean...)<SUB>1158</SUB>> ]
+"3307" [label = <(&lt;operator&gt;.logicalOr,//
+clazz.isPrimitive() || //
+clazz == Boolean...)<SUB>1158</SUB>> ]
+"3381" [label = <(isEnum,clazz.isEnum())<SUB>1171</SUB>> ]
+"3387" [label = <(&lt;operator&gt;.assignment,primitive = ModuleUtil.callWhenHasJavaSql(isPri...)<SUB>1174</SUB>> ]
+"3387" [label = <(&lt;operator&gt;.assignment,primitive = ModuleUtil.callWhenHasJavaSql(isPri...)<SUB>1174</SUB>> ]
+"3397" [label = <(&lt;operator&gt;.notEquals,primitive != null)<SUB>1176</SUB>> ]
+"3397" [label = <(&lt;operator&gt;.notEquals,primitive != null)<SUB>1176</SUB>> ]
+"3308" [label = <(&lt;operator&gt;.logicalOr,//
+clazz.isPrimitive() || //
+clazz == Boolean...)<SUB>1158</SUB>> ]
+"3308" [label = <(&lt;operator&gt;.logicalOr,//
+clazz.isPrimitive() || //
+clazz == Boolean...)<SUB>1158</SUB>> ]
+"3376" [label = <(&lt;operator&gt;.equals,//
+clazz == java.util.Date.class)<SUB>1170</SUB>> ]
+"3376" [label = <(&lt;operator&gt;.equals,//
+clazz == java.util.Date.class)<SUB>1170</SUB>> ]
+"3389" [label = <(callWhenHasJavaSql,callWhenHasJavaSql(isPrimitiveFuncation, clazz))<SUB>1174</SUB>> ]
+"3389" [label = <(callWhenHasJavaSql,callWhenHasJavaSql(isPrimitiveFuncation, clazz))<SUB>1174</SUB>> ]
+"3389" [label = <(callWhenHasJavaSql,callWhenHasJavaSql(isPrimitiveFuncation, clazz))<SUB>1174</SUB>> ]
+"3309" [label = <(&lt;operator&gt;.logicalOr,//
+clazz.isPrimitive() || //
+clazz == Boolean...)<SUB>1158</SUB>> ]
+"3309" [label = <(&lt;operator&gt;.logicalOr,//
+clazz.isPrimitive() || //
+clazz == Boolean...)<SUB>1158</SUB>> ]
+"3371" [label = <(&lt;operator&gt;.equals,//
+clazz == String.class)<SUB>1169</SUB>> ]
+"3371" [label = <(&lt;operator&gt;.equals,//
+clazz == String.class)<SUB>1169</SUB>> ]
+"3310" [label = <(&lt;operator&gt;.logicalOr,//
+clazz.isPrimitive() || //
+clazz == Boolean...)<SUB>1158</SUB>> ]
+"3310" [label = <(&lt;operator&gt;.logicalOr,//
+clazz.isPrimitive() || //
+clazz == Boolean...)<SUB>1158</SUB>> ]
+"3366" [label = <(&lt;operator&gt;.equals,//
+clazz == BigDecimal.class)<SUB>1168</SUB>> ]
+"3366" [label = <(&lt;operator&gt;.equals,//
+clazz == BigDecimal.class)<SUB>1168</SUB>> ]
+"3311" [label = <(&lt;operator&gt;.logicalOr,//
+clazz.isPrimitive() || //
+clazz == Boolean...)<SUB>1158</SUB>> ]
+"3311" [label = <(&lt;operator&gt;.logicalOr,//
+clazz.isPrimitive() || //
+clazz == Boolean...)<SUB>1158</SUB>> ]
+"3361" [label = <(&lt;operator&gt;.equals,//
+clazz == BigInteger.class)<SUB>1167</SUB>> ]
+"3361" [label = <(&lt;operator&gt;.equals,//
+clazz == BigInteger.class)<SUB>1167</SUB>> ]
+"3312" [label = <(&lt;operator&gt;.logicalOr,//
+clazz.isPrimitive() || //
+clazz == Boolean...)<SUB>1158</SUB>> ]
+"3312" [label = <(&lt;operator&gt;.logicalOr,//
+clazz.isPrimitive() || //
+clazz == Boolean...)<SUB>1158</SUB>> ]
+"3356" [label = <(&lt;operator&gt;.equals,//
+clazz == Double.class)<SUB>1166</SUB>> ]
+"3356" [label = <(&lt;operator&gt;.equals,//
+clazz == Double.class)<SUB>1166</SUB>> ]
+"3313" [label = <(&lt;operator&gt;.logicalOr,//
+clazz.isPrimitive() || //
+clazz == Boolean...)<SUB>1158</SUB>> ]
+"3313" [label = <(&lt;operator&gt;.logicalOr,//
+clazz.isPrimitive() || //
+clazz == Boolean...)<SUB>1158</SUB>> ]
+"3351" [label = <(&lt;operator&gt;.equals,//
+clazz == Float.class)<SUB>1165</SUB>> ]
+"3351" [label = <(&lt;operator&gt;.equals,//
+clazz == Float.class)<SUB>1165</SUB>> ]
+"3314" [label = <(&lt;operator&gt;.logicalOr,//
+clazz.isPrimitive() || //
+clazz == Boolean...)<SUB>1158</SUB>> ]
+"3314" [label = <(&lt;operator&gt;.logicalOr,//
+clazz.isPrimitive() || //
+clazz == Boolean...)<SUB>1158</SUB>> ]
+"3346" [label = <(&lt;operator&gt;.equals,//
+clazz == Long.class)<SUB>1164</SUB>> ]
+"3346" [label = <(&lt;operator&gt;.equals,//
+clazz == Long.class)<SUB>1164</SUB>> ]
+"3315" [label = <(&lt;operator&gt;.logicalOr,//
+clazz.isPrimitive() || //
+clazz == Boolean...)<SUB>1158</SUB>> ]
+"3315" [label = <(&lt;operator&gt;.logicalOr,//
+clazz.isPrimitive() || //
+clazz == Boolean...)<SUB>1158</SUB>> ]
+"3341" [label = <(&lt;operator&gt;.equals,//
+clazz == Integer.class)<SUB>1163</SUB>> ]
+"3341" [label = <(&lt;operator&gt;.equals,//
+clazz == Integer.class)<SUB>1163</SUB>> ]
+"3316" [label = <(&lt;operator&gt;.logicalOr,//
+clazz.isPrimitive() || //
+clazz == Boolean...)<SUB>1158</SUB>> ]
+"3316" [label = <(&lt;operator&gt;.logicalOr,//
+clazz.isPrimitive() || //
+clazz == Boolean...)<SUB>1158</SUB>> ]
+"3336" [label = <(&lt;operator&gt;.equals,//
+clazz == Short.class)<SUB>1162</SUB>> ]
+"3336" [label = <(&lt;operator&gt;.equals,//
+clazz == Short.class)<SUB>1162</SUB>> ]
+"3317" [label = <(&lt;operator&gt;.logicalOr,//
+clazz.isPrimitive() || //
+clazz == Boolean...)<SUB>1158</SUB>> ]
+"3317" [label = <(&lt;operator&gt;.logicalOr,//
+clazz.isPrimitive() || //
+clazz == Boolean...)<SUB>1158</SUB>> ]
+"3331" [label = <(&lt;operator&gt;.equals,//
+clazz == Byte.class)<SUB>1161</SUB>> ]
+"3331" [label = <(&lt;operator&gt;.equals,//
+clazz == Byte.class)<SUB>1161</SUB>> ]
+"3318" [label = <(&lt;operator&gt;.logicalOr,//
+clazz.isPrimitive() || //
+clazz == Boolean...)<SUB>1158</SUB>> ]
+"3318" [label = <(&lt;operator&gt;.logicalOr,//
+clazz.isPrimitive() || //
+clazz == Boolean...)<SUB>1158</SUB>> ]
+"3326" [label = <(&lt;operator&gt;.equals,//
+clazz == Character.class)<SUB>1160</SUB>> ]
+"3326" [label = <(&lt;operator&gt;.equals,//
+clazz == Character.class)<SUB>1160</SUB>> ]
+"3319" [label = <(isPrimitive,clazz.isPrimitive())<SUB>1158</SUB>> ]
+"3321" [label = <(&lt;operator&gt;.equals,//
+clazz == Boolean.class)<SUB>1159</SUB>> ]
+"3321" [label = <(&lt;operator&gt;.equals,//
+clazz == Boolean.class)<SUB>1159</SUB>> ]
+  "3395" -> "3404"  [ label = "&lt;RET&gt;"] 
+  "3319" -> "3404"  [ label = "clazz"] 
+  "3318" -> "3404"  [ label = "clazz.isPrimitive()"] 
+  "3321" -> "3404"  [ label = "clazz"] 
+  "3321" -> "3404"  [ label = "Boolean.class"] 
+  "3318" -> "3404"  [ label = "//
+clazz == Boolean.class"] 
+  "3317" -> "3404"  [ label = "//
+clazz.isPrimitive() || //
+clazz == Boolean.class"] 
+  "3326" -> "3404"  [ label = "clazz"] 
+  "3326" -> "3404"  [ label = "Character.class"] 
+  "3317" -> "3404"  [ label = "//
+clazz == Character.class"] 
+  "3316" -> "3404"  [ label = "//
+clazz.isPrimitive() || //
+clazz == Boolean.class || //
+clazz == Character.class"] 
+  "3331" -> "3404"  [ label = "clazz"] 
+  "3331" -> "3404"  [ label = "Byte.class"] 
+  "3316" -> "3404"  [ label = "//
+clazz == Byte.class"] 
+  "3315" -> "3404"  [ label = "//
+clazz.isPrimitive() || //
+clazz == Boolean.class || //
+clazz == Character.class || //
+clazz == Byte.class"] 
+  "3336" -> "3404"  [ label = "clazz"] 
+  "3336" -> "3404"  [ label = "Short.class"] 
+  "3315" -> "3404"  [ label = "//
+clazz == Short.class"] 
+  "3314" -> "3404"  [ label = "//
+clazz.isPrimitive() || //
+clazz == Boolean.class || //
+clazz == Character.class || //
+clazz == Byte.class || //
+clazz == Short.class"] 
+  "3341" -> "3404"  [ label = "clazz"] 
+  "3341" -> "3404"  [ label = "Integer.class"] 
+  "3314" -> "3404"  [ label = "//
+clazz == Integer.class"] 
+  "3313" -> "3404"  [ label = "//
+clazz.isPrimitive() || //
+clazz == Boolean.class || //
+clazz == Character.class || //
+clazz == Byte.class || //
+clazz == Short.class || //
+clazz == Integer.class"] 
+  "3346" -> "3404"  [ label = "clazz"] 
+  "3346" -> "3404"  [ label = "Long.class"] 
+  "3313" -> "3404"  [ label = "//
+clazz == Long.class"] 
+  "3312" -> "3404"  [ label = "//
+clazz.isPrimitive() || //
+clazz == Boolean.class || //
+clazz == Character.class || //
+clazz == Byte.class || //
+clazz == Short.class || //
+clazz == Integer.class || //
+clazz == Long.class"] 
+  "3351" -> "3404"  [ label = "clazz"] 
+  "3351" -> "3404"  [ label = "Float.class"] 
+  "3312" -> "3404"  [ label = "//
+clazz == Float.class"] 
+  "3311" -> "3404"  [ label = "//
+clazz.isPrimitive() || //
+clazz == Boolean.class || //
+clazz == Character.class || //
+clazz == Byte.class || //
+clazz == Short.class || //
+clazz == Integer.class || //
+clazz == Long.class || //
+clazz == Float.class"] 
+  "3356" -> "3404"  [ label = "clazz"] 
+  "3356" -> "3404"  [ label = "Double.class"] 
+  "3311" -> "3404"  [ label = "//
+clazz == Double.class"] 
+  "3310" -> "3404"  [ label = "//
+clazz.isPrimitive() || //
+clazz == Boolean.class || //
+clazz == Character.class || //
+clazz == Byte.class || //
+clazz == Short.class || //
+clazz == Integer.class || //
+clazz == Long.class || //
+clazz == Float.class || //
+clazz == Double.class"] 
+  "3361" -> "3404"  [ label = "clazz"] 
+  "3361" -> "3404"  [ label = "BigInteger.class"] 
+  "3310" -> "3404"  [ label = "//
+clazz == BigInteger.class"] 
+  "3309" -> "3404"  [ label = "//
+clazz.isPrimitive() || //
+clazz == Boolean.class || //
+clazz == Character.class || //
+clazz == Byte.class || //
+clazz == Short.class || //
+clazz == Integer.class || //
+clazz == Long.class || //
+clazz == Float.class || //
+clazz == Double.class || //
+clazz == BigInteger.class"] 
+  "3366" -> "3404"  [ label = "clazz"] 
+  "3366" -> "3404"  [ label = "BigDecimal.class"] 
+  "3309" -> "3404"  [ label = "//
+clazz == BigDecimal.class"] 
+  "3308" -> "3404"  [ label = "//
+clazz.isPrimitive() || //
+clazz == Boolean.class || //
+clazz == Character.class || //
+clazz == Byte.class || //
+clazz == Short.class || //
+clazz == Integer.class || //
+clazz == Long.class || //
+clazz == Float.class || //
+clazz == Double.class || //
+clazz == BigInteger.class || //
+clazz == BigDecimal.class"] 
+  "3371" -> "3404"  [ label = "clazz"] 
+  "3371" -> "3404"  [ label = "String.class"] 
+  "3308" -> "3404"  [ label = "//
+clazz == String.class"] 
+  "3307" -> "3404"  [ label = "//
+clazz.isPrimitive() || //
+clazz == Boolean.class || //
+clazz == Character.class || //
+clazz == Byte.class || //
+clazz == Short.class || //
+clazz == Integer.class || //
+clazz == Long.class || //
+clazz == Float.class || //
+clazz == Double.class || //
+clazz == BigInteger.class || //
+clazz == BigDecimal.class || //
+clazz == String.class"] 
+  "3376" -> "3404"  [ label = "clazz"] 
+  "3376" -> "3404"  [ label = "java.util.Date.class"] 
+  "3307" -> "3404"  [ label = "//
+clazz == java.util.Date.class"] 
+  "3306" -> "3404"  [ label = "//
+clazz.isPrimitive() || //
+clazz == Boolean.class || //
+clazz == Character.class || //
+clazz == Byte.class || //
+clazz == Short.class || //
+clazz == Integer.class || //
+clazz == Long.class || //
+clazz == Float.class || //
+clazz == Double.class || //
+clazz == BigInteger.class || //
+clazz == BigDecimal.class || //
+clazz == String.class || //
+clazz == java.util.Date.class"] 
+  "3381" -> "3404"  [ label = "clazz"] 
+  "3306" -> "3404"  [ label = "clazz.isEnum()"] 
+  "3304" -> "3404"  [ label = "//
+clazz.isPrimitive() || //
+clazz == Boolean.class || //
+clazz == Character.class || //
+clazz == Byte.class || //
+clazz == Short.class || //
+clazz == Integer.class || //
+clazz == Long.class || //
+clazz == Float.class || //
+clazz == Double.class || //
+clazz == BigInteger.class || //
+clazz == BigDecimal.class || //
+clazz == String.class || //
+clazz == java.util.Date.class || //
+clazz.isEnum()"] 
+  "3304" -> "3404"  [ label = "Boolean primitive = //
+clazz.isPrimitive() || //
+clazz == Boolean.class || //
+clazz == Character.class || //
+clazz == Byte.class || //
+clazz == Short.class || //
+clazz == Integer.class || //
+clazz == Long.class || //
+clazz == Float.class || //
+clazz == Double.class || //
+clazz == BigInteger.class || //
+clazz == BigDecimal.class || //
+clazz == String.class || //
+clazz == java.util.Date.class || //
+clazz.isEnum()"] 
+  "3384" -> "3404"  [ label = "!primitive"] 
+  "3389" -> "3404"  [ label = "com.alibaba.fastjson.parser.ParserConfig.isPrimitiveFuncation"] 
+  "3389" -> "3404"  [ label = "clazz"] 
+  "3387" -> "3404"  [ label = "callWhenHasJavaSql(isPrimitiveFuncation, clazz)"] 
+  "3387" -> "3404"  [ label = "primitive = ModuleUtil.callWhenHasJavaSql(isPrimitiveFuncation, clazz)"] 
+  "3396" -> "3404"  [ label = "primitive != null"] 
+  "3396" -> "3404"  [ label = "primitive"] 
+  "3396" -> "3404"  [ label = "primitive != null ? primitive : false"] 
+  "3389" -> "3404"  [ label = "ModuleUtil"] 
+  "3300" -> "3301" 
+  "3306" -> "3304"  [ label = "//
+clazz.isPrimitive() || //
+clazz == Boolean.class || //
+clazz == Character.class || //
+clazz == Byte.class || //
+clazz == Short.class || //
+clazz == Integer.class || //
+clazz == Long.class || //
+clazz == Float.class || //
+clazz == Double.class || //
+clazz == BigInteger.class || //
+clazz == BigDecimal.class || //
+clazz == String.class || //
+clazz == java.util.Date.class"] 
+  "3306" -> "3304"  [ label = "clazz.isEnum()"] 
+  "3396" -> "3395"  [ label = "primitive != null ? primitive : false"] 
+  "3397" -> "3396"  [ label = "primitive"] 
+  "3300" -> "3396" 
+  "3307" -> "3306"  [ label = "//
+clazz.isPrimitive() || //
+clazz == Boolean.class || //
+clazz == Character.class || //
+clazz == Byte.class || //
+clazz == Short.class || //
+clazz == Integer.class || //
+clazz == Long.class || //
+clazz == Float.class || //
+clazz == Double.class || //
+clazz == BigInteger.class || //
+clazz == BigDecimal.class || //
+clazz == String.class"] 
+  "3307" -> "3306"  [ label = "//
+clazz == java.util.Date.class"] 
+  "3381" -> "3306"  [ label = "clazz"] 
+  "3304" -> "3384"  [ label = "primitive"] 
+  "3300" -> "3384" 
+  "3389" -> "3387"  [ label = "ModuleUtil"] 
+  "3389" -> "3387"  [ label = "com.alibaba.fastjson.parser.ParserConfig.isPrimitiveFuncation"] 
+  "3389" -> "3387"  [ label = "clazz"] 
+  "3308" -> "3307"  [ label = "//
+clazz.isPrimitive() || //
+clazz == Boolean.class || //
+clazz == Character.class || //
+clazz == Byte.class || //
+clazz == Short.class || //
+clazz == Integer.class || //
+clazz == Long.class || //
+clazz == Float.class || //
+clazz == Double.class || //
+clazz == BigInteger.class || //
+clazz == BigDecimal.class"] 
+  "3308" -> "3307"  [ label = "//
+clazz == String.class"] 
+  "3376" -> "3307"  [ label = "clazz"] 
+  "3376" -> "3307"  [ label = "java.util.Date.class"] 
+  "3319" -> "3381"  [ label = "clazz"] 
+  "3321" -> "3381"  [ label = "clazz"] 
+  "3326" -> "3381"  [ label = "clazz"] 
+  "3331" -> "3381"  [ label = "clazz"] 
+  "3336" -> "3381"  [ label = "clazz"] 
+  "3341" -> "3381"  [ label = "clazz"] 
+  "3346" -> "3381"  [ label = "clazz"] 
+  "3351" -> "3381"  [ label = "clazz"] 
+  "3356" -> "3381"  [ label = "clazz"] 
+  "3361" -> "3381"  [ label = "clazz"] 
+  "3366" -> "3381"  [ label = "clazz"] 
+  "3371" -> "3381"  [ label = "clazz"] 
+  "3376" -> "3381"  [ label = "clazz"] 
+  "3300" -> "3381" 
+  "3384" -> "3397"  [ label = "primitive"] 
+  "3387" -> "3397"  [ label = "primitive"] 
+  "3300" -> "3397" 
+  "3309" -> "3308"  [ label = "//
+clazz.isPrimitive() || //
+clazz == Boolean.class || //
+clazz == Character.class || //
+clazz == Byte.class || //
+clazz == Short.class || //
+clazz == Integer.class || //
+clazz == Long.class || //
+clazz == Float.class || //
+clazz == Double.class || //
+clazz == BigInteger.class"] 
+  "3309" -> "3308"  [ label = "//
+clazz == BigDecimal.class"] 
+  "3371" -> "3308"  [ label = "clazz"] 
+  "3371" -> "3308"  [ label = "String.class"] 
+  "3319" -> "3376"  [ label = "clazz"] 
+  "3321" -> "3376"  [ label = "clazz"] 
+  "3326" -> "3376"  [ label = "clazz"] 
+  "3331" -> "3376"  [ label = "clazz"] 
+  "3336" -> "3376"  [ label = "clazz"] 
+  "3341" -> "3376"  [ label = "clazz"] 
+  "3346" -> "3376"  [ label = "clazz"] 
+  "3351" -> "3376"  [ label = "clazz"] 
+  "3356" -> "3376"  [ label = "clazz"] 
+  "3361" -> "3376"  [ label = "clazz"] 
+  "3366" -> "3376"  [ label = "clazz"] 
+  "3371" -> "3376"  [ label = "clazz"] 
+  "3300" -> "3376" 
+  "3300" -> "3389" 
+  "3319" -> "3389"  [ label = "clazz"] 
+  "3321" -> "3389"  [ label = "clazz"] 
+  "3326" -> "3389"  [ label = "clazz"] 
+  "3331" -> "3389"  [ label = "clazz"] 
+  "3336" -> "3389"  [ label = "clazz"] 
+  "3341" -> "3389"  [ label = "clazz"] 
+  "3346" -> "3389"  [ label = "clazz"] 
+  "3351" -> "3389"  [ label = "clazz"] 
+  "3356" -> "3389"  [ label = "clazz"] 
+  "3361" -> "3389"  [ label = "clazz"] 
+  "3366" -> "3389"  [ label = "clazz"] 
+  "3371" -> "3389"  [ label = "clazz"] 
+  "3376" -> "3389"  [ label = "clazz"] 
+  "3381" -> "3389"  [ label = "clazz"] 
+  "3310" -> "3309"  [ label = "//
+clazz.isPrimitive() || //
+clazz == Boolean.class || //
+clazz == Character.class || //
+clazz == Byte.class || //
+clazz == Short.class || //
+clazz == Integer.class || //
+clazz == Long.class || //
+clazz == Float.class || //
+clazz == Double.class"] 
+  "3310" -> "3309"  [ label = "//
+clazz == BigInteger.class"] 
+  "3366" -> "3309"  [ label = "clazz"] 
+  "3366" -> "3309"  [ label = "BigDecimal.class"] 
+  "3319" -> "3371"  [ label = "clazz"] 
+  "3321" -> "3371"  [ label = "clazz"] 
+  "3326" -> "3371"  [ label = "clazz"] 
+  "3331" -> "3371"  [ label = "clazz"] 
+  "3336" -> "3371"  [ label = "clazz"] 
+  "3341" -> "3371"  [ label = "clazz"] 
+  "3346" -> "3371"  [ label = "clazz"] 
+  "3351" -> "3371"  [ label = "clazz"] 
+  "3356" -> "3371"  [ label = "clazz"] 
+  "3361" -> "3371"  [ label = "clazz"] 
+  "3366" -> "3371"  [ label = "clazz"] 
+  "3300" -> "3371" 
+  "3311" -> "3310"  [ label = "//
+clazz.isPrimitive() || //
+clazz == Boolean.class || //
+clazz == Character.class || //
+clazz == Byte.class || //
+clazz == Short.class || //
+clazz == Integer.class || //
+clazz == Long.class || //
+clazz == Float.class"] 
+  "3311" -> "3310"  [ label = "//
+clazz == Double.class"] 
+  "3361" -> "3310"  [ label = "clazz"] 
+  "3361" -> "3310"  [ label = "BigInteger.class"] 
+  "3319" -> "3366"  [ label = "clazz"] 
+  "3321" -> "3366"  [ label = "clazz"] 
+  "3326" -> "3366"  [ label = "clazz"] 
+  "3331" -> "3366"  [ label = "clazz"] 
+  "3336" -> "3366"  [ label = "clazz"] 
+  "3341" -> "3366"  [ label = "clazz"] 
+  "3346" -> "3366"  [ label = "clazz"] 
+  "3351" -> "3366"  [ label = "clazz"] 
+  "3356" -> "3366"  [ label = "clazz"] 
+  "3361" -> "3366"  [ label = "clazz"] 
+  "3300" -> "3366" 
+  "3312" -> "3311"  [ label = "//
+clazz.isPrimitive() || //
+clazz == Boolean.class || //
+clazz == Character.class || //
+clazz == Byte.class || //
+clazz == Short.class || //
+clazz == Integer.class || //
+clazz == Long.class"] 
+  "3312" -> "3311"  [ label = "//
+clazz == Float.class"] 
+  "3356" -> "3311"  [ label = "clazz"] 
+  "3356" -> "3311"  [ label = "Double.class"] 
+  "3319" -> "3361"  [ label = "clazz"] 
+  "3321" -> "3361"  [ label = "clazz"] 
+  "3326" -> "3361"  [ label = "clazz"] 
+  "3331" -> "3361"  [ label = "clazz"] 
+  "3336" -> "3361"  [ label = "clazz"] 
+  "3341" -> "3361"  [ label = "clazz"] 
+  "3346" -> "3361"  [ label = "clazz"] 
+  "3351" -> "3361"  [ label = "clazz"] 
+  "3356" -> "3361"  [ label = "clazz"] 
+  "3300" -> "3361" 
+  "3313" -> "3312"  [ label = "//
+clazz.isPrimitive() || //
+clazz == Boolean.class || //
+clazz == Character.class || //
+clazz == Byte.class || //
+clazz == Short.class || //
+clazz == Integer.class"] 
+  "3313" -> "3312"  [ label = "//
+clazz == Long.class"] 
+  "3351" -> "3312"  [ label = "clazz"] 
+  "3351" -> "3312"  [ label = "Float.class"] 
+  "3319" -> "3356"  [ label = "clazz"] 
+  "3321" -> "3356"  [ label = "clazz"] 
+  "3326" -> "3356"  [ label = "clazz"] 
+  "3331" -> "3356"  [ label = "clazz"] 
+  "3336" -> "3356"  [ label = "clazz"] 
+  "3341" -> "3356"  [ label = "clazz"] 
+  "3346" -> "3356"  [ label = "clazz"] 
+  "3351" -> "3356"  [ label = "clazz"] 
+  "3300" -> "3356" 
+  "3314" -> "3313"  [ label = "//
+clazz.isPrimitive() || //
+clazz == Boolean.class || //
+clazz == Character.class || //
+clazz == Byte.class || //
+clazz == Short.class"] 
+  "3314" -> "3313"  [ label = "//
+clazz == Integer.class"] 
+  "3346" -> "3313"  [ label = "clazz"] 
+  "3346" -> "3313"  [ label = "Long.class"] 
+  "3319" -> "3351"  [ label = "clazz"] 
+  "3321" -> "3351"  [ label = "clazz"] 
+  "3326" -> "3351"  [ label = "clazz"] 
+  "3331" -> "3351"  [ label = "clazz"] 
+  "3336" -> "3351"  [ label = "clazz"] 
+  "3341" -> "3351"  [ label = "clazz"] 
+  "3346" -> "3351"  [ label = "clazz"] 
+  "3300" -> "3351" 
+  "3315" -> "3314"  [ label = "//
+clazz.isPrimitive() || //
+clazz == Boolean.class || //
+clazz == Character.class || //
+clazz == Byte.class"] 
+  "3315" -> "3314"  [ label = "//
+clazz == Short.class"] 
+  "3341" -> "3314"  [ label = "clazz"] 
+  "3341" -> "3314"  [ label = "Integer.class"] 
+  "3319" -> "3346"  [ label = "clazz"] 
+  "3321" -> "3346"  [ label = "clazz"] 
+  "3326" -> "3346"  [ label = "clazz"] 
+  "3331" -> "3346"  [ label = "clazz"] 
+  "3336" -> "3346"  [ label = "clazz"] 
+  "3341" -> "3346"  [ label = "clazz"] 
+  "3300" -> "3346" 
+  "3316" -> "3315"  [ label = "//
+clazz.isPrimitive() || //
+clazz == Boolean.class || //
+clazz == Character.class"] 
+  "3316" -> "3315"  [ label = "//
+clazz == Byte.class"] 
+  "3336" -> "3315"  [ label = "clazz"] 
+  "3336" -> "3315"  [ label = "Short.class"] 
+  "3319" -> "3341"  [ label = "clazz"] 
+  "3321" -> "3341"  [ label = "clazz"] 
+  "3326" -> "3341"  [ label = "clazz"] 
+  "3331" -> "3341"  [ label = "clazz"] 
+  "3336" -> "3341"  [ label = "clazz"] 
+  "3300" -> "3341" 
+  "3317" -> "3316"  [ label = "//
+clazz.isPrimitive() || //
+clazz == Boolean.class"] 
+  "3317" -> "3316"  [ label = "//
+clazz == Character.class"] 
+  "3331" -> "3316"  [ label = "clazz"] 
+  "3331" -> "3316"  [ label = "Byte.class"] 
+  "3319" -> "3336"  [ label = "clazz"] 
+  "3321" -> "3336"  [ label = "clazz"] 
+  "3326" -> "3336"  [ label = "clazz"] 
+  "3331" -> "3336"  [ label = "clazz"] 
+  "3300" -> "3336" 
+  "3318" -> "3317"  [ label = "clazz.isPrimitive()"] 
+  "3318" -> "3317"  [ label = "//
+clazz == Boolean.class"] 
+  "3326" -> "3317"  [ label = "clazz"] 
+  "3326" -> "3317"  [ label = "Character.class"] 
+  "3319" -> "3331"  [ label = "clazz"] 
+  "3321" -> "3331"  [ label = "clazz"] 
+  "3326" -> "3331"  [ label = "clazz"] 
+  "3300" -> "3331" 
+  "3319" -> "3318"  [ label = "clazz"] 
+  "3321" -> "3318"  [ label = "clazz"] 
+  "3321" -> "3318"  [ label = "Boolean.class"] 
+  "3319" -> "3326"  [ label = "clazz"] 
+  "3321" -> "3326"  [ label = "clazz"] 
+  "3300" -> "3326" 
+  "3301" -> "3319"  [ label = "clazz"] 
+  "3300" -> "3319" 
+  "3319" -> "3321"  [ label = "clazz"] 
+  "3300" -> "3321" 
+}

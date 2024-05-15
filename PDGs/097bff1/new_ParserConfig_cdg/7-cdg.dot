@@ -1,0 +1,14 @@
+digraph "splitItemsFormProperty" {  
+"1211" [label = <(RETURN,return null;,return null;)<SUB>479</SUB>> ]
+"1198" [label = <(&lt;operator&gt;.logicalAnd,property != null &amp;&amp; property.length() &gt; 0)<SUB>476</SUB>> ]
+"1199" [label = <(&lt;operator&gt;.notEquals,property != null)<SUB>476</SUB>> ]
+"1202" [label = <(&lt;operator&gt;.greaterThan,property.length() &gt; 0)<SUB>476</SUB>> ]
+"1207" [label = <(RETURN,return property.split(&quot;,&quot;);,return property.split(&quot;,&quot;);)<SUB>477</SUB>> ]
+"1203" [label = <(length,property.length())<SUB>476</SUB>> ]
+"1208" [label = <(split,property.split(&quot;,&quot;))<SUB>477</SUB>> ]
+  "1198" -> "1208" 
+  "1198" -> "1211" 
+  "1198" -> "1207" 
+  "1199" -> "1202" 
+  "1199" -> "1203" 
+}

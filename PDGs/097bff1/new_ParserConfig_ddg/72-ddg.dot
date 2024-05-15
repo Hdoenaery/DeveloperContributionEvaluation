@@ -1,0 +1,13 @@
+digraph "getProperty" {  
+"5503" [label = <(METHOD,getProperty)> ]
+"5508" [label = <(METHOD_RETURN,ANY)> ]
+"5504" [label = <(PARAM,p0)> ]
+"5505" [label = <(PARAM,p1)> ]
+"5506" [label = <(PARAM,p2)> ]
+  "5504" -> "5508"  [ label = "p0"] 
+  "5505" -> "5508"  [ label = "p1"] 
+  "5506" -> "5508"  [ label = "p2"] 
+  "5503" -> "5504" 
+  "5503" -> "5505" 
+  "5503" -> "5506" 
+}

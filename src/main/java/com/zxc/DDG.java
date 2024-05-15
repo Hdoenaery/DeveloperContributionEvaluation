@@ -1,9 +1,6 @@
 package com.zxc;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -370,23 +367,30 @@ public class DDG {
         }
 
         for (File file : files) {
-//            System.out.println(file.getName());
+            System.out.println(file.getName());
             // 构建第一个命令
             List<String> command1 = new ArrayList<>();
+
+//            command1.add("powershell.exe"); //会出问题，joern-parse未结束就执行joern-export
+//            command1.add("-Command");
             command1.add("cmd");
             command1.add("/c");
             command1.add("E:/Postgraduate_study/joern-cli/joern-parse");
             command1.add(src + file.getName());
             command1.add("-o");
             command1.add(file.getName().replace(".java", "") + ".bin");
-
+//            System.out.println(command1);
             // 创建第一个 ProcessBuilder
             ProcessBuilder pb1 = new ProcessBuilder(command1);
             pb1.directory(new File(folderPath));
 
             try {
+                System.out.println("启动joern-parse");
                 // 启动第一个进程
                 Process process1 = pb1.start();
+
+                //处理标准输出（STDOUT）和标准错误输出（STDERR），否则程序会卡住
+                handleProcessOutput(process1);
 
                 // 等待第一个进程结束
                 int exitCode1 = process1.waitFor();
@@ -397,6 +401,8 @@ public class DDG {
 
                     // 构建第二个命令
                     List<String> command2 = new ArrayList<>();
+//                    command2.add("powershell.exe");
+//                    command2.add("-Command");
                     command2.add("cmd");
                     command2.add("/c");
                     command2.add("E:/Postgraduate_study/joern-cli/joern-export");
@@ -405,13 +411,17 @@ public class DDG {
                     command2.add("ddg");
                     command2.add("--out");
                     command2.add(file.getName().replace(".java", "") + "_ddg");
-
+//                    System.out.println(command2);
                     // 创建第二个 ProcessBuilder
                     ProcessBuilder pb2 = new ProcessBuilder(command2);
                     pb2.directory(new File(folderPath));
 
+
                     // 启动第二个进程
                     Process process2 = pb2.start();
+
+                    //处理标准输出（STDOUT）和标准错误输出（STDERR），否则程序会卡住
+                    handleProcessOutput(process2);
 
                     // 等待第二个进程结束
                     int exitCode2 = process2.waitFor();
@@ -429,5 +439,31 @@ public class DDG {
                 e.printStackTrace();
             }
         }
+    }
+
+    public static void handleProcessOutput(Process process) {
+        // 创建独立的线程处理标准输出
+        new Thread(() -> {
+            try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {
+                String line;
+                while ((line = reader.readLine()) != null) {
+//                    System.out.println(line);
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }).start();
+
+        // 创建独立的线程处理错误输出
+        new Thread(() -> {
+            try (BufferedReader errorReader = new BufferedReader(new InputStreamReader(process.getErrorStream()))) {
+                String errorLine;
+                while ((errorLine = errorReader.readLine()) != null) {
+//                    System.out.println("Error: " + errorLine);
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }).start();
     }
 }

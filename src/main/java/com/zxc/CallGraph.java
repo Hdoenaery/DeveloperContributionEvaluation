@@ -204,7 +204,6 @@ public class CallGraph {
                 " java " + src + " " + projectName + "_" + newCommit.substring(0, 7);
         System.out.println(command);
         executeCmdCommand("E:/Postgraduate_study/depends-0.9.7", command);
-        System.out.println("执行depends命令结束");
     }
 
 
