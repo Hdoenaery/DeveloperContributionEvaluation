@@ -1,7 +1,0 @@
-digraph "&lt;init&gt;" {  
-"5045" [label = <(METHOD,&lt;init&gt;)> ]
-"5050" [label = <(METHOD_RETURN,void)> ]
-"5046" [label = <(PARAM,this)> ]
-  "5046" -> "5050"  [ label = "this"] 
-  "5045" -> "5046" 
-}

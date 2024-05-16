@@ -1,7 +1,0 @@
-digraph "getFloatValue" {  
-"1145" [label = <(RETURN,return floatValue;,return floatValue;)<SUB>388</SUB>> ]
-"1139" [label = <(&lt;operator&gt;.equals,floatValue == null)<SUB>384</SUB>> ]
-"1143" [label = <(RETURN,return 0F;,return 0F;)<SUB>385</SUB>> ]
-  "1139" -> "1145" 
-  "1139" -> "1143" 
-}

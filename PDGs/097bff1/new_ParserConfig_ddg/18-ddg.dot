@@ -1,9 +1,0 @@
-digraph "getDerializers" {  
-"1441" [label = <(METHOD,getDerializers)<SUB>569</SUB>> ]
-"1450" [label = <(METHOD_RETURN,com.alibaba.fastjson.util.IdentityHashMap)<SUB>569</SUB>> ]
-"1442" [label = <(PARAM,this)<SUB>569</SUB>> ]
-"1444" [label = <(RETURN,return deserializers;,return deserializers;)<SUB>570</SUB>> ]
-  "1444" -> "1450"  [ label = "&lt;RET&gt;"] 
-  "1442" -> "1450"  [ label = "this"] 
-  "1441" -> "1442" 
-}

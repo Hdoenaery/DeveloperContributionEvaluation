@@ -1,9 +1,0 @@
-digraph "getBytes" {  
-"655" [label = <(RETURN,return castToBytes(value);,return castToBytes(value);)<SUB>201</SUB>> ]
-"649" [label = <(&lt;operator&gt;.equals,value == null)<SUB>197</SUB>> ]
-"656" [label = <(castToBytes,castToBytes(value))<SUB>201</SUB>> ]
-"653" [label = <(RETURN,return null;,return null;)<SUB>198</SUB>> ]
-  "649" -> "655" 
-  "649" -> "656" 
-  "649" -> "653" 
-}

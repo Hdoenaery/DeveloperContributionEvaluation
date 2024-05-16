@@ -1,9 +1,0 @@
-digraph "getRelatedArray" {  
-"255" [label = <(METHOD,getRelatedArray)<SUB>72</SUB>> ]
-"264" [label = <(METHOD_RETURN,java.lang.Object)<SUB>72</SUB>> ]
-"256" [label = <(PARAM,this)<SUB>72</SUB>> ]
-"258" [label = <(RETURN,return relatedArray;,return relatedArray;)<SUB>73</SUB>> ]
-  "258" -> "264"  [ label = "&lt;RET&gt;"] 
-  "256" -> "264"  [ label = "this"] 
-  "255" -> "256" 
-}

@@ -22,15 +22,40 @@ print(convert_res2)
 # print(convert_res4)
 print(convert_res5)
 
-method_name = 'checkAutoType(String typeName, Class<?> expectClass, int features)'
-method_pattern = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+.*?' + re.escape(
-        method_name) + r'\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*{'
+method_name = 'resolveClass'.replace(",", ", ")
+# method_pattern = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+.*?' + re.escape(
+#         method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*\{?'
+# method_pattern2 = r'(?:=\s*|\s+)new\s*' + re.escape(
+#         method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*\{?'
+method_pattern3 = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+.*?' + re.escape(
+        method_name).replace(r'\ ', r'\s*') + r'.*'
 
-print(method_pattern)
-method_regex = re.compile(method_pattern)
-line = 'public Class<?> checkAutoType(String typeName, Class<?> expectClass, int features) {'
-if method_regex.search(line):
+method_regex = re.compile(method_pattern3)
+line1 = 'protected Class<?> resolveClass(ObjectStreamClass desc) {'
+line2 = 'protected Class<?> resolveClass(ObjectStreamClass desc) throws IOException, ClassNotFoundException {'
+line3 = 'protected Class<?> resolveClass(ObjectStreamClass desc)'
+line4 = 'super.resolveClass(desc);'
+line5 = 'protected Class<?> resolveClass(ObjectStreamClass desc, String[] a = {"123", "456"})'
+# line6 = 'public static SerializeBeanInfo buildBeanInfo(Class<?> beanType //'
+
+
+if method_regex.search(line1):
     print("yes")
 else:
     print("no")
-
+if method_regex.search(line2):
+    print("yes")
+else:
+    print("no")
+if method_regex.search(line3):
+    print("yes")
+else:
+    print("no")
+if method_regex.search(line4):
+    print("yes")
+else:
+    print("no")
+if method_regex.search(line5):
+    print("yes")
+else:
+    print("no")

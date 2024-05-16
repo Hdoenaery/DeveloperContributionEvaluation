@@ -108,7 +108,8 @@ public class ComplexityCalculator {
 
             if (files != null) {
                 for (File file : files) {
-                    methodName = file.getName().replace("#", "::").replace("_new.java", "");
+                    methodName = file.getName().replace("#", "::").replace("_new.java", "")
+                            .replace("@lt@", "<").replace("@gt@", ">").replace("@ques@", "?");
 //                    System.out.println(methodName);
                     // 则调用 calculateCC 函数
                     int complexity = calculateCC(file.getAbsolutePath());

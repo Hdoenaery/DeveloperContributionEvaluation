@@ -1,7 +1,0 @@
-digraph "&lt;operator&gt;.arrayInitializer" {  
-"5594" [label = <(METHOD,&lt;operator&gt;.arrayInitializer)> ]
-"5597" [label = <(METHOD_RETURN,ANY)> ]
-"5595" [label = <(PARAM,p1)> ]
-  "5595" -> "5597"  [ label = "p1"] 
-  "5594" -> "5595" 
-}

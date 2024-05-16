@@ -1,7 +1,0 @@
-digraph "readStreamHeader" {  
-"2033" [label = <(METHOD,readStreamHeader)<SUB>615</SUB>> ]
-"2038" [label = <(METHOD_RETURN,void)<SUB>615</SUB>> ]
-"2034" [label = <(PARAM,this)<SUB>615</SUB>> ]
-  "2034" -> "2038"  [ label = "this"] 
-  "2033" -> "2034" 
-}

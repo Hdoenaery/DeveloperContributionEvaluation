@@ -1,9 +1,0 @@
-digraph "isJacksonCompatible" {  
-"4863" [label = <(METHOD,isJacksonCompatible)<SUB>1559</SUB>> ]
-"4872" [label = <(METHOD_RETURN,boolean)<SUB>1559</SUB>> ]
-"4864" [label = <(PARAM,this)<SUB>1559</SUB>> ]
-"4866" [label = <(RETURN,return jacksonCompatible;,return jacksonCompatible;)<SUB>1560</SUB>> ]
-  "4866" -> "4872"  [ label = "&lt;RET&gt;"] 
-  "4864" -> "4872"  [ label = "this"] 
-  "4863" -> "4864" 
-}

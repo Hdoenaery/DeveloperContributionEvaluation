@@ -1,9 +1,0 @@
-digraph "getIntValue" {  
-"892" [label = <(RETURN,return intVal.intValue();,return intVal.intValue();)<SUB>263</SUB>> ]
-"886" [label = <(&lt;operator&gt;.equals,intVal == null)<SUB>259</SUB>> ]
-"893" [label = <(intValue,intVal.intValue())<SUB>263</SUB>> ]
-"890" [label = <(RETURN,return 0;,return 0;)<SUB>260</SUB>> ]
-  "886" -> "892" 
-  "886" -> "890" 
-  "886" -> "893" 
-}

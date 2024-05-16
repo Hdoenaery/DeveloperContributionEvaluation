@@ -1,5 +1,0 @@
-digraph "test_for_issue" {  
-"47" [label = <(parse,parse(str, config))<SUB>15</SUB>> ]
-"53" [label = <(&lt;operator&gt;.assignment,error = ex)<SUB>17</SUB>> ]
-  "47" -> "53" 
-}

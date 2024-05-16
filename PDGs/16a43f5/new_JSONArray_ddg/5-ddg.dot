@@ -1,9 +1,0 @@
-digraph "getComponentType" {  
-"275" [label = <(METHOD,getComponentType)<SUB>80</SUB>> ]
-"284" [label = <(METHOD_RETURN,java.lang.reflect.Type)<SUB>80</SUB>> ]
-"276" [label = <(PARAM,this)<SUB>80</SUB>> ]
-"278" [label = <(RETURN,return componentType;,return componentType;)<SUB>81</SUB>> ]
-  "278" -> "284"  [ label = "&lt;RET&gt;"] 
-  "276" -> "284"  [ label = "this"] 
-  "275" -> "276" 
-}

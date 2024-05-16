@@ -1,1 +1,0 @@
-class Issue3314{}

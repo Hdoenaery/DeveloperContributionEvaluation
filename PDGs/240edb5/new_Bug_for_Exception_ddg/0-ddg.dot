@@ -1,7 +1,0 @@
-digraph "test_exception" {  
-"7" [label = <(METHOD,test_exception)<SUB>11</SUB>> ]
-"12" [label = <(METHOD_RETURN,void)<SUB>11</SUB>> ]
-"8" [label = <(PARAM,this)<SUB>11</SUB>> ]
-  "8" -> "12"  [ label = "this"] 
-  "7" -> "8" 
-}

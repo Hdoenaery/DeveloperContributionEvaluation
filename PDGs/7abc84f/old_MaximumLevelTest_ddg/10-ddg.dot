@@ -1,7 +1,0 @@
-digraph "&lt;operator&gt;.preIncrement" {  
-"156" [label = <(METHOD,&lt;operator&gt;.preIncrement)> ]
-"159" [label = <(METHOD_RETURN,ANY)> ]
-"157" [label = <(PARAM,p1)> ]
-  "157" -> "159"  [ label = "p1"] 
-  "156" -> "157" 
-}

@@ -1,9 +1,0 @@
-digraph "tearDown" {  
-"29" [label = <(&lt;operator&gt;.notEquals,emf != null)<SUB>22</SUB>> ]
-"35" [label = <(close,this.emf.close())<SUB>23</SUB>> ]
-"36" [label = <(&lt;operator&gt;.fieldAccess,this.emf)<SUB>23</SUB>> ]
-"38" [label = <(FIELD_IDENTIFIER,emf,emf)<SUB>23</SUB>> ]
-  "29" -> "38" 
-  "29" -> "36" 
-  "29" -> "35" 
-}

@@ -1,7 +1,0 @@
-digraph "getShortValue" {  
-"1029" [label = <(RETURN,return shortVal;,return shortVal;)<SUB>337</SUB>> ]
-"1023" [label = <(&lt;operator&gt;.equals,shortVal == null)<SUB>333</SUB>> ]
-"1027" [label = <(RETURN,return 0;,return 0;)<SUB>334</SUB>> ]
-  "1023" -> "1027" 
-  "1023" -> "1029" 
-}

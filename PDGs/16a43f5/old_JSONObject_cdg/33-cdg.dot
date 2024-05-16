@@ -1,9 +1,0 @@
-digraph "getString" {  
-"1061" [label = <(RETURN,return value.toString();,return value.toString();)<SUB>336</SUB>> ]
-"1055" [label = <(&lt;operator&gt;.equals,value == null)<SUB>332</SUB>> ]
-"1062" [label = <(toString,value.toString())<SUB>336</SUB>> ]
-"1059" [label = <(RETURN,return null;,return null;)<SUB>333</SUB>> ]
-  "1055" -> "1061" 
-  "1055" -> "1062" 
-  "1055" -> "1059" 
-}

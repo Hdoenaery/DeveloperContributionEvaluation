@@ -1,9 +1,0 @@
-digraph "getBoolean" {  
-"928" [label = <(RETURN,return castToBoolean(value);,return castToBoolean(value);)<SUB>293</SUB>> ]
-"922" [label = <(&lt;operator&gt;.equals,value == null)<SUB>289</SUB>> ]
-"929" [label = <(castToBoolean,castToBoolean(value))<SUB>293</SUB>> ]
-"926" [label = <(RETURN,return null;,return null;)<SUB>290</SUB>> ]
-  "922" -> "929" 
-  "922" -> "926" 
-  "922" -> "928" 
-}

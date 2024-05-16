@@ -1,9 +1,0 @@
-digraph "getDefaultClassLoader" {  
-"3604" [label = <(METHOD,getDefaultClassLoader)<SUB>1235</SUB>> ]
-"3613" [label = <(METHOD_RETURN,java.lang.ClassLoader)<SUB>1235</SUB>> ]
-"3605" [label = <(PARAM,this)<SUB>1235</SUB>> ]
-"3607" [label = <(RETURN,return defaultClassLoader;,return defaultClassLoader;)<SUB>1236</SUB>> ]
-  "3607" -> "3613"  [ label = "&lt;RET&gt;"] 
-  "3605" -> "3613"  [ label = "this"] 
-  "3604" -> "3605" 
-}

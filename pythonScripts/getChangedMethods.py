@@ -21,16 +21,20 @@ def is_java_keyword(string):
     return string in java_keywords
 
 def find_method_interval(lines, method_name):
+    method_name = method_name.replace(",", ", ")
     """
     在 Java 代码中查找方法的起始行和结束行。
     """
     # print(f"in find_method_interval   :{method_name}")
     # 方法定义的正则表达式模式
     method_pattern = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+.*?' + re.escape(
-        method_name) + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*{'
-
+        method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*\{?'
+    method_pattern3 = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+.*?' + re.escape(
+        method_name).replace(r'\ ', r'\s*') + r'.*'
 
     method_regex = re.compile(method_pattern)
+    method_regex3 = re.compile(method_pattern3)
+
     # lines = extracted_code.split('\n')
     start_line = None
     end_line = None
@@ -58,6 +62,34 @@ def find_method_interval(lines, method_name):
                     end_line = i + 1
                     break
 
+    if start_line == None:
+        # method_pattern2 = r'=.*?\s*new\s*' + re.escape(
+        #     method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*\{?'
+        method_pattern2 = r'(?:=\s*|\s+)new\s*' + re.escape(
+            method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*\{?'
+        method_regex2 = re.compile(method_pattern2)
+        for i, line in enumerate(lines):
+            # 搜索方法定义
+            if method_regex2.search(line) or method_regex3.search(line):
+                start_line = i + 1
+                in_method = True
+                # print(f"start_line = {start_line}")
+            if in_method:
+                # 处理方法内部的代码行
+                if '{' in line:
+                    # 增加括号计数器
+                    bracket_cnt += line.count('{')
+                if '}' in line:
+                    # 减少括号计数器
+                    bracket_cnt -= line.count('}')
+                    if bracket_cnt > 0:
+                        # 如果计数器仍大于0，继续搜索方法的结束
+                        continue
+                    else:
+                        # 如果计数器为0，表示找到了方法的结束
+                        end_line = i + 1
+                        break
+
     return start_line, end_line
 
 def getChangedMethods(repo_path, old_commit, new_commit):
@@ -75,7 +107,7 @@ def getChangedMethods(repo_path, old_commit, new_commit):
             if modified_file.new_path.endswith('.java'):
                 # print(modified_file.new_path)
                 for method in modified_file.changed_methods:
-                    # print(method.long_name)
+                    # print(method.name)
                     # print(method.parameters)
 
                     # 过滤误报内容，pydriller工具可能会把一个for循环识别为一个方法
@@ -122,7 +154,7 @@ def getChangedMethods(repo_path, old_commit, new_commit):
 
                     # 将该方法内容保存到本地
                     file_path = 'DeveloperContributionEvaluation/changedMethodsContent/' + old_commit[0:7] + \
-                                '_to_' + new_commit[0:7] + '/' + str(method.name.replace("::", "#")) + '_new.java'
+                                '_to_' + new_commit[0:7] + '/' + str(method.name.replace("::", "#").replace("<", "@lt@").replace(">", "@gt@")).replace("?", "@ques@") + '_new.java'
                     # # 如果有方法重载，则会出现方法名重复，需要将方法参数也带上
                     # if os.path.exists(file_path):
                     #     # 文件名中不允许出现的特殊字符
@@ -238,8 +270,8 @@ if __name__ == "__main__":
 
 # repo_path = 'E:/Postgraduate_study/fastjson'
 #
-# old_commit = "e14b1e4a2c8d55ccc6b7d3c57dd172b4176988d2"
-# new_commit = "39bc3cb12a982d0225521e6f1d10bd01bd9a2575"
+# old_commit = "1da6cf57ac862cafbfa896801bbce31eea3ffd28"
+# new_commit = "751291fc5e275d0222ddaf75053fac5be9b487db"
 #
 # # changedMethods, LOC, CC, Halstead_Volume, PCom = getChangedMethods(repo_path, old_commit, new_commit)
 # changedMethods, LOC, Halstead_Volume, PCom = getChangedMethods(repo_path, old_commit, new_commit)

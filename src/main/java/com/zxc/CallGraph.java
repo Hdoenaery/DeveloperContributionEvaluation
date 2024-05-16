@@ -197,13 +197,19 @@ public class CallGraph {
 
     //传入项目源代码路径以获取该项目的调用图
     public static void getCallGraph(String src, String outputFormat, String granularity, String projectName, String newCommit){
-
+        //记录获取调用图的开始时间
+        long startTime = System.currentTimeMillis();
         String outputDirectory = "E:/IDEA/maven-project/DeveloperContributionEvaluation/CallGraphs";
 
         String command = "depends -f " + outputFormat + " -g " + granularity + " -d " + outputDirectory +
                 " java " + src + " " + projectName + "_" + newCommit.substring(0, 7);
         System.out.println(command);
         executeCmdCommand("E:/Postgraduate_study/depends-0.9.7", command);
+        // 记录获取调用图结束时间
+        long nowTime = System.currentTimeMillis();
+        // 计算总运行时间（毫秒）并将毫秒转换为秒
+        double totalTimeInSeconds = (nowTime - startTime) / 1000.0;
+        System.out.println("本次getCallGraph计算的运行时间（秒）：" + totalTimeInSeconds);
     }
 
 
