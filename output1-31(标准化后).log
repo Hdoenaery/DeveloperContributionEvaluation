@@ -1,0 +1,284 @@
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = 240edb5c42aa9295bc674c93d25ffe801c13a5c4
+@@@oldCommitHash = 679140e0ad6c0bb1cd3b8397f32c5fe55fc7f3b1
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：2.029
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = 679140e0ad6c0bb1cd3b8397f32c5fe55fc7f3b1
+@@@oldCommitHash = 16a43f59be6130dd7d8346401e1575a2f1a2e435
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：1.489
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = 16a43f59be6130dd7d8346401e1575a2f1a2e435
+@@@oldCommitHash = 7abc84fc2c208f148970ca854f2f6a59466e47ae
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：2.364
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = 7abc84fc2c208f148970ca854f2f6a59466e47ae
+@@@oldCommitHash = 19bd016801b2fe99c673479e69bced84ecff83e7
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：1.501
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = 19bd016801b2fe99c673479e69bced84ecff83e7
+@@@oldCommitHash = eca459eeff0f896228749132706d36e414b77c35
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：1.375
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = 097bff1a792e39f4e0b2807faa53af0e89fbe5e0
+@@@oldCommitHash = d91c05993b17a5aff28a33810fc263402824f508
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：1.554
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = d91c05993b17a5aff28a33810fc263402824f508
+@@@oldCommitHash = b90ec4013ae565bf26a3cb5e238d92c4d514893c
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：1.42
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = 560782c9ee12120304284ba98b61dc61e30324b3
+@@@oldCommitHash = 91dd512a86fce9cea7ef0ca1bfde265c5718d3eb
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：1.464
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = dd3de5f84bcbf0c13ad60df0c3feb9d564727447
+@@@oldCommitHash = a234f9abba58add6e5ef9d44b0c24bf49a583905
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：1.708
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = 0814909139735ea4c7648e755630fd49da7be059
+@@@oldCommitHash = ab82d0bacadd04226f3f926463ff6a56980c7a4b
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：1.807
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = c04ceb9bc71295fec691f99f7baaee31ba1aece7
+@@@oldCommitHash = e900eae7225426db41c16dbfa9e90a93e631e5b5
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：1.829
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = aa71e753d8473830da9f5ff9460ebdf4b4e0ee5b
+@@@oldCommitHash = e14b1e4a2c8d55ccc6b7d3c57dd172b4176988d2
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：1.349
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = 39bc3cb12a982d0225521e6f1d10bd01bd9a2575
+@@@oldCommitHash = e14b1e4a2c8d55ccc6b7d3c57dd172b4176988d2
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：1.42
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = 6841ca79104f6b78179e44b56ae9a033b8131c70
+@@@oldCommitHash = 6460f65759694488446a51e79f74c742290fc13e
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：1.57
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = 9130f8e78ed0d8bdf4b56058ae540c50f0b413ce
+@@@oldCommitHash = f33474b4c618ee86cde67d5f589e447409183837
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：1.236
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = f33474b4c618ee86cde67d5f589e447409183837
+@@@oldCommitHash = b1b7a681989c5f7fd86d6c618c9fb5e806ccb99f
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：1.991
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = b1b7a681989c5f7fd86d6c618c9fb5e806ccb99f
+@@@oldCommitHash = 869746101f6dd73b70d8a9c2b6dc59de4352519e
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：2.159
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = 869746101f6dd73b70d8a9c2b6dc59de4352519e
+@@@oldCommitHash = 93d8c01e907fe35a8ff0eb5fe1c3b279d2f30282
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：1.973
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = 751291fc5e275d0222ddaf75053fac5be9b487db
+@@@oldCommitHash = 1da6cf57ac862cafbfa896801bbce31eea3ffd28
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：15.933
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = 8b02d16b8dc49f39a624dffaab0da46ed7ef064e
+@@@oldCommitHash = 0b269eb6b2414520ee90109bba873560afe5281b
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：15.465
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = f10d080d456643bbcb07301e4080ec5291fa85cc
+@@@oldCommitHash = c5695ab27d03c99369d21b5126ea9b60799ce816
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：15.665
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = 84835dd3cfb46939eb595742ea8d7d74918034bd
+@@@oldCommitHash = b1838616943188618bd9d0323df65858e7e662b1
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：1.387
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = b1838616943188618bd9d0323df65858e7e662b1
+@@@oldCommitHash = 5271d86fc4a796c14b9713df973cfeec3f583e95
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：1.387
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = 960fa3152d0b2e983522456937c9d47e8d24a7d9
+@@@oldCommitHash = 6e956d2c455efc7fa6c6f7c9a2fa5561b7a29463
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：1.324
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = 5271d86fc4a796c14b9713df973cfeec3f583e95
+@@@oldCommitHash = 4a51ad4d0991e559189eb329b1cbc3cb133b96d3
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：2.129
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = 02f5b0afeb2ac71ef7fea5834743566ba9c6947b
+@@@oldCommitHash = ea03ec84d7a1badf7eb4c2daecb1f460a400979c
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.001
+本次commit计算的运行时间（秒）：2.353
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = bd2531617cd614c71cc768d7fea002813224abb7
+@@@oldCommitHash = 14a95cc5b07e76ab8c0c72192c1e739cb157c7fc
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：1.281
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = 25398e4e20efa1a8c7dc2c4947d83c1233083f09
+@@@oldCommitHash = 11405d48f8bfebb1568e7a7c32ccfb46399799f0
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：1.225
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = 11405d48f8bfebb1568e7a7c32ccfb46399799f0
+@@@oldCommitHash = 14a95cc5b07e76ab8c0c72192c1e739cb157c7fc
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：1.233
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = 91ef13b5a1235626c8452f2ce2c6d87a76daf695
+@@@oldCommitHash = 14a95cc5b07e76ab8c0c72192c1e739cb157c7fc
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：1.28
+-------------------------------------------------------------------------------------------
+
+@@@nowCommitHash = 4dbbfcfb4c1c06ac6f85e3ad2ed6a2c4b7ba5484
+@@@oldCommitHash = 14a95cc5b07e76ab8c0c72192c1e739cb157c7fc
+调用depends完成
+本次getDDG计算的运行时间（秒）：0.0
+本次getCDG计算的运行时间（秒）：0.0
+本次commit计算的运行时间（秒）：22.608
+----------------------------------------------------------------------------------------------
+IN python!!!!
+Commit Hash: 240edb5c42aa9295bc674c93d25ffe801c13a5c4 scoreOfCommitBefore = 81.96901811582356 scoreOfCommitAfter = 5.818301880253665
+Commit Hash: 679140e0ad6c0bb1cd3b8397f32c5fe55fc7f3b1 scoreOfCommitBefore = 64.89893553137769 scoreOfCommitAfter = 11.446955267954307
+Commit Hash: 16a43f59be6130dd7d8346401e1575a2f1a2e435 scoreOfCommitBefore = 75756.53849592505 scoreOfCommitAfter = 391.41097740408765
+Commit Hash: 7abc84fc2c208f148970ca854f2f6a59466e47ae scoreOfCommitBefore = 2607.6794036735323 scoreOfCommitAfter = 23.97929020924014
+Commit Hash: 19bd016801b2fe99c673479e69bced84ecff83e7 scoreOfCommitBefore = 28257.585446528505 scoreOfCommitAfter = 53.69358124599249
+Commit Hash: 097bff1a792e39f4e0b2807faa53af0e89fbe5e0 scoreOfCommitBefore = 7241.411051339277 scoreOfCommitAfter = 52.97376286034479
+Commit Hash: d91c05993b17a5aff28a33810fc263402824f508 scoreOfCommitBefore = 74652.22712070936 scoreOfCommitAfter = 42.01474578890041
+Commit Hash: 560782c9ee12120304284ba98b61dc61e30324b3 scoreOfCommitBefore = 11775.817674068396 scoreOfCommitAfter = 60.70382182090256
+Commit Hash: dd3de5f84bcbf0c13ad60df0c3feb9d564727447 scoreOfCommitBefore = 2.8034542721952356 scoreOfCommitAfter = 6.259304817393585
+Commit Hash: 0814909139735ea4c7648e755630fd49da7be059 scoreOfCommitBefore = 0.5509678916453058 scoreOfCommitAfter = 6.21834895166275
+Commit Hash: c04ceb9bc71295fec691f99f7baaee31ba1aece7 scoreOfCommitBefore = 2.8034542714141004 scoreOfCommitAfter = 6.259304817184132
+Commit Hash: aa71e753d8473830da9f5ff9460ebdf4b4e0ee5b scoreOfCommitBefore = 47905.9041319706 scoreOfCommitAfter = 94.1113660674692
+Commit Hash: 39bc3cb12a982d0225521e6f1d10bd01bd9a2575 scoreOfCommitBefore = 1753.3006431503682 scoreOfCommitAfter = 34.04416451087955
+Commit Hash: 6841ca79104f6b78179e44b56ae9a033b8131c70 scoreOfCommitBefore = 1.600556572906575 scoreOfCommitAfter = 6.627628379727821
+Commit Hash: 9130f8e78ed0d8bdf4b56058ae540c50f0b413ce scoreOfCommitBefore = 405.36158714013305 scoreOfCommitAfter = 13.039461836942028
+Commit Hash: f33474b4c618ee86cde67d5f589e447409183837 scoreOfCommitBefore = 309.7041178729783 scoreOfCommitAfter = 18.997713202372076
+Commit Hash: b1b7a681989c5f7fd86d6c618c9fb5e806ccb99f scoreOfCommitBefore = 7.153603802017268 scoreOfCommitAfter = 12.39068729051628
+Commit Hash: 869746101f6dd73b70d8a9c2b6dc59de4352519e scoreOfCommitBefore = 26558.85516662327 scoreOfCommitAfter = 69.68858790499023
+Commit Hash: 751291fc5e275d0222ddaf75053fac5be9b487db scoreOfCommitBefore = 12014376.236276984 scoreOfCommitAfter = 2093.93700603126
+Commit Hash: 8b02d16b8dc49f39a624dffaab0da46ed7ef064e scoreOfCommitBefore = 1305566.0608232298 scoreOfCommitAfter = 1042.952225151111
+Commit Hash: f10d080d456643bbcb07301e4080ec5291fa85cc scoreOfCommitBefore = 13178037.836701935 scoreOfCommitAfter = 2043.0925581669353
+Commit Hash: 84835dd3cfb46939eb595742ea8d7d74918034bd scoreOfCommitBefore = 2565.3880753949406 scoreOfCommitAfter = 52.74940950835763
+Commit Hash: b1838616943188618bd9d0323df65858e7e662b1 scoreOfCommitBefore = 572.9459559161359 scoreOfCommitAfter = 43.207308588048605
+Commit Hash: 960fa3152d0b2e983522456937c9d47e8d24a7d9 scoreOfCommitBefore = 5917.660957966582 scoreOfCommitAfter = 47.01784786580252
+Commit Hash: 5271d86fc4a796c14b9713df973cfeec3f583e95 scoreOfCommitBefore = 75428.45134750467 scoreOfCommitAfter = 124.78382868077968
+Commit Hash: 02f5b0afeb2ac71ef7fea5834743566ba9c6947b scoreOfCommitBefore = 1772.4700247527267 scoreOfCommitAfter = 43.02865580902476
+Commit Hash: bd2531617cd614c71cc768d7fea002813224abb7 scoreOfCommitBefore = 19843.13666070783 scoreOfCommitAfter = 47.25287362149555
+Commit Hash: 25398e4e20efa1a8c7dc2c4947d83c1233083f09 scoreOfCommitBefore = 203.52710716025052 scoreOfCommitAfter = 7.98035578945927
+Commit Hash: 11405d48f8bfebb1568e7a7c32ccfb46399799f0 scoreOfCommitBefore = 2813.3739861943045 scoreOfCommitAfter = 28.493738152249634
+Commit Hash: 91ef13b5a1235626c8452f2ce2c6d87a76daf695 scoreOfCommitBefore = 7527.323117359444 scoreOfCommitAfter = 43.92167419457452
+Commit Hash: 4dbbfcfb4c1c06ac6f85e3ad2ed6a2c4b7ba5484 scoreOfCommitBefore = 524130.89555146237 scoreOfCommitAfter = 20222.13227409125
+[81.96901811582356, 64.89893553137769, 75756.53849592505, 2607.6794036735323, 28257.585446528505, 7241.411051339277, 74652.22712070936, 11775.817674068396, 2.8034542721952356, 0.5509678916453058, 2.8034542714141004, 47905.9041319706, 1753.3006431503682, 1.600556572906575, 405.36158714013305, 309.7041178729783, 7.153603802017268, 26558.85516662327, 12014376.236276984, 1305566.0608232298, 13178037.836701935, 2565.3880753949406, 572.9459559161359, 5917.660957966582, 75428.45134750467, 1772.4700247527267, 19843.13666070783, 203.52710716025052, 2813.3739861943045, 7527.323117359444, 524130.89555146237]
+[5.818301880253665, 11.446955267954307, 391.41097740408765, 23.97929020924014, 53.69358124599249, 52.97376286034479, 42.01474578890041, 60.70382182090256, 6.259304817393585, 6.21834895166275, 6.259304817184132, 94.1113660674692, 34.04416451087955, 6.627628379727821, 13.039461836942028, 18.997713202372076, 12.39068729051628, 69.68858790499023, 2093.93700603126, 1042.952225151111, 2043.0925581669353, 52.74940950835763, 43.207308588048605, 47.01784786580252, 124.78382868077968, 43.02865580902476, 47.25287362149555, 7.98035578945927, 28.493738152249634, 43.92167419457452, 20222.13227409125]
+程序总运行时间（秒）：118.002

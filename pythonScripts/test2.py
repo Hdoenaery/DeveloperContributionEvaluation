@@ -1,54 +1,13 @@
-import numpy as np
+import pandas as pd
 
-# 六组数据
-HV = np.array([281.7628977173992, 269.2118756352258])
-CC = np.array([1, 1])
-LOC = np.array([1, 1])
-PCOM = np.array([11.11111111, 0])
-weight = np.array([0, 6.692768472737069])
-ast = np.array([0.2, 0.02])
+# 示例列表
+score_of_commit_before = [81.96901811582356, 64.89893553137769, 75756.53849592507, 2607.6794036735323, 28257.585446528505, 7241.411051339277, 74652.22712070936, 11775.817674068396, 2.8034542721952356, 0.5509678916453058, 2.8034542714141004, 47905.9041319706, 1753.3006431503682, 1.600556572906575, 405.36158714013305, 309.7041178729783, 7.153603802017268, 26558.85516662327, 12014376.236276986, 1305566.06082323, 13178037.836701939, 2565.3880753949406, 572.9459559161359, 5917.660957966582, 75428.45134750467, 1772.4700247527269, 19843.13666070783, 203.52710716025052, 2813.3739861943045, 7527.323117359444, 524130.89555146924]
+score_of_commit_after = [5.818301880253665, 11.446955267954307, 391.41097740408776, 23.97929020924014, 53.69358124599249, 52.97376286034479, 42.01474578890041, 60.70382182090256, 6.259304817393585, 6.21834895166275, 6.259304817184132, 94.11136606746922, 34.04416451087955, 6.627628379727821, 13.039461836942028, 18.997713202372076, 12.39068729051628, 69.68858790499023, 2093.9370060312585, 1042.9522251511105, 2043.0925581669355, 52.74940950835764, 43.207308588048605, 47.01784786580253, 124.78382868077968, 43.02865580902477, 47.25287362149555, 7.98035578945927, 28.493738152249634, 43.92167419457452, 20222.132274091262]
 
-# 计算均值和标准差
-HV_mean, HV_std = np.mean(HV), np.std(HV)
-# CC_mean, CC_std = np.mean(CC), np.std(CC)
-# LOC_mean, LOC_std = np.mean(LOC), np.std(LOC)
-PCOM_mean, PCOM_std = np.mean(PCOM), np.std(PCOM)
-weight_mean, weight_std = np.mean(weight), np.std(weight)
-ast_mean, ast_std = np.mean(ast), np.std(ast)
-
-# Z-score标准化
-HV_zscore = (HV - HV_mean) / HV_std
-# CC_zscore = (CC - CC_mean) / CC_std
-# LOC_zscore = (LOC - LOC_mean) / LOC_std
-PCOM_zscore = (PCOM - PCOM_mean) / PCOM_std
-weight_zscore = (weight - weight_mean) / weight_std
-ast_zscore = (ast - ast_mean) / ast_std
-
-print("HV Z-score标准化后：", HV_zscore)
-# print("CC Z-score标准化后：", CC_zscore)
-# print("LOC Z-score标准化后：", LOC_zscore)
-print("PCOM Z-score标准化后：", PCOM_zscore)
-print("weight Z-score标准化后：", weight_zscore)
-print("ast Z-score标准化后：", ast_zscore)
-
-
-# 缩放和平移
-HV_scaled_shifted = (HV_zscore * (1/3)) + 1
-# CC_scaled_shifted = (CC_zscore * (1/3)) + 1
-# LOC_scaled_shifted = (LOC_zscore * (1/3)) + 1
-PCOM_scaled_shifted = (PCOM_zscore * (1/3)) + 1
-weight_scaled_shifted = (weight_zscore * (1/3)) + 1
-ast_scaled_shifted = (ast_zscore * (1/3)) + 1
-
-print("HV 缩放和平移后：", HV_scaled_shifted)
-# print("CC 缩放和平移后：", CC_scaled_shifted)
-# print("LOC 缩放和平移后：", LOC_scaled_shifted)
-print("PCOM 缩放和平移后：", PCOM_scaled_shifted)
-print("weight 缩放和平移后：", weight_scaled_shifted)
-print("ast 缩放和平移后：", ast_scaled_shifted)
-
-CM = (HV_scaled_shifted + CC + LOC - PCOM_scaled_shifted)/2 + 1
-print(CM)
-
-IR = ast_std * CM * weight_scaled_shifted
-print(IR)
+df1 = pd.DataFrame(score_of_commit_before, columns=['score_of_commit_before'])
+df2 = pd.DataFrame(score_of_commit_after, columns=['score_of_commit_after'])
+# 合并两个 DataFrame
+df = pd.concat([df1, df2], axis=1)
+# 将 DataFrame 存入 Excel 文件
+df.to_excel('myscore.xlsx', index=False)
+print("List has been saved to output.xlsx")

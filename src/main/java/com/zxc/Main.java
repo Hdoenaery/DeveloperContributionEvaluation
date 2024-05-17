@@ -10,6 +10,7 @@ import com.github.gumtreediff.gen.TreeGenerators;
 import com.github.gumtreediff.matchers.*;
 import com.github.gumtreediff.tree.Tree;
 import com.github.gumtreediff.tree.TreeContext;
+import com.google.gson.Gson;
 import gumtree.spoon.AstComparator;
 import gumtree.spoon.diff.Diff;
 import gumtree.spoon.diff.DiffConfiguration;
@@ -28,6 +29,49 @@ class ChangedFile {
         this.changedType = changedType;
     }
 }
+
+class MethodScore implements Serializable{
+    String methodName;
+    int index;
+    double astScore;
+    double HV, PCOM;
+    int CC, LOC;
+    double weight;
+    double DDG_impact, CDG_impact;
+    double CM, IR;
+
+    double astScore_normal;
+    double HV_normal, PCOM_normal;
+    int CC_normal, LOC_normal;
+    double weight_normal;
+    double DDG_impact_normal, CDG_impact_normal;
+    double CM_normal, IR_normal;
+    double scoreBeforeNormalize, scoreAfterNormalize;
+
+    public MethodScore(String methodName, int index, double astScore,int LOC, int CC, double HV, double PCOM,double weight, double DDG_impact, double CDG_impact) {
+        this.methodName = methodName;
+        this.index = index;
+        this.astScore = astScore;
+        this.HV = HV;
+        this.PCOM = PCOM;
+        this.CC = CC;
+        this.LOC = LOC;
+        this.weight = weight;
+        this.DDG_impact = DDG_impact;
+        this.CDG_impact = CDG_impact;
+    }
+}
+class CommitScore implements Serializable{
+    String commitHash;
+    List<MethodScore> methodScore = new ArrayList<>();
+
+    double scoreOfCommitBefore, scoreOfCommitAfter;
+    public CommitScore(String commitHash, List<MethodScore> methodScore) {
+        this.commitHash = commitHash;
+        this.methodScore = methodScore;
+    }
+}
+
 public class Main {
     public static void main(String args[]) throws Exception {
         // 记录程序开始时间
@@ -88,11 +132,15 @@ public class Main {
                 "4dbbfcfb4c1c06ac6f85e3ad2ed6a2c4b7ba5484",
         };
 
+        List<CommitScore> commitScore = new ArrayList<>();
+        int index = 0;
         for(String newCommit:commits) {
             String oldCommit = tool.executeGitCommand(gitDirectory, new String[]{"git", "log", "--format=%H", "--skip=1", "-n", "1", newCommit}).replace("\n", "");//获取当前版本的上一个版本
-            calculateCommitScore(gitDirectory, projectName, newCommit, oldCommit);
+            List<MethodScore>methodScore = calculateCommitScore(gitDirectory, projectName, newCommit, oldCommit, index);
+            index += methodScore.size();
+            commitScore.add(new CommitScore(newCommit, methodScore));
         }
-
+        normalize(commitScore);
 
 //----------------------------------------------------------------------------------------------------------------------
         // 记录程序结束时间
@@ -113,10 +161,38 @@ public class Main {
             e.printStackTrace();
         }
     }
-    public static double calculateCommitScore(String gitDirectory, String projectName, String newCommit, String oldCommit) throws Exception {
+
+    public static void normalize(List<CommitScore> commitScore) {
+        try {
+            // 使用 Gson 将对象转换为 JSON 格式
+            Gson gson = new Gson();
+            String json = gson.toJson(commitScore);
+
+            // 将 JSON 字符串传递给 Python 脚本的标准输入
+            ProcessBuilder pb = new ProcessBuilder("python", "DeveloperContributionEvaluation/pythonScripts/normalizeAndGetFinalScore.py");
+            Process p = pb.start();
+            OutputStream outputStream = p.getOutputStream();
+            outputStream.write(json.getBytes());
+            outputStream.close();
+
+            // 读取 Python 脚本的输出
+            BufferedReader reader = new BufferedReader(new InputStreamReader(p.getInputStream()));
+            String line;
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line);
+            }
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    public static List<MethodScore> calculateCommitScore(String gitDirectory, String projectName, String newCommit, String oldCommit, int index) throws Exception {
         // 记录程序开始时间
         long startTime = System.currentTimeMillis();
 
+        List<MethodScore>methodScore = new ArrayList<>();
         Tool tool = new Tool();
         System.out.println("-------------------------------------------------------------------------------------------");
         System.out.println("\n@@@nowCommitHash = " + newCommit);
@@ -131,7 +207,7 @@ public class Main {
 //            String changedType = entry.getValue();
 //            System.out.println("File: " + fileName + ", Changed Type: " + changedType);
 //        }
-        getEditScriptsBetweenCommits(gitDirectory, newCommit, oldCommit, changedJavaFiles); //获取两个commit之间所有发生更改的.java文件的编辑脚本以及每个文件的AST
+//        getEditScriptsBetweenCommits(gitDirectory, newCommit, oldCommit, changedJavaFiles); //获取两个commit之间所有发生更改的.java文件的编辑脚本以及每个文件的AST
         String editscriptsPath = "DeveloperContributionEvaluation/editScripts/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"; //这些编辑脚本的保存路径
         ASTScoreCalculator astScoreCalculator = new ASTScoreCalculator();
 
@@ -245,29 +321,31 @@ public class Main {
 //            }
 
         double scoreOfCommit = 0.0;
+
         for (String method : changedMethods) {
             CM.put(method, (LOC.get(method) + CC.get(method) + HV.get(method) - PCom.get(method)) / 2 + 1);
-            System.out.println(method);
+//            System.out.println(method);
             if(!astScore.containsKey(method))
                 astScore.put(method, 0.0);
-            System.out.println("astScore = " + astScore.get(method));
-            System.out.println("HV = " + HV.get(method) + ", CC = " + CC.get(method) + ", LOC = " + LOC.get(method)
-                    + ", PCom = " + PCom.get(method) + ", CM = " + CM.get(method));
+//            System.out.println("astScore = " + astScore.get(method));
+//            System.out.println("HV = " + HV.get(method) + ", CC = " + CC.get(method) + ", LOC = " + LOC.get(method)
+//                    + ", PCom = " + PCom.get(method) + ", CM = " + CM.get(method));
 
             double weight = 0.0;
             if(methodToNodeMap.containsKey(method) && nodeWeight.containsKey(methodToNodeMap.get(method)))
                 weight = nodeWeight.get(methodToNodeMap.get(method));
 
-            System.out.println("weight = " + weight);
+//            System.out.println("weight = " + weight);
 
             double IR = 1 + Math.sqrt(DDG_impact.get(method)) + Math.sqrt(CDG_impact.get(method));
-            System.out.println("DDG_impact = " + DDG_impact.get(method) + " , CDG_impact = " + CDG_impact.get(method) + ", IR = " + IR);
+//            System.out.println("DDG_impact = " + DDG_impact.get(method) + " , CDG_impact = " + CDG_impact.get(method) + ", IR = " + IR);
 
             scoreOfCommit += astScore.get(method) * CM.get(method) * (weight + 1) * IR;
 
-            System.out.println();
+//            System.out.println();
+            methodScore.add(new MethodScore(method, index++, astScore.get(method), LOC.get(method), CC.get(method), HV.get(method), PCom.get(method), weight, DDG_impact.get(method), CDG_impact.get(method)));
         }
-        System.out.println("commitHash = " + newCommit.substring(0,7) + " , scoreOfCommit = " + scoreOfCommit);
+//        System.out.println("commitHash = " + newCommit.substring(0,7) + " , scoreOfCommit = " + scoreOfCommit);
 
         // 记录程序结束时间
         long nowTime = System.currentTimeMillis();
@@ -277,7 +355,7 @@ public class Main {
         double totalTimeInSeconds = totalTimeInMillis / 1000.0;
 
         System.out.println("本次commit计算的运行时间（秒）：" + totalTimeInSeconds);
-        return scoreOfCommit;
+        return methodScore;
     }
 
     public static Map<String, String> getFileChangedType(List<ChangedFile> changedJavaFiles) {
@@ -322,7 +400,7 @@ public class Main {
 //            String oldCommit = "5676508a17ede2cbb30ee2d6ff23bf7db071f625";
 //            String newCommit = "eb44ec32e3a6fd5fa13da512fe03e598aaf18d20";
 
-            double scoreOfCommit = calculateCommitScore(gitDirectory, projectName, newCommit, oldCommit);
+//            double scoreOfCommit = calculateCommitScore(gitDirectory, projectName, newCommit, oldCommit);
             oldCommit = newCommit;
 
 //            // 记录程序结束时间
