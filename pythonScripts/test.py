@@ -22,40 +22,50 @@ print(convert_res2)
 # print(convert_res4)
 print(convert_res5)
 
-method_name = 'resolveClass'.replace(",", ", ")
+method_name = 'serializer'.replace(",", ", ")
 # method_pattern = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+.*?' + re.escape(
 #         method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*\{?'
 # method_pattern2 = r'(?:=\s*|\s+)new\s*' + re.escape(
 #         method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*\{?'
-method_pattern3 = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+.*?' + re.escape(
-        method_name).replace(r'\ ', r'\s*') + r'.*'
+# method_pattern3 = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+.*?' + re.escape(
+#         method_name).replace(r'\ ', r'\s*') + r'.*'
+method_pattern4 = r'\b.*?\s+' + re.escape(method_name).replace(r'\ ', r'\s*') + r'\(.*?\)\s*\{?\w+'
 
-method_regex = re.compile(method_pattern3)
-line1 = 'protected Class<?> resolveClass(ObjectStreamClass desc) {'
-line2 = 'protected Class<?> resolveClass(ObjectStreamClass desc) throws IOException, ClassNotFoundException {'
-line3 = 'protected Class<?> resolveClass(ObjectStreamClass desc)'
-line4 = 'super.resolveClass(desc);'
-line5 = 'protected Class<?> resolveClass(ObjectStreamClass desc, String[] a = {"123", "456"})'
-# line6 = 'public static SerializeBeanInfo buildBeanInfo(Class<?> beanType //'
+method_regex = re.compile(method_pattern4)
+# line1 = 'protected Class<?> resolveClass(ObjectStreamClass desc) {'
+# line2 = 'protected Class<?> resolveClass(ObjectStreamClass desc) throws IOException, ClassNotFoundException {'
+# line3 = 'protected Class<?> resolveClass(ObjectStreamClass desc)'
+# line4 = 'super.resolveClass(desc);'
+# line5 = 'protected Class<?> resolveClass(ObjectStreamClass desc, String[] a = {"123", "456"})'
+line6 = 'Class<?> serializer() default Void.class;'
+line7 = 'return serializer();'
+line8 = 'Class<?> deserializer() {default Void.class;}'
 
-
-if method_regex.search(line1):
+if method_regex.search(line6):
     print("yes")
 else:
     print("no")
-if method_regex.search(line2):
+if method_regex.search(line7):
     print("yes")
 else:
     print("no")
-if method_regex.search(line3):
+if method_regex.search(line8):
     print("yes")
 else:
     print("no")
-if method_regex.search(line4):
-    print("yes")
-else:
-    print("no")
-if method_regex.search(line5):
-    print("yes")
-else:
-    print("no")
+# if method_regex.search(line2):
+#     print("yes")
+# else:
+#     print("no")
+# if method_regex.search(line3):
+#     print("yes")
+# else:
+#     print("no")
+# if method_regex.search(line4):
+#     print("yes")
+# else:
+#     print("no")
+# if method_regex.search(line5):
+#     print("yes")
+# else:
+#     print("no")

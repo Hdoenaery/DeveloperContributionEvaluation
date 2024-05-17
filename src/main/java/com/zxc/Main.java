@@ -130,6 +130,129 @@ public class Main {
                 "11405d48f8bfebb1568e7a7c32ccfb46399799f0",
                 "91ef13b5a1235626c8452f2ce2c6d87a76daf695",
                 "4dbbfcfb4c1c06ac6f85e3ad2ed6a2c4b7ba5484",
+                "d54d159f209839a5a5ae885d222f1989f6af0ce7",
+                "db11d2ade8eb093b71904c970f3cf3067220cb2b",
+                "d007be7a5b0890e85d44b4c12da5b3040f203512",
+                "697e1521b622c7dca3ab9d74cf9e74b40bd5748a",
+                "3dfc699a93462d51dc73e42beb55332c3f71d949",
+                "cbd625b77439c772560754f0dba7f8ea7cfa06a1",
+                "65fb33c1e3ad1f115c7d992b09c5f6aa5e24a81b",
+                "4f1496ba129598ee503fde33e2378b7712469bb9",
+                "d6b2f6d7159490804a4e7c18c021d65a5220b996",
+                "1901698c910da392bff102db5c07581663bc93e7",
+                "2fafaa142c3f9e8ccdad41d22f4eaaf9d5ada76a",
+                "4fadfd0ecbde1ac02e598243a0041c49cd349b76",
+                "ba07c7fbda7ffb4f5fad24f5d02c03794db8c7c9",
+                "aa734544bfba94e6a7df836a181ba4064129c20b",
+                "e2f9cc6bf31b8da8e020e2f9c559e7b970c53c7b",
+                "8d42fd87c00b9691d393c15998135b5281d895f5",
+                "00cdc53606111e7802f8f5559d44feeccba2657f",
+                "6070b101a87b27f1bbbce0d97f740eb0956e1cf9",
+                "275da29e451773a8abf12dfbb58d81a8b3fa96ae",
+                "daec680b7248c2b79fda50b0cee4863a8b228bd4",
+                "bab56ae6fe823b7a0e352d10aa355de0ef6dcafa",
+                "4d47b4478603e9d2997ae192d8059f5bcd074da3",
+                "e59c1be9219e1e8ed8ebd48603b9f5567654a468",
+                "3f28f52ebd09d26fc585454d674be7ff54ca7903",
+                "ccdfe007c0c0fd7a40d5040f37c6032ae17a8a96",
+                "60067f927a1dc51f8ffd53cb1eebb2b18bee044f",
+                "911e11861f6f624233266ede36190a5647d3da92",
+                "e5514a3a78353178cf19116bd9ef0bea001b5454",
+                "8fa7aea250aaee5833b6d5da9ec76cfb63269d21",
+                "4370bd29d86ea7c38f93d6712bbfa231fb85f0ca",
+                "7b5922561e1b35614b268ef98a99cac8fe5c4fe2",
+                "e161fcd62a4a75121bd22773e2cdbf2867a16225",
+                "9b8b186772e40a1229c2212bbf40a23e45d1f0f2",
+                "03ede75b02f63f481b474539c005cb434f4aeaa8",
+                "732c2a33bd0fdae3e6320fadcb52b766bdd91d7b",
+                "e6cc01eaa929606ced9d5996192078c9495ddc57",
+                "333f11f2cffeb764da7da27d4e83e3b8363427ab",
+                "e8ec59ee44d0fe54355c790deb782a35dae9a628",
+                "3e2fa459144bf08bdf4f6108f74875e23ff19748",
+                "f96732be30922bb4497dfda69ff7acac94c63d4c",
+                "b04b950a4a37836c3ac4f801c01e25fe80aa924b",
+                "7a793785de55ca41fc6ef50a9dabbd2d5b07b887",
+                "838ebd828f76cb13dfead4fbfd3ee478096872ba",
+                "2baacfb81092936cd933ee26ed60c0035456308a",
+                "62787d9bfa0c7c674ebba69db5cdbeb85e9893d6",
+                "1a4fb9bb29188ba8474a20868ff8eda6d9b48317",
+                "a38362318bf1bd3bce7db2ada32b325d71bb21b8",
+                "be6b5364d1c10a9d37057ee85daf9313eb8a64bb",
+                "10a41a2974fe4f9b8dcc261a72b67395833da2ef",
+                "b584203cf4d3969245ffc540fc6c51fc5e3b264e",
+                "15ac107181ff88781a593e6f9e12ee357d6046d3",
+                "28b674e9814902a6bbf472fdf734fcdad1b97df2",
+                "2fa8ee07e55b476f778a63633f556bbf6b023ab7",
+                "a7f1f5c4ac52503cc95bf1d27498098b3093a0df",
+                "8b690ffcc901a9655b5c871795f7be910cef7f0f",
+                "90d591ef35c6a599656aaa299d819ae5746322ed",
+                "dc6fb0b2a86b5ee914de1932842852c7a63d8872",
+                "98c031a740c95edf14d341fb6edcd00d5c9254ff",
+                "d342dadc4cbff4156bd1deff03a2e54008ee7008",
+                "cd2d5ff1a6b6c19a658f34ace4853328eaf0c500",
+                "aa5385637df25ca9dab0051ea57a00b38649d34a",
+                "016ddf6dd881850d86ca33b614fc431c4d55bda8",
+                "37ed66bcaa3b0c88c5f3f0b09e6b4029c72c14cd",
+                "af60554efbd7a0e36f3b646ee94162359655554f",
+                "ab13b03d2168be6879cc56b9f1aa12605b140492",
+                "13f3f2b674904d53c12f28d13a80c2302377c57a",
+                "1f1371e655437855c0d7806b4ce8f304ad772db1",
+                "e2ce6bb9233c2a050671962121e94a6a46a15bd5",
+                "8b365c0000e3f56067ec9c6de0d6151de269f6e0",
+                "133cca0ecaca8de82e47490826aadda38e541929",
+                "9baa2d5dac6da26f895db316ef4a2425922642c4",
+                "8124e5e8b9c077de6a3dc38b8d7f42b43f692b2b",
+                "0ed7edfd25d4c81f86eca0375e457669b6cba1bb",
+                "063a3a1b60f14b36bc1ec792afbd184a89c89f0c",
+                "8d4ac65ee241fcf26e77f06ef82999b1b5f47c02",
+                "4af4b1536d5385b3f37a0c4f467e6b05fb6cb859",
+                "aa45d66b189bbd6c1c594b27f331ba119cb9cffa",
+                "b9bce375c2361ac33240450c5d18f102d9ac5d4f",
+                "face67e357aef1f8534bcaa2836ed321aba60990",
+                "bbf9a14583704e9461eec160db8d16e3242e633f",
+                "b98af7ade0a0dc6132274a47cf82d6b4aa48c1e0",
+                "f602a16f54f6fe4d34b6a5b5f5e7820517fb4cb3",
+                "0491ad3c53dcea90191927a7db75d2aba595beb1",
+                "84baf138fb59eb9bec5e0ee705ca32b1f3e68f8b",
+                "6694734bc70c2acd6b7e0855b3967ff47dbd4882",
+                "8e5dad755343fa8aaa09e64056fe6581bf27ef59",
+                "789f983b340c1140d2a93b1af6a0df73052c14b6",
+                "52dc346746a509719e64322f638a4a7b5077a9b6",
+                "803fd738ec9780457f7c4115e452cefa7c36475e",
+                "dfe772e8d8f32f4c97c270c7c550d6154dbda50f",
+                "dd1cec42ea59cfd953ef159f8173560ee2fb2832",
+                "afc024350d49d0f55b92025a4446ec3d6ff7d221",
+                "a1891bf11fae7937f3e72064411803511ce18f71",
+                "85fdac68505fe5c1d525fe03b7febbfada3618fc",
+                "20e16bea10b0e6cc34db73e1ec025b26e422c821",
+                "d883f939925af142d117417d128f470d68db700d",
+                "5ca2b3bd42add17fe2c4ff56d88ea5cfd457ae30",
+                "1a8fa8383d7c5801cde08cbc8a7c023cad422dbb",
+                "e907be888e570a5b2db9b1f3c9625a2436a6c49c",
+                "01903853d90a4246ef11612a7b8360bb53664b88",
+                "3ea25de368b185e3c9f3d56e46a4cfcdb9265318",
+                "be0d32b63f2da3f8c97474f05f617d160badce99",
+                "590140a30e2e1817448a5aabf1ed814a85588c00",
+                "4d0df8ee25ff311e29dd4cc4a5ae64bf1ab093b6",
+                "b9105b6782751d9e827b95573f57a157b0b0cacc",
+                "124fb5e3669eca2855bd979ebb96d109f3820410",
+                "1f2f1d22f60d11aa9ed2b4abbb32e26f425f9f24",
+                "c6612329a3250a5e390f5acdd766a4b509fa4027",
+                "7d69528e6518deae441f817ae5bc98fc072850c1",
+                "8a25fa500dd26aed87cee820e691dfc1b1d73358",
+                "b24a2bfeb57ad4eee1195cfc6413e01619864dda",
+                "b679307a1c554d8c542b07e52081bfec6ebf6f01",
+                "e3dc4bfdbc085b9e3877a19a7b5151bfa314c6d4",
+                "37af02346ffdfce9954298ce2386ea7f7b540fab",
+                "d1af83c96be9b720e8ee149dac4640dd7b7a07a9",
+                "c4234fbbd1b4da059ca7dad0bd17e23394a3c1b4",
+                "6ce4b2ad6748e2772e44ea83560fb8aa072f1900",
+                "3de9e92f098d2d9b37011ab3616fa28363afdda6",
+                "e697d4aad5e3e4b4df9dc7fb6364d312e7239ef0",
+                "b86ca3cf1cc9712fc2dd187a98b7f2f1692d9be6",
+                "e970545f47185f8feb5ae8e8dd9003b26cdef8c7",
+                "f02ecfc668b346823009867ea2b82a1652f4b36d",
+                "a45ee59cf71fe346b669548f48a3f2d46fc2797e"
         };
 
         List<CommitScore> commitScore = new ArrayList<>();
@@ -202,19 +325,11 @@ public class Main {
         List<ChangedFile> changedJavaFiles = getChangedJavaFiles(gitDirectory, newCommit, oldCommit); //获取所有发生更改的.java文件的路径和变更类型
         Map<String, String> fileChangedType = getFileChangedType(changedJavaFiles);//再变更文件名称与变更类型间建立映射
 
-//        for (Map.Entry<String, String> entry : fileChangedType.entrySet()) {
-//            String fileName = entry.getKey();
-//            String changedType = entry.getValue();
-//            System.out.println("File: " + fileName + ", Changed Type: " + changedType);
-//        }
 //        getEditScriptsBetweenCommits(gitDirectory, newCommit, oldCommit, changedJavaFiles); //获取两个commit之间所有发生更改的.java文件的编辑脚本以及每个文件的AST
         String editscriptsPath = "DeveloperContributionEvaluation/editScripts/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"; //这些编辑脚本的保存路径
         ASTScoreCalculator astScoreCalculator = new ASTScoreCalculator();
 
         Map<String, Double> astScore= astScoreCalculator.calculateTotalASTScore(editscriptsPath, newCommit, oldCommit, fileChangedType); //计算每个变更方法的ast得分
-//        for (Map.Entry<String, Double> entry : astScore.entrySet()) {
-//            System.out.println("methodName = " + entry.getKey() + "   ; astScore = " + entry.getValue());
-//        }
 
 
 //        以上计算AST编辑脚本分数
@@ -233,16 +348,8 @@ public class Main {
 
         Map<Integer, List<Integer>> graphC = callGraph.buildGraph(callGraphPath);//根据调用图生成正向邻接表
         Map<Integer, List<Integer>> backwardGraphC = callGraph.buildBackwardGraph();//根据调用图生成反向邻接表
-//        System.out.println("build完成！");
         Map<Integer, Double> mapPr = callGraph.getPageRank(graphC, backwardGraphC);
-//        System.out.println("getPageRank完成");
 
-//        double sum = 0;
-//        for(Double i:mapPr.values()) {
-//            System.out.println(i);
-//            sum += i;
-//        }
-//        System.out.println("sum = " + sum);
 
         Map<Integer, Double> nodeWeight = callGraph.measureInterFunctionInteraction(graphC, mapPr, 1);
 
@@ -252,16 +359,11 @@ public class Main {
 
         //获取项目中每个函数在调用图中所对应的节点编号
         Map<String, Integer> methodToNodeMap = callGraph.getNodeMapping("DeveloperContributionEvaluation/CallGraphs/" + callGraphName);
-//            for (String key : methodToNodeMap.keySet()) {
-//                System.out.println("methodName: " + key + "\nNode: " + methodToNodeMap.get(key)); //输出键值对验证是否正确
-//            }
 
 //        以上计算调用图中各节点的权重
 //        ------------------------------------------------------------------------------------------------------------------------------------
 
         ComplexityCalculator complexityCalculator = new ComplexityCalculator();
-//            System.out.println("\nMethods is below:");
-
         complexityCalculator.getChangedMethods_LOC_CC_HV_PCom(gitDirectory, oldCommit, newCommit);
         List<String> changedMethods = complexityCalculator.getChangedMethods();
         Map<String, Integer> LOC = complexityCalculator.getLOC();
@@ -269,14 +371,6 @@ public class Main {
         Map<String, Double> HV = complexityCalculator.getHV();
         Map<String, Double> PCom = complexityCalculator.getPCom();
         Map<String, Double> CM = new HashMap<>();
-
-//            for (String method : changedMethods) {
-//                CM.put(method, (LOC.get(method) + CC.get(method) + HV.get(method) - PCom.get(method)) / 2 + 1);
-//                System.out.println(method);
-//                System.out.println("LOC = " + LOC.get(method) + ", CC = " + CC.get(method) +
-//                        ", HV = " + HV.get(method) + ", PCom = " + PCom.get(method) + ", CM = " + CM.get(method));
-//
-//            }
 
 //        以上计算各修改函数的复杂性度量(提取了各修改函数的内容)
 //        ------------------------------------------------------------------------------------------------------------------------------------
@@ -300,25 +394,26 @@ public class Main {
 
         Map<String, Double> DDG_impact = new HashMap<>();
         for(String method:changedMethods) {
-//            System.out.println(method);
             String[] tmp = method.split(":");
+            String methodName = tmp[tmp.length-1];
+            String className = method;
+            if(tmp.length > 1)
+                className.replace("::" + methodName, "");
+
             DDG_impact.put(method,
-                    ddg.getDDGimpact("E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/" + newCommit.substring(0, 7), tmp[0], tmp[2]));
+                    ddg.getDDGimpact("E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/" + newCommit.substring(0, 7), className, methodName));
         }
-//            for(String method:changedMethods) {
-//                System.out.println("DDG_impact " + method + "   " + DDG_impact.get(method));
-//            }
 
         Map<String, Double> CDG_impact = new HashMap<>();
         for(String method:changedMethods) {
-//                System.out.println(method);
             String[] tmp = method.split(":");
+            String methodName = tmp[tmp.length-1];
+            String className = method;
+            if(tmp.length > 1)
+                className.replace("::" + methodName, "");
             CDG_impact.put(method,
-                    cdg.getCDGimpact("E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/" + newCommit.substring(0, 7), tmp[0], tmp[2]));
+                    cdg.getCDGimpact("E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/" + newCommit.substring(0, 7),className, methodName));
         }
-//            for(String method:changedMethods) {
-//                System.out.println("CDG_impact " + method + "   " + CDG_impact.get(method));
-//            }
 
         double scoreOfCommit = 0.0;
 

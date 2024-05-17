@@ -29,11 +29,8 @@ def find_method_interval(lines, method_name):
     # 方法定义的正则表达式模式
     method_pattern = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+.*?' + re.escape(
         method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*\{?'
-    method_pattern3 = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+.*?' + re.escape(
-        method_name).replace(r'\ ', r'\s*') + r'.*'
 
     method_regex = re.compile(method_pattern)
-    method_regex3 = re.compile(method_pattern3)
 
     # lines = extracted_code.split('\n')
     start_line = None
@@ -63,14 +60,18 @@ def find_method_interval(lines, method_name):
                     break
 
     if start_line == None:
-        # method_pattern2 = r'=.*?\s*new\s*' + re.escape(
-        #     method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*\{?'
         method_pattern2 = r'(?:=\s*|\s+)new\s*' + re.escape(
             method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*\{?'
+        method_pattern3 = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+.*?' + re.escape(
+            method_name).replace(r'\ ', r'\s*') + r'.*'
+        method_pattern4 = r'\b\s+.*?' + re.escape(method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*\{'
+
         method_regex2 = re.compile(method_pattern2)
+        method_regex3 = re.compile(method_pattern3)
+        method_regex4 = re.compile(method_pattern4)
         for i, line in enumerate(lines):
             # 搜索方法定义
-            if method_regex2.search(line) or method_regex3.search(line):
+            if method_regex2.search(line) or method_regex3.search(line) or method_regex4.search(line):
                 start_line = i + 1
                 in_method = True
                 # print(f"start_line = {start_line}")
@@ -85,11 +86,25 @@ def find_method_interval(lines, method_name):
                     if bracket_cnt > 0:
                         # 如果计数器仍大于0，继续搜索方法的结束
                         continue
-                    else:
+                    elif bracket_cnt == 0:
                         # 如果计数器为0，表示找到了方法的结束
                         end_line = i + 1
                         break
+                    else:
+                        in_method = False
+                        bracket_cnt = 0
 
+    if start_line == None:
+        # 用于匹配"Class<?> serializer() default Void.class;"或"Class<?> serializer() {default Void.class;}"
+        method_pattern5 = method_pattern4 = r'\b.*?\s+' + re.escape(method_name).replace(r'\ ', r'\s*') + r'\(.*?\)\s*\{?\w+'
+        method_regex5 = re.compile(method_pattern5)
+        for i, line in enumerate(lines):
+            # 搜索方法定义
+            if method_regex5.search(line):
+                start_line = i + 1
+                end_line = i + 1
+
+    # print(f"start_line = {start_line}, end_line = {end_line}")
     return start_line, end_line
 
 def getChangedMethods(repo_path, old_commit, new_commit):
@@ -179,7 +194,7 @@ def calculate_method_loc(file_content):
         if(line.strip() == ""):
             continue
         loc += 1
-    return loc-2
+    return max(loc-2, 1)
 
 # 计算代码注释百分比（若字符串内部出现"//"或"/**/"会被误识别为注释，但考虑到一般很少有这种情况）
 def calculate_percentage_of_comments(file_content):
@@ -251,7 +266,7 @@ def save_to_file(code, file_path):
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
 
-    with open(file_path, 'w') as file:
+    with open(file_path, 'w', encoding='utf-8') as file:
         file.write(code)
 
 
@@ -272,8 +287,8 @@ if __name__ == "__main__":
 #
 # # old_commit = "679140e0ad6c0bb1cd3b8397f32c5fe55fc7f3b1"
 # # new_commit = "240edb5c42aa9295bc674c93d25ffe801c13a5c4"
-# old_commit = "16a43f59be6130dd7d8346401e1575a2f1a2e435"
-# new_commit = "679140e0ad6c0bb1cd3b8397f32c5fe55fc7f3b1"
+# old_commit = "e697d4aad5e3e4b4df9dc7fb6364d312e7239ef0"
+# new_commit = "b86ca3cf1cc9712fc2dd187a98b7f2f1692d9be6"
 # # changedMethods, LOC, CC, Halstead_Volume, PCom = getChangedMethods(repo_path, old_commit, new_commit)
 # changedMethods, LOC, Halstead_Volume, PCom = getChangedMethods(repo_path, old_commit, new_commit)
 #

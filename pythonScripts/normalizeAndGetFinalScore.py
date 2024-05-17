@@ -16,6 +16,10 @@ def normalize(data):
     else:
         data_normal = (data - mean) / std_dev
         data_normal = (data_normal * (1 / 3)) + 1
+
+    for i in range(len(data_normal)):
+        if data_normal[i] < 0:
+            data_normal[i] = 0
     return data_normal
 
 
@@ -146,7 +150,6 @@ for commit_score in commit_score_list:
                 method_score["weight_normal"] + 1) * method_score["IR_normal"]
         commit_score["scoreOfCommitAfter"] += method_score["scoreAfterNormalize"]
 
-
     # 获取 commitHash
     print("Commit Hash:", commit_score["commitHash"], end=' ')
     print(f"scoreOfCommitBefore = {commit_score['scoreOfCommitBefore']}", end=' ')
@@ -161,7 +164,7 @@ df2 = pd.DataFrame(score_of_commit_after, columns=['score_of_commit_after'])
 # 合并两个 DataFrame
 df = pd.concat([df1, df2], axis=1)
 # 将 DataFrame 存入 Excel 文件
-df.to_excel('myscore.xlsx', index=False)
+df.to_excel('my_score.xlsx', index=False)
 
 # # 将 commit_score_list 转换为格式化后的JSON的字符串
 # json_output = json.dumps(commit_score_list, indent=4)  # indent=4 表示输出格式化后的 JSON 字符串

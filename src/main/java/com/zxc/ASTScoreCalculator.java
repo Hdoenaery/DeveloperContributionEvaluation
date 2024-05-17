@@ -211,7 +211,7 @@ public class ASTScoreCalculator {
                                 // 如果匹配到了声明行，提取[startPos, endPos]
                                 int classStartPos = Integer.parseInt(classMatcher.group(2));
                                 int classEndPos = Integer.parseInt(classMatcher.group(3));
-//                                System.out.println("Start Pos: " + startPos + ", End Pos: " + endPos);
+//                                System.out.println("Start Pos: " + classStartPos + ", End Pos: " + classEndPos);
 
                                 // 一直往下读直到找到类名
                                 while (true) {
@@ -249,7 +249,8 @@ public class ASTScoreCalculator {
                                     if (nameMatcher.find()) {
                                         // 如果匹配到了SimpleName，提取methodName
                                         methodName = nameMatcher.group(1);
-                                        while (className.get(className.size() - 1).getEndPos() < startPos)
+//                                        System.out.println(methodName);
+                                        while (className.size() > 0 && className.get(className.size() - 1).getEndPos() < startPos)
                                             className.remove(className.size() - 1);
                                         String completeName = "";
                                         for(ClassNameAndInterval i:className) {
