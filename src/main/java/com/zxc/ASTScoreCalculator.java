@@ -166,7 +166,7 @@ public class ASTScoreCalculator {
 //    }
 
     // 解析文件夹editscriptsPath下所有编辑脚本，求出其中每一次操作是在哪个方法内部，并将该操作的得分加到该方法变更的总分上去
-    public static Map<String, Double> calculateTotalASTScore(String editscriptsPath, String astFolder) {
+    public static Map<String, Double> calculateTotalASTScore(String editscriptsPath, String newCommit, String oldCommit, Map<String, String> fileChangedType) {
         Map<String, Double> astScore = new HashMap<>();  //key为方法名，value为该方法的ast得分
 
         File folder = new File(editscriptsPath);
@@ -182,20 +182,28 @@ public class ASTScoreCalculator {
                 if (file.isFile()) { // 确保是文件而不是文件夹
                     String publicClassName = file.getName().replace("editscript_", "").replace(".txt", "");
 //                    System.out.println("\n@@@publicClassName = " + publicClassName);
+
+                    String astFolder = "DeveloperContributionEvaluation/ASTfiles/";
+
+                    if(fileChangedType.get(publicClassName).equals("D"))
+                        astFolder += oldCommit.substring(0,7) + "/";
+                    else
+                        astFolder += newCommit.substring(0,7) + "/";
+
                     String astFilePath = astFolder + publicClassName + "_AST.txt";
                     TreeMap<Interval, String> intervalToMethodName = new TreeMap<>();//以method的区间来映射方法名
 
-                    // 读取ast文件，提取出每个方法对应的位置
+                    // 读取该编辑脚本文件对应的ast文件，提取出每个方法对应的位置
                     try (BufferedReader br = new BufferedReader(new FileReader(astFilePath))) {
                         String line;
-                        // 匹配以MethodDeclaration或ConstructorDeclaration开头的行
+                        // 匹配以ClassOrInterfaceDeclaration开头的行
                         Pattern classPattern = Pattern.compile("(ClassOrInterfaceDeclaration) \\[(\\d+),(\\d+)\\]");
                         // 匹配以MethodDeclaration或ConstructorDeclaration开头的行
                         Pattern declarationPattern = Pattern.compile("(MethodDeclaration|ConstructorDeclaration) \\[(\\d+),(\\d+)\\]");
                         // 匹配下下行的SimpleName
                         Pattern namePattern = Pattern.compile("SimpleName: (\\w+)");
 
-                        List<ClassNameAndInterval> className = new ArrayList<>();
+                        List<ClassNameAndInterval> className = new ArrayList<>(); //用于匹配子类，这样子类中的方法名才会完整表示为“主类名::子类名::方法名”
                         String methodName = null;
                         while ((line = br.readLine()) != null) {
                             Matcher classMatcher = classPattern.matcher(line);//先尝试匹配类名
@@ -221,17 +229,22 @@ public class ASTScoreCalculator {
                             }
                             Matcher declarationMatcher = declarationPattern.matcher(line);
                             if (declarationMatcher.find()) {
-                                // 如果匹配到了声明行，提取[startPos, endPos]
+                                // 如果匹配到了Method声明行，提取[startPos, endPos]
                                 int startPos = Integer.parseInt(declarationMatcher.group(2));
                                 int endPos = Integer.parseInt(declarationMatcher.group(3));
 //                                System.out.println("Start Pos: " + startPos + ", End Pos: " + endPos);
-
+                                int methodIndentation = getIndentation(line);//求方法声明行的行首有几个制表符
+//                                System.out.println(line);
+//                                System.out.println(methodIndentation);
                                 // 一直往下读直到找到方法名
                                 while (true) {
                                     line = br.readLine();
                                     if (line == null) {
                                         break; // 文件已经结束
                                     }
+                                    int nameIndentation = getIndentation(line);//求行首有几个制表符
+                                    if(nameIndentation != methodIndentation + 1)//方法名称行的缩进比方法声明行的缩进多1
+                                        continue;
                                     Matcher nameMatcher = namePattern.matcher(line);
                                     if (nameMatcher.find()) {
                                         // 如果匹配到了SimpleName，提取methodName
@@ -243,6 +256,7 @@ public class ASTScoreCalculator {
                                             completeName += i.getClassName() + "::";
                                         }
 //                                        System.out.println("completeName = " + completeName);
+//                                        System.out.println("methodName = " + methodName);
                                         intervalToMethodName.put(new Interval(startPos, endPos), completeName + methodName);
                                         break; // 找到SimpleName后结束循环
                                     }
@@ -260,6 +274,18 @@ public class ASTScoreCalculator {
         }
 
         return astScore;
+    }
+
+    public static int getIndentation(String line) {
+        int tabCount = 0;
+        for (int i = 0; i < line.length(); i++) {
+            if (line.charAt(i) == ' ') {
+                tabCount++;
+            } else {
+                break;
+            }
+        }
+        return tabCount/4;
     }
 
     //计算一个编辑脚本的得分
@@ -293,29 +319,31 @@ public class ASTScoreCalculator {
                 }
 
                 double nameChangeScore = 1;
-//                System.out.println(currentEditType);
 
-//                if(currentEditType == EditType.UPDATE_NODE || currentEditType == EditType.DELETE_NODE ||currentEditType == EditType.DELETE_TREE){
-                    line = reader.readLine();line = reader.readLine();//向下跳过一行
-                    //如果为更新操作，就需要判断当前是否是简单修改变量名或修饰符
-                    if(currentEditType == EditType.UPDATE_NODE)
-                        nameChangeScore = isSimpleNameOrModifierChange(line) ? 0.01 : 1;
+                line = reader.readLine();line = reader.readLine();//向下跳过一行
+//                //如果为更新操作，就需要判断当前是否是简单修改变量名或修饰符
+//                if(currentEditType == EditType.UPDATE_NODE)
+//                    nameChangeScore = isSimpleNameOrModifierChange(line) ? 0.01 : 1;
 
-                    Matcher matcher = pattern.matcher(line);
-                    if (matcher.find()) {
-                        startPos = Integer.parseInt(matcher.group(1));
-                        endPos = Integer.parseInt(matcher.group(2));
-//                        System.out.println("Start Pos: " + startPos + ", End Pos: " + endPos);
-                        // 查找包含目标区间的项
-                        Map.Entry<Interval, String> entry = intervalToMethodName.floorEntry(new Interval(startPos, endPos));
-                        if (entry != null && entry.getKey().getStartPos() <= startPos && entry.getKey().getEndPos() >= endPos) {
+                if(line.contains("SimpleName:") || line.contains("Modifier:") || line.contains("LineComment"))
+                    nameChangeScore = 0.01;
+
+
+                Matcher matcher = pattern.matcher(line);//匹配编辑脚本中该操作的
+                if (matcher.find()) {
+                    startPos = Integer.parseInt(matcher.group(1));
+                    endPos = Integer.parseInt(matcher.group(2));
+//                    System.out.println("Start Pos: " + startPos + ", End Pos: " + endPos);
+                    // 查找包含目标区间的项
+                    Map.Entry<Interval, String> entry = intervalToMethodName.floorEntry(new Interval(startPos, endPos));
+                    if (entry != null && entry.getKey().getStartPos() <= startPos && entry.getKey().getEndPos() >= endPos) {
 //                            System.out.println("Interval found: " + entry.getValue());
-                            methodName = entry.getValue();
-                        }
-
-                    } else {
-                        System.out.println("editscript,未找到该变更的位置匹配项");
+                        methodName = entry.getValue();
                     }
+
+                } else {
+                    System.out.println("editscript,未找到该变更的位置匹配项");
+                }
 //                }
 //                else {
 //                    //找到“to”的下一行
@@ -344,15 +372,11 @@ public class ASTScoreCalculator {
                 while (line != null && !line.startsWith("===")) {
                     line = reader.readLine();// 向下读一行
                     if(line == null) break;
-                    if(line.startsWith("at ")){
-                        // 使用正则表达式匹配数字部分。\\D表示非数字字符，replaceAll将非数字字符替换为空，仅留下数字
-                        String number = line.replaceAll("\\D+", "");
-                        // 将提取的数字字符串转换为int类型
-                        depth = Integer.parseInt(number) + 1;// 计算被修改AST子树的深度
-//                        System.out.println("depth = " + depth);
-                    }
-                }
 
+                    if(currentEditType == EditType.INSERT_TREE || currentEditType == EditType.MOVE_TREE || currentEditType == EditType.DELETE_TREE)
+                        depth = Math.max(depth, getIndentation(line) + 1);// 计算被修改AST子树的深度
+                }
+//                System.out.println("depth = " + depth);
                 //计算当前操作的得分
                 if (currentEditType != null) {
                     double operationScore = currentEditType.getWeight() * depth * nameChangeScore;

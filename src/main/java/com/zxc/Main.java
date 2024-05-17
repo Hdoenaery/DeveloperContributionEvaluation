@@ -17,6 +17,17 @@ import gumtree.spoon.diff.DiffConfiguration;
 import java.io.*;
 import java.util.*;
 
+//保存本次提交中所有变更方法的文件路径以及变更类型
+class ChangedFile {
+    String fileNameLong;
+    String changedType;
+
+    // 构造方法
+    public ChangedFile(String fileNameLong, String changedType) {
+        this.fileNameLong = fileNameLong;
+        this.changedType = changedType;
+    }
+}
 public class Main {
     public static void main(String args[]) throws Exception {
         // 记录程序开始时间
@@ -102,7 +113,6 @@ public class Main {
             e.printStackTrace();
         }
     }
-
     public static double calculateCommitScore(String gitDirectory, String projectName, String newCommit, String oldCommit) throws Exception {
         // 记录程序开始时间
         long startTime = System.currentTimeMillis();
@@ -113,19 +123,23 @@ public class Main {
         System.out.println("@@@oldCommitHash = " + oldCommit);
         tool.executeGitCommand(gitDirectory, new String[]{"git", "checkout", newCommit});//切换到当前版本
 
-        getEditScriptsBetweenCommits(gitDirectory, newCommit, oldCommit); //获取两个commit之间所有发生更改的.java文件的编辑脚本
-        String editscriptsPath = "DeveloperContributionEvaluation/editScripts/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"; //这些编辑脚本的保存路径
-        String astFolder = "DeveloperContributionEvaluation/ASTfiles/" + newCommit.substring(0,7) + "/";
+        List<ChangedFile> changedJavaFiles = getChangedJavaFiles(gitDirectory, newCommit, oldCommit); //获取所有发生更改的.java文件的路径和变更类型
+        Map<String, String> fileChangedType = getFileChangedType(changedJavaFiles);//再变更文件名称与变更类型间建立映射
 
+//        for (Map.Entry<String, String> entry : fileChangedType.entrySet()) {
+//            String fileName = entry.getKey();
+//            String changedType = entry.getValue();
+//            System.out.println("File: " + fileName + ", Changed Type: " + changedType);
+//        }
+        getEditScriptsBetweenCommits(gitDirectory, newCommit, oldCommit, changedJavaFiles); //获取两个commit之间所有发生更改的.java文件的编辑脚本以及每个文件的AST
+        String editscriptsPath = "DeveloperContributionEvaluation/editScripts/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"; //这些编辑脚本的保存路径
         ASTScoreCalculator astScoreCalculator = new ASTScoreCalculator();
 
-//            double score = 0;
-        Map<String, Double> astScore= astScoreCalculator.calculateTotalASTScore(editscriptsPath, astFolder); //计算每个变更方法的ast得分
-//            for (Map.Entry<String, Double> entry : astScore.entrySet()) {
-//                System.out.println("methodName = " + entry.getKey() + "   ; astScore = " + entry.getValue());
-//                score+=entry.getValue();
-//            }
-//            System.out.println("Total AST Score: " + String.format("%.2f", score));
+        Map<String, Double> astScore= astScoreCalculator.calculateTotalASTScore(editscriptsPath, newCommit, oldCommit, fileChangedType); //计算每个变更方法的ast得分
+//        for (Map.Entry<String, Double> entry : astScore.entrySet()) {
+//            System.out.println("methodName = " + entry.getKey() + "   ; astScore = " + entry.getValue());
+//        }
+
 
 //        以上计算AST编辑脚本分数
 //        ------------------------------------------------------------------------------------------------------------------------------------
@@ -134,8 +148,8 @@ public class Main {
         String analyzedDirectory = gitDirectory + "src/";
         String outputFormat = "dot";
         String granularity = "method";
-        System.out.println(analyzedDirectory);
-        callGraph.getCallGraph(analyzedDirectory, outputFormat, granularity, projectName, newCommit); //获取该项目的调用图
+//        System.out.println(analyzedDirectory);
+//        callGraph.getCallGraph(analyzedDirectory, outputFormat, granularity, projectName, newCommit); //获取该项目的调用图
         System.out.println("调用depends完成");
         String callGraphName = projectName + "_" + newCommit.substring(0, 7) + "-" + granularity + "." + outputFormat;
         String callGraphPath = "DeveloperContributionEvaluation/CallGraphs/" + callGraphName;
@@ -156,9 +170,9 @@ public class Main {
 
         Map<Integer, Double> nodeWeight = callGraph.measureInterFunctionInteraction(graphC, mapPr, 1);
 
-//            for (Map.Entry<Integer, Double> entry : nodeWeight.entrySet()) {
-//                System.out.println("Node " + entry.getKey() + ": weight = " + entry.getValue());
-//            }
+//        for (Map.Entry<Integer, Double> entry : nodeWeight.entrySet()) {
+//            System.out.println("Node " + entry.getKey() + ": weight = " + entry.getValue());
+//        }
 
         //获取项目中每个函数在调用图中所对应的节点编号
         Map<String, Integer> methodToNodeMap = callGraph.getNodeMapping("DeveloperContributionEvaluation/CallGraphs/" + callGraphName);
@@ -194,8 +208,7 @@ public class Main {
         CDG cdg = new CDG();
         //记录获取DDG的开始时间
         long DDGstartTime = System.currentTimeMillis();
-        ddg.getDDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
-                , newCommit);
+//        ddg.getDDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/", newCommit);
         // 记录获取DDG结束时间
         long DDGendTime = System.currentTimeMillis();
         double totalDDGTime = (DDGendTime - DDGstartTime) / 1000.0;
@@ -203,8 +216,7 @@ public class Main {
 
         //记录获取CDG的开始时间
         long CDGstartTime = System.currentTimeMillis();
-        cdg.getCDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"
-                , newCommit);
+//        cdg.getCDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/", newCommit);
         // 记录获取CDG结束时间
         long CDGendTime = System.currentTimeMillis();
         double totalCDGTime = (CDGendTime - CDGstartTime) / 1000.0;
@@ -212,7 +224,7 @@ public class Main {
 
         Map<String, Double> DDG_impact = new HashMap<>();
         for(String method:changedMethods) {
-//                System.out.println(method);
+//            System.out.println(method);
             String[] tmp = method.split(":");
             DDG_impact.put(method,
                     ddg.getDDGimpact("E:/IDEA/maven-project/DeveloperContributionEvaluation/PDGs/" + newCommit.substring(0, 7), tmp[0], tmp[2]));
@@ -268,6 +280,18 @@ public class Main {
         return scoreOfCommit;
     }
 
+    public static Map<String, String> getFileChangedType(List<ChangedFile> changedJavaFiles) {
+        Map<String, String> fileChangedType = new HashMap<>();
+
+        for (ChangedFile file : changedJavaFiles) {
+            int lastSlashIndex = file.fileNameLong.lastIndexOf('/');
+            String fileName = file.fileNameLong.substring(lastSlashIndex + 1).replace(".java", "");
+            fileChangedType.put(fileName, file.changedType);
+        }
+
+        return fileChangedType;
+    }
+
     // 遍历一个项目的所有commit
     public static void traverseAllCommits(String gitDirectory, String projectName) throws Exception {
 //        // 记录程序开始时间
@@ -317,9 +341,7 @@ public class Main {
         tool.executeGitCommand(gitDirectory, new String[]{"git", "checkout", latestCommit});//切换到最新的版本
     }
     //生成两个commit之间有变化的.java文件之间的编辑脚本
-    public static void getEditScriptsBetweenCommits(String gitDirectory, String newCommit, String oldCommit) throws Exception {
-        List<String> changedJavaFiles = getChangedJavaFiles(gitDirectory, newCommit, oldCommit);
-
+    public static void getEditScriptsBetweenCommits(String gitDirectory, String newCommit, String oldCommit, List<ChangedFile> changedJavaFiles) throws Exception {
 //        System.out.println("这两个commit之间所有的编辑脚本如下：");
         String filePath = "DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/";
         // 确保文件夹存在，如果不存在则创建它
@@ -329,7 +351,8 @@ public class Main {
         }
 
         int cnt = 0;
-        for(String fileNameLong:changedJavaFiles){
+        for(ChangedFile changedFile:changedJavaFiles){
+            String fileNameLong = changedFile.fileNameLong;
 //            System.out.println(fileNameLong);
             // 获取两个版本中文件的内容
             String fileContentAtNewCommit = getFileContentAtCommit(gitDirectory, fileNameLong, newCommit);
@@ -356,7 +379,15 @@ public class Main {
             writeStringToFile(fileContentAtNewCommit, newFileName);
             writeStringToFile(fileContentAtOldCommit, oldFileName);
 
-            getASTFromFile(newFileName, newCommit);
+            if(changedFile.changedType.equals("A"))// 该文件修改类型为新增
+                getASTFromFile(newFileName, newCommit);
+            else if(changedFile.changedType.equals("D")) //该文件修改类型为删除"D"或修改"M"
+                getASTFromFile(oldFileName, oldCommit);
+            else //该文件修改类型为修改"M"
+            {
+                getASTFromFile(newFileName, newCommit);
+                getASTFromFile(oldFileName, oldCommit);
+            }
             computeEditScript(oldFileName, newFileName, oldCommit, newCommit);
         }
         System.out.println("所有编辑脚本获取结束");
@@ -426,9 +457,9 @@ public class Main {
         return commitHashes;
     }
 
-    //获取两个commit之间所有有更改的.java文件的名称
-    public static List<String> getChangedJavaFiles(String gitDirectory, String newCommit, String oldCommit) {
-        List<String> changedFiles = new ArrayList<>();
+    //获取两个commit之间所有有更改的.java文件的名称和更改类型
+    public static List<ChangedFile> getChangedJavaFiles(String gitDirectory, String newCommit, String oldCommit) {
+        List<ChangedFile> changedFiles = new ArrayList<>();
 
         try {
             // 创建 ProcessBuilder 对象，执行 git diff --name-only 命令获取文件变更列表
@@ -436,7 +467,8 @@ public class Main {
             if (oldCommit.equals("0000000")) {
                 builder = new ProcessBuilder("git", "show", "--name-only", newCommit);
             } else {
-                builder = new ProcessBuilder("git", "diff", "--name-only", oldCommit, newCommit);
+//                builder = new ProcessBuilder("git", "diff", "--name-only", oldCommit, newCommit);
+                builder = new ProcessBuilder("git", "diff", oldCommit, newCommit, "--name-status", "--", "*.java");
             }
 
             builder.directory(new File(gitDirectory));//设置命令工作目录
@@ -449,10 +481,14 @@ public class Main {
             String line;
 //            System.out.println("发生变更的.java文件如下：");
             while ((line = reader.readLine()) != null) {
-                if (line.endsWith(".java")) { // 只添加 .java 文件名
-                    changedFiles.add(line);
-//                    System.out.println(line);
-                }
+//                System.out.println(line);
+                // 使用制表符分割字符串
+                String[] parts = line.split("\t");
+
+                // 获取changedType和fileNameLong
+                String changedType = parts[0];
+                String fileNameLong = parts[1];
+                changedFiles.add(new ChangedFile(fileNameLong, changedType));
             }
 
             // 等待命令执行完成
@@ -512,7 +548,7 @@ public class Main {
     }
 
     //从源代码提取出抽象语法树，传入需要分析的.java文件的路径，和当前的commit号
-    public static void getASTFromFile(String filePath, String newCommit) throws Exception {
+    public static void getASTFromFile(String filePath, String commitHash) throws Exception {
         Run.initGenerators(); // registers the available parsers
         TreeContext tc = TreeGenerators.getInstance().getTree(filePath); // retrieves and applies the default parser for the file
         Tree t = (Tree) tc.getRoot(); // retrieves the root of the tree
@@ -522,7 +558,7 @@ public class Main {
         // AST 的字符串表示
         String astString = t.toTreeString();
 
-        String astFolder = "DeveloperContributionEvaluation/ASTfiles/" + newCommit.substring(0,7) + "/";
+        String astFolder = "DeveloperContributionEvaluation/ASTfiles/" + commitHash.substring(0,7) + "/";
 
         // 确保文件夹存在，如果不存在则创建它
         File folder = new File(astFolder);
@@ -531,7 +567,7 @@ public class Main {
         }
         // 指定要写入的文件名和路径
         String srcFileName = new File(filePath).getName();
-        String astFileName = astFolder + srcFileName.replace(".java", "").replace("new_", "") + "_AST.txt";
+        String astFileName = astFolder + srcFileName.replace(".java", "").replace("new_", "").replace("old_", "") + "_AST.txt";
 
         // 将 AST 字符串写入文件
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(astFileName))) {

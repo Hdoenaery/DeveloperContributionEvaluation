@@ -270,9 +270,10 @@ if __name__ == "__main__":
 
 # repo_path = 'E:/Postgraduate_study/fastjson'
 #
-# old_commit = "1da6cf57ac862cafbfa896801bbce31eea3ffd28"
-# new_commit = "751291fc5e275d0222ddaf75053fac5be9b487db"
-#
+# # old_commit = "679140e0ad6c0bb1cd3b8397f32c5fe55fc7f3b1"
+# # new_commit = "240edb5c42aa9295bc674c93d25ffe801c13a5c4"
+# old_commit = "16a43f59be6130dd7d8346401e1575a2f1a2e435"
+# new_commit = "679140e0ad6c0bb1cd3b8397f32c5fe55fc7f3b1"
 # # changedMethods, LOC, CC, Halstead_Volume, PCom = getChangedMethods(repo_path, old_commit, new_commit)
 # changedMethods, LOC, Halstead_Volume, PCom = getChangedMethods(repo_path, old_commit, new_commit)
 #
