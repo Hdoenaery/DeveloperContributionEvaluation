@@ -8,37 +8,32 @@ import seaborn as sns
 from scipy.stats import spearmanr
 
 # 读取csv文件
-file_path = 'E:/IDEA/maven-project/DeveloperContributionEvaluation/commons-cli_result.csv'
+file_path = 'E:/IDEA/maven-project/DeveloperContributionEvaluation/commons-release-plugin_result.csv'
 # file_path = 'E:/Postgraduate_study/papers/ASE23ContributionMeasurement-main/ASE23ContributionMeasurement修改版/RQ1/tagged/ELOC/commons-ognl_result_final_manifest_tagged_eloc.csv'
 # df = pd.read_csv(file_path, encoding='gbk', header=None)
 df = pd.read_csv(file_path, encoding='gbk')
 
-cnt = 150
+cnt = 140
 human_tagged_data = df.iloc[:cnt, 1].tolist()
 author_score = df.iloc[:cnt, 2].tolist()
-my_score_before = df.iloc[:cnt, 3].tolist()
-my_score_normal = df.iloc[:cnt, 4].tolist()
+my_unstandardized_scores = df.iloc[:cnt, 3].tolist()
+my_standardized_scores = df.iloc[:cnt, 4].tolist()
 loc = df.iloc[:cnt, 12].tolist()
-eloc = df.iloc[:cnt, 13].tolist()
-
+# eloc = df.iloc[:cnt, 13].tolist()
 
 print(len(human_tagged_data))
 print(human_tagged_data)
-# print(eloc)
-# print(len(eloc))
-print(my_score_before)
-print(my_score_normal)
 
 # 计算Spearman相关性
 spearman_corr, p_value = spearmanr(human_tagged_data, author_score)
 print("作者的Spearman相关系数:", spearman_corr)
 print("p值:", p_value)
 
-spearman_corr, p_value = spearmanr(human_tagged_data, my_score_before)
+spearman_corr, p_value = spearmanr(human_tagged_data, my_unstandardized_scores)
 print("我标准化前的Spearman相关系数:", spearman_corr)
 print("p值:", p_value)
 
-spearman_corr, p_value = spearmanr(human_tagged_data, my_score_normal)
+spearman_corr, p_value = spearmanr(human_tagged_data, my_standardized_scores)
 print("我标准化后的Spearman相关系数:", spearman_corr)
 print("p值:", p_value)
 
@@ -46,15 +41,12 @@ spearman_corr, p_value = spearmanr(human_tagged_data,loc)
 print("loc的Spearman相关系数:", spearman_corr)
 print("p值:", p_value)
 
-spearman_corr, p_value = spearmanr(human_tagged_data,eloc)
-print("eloc的Spearman相关系数:", spearman_corr)
-print("p值:", p_value)
 
 # 创建数据框以计算多个变量之间的相关性
 data = pd.DataFrame({
-    'Human Tagged Data': human_tagged_data,
-    'My Score Before' : my_score_before,
-    'My Score Normal': my_score_normal,
+    'ground truth': human_tagged_data,
+    'UnstandardizedScore' : my_unstandardized_scores,
+    'StandardizedScore': my_standardized_scores,
     'LOC' : loc,
 })
 
@@ -70,7 +62,7 @@ plt.figure(figsize=(10, 8))
 heatmap = sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', vmin=-1, vmax=1, linewidths=0.5)
 
 # 添加图表标题
-plt.title('Spearman Correlation Heatmap')
+plt.title('Spearman Correlation Heatmap(fastjson)')
 
 # 显示图表
 plt.show()

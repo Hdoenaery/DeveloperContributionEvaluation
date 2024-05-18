@@ -94,159 +94,157 @@ public class Main {
 
         Tool tool = new Tool();
 
-        String gitDirectory = "E:/Postgraduate_study/commons-cli/";
-        String projectName = "commons-cli";
+        String gitDirectory = "E:/Postgraduate_study/commons-release-plugin/";
+        String projectName = "commons-release-plugin";
         String[] commits = {
-                "27b961f2b40a2d2ba695dc50774bed32401201be",
-                "1af9b95aa30c8383588e169bf2fe749c3e9c7c64",
-                "62b510f93283fee7225b56c95b6d017b8546367f",
-                "cc37692b8edbb78cdee140d5c487e0bb42ec3e05",
-                "234062c7d9e7917e2ff01ac3b534e053759c5c6c",
-                "82403d07579665a0c194a638425ac24e08581ac2",
-                "8dcf11911ab73ddb5455853a31149a00549261b5",
-                "69dd16f5348514607101931c982ff2c377dd02bf",
-                "2df55d424f80c096d0916a733c8c5292c4b1fdf5",
-                "591af95e0a51d067f69f0ddf1a0ac54ef5c04842",
-                "c886434a34107af01ae3cf70645e8e7d8aaa9ede",
-                "15e12379bea9bb9ce112fcfbab0a0a9c8899845a",
-                "f45c4301de8bbcb50227e0663f20c5f0870636d3",
-                "9aae655438b46e33213f50e27997be667ec9ff38",
-                "ac96d6242fa9c88f7fad3b3a08b8a5f11fa2b979",
-                "7b52ba80498be2c019d7b4cba9e1af9bce2b7e2e",
-                "44173949e8165537b201d4efd024e31e6e8b06eb",
-                "a1222147c2d3a99aa19776ee2dea30974d57571a",
-                "cf94289a3ee4c8ac9d9e958f2e8bbc06efd24d48",
-                "f87f0b37881e927346af7aa732f4be05ef0c14a4",
-                "f2aa3089560eb00cc973b0cb12ead7c3424536bb",
-                "caf0b99cfa99392e48e85aa103c815e4e9debfac",
-                "bd39a1c9cfb3ee394791f7e015a3045d042c01ba",
-                "d63b4bd3e61e83b6dbe7b3d6f81a06967f17e784",
-                "c99a79a0d0d7ffa7281c49c270ea6326f08cb0cc",
-                "cfd100d631d2c960a2d109fdddb2bf8e9db44c27",
-                "47231757c0e1c5b201889e8f3607470321b60e48",
-                "7b32c729873802df59b82a8ef7d6db27ceccf221",
-                "ad82cd5ebc55bf52647bb419cf9bc0ebd061b3c2",
-                "f38c4940fed0cd9abc652f3c539f2306295ae576",
-                "20585e0843ded9452b8ecf5fcb3aa74dafd2bd2c",
-                "cbb7227c1f19e9b72e9ab65230d3fce570bf9f8b",
-                "d78ed6baf1cf85849e2e9ab69115ce73853dc088",
-                "9539506e87648d753c44b68b3dfbdd1938c09315",
-                "dc9af47ef6149c7895ffcac9ede4d33fb37dfd3b",
-                "3d83402d6fa39224ab6650f6a011322e7ac4ab5a",
-                "b805e90dd082b4549ef4d565d13c6db8fdb96a5e",
-                "81cf67387da844052aaa4c6feb4c8b290308e0eb",
-                "98d06d37bc7058bbfb2704c9620669c66e279f4a",
-                "5f0dc627e3beeafbe5d528cdd76c7ef21308b726",
-                "f78fb5a99093852b0121edf4768bfaf931fa19f9",
-                "46131b704f3c5dec42c012ece43703aa8da20cda",
-                "e20023d55962858ec6cd3d786686a00192959a9b",
-                "353771a4bfc561fde6da57d9d7c070b3727c7259",
-                "af54c01799ebf3ed613bfd9cc9e4934676b245fd",
-                "480802dcb6fcf351a33dc6f64c9cb5b11e8058be",
-                "c67275279176504a6f5fc556cfa247e1df02a580",
-                "ef1309b0975a102abcb1d7e351b1ec2438173d2c",
-                "1a11c86d750788d512a4c6e5025127e438185fcf",
-                "fd66015d8e2e5bbc763c74fe4e8245cba37c01dd",
-                "f91ba7058dc9d733d7f8177df88b2f44144be72e",
-                "a6f9d7bb96045fdb361d12b91095fd55be261080",
-                "47c2a289ecedcdb532a7f393019e3e7f9621499d",
-                "bf19d994c6414de253734f69a769e419758e43b0",
-                "a3e2d6b14257122a891d84459f927e2417cc8c88",
-                "02aba6c78d451376053478e4d627ba6f2fd6ba21",
-                "24adba8713785abcc3cbcf40a229432d53b4b521",
-                "f79e8335ebd430d7b7a992d938ca16225061cdba",
-                "c5536b7f82862fe798ae91cd4b4a8a2df049d06a",
-                "18e36386a232ca7e31931bd1d51b91a7eadcf72c",
-                "b0024d482050a08efc36c3cabee37c0af0e57a10",
-                "04697739edb6b60ecdbcccbfeb4e787728674942",
-                "19849509da2a483ba0a8543606a3b570b7ec5c68",
-                "23d13f5c3d7fcf810662c31d147c470e4263fe55",
-                "3d9587caec7dd23d359bc112c63512e2bc3e0702",
-                "4f17a89ad04bcf718aeac43d202f8c261ce0b796",
-                "bdb4a09ceaceab7e3d214b1beadb93bd9c911342",
-                "9a845a2a30742b500e3b823b105434203427ea93",
-                "c17d0ff553fd34e2e53e0446083ee284ee97f6cb",
-                "f4a28c0463a414464ebe214a7790fde0b0069e3e",
-                "4f9c95bcb246b64f7f6756cc3840d2061a262fe7",
-                "1e59d0c2fd1cfee450d0104734307306803a84e0",
-                "92f1def0bb3c0345295012e36b7150cfd1d7b6ab",
-                "9a048d071f4ebb57179f6ef245dae7769be3441d",
-                "89080e24891985d691e271fdd33734e493072bd9",
-                "fac33304c67496380cd168d71cac79dbc0e60142",
-                "e3d65b0ee3b08599bd787a7721afc326d1bcccf1",
-                "c1cbe9dd69f80b627ea046095af842bfafb15803",
-                "9039cbd454346276c632ae2424a3c20e18a2d276",
-                "abfcc8211f529ab75f3b3edd4a827e484109eb0b",
-                "a2afe70f0d14cbf8199b7c8ccda424211dba4843",
-                "269eae18a911f792895d0402f5dd4e7913410523",
-                "f0677c6c1b967832ef7252373acfa31bb3f12500",
-                "dc45fde7e5988908371eb4cccfeeb7a078bf714b",
-                "0f56df924fabac851a111a04569f4a3d7331ef8e",
-                "ac2a1c85616f0140418de9190389fe7b80296c39",
-                "1bf9e6c551b6a2e7d37291673a1ff77c338ce131",
-                "bbaf99f10729f95b4a1cb1be8ac56537c7027b32",
-                "0304f5946b3f917d0fcb00ff0152ca1ce8e37b3f",
-                "7d5129c756ee4de5e7ad7f1c3de81a99368c97b1",
-                "5d1d96715b36e32bc27847e84252d2c36ec0cc20",
-                "afc13c445a4c80432e52d735685b272fadfeeddf",
-                "f6af62367494ff8d0d7844f7f435e5ee36c81dcf",
-                "58139aefcacfa7954de1552c2ec5640ddbaf3713",
-                "085a1538fa20d8e48faad49eaffd697f024bf1af",
-                "f8e2c074559dd66d327c85fbedad58da8b2821d5",
-                "206de8c8edac008d279903696bba7c3799bda45b",
-                "700f05292777f33b5c349ac2b4f83168fd1ed888",
-                "22576c14c60092fb6c67789ab2f5ee14952c0c18",
-                "3a730c03fcd3f2715c83db85331d1b5b8c95a1d5",
-                "10090594827c3c90b9c0a5c8288cda448b0ce10c",
-                "6b87d290954c4594fc69a3a0b85fff12490cfde5",
-                "b207a2bcef8e29df436bc393c3569947680e93e6",
-                "0c0ce9b1f033319e086204895d3f8fe342ddad90",
-                "ce1b4d824ab36e8823819e277153d33c080ada95",
-                "78e9b51e45a3b563092f741aa52a7be8f6c538dc",
-                "ec363cc653aaaa2c10b19e0ae880ede6084dd420",
-                "8a2bc22910f044bf547b7dfbd21b3588e74a592d",
-                "8c14cb4b115b3bbb13f9702ddd3c13d66e073817",
-                "b1ffe271a5f8a6ff7b6bf714a9b2631e7dc6bbb0",
-                "ce5ebdf348d9b1d2e9c45d22c0d9cf582dcd059c",
-                "38ab386d9d86c6cacea817954064bb25fba312aa",
-                "639e070cfe87ea05f3aa618553e7971ccfaec0b7",
-                "faa6455a9a0bccf29d049f0b0958eb9b2e804fc3",
-                "f717da18ee109c77f8975e53c21aa6a56e33a982",
-                "9ed70efb45a95b0327232d1f9329f777bc428da7",
-                "46ad66ae8f1c805b40775e856d70277b669df6fb",
-                "df52eee396b1e8ce24fd1ec34752e1049618255a",
-                "e89475ca66e263698d3c4f08b589fa7e6aa444e0",
-                "08a1eb7875d24830e37a969e9963ccc365586ca1",
-                "f83ebd473e0dc4abacad3054405b83f0f696bd56",
-                "b2fa954b483fa52e18c07d10ca7ab64849505980",
-                "89333a791bf39cd4cc63e9279d9bfa5522800e9f",
-                "eae489864a43c79d58585da42078235d3f73b5eb",
-                "9d05157309c890b678bd615dce47911350d0dd91",
-                "1fcf87d3e9e6e429f6fb17e6768c0562fff6d732",
-                "c6cf0e72d4df77417a010c2a2d6d09f69be3cfac",
-                "f06a1b95c4568997295e987b9617be799c517845",
-                "0cbe33506c92b790fd4dc866237d7e430a6c91dd",
-                "4d49ed355c081eb0d8878841e849d9dd7aed2570",
-                "1e01bbad08bb961b0e9af1d94e523394803fffdb",
-                "e3f81b63a29c821a183eed2fa5169a147580dd78",
-                "445ddaaa89bdcd003645b02b600fde1d3730d715",
-                "853dabc79acc7c7ebab2a3d1e52788f3526be580",
-                "dacc862f13fbe2424c3439dac09ea1aaa42a0e59",
-                "57e7048a032802183ad2f017cdd36cc798ab594e",
-                "5ff94c7daec3bea08f151df7cfe5b203e4d5be76",
-                "6ba1a28a39f42d411689d71bc11932c820cb4265",
-                "5b75fcd4dcc69f28fc19d282a0a8a412df6135df",
-                "31d92568a294be608bf54efc306e4b9c1e3fe61d",
-                "b106dee5f2a22f28c56073aad8afb28efe031190",
-                "b445290fbd557afc63827926f65964ef1da7043d",
-                "1b1ac53a5590c862f64c39b24d8b22c4e5bb2210",
-                "04218b94ea9f1dd71f835bc992b030370f4fdf71",
-                "89f274efb8608738aeb71a18bb714f58acdc9cb5",
-                "7602e1653c3c16ccb2955da750f6c3f7c539b146",
-                "ea85e69e93ba4661412aecb80d22b9de60885307",
-                "1e6aa8c501a30c0d92a756fd7dad42244e5b10dd",
-                "f481ae3e7a6ec5462800da6349c50e9eaae35eaf",
-                "d1690bda07a267c3c64146a8c5219cbe82d4fafa"
+                "5b64f485e1340c2aef6bc446ee2fde6349c4c1df",
+                "b16611cecea8b10a12c81ee00fc52d5126143722",
+                "80375b75133ee8f12c65cbf9e2963e5e6ed60cd0",
+                "1270c8e90eef88474726c65f908e3d69ce18a465",
+                "36b02c2cba36637669c6faf680932a23a540fc0a",
+                "1c3468d72202d957e4a30203ba43d9456ffc54cf",
+                "dfc860468bf028a1ac762473e03872b1b7dbb1b6",
+                "cd3769ce780261eb19d95171997d38fda8661455",
+                "2a74c41ff599b704f9009de56e946d3358ca7219",
+                "9ba4677b42255a6c91efca764895d7e81a601aa9",
+                "cf379d1ff144236d12ef7b9cdf378265a425d954",
+                "b176601de87bfd2a2a04a08868081787be11b122",
+                "d5dfc90057b6c6cce216e56f5e29684208b88d92",
+                "b5fcd34e2730a400712203b3ccdc24a3e1ff48af",
+                "6887392841651bbe1d126ddb45c5e41e6c2c5bd4",
+                "a1e5396e968938790489a5eefb2c7d5fe7994c28",
+                "b270424ad79370e29b757ed1158cf12d83d05e9f",
+                "840d4f66fff2457847b7311c2119cf573bf52995",
+                "0c013489a523096b14d5e65339761ce8feafda75",
+                "cac3ab9d291b760fb9a4e7fa4457bc87d736bf3f",
+                "0629c6f53d8744c69fc7e636e91db627031736a1",
+                "fd3e20a4764014db5677ff1c52625b3b0f02922f",
+                "250f9f77ee493484b2179d8f3456ed52ad263eab",
+                "2b159df9712c8186b66821f0de613ddc831c6a75",
+                "60f4369518260db4d8af5d3207b487d6d1e0ab29",
+                "9d0ef04f3ce00afee509328772ec1f39e62da759",
+                "d0bf57f2a122d2a8b4a5309cc65d4ea47ad49c21",
+                "9e88aeae179c01cad1c9e0c94b9d9b0ed5ec3f24",
+                "9dfa6b3a872d58590f18f8f925f4f8e3afedb7b1",
+                "d1499ca1510db7248d2cee838c4e329df14c3d4e",
+                "e0b1afcd69923b75caa09717db9da0fd688d0654",
+                "900542543cc6911304495bbd825b4dc044899c49",
+                "b2cadef95facdfd76eaf8a4041ea9bfcf71b30f9",
+                "818a2ce936fbd82cb16da45f5505628e76cccc82",
+                "b71a2a1f9256dd6c7a4f86015e0081a7472660bd",
+                "7651f5bc32de10f8e5d9014ca8d39c16d9c417dc",
+                "462dffabe3c0c01a99fea2dffdc59067059cea02",
+                "c315ce0cee4f3477a9af1070f06b7285e1694c0a",
+                "7505912b803ad4394ceb4ef70dd866d20b2627e5",
+                "55d3a85d41bc1678fbd387712e1053a6e3950bf7",
+                "2543f323dca0aeecf023a11b3cab295871851ee9",
+                "225e6f1be73ea3695680a21dbb8b85b24bcba4cb",
+                "d59a1c6f6ec5fbe3fb8bb0bdc4d885512d07b51c",
+                "e6b5cbcf5ada01faa469abb78e2fcd465ca26725",
+                "731a2893803ab57f3eef2e5ac9e02fcd0aa8214d",
+                "a5bfc15a43a708a6eadac3b65e1745a1b122bc8e",
+                "041d0287331033bcbe2e749a95397fde26d0d426",
+                "fc71aa2ef3ea82461cbf10bc9c32c584b6e4fa99",
+                "bd02fb6b923c054726f801cf9bfa0507e6c2f369",
+                "814c5eab3f746b40b44c430e2585ea9e98e67adb",
+                "b96fa91313cae6ebe11e799c94ec1115f93e1b33",
+                "1900a67fb694c655542350cba444fef85aa2121e",
+                "812ea8f5150124756c991632ead795202e72197d",
+                "3b775f6f6a8d4a27aabafea7476084dd5b171a3d",
+                "4cda015b5e088dd0d187c507e1982bbb9ee37dba",
+                "cd8911a70c6af6284e7e13113369829c218b6972",
+                "6491f51f4c165c1e9e2fcaf2a4d536c4b3955834",
+                "36408526edf8a6910ea5fbabe168aa0f1d039938",
+                "3a28d286a709028aaa2232f3664ee189edce3ca9",
+                "ab1397a500a21412f18d9da43c37646392158d3f",
+                "7a90d9875a9f86611dfc415d276f8386a8659f03",
+                "8a4c5a37df3bdd3a489c04a536f1b695831fab7f",
+                "90959a095abeb7950dd27224fc0f9a0446f8061b",
+                "77dd4b425e8d511819960a1827994ccab2f95e4e",
+                "c476f024e1f2e7361877f7814a1d6a3db597ee82",
+                "c0c8fb3dfea13a16e11211c7c5d67741dbf07f80",
+                "0cae8c664df58dca21d8e415a103ab301a81f041",
+                "66da516386b470693cf7bcbac738ba913072d04e",
+                "0721684648e6856c1e9d59afd5570b6beeb4fe39",
+                "8c1a2483453a22012f7f2b6ffe45efed1853d6ff",
+                "c6d7168bd8d3d3232ffecf8bb064572dccd5657d",
+                "0c29ac3a1f030db55fbc78796516251f9c9c608c",
+                "4692d2b62a19cd649b93c6f155544f5f5630d842",
+                "eff5266a54065144f316e3e8d66c63192e4af6d5",
+                "d92c25ac64cc371a447692731233479ca98b31af",
+                "0c14b25f200a6854a5912a64ff3db000b3a66158",
+                "34bf87ee58e6856266006051eb7e6d7d179986f0",
+                "0cbef20602226e8591e5d6aa39b6ac5a5a6daa1b",
+                "740556589adb94d0af97e017850a945f474cff8d",
+                "9ce2be1fc28de3708fc84858dd51d56e022e1c30",
+                "20ed13cd7aa90f4fd88711feee6f064bb108a9b7",
+                "5082cd05fef5baa24e905cb2d701f8c0939610d7",
+                "1feed287dfc441d432fd75a9a0b08280d1d46d84",
+                "5db46c8c73c1331465f512dbc59ca0677759b6c5",
+                "b7b204cc21639062135fd14417d8eda567b70d89",
+                "46ed2ce15e6377c989e0bbc0fd6e4cb203bcd639",
+                "b341fce6eaa780cd1ea096c57a04becaa0ba22ff",
+                "ceecf0ee7dd7218ec2281589f118e61b93f94183",
+                "55859e425e61854ced1b12727208bf34f012eea0",
+                "f4002b84e7f6c0f336e49141e1e221b1e9043adb",
+                "9283b74770fa03875b08f3f4a89f2ad397c98e1a",
+                "e46ed7dc654ed8579d6d1556a8d1e08e107ae939",
+                "29c3d2d620c576fb8cad18798ed5ef32a43c8e27",
+                "63068ef85280c15243a37821981ccbc5c5277f22",
+                "9e2ebcd71da40965171fae82a4adef393a369b95",
+                "e3ce9a1ad8eaf38405ccf01ff5729dc4a171468f",
+                "8af3b4c0a269db99c09313c076b154de7a09b184",
+                "c3745c4219b6d8418432c2ea8512bb17472780d1",
+                "a817ab95a087561541b9513caf986de1c5b2efc6",
+                "79019d2c66e725b1fb0595c92d5f2331c9b5a575",
+                "ad9c69f377e1056c18273866eab3973e05afcec4",
+                "f37d774f90fabb6afd268b0a4912edd4afe88e07",
+                "931dc52788e8ae5db850068c64a2f3acfb0b2b03",
+                "6086508ddc61b1e3677fb6664c5a78d03286ec57",
+                "2aca8431bbeb324531d6ddc99b1998b35307fb55",
+                "13714f7f99a09c979947feadbf99e81e961fc388",
+                "0d49b4704debd8a561926b26fa18d658774e98e1",
+                "a1cbc9dd987aa1a599a8f7ba0547b30c02a8bdb1",
+                "701579fd3d04bca40ff446ee12f2198f2dff75b8",
+                "d60d88dd936564124f1a69a909b5935bacf13713",
+                "034a25ab725c5c08a9a2070376ac2039af255592",
+                "a661fe800fd068ccab8e8e0d3aa06124961cf576",
+                "93a78f5bcfd62ce2eab80a0ddadcc089884253bf",
+                "d2c28a5053be5c1f214c4ae44c2134a72af1b019",
+                "804be00c02f0539ccbe9bd8331a0d96967a7cc14",
+                "4f5d14e3d930c074e2bf78267041131e4938d0b9",
+                "7e4d84408e95aed110b7a34364b29be12069831b",
+                "7cce8cb29d76e6642e65d67a44f647c20d80bbb7",
+                "3ff3a7cb23c1114f415220b129bc560551230d58",
+                "21e282ae64c28d1ffdd5d00c93f34bfd932db58e",
+                "7b1b50f4b0eaadebcb46cdcd2c79ac042e50845f",
+                "9a2db79a9e514afd8d7b7c8964166a0086f136d0",
+                "ec846af9085cad8f42304b185f5bb5666ce33af5",
+                "ea2fb4e75cf8bdebc60676e1f610647e234da448",
+                "919f44a44780ea7f1e4062054f01e79fcb698130",
+                "d8b0e0e74ba2fb174e26b33f8358f70c00a55138",
+                "0569fd5744769c37cef42be90af7643981b5b198",
+                "2f945be958256e4bd4e87ee09ab52a346b97c12b",
+                "5d4ab8c4c3b024aae607d83f428be7cbb17568e5",
+                "bb999955f1ac5609d7a5c9ba5df93f883ffffa91",
+                "977f9bb1754c4c925da650a9a3af8cab926fb4d9",
+                "b741c5b0b933494a083254483d009e86e091503f",
+                "097b0283a8c3c08f90f1f7e0f13489e4c8652fc6",
+                "0433b1e0cb93f82f26561a3c98d9c5cd0a93919f",
+                "e1f50b99d059d0571cb4e200a40877434d535e6a",
+                "ea0d256d50eb3be306f90ece61f40cb2df85341b",
+                "af1880079c500cc32bbd5ed6d2923c263563047f",
+                "d1d0cb407eea63d73a22c21b5add9eee34602539",
+                "d365f0b08d6e01664b3164bf9e48bdb0aba87dd0",
+                "2a3a88238a95397331e35fb98670240575a4bea9",
+                "7cc0bd923a60bbb21aaabcae8e96da04d516f577",
+                "195387875df82a1f628c0e2eda8d737a7518bf1f",
+                "e0b91288f4202f5b223b6f9251b4abe9f7889497",
+                "9923a5a39a03d70dcefb2b76cdfbef5b294dfabf",
+                "a0b4bc2ce5c9ef25ac59fe177ffdc1a9ef216b29",
+                "75c923080dc16ace9866389a906188ae71b522c4",
+                "f0c5441e4240478fea6500c0ef2dc95b86fe9ec5",
+                "22442eca298929215de04ca51f7db51369566adb",
         };
 
         List<CommitScore> commitScore = new ArrayList<>();
@@ -319,7 +317,7 @@ public class Main {
         List<ChangedFile> changedJavaFiles = getChangedJavaFiles(gitDirectory, newCommit, oldCommit); //获取所有发生更改的.java文件的路径和变更类型
         Map<String, String> fileChangedType = getFileChangedType(changedJavaFiles);//再变更文件名称与变更类型间建立映射
 
-        getEditScriptsBetweenCommits(gitDirectory, newCommit, oldCommit, changedJavaFiles); //获取两个commit之间所有发生更改的.java文件的编辑脚本以及每个文件的AST
+//        getEditScriptsBetweenCommits(gitDirectory, newCommit, oldCommit, changedJavaFiles); //获取两个commit之间所有发生更改的.java文件的编辑脚本以及每个文件的AST
         String editscriptsPath = "DeveloperContributionEvaluation/editScripts/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/"; //这些编辑脚本的保存路径
         ASTScoreCalculator astScoreCalculator = new ASTScoreCalculator();
 
@@ -334,7 +332,7 @@ public class Main {
         String outputFormat = "dot";
         String granularity = "method";
 //        System.out.println(analyzedDirectory);
-        callGraph.getCallGraph(analyzedDirectory, outputFormat, granularity, projectName, newCommit); //获取该项目的调用图
+//        callGraph.getCallGraph(analyzedDirectory, outputFormat, granularity, projectName, newCommit); //获取该项目的调用图
         System.out.println("调用depends完成");
         String callGraphName = projectName + "_" + newCommit.substring(0, 7) + "-" + granularity + "." + outputFormat;
         String callGraphPath = "DeveloperContributionEvaluation/CallGraphs/" + callGraphName;
@@ -372,7 +370,7 @@ public class Main {
         CDG cdg = new CDG();
         //记录获取DDG的开始时间
         long DDGstartTime = System.currentTimeMillis();
-        ddg.getDDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/", newCommit);
+//        ddg.getDDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/", newCommit);
         // 记录获取DDG结束时间
         long DDGendTime = System.currentTimeMillis();
         double totalDDGTime = (DDGendTime - DDGstartTime) / 1000.0;
@@ -380,7 +378,7 @@ public class Main {
 
         //记录获取CDG的开始时间
         long CDGstartTime = System.currentTimeMillis();
-        cdg.getCDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/", newCommit);
+//        cdg.getCDG("E:/IDEA/maven-project/DeveloperContributionEvaluation/changedFilesContent/" + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/", newCommit);
         // 记录获取CDG结束时间
         long CDGendTime = System.currentTimeMillis();
         double totalCDGTime = (CDGendTime - CDGstartTime) / 1000.0;
@@ -413,7 +411,6 @@ public class Main {
 
         for (String method : changedMethods) {
             CM.put(method, (LOC.get(method) + CC.get(method) + HV.get(method) - PCom.get(method)) / 2 + 1);
-//            System.out.println(method);
             if(!astScore.containsKey(method))
                 astScore.put(method, 0.0);
 //            System.out.println("astScore = " + astScore.get(method));
@@ -449,7 +446,6 @@ public class Main {
 
     public static Map<String, String> getFileChangedType(List<ChangedFile> changedJavaFiles) {
         Map<String, String> fileChangedType = new HashMap<>();
-
         for (ChangedFile file : changedJavaFiles) {
             int lastSlashIndex = file.fileNameLong.lastIndexOf('/');
             String fileName = file.fileNameLong.substring(lastSlashIndex + 1).replace(".java", "");
@@ -716,31 +712,35 @@ public class Main {
 
     //从源代码提取出抽象语法树，传入需要分析的.java文件的路径，和当前的commit号
     public static void getASTFromFile(String filePath, String commitHash) throws Exception {
-        Run.initGenerators(); // registers the available parsers
-        TreeContext tc = TreeGenerators.getInstance().getTree(filePath); // retrieves and applies the default parser for the file
-        Tree t = (Tree) tc.getRoot(); // retrieves the root of the tree
-//        System.out.println(t.toTreeString()); // displays the tree in our ad-hoc format
-//        System.out.println(TreeIoUtils.toLisp(tc).toString()); // displays the tree in LISP syntax
+        try {
+            Run.initGenerators(); // registers the available parsers
+            TreeContext tc = TreeGenerators.getInstance().getTree(filePath); // retrieves and applies the default parser for the file
+            Tree t = (Tree) tc.getRoot(); // retrieves the root of the tree
+//            System.out.println(t.toTreeString()); // displays the tree in our ad-hoc format
+//            System.out.println(TreeIoUtils.toLisp(tc).toString()); // displays the tree in LISP syntax
 
-        // AST 的字符串表示
-        String astString = t.toTreeString();
+            // AST 的字符串表示
+            String astString = t.toTreeString();
 
-        String astFolder = "DeveloperContributionEvaluation/ASTfiles/" + commitHash.substring(0,7) + "/";
+            String astFolder = "DeveloperContributionEvaluation/ASTfiles/" + commitHash.substring(0,7) + "/";
 
-        // 确保文件夹存在，如果不存在则创建它
-        File folder = new File(astFolder);
-        if (!folder.exists()) {
-            folder.mkdirs();
-        }
-        // 指定要写入的文件名和路径
-        String srcFileName = new File(filePath).getName();
-        String astFileName = astFolder + srcFileName.replace(".java", "").replace("new_", "").replace("old_", "") + "_AST.txt";
+            // 确保文件夹存在，如果不存在则创建它
+            File folder = new File(astFolder);
+            if (!folder.exists()) {
+                folder.mkdirs();
+            }
+            // 指定要写入的文件名和路径
+            String srcFileName = new File(filePath).getName();
+            String astFileName = astFolder + srcFileName.replace(".java", "").replace("new_", "").replace("old_", "") + "_AST.txt";
 
-        // 将 AST 字符串写入文件
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(astFileName))) {
-            writer.write(astString);
-        } catch (IOException e) {
-            e.printStackTrace();
+            // 将 AST 字符串写入文件
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter(astFileName))) {
+                writer.write(astString);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } catch (Exception e) {
+//            System.err.println("An error occurred while processing the file: " + e.getMessage());
         }
     }
 
@@ -771,29 +771,34 @@ public class Main {
         Run.initGenerators(); // registers the available parsers
         String srcFile = file1;
         String dstFile = file2;
+        try {
+            Tree src = TreeGenerators.getInstance().getTree(srcFile).getRoot(); // retrieves and applies the default parser for the file
+            Tree dst = TreeGenerators.getInstance().getTree(dstFile).getRoot(); // retrieves and applies the default parser for the file
+            Matcher defaultMatcher = Matchers.getInstance().getMatcher(); // retrieves the default matcher
+            MappingStore mappings = defaultMatcher.match(src, dst); // computes the mappings between the trees
+            EditScriptGenerator editScriptGenerator = new SimplifiedChawatheScriptGenerator(); // instantiates the simplified Chawathe script generator
+            EditScript actions = editScriptGenerator.computeActions(mappings); // computes the edit script
+//            for (Action action : actions) {
+//                System.out.println(action);
+//            }
 
-        Tree src = TreeGenerators.getInstance().getTree(srcFile).getRoot(); // retrieves and applies the default parser for the file
-        Tree dst = TreeGenerators.getInstance().getTree(dstFile).getRoot(); // retrieves and applies the default parser for the file
-        Matcher defaultMatcher = Matchers.getInstance().getMatcher(); // retrieves the default matcher
-        MappingStore mappings = defaultMatcher.match(src, dst); // computes the mappings between the trees
-        EditScriptGenerator editScriptGenerator = new SimplifiedChawatheScriptGenerator(); // instantiates the simplified Chawathe script generator
-        EditScript actions = editScriptGenerator.computeActions(mappings); // computes the edit script
-//        for (Action action : actions) {
-//            System.out.println(action);
-//        }
-
-        String filePath = "DeveloperContributionEvaluation/editScripts/";
-        if(!oldCommit.equals("")){
-            filePath = filePath + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/";
-            // 确保文件夹存在，如果不存在则创建它
-            File folder = new File(filePath);
-            if (!folder.exists()) {
-                folder.mkdirs();
+            String filePath = "DeveloperContributionEvaluation/editScripts/";
+            if(!oldCommit.equals("")){
+                filePath = filePath + oldCommit.substring(0,7) + "_to_" + newCommit.substring(0,7) + "/";
+                // 确保文件夹存在，如果不存在则创建它
+                File folder = new File(filePath);
+                if (!folder.exists()) {
+                    folder.mkdirs();
+                }
             }
+            String editScriptFileName = filePath + "editscript_" +
+                    new File(srcFile).getName().replace(".java", "").replace("old_", "") + ".txt";
+            writeEditScriptToFile(actions, editScriptFileName);
+        } catch (Exception e) {
+//            System.err.println("An error occurred while processing the file: " + e.getMessage());
+            // 这里可以添加日志记录或其他错误处理逻辑
         }
-        String editScriptFileName = filePath + "editscript_" +
-                new File(srcFile).getName().replace(".java", "").replace("old_", "") + ".txt";
-        writeEditScriptToFile(actions, editScriptFileName);
+
     }
 
     //将编辑脚本写入文件

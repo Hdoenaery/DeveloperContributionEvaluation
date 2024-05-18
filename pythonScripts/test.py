@@ -22,7 +22,7 @@ print(convert_res2)
 # print(convert_res4)
 print(convert_res5)
 
-method_name = 'opt'.replace(",", ", ")
+method_name = 'copyDistributionsIntoScmDirectoryStructureAndAddToSvn'.replace(",", ", ")
 method_pattern = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+.*?' + re.escape(
         method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*\{?'
 method_pattern2 = r'(?:=\s*|\s+)new\s*' + re.escape(
@@ -33,16 +33,20 @@ method_pattern4 = r'\b\s+.*?' + re.escape(method_name).replace(r'\ ', r'\s*') + 
 method_pattern5 = r'.*\s+' + re.escape(method_name).replace(r'\ ', r'\s*') + r'\(.*\)\s*\w+'   #单行不带大括号的方法匹配
 method_pattern6 = r'.*\s+' + re.escape(method_name).replace(r'\ ', r'\s*') + r'\(.*\)(?!\s*;)' #匹配带完整的左右括号()且不以分号;结尾
 method_pattern7 = r'.*\s+' + re.escape(method_name).replace(r'\ ', r'\s*') + r'\(\s*(?!\S)'    #匹配左括号(后不包含任何除空格以外的字符
+#匹配左括号(，后如果有非空白字符，则匹配到逗号结束并忽略其后的空白字符，如果没有非空白字符，只匹配空白字符且不允许后面有非空白字符。
+method_pattern77 = r'.*\s+' + re.escape(method_name).replace(r'\ ', r'\s*') + r'\(\s*(\S+.*?,\s*|\s*(?!\S))$'
+method_pattern8 = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+.*?' + re.escape(
+        method_name).replace(r'\ ', r'\s*') + r'\(\s*(\S+.*?,\s*|\s*(?!\S))$'
 
-method_regex = re.compile(method_pattern3)
+method_regex = re.compile(method_pattern8)
 # line1 = 'protected Class<?> resolveClass(ObjectStreamClass desc) {'
 # line2 = 'protected Class<?> resolveClass(ObjectStreamClass desc) throws IOException, ClassNotFoundException {'
 # line3 = 'protected Class<?> resolveClass(ObjectStreamClass desc)'
 # line4 = 'super.resolveClass(desc);'
 # line5 = 'protected Class<?> resolveClass(ObjectStreamClass desc, String[] a = {"123", "456"})'
-line6 = ' private boolean optionalArg;'
-line7 = ' public Builder opt(String opt) throws IllegalArgumentException {'
-line8 = 'void injectAndNotify('
+line6 = ' private List<File> copyDistributionsIntoScmDirectoryStructureAndAddToSvn(final File copiedReleaseNotes,'
+line7 = ' private List<File> copyDistributionsIntoScmDirectoryStructureAndAddToSvn('
+line8 = ' private List<File> copyDistributionsIntoScmDirectoryStructureAndAddToSvn(final File copiedReleaseNotes,  a;'
 
 if method_regex.search(line6):
     print("yes")

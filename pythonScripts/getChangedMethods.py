@@ -66,13 +66,16 @@ def find_method_interval(lines, method_name):
         method_pattern3 = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+.*?' + re.escape(
             method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\).*'
         method_pattern4 = r'\b\s+.*?' + re.escape(method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*\{'
-
+        # 匹配左括号(，后如果有非空白字符，则匹配到逗号结束并忽略其后的空白字符，如果没有非空白字符，只匹配空白字符且不允许后面有非空白字符。
+        method_pattern8 = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+.*?' + re.escape(
+            method_name).replace(r'\ ', r'\s*') + r'\(\s*(\S+.*?,\s*|\s*(?!\S))$'
         method_regex2 = re.compile(method_pattern2)
         method_regex3 = re.compile(method_pattern3)
         method_regex4 = re.compile(method_pattern4)
+        method_regex8 = re.compile(method_pattern8)
         for i, line in enumerate(lines):
             # 搜索方法定义
-            if method_regex2.search(line) or method_regex3.search(line) or method_regex4.search(line):
+            if method_regex2.search(line) or method_regex3.search(line) or method_regex4.search(line) or method_regex8.search(line):
                 start_line = i + 1
                 in_method = True
                 # print(f"start_line = {start_line}")
@@ -288,12 +291,17 @@ def calculate_method_halstead_volume(source_code):
 
 
 def save_to_file(code, file_path):
+    # print(file_path)
     # 获取文件夹路径
     folder_path = os.path.dirname(file_path)
 
     # 如果文件夹不存在则创建
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
+
+    # 由于windows系统不区分文件名大小写，因此文件名仅大小写不同，则会产生覆盖问题
+    if os.path.exists(file_path):
+        file_path = file_path[:-9] + "@Duplicate@_new.java"
 
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write(code)
@@ -312,10 +320,10 @@ if __name__ == "__main__":
         print(Halstead_Volume[method.long_name])
         print(PCom[method.long_name])
 
-# repo_path = 'E:/Postgraduate_study/commons-cli'
+# repo_path = 'E:/Postgraduate_study/commons-release-plugin'
 #
-# old_commit = "0b980a180d66545bfcc669d6185107e6b665be01"
-# new_commit = "c886434a34107af01ae3cf70645e8e7d8aaa9ede"
+# old_commit = "90959a095abeb7950dd27224fc0f9a0446f8061b"
+# new_commit = "8a4c5a37df3bdd3a489c04a536f1b695831fab7f"
 # # changedMethods, LOC, CC, Halstead_Volume, PCom = getChangedMethods(repo_path, old_commit, new_commit)
 # changedMethods, LOC, Halstead_Volume, PCom = getChangedMethods(repo_path, old_commit, new_commit)
 #

@@ -8,7 +8,7 @@ get_cdg_time_pattern = re.compile(r"本次getCDG计算的运行时间（秒）�
 commit_time_pattern = re.compile(r"本次commit计算的运行时间（秒）：(\d+\.\d+)")
 
 # 读取文件内容
-with open('../output_commons-cli_1-150(生成文件+标准化).log', 'r', encoding='utf-8') as file:
+with open('../output_commons-release-plugin148(生成文件).log', 'r', encoding='utf-8') as file:
     text = file.read()
 
 # 使用正则表达式提取数据
