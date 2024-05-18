@@ -8,18 +8,23 @@ import seaborn as sns
 from scipy.stats import spearmanr
 
 # 读取csv文件
-file_path = 'E:/IDEA/maven-project/DeveloperContributionEvaluation/commons-release-plugin_result.csv'
-# file_path = 'E:/Postgraduate_study/papers/ASE23ContributionMeasurement-main/ASE23ContributionMeasurement修改版/RQ1/tagged/ELOC/commons-ognl_result_final_manifest_tagged_eloc.csv'
+file_path = 'E:/IDEA/maven-project/DeveloperContributionEvaluation/commons-exec_result.csv'
+file_path2 = 'E:/Postgraduate_study/papers/ASE23ContributionMeasurement-main/ASE23ContributionMeasurement修改版/RQ1/tagged/ELOC/commons-exec_result_final_manifest_tagged_eloc.csv'
 # df = pd.read_csv(file_path, encoding='gbk', header=None)
 df = pd.read_csv(file_path, encoding='gbk')
+df2 = pd.read_csv(file_path2, encoding='gbk')
 
-cnt = 140
-human_tagged_data = df.iloc[:cnt, 1].tolist()
-author_score = df.iloc[:cnt, 2].tolist()
-my_unstandardized_scores = df.iloc[:cnt, 3].tolist()
-my_standardized_scores = df.iloc[:cnt, 4].tolist()
-loc = df.iloc[:cnt, 12].tolist()
-# eloc = df.iloc[:cnt, 13].tolist()
+st = 0
+ed = 150
+human_tagged_data = df.iloc[st:ed, 1].tolist()
+author_score = df.iloc[st:ed, 2].tolist()
+my_unstandardized_scores = df.iloc[st:ed, 3].tolist()
+my_standardized_scores = df.iloc[st:ed, 4].tolist()
+loc = df.iloc[st:ed, 12].tolist()
+
+cnt = 65
+human_tagged_data2 = df2.iloc[:, 1].tolist()
+eloc = df2.iloc[:, 4].tolist()
 
 print(len(human_tagged_data))
 print(human_tagged_data)
@@ -41,7 +46,9 @@ spearman_corr, p_value = spearmanr(human_tagged_data,loc)
 print("loc的Spearman相关系数:", spearman_corr)
 print("p值:", p_value)
 
-
+spearman_corr, p_value = spearmanr(human_tagged_data2,eloc)
+print("eloc的Spearman相关系数:", spearman_corr)
+print("p值:", p_value)
 # 创建数据框以计算多个变量之间的相关性
 data = pd.DataFrame({
     'ground truth': human_tagged_data,
@@ -59,10 +66,10 @@ sns.set(style='white')
 
 # 创建热图
 plt.figure(figsize=(10, 8))
-heatmap = sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', vmin=-1, vmax=1, linewidths=0.5)
+heatmap = sns.heatmap(corr_matrix, annot=True, fmt='.4f', cmap='coolwarm', vmin=-1, vmax=1, linewidths=0.5)
 
 # 添加图表标题
-plt.title('Spearman Correlation Heatmap(fastjson)')
+plt.title('Spearman Correlation Heatmap(commons-exec)')
 
 # 显示图表
 plt.show()
