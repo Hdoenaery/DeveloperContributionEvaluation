@@ -331,6 +331,7 @@ public class ASTScoreCalculator {
 
 
                 Matcher matcher = pattern.matcher(line);//匹配编辑脚本中该操作的
+
                 if (matcher.find()) {
                     startPos = Integer.parseInt(matcher.group(1));
                     endPos = Integer.parseInt(matcher.group(2));
@@ -343,7 +344,20 @@ public class ASTScoreCalculator {
                     }
 
                 } else {
-                    System.out.println("editscript,未找到该变更的位置匹配项");
+//                    System.out.println("editscript,未找到该变更的位置匹配项  " + filePath);
+//                    System.out.println("line = " + line);
+                    line = reader.readLine();// 向下读一行
+                    matcher = pattern.matcher(line);//匹配编辑脚本中该操作的
+                    matcher.find();
+                    startPos = Integer.parseInt(matcher.group(1));
+                    endPos = Integer.parseInt(matcher.group(2));
+//                    System.out.println("Start Pos: " + startPos + ", End Pos: " + endPos);
+                    // 查找包含目标区间的项
+                    Map.Entry<Interval, String> entry = intervalToMethodName.floorEntry(new Interval(startPos, endPos));
+                    if (entry != null && entry.getKey().getStartPos() <= startPos && entry.getKey().getEndPos() >= endPos) {
+//                            System.out.println("Interval found: " + entry.getValue());
+                        methodName = entry.getValue();
+                    }
                 }
 //                }
 //                else {

@@ -201,6 +201,18 @@ public class CallGraph {
         long startTime = System.currentTimeMillis();
         String outputDirectory = "E:/IDEA/maven-project/DeveloperContributionEvaluation/CallGraphs";
 
+        // 将路径字符串转换为File对象
+        File directory = new File(outputDirectory);
+        // 检查目录是否存在
+        if (!directory.exists()) {
+            // 如果目录不存在，则创建它
+            if (directory.mkdirs()) {
+//                System.out.println("目录已创建: " + outputDirectory);
+            } else {
+                System.out.println("目录创建失败: " + outputDirectory);
+            }
+        }
+
         String command = "depends -f " + outputFormat + " -g " + granularity + " -d " + outputDirectory +
                 " java " + src + " " + projectName + "_" + newCommit.substring(0, 7);
         System.out.println(command);

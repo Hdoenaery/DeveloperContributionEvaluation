@@ -96,13 +96,41 @@ def find_method_interval(lines, method_name):
 
     if start_line == None:
         # 用于匹配"Class<?> serializer() default Void.class;"或"Class<?> serializer() {default Void.class;}"
-        method_pattern5 = method_pattern4 = r'\b.*?\s+' + re.escape(method_name).replace(r'\ ', r'\s*') + r'\(.*?\)\s*\{?\w+'
+        method_pattern5 = r'.*\s+' + re.escape(method_name).replace(r'\ ', r'\s*') + r'\(.*\)\s*\w+'   #单行不带大括号的方法匹配
+        method_pattern6 = r'.*\s+' + re.escape(method_name).replace(r'\ ', r'\s*') + r'\(.*\)(?!\s*;)' #匹配带完整的左右括号()且不以分号;结尾
+        method_pattern7 = r'.*\s+' + re.escape(method_name).replace(r'\ ', r'\s*') + r'\(\s*(?!\S)'    #匹配左括号(后不包含任何除空格以外的字符
         method_regex5 = re.compile(method_pattern5)
+        method_regex6 = re.compile(method_pattern6)
+        method_regex7 = re.compile(method_pattern7)
         for i, line in enumerate(lines):
             # 搜索方法定义
             if method_regex5.search(line):
                 start_line = i + 1
                 end_line = i + 1
+                break
+
+            if method_regex6.search(line) or method_regex7.search(line):
+                start_line = i + 1
+                in_method = True
+                # print(f"start_line = {start_line}")
+            if in_method:
+                # 处理方法内部的代码行
+                if '{' in line:
+                    # 增加括号计数器
+                    bracket_cnt += line.count('{')
+                if '}' in line:
+                    # 减少括号计数器
+                    bracket_cnt -= line.count('}')
+                    if bracket_cnt > 0:
+                        # 如果计数器仍大于0，继续搜索方法的结束
+                        continue
+                    elif bracket_cnt == 0:
+                        # 如果计数器为0，表示找到了方法的结束
+                        end_line = i + 1
+                        break
+                    else:
+                        in_method = False
+                        bracket_cnt = 0
 
     # print(f"start_line = {start_line}, end_line = {end_line}")
     return start_line, end_line
@@ -283,12 +311,12 @@ if __name__ == "__main__":
         print(Halstead_Volume[method.long_name])
         print(PCom[method.long_name])
 
-# repo_path = 'E:/Postgraduate_study/fastjson'
+# repo_path = 'E:/Postgraduate_study/guice'
 #
-# # old_commit = "679140e0ad6c0bb1cd3b8397f32c5fe55fc7f3b1"
-# # new_commit = "240edb5c42aa9295bc674c93d25ffe801c13a5c4"
-# old_commit = "e697d4aad5e3e4b4df9dc7fb6364d312e7239ef0"
-# new_commit = "b86ca3cf1cc9712fc2dd187a98b7f2f1692d9be6"
+# # old_commit = "757d472e6ca06d649f9e5d5bbd4d04e9b547fc5b"
+# # new_commit = "415a377e3bb7fe4497c3ee9f573d2652c1651038"
+# old_commit = "af26c7247984f7753c1a84ead9186584f7ef8d51"
+# new_commit = "363c593aa7c115bae39805bb2f233e45692abd87"
 # # changedMethods, LOC, CC, Halstead_Volume, PCom = getChangedMethods(repo_path, old_commit, new_commit)
 # changedMethods, LOC, Halstead_Volume, PCom = getChangedMethods(repo_path, old_commit, new_commit)
 #

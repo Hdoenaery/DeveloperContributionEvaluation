@@ -142,7 +142,7 @@ public class ComplexityCalculator {
         } catch (ParseException | IOException e) {
             e.printStackTrace();
         }
-        return 0;
+        return 1;
     }
     static class CyclomaticComplexityVisitor extends VoidVisitorAdapter<Void> {
         private int complexity = 1;
