@@ -22,6 +22,7 @@ def is_java_keyword(string):
 
 def find_method_interval(lines, method_name):
     method_name = method_name.replace(",", ", ")
+    # print(method_name)
     """
     在 Java 代码中查找方法的起始行和结束行。
     """
@@ -63,7 +64,7 @@ def find_method_interval(lines, method_name):
         method_pattern2 = r'(?:=\s*|\s+)new\s*' + re.escape(
             method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*\{?'
         method_pattern3 = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+.*?' + re.escape(
-            method_name).replace(r'\ ', r'\s*') + r'.*'
+            method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\).*'
         method_pattern4 = r'\b\s+.*?' + re.escape(method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*\{'
 
         method_regex2 = re.compile(method_pattern2)
@@ -311,12 +312,10 @@ if __name__ == "__main__":
         print(Halstead_Volume[method.long_name])
         print(PCom[method.long_name])
 
-# repo_path = 'E:/Postgraduate_study/guice'
+# repo_path = 'E:/Postgraduate_study/commons-cli'
 #
-# # old_commit = "757d472e6ca06d649f9e5d5bbd4d04e9b547fc5b"
-# # new_commit = "415a377e3bb7fe4497c3ee9f573d2652c1651038"
-# old_commit = "af26c7247984f7753c1a84ead9186584f7ef8d51"
-# new_commit = "363c593aa7c115bae39805bb2f233e45692abd87"
+# old_commit = "0b980a180d66545bfcc669d6185107e6b665be01"
+# new_commit = "c886434a34107af01ae3cf70645e8e7d8aaa9ede"
 # # changedMethods, LOC, CC, Halstead_Volume, PCom = getChangedMethods(repo_path, old_commit, new_commit)
 # changedMethods, LOC, Halstead_Volume, PCom = getChangedMethods(repo_path, old_commit, new_commit)
 #
@@ -326,22 +325,3 @@ if __name__ == "__main__":
 #     # print(CC[method.long_name])
 #     print(Halstead_Volume[method.long_name])
 #     print(PCom[method.long_name])
-
-#
-# java_code = """
-# // 这是单行注释
-# public class Example {
-#     /*
-#     这是
-#     多行
-#     注释
-#     */
-#     public static void main(String[] args) {
-#         // 单行注释
-#         System.out.println("Hello, World!"); // 行尾注释
-#         // "123"
-#     }
-# }
-# """
-#
-# print(calculate_percentage_of_comments(java_code))

@@ -2,26 +2,26 @@ import os
 
 import pandas as pd
 from scipy.stats import spearmanr
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from scipy.stats import spearmanr
 
 # 读取csv文件
-file_path = 'E:/IDEA/maven-project/DeveloperContributionEvaluation/guice_result.csv'
+file_path = 'E:/IDEA/maven-project/DeveloperContributionEvaluation/commons-cli_result.csv'
 # file_path = 'E:/Postgraduate_study/papers/ASE23ContributionMeasurement-main/ASE23ContributionMeasurement修改版/RQ1/tagged/ELOC/commons-ognl_result_final_manifest_tagged_eloc.csv'
 # df = pd.read_csv(file_path, encoding='gbk', header=None)
 df = pd.read_csv(file_path, encoding='gbk')
 
 cnt = 150
-# eloc = df.iloc[:cnt, 4].tolist()
-# human_tagged_data = df.iloc[:cnt, 1].tolist()
-# loc = df.iloc[:cnt, 3].tolist()
-# author_score = df.iloc[:, 2].tolist()
-# my_score_before = df.iloc[:, 7].tolist()
-# my_score_normal = df.iloc[:, 8].tolist()
+human_tagged_data = df.iloc[:cnt, 1].tolist()
+author_score = df.iloc[:cnt, 2].tolist()
+my_score_before = df.iloc[:cnt, 3].tolist()
+my_score_normal = df.iloc[:cnt, 4].tolist()
+loc = df.iloc[:cnt, 12].tolist()
+eloc = df.iloc[:cnt, 13].tolist()
 
-human_tagged_data = df.iloc[:120, 1].tolist()
-author_score = df.iloc[:120, 2].tolist()
-my_score_before = df.iloc[:120, 3].tolist()
-my_score_normal = df.iloc[:120, 4].tolist()
-# loc = df.iloc[:150, 15].tolist()
+
 print(len(human_tagged_data))
 print(human_tagged_data)
 # print(eloc)
@@ -41,14 +41,70 @@ print("p值:", p_value)
 spearman_corr, p_value = spearmanr(human_tagged_data, my_score_normal)
 print("我标准化后的Spearman相关系数:", spearman_corr)
 print("p值:", p_value)
+
+spearman_corr, p_value = spearmanr(human_tagged_data,loc)
+print("loc的Spearman相关系数:", spearman_corr)
+print("p值:", p_value)
+
+spearman_corr, p_value = spearmanr(human_tagged_data,eloc)
+print("eloc的Spearman相关系数:", spearman_corr)
+print("p值:", p_value)
+
+# 创建数据框以计算多个变量之间的相关性
+data = pd.DataFrame({
+    'Human Tagged Data': human_tagged_data,
+    'My Score Before' : my_score_before,
+    'My Score Normal': my_score_normal,
+    'LOC' : loc,
+})
+
+# 计算Spearman相关系数矩阵
+corr_matrix = data.corr(method='spearman')
+print(corr_matrix)
+
+# 设置图形风格
+sns.set(style='white')
+
+# 创建热图
+plt.figure(figsize=(10, 8))
+heatmap = sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', vmin=-1, vmax=1, linewidths=0.5)
+
+# 添加图表标题
+plt.title('Spearman Correlation Heatmap')
+
+# 显示图表
+plt.show()
+
+
+
+# # 设置图形风格
+# sns.set(style='whitegrid')
 #
-# spearman_corr, p_value = spearmanr(human_tagged_data,loc)
-# print("loc的Spearman相关系数:", spearman_corr)
-# print("p值:", p_value)
+# # 创建散点图
+# plt.figure(figsize=(10, 6))
+# sns.scatterplot(x=human_tagged_data, y=my_score_normal)
 #
-# spearman_corr, p_value = spearmanr(human_tagged_data,eloc)
-# print("eloc的Spearman相关系数:", spearman_corr)
-# print("p值:", p_value)
+# # 添加图表标题和标签
+# plt.title('Scatter Plot of Human Tagged Data vs My Score Normal')
+# plt.xlabel('Human Tagged Data')
+# plt.ylabel('My Score Normal')
+#
+# # 显示图表
+# plt.show()
+#
+# # 创建带回归线的散点图
+# plt.figure(figsize=(10, 6))
+# sns.regplot(x=human_tagged_data, y=my_score_normal, scatter_kws={'s': 50}, line_kws={'color': 'red'})
+#
+# # 添加图表标题和标签
+# plt.title('Scatter Plot with Regression Line: Human Tagged Data vs My Score Normal')
+# plt.xlabel('Human Tagged Data')
+# plt.ylabel('My Score Normal')
+#
+# # 显示图表
+# plt.show()
+
+
 
 
 # # 指定文件夹路径

@@ -326,9 +326,12 @@ public class ASTScoreCalculator {
 //                if(currentEditType == EditType.UPDATE_NODE)
 //                    nameChangeScore = isSimpleNameOrModifierChange(line) ? 0.01 : 1;
 
-                if(line.contains("SimpleName:") || line.contains("Modifier:") || line.contains("LineComment"))
+//                if(line.contains("SimpleName:") || line.contains("Modifier:") || line.contains("LineComment"))
+//                    nameChangeScore = 0.01;
+                if(line.contains("SimpleName:") || line.contains("Modifier:"))
                     nameChangeScore = 0.01;
-
+                if(line.contains("LineComment")) // 注释不产生贡献
+                    nameChangeScore = 0;
 
                 Matcher matcher = pattern.matcher(line);//匹配编辑脚本中该操作的
 
