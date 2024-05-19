@@ -22,13 +22,14 @@ print(convert_res2)
 # print(convert_res4)
 print(convert_res5)
 
-method_name = 'copyDistributionsIntoScmDirectoryStructureAndAddToSvn'.replace(",", ", ")
-method_pattern = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+.*?' + re.escape(
-        method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*\{?'
-method_pattern2 = r'(?:=\s*|\s+)new\s*' + re.escape(
-        method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*\{?'
-method_pattern3 = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+.*?' + re.escape(
-        method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\).*'
+method_name = 'of'.replace(",", ", ")
+# r'(?:\{.*|(?!{)(?!;))'表示当前位置后面若为{，则匹配任意字符，若不为{，则也不能为分号;
+method_pattern = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp).*\s' + re.escape(
+        method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*' + r'(?:\{.*|(?!{)(?!;))'
+method_pattern2 = r'(?:=\s*|\s+)new\s+' + re.escape(
+        method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*' + r'(?:\{.*|(?!{)(?!;))'
+# method_pattern3 = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+.*?' + re.escape(
+#         method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\).*'
 method_pattern4 = r'\b\s+.*?' + re.escape(method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*\{'
 method_pattern5 = r'.*\s+' + re.escape(method_name).replace(r'\ ', r'\s*') + r'\(.*\)\s*\w+'   #单行不带大括号的方法匹配
 method_pattern6 = r'.*\s+' + re.escape(method_name).replace(r'\ ', r'\s*') + r'\(.*\)(?!\s*;)' #匹配带完整的左右括号()且不以分号;结尾
@@ -38,15 +39,15 @@ method_pattern77 = r'.*\s+' + re.escape(method_name).replace(r'\ ', r'\s*') + r'
 method_pattern8 = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+.*?' + re.escape(
         method_name).replace(r'\ ', r'\s*') + r'\(\s*(\S+.*?,\s*|\s*(?!\S))$'
 
-method_regex = re.compile(method_pattern8)
+method_regex = re.compile(method_pattern4)
 # line1 = 'protected Class<?> resolveClass(ObjectStreamClass desc) {'
 # line2 = 'protected Class<?> resolveClass(ObjectStreamClass desc) throws IOException, ClassNotFoundException {'
 # line3 = 'protected Class<?> resolveClass(ObjectStreamClass desc)'
 # line4 = 'super.resolveClass(desc);'
 # line5 = 'protected Class<?> resolveClass(ObjectStreamClass desc, String[] a = {"123", "456"})'
-line6 = ' private List<File> copyDistributionsIntoScmDirectoryStructureAndAddToSvn(final File copiedReleaseNotes,'
-line7 = ' private List<File> copyDistributionsIntoScmDirectoryStructureAndAddToSvn('
-line8 = ' private List<File> copyDistributionsIntoScmDirectoryStructureAndAddToSvn(final File copiedReleaseNotes,  a;'
+line6 = '    public static final Timeout ZERO_MILLISECONDS = Timeout.of(0, TimeUnit.MILLISECONDS);'
+line7 = ' public List<File> = new of()'
+line8 = ' of() int a;'
 
 if method_regex.search(line6):
     print("yes")

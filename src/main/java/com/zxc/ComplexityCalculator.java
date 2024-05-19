@@ -132,7 +132,7 @@ public class ComplexityCalculator {
         try (FileInputStream fileInputStream = new FileInputStream(filePath)) {
             JavaParser javaParser = new JavaParser();
             ParseResult<CompilationUnit> result = javaParser.parse(fileInputStream);
-            CompilationUnit cu = result.getResult().orElseThrow(() -> new ParseException("Unable to parse file"));
+            CompilationUnit cu = result.getResult().orElseThrow(() -> new ParseException("Unable to parse file:" + filePath));
 
             ComplexityCalculator.CyclomaticComplexityVisitor visitor = new ComplexityCalculator.CyclomaticComplexityVisitor();
             visitor.visit(cu, null);

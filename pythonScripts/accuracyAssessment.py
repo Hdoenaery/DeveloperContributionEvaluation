@@ -8,21 +8,23 @@ import seaborn as sns
 from scipy.stats import spearmanr
 
 # 读取csv文件
-file_path = 'E:/IDEA/maven-project/DeveloperContributionEvaluation/commons-exec_result.csv'
-file_path2 = 'E:/Postgraduate_study/papers/ASE23ContributionMeasurement-main/ASE23ContributionMeasurement修改版/RQ1/tagged/ELOC/commons-exec_result_final_manifest_tagged_eloc.csv'
+project_name = 'fastjson'
+file_path = 'E:/IDEA/maven-project/DeveloperContributionEvaluation/httpcomponents-core_result.csv'
+file_path2 = 'E:/Postgraduate_study/papers/ASE23ContributionMeasurement-main/ASE23ContributionMeasurement修改版' \
+             '/RQ1/tagged/ELOC/httpcomponents-core_result_final_manifest_tagged_eloc.csv'
 # df = pd.read_csv(file_path, encoding='gbk', header=None)
 df = pd.read_csv(file_path, encoding='gbk')
 df2 = pd.read_csv(file_path2, encoding='gbk')
 
 st = 0
-ed = 150
+ed = 145
 human_tagged_data = df.iloc[st:ed, 1].tolist()
 author_score = df.iloc[st:ed, 2].tolist()
 my_unstandardized_scores = df.iloc[st:ed, 3].tolist()
 my_standardized_scores = df.iloc[st:ed, 4].tolist()
 loc = df.iloc[st:ed, 12].tolist()
 
-cnt = 65
+cnt = 60
 human_tagged_data2 = df2.iloc[:, 1].tolist()
 eloc = df2.iloc[:, 4].tolist()
 
@@ -66,10 +68,14 @@ sns.set(style='white')
 
 # 创建热图
 plt.figure(figsize=(10, 8))
-heatmap = sns.heatmap(corr_matrix, annot=True, fmt='.4f', cmap='coolwarm', vmin=-1, vmax=1, linewidths=0.5)
+heatmap = sns.heatmap(corr_matrix, annot=True, fmt='.4f', cmap='coolwarm', vmin=-1, vmax=1, linewidths=0.5, annot_kws={"size": 18})
 
 # 添加图表标题
-plt.title('Spearman Correlation Heatmap(commons-exec)')
+# plt.title(project_name, fontsize=28)
+
+# 调整刻度标签的字体大小
+plt.xticks(fontsize=11)
+plt.yticks(fontsize=11)
 
 # 显示图表
 plt.show()

@@ -28,8 +28,9 @@ def find_method_interval(lines, method_name):
     """
     # print(f"in find_method_interval   :{method_name}")
     # 方法定义的正则表达式模式
-    method_pattern = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+.*?' + re.escape(
-        method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*\{?'
+    # r'(?:\{.*|(?!{)(?!;))'表示当前位置后面若为{，则匹配任意字符，若不为{，则也不能为分号;
+    method_pattern = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp).*\s' + re.escape(
+        method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*' + r'(?:\{.*|(?!{)(?!;))'
 
     method_regex = re.compile(method_pattern)
 
@@ -61,21 +62,21 @@ def find_method_interval(lines, method_name):
                     break
 
     if start_line == None:
-        method_pattern2 = r'(?:=\s*|\s+)new\s*' + re.escape(
-            method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*\{?'
-        method_pattern3 = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+.*?' + re.escape(
-            method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\).*'
+        method_pattern2 = r'(?:=\s*|\s+)new\s+' + re.escape(
+            method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*' + r'(?:\{.*|(?!{)(?!;))'
+        # method_pattern3 = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+.*?' + re.escape(
+        #     method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\).*'
         method_pattern4 = r'\b\s+.*?' + re.escape(method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*\{'
         # 匹配左括号(，后如果有非空白字符，则匹配到逗号结束并忽略其后的空白字符，如果没有非空白字符，只匹配空白字符且不允许后面有非空白字符。
         method_pattern8 = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+.*?' + re.escape(
             method_name).replace(r'\ ', r'\s*') + r'\(\s*(\S+.*?,\s*|\s*(?!\S))$'
         method_regex2 = re.compile(method_pattern2)
-        method_regex3 = re.compile(method_pattern3)
+        # method_regex3 = re.compile(method_pattern3)
         method_regex4 = re.compile(method_pattern4)
         method_regex8 = re.compile(method_pattern8)
         for i, line in enumerate(lines):
             # 搜索方法定义
-            if method_regex2.search(line) or method_regex3.search(line) or method_regex4.search(line) or method_regex8.search(line):
+            if method_regex2.search(line) or method_regex4.search(line) or method_regex8.search(line):
                 start_line = i + 1
                 in_method = True
                 # print(f"start_line = {start_line}")
@@ -320,10 +321,10 @@ if __name__ == "__main__":
         print(Halstead_Volume[method.long_name])
         print(PCom[method.long_name])
 
-# repo_path = 'E:/Postgraduate_study/commons-release-plugin'
+# repo_path = 'E:/Postgraduate_study/httpcomponents-core'
 #
-# old_commit = "90959a095abeb7950dd27224fc0f9a0446f8061b"
-# new_commit = "8a4c5a37df3bdd3a489c04a536f1b695831fab7f"
+# old_commit = "b9a6b17c34a54f302503f171d72685168ee7d153"
+# new_commit = "3d548ce9ece1845915cc109c9f0fb7272aea9d73"
 # # changedMethods, LOC, CC, Halstead_Volume, PCom = getChangedMethods(repo_path, old_commit, new_commit)
 # changedMethods, LOC, Halstead_Volume, PCom = getChangedMethods(repo_path, old_commit, new_commit)
 #
