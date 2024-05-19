@@ -9,24 +9,28 @@ from scipy.stats import spearmanr
 
 # 读取csv文件
 project_name = 'fastjson'
-file_path = 'E:/IDEA/maven-project/DeveloperContributionEvaluation/httpcomponents-core_result.csv'
+file_path = 'E:/IDEA/maven-project/DeveloperContributionEvaluation/gson_result.csv'
+# file_path = 'E:/Postgraduate_study/papers/ASE23ContributionMeasurement-main/ASE23ContributionMeasurement修改版' \
+#              '/RQ1/tagged/commons-ognl_result_final_manifest_tagged_eloc.csv'
 file_path2 = 'E:/Postgraduate_study/papers/ASE23ContributionMeasurement-main/ASE23ContributionMeasurement修改版' \
-             '/RQ1/tagged/ELOC/httpcomponents-core_result_final_manifest_tagged_eloc.csv'
+             '/RQ1/tagged/ELOC/gson_result_final_manifest_tagged_eloc.csv'
 # df = pd.read_csv(file_path, encoding='gbk', header=None)
 df = pd.read_csv(file_path, encoding='gbk')
 df2 = pd.read_csv(file_path2, encoding='gbk')
 
 st = 0
-ed = 145
+ed = 80
 human_tagged_data = df.iloc[st:ed, 1].tolist()
 author_score = df.iloc[st:ed, 2].tolist()
 my_unstandardized_scores = df.iloc[st:ed, 3].tolist()
 my_standardized_scores = df.iloc[st:ed, 4].tolist()
 loc = df.iloc[st:ed, 12].tolist()
+# loc = df.iloc[st:ed, 3].tolist()
+# eloc = df.iloc[st:ed, 4].tolist()
 
-cnt = 60
-human_tagged_data2 = df2.iloc[:, 1].tolist()
-eloc = df2.iloc[:, 4].tolist()
+cnt = 20
+human_tagged_data2 = df2.iloc[:cnt, 1].tolist()
+eloc2 = df2.iloc[:cnt, 4].tolist()
 
 print(len(human_tagged_data))
 print(human_tagged_data)
@@ -48,7 +52,7 @@ spearman_corr, p_value = spearmanr(human_tagged_data,loc)
 print("loc的Spearman相关系数:", spearman_corr)
 print("p值:", p_value)
 
-spearman_corr, p_value = spearmanr(human_tagged_data2,eloc)
+spearman_corr, p_value = spearmanr(human_tagged_data2,eloc2)
 print("eloc的Spearman相关系数:", spearman_corr)
 print("p值:", p_value)
 # 创建数据框以计算多个变量之间的相关性
