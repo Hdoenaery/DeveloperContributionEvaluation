@@ -362,28 +362,7 @@ public class ASTScoreCalculator {
                         methodName = entry.getValue();
                     }
                 }
-//                }
-//                else {
-//                    //找到“to”的下一行
-//                    while(!line.equals("to"))
-//                        line = reader.readLine();
-//                    line = reader.readLine();
-//                    Matcher matcher = pattern.matcher(line);
-//                    if (matcher.find()) {
-//                        startPos = Integer.parseInt(matcher.group(1));
-//                        endPos = Integer.parseInt(matcher.group(2));
-////                        System.out.println("Start Pos: " + startPos + ", End Pos: " + endPos);
-//                        // 查找包含目标区间的项
-//                        Map.Entry<Interval, String> entry = intervalToMethodName.floorEntry(new Interval(startPos, endPos));
-//                        if (entry != null && entry.getKey().getStartPos() <= startPos && entry.getKey().getEndPos() >= endPos) {
-////                            System.out.println("Interval found: " + entry.getValue());
-//                            methodName = entry.getValue();
-//                        }
-//
-//                    } else {
-//                        System.out.println("editscript,未找到该变更的位置匹配项");
-//                    }
-//                }
+
 
                 depth = 1;// 默认深度为1
                 // 当读到“===”的行或者文件末尾时会停止往下读
@@ -398,9 +377,6 @@ public class ASTScoreCalculator {
                 //计算当前操作的得分
                 if (currentEditType != null) {
                     double operationScore = currentEditType.getWeight() * depth * nameChangeScore;
-//                    System.out.println(operationScore);
-//                    totalScore += operationScore;
-//                    System.out.println(totalScore);
                     if(astScore.containsKey(methodName))
                         astScore.put(methodName, astScore.get(methodName) + operationScore);
                     else
@@ -415,7 +391,4 @@ public class ASTScoreCalculator {
         return totalScore;
     }
 
-    private static boolean isSimpleNameOrModifierChange(String line) {
-        return line.contains("SimpleName:") || line.contains("Modifier:");
-    }
 }

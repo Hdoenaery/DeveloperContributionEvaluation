@@ -96,7 +96,6 @@ public class CallGraph {
     // 传入有向图，获取每个节点的PageRank值
     public static Map<Integer, Double> getPageRank(Map<Integer, List<Integer>> graphC, Map<Integer, List<Integer>> backwardGraphC) {
         // 初始化每个节点的PageRank值为1.0
-//        System.out.println(graphC.size());
         Map<Integer, Double> pageRank = new HashMap<>();
         for (Integer node : graphC.keySet()) {
             pageRank.put(node, 1.0);
@@ -110,20 +109,12 @@ public class CallGraph {
 
         // 开始迭代计算PageRank值
         for (int i = 0; i < iterations; i++) {
-//            System.out.println("PageRank迭代次数 = " + i);
             Map<Integer, Double> newPageRank = new HashMap<>();
             sum = 0;
             // 遍历每个节点
             for (Integer node : graphC.keySet()) {
                 double rank = (1 - dampingFactor); // 初始化PageRank值
 
-//                // 遍历所有指向node的节点
-//                for (Integer incomingNode : graphC.keySet()) {
-//                    if (graphC.get(incomingNode).contains(node)) {
-//                        int outgoingLinks = graphC.get(incomingNode).size();//求指向node
-//                        rank += dampingFactor * (pageRank.get(incomingNode) / outgoingLinks);
-//                    }
-//                }
                 for (Integer incomingNode : backwardGraphC.get(node)) {
                     int outgoingLinks = graphC.get(incomingNode).size();//求入链结点的出边数
                     rank += dampingFactor * (pageRank.get(incomingNode) / outgoingLinks);
@@ -136,9 +127,7 @@ public class CallGraph {
             pageRank = newPageRank;
         }
 
-//        System.out.println(sum);
-        for(Integer node :
-                pageRank.keySet()){
+        for(Integer node : pageRank.keySet()){
 //            System.out.println("node = " + node + "   pagerank = " + pageRank.get(node));
             pageRank.replace(node, pageRank.get(node) / sum);
         }
@@ -168,24 +157,11 @@ public class CallGraph {
                     // 查找匹配
                     if (matcher.find()) {
                         // 提取类名和方法名
-//                        System.out.println(line);
-//                        System.out.println(matcher.group(1));
-//                        System.out.println(matcher.group(2));
-//                        System.out.println(matcher.group(3));
                         nodeNumber = Integer.parseInt(matcher.group(1));
                         className = matcher.group(2);
                         methodName = matcher.group(3);
                     }
-
-
                     methodToNodeMap.put(className + "::" + methodName, nodeNumber);
-//                    int firstColonIndex = line.indexOf(':'); // 找到第一个出现的冒号的索引
-//                    if (firstColonIndex != -1) { // 确保找到了冒号
-//                        int nodeNumber = Integer.parseInt(line.substring(3, firstColonIndex));
-//                        String fileNameLong = line.substring(firstColonIndex + 1).trim();
-//                        System.out.println(fileNameLong);
-//
-//                    }
                 } else break;
             }
         } catch (IOException | NumberFormatException e) {

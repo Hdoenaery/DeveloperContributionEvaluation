@@ -22,7 +22,7 @@ print(convert_res2)
 # print(convert_res4)
 print(convert_res5)
 
-method_name = 'of'.replace(",", ", ")
+method_name = 'upgradeTls'.replace(",", ", ")
 # r'(?:\{.*|(?!{)(?!;))'表示当前位置后面若为{，则匹配任意字符，若不为{，则也不能为分号;
 method_pattern = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp).*\s' + re.escape(
         method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*' + r'(?:\{.*|(?!{)(?!;))'
@@ -36,16 +36,16 @@ method_pattern6 = r'.*\s+' + re.escape(method_name).replace(r'\ ', r'\s*') + r'\
 method_pattern7 = r'.*\s+' + re.escape(method_name).replace(r'\ ', r'\s*') + r'\(\s*(?!\S)'    #匹配左括号(后不包含任何除空格以外的字符
 #匹配左括号(，后如果有非空白字符，则匹配到逗号结束并忽略其后的空白字符，如果没有非空白字符，只匹配空白字符且不允许后面有非空白字符。
 method_pattern77 = r'.*\s+' + re.escape(method_name).replace(r'\ ', r'\s*') + r'\(\s*(\S+.*?,\s*|\s*(?!\S))$'
-method_pattern8 = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+.*?' + re.escape(
-        method_name).replace(r'\ ', r'\s*') + r'\(\s*(\S+.*?,\s*|\s*(?!\S))$'
+method_pattern8 = r'.*\s+' + re.escape(
+        method_name).replace(r'\ ', r'\s*') + r'\(\s*(\S+.*(?<!;)|\s*(?!\S))$'
 
-method_regex = re.compile(method_pattern4)
+method_regex = re.compile(method_pattern8)
 # line1 = 'protected Class<?> resolveClass(ObjectStreamClass desc) {'
 # line2 = 'protected Class<?> resolveClass(ObjectStreamClass desc) throws IOException, ClassNotFoundException {'
 # line3 = 'protected Class<?> resolveClass(ObjectStreamClass desc)'
 # line4 = 'super.resolveClass(desc);'
 # line5 = 'protected Class<?> resolveClass(ObjectStreamClass desc, String[] a = {"123", "456"})'
-line6 = '    public static final Timeout ZERO_MILLISECONDS = Timeout.of(0, TimeUnit.MILLISECONDS);'
+line6 = '   default void upgradeTls(HttpClientContext context,'
 line7 = ' public List<File> = new of()'
 line8 = ' of() int a;'
 

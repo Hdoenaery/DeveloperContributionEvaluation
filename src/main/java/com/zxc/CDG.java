@@ -38,14 +38,6 @@ public class CDG {
         parseDotFile("E:\\IDEA\\maven-project\\DeveloperContributionEvaluation\\PDGs\\5e5ba4b\\new_PipePool_cdg\\1-cdg.dot",
                 newNodes, newEdges, newAdjacencyList);
 
-        // 输出邻接表内容以检查
-//        for (Map.Entry<String, List<String>> entry : newAdjacencyList.forwardAdjacencyList.entrySet()) {
-//            String key = entry.getKey();
-//            List<String> values = entry.getValue();
-//            System.out.println("Key: " + key);
-//            System.out.println("Values: " + values);
-//        }
-
         // 查找发生更改的节点
         Set<Node> changedNodes = findChangedConditionalNodes(oldNodes, newNodes, newAdjacencyList);
 
@@ -67,8 +59,6 @@ public class CDG {
         System.out.println(CDG_impact);
         System.out.println(changedNodes.size());
         System.out.println(newNodes.size());
-
-
     }
     //计算CDG_impact
     public static double getCDGimpact(String src, String className, String methodName) throws FileNotFoundException {
@@ -95,7 +85,6 @@ public class CDG {
         if(newCDGfilePath != "")
             parseDotFile(newCDGfilePath, newNodes, newEdges, newAdjacencyList);
 
-
         // 查找发生更改的条件语句节点
         Set<Node> changedNodes = findChangedConditionalNodes(oldNodes, newNodes, newAdjacencyList);
 
@@ -111,8 +100,6 @@ public class CDG {
             traverseForward(startNode, forwardTraversal, newEdges);
         }
 //        System.out.println("Forward Traversal Node Count: " + forwardTraversal.size());
-
-
         double CDG_impact = 0;
         if(newNodes.size() > 0) {
             CDG_impact = forwardTraversal.size() * 1.0 / newNodes.size();
@@ -149,16 +136,8 @@ public class CDG {
                                 return file.getPath();
                             }
                         } else if (firstLine != null && firstLine.contains("\"" + methodName + "\"")) {
-//                            System.out.println(methodName);
-//                            System.out.println(file.getPath());
                             return file.getPath();
-//                            String line;
-//                            // 逐行读取文件内容并输出
-//                            while ((line = reader.readLine()) != null) {
-//                                System.out.println(line);
-//                            }
                         }
-
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -198,10 +177,8 @@ public class CDG {
             // 有些节点跨了多行，需要特殊处理
             String previousLine = "";
             while ((line = reader.readLine()) != null) {
-//                System.out.println("line = " + line);
                 if(line.trim().endsWith("{") || line.trim().endsWith("}"))
                     continue;
-
                 if(!line.trim().endsWith("]") && !line.contains("->")) {
                     previousLine += line;
                     continue;
@@ -211,9 +188,7 @@ public class CDG {
                     previousLine = "";
                 }
 
-//                System.out.println(line);
                 if (line.startsWith("\"")) {
-                    //                System.out.println(line);
                     // 解析节点
                     String[] parts = line.split("\\[label = ");
 
@@ -231,8 +206,6 @@ public class CDG {
                     label = label.substring(1, label.lastIndexOf(")") + 1);
 
 //                    System.out.println("id = " + id + "   label = " + label + "   lineNumber = " + lineNumber);
-
-
                     Node node = new Node(id, label, lineNumber);
                     nodes.add(node);
                 } else if (line.contains("->")) {
@@ -301,8 +274,6 @@ public class CDG {
         for (File file : files) {
             // 构建命令
             List<String> command = new ArrayList<>();
-//            command.add("powershell.exe");
-//            command.add("-Command");
             command.add("cmd");
             command.add("/c");
             command.add("E:/Postgraduate_study/joern-cli/joern-export");
@@ -311,7 +282,6 @@ public class CDG {
             command.add("cdg");
             command.add("--out");
             command.add(file.getName().replace(".java", "") + "_cdg");
-//            System.out.println(command);
             // 创建 ProcessBuilder
             ProcessBuilder pb = new ProcessBuilder(command);
             pb.directory(new File(folderPath));

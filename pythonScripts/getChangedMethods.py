@@ -67,9 +67,9 @@ def find_method_interval(lines, method_name):
         # method_pattern3 = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+.*?' + re.escape(
         #     method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\).*'
         method_pattern4 = r'\b\s+.*?' + re.escape(method_name).replace(r'\ ', r'\s*') + r'\s*\([^)]*\)\s*(?:throws\s+\w+(?:,\s*\w+)*)?\s*\{'
-        # 匹配左括号(，后如果有非空白字符，则匹配到逗号结束并忽略其后的空白字符，如果没有非空白字符，只匹配空白字符且不允许后面有非空白字符。
-        method_pattern8 = r'\b(?:public|protected|private|static|final|synchronized|abstract|native|strictfp)\s+.*?' + re.escape(
-            method_name).replace(r'\ ', r'\s*') + r'\(\s*(\S+.*?,\s*|\s*(?!\S))$'
+        # 匹配左括号(，后如果有非空白字符，不能以分号结尾，如果没有非空白字符，只匹配空白字符且不允许后面有非空白字符。
+        method_pattern8 = r'.*\s+' + re.escape(
+            method_name).replace(r'\ ', r'\s*') + r'\(\s*(\S+.*(?<!;)|\s*(?!\S))$'
         method_regex2 = re.compile(method_pattern2)
         # method_regex3 = re.compile(method_pattern3)
         method_regex4 = re.compile(method_pattern4)
@@ -321,10 +321,10 @@ if __name__ == "__main__":
         print(Halstead_Volume[method.long_name])
         print(PCom[method.long_name])
 
-# repo_path = 'E:/Postgraduate_study/httpcomponents-core'
+# repo_path = 'E:/Postgraduate_study/httpcomponents-client'
 #
-# old_commit = "b9a6b17c34a54f302503f171d72685168ee7d153"
-# new_commit = "3d548ce9ece1845915cc109c9f0fb7272aea9d73"
+# old_commit = "bdc7f3b93e36a1601240dc65dcde526e76dd4ff1"
+# new_commit = "92f757eee3e9f8f964b3cdbe6e878daf75e989f6"
 # # changedMethods, LOC, CC, Halstead_Volume, PCom = getChangedMethods(repo_path, old_commit, new_commit)
 # changedMethods, LOC, Halstead_Volume, PCom = getChangedMethods(repo_path, old_commit, new_commit)
 #
